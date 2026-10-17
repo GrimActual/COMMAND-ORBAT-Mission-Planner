@@ -23,6 +23,9 @@ class JSOC_ORBAT_GMRequest
     string unitId;
     string sourceEntityId;
     string followEntityId;
+    string formation;
+    string stance;
+    string combatMode;
     float worldX;
     float worldZ;
     int holdSeconds;
@@ -46,6 +49,7 @@ class JSOC_ORBAT_GMSpawnGroup
     ref array<string> Ids = {};
     ref array<string> UnitIds = {};
     ref map<string, ref COMMAND_ORBAT_OwnedRoute> Routes = new map<string, ref COMMAND_ORBAT_OwnedRoute>();
+    ref map<string, ref COMMAND_ORBAT_PreferenceLease> Preferences = new map<string, ref COMMAND_ORBAT_PreferenceLease>();
     ref map<string, AIWaypoint> Orders = new map<string, AIWaypoint>();
 };
 class JSOC_ORBAT_GMCallback : RestCallback
@@ -71,8 +75,8 @@ class JSOC_ORBAT_HostGM
     protected string m_Expected;
     ref JSOC_ORBAT_GMRecord Pending;
     string Status = "No GM request loaded";
-    void Pair(string endpoint, string code) { Stop(); m_LegacyRelay = false; m_OrdersAllowed = false; m_CapabilityMode = 4; m_Context = GetGame().GetRestApi().GetContext(endpoint); if (m_Context) m_Context.SetTimeout(5); m_Code = code; GetGame().GetCallqueue().CallLater(MaintainControl,1000,true); }
-    void Stop() { if (GetGame()) GetGame().GetCallqueue().Remove(MaintainControl); array<string> releasedLeases = {}; foreach (string releaseKey, JSOC_ORBAT_GMSpawnGroup releaseBatch : m_Owned) { if (releaseBatch.Recruited || releaseBatch.Follows.Count() > 0) ClearControlledOrders(releaseBatch); if (releaseBatch.Recruited) releasedLeases.Insert(releaseKey); } foreach (string retiredLease : releasedLeases) m_Owned.Remove(retiredLease); if (m_Callback) { m_Callback.Stopped = true; m_Callback.Owner = null; } m_Callback = null; m_Context = null; m_Code = ""; m_Busy = false; m_OrdersAllowed = false; Pending = null; }
+    void Pair(string endpoint, string code) { Stop(); m_LegacyRelay = false; m_OrdersAllowed = false; m_CapabilityMode = 5; m_Context = GetGame().GetRestApi().GetContext(endpoint); if (m_Context) m_Context.SetTimeout(5); m_Code = code; GetGame().GetCallqueue().CallLater(MaintainControl,1000,true); }
+    void Stop() { if (GetGame()) GetGame().GetCallqueue().Remove(MaintainControl); array<string> releasedLeases = {}; foreach (string releaseKey, JSOC_ORBAT_GMSpawnGroup releaseBatch : m_Owned) { ClearPreferences(releaseBatch); if (releaseBatch.Recruited || releaseBatch.Follows.Count() > 0) ClearControlledOrders(releaseBatch); if (releaseBatch.Recruited) releasedLeases.Insert(releaseKey); } foreach (string retiredLease : releasedLeases) m_Owned.Remove(retiredLease); if (m_Callback) { m_Callback.Stopped = true; m_Callback.Owner = null; } m_Callback = null; m_Context = null; m_Code = ""; m_Busy = false; m_OrdersAllowed = false; Pending = null; }
     void Post(string action, string body)
     {
         if (!Replication.IsServer() || !m_Context || m_Busy) return;
@@ -86,7 +90,8 @@ class JSOC_ORBAT_HostGM
         else if (m_CapabilityMode == 1) Post("poll",string.Format("{\"token\":\"%1\",\"capabilities\":[\"ai-orders-v1\"]}",m_Code));
         else if (m_CapabilityMode == 2) Post("poll",string.Format("{\"token\":\"%1\",\"capabilities\":[\"ai-orders-v1\",\"ai-tactical-v1\"]}",m_Code));
         else if (m_CapabilityMode == 3) Post("poll",string.Format("{\"token\":\"%1\",\"capabilities\":[\"ai-orders-v1\",\"ai-tactical-v1\",\"ai-routes-v1\"]}",m_Code));
-        else Post("poll",string.Format("{\"token\":\"%1\",\"capabilities\":[\"ai-orders-v1\",\"ai-tactical-v1\",\"ai-routes-v1\",\"ai-squad-control-v1\",\"ai-follow-v1\"]}",m_Code));
+        else if (m_CapabilityMode == 4) Post("poll",string.Format("{\"token\":\"%1\",\"capabilities\":[\"ai-orders-v1\",\"ai-tactical-v1\",\"ai-routes-v1\",\"ai-squad-control-v1\",\"ai-follow-v1\"]}",m_Code));
+        else Post("poll",string.Format("{\"token\":\"%1\",\"capabilities\":[\"ai-orders-v1\",\"ai-tactical-v1\",\"ai-routes-v1\",\"ai-squad-control-v1\",\"ai-follow-v1\",\"ai-formation-v1\",\"ai-stance-v1\",\"ai-fire-policy-v1\"]}",m_Code));
     }
     bool CanApprove() { return Pending && Pending.request && !m_Busy; }
     int PreviewCount() { if (!Pending || !Pending.request) { return 0; } if (Pending.request.kind == "ai-route") { return Pending.request.waypoints.Count(); } else { return Pending.request.entities.Count(); } }
@@ -94,6 +99,9 @@ class JSOC_ORBAT_HostGM
     {
         if (!Pending || !Pending.request) return Status;
         JSOC_ORBAT_GMRequest request = Pending.request;
+        if (request.kind == "ai-formation") return "FORMATION " + request.formation + " for " + request.targetRequestId + " / " + request.unitId + ". Native definition is checked before replacement. Restore returns the prior formation; terrain-adaptive Auto is not provided.";
+        if (request.kind == "ai-stance") return "AI STANCE " + request.stance + " for " + request.targetRequestId + " / " + request.unitId + ". Persistent squad setting; Auto removes only the Companion override. Physical pose and combat response are not confirmed.";
+        if (request.kind == "ai-combat-mode") return "NATIVE FIRE POLICY " + request.combatMode + " for " + request.targetRequestId + " / " + request.unitId + ". Auto removes only the Companion override. Strict no-fire behavior under attack still requires combat acceptance.";
         if (request.kind == "ai-recruit") return "RECRUIT EXISTING AI SQUAD from selected live identity " + request.sourceEntityId + ". Only its allowed same-faction on-foot AI group is eligible. Existing foreign waypoints block recruitment. Release returns control without deleting the squad.";
         if (request.kind == "ai-release") return "RELEASE control of recruited squad " + request.targetRequestId + " / " + request.unitId + ". Only Companion-owned waypoints are cleared; no squad is deleted.";
         if (request.kind == "ai-follow") return string.Format("FOLLOW selected player %1 for %2 seconds. Squad %3 / %4. Requires selected same-faction player. Follow stops on expiry, target loss/respawn, revoked selection or incompatible membership. Arrival/formation is not confirmed.",request.followEntityId,request.holdSeconds,request.targetRequestId,request.unitId);
@@ -141,7 +149,7 @@ class JSOC_ORBAT_HostGM
             ExecuteApproved(record.request); return;
         }
         Pending = record;
-        if (record.request.kind == "ai-move" || record.request.kind == "ai-hold" || record.request.kind == "ai-defend" || record.request.kind == "ai-halt" || record.request.kind == "ai-route" || record.request.kind == "ai-recruit" || record.request.kind == "ai-release" || record.request.kind == "ai-follow") Status = "Pending infantry AI order. Review target and waypoint before approving.";
+        if (record.request.kind == "ai-move" || record.request.kind == "ai-hold" || record.request.kind == "ai-defend" || record.request.kind == "ai-halt" || record.request.kind == "ai-route" || record.request.kind == "ai-recruit" || record.request.kind == "ai-release" || record.request.kind == "ai-follow" || record.request.kind == "ai-formation" || record.request.kind == "ai-stance" || record.request.kind == "ai-combat-mode") Status = "Pending infantry AI order. Review target and waypoint before approving.";
         else Status = string.Format("Pending %1 request %2 (%3 units). Review before approving.", record.request.kind, record.request.requestId, record.request.entities.Count());
     }
     protected bool SafeKey(string value)
@@ -166,7 +174,7 @@ class JSOC_ORBAT_HostGM
         if (m_Results.Find(request.requestId, cached)) { Post("result", cached); return; }
         if (m_Results.Count() >= 100) { Status = "Scene GM command budget reached"; return; }
         if (request.kind == "ai-recruit") { Recruit(request); return; }
-        if (request.kind == "ai-move" || request.kind == "ai-hold" || request.kind == "ai-defend" || request.kind == "ai-halt" || request.kind == "ai-route" || request.kind == "ai-release" || request.kind == "ai-follow") { ExecuteAIOrder(request); return; }
+        if (request.kind == "ai-move" || request.kind == "ai-hold" || request.kind == "ai-defend" || request.kind == "ai-halt" || request.kind == "ai-route" || request.kind == "ai-release" || request.kind == "ai-follow" || request.kind == "ai-formation" || request.kind == "ai-stance" || request.kind == "ai-combat-mode") { ExecuteAIOrder(request); return; }
         if (request.version != 1) { Report(request.requestId,"failed","Unsupported GM version for this action",""); return; }
         if (request.kind == "remove")
         {
@@ -232,9 +240,20 @@ class JSOC_ORBAT_HostGM
         }
         m_Owned.Insert(request.requestId, created); Report(request.requestId, "executed", "Approved prefab batch spawned", resultIds);
     }
+    protected void ClearPreference(JSOC_ORBAT_GMSpawnGroup batch, string unit, SCR_AIGroup group)
+    {
+        COMMAND_ORBAT_PreferenceLease preference;
+        if (batch.Preferences.Find(unit,preference)) COMMAND_ORBAT_SquadPreferences.Release(group,preference);
+        batch.Preferences.Remove(unit);
+    }
+    protected void ClearPreferences(JSOC_ORBAT_GMSpawnGroup batch)
+    {
+        foreach (int index, IEntity root : batch.Entities) ClearPreference(batch,batch.UnitIds[index],SCR_AIGroup.Cast(root));
+    }
     protected void ClearControlledOrders(JSOC_ORBAT_GMSpawnGroup batch)
     {
         if (!batch) return;
+        ClearPreferences(batch);
         foreach (string unit, COMMAND_ORBAT_OwnedRoute route : batch.Routes)
         {
             int index = batch.UnitIds.Find(unit); SCR_AIGroup group;
@@ -257,12 +276,12 @@ class JSOC_ORBAT_HostGM
         foreach (string id, JSOC_ORBAT_GMSpawnGroup batch : m_Owned)
         {
             if (batch.Recruited && !LeaseValid(batch)) { ClearControlledOrders(batch); batch.Revoked = true; continue; }
-            if (!batch.Recruited && batch.Follows.Count() == 0) continue;
+            if (!batch.Recruited && batch.Follows.Count() == 0 && batch.Preferences.Count() == 0) continue;
             foreach (int index, IEntity root : batch.Entities)
             {
                 string unit = batch.UnitIds[index];
                 COMMAND_ORBAT_FollowLease follow; batch.Follows.Find(unit,follow);
-                if (!batch.Recruited && !follow) continue;
+                if (!batch.Recruited && !follow && !batch.Preferences.Contains(unit)) continue;
                 SCR_AIGroup group = SCR_AIGroup.Cast(root); AIWaypoint point; batch.Orders.Find(unit,point);
                 COMMAND_ORBAT_OwnedRoute route; batch.Routes.Find(unit,route); array<AIWaypoint> points = {}; if (route) points = route.Waypoints;
                 bool invalidControl = !JSOC_ORBAT_AIOrders.Check(group,point,points).IsEmpty(); bool invalid = invalidControl;
@@ -276,7 +295,7 @@ class JSOC_ORBAT_HostGM
                     if (route && group) COMMAND_ORBAT_RouteOrders.Cancel(group,route.Waypoints);
                     else if (route) COMMAND_ORBAT_RouteOrders.DeleteWaypoints(route.Waypoints);
                     batch.Routes.Remove(unit); batch.Orders.Remove(unit); batch.Follows.Remove(unit);
-                    if (batch.Recruited && invalidControl) batch.Revoked = true;
+                    if (invalidControl) { ClearPreference(batch,unit,group); if (batch.Recruited) batch.Revoked = true; }
                 }
             }
         }
@@ -324,6 +343,17 @@ class JSOC_ORBAT_HostGM
         else if (previous) previousPoints.Insert(previous);
         string problem = JSOC_ORBAT_AIOrders.Check(group,previous,previousPoints);
         if (!problem.IsEmpty()) { Report(request.requestId,"failed",problem,""); return; }
+        if (request.kind == "ai-formation" || request.kind == "ai-stance" || request.kind == "ai-combat-mode")
+        {
+            if (m_CapabilityMode < 5) { Report(request.requestId,"failed","Paired relay did not negotiate squad settings",""); return; }
+            COMMAND_ORBAT_PreferenceLease preference; if (!ownedBatch.Preferences.Find(request.unitId,preference)) { preference = new COMMAND_ORBAT_PreferenceLease(); ownedBatch.Preferences.Set(request.unitId,preference); }
+            string error;
+            if (request.kind == "ai-formation") error = COMMAND_ORBAT_SquadPreferences.Formation(group,preference,request.formation);
+            else if (request.kind == "ai-stance") error = COMMAND_ORBAT_SquadPreferences.Stance(group,preference,request.stance);
+            else error = COMMAND_ORBAT_SquadPreferences.Combat(group,preference,request.combatMode);
+            if (!error.IsEmpty()) { Report(request.requestId,"failed",error,""); return; }
+            Report(request.requestId,"executed","Native squad setting applied; physical movement and combat outcome are not confirmed",""); return;
+        }
         if ((request.kind == "ai-defend" || request.kind == "ai-halt") && m_CapabilityMode < 2) { Report(request.requestId,"failed","Paired relay did not negotiate tactical AI support",""); return; }
         if (request.kind == "ai-route" && (m_CapabilityMode < 3 || !COMMAND_ORBAT_RouteOrders.Valid(request))) { Report(request.requestId,"failed","Route requires negotiated support and 1 to 16 valid points",""); return; }
         if (request.kind == "ai-halt")

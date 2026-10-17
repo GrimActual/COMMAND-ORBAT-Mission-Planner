@@ -261,6 +261,127 @@
           "maximum": 300
         }
       }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "requestId",
+        "kind",
+        "targetRequestId",
+        "unitId",
+        "formation"
+      ],
+      "properties": {
+        "version": {
+          "const": 2
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "kind": {
+          "const": "ai-formation"
+        },
+        "targetRequestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "unitId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        },
+        "formation": {
+          "enum": [
+            "column",
+            "staggered-column",
+            "wedge",
+            "line",
+            "restore"
+          ]
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "requestId",
+        "kind",
+        "targetRequestId",
+        "unitId",
+        "stance"
+      ],
+      "properties": {
+        "version": {
+          "const": 2
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "kind": {
+          "const": "ai-stance"
+        },
+        "targetRequestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "unitId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        },
+        "stance": {
+          "enum": [
+            "stand",
+            "crouch",
+            "prone",
+            "auto"
+          ]
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "requestId",
+        "kind",
+        "targetRequestId",
+        "unitId",
+        "combatMode"
+      ],
+      "properties": {
+        "version": {
+          "const": 2
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "kind": {
+          "const": "ai-combat-mode"
+        },
+        "targetRequestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "unitId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        },
+        "combatMode": {
+          "enum": [
+            "open-fire",
+            "hold-fire",
+            "return-fire",
+            "auto"
+          ]
+        }
+      }
     }
   ]
 }

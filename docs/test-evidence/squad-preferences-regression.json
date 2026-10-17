@@ -1,0 +1,9 @@
+{
+  "tests": 857,
+  "passed": 856,
+  "skipped": 1,
+  "failed": 0,
+  "scope": "Full local regression after squad-setting contracts, UI and guidance",
+  "skipReason": "Independent preprocessor unavailable locally; hosted Linux comparison is separate",
+  "fixtureCorrection": "An unrelated backend fixture cache TTL was increased from one second to one minute so entry 1 remains fresh during startup assertions; entry 2 remains explicitly expired."
+}

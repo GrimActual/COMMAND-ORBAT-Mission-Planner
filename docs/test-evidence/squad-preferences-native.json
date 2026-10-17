@@ -1,0 +1,199 @@
+{
+  "success": true,
+  "scope": "Actual isolated native server, host-approval test driver and loopback relay; two synthetic fireteams with AI simulation paused for lifecycle isolation, one standing in for a selected player identity; no terrain/navmesh travel or real players",
+  "outcomes": [
+    {
+      "id": "lease",
+      "phase": "executed",
+      "message": "Existing squad recruited; ownership does not allow deletion"
+    },
+    {
+      "id": "formation_column",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "formation_staggered-column",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "formation_wedge",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "formation_line",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "formation_restore",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "stance_stand",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "stance_crouch",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "stance_prone",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "stance_auto",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "fire_hold-fire",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "fire_return-fire",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "fire_open-fire",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "fire_auto",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "crouch_cleanup",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "hold_cleanup",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "foreign_stance",
+      "phase": "failed",
+      "message": "A higher-priority stance setting blocks this request"
+    },
+    {
+      "id": "release",
+      "phase": "executed",
+      "message": "Control released; recruited squad retained"
+    }
+  ],
+  "waypointTrace": [
+    "[COMMAND PREFERENCE TEST] lease executed formation=Wedge stances=auto,auto,auto,auto, fire=0 actual=0",
+    "[COMMAND PREFERENCE TEST] formation_column executed formation=Column stances=auto,auto,auto,auto, fire=0 actual=0",
+    "[COMMAND PREFERENCE TEST] formation_staggered-column executed formation=StaggeredColumn stances=auto,auto,auto,auto, fire=0 actual=0",
+    "[COMMAND PREFERENCE TEST] formation_wedge executed formation=Wedge stances=auto,auto,auto,auto, fire=0 actual=0",
+    "[COMMAND PREFERENCE TEST] formation_line executed formation=Line stances=auto,auto,auto,auto, fire=0 actual=0",
+    "[COMMAND PREFERENCE TEST] formation_restore executed formation=Wedge stances=auto,auto,auto,auto, fire=0 actual=0",
+    "[COMMAND PREFERENCE TEST] stance_stand executed formation=Wedge stances=0,0,0,0, fire=0 actual=0",
+    "[COMMAND PREFERENCE TEST] stance_crouch executed formation=Wedge stances=1,1,1,1, fire=0 actual=0",
+    "[COMMAND PREFERENCE TEST] membership detached=auto returned=1",
+    "[COMMAND PREFERENCE TEST] stance_prone executed formation=Wedge stances=2,2,2,2, fire=0 actual=0",
+    "[COMMAND PREFERENCE TEST] stance_auto executed formation=Wedge stances=auto,auto,auto,auto, fire=0 actual=0",
+    "[COMMAND PREFERENCE TEST] fire_hold-fire executed formation=Wedge stances=auto,auto,auto,auto, fire=1 actual=1",
+    "[COMMAND PREFERENCE TEST] fire_return-fire executed formation=Wedge stances=auto,auto,auto,auto, fire=2 actual=1",
+    "[COMMAND PREFERENCE TEST] fire_open-fire executed formation=Wedge stances=auto,auto,auto,auto, fire=0 actual=0",
+    "[COMMAND PREFERENCE TEST] fire_auto executed formation=Wedge stances=auto,auto,auto,auto, fire=0 actual=0",
+    "[COMMAND PREFERENCE TEST] crouch_cleanup executed formation=Wedge stances=1,1,1,1, fire=0 actual=0",
+    "[COMMAND PREFERENCE TEST] hold_cleanup executed formation=Wedge stances=1,1,1,1, fire=1 actual=1",
+    "[COMMAND PREFERENCE TEST] foreign_stance failed formation=Wedge stances=2,2,2,2, fire=1 actual=1",
+    "[COMMAND PREFERENCE TEST] release executed formation=Wedge stances=2,2,2,2, fire=0 actual=0"
+  ],
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "processStopped": true,
+  "sourceFiles": [
+    {
+      "file": "addon.gproj",
+      "sha256": "b2fb398bacfb82613cf129c75c49c1268a7d6cb56c8bf274a86629500d564095"
+    },
+    {
+      "file": "Scripts/Game/JSOC_ORBAT/COMMAND_ORBAT_RouteOrders.c",
+      "sha256": "f9a80271d225fa686230f868b359b6897321539d794fd03820ccb48dcd2c37aa"
+    },
+    {
+      "file": "Scripts/Game/JSOC_ORBAT/COMMAND_ORBAT_SquadControl.c",
+      "sha256": "a4fab1df705a472c39cd673e9d647ceaef2e87895cc327898ea3d81d6371713b"
+    },
+    {
+      "file": "Scripts/Game/JSOC_ORBAT/COMMAND_ORBAT_SquadPreferences.c",
+      "sha256": "5cde913624b125cb01ac0db0d96d27260aa892cd414359741a317dd2fd852815"
+    },
+    {
+      "file": "Scripts/Game/JSOC_ORBAT/COMMAND_ORBAT_TacticalOrders.c",
+      "sha256": "4e48458c059ae3674f803e61a38babbc48127f94c0c6b7e4a3b2cb436525a9b6"
+    },
+    {
+      "file": "Scripts/Game/JSOC_ORBAT/JSOC_ORBAT_AIOrders.c",
+      "sha256": "319c96e0d854b806f864ef251b6ffbcf76819d116cfe273ad81fd39ac503eef4"
+    },
+    {
+      "file": "Scripts/Game/JSOC_ORBAT/JSOC_ORBAT_DedicatedBridge.c",
+      "sha256": "3862359e5686d504b626e7f6910932082d9d0a4fa128b6aca80e03ed92230a12"
+    },
+    {
+      "file": "Scripts/Game/JSOC_ORBAT/JSOC_ORBAT_GMMenu.c",
+      "sha256": "2c76e5df74d7a72655ab306f5b90d2743c0eac7e7dc7782bb040a7fb87cfed1e"
+    },
+    {
+      "file": "Scripts/Game/JSOC_ORBAT/JSOC_ORBAT_HostBridge.c",
+      "sha256": "6bc544cbb4950eef8d6d493f2577eefc3f346ddc1d7d81dfe7f1e72f2f4586a9"
+    },
+    {
+      "file": "Scripts/Game/JSOC_ORBAT/JSOC_ORBAT_HostGM.c",
+      "sha256": "2f95ecf873515afe9df8cbbd58ced6c0e8921dfe688a2167108bb86fba414711"
+    },
+    {
+      "file": "Scripts/Game/JSOC_ORBAT/JSOC_ORBAT_HostMixed.c",
+      "sha256": "9a83f6cf98e0870876c30db94aa59344960e9cdca22ec6aaf77b2bf656733818"
+    },
+    {
+      "file": "Scripts/Game/JSOC_ORBAT/JSOC_ORBAT_PairingMenu.c",
+      "sha256": "7607bb76f5f593ddcdab6c4f26944eb5fe6c8d466ecc6ffb44b7101168227920"
+    },
+    {
+      "file": "Scripts/Game/JSOC_ORBAT/JSOC_ORBAT_RosterMenu.c",
+      "sha256": "de5bcb0b277cb9243cdda439036a482bc89c183f1f2fa0156c455c75398c2762"
+    },
+    {
+      "file": "Scripts/Game/JSOC_ORBAT/JSOC_ORBAT_TrackedBridge.c",
+      "sha256": "7de18b0e2319dd2e4c141bcc007e0de9249d1f9affee3c701417196782461974"
+    },
+    {
+      "file": "UI/layouts/JSOC_ORBAT_GM.layout",
+      "sha256": "f3aedc6e6b7bd6741612eba86ec117b5e521a6345ab5142815d9fc21e0d27a0e"
+    },
+    {
+      "file": "UI/layouts/JSOC_ORBAT_Pairing.layout",
+      "sha256": "c2ad4fa824e54a397597ad39fd4b94da6e6cded598d6a499f6646238db7ac81c"
+    },
+    {
+      "file": "UI/layouts/JSOC_ORBAT_Roster.layout",
+      "sha256": "1d6c96f6e022cc89fd8513f2d989756c87e6eb66e3adf6b1fbdf4522d59cbccb"
+    }
+  ],
+  "finalCleanupCheck": {
+    "scope": "Additional isolated native probe after tightening cleanup ownership; no real players or combat",
+    "foreignEditorHoldFirePreserved": true,
+    "externalMode": 1,
+    "actualMode": 1,
+    "ownedSettingCleared": true,
+    "moduleSha256": "6826d912c20eccd649078464b17648d9b25c302ad013188e9ec21abfdadd0fc4",
+    "baselineLifecycleSourceFilesRetained": true
+  }
+}

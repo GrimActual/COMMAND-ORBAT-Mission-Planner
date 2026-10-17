@@ -1,6 +1,6 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 test('backend: CORS, methods, static files, cache expiry, deduplication, timeout and rate limit',async()=>{
- process.env.RATE_LIMIT='20';process.env.UPSTREAM_TIMEOUT_MS='30';process.env.CACHE_TTL_MS='1000';
+ process.env.RATE_LIMIT='20';process.env.UPSTREAM_TIMEOUT_MS='30';process.env.CACHE_TTL_MS='60000';
  const original=global.fetch;const cacheFile=path.join(__dirname,'workshop_cache.json');const backup=fs.existsSync(cacheFile)?fs.readFileSync(cacheFile):null;
  fs.writeFileSync(cacheFile,JSON.stringify({'1':{workshopId:'1',cachedAt:new Date().toISOString()},'2':{workshopId:'2',cachedAt:'2000-01-01T00:00:00Z'}}));
  let upstream=0;global.fetch=async(url,options)=>{upstream++;if(url.includes('steamcommunity'))return new Response('');if(options.body.get('publishedfileids[0]')==='3')return new Promise((resolve,reject)=>options.signal.addEventListener('abort',()=>reject(new Error('Timed out'))));await new Promise(r=>setTimeout(r,5));return new Response(JSON.stringify({response:{publishedfiledetails:[{result:1,title:'Fixture',time_updated:1}]}}))};

@@ -1,0 +1,15 @@
+{
+  "scope": "Actual offline Electron isolated profile; mocked IPC responses, native execution tested separately",
+  "submittedSettings": 13,
+  "exactSettingValues": true,
+  "settingChangeInvalidatesReview": true,
+  "escapedTargetNames": true,
+  "languages": [
+    "en",
+    "fr",
+    "de"
+  ],
+  "olderBridgeDisablesSettings": true,
+  "missionUnchanged": true,
+  "pageErrors": []
+}

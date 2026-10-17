@@ -1,0 +1,43 @@
+{
+  "scope": "Same offline 60-marker and 16-point overlay sequence on prior followon.5 and candidate followon.6; short desktop samples, not multiplayer certification or causal speedup evidence",
+  "prior": {
+    "scope": "One matched offline Electron sample with 60 named synthetic live markers; single destination vs 16-point route; 3 seconds each, not sustained multiplayer performance",
+    "before": {
+      "fps": 59.68,
+      "p95FrameMs": 16.8,
+      "stallsOver100ms": 0
+    },
+    "after": {
+      "fps": 60.33,
+      "p95FrameMs": 16.8,
+      "stallsOver100ms": 0
+    },
+    "overlayCycles": 100,
+    "overlayCycleMs": 214.7,
+    "transientMapDOM": 512,
+    "tooltipFadeWaitMs": 500,
+    "mapDOMBefore": 512,
+    "mapDOMAfter": 512,
+    "missionUnchanged": true
+  },
+  "candidate": {
+    "scope": "One matched offline Electron sample with 60 named synthetic live markers; single destination vs 16-point route; 3 seconds each, not sustained multiplayer performance",
+    "before": {
+      "fps": 60.39,
+      "p95FrameMs": 16.8,
+      "stallsOver100ms": 0
+    },
+    "after": {
+      "fps": 60.33,
+      "p95FrameMs": 16.8,
+      "stallsOver100ms": 0
+    },
+    "overlayCycles": 100,
+    "overlayCycleMs": 142.8,
+    "transientMapDOM": 512,
+    "tooltipFadeWaitMs": 500,
+    "mapDOMBefore": 512,
+    "mapDOMAfter": 512,
+    "missionUnchanged": true
+  }
+}

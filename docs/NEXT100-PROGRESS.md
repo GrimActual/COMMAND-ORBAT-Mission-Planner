@@ -2,7 +2,7 @@
 
 This records delivered scope, not completion of all 100 steps. Complete-existing identifies functionality already present. General runtime/type claims and unimplemented engine features remain pending.
 
-awaiting-external: 10 | complete-existing: 9 | complete-new: 44 | partial: 6 | pending-development: 31
+awaiting-external: 10 | complete-existing: 9 | complete-new: 45 | partial: 9 | pending-development: 27
 
 | Step | Status | Task / evidence |
 | --- | --- | --- |
@@ -69,10 +69,10 @@ awaiting-external: 10 | complete-existing: 9 | complete-new: 44 | partial: 6 | p
 | 61 | awaiting-external | Complete user testing of current move and defend orders.  |
 | 62 | complete-new | Reviewed 1–16-point infantry routes: contract/UI/native installation, replacement/cancel/foreign-order guards passed. Normal-terrain travel acceptance remains separate. |
 | 63 | partial | Native bounded Follow binds an explicitly selected same-faction player; synthetic lifecycle passed. Real-player following and normal-terrain movement remain acceptance checks. |
-| 64 | pending-development | Add formation selection backed by verified engine adapters.  |
-| 65 | pending-development | Add stance selection backed by verified engine adapters.  |
-| 66 | pending-development | Add verified open-fire behavior.  |
-| 67 | pending-development | Investigate strict hold-fire semantics before promising them.  |
+| 64 | partial | Four verified formation definitions plus restoration implemented and read back natively. Diamond, Circle, adaptive Auto and physical spacing acceptance remain open. |
+| 65 | complete-new | Persistent native Stand/Crouch/Prone and own-override Auto removal implemented; existing members, transfer/rejoin, foreign editor protection and release cleanup passed. Physical combat-pose acceptance remains separate. |
+| 66 | partial | Native Open Fire setting and actual-mode readback passed. Combat execution acceptance remains open. |
+| 67 | partial | Native HOLD_FIRE and RETURN_FIRE are distinct and read back correctly; strict behavior under received fire is not claimed without a combat test. |
 | 68 | pending-development | Add suppression and look-at adapters where supported.  |
 | 69 | complete-new | Host-reviewed recruitment and release of existing selected AI squads; native faction/membership/selection guards, deletion prohibition and lifecycle checks passed. Real-session acceptance remains separate. |
 | 70 | complete-existing | Keep host approval and owned-group boundaries visible. Existing native approval, capability and bridge-owned-target gates retained. |
