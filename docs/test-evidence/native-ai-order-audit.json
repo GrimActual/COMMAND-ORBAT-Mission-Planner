@@ -1,0 +1,332 @@
+{
+  "schema": "command-native-order-audit",
+  "version": 1,
+  "bridgeVersion": "0.10.1",
+  "gameVersion": "1.8.0.13",
+  "fixture": "Original synthetic infantry on Everon terrain with installed GM navigation mesh",
+  "gameClientLaunched": false,
+  "publicTunnelUsed": false,
+  "realPlayers": false,
+  "savedMissionChanged": false,
+  "moduleSha256": "115b97bbb4bfc501adf224ab5575c86d655b88abdfd7f3ba39dffbc1d00572d0",
+  "fullOrderSequence": {
+    "passed": true,
+    "checks": 34,
+    "outcomes": [
+      {
+        "name": "navigation-fixture",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "group-preflight",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "move-installed",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "move-travel",
+        "passed": true,
+        "detail": "35.7324"
+      },
+      {
+        "name": "hold-installed",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "hold-stationary",
+        "passed": true,
+        "detail": "1.10059"
+      },
+      {
+        "name": "defend-installed",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "defend-travel",
+        "passed": true,
+        "detail": "71.3916"
+      },
+      {
+        "name": "cancel-accepted",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "cancel-waypoints",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "cancel-stops-travel",
+        "passed": true,
+        "detail": "0.220892"
+      },
+      {
+        "name": "route-installed",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "route-travel",
+        "passed": true,
+        "detail": "34.9707"
+      },
+      {
+        "name": "follow-installed",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "follow-approaches-target",
+        "passed": true,
+        "detail": "22.0498"
+      },
+      {
+        "name": "follow-moving-target",
+        "passed": true,
+        "detail": "22.9697"
+      },
+      {
+        "name": "follow-cancel",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "formation-column",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "formation-staggered-column",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "formation-wedge",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "formation-line",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "formation-restore",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "fire-policy-open-fire",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "fire-policy-hold-fire",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "fire-policy-return-fire",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "fire-policy-auto",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "stance-stand-installed",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "stance-stand-physical",
+        "passed": true,
+        "detail": "4"
+      },
+      {
+        "name": "stance-crouch-installed",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "stance-crouch-physical",
+        "passed": true,
+        "detail": "4"
+      },
+      {
+        "name": "stance-prone-installed",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "stance-prone-physical",
+        "passed": true,
+        "detail": "4"
+      },
+      {
+        "name": "stance-auto-installed",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "cleanup-group-retained",
+        "passed": true,
+        "detail": ""
+      }
+    ],
+    "peakServerWorkingSetMB": 808.8
+  },
+  "foreignMemberSettingSequence": {
+    "passed": true,
+    "checks": 24,
+    "outcomes": [
+      {
+        "name": "navigation-fixture",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "group-preflight",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "formation-column",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "formation-staggered-column",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "formation-wedge",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "formation-line",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "formation-restore",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "fire-policy-open-fire",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "fire-policy-hold-fire",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "fire-policy-return-fire",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "fire-policy-auto",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "stance-stand-installed",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "stance-stand-physical",
+        "passed": true,
+        "detail": "4"
+      },
+      {
+        "name": "stance-crouch-installed",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "stance-crouch-physical",
+        "passed": true,
+        "detail": "4"
+      },
+      {
+        "name": "stance-prone-installed",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "stance-prone-physical",
+        "passed": true,
+        "detail": "4"
+      },
+      {
+        "name": "stance-auto-installed",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "member-override-command",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "member-override-retained",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "member-override-pose",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "other-members-crouched",
+        "passed": true,
+        "detail": "3"
+      },
+      {
+        "name": "member-override-after-release",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "cleanup-group-retained",
+        "passed": true,
+        "detail": ""
+      }
+    ],
+    "peakServerWorkingSetMB": 806.4
+  },
+  "desktopContractRegression": {
+    "tests": 26,
+    "passed": 26,
+    "failed": 0
+  },
+  "limitations": [
+    "Direct native adapter tests; not a new end-to-end HTTPS or real-client acceptance test",
+    "Formation definition readback does not prove physical spacing",
+    "Fire-policy readback does not certify strict Hold Fire while attacked",
+    "Follow uses a synthetic character stand-in",
+    "The cause of every reported hosted-session failure remains unconfirmed"
+  ],
+  "fixtureSha256": {
+    "tools/ai-orders-native-probe.c": "8c62907d8d4a64f186c3f029b9707f0551cfd2b44d2fda43c4c91ed5728f05e8",
+    "tools/ai-stance-safety-native-probe.c": "ce1b1c4ab118a3982d58e554276ecfb14335e9823dee5919ec16e8ad645d84c2"
+  }
+}

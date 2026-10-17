@@ -70,7 +70,7 @@ awaiting-external: 10 | complete-existing: 9 | complete-new: 45 | partial: 9 | p
 | 62 | complete-new | Reviewed 1–16-point infantry routes: contract/UI/native installation, replacement/cancel/foreign-order guards passed. Normal-terrain travel acceptance remains separate. |
 | 63 | partial | Native bounded Follow binds an explicitly selected same-faction player; synthetic lifecycle passed. Real-player following and normal-terrain movement remain acceptance checks. |
 | 64 | partial | Four verified formation definitions plus restoration implemented and read back natively. Diamond, Circle, adaptive Auto and physical spacing acceptance remain open. |
-| 65 | complete-new | Persistent native Stand/Crouch/Prone and own-override Auto removal implemented; existing members, transfer/rejoin, foreign editor protection and release cleanup passed. Physical combat-pose acceptance remains separate. |
+| 65 | complete-new | Persistent native Stand/Crouch/Prone and own-override Auto removal implemented; existing members, transfer/rejoin, foreign editor protection and release cleanup passed. Idle Stand/Crouch/Prone physically verified for all four members after the 0.10.1 transition fix; per-member editor override preserved. Combat-pose acceptance remains separate. |
 | 66 | partial | Native Open Fire setting and actual-mode readback passed. Combat execution acceptance remains open. |
 | 67 | partial | Native HOLD_FIRE and RETURN_FIRE are distinct and read back correctly; strict behavior under received fire is not claimed without a combat test. |
 | 68 | pending-development | Add suppression and look-at adapters where supported.  |
@@ -110,3 +110,6 @@ awaiting-external: 10 | complete-existing: 9 | complete-new: 45 | partial: 9 | p
 The first source checkpoint passed hosted Linux/Windows and distribution checks. The initialization checkpoint has focused local worker and real desktop coverage; its matching hosted result will be recorded separately.
 
 See NEXT100-DELIVERY.md and NEXT100-INITIALIZATION.md for exact boundaries. The 34 pending-development items still need implementation; five other items are partial and ten await outside acceptance.
+
+
+17 October 2026: Native AI order audit added without removing roadmap goals. Move, timed Hold, Defend, two-point routes, synthetic-character Follow and cancellation were exercised with active AI on Everon navigation data. Bridge 0.10.1 corrects a reproduced idle-stance response issue. See NATIVE-AI-ORDER-AUDIT.md for exact evidence and limits; formation spacing and strict Hold Fire under attack remain unverified.

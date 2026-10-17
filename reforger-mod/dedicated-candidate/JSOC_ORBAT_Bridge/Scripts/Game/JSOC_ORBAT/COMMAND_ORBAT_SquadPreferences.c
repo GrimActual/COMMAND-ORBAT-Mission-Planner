@@ -60,7 +60,30 @@ class COMMAND_ORBAT_SquadPreferences
             settings.RemoveSetting(next); return "A higher-priority stance setting blocks this request";
         }
         if (lease.Stance) settings.RemoveSetting(lease.Stance);
-        lease.Stance = next; return "";
+        lease.Stance = next; RequestStanceTransition(group,next,stance); return "";
+    }
+    // Native stance settings are queried by behaviour tasks and can leave idle AI
+    // in their previous pose. Request the normal transition once after approval;
+    // keep the setting for subsequent behaviour and respect native transition checks.
+    static void RequestStanceTransition(SCR_AIGroup group, SCR_AICharacterStanceSetting setting, ECharacterStance stance)
+    {
+        array<AIAgent> members = {}; group.GetAgents(members);
+        foreach (AIAgent agent : members)
+        {
+            if (!agent) continue;
+            ChimeraCharacter character = ChimeraCharacter.Cast(agent.GetControlledEntity());
+            if (!character) continue;
+            SCR_AICharacterSettingsComponent settings = SCR_AICharacterSettingsComponent.FindOnControlledEntity(character);
+            if (!settings) continue;
+            SCR_AICharacterStanceSettingBase active = SCR_AICharacterStanceSettingBase.Cast(settings.GetCurrentSetting(SCR_AICharacterStanceSettingBase,SCR_EAIBehaviorCause.ALWAYS));
+            // Group settings propagate as child copies. An editor/scenario override
+            // with the same stance value still belongs to somebody else.
+            if (!active || (active != setting && active.GetParentSetting() != setting)) continue;
+            CharacterControllerComponent controller = character.GetCharacterController();
+            // Native CharacterStanceChange: erected=1, crouch=2, prone=3.
+            int transition = stance + 1;
+            if (controller && controller.CanChangeStance(transition)) controller.SetStanceChange(transition);
+        }
     }
     static string Combat(SCR_AIGroup group, COMMAND_ORBAT_PreferenceLease lease, string value)
     {
