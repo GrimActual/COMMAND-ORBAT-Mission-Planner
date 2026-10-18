@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "scope": "Isolated real Enfusion server; pre-fix dormant native AI squad accepted movement without travelling during ten-second observation; diagnostic-only deactivation; selection-loss/recovery also exercised; no connected humans",
+  "outcomes": [
+    {
+      "id": "squad",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "lease",
+      "phase": "executed",
+      "message": "Existing squad recruited; ownership does not allow deletion"
+    },
+    {
+      "id": "release",
+      "phase": "executed",
+      "message": "Control released; recruited squad retained"
+    },
+    {
+      "id": "new_lease",
+      "phase": "executed",
+      "message": "Existing squad recruited; ownership does not allow deletion"
+    },
+    {
+      "id": "hold",
+      "phase": "executed",
+      "message": "Timed AI hold waypoint accepted; combat reactions remain possible"
+    },
+    {
+      "id": "move",
+      "phase": "executed",
+      "message": "AI move waypoint accepted; arrival is not confirmed"
+    }
+  ],
+  "processStopped": true
+}

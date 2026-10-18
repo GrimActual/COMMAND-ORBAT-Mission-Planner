@@ -117,3 +117,7 @@ See NEXT100-DELIVERY.md and NEXT100-INITIALIZATION.md for exact boundaries. The 
 ## Additional server snapshot request — 17 October 2026
 
 Implemented outside the original 100-row numbering: separately approved planned-deployment save, supported current-state capture to the server profile, no-spawn review and frozen separately approved restoration. Actual server process restart, exact member positions, saved move/stance and partial rollback gates passed; offline Electron passed three languages, Settings destination, stale review and unchanged mission data. No local file inbox or automatic recovery was added. Source development only until the matching release is identified. See SERVER-SCENARIO-SNAPSHOTS.md.
+
+## Control execution follow-up — 18 October 2026
+
+The followon.8 / bridge 0.11.1 candidate improves existing controls without renumbering these rows. Explicit revocation/recovery and read-only activation/waypoint inspection address stale control and ambiguous results. A native dormant-AI reproduction and original non-forced activation fix have separate evidence. See CONTROL-EXECUTION-UPDATE.md. Hosted gameplay acceptance and all previously deferred items remain open.

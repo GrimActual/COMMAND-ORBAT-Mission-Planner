@@ -110,6 +110,8 @@ topics.push(["Vehicle driving and convoys (pilot)", "Vehicle control requires an
 destinations.push(["vehicle-control"]);
 topics.push(["Squad treatment (pilot)", "At approval the bridge selects one bleeding, treatable AI member inside the chosen on-foot squad. A squad mate and a real bandage are required. Native treatment must be observed; other injuries may remain. Players are protected."]);
 destinations.push(["healing-orders"]);
+topics.push(["Check squad execution","Choose a squad, review the command and approve it in Reforger. The latest result refreshes automatically while pending. Order installed means the native order was attached, not that movement or combat finished. Check squad execution reports AI activation, position, waypoint and authority. If control is unavailable, release it, approve that release, then recruit a currently tracked member. Player control and foreign orders stay protected."]);
+destinations.push(["ai-orders"]);
 let matches=[];
 const fold=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase();
 function show(){const i=Number(select.value),at=matches.indexOf(i),valid=at>=0;el('sargeText').textContent=valid?topics[i][1]:'No matching topics. Try another word or clear the search.';el('sargePage').textContent=valid?(at+1)+' / '+matches.length:'0 / 0';el('sargePrev').disabled=at<=0;el('sargeNext').disabled=!valid||at===matches.length-1;el('sargeWhere').hidden=!valid||!destinations[i];select.disabled=!valid;}

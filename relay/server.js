@@ -46,7 +46,7 @@ function createRelay({clock = Date.now, maxSessions = 100, lifetime = 3600000, s
           if(req.url==='/gm-request'){if(Object.keys(body).sort().join(',')!=='reader,request')throw Error('Unsupported GM envelope');return reply(202,{ok:true,record:s.gm.submit(body.request)});}
           if(req.url==='/gm-cancel'){if(Object.keys(body).sort().join(',')!=='reader,requestId')throw Error('Unsupported GM envelope');return reply(200,{record:s.gm.cancel(body.requestId)});}
           if(req.url==='/gm-status'){if(Object.keys(body).join(',')!=='reader')throw Error('Unsupported GM envelope');return reply(200,{records:s.gm.history(),groups:s.gm.groups(),capabilities:s.gm.capabilities()});}
-          if(req.url==='/gm-poll'){if(!['token','capabilities,token'].includes(Object.keys(body).sort().join(',')))throw Error('Unsupported GM envelope');if('capabilities' in body)s.gm.registerCapabilities(body.capabilities);return reply(200,{record:s.gm.poll()});}
+          if(req.url==='/gm-poll'){if(!['token','capabilities,token','capabilities,revokedTargets,token'].includes(Object.keys(body).sort().join(',')))throw Error('Unsupported GM envelope');if('capabilities' in body)s.gm.registerCapabilities(body.capabilities);if('revokedTargets' in body)s.gm.registerControlStatus(body.revokedTargets);return reply(200,{record:s.gm.poll()});}
           if(req.url==='/gm-approve'){if(Object.keys(body).sort().join(',')!=='requestId,token')throw Error('Unsupported GM envelope');return reply(200,{record:s.gm.approve(body.requestId)});}
           if(Object.keys(body).sort().join(',')!=='result,token')throw Error('Unsupported GM envelope');return reply(200,{record:s.gm.result(body.result)});
         }catch(e){return reply(409,{error:e.message});}

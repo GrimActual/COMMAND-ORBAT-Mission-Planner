@@ -1,0 +1,10 @@
+{
+  "success": false,
+  "scope": "Isolated native convoy fixture; first boarding operation stopped before convoy attachment",
+  "observed": "3 of 4 members completed boarding before the existing 60-second timeout",
+  "causeEstablished": false,
+  "productionTransportChanged": false,
+  "followUp": "Subsequent traced run passed both four-member boarding operations, physical convoy pursuit, leader route and detach. Intermittent boarding remains an acceptance risk.",
+  "gameClientLaunched": false,
+  "processStopped": true
+}

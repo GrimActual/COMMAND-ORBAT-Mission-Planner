@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "scope": "Isolated offline Electron with mocked command IPC; tests desktop behaviour, not game compliance",
+  "checks": [
+    "revoked order disabled",
+    "release retained",
+    "automatic terminal result",
+    "poll stops at terminal",
+    "recruitment wording",
+    "newest result first",
+    "EN FR DE preservation",
+    "expiry guidance",
+    "transport and healing exclude revoked",
+    "pairing clears state",
+    "mission unchanged"
+  ]
+}

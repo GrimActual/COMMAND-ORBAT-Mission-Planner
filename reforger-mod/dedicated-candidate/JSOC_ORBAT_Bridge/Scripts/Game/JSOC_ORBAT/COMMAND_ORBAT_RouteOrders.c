@@ -38,6 +38,8 @@ class COMMAND_ORBAT_RouteOrders
         if (!group || next.Count() < 1 || next.Count() > 16) return false;
         array<AIWaypoint> before = {}; group.GetWaypoints(before);
         foreach (AIWaypoint old : before) if (old && previous.Find(old) < 0) return false;
+        // Validate the full existing queue before requesting native activation.
+        if (!JSOC_ORBAT_AIOrders.EnsureActive(group).IsEmpty()) return false;
         foreach (AIWaypoint remove : before) if (remove) group.RemoveWaypoint(remove);
         foreach (AIWaypoint add : next) group.AddWaypoint(add);
         array<AIWaypoint> installed = {}; group.GetWaypoints(installed);

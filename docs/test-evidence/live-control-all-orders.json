@@ -1,0 +1,182 @@
+{
+  "scope": "Isolated real native AI; original neutral fixture; physical movement and stance checks, native setting readback, not combat or connected-player acceptance",
+  "passed": true,
+  "outcomes": [
+    {
+      "name": "navigation-fixture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "group-preflight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "move-installed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "move-travel",
+      "passed": true,
+      "detail": "34.6309"
+    },
+    {
+      "name": "hold-installed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "hold-stationary",
+      "passed": true,
+      "detail": "0.959961"
+    },
+    {
+      "name": "defend-installed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "defend-travel",
+      "passed": true,
+      "detail": "71.3494"
+    },
+    {
+      "name": "cancel-accepted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "cancel-waypoints",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "cancel-stops-travel",
+      "passed": true,
+      "detail": "0.553139"
+    },
+    {
+      "name": "route-installed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "route-travel",
+      "passed": true,
+      "detail": "36.2822"
+    },
+    {
+      "name": "follow-installed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "follow-approaches-target",
+      "passed": true,
+      "detail": "22.0283"
+    },
+    {
+      "name": "follow-moving-target",
+      "passed": true,
+      "detail": "26.4834"
+    },
+    {
+      "name": "follow-cancel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "formation-column",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "formation-staggered-column",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "formation-wedge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "formation-line",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "formation-restore",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fire-policy-open-fire",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fire-policy-hold-fire",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fire-policy-return-fire",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fire-policy-auto",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stance-stand-installed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stance-stand-physical",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "stance-crouch-installed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stance-crouch-physical",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "stance-prone-installed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stance-prone-physical",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "stance-auto-installed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "cleanup-group-retained",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fire-policy-open-fire",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "processStopped": true
+}

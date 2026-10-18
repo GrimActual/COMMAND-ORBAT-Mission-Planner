@@ -764,3 +764,7 @@ Original reviewed embark/dismount now pass actual four-member native boarding, p
 ### 18 October 2026 — integrated control development pilot
 
 Original reviewed transport, server-side COMMAND scenario snapshots, separate vehicle routes, bounded convoy pursuit and one-member native treatment now have isolated native and offline desktop evidence. Read docs/CONTROL-PILOT-RELEASE.md and docs/test-evidence/control-pilot-validation.json. Native building door metadata assessment passed without enabling entry/navigation. This is development scope; connected-human, multiplayer, combat and remaining NEXT100 acceptance work stays open.
+
+### 18 October 2026 — control execution candidate
+
+The followon.8 / bridge 0.11.1 candidate adds non-forced native activation before approved order execution, explicit recruited-control revocation, read-only execution inspection, recovery shortcuts, automatic pending-result refresh and distinct installation/delivery feedback. The original isolated fixture reproduced accepted movement with inactive AI and then verified travel with production activation. See docs/CONTROL-EXECUTION-UPDATE.md and its separately scoped receipts. Hosted-session acceptance remains open; no existing roadmap goal is removed or declared complete by these fixes.

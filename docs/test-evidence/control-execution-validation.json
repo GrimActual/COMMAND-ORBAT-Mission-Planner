@@ -1,0 +1,76 @@
+{
+  "desktopVersion": "2.9.1-dev.followon.8",
+  "bridgeVersion": "0.11.1",
+  "developmentCandidate": true,
+  "regression": {
+    "total": 881,
+    "passed": 880,
+    "failed": 0,
+    "skipped": 1
+  },
+  "checks": [
+    {
+      "name": "native",
+      "passed": true,
+      "receipt": "docs/test-evidence/live-control-native.json",
+      "outcomes": 11
+    },
+    {
+      "name": "all-orders",
+      "passed": true,
+      "receipt": "docs/test-evidence/live-control-all-orders.json",
+      "outcomes": 35
+    },
+    {
+      "name": "vehicle",
+      "passed": true,
+      "receipt": "docs/test-evidence/live-control-vehicle.json",
+      "outcomes": 7
+    },
+    {
+      "name": "convoy",
+      "passed": true,
+      "receipt": "docs/test-evidence/live-control-convoy.json",
+      "outcomes": 11
+    },
+    {
+      "name": "healing",
+      "passed": true,
+      "receipt": "docs/test-evidence/live-control-healing.json",
+      "outcomes": 4
+    },
+    {
+      "name": "snapshots",
+      "passed": true,
+      "receipt": "docs/test-evidence/live-control-snapshots.json",
+      "outcomes": 18
+    },
+    {
+      "name": "desktop",
+      "passed": true,
+      "receipt": "docs/test-evidence/live-control-desktop.json",
+      "outcomes": 11
+    },
+    {
+      "name": "packaged-ui",
+      "passed": true,
+      "receipt": "docs/test-evidence/live-control-packaged-ui.json",
+      "outcomes": 11
+    },
+    {
+      "name": "package-desktop",
+      "passed": true,
+      "receipt": "docs/test-evidence/live-control-package-desktop.json",
+      "outcomes": 0
+    }
+  ],
+  "knownFailure": {
+    "receipt": "docs/test-evidence/live-control-convoy-initial-failure.json",
+    "description": "Initial convoy boarding timed out at 3 of 4; unchanged production code passed subsequent traced run. Intermittent boarding remains unresolved."
+  },
+  "hostedMultiplayerAccepted": false,
+  "combatAccepted": false,
+  "workshopPublished": false,
+  "gameClientControlled": false,
+  "publicReleasePublished": false
+}

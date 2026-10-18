@@ -44,6 +44,23 @@ class JSOC_ORBAT_AIOrders
         foreach (AIWaypoint waypoint : waypoints) if (waypoint && waypoint != ownedWaypoint && (!ownedRoute || ownedRoute.Find(waypoint) < 0)) return "Existing in-game waypoints must be cleared by the host first";
         return "";
     }
+    // Called only after an approved command resolves and validates its exact group.
+    // A registered waypoint cannot drive a dormant group. Use native non-forced
+    // activation, never a permanent LOD override or a reset of all AI behaviour.
+    static string EnsureActive(SCR_AIGroup group)
+    {
+        if (!group) return "AI group is unavailable";
+        if (!group.IsAIActivated()) group.ActivateAI(false);
+        array<AIAgent> agents = {}; group.GetAgents(agents);
+        foreach (AIAgent agent : agents)
+        {
+            if (!agent) return "AI member is unavailable";
+            if (!agent.IsAIActivated()) agent.ActivateAI(false);
+            if (!agent.IsAIActivated()) return "Native AI member activation was refused; check scenario AI settings";
+        }
+        if (!group.IsAIActivated()) return "Native AI group activation was refused; check scenario AI settings";
+        return "";
+    }
     static AIWaypoint Create(JSOC_ORBAT_GMRequest request, SCR_AIGroup group)
     {
         if (!request || !group || (request.kind != "ai-move" && request.kind != "ai-hold")) return null;

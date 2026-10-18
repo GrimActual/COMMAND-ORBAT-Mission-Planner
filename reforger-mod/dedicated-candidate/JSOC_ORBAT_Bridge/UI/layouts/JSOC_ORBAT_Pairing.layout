@@ -6,7 +6,7 @@ FrameWidgetClass {
   TextWidgetClass : "{3132F64DB8B4CB44}UI/layouts/WidgetLibrary/TextWidgets/Text_Body.layout" {
    Name "JSOCTitle"
    Slot FrameWidgetSlot { Anchor 0 0 1 0 PositionX 16 OffsetLeft 16 PositionY 12 OffsetTop 12 SizeX 0 OffsetRight 16 SizeY 40 OffsetBottom -52 }
-   Text "COMMAND - HOST PAIRING" "Font Size" 20
+   Text "COMMAND - HOST PAIRING 0.11.1" "Font Size" 20
   }
   TextWidgetClass : "{3132F64DB8B4CB44}UI/layouts/WidgetLibrary/TextWidgets/Text_Body.layout" {
    Name "JSOCHelp"

@@ -1,0 +1,62 @@
+{
+  "success": true,
+  "scope": "Isolated real Enfusion server; actual native AI squad, selection-loss signal at roster boundary, writer-reported revocation, blocked stale order, release/recruit recovery, native hold and observed move/defend arrivals; production non-forced activation restores dormant movement; approved read-only diagnostics before/after and revoked status; no connected humans",
+  "outcomes": [
+    {
+      "id": "squad",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "lease",
+      "phase": "executed",
+      "message": "Existing squad recruited; ownership does not allow deletion"
+    },
+    {
+      "id": "revoked_diag",
+      "phase": "executed",
+      "message": "AI active: group 1, members 4/4. Leader X 4700 / Z 11950. Current waypoint: none. Authority: revoked: release and recruit again."
+    },
+    {
+      "id": "release",
+      "phase": "executed",
+      "message": "Control released; recruited squad retained"
+    },
+    {
+      "id": "new_lease",
+      "phase": "executed",
+      "message": "Existing squad recruited; ownership does not allow deletion"
+    },
+    {
+      "id": "hold",
+      "phase": "executed",
+      "message": "Timed AI hold waypoint accepted; combat reactions remain possible"
+    },
+    {
+      "id": "dormant_diag",
+      "phase": "executed",
+      "message": "AI active: group 0, members 0/4. Leader X 4700 / Z 11950. Current waypoint: SCR_TimedWaypoint. Authority: owned."
+    },
+    {
+      "id": "move",
+      "phase": "executed",
+      "message": "AI move waypoint accepted; arrival is not confirmed"
+    },
+    {
+      "id": "awake_diag",
+      "phase": "executed",
+      "message": "AI active: group 1, members 4/4. Leader X 4737.78 / Z 11950. Current waypoint: none. Authority: owned."
+    },
+    {
+      "id": "defend",
+      "phase": "executed",
+      "message": "Native defend waypoint accepted; arrival and combat outcome are unconfirmed"
+    },
+    {
+      "id": "halt",
+      "phase": "executed",
+      "message": "Companion route cancelled; combat reactions remain enabled"
+    }
+  ],
+  "processStopped": true
+}
