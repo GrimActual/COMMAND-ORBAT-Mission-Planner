@@ -790,3 +790,6 @@ Fresh native individual movement, physical stances, Hold-to-Move, snapshot resta
 
 
 18 October workflow clarification: keep Live Game Master, reviewed Workbench placement exchange, and optional in-app terrain preview separate. Game/editor windows remain separate; no experimental viewport capture is retained. Matching satellite texture/water/camera preview improvements are in followon.11 development. Workbench export/import are planned until original importer tests pass. Import must review added, moved and removed managed identities and apply through one Undo step; continuous two-way editing remains behind that gate.
+
+
+18 October source-only milestone: the original [Workbench exchange contract](docs/WORKBENCH-EXCHANGE-CONTRACT.md) and explicit-file developer tool now validate declared world/plan/exchange/layer identities, baseline hashes, exact prefab references and full transforms, then separately report added/moved/removed managed records. Twenty-two focused checks passed. Apply is always disabled; no native importer/exporter, scene change, desktop Undo integration or application control is claimed. Actual native compilation, durable identities and one-Undo round trip remain required before enabling the workflow. Existing releases and every prior roadmap item remain intact.

@@ -1,0 +1,65 @@
+{
+  "schema": "command-workbench-contract-checkpoint",
+  "version": 1,
+  "scope": "Source-only original declarative contract and explicit-file CLI; synthetic fixtures; no native editor or desktop Apply",
+  "checks": {
+    "pass": 22,
+    "fail": 0,
+    "skip": 0
+  },
+  "benchmark": {
+    "scope": "Source-only synthetic contract benchmark; no app/editor rendering or native validation",
+    "node": "v24.19.0",
+    "records": 1000,
+    "runs": 5,
+    "bytes": {
+      "mission": 398529,
+      "baseline": 193463,
+      "snapshot": 193344
+    },
+    "medianMs": {
+      "prepare": 72.78749999999997,
+      "review": 98.48379999999997
+    },
+    "samplesMs": {
+      "prepare": [
+        73.41719999999998,
+        72.78749999999997,
+        68.56689999999998,
+        73.21320000000003,
+        67.74199999999996
+      ],
+      "review": [
+        113.13839999999999,
+        104.488,
+        98.48379999999997,
+        97.87529999999992,
+        94.45270000000005
+      ]
+    },
+    "heapUsedBytes": {
+      "before": 7687824,
+      "after": 40784176
+    },
+    "moved": 334,
+    "unchanged": 666,
+    "canApply": false,
+    "heapCaveat": "No forced GC; samples do not establish retained memory or universal performance"
+  },
+  "canApply": false,
+  "nativeImporterAccepted": false,
+  "singleUndoAccepted": false,
+  "appOrGameLaunched": false,
+  "sourceIncluded": false,
+  "sourceHashes": {
+    "contract.cjs": "b787814f29464dc832c81155db813444a4d112f3e28417e0513f320895cc9106",
+    "contract.test.cjs": "01e17ed6288760b672f8ef2618a6bf38eca720933e34b68591a5036e764b34f5",
+    "cli.cjs": "b0d58722510832094d9b85f6db19796cce0ba567f3d746b81e9d4a088e70e5d6",
+    "cli.test.cjs": "32aae37ff712352372fd069b3f9798451f85960648a93b9df37f8386d507e7c8"
+  },
+  "sourceAudit": {
+    "checked": 1119,
+    "ok": true,
+    "violations": []
+  }
+}
