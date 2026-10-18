@@ -1,0 +1,16 @@
+{
+  "schema": "command-release-regression",
+  "version": 1,
+  "desktopVersion": "2.9.1-dev.followon.12",
+  "bridgeVersion": "0.11.3",
+  "date": "2026-10-18",
+  "tests": 942,
+  "pass": 941,
+  "fail": 0,
+  "skip": 1,
+  "scope": "Full declared source test command after version/operator-guide updates; does not establish fresh native multiplayer acceptance",
+  "nativeHeadingProof": "snapshot-heading-native.json",
+  "editorImportEnabled": false,
+  "boardingInvestigation": "parked; unresolved",
+  "localTerrainIncludedInPublicUploads": false
+}

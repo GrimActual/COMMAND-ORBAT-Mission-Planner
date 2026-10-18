@@ -2,8 +2,8 @@
 
 | Component | Matching content |
 |---|---|
-| Desktop | 2.9.1-dev.followon.11, separate local development candidate |
-| Bridge project | 0.11.2, required for individual AI and writer-reported target roles |
+| Desktop | 2.9.1-dev.followon.12, separate local development candidate |
+| Bridge project | 0.11.3, includes the snapshot-heading correction; individual AI/target roles need 0.11.2 or later |
 | Separate relay | Matching source with entity-control-v1 support; old negotiation can fall back |
 | Vanilla metadata | Existing 14 October 2026 snapshot; matching Catalog/Resource-Index pairs |
 | 3D renderer | Bundled Three.js 0.186.1 with MIT license, loaded only on request |
@@ -21,8 +21,10 @@ Local packages and manifests do not establish public GitHub or Workshop publicat
 The read-only terrain-section preview is desktop-only and needs no Workshop update. Bridge 0.11.2 is separately required for production AI-control, reconnect recovery and target-reporting changes.
 
 
-Development source now includes a separate bridge 0.11.3 snapshot-heading correction, compatible with this desktop. The preserved 0.11.2 package does not contain it. Review/resave older current-state snapshots whose facing is incorrect; missing original headings cannot be recovered automatically. This does not change the optional3D preview or publish a Workshop update.
+The matching bridge 0.11.3 includes the snapshot-heading correction, compatible with this desktop. Preserved 0.11.2 packages do not contain it. Review/resave older current-state snapshots whose facing is incorrect; missing original headings cannot be recovered automatically. This does not change the optional3D preview or publish a Workshop update.
 
 Français : le candidat séparé du pont 0.11.3 corrige le cap des instantanés, sans changer Companion ni l’aperçu3D. Les fichiers ayant déjà un mauvais cap doivent être vérifiés ; aucune récupération automatique du cap d’origine. Publication Workshop distincte.
 
 Deutsch: Der getrennte Bridge-Kandidat 0.11.3 korrigiert Snapshot-Richtungen ohne Änderung an Companion oder3D-Vorschau. Bereits falsche Richtungen müssen geprüft werden; die ursprüngliche Richtung lässt sich nicht automatisch wiederherstellen. Workshop-Veröffentlichung getrennt.
+
+The public release excludes the locally generated Everon elevation dataset because its declared permission does not grant public redistribution. Use your separately retained local file or supply an authorized world-specific elevation package. The importer and matching existing offline imagery are included. Workbench editor import remains disabled; a valid development review is not native identity acceptance.

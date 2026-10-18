@@ -1,6 +1,6 @@
 # Server, Workshop project and scenario files
 
-The bundle includes the matching Bridge-0.11.2/addon.gproj project. Use the existing project identity and dependency; do not enable two addon copies with the same identity. Validate and publish through Workbench when updating Workshop, and configure the server to require the actual published item/version. This bundle does not establish the current Workshop publication status or invent a Workshop item ID. Restart the hosted session after a mod update and check the pairing/review title for 0.11.2. A separate HTTPS relay must use the matching relay source, not merely a new desktop UI.
+The bundle includes the matching Bridge-0.11.3/addon.gproj project. Use the existing project identity and dependency; do not enable two addon copies with the same identity. Validate and publish through Workbench when updating Workshop, and configure the server to require the actual published item/version. This bundle does not establish the current Workshop publication status or invent a Workshop item ID. Restart the hosted session after a mod update and check the actual published Workshop version before pairing. A separate HTTPS relay must use the matching relay source, not merely a new desktop UI.
 
 ## Tracking configuration is not execution approval
 

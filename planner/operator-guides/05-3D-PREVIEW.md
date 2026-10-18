@@ -13,3 +13,5 @@ The local Everon overview dataset uses a 50-metre grid over 0–12,750 metres. I
 Game Master and Workbench stay in separate windows. This optional preview selects existing plan proxies; it does not embed an engine viewport or send edits. See [the three workflows](06-THREE-WORKFLOWS.md). Workbench editor-change import remains planned until the importer, identities, added/moved/removed review and one-step Undo are tested.
 
 [Start](00-START-HERE.md) · [Compatibility](04-COMPATIBILITY.md)
+
+Public packages do not include the locally generated Everon elevation file. Keep your existing local copy, or supply an authorized package for your own world. The program does not substitute invented heights when data is missing.
