@@ -121,3 +121,8 @@ Implemented outside the original 100-row numbering: separately approved planned-
 ## Control execution follow-up — 18 October 2026
 
 The followon.8 / bridge 0.11.1 candidate improves existing controls without renumbering these rows. Explicit revocation/recovery and read-only activation/waypoint inspection address stale control and ambiguous results. A native dormant-AI reproduction and original non-forced activation fix have separate evidence. See CONTROL-EXECUTION-UPDATE.md. Hosted gameplay acceptance and all previously deferred items remain open.
+
+
+2026-10-18 usability follow-up: automatic labels for unnamed deployment entries, pending-only cancellation with status recheck, explicit existing-squad recruitment shortcut, and synchronized EN/FR/DE help. See docs/CONTROL-USABILITY-REVIEW.md. Lone-character squad orders and universal plan/live two-way editing remain unimplemented; no new native acceptance claim.
+
+Presentation follow-up: original COMMAND shell with left navigation, actual plan/connection readouts, Deploy/Orders/Server task views, retained original controls, and clearly separate offline rehearsal. UI-only; no added native capabilities or two-way editing claim.

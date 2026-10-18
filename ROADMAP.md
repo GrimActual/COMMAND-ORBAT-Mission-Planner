@@ -768,3 +768,8 @@ Original reviewed transport, server-side COMMAND scenario snapshots, separate ve
 ### 18 October 2026 — control execution candidate
 
 The followon.8 / bridge 0.11.1 candidate adds non-forced native activation before approved order execution, explicit recruited-control revocation, read-only execution inspection, recovery shortcuts, automatic pending-result refresh and distinct installation/delivery feedback. The original isolated fixture reproduced accepted movement with inactive AI and then verified travel with production activation. See docs/CONTROL-EXECUTION-UPDATE.md and its separately scoped receipts. Hosted-session acceptance remains open; no existing roadmap goal is removed or declared complete by these fixes.
+
+
+2026-10-18 usability follow-up: automatic labels for unnamed deployment entries, pending-only cancellation with status recheck, explicit existing-squad recruitment shortcut, and synchronized EN/FR/DE help. See docs/CONTROL-USABILITY-REVIEW.md. Lone-character squad orders and universal plan/live two-way editing remain unimplemented; no new native acceptance claim.
+
+Presentation follow-up: original COMMAND shell with left navigation, actual plan/connection readouts, Deploy/Orders/Server task views, retained original controls, and clearly separate offline rehearsal. UI-only; no added native capabilities or two-way editing claim.

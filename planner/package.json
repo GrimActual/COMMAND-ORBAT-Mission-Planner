@@ -1,6 +1,6 @@
 {
   "name": "everon-orbat-workshop-bridge",
-  "version": "2.9.1-dev.followon.8",
+  "version": "2.9.1-dev.followon.9",
   "private": true,
   "description": "COMMAND \u2014 independent ORBAT and mission planner for Arma Reforger.",
   "main": "main.js",

@@ -1,0 +1,23 @@
+{
+  "desktopVersion": "2.9.1-dev.followon.9",
+  "compatibleBridge": "0.11.1",
+  "nativeBridgeChanged": false,
+  "regressionAfterLayout": {
+    "total": 881,
+    "passed": 880,
+    "failed": 0,
+    "skipped": 1
+  },
+  "finalCancellationFeedbackCheckedSeparately": true,
+  "receipts": [
+    "docs/test-evidence/command-presentation-desktop.json",
+    "docs/test-evidence/command-presentation-packaged.json",
+    "docs/test-evidence/control-usability-desktop.json",
+    "docs/test-evidence/command-presentation-performance.json"
+  ],
+  "originalLogoPreserved": true,
+  "missionFormatChanged": false,
+  "newNativeCapabilities": false,
+  "hostedAcceptanceExtended": false,
+  "published": false
+}

@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "scope": "Actual isolated Electron presentation checks; no live commands or game control",
+  "checks": [
+    "original logo and actual plan name",
+    "live task navigation separated from planning",
+    "all original module shortcuts reach original controls",
+    "offline rehearsal remains separate",
+    "all plan file actions retained",
+    "settings shortcut works",
+    "actual operation title remains user content; Undo and Redo work",
+    "EN FR DE navigation and user title preserved",
+    "compact GM workspace remains usable",
+    "full map restores navigation",
+    "laptop and narrow widths without horizontal overflow",
+    "mission unchanged and no page errors"
+  ],
+  "originalLogoPreserved": true,
+  "missionUnchanged": true,
+  "pageErrors": []
+}

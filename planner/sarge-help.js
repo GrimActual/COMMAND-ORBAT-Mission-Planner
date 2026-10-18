@@ -112,6 +112,10 @@ topics.push(["Squad treatment (pilot)", "At approval the bridge selects one blee
 destinations.push(["healing-orders"]);
 topics.push(["Check squad execution","Choose a squad, review the command and approve it in Reforger. The latest result refreshes automatically while pending. Order installed means the native order was attached, not that movement or combat finished. Check squad execution reports AI activation, position, waypoint and authority. If control is unavailable, release it, approve that release, then recruit a currently tracked member. Player control and foreign orders stay protected."]);
 destinations.push(["ai-orders"]);
+topics.push(["Control existing in-game squad","Existing in-game troops: track the intended faction in Reforger, refresh targets, then use Control existing in-game squad and choose a tracked AI member. Review recruitment and approve it in Reforger. Orders affect its existing squad. A lone character prefab is not a squad; deploy an AI group prefab for squad orders. Planner edits do not automatically edit live entities. Recruitment never allows deletion."]);
+destinations.push(["ai-orders"]);
+topics.push(["Automatic deployment names","Names are optional for deployment. Unnamed planned units receive automatic Unit labels in the reviewed deployment; the saved plan is unchanged. Select up to 16 planned entries for one reviewed batch. An AI group prefab is one entry that can spawn several soldiers; a lone character prefab does not provide a controllable squad."]);
+destinations.push(["deployment-review"]);
 let matches=[];
 const fold=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase();
 function show(){const i=Number(select.value),at=matches.indexOf(i),valid=at>=0;el('sargeText').textContent=valid?topics[i][1]:'No matching topics. Try another word or clear the search.';el('sargePage').textContent=valid?(at+1)+' / '+matches.length:'0 / 0';el('sargePrev').disabled=at<=0;el('sargeNext').disabled=!valid||at===matches.length-1;el('sargeWhere').hidden=!valid||!destinations[i];select.disabled=!valid;}
