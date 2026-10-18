@@ -126,3 +126,8 @@ The followon.8 / bridge 0.11.1 candidate improves existing controls without renu
 2026-10-18 usability follow-up: automatic labels for unnamed deployment entries, pending-only cancellation with status recheck, explicit existing-squad recruitment shortcut, and synchronized EN/FR/DE help. See docs/CONTROL-USABILITY-REVIEW.md. Lone-character squad orders and universal plan/live two-way editing remain unimplemented; no new native acceptance claim.
 
 Presentation follow-up: original COMMAND shell with left navigation, actual plan/connection readouts, Deploy/Orders/Server task views, retained original controls, and clearly separate offline rehearsal. UI-only; no added native capabilities or two-way editing claim.
+
+
+## Optional 3D planning view — added 18 October 2026
+
+Planned separate track; existing numbered goals are retained. First milestone is a read-only terrain preview with inexpensive selectable tactical proxies and synchronized 2D selection. The current sampler is limited to 300 selected points, not a full heightmap. Authorized elevation/world/alignment data, geometry-consistent picking, yaw/pitch/roll and parent-transform checks, lazy loading, camera controls, resource cleanup and measured performance are required gates. Full models, 3D editing and .ent scene import remain separate later work. See [staged scope and acceptance](THREE-D-PLANNING-VIEW-ROADMAP.md). No implementation or gameplay acceptance is claimed; current AI-control fixes remain the immediate priority.
