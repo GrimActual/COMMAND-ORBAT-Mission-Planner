@@ -1,6 +1,6 @@
 # COMMAND — aktueller Bedienleitfaden
 
-Desktop followon.10 und Bridge 0.11.2 als separater lokaler Kandidat. Frühere Versionen behalten und vor dem Wechsel eine Plansicherung exportieren. Nur einen Companion gleichzeitig ausführen.
+Desktop followon.11 und Bridge 0.11.2 als separater lokaler Kandidat. Frühere Versionen behalten und vor dem Wechsel eine Plansicherung exportieren. Nur einen Companion gleichzeitig ausführen.
 
 - Linke Navigation: Units, Draw, Brief, Assets, Game controls und Offline rehearsal. Game controls enthält Deploy, Orders und Server. Settings und Help & Sarge sind unten links.
 - Catalog/Resource-Index-Paare aus Vanilla-Assets ausdrücklich importieren. Bis zu 16 Einträge auswählen; Namen sind optional und automatische Bezeichnungen ändern den Plan nicht.

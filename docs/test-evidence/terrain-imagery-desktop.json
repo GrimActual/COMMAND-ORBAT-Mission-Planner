@@ -1,0 +1,140 @@
+{
+  "success": true,
+  "scope": "Actual isolated offline Electron, native-sampled Everon data and real bundled offline imagery; no live game or Workbench edits",
+  "metrics": {
+    "rendererLoaded": true,
+    "open": true,
+    "loading": false,
+    "disposed": false,
+    "framesRendered": 4,
+    "proxyKinds": {
+      "infantry": 0,
+      "vehicle": 0,
+      "building": 0
+    },
+    "satellite": true,
+    "satelliteSource": "Existing Everon base map",
+    "water": true,
+    "textureWidth": 2168,
+    "textureHeight": 2168,
+    "contextLost": false,
+    "visible": 0,
+    "omitted": 0,
+    "drawCalls": 2,
+    "geometries": 2,
+    "textures": 2,
+    "canvasCount": 1
+  },
+  "comparisons": [
+    {
+      "name": "Morton",
+      "expected": [
+        108,
+        115,
+        83,
+        255
+      ],
+      "actual": [
+        108,
+        115,
+        83,
+        255
+      ],
+      "pixel": [
+        878,
+        1480
+      ]
+    },
+    {
+      "name": "Montignac",
+      "expected": [
+        129,
+        138,
+        102,
+        255
+      ],
+      "actual": [
+        129,
+        138,
+        102,
+        255
+      ],
+      "pixel": [
+        816,
+        957
+      ]
+    },
+    {
+      "name": "Le Moule",
+      "expected": [
+        103,
+        99,
+        70,
+        255
+      ],
+      "actual": [
+        103,
+        99,
+        70,
+        255
+      ],
+      "pixel": [
+        451,
+        1248
+      ]
+    }
+  ],
+  "cycles": [
+    {
+      "canvasCount": 0,
+      "geometries": 0,
+      "contextLost": true,
+      "textures": 1
+    },
+    {
+      "canvasCount": 0,
+      "geometries": 0,
+      "contextLost": true,
+      "textures": 1
+    },
+    {
+      "canvasCount": 0,
+      "geometries": 0,
+      "contextLost": true,
+      "textures": 1
+    },
+    {
+      "canvasCount": 0,
+      "geometries": 0,
+      "contextLost": true,
+      "textures": 1
+    },
+    {
+      "canvasCount": 0,
+      "geometries": 0,
+      "contextLost": true,
+      "textures": 1
+    },
+    {
+      "canvasCount": 0,
+      "geometries": 0,
+      "contextLost": true,
+      "textures": 1
+    },
+    {
+      "canvasCount": 0,
+      "geometries": 0,
+      "contextLost": true,
+      "textures": 1
+    },
+    {
+      "canvasCount": 0,
+      "geometries": 0,
+      "contextLost": true,
+      "textures": 1
+    }
+  ],
+  "missionUnchanged": true,
+  "pageErrors": [],
+  "windowCaptureAdded": false
+}

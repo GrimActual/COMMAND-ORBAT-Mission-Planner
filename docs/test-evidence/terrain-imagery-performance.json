@@ -1,0 +1,67 @@
+{
+  "success": true,
+  "scope": "Matched real offline Electron sessions: same native 256x256 grid, 60 original planned proxies, 900x450 viewport and 30-step orbit drag; 3-second samples after settling. Short performance/heap observations, not sustained guarantees or a speedup claim.",
+  "metrics": [
+    {
+      "label": "prior",
+      "p95FrameMs": 16.800000000000182,
+      "stallsOver100ms": 0,
+      "heapBytes": 27600000,
+      "viewport": [
+        900,
+        450
+      ],
+      "rendererLoaded": true,
+      "open": true,
+      "loading": false,
+      "disposed": false,
+      "framesRendered": 36,
+      "proxyKinds": {
+        "infantry": 40,
+        "vehicle": 20,
+        "building": 0
+      },
+      "contextLost": false,
+      "visible": 60,
+      "omitted": 0,
+      "drawCalls": 5,
+      "geometries": 5,
+      "textures": 1,
+      "canvasCount": 1,
+      "missionUnchanged": true
+    },
+    {
+      "label": "candidate",
+      "p95FrameMs": 16.800000000000182,
+      "stallsOver100ms": 0,
+      "heapBytes": 27600000,
+      "viewport": [
+        900,
+        450
+      ],
+      "rendererLoaded": true,
+      "open": true,
+      "loading": false,
+      "disposed": false,
+      "framesRendered": 36,
+      "proxyKinds": {
+        "infantry": 40,
+        "vehicle": 20,
+        "building": 0
+      },
+      "satellite": true,
+      "satelliteSource": "Existing Everon base map",
+      "water": true,
+      "textureWidth": 2168,
+      "textureHeight": 2168,
+      "contextLost": false,
+      "visible": 60,
+      "omitted": 0,
+      "drawCalls": 6,
+      "geometries": 6,
+      "textures": 2,
+      "canvasCount": 1,
+      "missionUnchanged": true
+    }
+  ]
+}

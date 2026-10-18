@@ -1,4 +1,4 @@
-# COMMAND operator guide — followon.10 / bridge 0.11.2
+# COMMAND operator guide — followon.11 / bridge 0.11.2
 
 This guide matches the new local development candidate. Keep older installations and export a plan backup before switching. Run one Companion at a time.
 

@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "scope": "Isolated native diagnostic server; up to eight consecutive boarding and dismount cycles with per-member native behavior and seat traces; no normal game client or connected humans",
+  "cyclesCompleted": 8,
+  "membersPerCycle": 4,
+  "boardingCompletions": 8,
+  "dismountCompletions": 8,
+  "vehicleSeatInspections": 8,
+  "nativePerMemberAndSeatTraceCaptured": true,
+  "causeEstablished": false,
+  "productionTransportChanged": false,
+  "limits": "Repeated physical completion does not establish the cause of the earlier intermittent timeout. No root-cause fix is claimed. No connected humans tested.",
+  "processStopped": true,
+  "gameClientLaunched": false
+}

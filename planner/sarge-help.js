@@ -116,7 +116,7 @@ topics.push(["Control existing in-game squad","To control troops already in the 
 destinations.push(["ai-orders"]);
 topics.push(["Automatic deployment names","Names are optional. Unnamed planned units receive automatic Unit labels in the reviewed deployment without changing the saved plan. Select up to 16 planned entries for one batch. A group prefab can spawn several soldiers. With bridge 0.11.2, supported individual infantry prefabs also receive native AI controls. Confirm the game result after host approval."]);
 destinations.push(["deployment-review"]);
-topics.push(["3D planning preview", "The optional 3D preview imports an authorized elevation section with an exact world identity, metre spacing and Enfusion world heights. It shows approximate tactical proxies and shares selection with the 2D planner. It does not edit positions or send game commands. The renderer loads on demand and releases graphics resources when closed. Mouse bindings and zoom speed are saved in Settings, separately from missions."]);
+topics.push(["3D planning preview", "The optional 3D preview combines authorized elevation with matching satellite imagery and tactical proxies. Verified Everon identities can reuse the existing offline base map; custom PNG/JPEG images need north-up extent metadata. Water, texture and camera preferences stay outside missions. Selecting a proxy selects its existing 2D unit. Game Master and Workbench remain separate windows; editor change import is planned until identity and Undo checks pass."]);
 destinations.push(["terrain-preview"]);
 let matches=[];
 const fold=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase();

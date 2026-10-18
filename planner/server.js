@@ -134,7 +134,7 @@ const server = http.createServer(async (req, res) => {
     ['/jsoc-logo.png',['command-logo.png','image/png']],
     ['/command-logo.png',['command-logo.png','image/png']]
   ]);
-  for(const file of ['terrain-preview.js','terrain-preview-ui.js','terrain-preview-renderer.mjs','terrain-preview.css','command-presentation.js','command-presentation.css','vendor/three/three.module.js','vendor/three/three.core.js','vendor/three/OrbitControls.js'])staticFiles.set('/'+file,[file,file.endsWith('.css')?'text/css; charset=utf-8':'text/javascript; charset=utf-8']);
+  for(const file of ['terrain-imagery.js','terrain-preview-texture.mjs','terrain-preview.js','terrain-preview-ui.js','terrain-preview-renderer.mjs','terrain-preview.css','command-presentation.js','command-presentation.css','vendor/three/three.module.js','vendor/three/three.core.js','vendor/three/OrbitControls.js'])staticFiles.set('/'+file,[file,file.endsWith('.css')?'text/css; charset=utf-8':'text/javascript; charset=utf-8']);
   for(const file of ['leaflet.js','leaflet.css'])staticFiles.set('/vendor/leaflet/'+file,['vendor/leaflet/'+file,file.endsWith('.css')?'text/css':'text/javascript']);
   for(let x=0;x<4;x++)for(let y=0;y<4;y++)staticFiles.set('/terrain/everon/'+x+'-'+y+'.jpg',['terrain/everon/'+x+'-'+y+'.jpg','image/jpeg']);
   if(staticFiles.has(url.pathname)){

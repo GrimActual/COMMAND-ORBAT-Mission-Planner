@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "scope": "Actual offline Electron with original synthetic PNG north/south color fixture and custom-world metadata; no copied third-party assets or engine edits",
+  "customImageExtentValidated": true,
+  "northSouthPixelMatch": true,
+  "missingMetadataRejected": true,
+  "acknowledgementReset": true,
+  "translations": [
+    "en",
+    "fr",
+    "de"
+  ],
+  "missionUnchanged": true
+}

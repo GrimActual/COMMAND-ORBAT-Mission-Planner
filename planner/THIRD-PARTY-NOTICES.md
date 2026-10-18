@@ -23,3 +23,5 @@ Leaflet 1.9.4 (BSD-2-Clause), bundled with its license in vendor/leaflet/LICENSE
 Offline base terrain: 16 existing-provider tiles from https://reforger.recoil.org/map-tiles/everon/ ; attribution retained: Reforger Maps / Bewilderbeest. Lower-detail fallback only.
 
 cloudflared 2026.10.0 (unmodified portable Windows executable), Cloudflare, Apache-2.0. License: bridge-runtime/CLOUDFLARED-LICENSE.txt. Source: https://github.com/cloudflare/cloudflared/tree/2026.10.0
+
+**Optional 3D terrain imagery (followon.11)** — the local preview may reuse the existing offline Everon base-map tile files through a temporary GPU atlas. No extra provider images are downloaded or written. Attribution remains visible. Matching uses the existing 2D map transform, not a claim of exact scene reconstruction. Map/image rights remain separate from COMMAND code licensing; existing attribution does not by itself establish additional asset redistribution rights. Custom image imports require the user’s authorization and explicit world extents.

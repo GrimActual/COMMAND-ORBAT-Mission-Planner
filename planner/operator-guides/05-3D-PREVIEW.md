@@ -1,11 +1,15 @@
-# Optional 3D preview
+# Optional 3D terrain preview
 
-Open 3D preview on the map toolbar, or Settings → 3D planning preview. Import an authorized elevation JSON file, verify its expected world, scale and alignment, acknowledge permission and open the preview. Everon's canonical Eden.ent identity is prefilled. Other supported Everon world identities, including raw EmptyEden point observations, must match their own exact resource; they are not silently renamed.
+Open 3D preview from the map toolbar or Settings. Choose the elevation JSON and click **Read world from selected file**, review the displayed identity/alignment, acknowledge authorization, then open. Reading metadata is not live engine attestation. Exact world matching remains enforced.
 
-You can import a command-terrain-heightmap package or an existing command-terrain-observation whose points form a complete regular rectangular grid. The native sampler remains capped at 300 points; it does not export the whole world. A 17-by-17 local grid uses 289 points. Missing samples or irregular spacing are rejected. Heights must use Enfusion world metres. Preview files are limited to 4 MiB and 257 samples per edge. No game models or full terrain dataset are bundled.
+Known base-game Eden.ent, EmptyEden.ent and GM_Eden.ent identities can reuse the app’s existing offline Everon base-map imagery. The atlas uses the same +50-metre map offset and north/south tile mapping as the 2D planner. The texture is an image on the terrain, not building or tree geometry. Other worlds must supply their own matching imagery. Existing-provider map rights remain separate from COMMAND source licensing.
 
-Click a tactical proxy to select its existing planned unit in 2D. Colors and the inspection line show its planned faction. Sizes and shapes are approximate; structure metadata can produce a box proxy, not a reconstructed building. F focuses selection, R resets and Escape closes. Left/right mouse dragging orbits/pans; the alternate scheme swaps them. Wheel zooms toward the cursor. Settings stores mouse scheme and zoom speed outside mission files.
+For your own authorized satellite image, select PNG or JPEG, maximum 20 MiB and 4096 pixels per edge. The elevation package must contain explicit north-up imagery metadata: westWorldX, eastWorldX, southWorldZ, northWorldZ and topEdge: north. These extents must cover the terrain section. Missing or conflicting metadata is rejected; the app does not infer alignment from a filename. Satellite texture and Water surface can be switched off; preferences stay outside the plan.
 
-This first milestone changes selection only. Position editing, game commands, full .ent scene imports, satellite-image loading and detailed models are separate work. A named world file does not itself supply a browser heightmap. The renderer loads on demand and its graphics resources are disposed on close. The last imported dataset stays only in application memory for reopening.
+Water is shown at world elevation zero where the terrain lies below it. Ground inspection distinguishes the visible water surface from seabed height. Terrain heights are unchanged. A fitted overview camera and Focus selection help navigation; wheel zooms, F focuses, R resets and Escape closes.
+
+The local Everon overview dataset uses a 50-metre grid over 0–12,750 metres. It is coarse planning data, not precise building placement. The original sampler remains capped at 300 points per query; the separately requested overview was assembled from bounded diagnostic queries. World-specific server modifications need their own data. Elevation JSON remains limited to 4 MiB and 257 samples per edge.
+
+Game Master and Workbench stay in separate windows. This optional preview selects existing plan proxies; it does not embed an engine viewport or send edits. See [the three workflows](06-THREE-WORKFLOWS.md). Workbench editor-change import remains planned until the importer, identities, added/moved/removed review and one-step Undo are tested.
 
 [Start](00-START-HERE.md) · [Compatibility](04-COMPATIBILITY.md)

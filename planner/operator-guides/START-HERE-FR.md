@@ -1,6 +1,6 @@
 # COMMAND — guide opérateur actuel
 
-Bureau followon.10 et bridge 0.11.2, candidat local séparé. Conservez les versions précédentes et exportez une sauvegarde du plan avant de changer. Une seule application Companion à la fois.
+Bureau followon.11 et bridge 0.11.2, candidat local séparé. Conservez les versions précédentes et exportez une sauvegarde du plan avant de changer. Une seule application Companion à la fois.
 
 - Navigation à gauche : Units, Draw, Brief, Assets, Game controls et Offline rehearsal. Game controls regroupe Deploy, Orders et Server. Settings et Help & Sarge sont en bas à gauche.
 - Importez explicitement les paires Catalog/Resource-Index fournies dans Vanilla-Assets. Sélectionnez jusqu’à 16 entrées ; les noms sont facultatifs et les étiquettes automatiques ne modifient pas le plan.
