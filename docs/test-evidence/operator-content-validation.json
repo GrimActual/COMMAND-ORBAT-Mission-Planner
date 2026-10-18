@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "scope": "File/content validation only; no app or game launch",
+  "preservedDesktopReleaseFiles": 376,
+  "preservedDesktopHashesUnchanged": true,
+  "matchingBridgeProjectFiles": 25,
+  "activeRelativeLinksChecked": 32,
+  "catalogs": {
+    "success": true,
+    "scope": "Read-only content parsing and current catalog/index validators; no app or game launched",
+    "collections": 46,
+    "rowsIncludingRecommendedOverlap": 22159,
+    "uniqueCompletePrefabIdentities": 19438,
+    "recommendedCount": 2721,
+    "existingMetadataSnapshot": true,
+    "newGameplayVerification": false
+  },
+  "sargeLocalizationTestsPassed": 3,
+  "correctedSargeIncludedInPreservedBinary": false,
+  "gameplayFixes": false
+}

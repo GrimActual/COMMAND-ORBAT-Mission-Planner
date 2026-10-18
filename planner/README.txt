@@ -1,5 +1,5 @@
-COMMAND COMMAND ORBAT / Mission Planner 2.9.0 RC2
+COMMAND ORBAT / Mission Planner — current development guidance
 
-Read START-HERE.md for installation and the exact planner/game pairing steps.
-Read RELEASE-DEBRIEF.md for changes, test results and limits.
-Extract the entire ZIP before running the EXE.
+Start with START-HERE.md and operator-guides/00-START-HERE.md.
+The desktop followon.9 / bridge 0.11.1 operator bundle supplies vanilla catalogs, current guides and the matching mod project separately.
+Historical startup text is retained in source under docs/history/followon9-legacy-startup.

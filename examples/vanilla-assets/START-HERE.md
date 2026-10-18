@@ -5,7 +5,7 @@ Start with `Start-Here/01-Operational-Assets-Catalog.json` and its matching `01-
 ## English
 1. In COMMAND, open **Assets → Import catalog JSON** and choose the Catalog file. Do not use Import plan for a catalog.
 2. Under **Units**, choose an asset from **Assigned asset from your JSON**. Set the marker faction separately, then place the unit or apply changes.
-3. For the GM pilot, select your planned units, expand **Reviewed deployment**, and load the matching **Resource-Index.json**. Review selected units, then send the reviewed request. The in-game host must review and approve it.
+3. For the GM pilot, select your planned units, open **Game controls → Deploy → Deployment preview**, and load the matching **Resource-Index.json**. Review selected units, then send the reviewed request. The in-game host must review and approve it.
 4. The operational pair contains 2,721 character, vehicle, group, weapon and item prefab identities. Complete-Catalog supplies all 19,438 ArmaReforger prefab identities by category; COLLECTIONS.json lists each pair.
 5. Importing another catalog replaces the active chooser list. Assigned markers retain their saved asset snapshots. After restarting, reimport the catalog you want to browse. Use the matching index for the selected batch; a different collection may not contain those resources.
 
@@ -16,12 +16,12 @@ An indexed identity does not prove standalone spawnability. The complete collect
 Files are split to respect the existing 5 MB catalog / 5 MiB index and 10,000-record limits. The operational collection lets you review common unit types together. Environment collections are separate; select the appropriate matching index for their batches. Modded assets retain the existing reviewed-metadata import workflow. Regenerate or verify the snapshot after game updates.
 
 ## Français
-Dans **Assets → Import catalog JSON**, ouvrez le fichier Catalog de Start-Here. Dans **Units**, choisissez la ressource dans la liste des équipements, définissez la faction séparément et placez votre unité. Pour le pilote GM, sélectionnez les unités, ouvrez Reviewed deployment et chargez le fichier Resource-Index correspondant. Vérifiez la demande avant de l'envoyer ; l'hôte doit l'approuver dans le jeu.
+Dans **Assets → Import catalog JSON**, ouvrez le fichier Catalog de Start-Here. Dans **Units**, choisissez la ressource dans la liste des équipements, définissez la faction séparément et placez votre unité. Pour le pilote GM, sélectionnez les unités, ouvrez Game controls → Deploy → Deployment preview et chargez le fichier Resource-Index correspondant. Vérifiez la demande avant de l'envoyer ; l'hôte doit l'approuver dans le jeu.
 
 Le catalogue opérationnel contient 2 721 identités. Les collections complètes contiennent 19 438 préfabriqués du jeu de base. Un nouvel import remplace la liste active, mais les unités conservent leurs références enregistrées. Réimportez le catalogue après un redémarrage. Il s'agit de métadonnées : la présence d'un GUID ne garantit pas qu'un préfabriqué puisse être créé seul. Les modèles de base et les variantes endommagées sont inclus. Les ressources de mods et les éléments internes du moteur sont exclus. Aucun fichier du jeu n'a été modifié.
 
 ## Deutsch
-Öffnen Sie unter **Assets → Import catalog JSON** die Catalog-Datei aus Start-Here. Wählen Sie unter **Units** den Eintrag in der Ausrüstungsliste, legen Sie die Fraktion separat fest und platzieren Sie die Einheit. Für den GM-Piloten wählen Sie die Einheiten aus, öffnen Reviewed deployment und laden die passende Resource-Index-Datei. Prüfen Sie die Anfrage vor dem Senden; der Host muss sie im Spiel genehmigen.
+Öffnen Sie unter **Assets → Import catalog JSON** die Catalog-Datei aus Start-Here. Wählen Sie unter **Units** den Eintrag in der Ausrüstungsliste, legen Sie die Fraktion separat fest und platzieren Sie die Einheit. Für den GM-Piloten wählen Sie die Einheiten aus, öffnen Game controls → Deploy → Deployment preview und laden die passende Resource-Index-Datei. Prüfen Sie die Anfrage vor dem Senden; der Host muss sie im Spiel genehmigen.
 
 Die operative Sammlung enthält 2.721 Identitäten; die vollständigen Kategorien umfassen 19.438 Basis-Spiel-Prefabs. Ein neuer Import ersetzt die aktive Liste. Platzierte Einheiten behalten ihre gespeicherten Referenzen. Importieren Sie den gewünschten Katalog nach einem Neustart erneut. Dies sind Metadaten: Eine GUID bestätigt nicht, dass jedes Prefab einzeln erzeugt werden kann. Basistemplates und beschädigte Varianten sind enthalten. Mod-Ressourcen und Engine-interne Ressourcen sind ausgeschlossen. Spieldateien wurden nicht verändert.
 
