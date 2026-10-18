@@ -1,0 +1,59 @@
+{
+  "success": true,
+  "scope": "Isolated offline Electron with original synthetic height data, real bundled Three.js and actual WebGL terrain/proxy raycasts; no real-world elevation or gameplay acceptance",
+  "checks": [
+    "renderer imports only after an authorized review",
+    "infantry vehicle and building proxies from the unchanged plan",
+    "bounded instanced draw calls",
+    "real Three.js terrain raycast matches actual mesh heights",
+    "proxy picking selects the existing 2D identity",
+    "2D selection and focus remain synchronized",
+    "camera preferences stay outside mission data",
+    "close disposes instanced objects and geometry, destroys the WebGL context and removes canvas; internal texture counter retained as documented",
+    "reopen creates one renderer and Escape disposes it",
+    "EN FR DE controls retain data",
+    "mission unchanged",
+    "no page errors",
+    "Sarge destination opens 3D",
+    "narrow viewport has no dialog overflow",
+    "Settings persists camera controls"
+  ],
+  "metrics": {
+    "rendererLoaded": true,
+    "open": true,
+    "loading": false,
+    "disposed": false,
+    "framesRendered": 4,
+    "proxyKinds": {
+      "infantry": 1,
+      "vehicle": 1,
+      "building": 1
+    },
+    "contextLost": false,
+    "visible": 3,
+    "omitted": 0,
+    "drawCalls": 4,
+    "geometries": 4,
+    "textures": 1,
+    "canvasCount": 1
+  },
+  "closed": {
+    "rendererLoaded": true,
+    "open": false,
+    "loading": false,
+    "disposed": true,
+    "framesRendered": 10,
+    "proxyKinds": {
+      "infantry": 1,
+      "vehicle": 1,
+      "building": 1
+    },
+    "contextLost": true,
+    "visible": 3,
+    "omitted": 0,
+    "drawCalls": 4,
+    "geometries": 0,
+    "textures": 1,
+    "canvasCount": 0
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "tests": 891,
+  "passed": 890,
+  "failed": 0,
+  "skipped": 1,
+  "scope": "Fresh source automated regression after production control and terrain changes; not human multiplayer or combat acceptance"
+}

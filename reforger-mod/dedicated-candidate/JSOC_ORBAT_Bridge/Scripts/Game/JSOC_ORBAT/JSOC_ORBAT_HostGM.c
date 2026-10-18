@@ -43,6 +43,10 @@ class JSOC_ORBAT_GMRequest
     ref array<ref COMMAND_ORBAT_RoutePoint> waypoints = {};
     ref array<ref JSOC_ORBAT_GMEntityIntent> entities = {};
 };
+class COMMAND_ORBAT_TargetState
+{
+    string targetRequestId; string unitId; string role; string reason;
+};
 class COMMAND_ORBAT_GMOutcome
 {
     string status;
@@ -56,6 +60,38 @@ class JSOC_ORBAT_GMRecord
 class JSOC_ORBAT_GMSpawnGroup
 {
     ref map<string, ref COMMAND_ORBAT_SnapshotOrders> SnapshotOrders = new map<string, ref COMMAND_ORBAT_SnapshotOrders>();
+    ref map<string, ref COMMAND_ORBAT_CharacterGroup> CharacterGroups = new map<string, ref COMMAND_ORBAT_CharacterGroup>();
+    SCR_AIGroup ControlGroup(int index, bool requireIdentity = true)
+    {
+        if (index < 0 || index >= Entities.Count() || index >= UnitIds.Count()) return null;
+        SCR_AIGroup rootGroup = SCR_AIGroup.Cast(Entities[index]);
+        if (rootGroup) return rootGroup;
+        COMMAND_ORBAT_CharacterGroup helper;
+        if (!CharacterGroups.Find(UnitIds[index],helper) || !helper) return null;
+        if (requireIdentity && !helper.Matches(Entities[index])) return null;
+        return helper.Group;
+    }
+    bool TrackCharacter(IEntity root, string unit, out string problem)
+    {
+        problem = "";
+        if (!root || SCR_AIGroup.Cast(root) || !root.FindComponent(SCR_EditableCharacterComponent)) return true;
+        COMMAND_ORBAT_CharacterGroup helper = COMMAND_ORBAT_CharacterGroup.Create(root,problem);
+        if (!helper) return false;
+        CharacterGroups.Set(unit,helper);
+        return true;
+    }
+    bool CanReleaseCharacters()
+    {
+        foreach (string unit, COMMAND_ORBAT_CharacterGroup helper : CharacterGroups) if (helper && !helper.CanRelease()) return false;
+        return true;
+    }
+    void ReleaseCharacters()
+    {
+        foreach (string unit, COMMAND_ORBAT_CharacterGroup helper : CharacterGroups) if (helper) helper.Release();
+        CharacterGroups.Clear();
+    }
+    bool StatusAcknowledged;
+    bool RetiredPairing; // Recoverable only through a new scoped, approved recruitment.
     bool Recruited;
     bool Revoked;
     string SourceAlias;
@@ -99,8 +135,8 @@ class JSOC_ORBAT_HostGM
     protected float m_TransportPollAt;
     ref JSOC_ORBAT_GMRecord Pending;
     string Status = "No GM request loaded";
-    void Pair(string endpoint, string code) { Stop(); m_LegacyRelay = false; m_OrdersAllowed = false; m_CapabilityMode = 12; m_Context = GetGame().GetRestApi().GetContext(endpoint); if (m_Context) m_Context.SetTimeout(5); m_Code = code; GetGame().GetCallqueue().CallLater(MaintainControl,1000,true); }
-    void Stop() { m_Outcome = ""; m_ControlStatusDirty = false; m_ControlStatusRevision = 0; m_ControlStatusPosted = 0; StopHealing(); StopVehicleControl(); if (m_RestoringSnapshot) SnapshotRollback("Pairing stopped during restore; partial batch removed"); m_SnapshotReviews.Clear(); CancelTransport(); if (GetGame()) GetGame().GetCallqueue().Remove(MaintainControl); array<string> releasedLeases = {}; foreach (string releaseKey, JSOC_ORBAT_GMSpawnGroup releaseBatch : m_Owned) { ClearPreferences(releaseBatch); ClearVehicleBindings(releaseBatch); if (releaseBatch.Recruited || releaseBatch.Follows.Count() > 0) ClearControlledOrders(releaseBatch); if (releaseBatch.Recruited) releasedLeases.Insert(releaseKey); } foreach (string retiredLease : releasedLeases) m_Owned.Remove(retiredLease); if (m_Callback) { m_Callback.Stopped = true; m_Callback.Owner = null; } m_Callback = null; m_Context = null; m_Code = ""; m_Busy = false; m_OrdersAllowed = false; Pending = null; }
+    void Pair(string endpoint, string code) { Stop(); m_LegacyRelay = false; m_OrdersAllowed = false; m_CapabilityMode = 13; m_Context = GetGame().GetRestApi().GetContext(endpoint); if (m_Context) m_Context.SetTimeout(5); m_Code = code; GetGame().GetCallqueue().CallLater(MaintainControl,1000,true); }
+    void Stop() { m_Outcome = ""; m_ControlStatusDirty = false; m_ControlStatusRevision = 0; m_ControlStatusPosted = 0; StopHealing(); StopVehicleControl(); if (m_RestoringSnapshot) SnapshotRollback("Pairing stopped during restore; partial batch removed"); m_SnapshotReviews.Clear(); CancelTransport(); if (GetGame()) GetGame().GetCallqueue().Remove(MaintainControl); array<string> releasedLeases = {}; foreach (string releaseKey, JSOC_ORBAT_GMSpawnGroup releaseBatch : m_Owned) { releaseBatch.RetiredPairing = true; ClearPreferences(releaseBatch); ClearVehicleBindings(releaseBatch); if (releaseBatch.Recruited || releaseBatch.Follows.Count() > 0) ClearControlledOrders(releaseBatch); if (releaseBatch.Recruited) { releaseBatch.ReleaseCharacters(); releasedLeases.Insert(releaseKey); } } foreach (string retiredLease : releasedLeases) m_Owned.Remove(retiredLease); if (m_Callback) { m_Callback.Stopped = true; m_Callback.Owner = null; } m_Callback = null; m_Context = null; m_Code = ""; m_Busy = false; m_OrdersAllowed = false; Pending = null; }
     void Post(string action, string body)
     {
         if (!Replication.IsServer() || !m_Context || m_Busy) return;
@@ -112,6 +148,45 @@ class JSOC_ORBAT_HostGM
         }
         m_Busy = true; m_Callback = new JSOC_ORBAT_GMCallback(); m_Callback.Owner = this; m_Callback.Action = action;
         m_Context.POST(m_Callback, "gm-" + action, body);
+    }
+    protected string TargetStatesJson()
+    {
+        array<ref COMMAND_ORBAT_TargetState> states = {};
+        foreach (string batchId, JSOC_ORBAT_GMSpawnGroup batch : m_Owned)
+        {
+            if (batch.RetiredPairing || !batch.StatusAcknowledged) continue;
+            foreach (int index, IEntity entity : batch.Entities)
+            {
+                string unit = batch.UnitIds[index];
+                string role = "unsupported";
+                string reason = "This entity does not expose supported infantry or vehicle controls";
+                SCR_AIGroup rawGroup = batch.ControlGroup(index,false);
+                if (rawGroup || batch.CharacterGroups.Contains(unit))
+                {
+                    role = "infantry";
+                    SCR_AIGroup group = batch.ControlGroup(index);
+                    AIWaypoint point; batch.Orders.Find(unit,point);
+                    COMMAND_ORBAT_OwnedRoute route; array<AIWaypoint> points = {};
+                    if (batch.Routes.Find(unit,route) && route) points = route.Waypoints;
+                    if (!group) reason = "Individual AI group membership or faction changed; review it in-game before retrying";
+                    else reason = JSOC_ORBAT_AIOrders.Check(group,point,points,true);
+                    if (batch.Recruited && !LeaseValid(batch)) reason = "Control revoked; release and recruit a currently tracked AI member";
+                }
+                else if (COMMAND_ORBAT_VehicleInspection.Read(entity))
+                {
+                    role = "vehicle"; reason = "";
+                    if (JSOC_ORBAT_AIOrders.PlayerOccupies(entity)) reason = "Player-occupied vehicles are protected";
+                }
+                COMMAND_ORBAT_TargetState state = new COMMAND_ORBAT_TargetState();
+                state.targetRequestId = batchId; state.unitId = unit; state.role = role; state.reason = reason;
+                states.Insert(state);
+            }
+        }
+        JsonSaveContext json = new JsonSaveContext(); json.WriteValue("targets",states); string output = json.SaveToString();
+        if (output.IsEmpty()) return "[]";
+        int first = output.IndexOf("["); int last = output.LastIndexOf("]");
+        if (first < 0 || last < first) return "[]";
+        return output.Substring(first,last-first+1);
     }
     void Poll()
     {
@@ -127,7 +202,8 @@ class JSOC_ORBAT_HostGM
                 if (!retired.IsEmpty()) retired += ",";
                 retired += "\"" + leaseId + "\"";
             }
-            Post("poll",string.Format("{\"token\":\"%1\",\"revokedTargets\":[%2],\"capabilities\":[\"ai-orders-v1\",\"ai-tactical-v1\",\"ai-routes-v1\",\"ai-squad-control-v1\",\"ai-follow-v1\",\"ai-formation-v1\",\"ai-stance-v1\",\"ai-fire-policy-v1\",\"vehicle-inspection-v1\",\"ai-transport-v1\",\"scenario-snapshots-v1\",\"vehicle-control-v1\",\"convoy-v1\",\"ai-healing-v1\",\"ai-control-status-v1\"]}",m_Code,retired));
+            if (m_CapabilityMode >= 13)Post("poll",string.Format("{\"token\":\"%1\",\"revokedTargets\":[%2],\"targetStates\":%3,\"capabilities\":[\"ai-orders-v1\",\"ai-tactical-v1\",\"ai-routes-v1\",\"ai-squad-control-v1\",\"ai-follow-v1\",\"ai-formation-v1\",\"ai-stance-v1\",\"ai-fire-policy-v1\",\"vehicle-inspection-v1\",\"ai-transport-v1\",\"scenario-snapshots-v1\",\"vehicle-control-v1\",\"convoy-v1\",\"ai-healing-v1\",\"ai-control-status-v1\",\"entity-control-v1\"]}",m_Code,retired,TargetStatesJson()));
+            else Post("poll",string.Format("{\"token\":\"%1\",\"revokedTargets\":[%2],\"capabilities\":[\"ai-orders-v1\",\"ai-tactical-v1\",\"ai-routes-v1\",\"ai-squad-control-v1\",\"ai-follow-v1\",\"ai-formation-v1\",\"ai-stance-v1\",\"ai-fire-policy-v1\",\"vehicle-inspection-v1\",\"ai-transport-v1\",\"scenario-snapshots-v1\",\"vehicle-control-v1\",\"convoy-v1\",\"ai-healing-v1\",\"ai-control-status-v1\"]}",m_Code,retired));
         }
         else if (m_LegacyRelay) Post("poll",string.Format("{\"token\":\"%1\"}",m_Code));
         else if (m_CapabilityMode == 1) Post("poll",string.Format("{\"token\":\"%1\",\"capabilities\":[\"ai-orders-v1\"]}",m_Code));
@@ -225,7 +301,7 @@ class JSOC_ORBAT_HostGM
             return;
         }
         if (action == "poll" && !m_LegacyRelay) { m_OrdersAllowed = true; if (m_ControlStatusPosted == m_ControlStatusRevision) m_ControlStatusDirty = false; }
-        if (action == "result") { Status = "Result delivered to Companion"; Pending = null; return; }
+        if (action == "result") { JSOC_ORBAT_GMSpawnGroup acknowledged; if (m_Owned.Find(m_Expected,acknowledged)) acknowledged.StatusAcknowledged = true; Status = "Result delivered to Companion"; Pending = null; return; }
         if (data.Length() > 32768) { Status = "Oversized GM response rejected"; return; }
         JsonLoadContext json = new JsonLoadContext(); JSOC_ORBAT_GMRecord record;
         if (!json.LoadFromString(data) || !json.ReadValue("record", record) || !record || !record.request) { if (m_Healing) StopHealing(); if (m_Transport) CancelTransport(); if (m_Driving) { m_Driving.Stop(); m_Driving = null; } Pending = null; Status = "No pending GM request"; return; }
@@ -313,10 +389,12 @@ class JSOC_ORBAT_HostGM
                     }
                 }
             }
+            if (!group.CanReleaseCharacters()) { Report(request.requestId,"failed","Individual AI group changed or contains a player; removal is protected",""); return; }
             foreach (string routeUnit, COMMAND_ORBAT_OwnedRoute route : group.Routes) if (route) COMMAND_ORBAT_RouteOrders.DeleteWaypoints(route.Waypoints);
             group.Routes.Clear();
             foreach (string orderUnit, AIWaypoint orderWaypoint : group.Orders) if (orderWaypoint) SCR_EntityHelper.DeleteEntityAndChildren(orderWaypoint);
             group.Orders.Clear();
+            group.ReleaseCharacters();
             foreach (IEntity createdEntity : group.Entities) if (createdEntity) SCR_EntityHelper.DeleteEntityAndChildren(createdEntity);
             m_Owned.Remove(request.targetRequestId); Report(request.requestId, "executed", "Bridge-created group removed", ""); return;
         }
@@ -340,12 +418,23 @@ class JSOC_ORBAT_HostGM
             IEntity spawned = GetGame().SpawnEntityPrefab(resources[i], GetGame().GetWorld(), parameters);
             if (!spawned)
             {
+                created.ReleaseCharacters();
                 foreach (IEntity partial : created.Entities) if (partial) SCR_EntityHelper.DeleteEntityAndChildren(partial);
                 Report(request.requestId, "failed", "Spawn failed; partial batch removed", ""); return;
             }
             string createdId = string.Format("spawn_%1_%2", request.requestId, i);
             SnapshotTrackCreated(spawned);
             created.Entities.Insert(spawned); created.Ids.Insert(createdId); created.UnitIds.Insert(entity.unitId);
+            string characterProblem;
+            if (!created.TrackCharacter(spawned,entity.unitId,characterProblem))
+            {
+                created.ReleaseCharacters();
+                foreach (IEntity partial : created.Entities) if (partial) SCR_EntityHelper.DeleteEntityAndChildren(partial);
+                Report(request.requestId,"failed",characterProblem + "; partial spawn batch removed",""); return;
+            }
+            COMMAND_ORBAT_CharacterGroup characterHelper;
+            if (created.CharacterGroups.Find(entity.unitId,characterHelper)) m_SnapshotCapturableGroups.Insert(characterHelper.Group);
+
             if (!resultIds.IsEmpty()) resultIds += ","; resultIds += "\"" + createdId + "\"";
         }
         m_Owned.Insert(request.requestId, created); Report(request.requestId, "executed", "Approved prefab batch spawned", resultIds);
@@ -394,7 +483,7 @@ class JSOC_ORBAT_HostGM
     }
     protected void ClearVehicleBindings(JSOC_ORBAT_GMSpawnGroup batch)
     {
-        foreach (int index, IEntity root : batch.Entities) ClearVehicleBinding(batch,batch.UnitIds[index],SCR_AIGroup.Cast(root));
+        foreach (int index, IEntity root : batch.Entities) ClearVehicleBinding(batch,batch.UnitIds[index],batch.ControlGroup(index,false));
     }
     protected void BeginTransport(JSOC_ORBAT_GMRequest request)
     {
@@ -404,7 +493,7 @@ class JSOC_ORBAT_HostGM
         if (!m_Owned.Find(request.targetRequestId,squadBatch) || !m_Owned.Find(request.vehicleRequestId,vehicleBatch) || vehicleBatch.Recruited || squadBatch.Recruited && !LeaseValid(squadBatch)) { Report(request.requestId,"failed","Transport ownership or recruited authority unavailable",""); return; }
         int squadIndex = squadBatch.UnitIds.Find(request.unitId); int vehicleIndex = vehicleBatch.UnitIds.Find(request.vehicleUnitId);
         if (squadIndex < 0 || squadIndex >= squadBatch.Entities.Count() || vehicleIndex < 0 || vehicleIndex >= vehicleBatch.Entities.Count()) { Report(request.requestId,"failed","Transport identity unavailable",""); return; }
-        SCR_AIGroup group = SCR_AIGroup.Cast(squadBatch.Entities[squadIndex]);
+        SCR_AIGroup group = squadBatch.ControlGroup(squadIndex);
         array<AIWaypoint> previous = {}; COMMAND_ORBAT_OwnedRoute route; squadBatch.Routes.Find(request.unitId,route);
         if (route) previous = route.Waypoints;
         string problem = JSOC_ORBAT_AIOrders.Check(group,null,previous,request.kind == "ai-dismount");
@@ -492,7 +581,7 @@ class JSOC_ORBAT_HostGM
     }
     protected void ClearPreferences(JSOC_ORBAT_GMSpawnGroup batch)
     {
-        foreach (int index, IEntity root : batch.Entities) ClearPreference(batch,batch.UnitIds[index],SCR_AIGroup.Cast(root));
+        foreach (int index, IEntity root : batch.Entities) ClearPreference(batch,batch.UnitIds[index],batch.ControlGroup(index,false));
     }
     protected void ClearControlledOrders(JSOC_ORBAT_GMSpawnGroup batch)
     {
@@ -502,7 +591,7 @@ class JSOC_ORBAT_HostGM
         foreach (string unit, COMMAND_ORBAT_OwnedRoute route : batch.Routes)
         {
             int index = batch.UnitIds.Find(unit); SCR_AIGroup group;
-            if (index >= 0 && index < batch.Entities.Count()) group = SCR_AIGroup.Cast(batch.Entities[index]);
+            if (index >= 0 && index < batch.Entities.Count()) group = batch.ControlGroup(index,false);
             if (route && group) COMMAND_ORBAT_RouteOrders.Cancel(group,route.Waypoints);
             else if (route) COMMAND_ORBAT_RouteOrders.DeleteWaypoints(route.Waypoints);
         }
@@ -512,22 +601,23 @@ class JSOC_ORBAT_HostGM
     {
         if (!batch || !batch.Recruited || batch.Revoked || !RosterOwner || batch.Entities.Count() != 1) return false;
         IEntity source = RosterOwner.ResolveCommandEntity(batch.SourceAlias,false);
-        SCR_AIGroup group = SCR_AIGroup.Cast(batch.Entities[0]);
-        return source && source == batch.SourceCharacter && COMMAND_ORBAT_SquadControl.GroupFor(source) == group && COMMAND_ORBAT_SquadControl.SameFaction(group,batch.ControlFaction);
+        SCR_AIGroup group = batch.ControlGroup(0);
+        return source && source == batch.SourceCharacter && group && (batch.CharacterGroups.Contains(batch.SourceAlias) || COMMAND_ORBAT_SquadControl.GroupFor(source) == group) && COMMAND_ORBAT_SquadControl.SameFaction(group,batch.ControlFaction);
     }
     protected void MaintainControl()
     {
         if (!m_Context || !Replication.IsServer()) return;
         foreach (string id, JSOC_ORBAT_GMSpawnGroup batch : m_Owned)
         {
+            if (batch.RetiredPairing) continue;
             if (batch.Recruited && !LeaseValid(batch)) { if (!batch.Revoked) { ClearControlledOrders(batch); batch.Revoked = true; m_ControlStatusDirty = true; m_ControlStatusRevision++; } continue; }
-            if (!batch.Recruited && batch.Follows.Count() == 0 && batch.Preferences.Count() == 0) continue;
+            if (!batch.Recruited && batch.Follows.Count() == 0 && batch.Preferences.Count() == 0 && batch.CharacterGroups.Count() == 0) continue;
             foreach (int index, IEntity root : batch.Entities)
             {
                 string unit = batch.UnitIds[index];
                 COMMAND_ORBAT_FollowLease follow; batch.Follows.Find(unit,follow);
-                if (!batch.Recruited && !follow && !batch.Preferences.Contains(unit)) continue;
-                SCR_AIGroup group = SCR_AIGroup.Cast(root);
+                if (!batch.Recruited && !follow && !batch.Preferences.Contains(unit) && !batch.CharacterGroups.Contains(unit)) continue;
+                SCR_AIGroup group = batch.ControlGroup(index,false);
                 if ((m_Transport && m_Transport.Group == group) || (m_Healing && m_Healing.Group == group) || VehicleControlActiveFor(group))
                 {
                     continue;
@@ -535,7 +625,7 @@ class JSOC_ORBAT_HostGM
                 AIWaypoint point;
                 batch.Orders.Find(unit,point);
                 COMMAND_ORBAT_OwnedRoute route; batch.Routes.Find(unit,route); array<AIWaypoint> points = {}; if (route) points = route.Waypoints;
-                bool invalidControl = !JSOC_ORBAT_AIOrders.Check(group,point,points,true).IsEmpty(); bool invalid = invalidControl;
+                bool invalidControl = !batch.ControlGroup(index) || !JSOC_ORBAT_AIOrders.Check(group,point,points,true).IsEmpty(); bool invalid = invalidControl;
                 if (follow)
                 {
                     IEntity target; if (RosterOwner) target = RosterOwner.ResolveCommandEntity(follow.TargetAlias,true);
@@ -546,7 +636,18 @@ class JSOC_ORBAT_HostGM
                     if (route && group) COMMAND_ORBAT_RouteOrders.Cancel(group,route.Waypoints);
                     else if (route) COMMAND_ORBAT_RouteOrders.DeleteWaypoints(route.Waypoints);
                     batch.Routes.Remove(unit); batch.Orders.Remove(unit); batch.Follows.Remove(unit);
-                    if (invalidControl) { ClearPreference(batch,unit,group); if (batch.Recruited) batch.Revoked = true; }
+                    if (invalidControl)
+                    {
+                        ClearPreference(batch,unit,group);
+                        if (batch.Recruited && !batch.Revoked) { batch.Revoked = true; m_ControlStatusDirty = true; m_ControlStatusRevision++; }
+                        COMMAND_ORBAT_CharacterGroup helper;
+                        if (batch.CharacterGroups.Find(unit,helper) && helper)
+                        {
+                            SCR_EditableCharacterComponent character;
+                            if (helper.Member) character = SCR_EditableCharacterComponent.Cast(helper.Member.FindComponent(SCR_EditableCharacterComponent));
+                            if ((!helper.Member || (character && character.IsDestroyed())) && helper.Release()) batch.CharacterGroups.Remove(unit);
+                        }
+                    }
                 }
             }
         }
@@ -559,21 +660,66 @@ class JSOC_ORBAT_HostGM
     protected void Recruit(JSOC_ORBAT_GMRequest request)
     {
         if (request.version != 2 || !m_OrdersAllowed || m_CapabilityMode < 4 || !RosterOwner || !SafeKey(request.sourceEntityId)) { Report(request.requestId,"failed","Recruitment requires selected live AI and current host approval",""); return; }
-        IEntity member = RosterOwner.ResolveCommandEntity(request.sourceEntityId,false); SCR_AIGroup group = COMMAND_ORBAT_SquadControl.GroupFor(member);
-        string problem = JSOC_ORBAT_AIOrders.Check(group,null);
-        if (!problem.IsEmpty()) { Report(request.requestId,"failed",problem,""); return; }
-        string faction = RosterOwner.FactionKeyFor(member);
-        if (!COMMAND_ORBAT_SquadControl.SameFaction(group,faction)) { Report(request.requestId,"failed","Recruitment requires resolved same-faction squad membership",""); return; }
+        IEntity member = RosterOwner.ResolveCommandEntity(request.sourceEntityId,false);
+        if (!member) { Report(request.requestId,"failed","Selected AI is outside the current tracking scope",""); return; }
+        SCR_AIGroup group = COMMAND_ORBAT_SquadControl.GroupFor(member);
         int roots;
-        foreach (string priorId, JSOC_ORBAT_GMSpawnGroup prior : m_Owned) foreach (IEntity entity : prior.Entities)
+        JSOC_ORBAT_GMSpawnGroup retiredBatch;
+        string retiredId;
+        int retiredIndex = -1;
+        foreach (string priorId, JSOC_ORBAT_GMSpawnGroup prior : m_Owned) foreach (int priorIndex, IEntity entity : prior.Entities)
         {
-            if (entity == group) { Report(request.requestId,"failed","Squad is already bridge-created or recruited",""); return; }
+            if (entity == member || (group && prior.ControlGroup(priorIndex) == group))
+            {
+                if (!prior.RetiredPairing || prior.Recruited || retiredBatch) { Report(request.requestId,"failed","AI is already bridge-created or recruited",""); return; }
+                retiredBatch = prior; retiredId = priorId; retiredIndex = priorIndex;
+            }
             if (entity) roots++;
         }
-        if (roots >= 60) { Report(request.requestId,"failed","60 controlled roots maximum",""); return; }
+        if (!retiredBatch && roots >= 60) { Report(request.requestId,"failed","60 controlled roots maximum",""); return; }
+        ref COMMAND_ORBAT_CharacterGroup helper;
+        string problem;
+        AIWaypoint retainedPoint;
+        array<AIWaypoint> retainedPoints = {};
+        string retiredUnit;
+        if (retiredBatch)
+        {
+            retiredUnit = retiredBatch.UnitIds[retiredIndex];
+            group = retiredBatch.ControlGroup(retiredIndex);
+            if (!group) { Report(request.requestId,"failed","Previous pairing entity membership changed; review it in-game",""); return; }
+            retiredBatch.CharacterGroups.Find(retiredUnit,helper);
+            retiredBatch.Orders.Find(retiredUnit,retainedPoint);
+            COMMAND_ORBAT_OwnedRoute retainedRoute;
+            if (retiredBatch.Routes.Find(retiredUnit,retainedRoute) && retainedRoute) retainedPoints = retainedRoute.Waypoints;
+        }
+        if (!group)
+        {
+            helper = COMMAND_ORBAT_CharacterGroup.Create(member,problem);
+            if (!helper) { Report(request.requestId,"failed",problem,""); return; }
+            group = helper.Group;
+        }
+        problem = JSOC_ORBAT_AIOrders.Check(group,retainedPoint,retainedPoints);
+        string faction = RosterOwner.FactionKeyFor(member);
+        if (problem.IsEmpty() && !COMMAND_ORBAT_SquadControl.SameFaction(group,faction)) problem = "Recruitment requires resolved same-faction squad membership";
+        if (!problem.IsEmpty()) { if (helper && !retiredBatch) helper.Release(); Report(request.requestId,"failed",problem,""); return; }
+        // Transfer just this exact approved target. Other roots and foreign orders remain intact.
+        if (retiredBatch)
+        {
+            COMMAND_ORBAT_OwnedRoute retiredRoute;
+            if (retiredBatch.Routes.Find(retiredUnit,retiredRoute) && retiredRoute) COMMAND_ORBAT_RouteOrders.Cancel(group,retiredRoute.Waypoints);
+            ClearPreference(retiredBatch,retiredUnit,group);
+            ClearVehicleBinding(retiredBatch,retiredUnit,group);
+            retiredBatch.Orders.Remove(retiredUnit); retiredBatch.Routes.Remove(retiredUnit); retiredBatch.Follows.Remove(retiredUnit); retiredBatch.SnapshotOrders.Remove(retiredUnit);
+            retiredBatch.CharacterGroups.Remove(retiredUnit);
+            retiredBatch.Entities.Remove(retiredIndex); retiredBatch.UnitIds.Remove(retiredIndex);
+            if (retiredIndex < retiredBatch.Ids.Count()) retiredBatch.Ids.Remove(retiredIndex);
+            if (retiredBatch.Entities.IsEmpty()) m_Owned.Remove(retiredId);
+        }
         JSOC_ORBAT_GMSpawnGroup batch = new JSOC_ORBAT_GMSpawnGroup(); batch.Recruited = true; batch.SourceAlias = request.sourceEntityId; batch.SourceCharacter = member; batch.ControlFaction = faction;
-        batch.Entities.Insert(group); batch.UnitIds.Insert(request.sourceEntityId); m_Owned.Insert(request.requestId,batch);
-        Report(request.requestId,"executed","Existing squad recruited; ownership does not allow deletion","");
+        if (helper) { batch.Entities.Insert(member); batch.CharacterGroups.Set(request.sourceEntityId,helper); }
+        else batch.Entities.Insert(group);
+        batch.UnitIds.Insert(request.sourceEntityId); m_Owned.Insert(request.requestId,batch);
+        Report(request.requestId,"executed","Existing AI recruited; release retains the physical troops","");
     }
     protected void ExecuteAIOrder(JSOC_ORBAT_GMRequest request)
     {
@@ -587,14 +733,14 @@ class JSOC_ORBAT_HostGM
         if (request.kind == "ai-release")
         {
             if (m_CapabilityMode < 4 || !ownedBatch.Recruited) { Report(request.requestId,"failed","Release requires a recruited squad and supported relay",""); return; }
-            ClearControlledOrders(ownedBatch); m_Owned.Remove(request.targetRequestId);
+            ClearControlledOrders(ownedBatch); ownedBatch.ReleaseCharacters(); m_Owned.Remove(request.targetRequestId);
             Report(request.requestId,"executed","Control released; recruited squad retained",""); return;
         }
         if (request.kind == "ai-diagnose")
         {
             if (m_CapabilityMode < 12) { Report(request.requestId,"failed","Execution inspection requires updated paired support",""); return; }
-            SCR_AIGroup observed = SCR_AIGroup.Cast(ownedBatch.Entities[index]);
-            if (!observed || !observed.GetLeaderEntity()) { Report(request.requestId,"failed","Squad or leader is unavailable",""); return; }
+            SCR_AIGroup observed = ownedBatch.ControlGroup(index);
+            if (!observed || !observed.GetLeaderEntity()) { string missing = "Squad or leader is unavailable"; if (ownedBatch.CharacterGroups.Contains(request.unitId)) missing = "Individual AI membership, faction or leader is unavailable; review it in-game"; Report(request.requestId,"failed",missing,""); return; }
             array<AIAgent> members = {}; observed.GetAgents(members); int active;
             foreach (AIAgent member : members) if (member && member.IsAIActivated()) active++;
             vector position = observed.GetLeaderEntity().GetOrigin();
@@ -602,12 +748,15 @@ class JSOC_ORBAT_HostGM
             if (current) task = current.Type().ToString();
             if (task.Length() > 48) task = task.Substring(0,48);
             string authority = "owned";
+            if (ownedBatch.Recruited) authority = "recruited";
             if (ownedBatch.Recruited && !LeaseValid(ownedBatch)) authority = "revoked: release and recruit again";
             Report(request.requestId,"executed",string.Format("AI active: group %1, members %2/%3. Leader X %4 / Z %5. Current waypoint: %6. Authority: %7.",observed.IsAIActivated(),active,members.Count(),position[0],position[2],task,authority),"");
             return;
         }
         if (ownedBatch.Recruited && !LeaseValid(ownedBatch)) { ClearControlledOrders(ownedBatch); ownedBatch.Revoked = true; m_ControlStatusDirty = true; m_ControlStatusRevision++; Report(request.requestId,"failed","Recruited control expired or faction/selection changed",""); return; }
-        SCR_AIGroup group = SCR_AIGroup.Cast(ownedBatch.Entities[index]); AIWaypoint previous;
+        SCR_AIGroup group = ownedBatch.ControlGroup(index);
+        if (!group && ownedBatch.CharacterGroups.Contains(request.unitId)) { Report(request.requestId,"failed","Individual AI group membership or faction changed; review it in-game before retrying",""); return; }
+        AIWaypoint previous;
         ownedBatch.Orders.Find(request.unitId,previous);
         COMMAND_ORBAT_OwnedRoute ownedRoute; ownedBatch.Routes.Find(request.unitId,ownedRoute);
         array<AIWaypoint> previousPoints = {};
@@ -790,7 +939,7 @@ class JSOC_ORBAT_HostGM
                 IEntity root = snapshotBatch.Entities[index];
                 if (!root || JSOC_ORBAT_AIOrders.PlayerOccupies(root)) { problem = "Missing or human-controlled entities cannot be captured"; return null; }
                 COMMAND_ORBAT_SnapshotEntity captured = new COMMAND_ORBAT_SnapshotEntity(); captured.unitId = target.unitId; SnapshotPose(root,captured);
-                SCR_AIGroup group = SCR_AIGroup.Cast(root);
+                SCR_AIGroup group = snapshotBatch.ControlGroup(index);
                 if (group)
                 {
                     if (m_SnapshotCapturableGroups.Find(group) < 0) { problem = "Squad creation is not complete; wait before capturing"; return null; }
@@ -929,6 +1078,15 @@ class JSOC_ORBAT_HostGM
             SCR_AIGroup spawnedGroup = SCR_AIGroup.Cast(spawned);
             if (spawnedGroup) spawnedGroup.GetOnAllDelayedEntitySpawned().Insert(OnSnapshotGroupReady);
             m_RestoreBatch.Entities.Insert(spawned); m_RestoreBatch.UnitIds.Insert(saved.unitId); m_RestoreBatch.Ids.Insert(string.Format("spawn_%1_%2",request.requestId,m_RestoreBatch.Entities.Count()-1));
+            string characterProblem;
+            if (!m_RestoreBatch.TrackCharacter(spawned,saved.unitId,characterProblem)) { SnapshotRollback(characterProblem); return; }
+            COMMAND_ORBAT_CharacterGroup characterHelper;
+            if (m_RestoreBatch.CharacterGroups.Find(saved.unitId,characterHelper))
+            {
+                m_SnapshotReadyGroups.Insert(characterHelper.Group);
+                m_SnapshotCapturableGroups.Insert(characterHelper.Group);
+            }
+
         }
         m_RestoreDeadline = GetGame().GetWorld().GetWorldTime() + 15000;
         GetGame().GetCallqueue().CallLater(TickSnapshotRestore,100,true);
@@ -964,7 +1122,7 @@ class JSOC_ORBAT_HostGM
     {
         GetGame().GetCallqueue().Remove(TickSnapshotRestore);
         SnapshotRemoveReadyHandlers();
-        if (m_RestoreBatch) { ClearPreferences(m_RestoreBatch); foreach (string routeKey, COMMAND_ORBAT_OwnedRoute route : m_RestoreBatch.Routes) if (route) COMMAND_ORBAT_RouteOrders.DeleteWaypoints(route.Waypoints); }
+        if (m_RestoreBatch) { ClearControlledOrders(m_RestoreBatch); m_RestoreBatch.ReleaseCharacters(); foreach (string routeKey, COMMAND_ORBAT_OwnedRoute route : m_RestoreBatch.Routes) if (route) COMMAND_ORBAT_RouteOrders.DeleteWaypoints(route.Waypoints); }
         if (m_RestoreBatch)
         {
             bool protectedActor;
@@ -986,7 +1144,7 @@ class JSOC_ORBAT_HostGM
         for (int i = 0; i < m_RestoringSnapshot.entities.Count(); i++)
         {
             if (!m_RestoreBatch.Entities[i] || JSOC_ORBAT_AIOrders.PlayerOccupies(m_RestoreBatch.Entities[i])) { SnapshotRollback("Restored actor became unavailable or human-controlled"); return; }
-            COMMAND_ORBAT_SnapshotEntity saved = m_RestoringSnapshot.entities[i]; SCR_AIGroup group = SCR_AIGroup.Cast(m_RestoreBatch.Entities[i]);
+            COMMAND_ORBAT_SnapshotEntity saved = m_RestoringSnapshot.entities[i]; SCR_AIGroup group = m_RestoreBatch.ControlGroup(i);
             if (saved.group && !group) { SnapshotRollback("Restored entity type differs from snapshot"); return; }
             if (!group) { if (!saved.factionKey.IsEmpty() && COMMAND_ORBAT_TransportLease.VehicleFaction(m_RestoreBatch.Entities[i]) != saved.factionKey) { SnapshotRollback("Restored vehicle faction differs"); return; } continue; }
             array<AIAgent> agents = {}; group.GetAgents(agents);
@@ -1006,7 +1164,7 @@ class JSOC_ORBAT_HostGM
         // All fresh actors are validated before moving members or installing saved orders.
         for (int n = 0; n < m_RestoringSnapshot.entities.Count(); n++)
         {
-            COMMAND_ORBAT_SnapshotEntity entry = m_RestoringSnapshot.entities[n]; SCR_AIGroup restoredGroup = SCR_AIGroup.Cast(m_RestoreBatch.Entities[n]);
+            COMMAND_ORBAT_SnapshotEntity entry = m_RestoringSnapshot.entities[n]; SCR_AIGroup restoredGroup = m_RestoreBatch.ControlGroup(n);
             if (!restoredGroup) continue;
             array<AIAgent> members = {}; restoredGroup.GetAgents(members);
             for (int k = 0; k < entry.members.Count(); k++) SnapshotApplyPose(members[k].GetControlledEntity(),entry.members[k]);
@@ -1109,7 +1267,7 @@ class JSOC_ORBAT_HostGM
         }
         if (m_Convoys.Contains(key)) { Report(request.requestId,"failed","Detach the current convoy before assigning another vehicle order",""); return; }
         if (request.timeoutSeconds < 15 || request.timeoutSeconds > 300) { Report(request.requestId,"failed","Vehicle timeout must be 15 to 300 seconds",""); return; }
-        COMMAND_ORBAT_VehicleControlLease lease = new COMMAND_ORBAT_VehicleControlLease(); lease.Request = request; lease.Group = SCR_AIGroup.Cast(crewBatch.Entities[crewIndex]); lease.TargetVehicle = vehicleBatch.Entities[vehicleIndex];
+        COMMAND_ORBAT_VehicleControlLease lease = new COMMAND_ORBAT_VehicleControlLease(); lease.Request = request; lease.Group = crewBatch.ControlGroup(crewIndex); lease.TargetVehicle = vehicleBatch.Entities[vehicleIndex];
         if (!lease.Group || !lease.TargetVehicle) { Report(request.requestId,"failed","Owned crew group or vehicle is unavailable",""); return; }
         COMMAND_ORBAT_OwnedRoute previousRoute; array<AIWaypoint> previous = {};
         if (crewBatch.Routes.Find(request.unitId,previousRoute) && previousRoute) previous.Copy(previousRoute.Waypoints);
@@ -1196,7 +1354,7 @@ class JSOC_ORBAT_HostGM
         if (!SafeKey(request.targetRequestId) || !SafeKey(request.unitId) || !m_Owned.Find(request.targetRequestId,batch) || batch.Recruited && !LeaseValid(batch)) { Report(request.requestId,"failed","Healing squad ownership unavailable",""); return; }
         int index = batch.UnitIds.Find(request.unitId);
         if (index < 0 || index >= batch.Entities.Count()) { Report(request.requestId,"failed","Healing squad identity unavailable",""); return; }
-        SCR_AIGroup group = SCR_AIGroup.Cast(batch.Entities[index]);
+        SCR_AIGroup group = batch.ControlGroup(index);
         COMMAND_ORBAT_OwnedRoute previousRoute; array<AIWaypoint> previous = {};
         if (batch.Routes.Find(request.unitId,previousRoute) && previousRoute) previous.Copy(previousRoute.Waypoints);
         string problem = JSOC_ORBAT_AIOrders.Check(group,null,previous);

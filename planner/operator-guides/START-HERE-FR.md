@@ -1,14 +1,13 @@
 # COMMAND — guide opérateur actuel
 
-Bureau followon.9 et pont 0.11.1. L’application vérifiée reste inchangée ; ce lot fournit les ressources et les instructions corrigées. Les anciens guides internes et certains textes Sarge du binaire sont dépassés. Les corrections Sarge sont enregistrées dans les sources pour une prochaine version.
+Bureau followon.10 et bridge 0.11.2, candidat local séparé. Conservez les versions précédentes et exportez une sauvegarde du plan avant de changer. Une seule application Companion à la fois.
 
-- Navigation à gauche : Units, Draw, Brief, Assets, Game controls et Offline rehearsal. Game controls regroupe Deploy, Orders et Server. Plan files dans l’en-tête contient les fichiers et exports ; Settings et Help & Sarge sont en bas à gauche.
-- Importez Vanilla-Assets/Start-Here/01-Operational-Assets-Catalog.json par Assets → Import catalog JSON. Dans Game controls → Deploy, chargez le Resource-Index correspondant, vérifiez puis envoyez. L’hôte approuve dans Reforger. Import plan ne sert pas aux catalogues.
-- Sélectionnez jusqu’à 16 entrées. Les noms sont facultatifs. Un groupe IA peut créer plusieurs soldats ; un personnage seul ne fournit pas le groupe nécessaire aux ordres actuels.
-- Pour une escouade déjà en jeu : suivez sa faction, actualisez les cibles, choisissez Control existing in-game squad puis un membre IA suivi ; vérifiez et approuvez le recrutement. Cela ne permet pas de supprimer l’escouade.
-- Game controls → Server distingue sauvegarde de l’état courant, examen du fichier et restauration approuvée séparément. Le serveur écrit dans son profil ; ce n’est pas une sauvegarde complète du jeu. Les fichiers de configuration de suivi n’autorisent pas automatiquement des commandes.
-- Bridge-0.11.1 contient le projet Workbench correspondant. Vérifiez l’élément/version réellement publié et redémarrez la session après une mise à jour. Aucun nouveau test de jeu ni publication n’est affirmé ici.
+- Navigation à gauche : Units, Draw, Brief, Assets, Game controls et Offline rehearsal. Game controls regroupe Deploy, Orders et Server. Settings et Help & Sarge sont en bas à gauche.
+- Importez explicitement les paires Catalog/Resource-Index fournies dans Vanilla-Assets. Sélectionnez jusqu’à 16 entrées ; les noms sont facultatifs et les étiquettes automatiques ne modifient pas le plan.
+- Avec le nouveau bridge, les IA d’infanterie individuelles vivantes à pied disposent aussi de contrôles natifs. Pour des troupes déjà en jeu, sélectionnez un membre IA suivi, vérifiez le recrutement et approuvez dans Reforger. Après reconnexion, recrutez à nouveau avec l’approbation de l’hôte. Libérer conserve les troupes et ne permet pas de les supprimer.
+- Les types de cibles viennent du bridge ; les contrôles incompatibles sont désactivés. Les marqueurs du plan restent distincts du jeu. Un ordre installé ne certifie pas l’arrivée ou le comportement au combat.
+- Server distingue sauvegarde du plan, capture de l’état actuel, examen et restauration approuvée séparément. Les sauvegardes individuelles nécessitent le bridge 0.11.2.
+- Aperçu 3D : importez des altitudes autorisées et vérifiez monde/échelle/alignement. Eden.ent est préconfiguré par sa référence native. Les observations régulières du sampler existant sont acceptées ; sa limite de 300 points reste inchangée. Cliquez pour sélectionner une unité du plan. Glisser : orbite/déplacement ; molette : zoom ; F : sélection ; R : réinitialiser ; Échap : fermer. Aucune scène complète ni modèle du jeu n’est fourni.
+- Bridge-0.11.2 contient le projet correspondant. Vérifiez la publication Workshop réelle, redémarrez la session et associez à nouveau. L’édition bidirectionnelle complète, les essais humains/combat et le délai intermittent d’embarquement restent ouverts.
 
-Le délai d’embarquement intermittent, le contrôle des personnages isolés et l’édition bidirectionnelle complète restent non résolus. Les métadonnées de préfabriqués ne garantissent pas leur création autonome. L’import d’un catalogue remplace la liste active ; les marqueurs affectés conservent leurs références.
-
-[Guide détaillé en anglais](00-START-HERE.md) · [Compatibilité](04-COMPATIBILITY.md)
+[Guide détaillé](00-START-HERE.md) · [Compatibilité](04-COMPATIBILITY.md)

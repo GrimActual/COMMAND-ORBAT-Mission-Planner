@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "scope": "Isolated diagnostic server with real Everon terrain and GM navmeshes; actual singleton stand/crouch/prone physical readback, timed Hold stays within 3 metres, subsequent Move physically reaches destination; no connected humans",
+  "outcomes": [
+    {
+      "id": "single",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "own_diag",
+      "phase": "executed",
+      "message": "AI active: group 1, members 0/1. Leader X 4700 / Z 11950. Current waypoint: none. Authority: owned."
+    },
+    {
+      "id": "stance_stand",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "stance_crouch",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "stance_prone",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "auto",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "hold_before_move",
+      "phase": "executed",
+      "message": "Timed AI hold waypoint accepted; combat reactions remain possible"
+    },
+    {
+      "id": "move",
+      "phase": "executed",
+      "message": "AI move waypoint accepted; arrival is not confirmed"
+    }
+  ],
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "processStopped": true,
+  "fixtureWarning": "The plain-game-mode fixture has no radio callsign. Only the exact REPORT_MOUNT_AS missing-callsign diagnostics are classified as ambient; all other engine errors fail the test. Radio functionality is not tested."
+}

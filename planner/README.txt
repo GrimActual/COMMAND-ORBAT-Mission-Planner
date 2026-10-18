@@ -1,5 +1,3 @@
-COMMAND ORBAT / Mission Planner — current development guidance
-
-Start with START-HERE.md and operator-guides/00-START-HERE.md.
-The desktop followon.9 / bridge 0.11.1 operator bundle supplies vanilla catalogs, current guides and the matching mod project separately.
-Historical startup text is retained in source under docs/history/followon9-legacy-startup.
+COMMAND — ORBAT / Mission Planner
+Desktop 2.9.1-dev.followon.10 / bridge 0.11.2 local candidate.
+Start with operator-guides/00-START-HERE.md. The companion operator content provides explicitly imported vanilla catalogs and the matching mod project. Keep previous releases and back up your plan. New individual AI controls need the updated bridge. 3D is an optional read-only authorized-data preview.

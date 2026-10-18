@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "scope": "Read-only installed native ResourceDatabase.SearchResources query for exact registered Everon world identities; no world reconstruction or archive extraction",
+  "root": "$ArmaReforger:worlds/Eden",
+  "worlds": [
+    {
+      "addonId": "58D0FB3206B6F859",
+      "guid": "853E92315D1D9EFE",
+      "path": "worlds/Eden/Eden.ent"
+    },
+    {
+      "addonId": "58D0FB3206B6F859",
+      "guid": "55A3176BBDD01AAE",
+      "path": "worlds/Eden/EmptyEden.ent"
+    }
+  ],
+  "terrainPrefabResolved": "{5AD924374E8C7AF6}Prefabs/World/Game/Eden/GenericTerrain_Eden.et",
+  "normalGameClientLaunched": false,
+  "processStopped": true,
+  "limits": "The full-world subscene resolved but exceeded its first 90-second initialization fixture deadline. That attempt is not gameplay acceptance. Resource.Load is not used to validate .ent world files as prefabs."
+}

@@ -131,3 +131,12 @@ Presentation follow-up: original COMMAND shell with left navigation, actual plan
 ## Optional 3D planning view — added 18 October 2026
 
 Planned separate track; existing numbered goals are retained. First milestone is a read-only terrain preview with inexpensive selectable tactical proxies and synchronized 2D selection. The current sampler is limited to 300 selected points, not a full heightmap. Authorized elevation/world/alignment data, geometry-consistent picking, yaw/pitch/roll and parent-transform checks, lazy loading, camera controls, resource cleanup and measured performance are required gates. Full models, 3D editing and .ent scene import remain separate later work. See [staged scope and acceptance](THREE-D-PLANNING-VIEW-ROADMAP.md). No implementation or gameplay acceptance is claimed; current AI-control fixes remain the immediate priority.
+
+
+### 18 October 2026 — individual controls and optional 3D source candidate
+
+Original one-member native helpers now support approved, living on-foot individual infantry while retaining the physical root/prefab. Exact previous-pairing AI recovery requires a new scoped recruitment and host approval. Writer-reported target roles filter infantry, vehicle and unsupported controls. Transport, treatment and vehicle cancellation rechecks request state. See [individual controls](INDIVIDUAL-AI-CONTROL.md) and [3D preview](THREE-D-PLANNING-VIEW.md) in docs.
+
+The first read-only 3D section preview is implemented with authorized bounded height imports, approximate tactical proxies, shared 2D selection, on-demand rendering and cleanup. The native metadata query independently confirms the canonical Eden.ent world preset. Existing native terrain sampling stays capped at 300 points; it is not a full heightmap. Scene reconstruction, detailed models and 3D editing remain separate future work.
+
+Fresh native individual movement, physical stances, Hold-to-Move, snapshot restart, protection and reconnect checks passed; relevant vehicle/treatment/convoy regressions passed. Human-control signals in the protection fixture were simulated. Connected-human/combat acceptance and universal two-way editing remain open. The earlier intermittent boarding failure has not been reproduced in the latest traced pass and is not declared fixed. Existing milestone numbering and pending garrison/clearing scope remain intact. This is local development, not a public publication claim.

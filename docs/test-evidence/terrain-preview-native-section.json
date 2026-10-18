@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "scope": "Existing unchanged native sampler on the actual raw Everon world, followed by actual offline desktop import and WebGL raycasts; small nine-point local section only; no full scene reconstruction or complete heightmap",
+  "world": {
+    "addonId": "58D0FB3206B6F859",
+    "guid": "55A3176BBDD01AAE",
+    "path": "worlds/Eden/EmptyEden.ent"
+  },
+  "preconfiguredMainWorldVerified": true,
+  "nativeWorldIdentityLookup": true,
+  "samples": 9,
+  "maxRaycastErrorMeters": 0,
+  "samplerLimitUnchanged": 300,
+  "missionUnchanged": true,
+  "processStopped": true,
+  "gameClientLaunched": false,
+  "heightmapBundled": false,
+  "rawSampleDataIncluded": false,
+  "limits": "Main Eden.ent metadata is independently verified; the full main-world sampler fixture lacked its support-station managers. The tested observation is explicitly EmptyEden.ent, not silently relabeled. Imported files remain unauthenticated."
+}

@@ -1,14 +1,13 @@
 # COMMAND — aktueller Bedienleitfaden
 
-Desktop followon.9 und Bridge 0.11.1. Die geprüfte Anwendung bleibt unverändert; dieses Paket ergänzt Assets und korrigierte Anleitungen. Alte interne Starttexte und einige Sarge-Texte im Programm sind überholt. Sarge-Korrekturen liegen im Quellstand für einen späteren Build vor.
+Desktop followon.10 und Bridge 0.11.2 als separater lokaler Kandidat. Frühere Versionen behalten und vor dem Wechsel eine Plansicherung exportieren. Nur einen Companion gleichzeitig ausführen.
 
-- Linke Navigation: Units, Draw, Brief, Assets, Game controls und Offline rehearsal. Game controls enthält Deploy, Orders und Server. Plan files im Kopfbereich bietet Dateien und Exporte; Settings und Help & Sarge stehen unten links.
-- Vanilla-Assets/Start-Here/01-Operational-Assets-Catalog.json über Assets → Import catalog JSON importieren. Unter Game controls → Deploy den passenden Resource-Index laden, prüfen und senden. Der Host gibt in Reforger frei. Import plan ist nicht für Kataloge vorgesehen.
-- Bis zu 16 Planeinträge wählen. Namen sind optional. Eine KI-Gruppenvorlage kann mehrere Soldaten erzeugen; ein einzelner Charakter bietet keine Gruppe für den aktuellen Befehlspfad.
-- Vorhandene Gruppe: Fraktion erfassen, Ziele aktualisieren, Control existing in-game squad und ein erfasstes KI-Mitglied wählen; Übernahme prüfen und im Spiel freigeben. Das erlaubt kein Löschen der Gruppe.
-- Game controls → Server trennt Zustandssicherung, Dateiprüfung und gesondert freigegebene Wiederherstellung. Der Server schreibt in sein Profil; dies ist kein vollständiger Spielstand. Tracking-Konfiguration erlaubt keine automatische Befehlsfreigabe.
-- Bridge-0.11.1 enthält das passende Workbench-Projekt. Tatsächlich veröffentlichten Workshop-Eintrag und Version prüfen; nach Updates Sitzung neu starten. Hier wird kein neuer Spieltest und keine Veröffentlichung behauptet.
+- Linke Navigation: Units, Draw, Brief, Assets, Game controls und Offline rehearsal. Game controls enthält Deploy, Orders und Server. Settings und Help & Sarge sind unten links.
+- Catalog/Resource-Index-Paare aus Vanilla-Assets ausdrücklich importieren. Bis zu 16 Einträge auswählen; Namen sind optional und automatische Bezeichnungen ändern den Plan nicht.
+- Die neue Bridge steuert auch lebende einzelne Infanterie-KI zu Fuß. Vorhandene Truppen über ein erfasstes KI-Mitglied auswählen, Übernahme prüfen und in Reforger freigeben. Nach erneuter Verbindung mit Host-Freigabe erneut übernehmen. Freigeben erhält die Truppen und erlaubt kein Löschen.
+- Zieltypen meldet die Bridge; unpassende Aktionen sind deaktiviert. Planmarkierungen bleiben vom Spiel getrennt. Ein installierter Befehl bestätigt keine Ankunft oder Kampfreaktion.
+- Server trennt Plansicherung, Aufnahme aktueller Entitäten, Prüfung und separat genehmigte Wiederherstellung. Einzelcharakter-Snapshots benötigen Bridge 0.11.2.
+- 3D-Vorschau: autorisierte Höhendaten importieren und Welt/Maßstab/Ausrichtung prüfen. Eden.ent ist als native Referenz voreingestellt. Regelmäßige Berichte des vorhandenen Samplers werden akzeptiert; das 300-Punkte-Limit bleibt unverändert. Klicken wählt eine Planeinheit. Ziehen: drehen/verschieben; Rad: Zoom; F: Auswahl; R: zurücksetzen; Escape: schließen. Vollständige Szenen und Spielmodelle sind nicht enthalten.
+- Bridge-0.11.2 enthält das passende Projekt. Tatsächliche Workshop-Veröffentlichung prüfen, Sitzung neu starten und erneut koppeln. Vollständige bidirektionale Bearbeitung, menschliche/Combat-Abnahme und der gelegentliche Einstiegs-Timeout bleiben offen.
 
-Intermittierender Einstiegstimeout, Einzelcharaktersteuerung und vollständige bidirektionale Bearbeitung bleiben ungelöst. Prefab-Metadaten garantieren keine eigenständige Erzeugung. Ein Katalogimport ersetzt die aktive Liste; zugewiesene Marker behalten ihre Referenzen.
-
-[Ausführlicher englischer Leitfaden](00-START-HERE.md) · [Kompatibilität](04-COMPATIBILITY.md)
+[Ausführlicher Leitfaden](00-START-HERE.md) · [Kompatibilität](04-COMPATIBILITY.md)

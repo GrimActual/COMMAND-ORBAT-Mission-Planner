@@ -1,0 +1,225 @@
+{
+  "success": true,
+  "scope": "Isolated offline Electron with original synthetic height data, real bundled Three.js and actual WebGL terrain/proxy raycasts; no real-world elevation or gameplay acceptance",
+  "checks": [
+    "renderer imports only after an authorized review",
+    "infantry vehicle and building proxies from the unchanged plan",
+    "bounded instanced draw calls",
+    "real Three.js terrain raycast matches actual mesh heights",
+    "proxy picking selects the existing 2D identity",
+    "2D selection and focus remain synchronized",
+    "camera preferences stay outside mission data",
+    "close disposes instanced objects and geometry, destroys the WebGL context and removes canvas; internal texture counter retained as documented",
+    "reopen creates one renderer and Escape disposes it",
+    "EN FR DE controls retain data",
+    "mission unchanged",
+    "no page errors",
+    "Sarge destination opens 3D",
+    "narrow viewport has no dialog overflow",
+    "Settings persists camera controls",
+    "missing elevation leaves renderer unloaded with import guidance",
+    "incomplete elevation rejected without renderer",
+    "20 repeated open-close cycles: one canvas open, none closed, geometry disposed and context destroyed",
+    "offline mission remains unchanged after every lifecycle"
+  ],
+  "metrics": {
+    "rendererLoaded": true,
+    "open": true,
+    "loading": false,
+    "disposed": false,
+    "framesRendered": 4,
+    "proxyKinds": {
+      "infantry": 1,
+      "vehicle": 1,
+      "building": 1
+    },
+    "contextLost": false,
+    "visible": 3,
+    "omitted": 0,
+    "drawCalls": 4,
+    "geometries": 4,
+    "textures": 1,
+    "canvasCount": 1
+  },
+  "closed": {
+    "rendererLoaded": true,
+    "open": false,
+    "loading": false,
+    "disposed": true,
+    "framesRendered": 10,
+    "proxyKinds": {
+      "infantry": 1,
+      "vehicle": 1,
+      "building": 1
+    },
+    "contextLost": true,
+    "visible": 3,
+    "omitted": 0,
+    "drawCalls": 4,
+    "geometries": 0,
+    "textures": 1,
+    "canvasCount": 0
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "elapsedMs": 185,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 2,
+      "elapsedMs": 124,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 3,
+      "elapsedMs": 132,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 4,
+      "elapsedMs": 152,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 5,
+      "elapsedMs": 128,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 6,
+      "elapsedMs": 132,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 7,
+      "elapsedMs": 131,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 8,
+      "elapsedMs": 157,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 9,
+      "elapsedMs": 209,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 10,
+      "elapsedMs": 130,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 11,
+      "elapsedMs": 131,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 12,
+      "elapsedMs": 132,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 13,
+      "elapsedMs": 133,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 14,
+      "elapsedMs": 131,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 15,
+      "elapsedMs": 132,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 16,
+      "elapsedMs": 132,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 17,
+      "elapsedMs": 131,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 18,
+      "elapsedMs": 131,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 19,
+      "elapsedMs": 132,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    },
+    {
+      "cycle": 20,
+      "elapsedMs": 148,
+      "heapBytes": 23100000,
+      "geometries": 0,
+      "canvasCount": 0,
+      "contextLost": true
+    }
+  ]
+}

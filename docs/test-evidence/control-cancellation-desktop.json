@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "scope": "Isolated offline Electron and mocked IPC; no game client or native behavior claims",
+  "checks": [
+    "transport terminal cancellation skipped",
+    "transport pending cancellation succeeds",
+    "healing terminal cancellation skipped",
+    "healing pending cancellation succeeds",
+    "vehicle terminal cancellation skipped",
+    "vehicle pending cancellation succeeds",
+    "command error wrapper removed",
+    "mission unchanged",
+    "no page errors"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "success": true,
+  "scope": "Isolated diagnostic server with real Everon terrain and GM navmeshes; production singleton foreign-waypoint and membership protections, partial helper failure rollback, recruitment/release and Stop cleanup, route/stance/defend installation; diagnostic-only human-control signals, membership mutation and injected initialization failure; no connected humans",
+  "outcomes": [
+    {
+      "id": "single",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "second",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "foreign_move",
+      "phase": "failed",
+      "message": "Existing in-game waypoints must be cleared by the host first"
+    },
+    {
+      "id": "after_foreign",
+      "phase": "executed",
+      "message": "AI active: group 1, members 0/1. Leader X 4700 / Z 11950. Current waypoint: none. Authority: owned."
+    },
+    {
+      "id": "changed_move",
+      "phase": "failed",
+      "message": "Individual AI group membership or faction changed; review it in-game before retrying"
+    },
+    {
+      "id": "protected_remove",
+      "phase": "failed",
+      "message": "Individual AI group changed or contains a player; removal is protected"
+    },
+    {
+      "id": "repair",
+      "phase": "executed",
+      "message": "AI active: group 1, members 0/1. Leader X 4700 / Z 11950. Current waypoint: none. Authority: owned."
+    },
+    {
+      "id": "stance",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "route",
+      "phase": "executed",
+      "message": "Native route installed in order; travel and arrival are not confirmed"
+    },
+    {
+      "id": "defend",
+      "phase": "executed",
+      "message": "Native defend waypoint accepted; arrival and combat outcome are unconfirmed"
+    },
+    {
+      "id": "halt",
+      "phase": "executed",
+      "message": "Companion route cancelled; combat reactions remain enabled"
+    },
+    {
+      "id": "human_recruit",
+      "phase": "failed",
+      "message": "Human-controlled characters are protected"
+    },
+    {
+      "id": "recruit",
+      "phase": "executed",
+      "message": "Existing AI recruited; release retains the physical troops"
+    },
+    {
+      "id": "human_move",
+      "phase": "failed",
+      "message": "Group control is unavailable or a player occupies this group"
+    },
+    {
+      "id": "protected_release",
+      "phase": "executed",
+      "message": "Control released; recruited squad retained"
+    },
+    {
+      "id": "after_protected_release",
+      "phase": "executed",
+      "message": "AI active: group 1, members 0/1. Leader X 4705 / Z 11950. Current waypoint: none. Authority: owned."
+    },
+    {
+      "id": "rollback",
+      "phase": "failed",
+      "message": "Diagnostic helper initialization failure; partial spawn batch removed"
+    },
+    {
+      "id": "after_rollback",
+      "phase": "executed",
+      "message": "AI active: group 1, members 0/1. Leader X 4705 / Z 11950. Current waypoint: none. Authority: owned."
+    },
+    {
+      "id": "stop_recruit",
+      "phase": "executed",
+      "message": "Existing AI recruited; release retains the physical troops"
+    },
+    {
+      "id": "stop_hold",
+      "phase": "executed",
+      "message": "Timed AI hold waypoint accepted; combat reactions remain possible"
+    }
+  ],
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "processStopped": true,
+  "fixtureWarning": "The plain-game-mode fixture has no radio callsign. Only the exact REPORT_MOUNT_AS missing-callsign diagnostics are classified as ambient; all other engine errors fail the test. Radio functionality is not tested."
+}

@@ -1,6 +1,6 @@
 # Optional 3D planning view — roadmap proposal
 
-Status: planned, not implemented. This adds a staged roadmap track without replacing the 2D planner, changing existing milestones or claiming complete Workbench scene support. First milestone: **read-only 3D terrain preview with selectable tactical proxies and synchronized 2D selection**. Current AI-control correctness work remains ahead of this implementation.
+Status: first read-only milestone implemented in the followon.10 development source; see [operator and verification guide](THREE-D-PLANNING-VIEW.md). Larger tiled terrain, editing and full scene reconstruction remain planned. This adds a staged roadmap track without replacing the 2D planner, changing existing milestones or claiming complete Workbench scene support. First milestone: **read-only 3D terrain preview with selectable tactical proxies and synchronized 2D selection**. Current AI-control correctness work remains ahead of this implementation.
 
 ## Existing foundations and limits
 
@@ -30,4 +30,4 @@ A complete .ent scene importer is a separate project: metadata inspection is not
 - [Bohemia vector API](https://community.bistudio.com/wikidata/external-data/arma-reforger/EnfusionScriptAPIPublic/interfacevector.html): documented yaw/pitch/roll convention; also checked in the installed Enfusion API.
 - [Three.js MeshStandardMaterial](https://threejs.org/docs/pages/MeshStandardMaterial.html): displacement is a rendering mechanism, not a substitute for validating the terrain/picking geometry contract.
 
-References checked 18 October 2026. Recheck the selected library/engine versions when implementation begins. No Three.js dependency or renderer is installed by this roadmap addition.
+References checked 18 October 2026. Recheck the selected library/engine versions when implementation begins. The original roadmap addition installed no renderer. The later followon.10 implementation pins MIT-licensed Three.js 0.186.1 with its license and imports it on demand.

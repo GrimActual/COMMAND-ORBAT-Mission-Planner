@@ -1,0 +1,85 @@
+{
+  "success": true,
+  "scope": "Isolated diagnostic server with real Everon terrain and GM navmeshes; actual production native lone-character controller, movement, exact prefab/member snapshot capture/review/restore and removal, scoped recruitment/release/recruit; diagnostic existing-character transition and roster boundary; no connected humans",
+  "outcomes": [
+    {
+      "id": "single",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "own_diag",
+      "phase": "executed",
+      "message": "AI active: group 1, members 0/1. Leader X 4700 / Z 11950. Current waypoint: none. Authority: owned."
+    },
+    {
+      "id": "move",
+      "phase": "executed",
+      "message": "AI move waypoint accepted; arrival is not confirmed"
+    },
+    {
+      "id": "save_single",
+      "phase": "executed",
+      "message": "Saved server profile snapshot: save_single.json"
+    },
+    {
+      "id": "review_single",
+      "phase": "executed",
+      "message": "Snapshot reviewed and frozen; separate restore approval required"
+    },
+    {
+      "id": "restore",
+      "phase": "executed",
+      "message": "Approved COMMAND snapshot restored; inventory and wider game state are outside this snapshot"
+    },
+    {
+      "id": "restored_diag",
+      "phase": "executed",
+      "message": "AI active: group 1, members 1/1. Leader X 4736.79 / Z 11950. Current waypoint: none. Authority: owned."
+    },
+    {
+      "id": "remove_restore",
+      "phase": "executed",
+      "message": "Bridge-created group removed"
+    },
+    {
+      "id": "halt",
+      "phase": "executed",
+      "message": "Companion route cancelled; combat reactions remain enabled"
+    },
+    {
+      "id": "recruit_single",
+      "phase": "executed",
+      "message": "Existing AI recruited; release retains the physical troops"
+    },
+    {
+      "id": "recruited_diag",
+      "phase": "executed",
+      "message": "AI active: group 1, members 1/1. Leader X 4736.79 / Z 11950. Current waypoint: none. Authority: owned."
+    },
+    {
+      "id": "recruited_hold",
+      "phase": "executed",
+      "message": "Timed AI hold waypoint accepted; combat reactions remain possible"
+    },
+    {
+      "id": "release_single",
+      "phase": "executed",
+      "message": "Control released; recruited squad retained"
+    },
+    {
+      "id": "recruit_again",
+      "phase": "executed",
+      "message": "Existing AI recruited; release retains the physical troops"
+    },
+    {
+      "id": "release_again",
+      "phase": "executed",
+      "message": "Control released; recruited squad retained"
+    }
+  ],
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "processStopped": true,
+  "fixtureWarning": "The plain-game-mode fixture has no radio callsign. Only the exact REPORT_MOUNT_AS missing-callsign diagnostics are classified as ambient; all other engine errors fail the test. Radio functionality is not tested."
+}

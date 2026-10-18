@@ -1,0 +1,40 @@
+{
+  "success": true,
+  "scope": "Engine-identified Game Master Everon: Morton, Montignac and Le Moule; unchanged diagnostic sampler exports three 40-by-40-metre sections, nine points each, then actual offline desktop/WebGL raycasts compare all 27 sampled heights and landmark world/map coordinates; no full-world terrain export",
+  "world": {
+    "addonId": "58D0FB3206B6F859",
+    "guid": "BEF094A5F7F3211B",
+    "path": "worlds/GameMaster/GM_Eden.ent"
+  },
+  "preconfiguredMainWorldVerified": true,
+  "nativeWorldIdentityLookup": true,
+  "samples": 27,
+  "sections": [
+    {
+      "landmark": "C_LocationMorton",
+      "samples": 9,
+      "maxRaycastErrorMeters": 0,
+      "worldMapRoundTrip": true
+    },
+    {
+      "landmark": "C_LocationMontignac",
+      "samples": 9,
+      "maxRaycastErrorMeters": 0,
+      "worldMapRoundTrip": true
+    },
+    {
+      "landmark": "C_LocationLeMoule",
+      "samples": 9,
+      "maxRaycastErrorMeters": 0,
+      "worldMapRoundTrip": true
+    }
+  ],
+  "maxRaycastErrorMeters": 0,
+  "samplerLimitUnchanged": 300,
+  "missionUnchanged": true,
+  "processStopped": true,
+  "gameClientLaunched": false,
+  "heightmapBundled": false,
+  "rawSampleDataIncluded": false,
+  "limits": "Tested world is exactly GM_Eden.ent, whose engine-reported subscene is Eden.ent; no identity relabeling. Native landmark entity origins can differ from ground height, so ground is independently sampled. Actual satellite textures are not imported: UV bounds/orientation are separately tested, real image alignment remains a dataset acceptance requirement. Imported files remain unauthenticated."
+}

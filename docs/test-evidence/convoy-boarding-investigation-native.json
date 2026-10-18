@@ -1,0 +1,79 @@
+{
+  "success": true,
+  "scope": "Isolated diagnostic server with real Everon terrain and GM navmeshes; actual two-vehicle AI convoy following, cycle rejection, leader route and explicit detach through production host adapter and loopback relay; no connected humans",
+  "outcomes": [
+    {
+      "id": "squad",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "car",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "leadcrew",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "leadcar",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "embark",
+      "phase": "executed",
+      "message": "Observed transport completion: 4 of 4 members"
+    },
+    {
+      "id": "embark_leader",
+      "phase": "executed",
+      "message": "Observed transport completion: 4 of 4 members"
+    },
+    {
+      "id": "attach",
+      "phase": "executed",
+      "message": "Native convoy follow installed for 240 seconds; this is not a live convoy-state report"
+    },
+    {
+      "id": "cycle",
+      "phase": "failed",
+      "message": "Convoy cycles are not allowed"
+    },
+    {
+      "id": "drive_lead",
+      "phase": "executed",
+      "message": "Observed vehicle route: 2 of 2 points reached in order"
+    },
+    {
+      "id": "detach",
+      "phase": "executed",
+      "message": "Owned convoy follow detached or already ended; occupants remain aboard"
+    },
+    {
+      "id": "after_detach",
+      "phase": "executed",
+      "message": "Read-only vehicle seat snapshot; no occupants moved",
+      "vehicle": {
+        "capacity": 4,
+        "occupied": 4,
+        "available": 0,
+        "reserved": 0,
+        "locked": 0,
+        "inaccessible": 0,
+        "players": 0,
+        "ai": 4,
+        "other": 0,
+        "driverAvailable": 0,
+        "gunnerAvailable": 0,
+        "cargoAvailable": 0
+      }
+    }
+  ],
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "processStopped": true,
+  "fixtureWarning": "The plain-game-mode fixture has no radio callsign. Only the exact REPORT_MOUNT_AS missing-callsign diagnostics are classified as ambient; all other engine errors fail the test. Radio functionality is not tested."
+}

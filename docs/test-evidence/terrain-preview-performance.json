@@ -1,0 +1,61 @@
+{
+  "success": true,
+  "scope": "Isolated offline Electron with original synthetic height data, real bundled Three.js and actual WebGL terrain/proxy raycasts; no real-world elevation or gameplay acceptance",
+  "checks": [
+    "renderer imports only after an authorized review",
+    "60 tactical proxies from the unchanged plan",
+    "bounded instanced draw calls",
+    "real Three.js terrain raycast matches actual mesh heights",
+    "proxy picking selects the existing 2D identity",
+    "2D selection and focus remain synchronized",
+    "camera preferences stay outside mission data",
+    "maximum 257-by-257 height grid with 60 instanced proxies",
+    "idle view performs no continuous renders",
+    "close disposes instanced objects and geometry, destroys the WebGL context and removes canvas; internal texture counter retained as documented",
+    "reopen creates one renderer and Escape disposes it",
+    "EN FR DE controls retain data",
+    "mission unchanged",
+    "no page errors"
+  ],
+  "metrics": {
+    "rendererLoaded": true,
+    "open": true,
+    "loading": false,
+    "disposed": false,
+    "framesRendered": 4,
+    "contextLost": false,
+    "visible": 60,
+    "omitted": 0,
+    "drawCalls": 3,
+    "geometries": 3,
+    "textures": 1,
+    "canvasCount": 1
+  },
+  "closed": {
+    "rendererLoaded": true,
+    "open": false,
+    "loading": false,
+    "disposed": true,
+    "framesRendered": 10,
+    "contextLost": true,
+    "visible": 60,
+    "omitted": 0,
+    "drawCalls": 3,
+    "geometries": 0,
+    "textures": 1,
+    "canvasCount": 0
+  },
+  "performance": {
+    "p95FrameMs": 16.800000000000182,
+    "stallsOver100ms": 0,
+    "heapBytes": 26000000
+  },
+  "fixture": {
+    "columns": 257,
+    "rows": 257,
+    "vertices": 66049,
+    "triangles": 131072,
+    "proxies": 60
+  },
+  "limitations": "Short isolated synthetic sample, not a universal performance or real terrain alignment guarantee"
+}
