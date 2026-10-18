@@ -844,11 +844,11 @@ class JSOC_ORBAT_HostGM
     {
         if (entity.GetPrefabData()) pose.resourceName = entity.GetPrefabData().GetPrefabName();
         vector origin = entity.GetOrigin(); pose.worldX = origin[0]; pose.worldY = origin[1]; pose.worldZ = origin[2];
-        vector angles = entity.GetAngles(); pose.headingDegrees = Math.Mod(angles[0] + 360,360);
+        vector angles = entity.GetYawPitchRoll(); pose.headingDegrees = Math.Mod(angles[0] + 360,360);
     }
     protected void SnapshotApplyPose(IEntity entity, COMMAND_ORBAT_SnapshotPose pose)
     {
-        entity.SetOrigin(Vector(pose.worldX,pose.worldY,pose.worldZ)); entity.SetAngles(Vector(pose.headingDegrees,0,0));
+        entity.SetOrigin(Vector(pose.worldX,pose.worldY,pose.worldZ)); entity.SetYawPitchRoll(Vector(pose.headingDegrees,0,0));
     }
     protected bool SnapshotResource(ResourceName name)
     {

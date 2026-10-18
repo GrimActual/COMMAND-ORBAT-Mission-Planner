@@ -1,0 +1,58 @@
+{
+  "schema": "command-workbench-inventory-native",
+  "version": 1,
+  "date": "2026-10-18",
+  "engineBuild": 192142,
+  "scope": "Actual original read-only Workbench plugin compiled and executed on owned synthetic text layers; not a native importer or durable identity test",
+  "entities": 5,
+  "completeScans": 2,
+  "worldPathMatched": true,
+  "layerPaths": [
+    "default"
+  ],
+  "yawPitchRollMatrixReconstruction": {
+    "pass": 5,
+    "maximumError": 6.357302595461078e-8
+  },
+  "sourceMappings": [
+    {
+      "fixtureName": "COMMAND_ProbeNorth",
+      "before": "0x0000000000000001 {}",
+      "after": "0x0000000000000002 {}"
+    },
+    {
+      "fixtureName": "COMMAND_ProbeEast",
+      "before": "0x0000000000000002 {}",
+      "after": "0x0000000000000001 {}"
+    },
+    {
+      "fixtureName": "COMMAND_ProbeSouth",
+      "before": "0x0000000000000003 {}",
+      "after": "0x0000000000000003 {}"
+    },
+    {
+      "fixtureName": "COMMAND_ProbeWest",
+      "before": "0x0000000000000004 {}",
+      "after": "0x0000000000000004 {}"
+    },
+    {
+      "fixtureName": "COMMAND_ProbeTilted",
+      "before": "0x0000000000000005 {}",
+      "after": "0x0000000000000005 {}"
+    }
+  ],
+  "layerOrderChangedOnly": true,
+  "editsByPlugin": false,
+  "identityPersistenceVerified": false,
+  "applyEnabled": false,
+  "editorModulesClosed": true,
+  "shutdownClean": false,
+  "shutdownLimit": "Engine reported GenericEntity and GenericEntityClass instance leaks at Workbench exit; module-close success is not a clean-lifetime proof",
+  "normalGameClientLaunched": false,
+  "limits": [
+    "Rebinding is observed only in synthetic text layers without persisted entity IDs; behavior of editor-saved persistent IDs remains unverified",
+    "GetResourceName returned the instance name for these plain entities; it cannot be treated as an exact prefab reference",
+    "Save/reopen/rename/copy/delete and native rollback acceptance remain pending"
+  ],
+  "pluginSourceSha256": "6dc07dea4b7e223406091e9458357d8cefc6a3d612563211dae8d546e2dcdb05"
+}

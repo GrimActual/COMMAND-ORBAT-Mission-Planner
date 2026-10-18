@@ -804,3 +804,11 @@ Fresh native individual movement, physical stances, Hold-to-Move, snapshot resta
 - Verified: 41 focused checks; full regression936pass/0fail/1skip; actual isolated offline generic desktop batch edit, single Undo/Redo and stale/invalid rejection on small and1,000-managed-unit synthetic fixtures. Source preparation median159ms/5runs; large desktop call1216ms includingIPC/render/storage. Profile larger interactive imports before enabling them.
 - Pending: original native Workbench importer/exporter compilation, durable identity acrosssave/reopen/copy, protected layer scans, exact world/transform round-trip, partial failure rollback and full native/desktop acceptance. Import editor changes stays planned/disabled; no public release or bridge change.
 - Original50-task count remains47complete. Boarding tasks32–34 need new reproducing evidence; no unobserved cause or fix claimed.
+
+
+### 18 October 2026 — boarding parked; native transform and editor-inventory progress
+
+- Boarding tasks 32–34 are explicitly parked at the user's request. Original50-task count remains 47; no cause/fix acceptance claimed and no boarding test repeated.
+- Fixed production server-snapshot heading capture and member application to use explicit yaw/pitch/roll APIs instead of X/Y/Z angle APIs. Actual native helper + disk JSON comparison passed1/5 before and 5/5 after, zero script errors. Format1 and desktop compatibility retained; prior incorrect file headings need review/resave. Separate local bridge 0.11.3 candidate; no public publication. Paired restart/gameplay acceptance is not inferred from this targeted gate.
+- Original read-only WorkbenchGame inventory compiled and scanned five synthetic entities in two cases, verifying native layer membership and YPR/matrix reconstruction. Reordering a text layer without persisted IDs rebound two IDs: these cannot serve as managed identity. Saved-scene identity tests and original importer remain pending. Engine shutdown instance-leak diagnostics keep cleanup acceptance open; Apply remains disabled.
+- New preparation tools do not launch executables or overwrite existing destinations. Five preparation checks passed. Existing desktop/native regression gates are retained; only changed paths tested.

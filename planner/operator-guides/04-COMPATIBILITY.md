@@ -19,3 +19,10 @@ Local packages and manifests do not establish public GitHub or Workshop publicat
 [Start](00-START-HERE.md)
 
 The read-only terrain-section preview is desktop-only and needs no Workshop update. Bridge 0.11.2 is separately required for production AI-control, reconnect recovery and target-reporting changes.
+
+
+Development source now includes a separate bridge 0.11.3 snapshot-heading correction, compatible with this desktop. The preserved 0.11.2 package does not contain it. Review/resave older current-state snapshots whose facing is incorrect; missing original headings cannot be recovered automatically. This does not change the optional3D preview or publish a Workshop update.
+
+Français : le candidat séparé du pont 0.11.3 corrige le cap des instantanés, sans changer Companion ni l’aperçu3D. Les fichiers ayant déjà un mauvais cap doivent être vérifiés ; aucune récupération automatique du cap d’origine. Publication Workshop distincte.
+
+Deutsch: Der getrennte Bridge-Kandidat 0.11.3 korrigiert Snapshot-Richtungen ohne Änderung an Companion oder3D-Vorschau. Bereits falsche Richtungen müssen geprüft werden; die ursprüngliche Richtung lässt sich nicht automatisch wiederherstellen. Workshop-Veröffentlichung getrennt.

@@ -1,0 +1,223 @@
+{
+  "schema": "command-snapshot-heading-native",
+  "version": 1,
+  "date": "2026-10-18",
+  "engine": "1.8.0.13",
+  "scope": "Native production pose helpers and actual profile JSON; synthetic entities, not full paired restore",
+  "before": {
+    "cases": [
+      {
+        "requestedYawPitchRoll": [
+          0,
+          0,
+          0
+        ],
+        "expectedHeading": 0,
+        "capturedHeading": 0,
+        "restoredYawPitchRoll": [
+          0,
+          0,
+          0
+        ],
+        "matrixError": 0,
+        "fileWritten": true,
+        "fileRead": true,
+        "headingMatches": true,
+        "positionMatches": true
+      },
+      {
+        "requestedYawPitchRoll": [
+          90,
+          0,
+          0
+        ],
+        "expectedHeading": 90,
+        "capturedHeading": 0,
+        "restoredYawPitchRoll": [
+          0,
+          0,
+          0
+        ],
+        "matrixError": 1.4142134189605713,
+        "fileWritten": true,
+        "fileRead": true,
+        "headingMatches": false,
+        "positionMatches": true
+      },
+      {
+        "requestedYawPitchRoll": [
+          180,
+          0,
+          0
+        ],
+        "expectedHeading": 180,
+        "capturedHeading": 0,
+        "restoredYawPitchRoll": [
+          0,
+          0,
+          0
+        ],
+        "matrixError": 1.9999998807907104,
+        "fileWritten": true,
+        "fileRead": true,
+        "headingMatches": false,
+        "positionMatches": true
+      },
+      {
+        "requestedYawPitchRoll": [
+          270,
+          0,
+          0
+        ],
+        "expectedHeading": 270,
+        "capturedHeading": 0,
+        "restoredYawPitchRoll": [
+          0,
+          0,
+          0
+        ],
+        "matrixError": 1.4142131805419922,
+        "fileWritten": true,
+        "fileRead": true,
+        "headingMatches": false,
+        "positionMatches": true
+      },
+      {
+        "requestedYawPitchRoll": [
+          135,
+          20,
+          -10
+        ],
+        "expectedHeading": 135,
+        "capturedHeading": 20,
+        "restoredYawPitchRoll": [
+          0,
+          20,
+          0
+        ],
+        "matrixError": 1.8477591276168823,
+        "fileWritten": true,
+        "fileRead": true,
+        "headingMatches": false,
+        "positionMatches": true
+      }
+    ],
+    "pass": 1,
+    "scriptErrors": 0
+  },
+  "after": {
+    "cases": [
+      {
+        "requestedYawPitchRoll": [
+          0,
+          0,
+          0
+        ],
+        "expectedHeading": 0,
+        "capturedHeading": 0,
+        "restoredYawPitchRoll": [
+          0,
+          0,
+          0
+        ],
+        "matrixError": 0,
+        "fileWritten": true,
+        "fileRead": true,
+        "headingMatches": true,
+        "positionMatches": true
+      },
+      {
+        "requestedYawPitchRoll": [
+          90,
+          0,
+          0
+        ],
+        "expectedHeading": 90,
+        "capturedHeading": 90,
+        "restoredYawPitchRoll": [
+          90,
+          0,
+          0
+        ],
+        "matrixError": 0,
+        "fileWritten": true,
+        "fileRead": true,
+        "headingMatches": true,
+        "positionMatches": true
+      },
+      {
+        "requestedYawPitchRoll": [
+          180,
+          0,
+          0
+        ],
+        "expectedHeading": 180,
+        "capturedHeading": 180.00001525878906,
+        "restoredYawPitchRoll": [
+          -179.9999542236328,
+          0,
+          0
+        ],
+        "matrixError": 4.7683712978141557e-7,
+        "fileWritten": true,
+        "fileRead": true,
+        "headingMatches": true,
+        "positionMatches": true
+      },
+      {
+        "requestedYawPitchRoll": [
+          270,
+          0,
+          0
+        ],
+        "expectedHeading": 270,
+        "capturedHeading": 270.0000305175781,
+        "restoredYawPitchRoll": [
+          -89.99993896484375,
+          0,
+          0
+        ],
+        "matrixError": 4.7683710135970614e-7,
+        "fileWritten": true,
+        "fileRead": true,
+        "headingMatches": true,
+        "positionMatches": true
+      },
+      {
+        "requestedYawPitchRoll": [
+          135,
+          20,
+          -10
+        ],
+        "expectedHeading": 135,
+        "capturedHeading": 135,
+        "restoredYawPitchRoll": [
+          135.00001525878906,
+          0,
+          0
+        ],
+        "matrixError": 0,
+        "fileWritten": true,
+        "fileRead": true,
+        "headingMatches": true,
+        "positionMatches": true
+      }
+    ],
+    "pass": 5,
+    "scriptErrors": 0
+  },
+  "productionChanges": [
+    "Capture heading with GetYawPitchRoll instead of XYZ GetAngles",
+    "Apply heading with SetYawPitchRoll instead of XYZ SetAngles"
+  ],
+  "hostSourceSha256": "366c395a2610d1f764c82756cd1f94ee4ee5e3d2dd151f89740acb4983662d8f",
+  "probeSourceSha256": "ba46b34c199208b0fbce01c8ecd389804afd6287869bf54c4505e012ca90c61f",
+  "processesStopped": true,
+  "normalGameClientLaunched": false,
+  "limits": [
+    "Test invokes production pose helpers and real JSON disk round trip with synthetic entities; full paired restart workflow was not repeated",
+    "Version1 snapshots intentionally store heading, not complete pitch/roll",
+    "Existing snapshots with an already-incorrect heading cannot recover the original angle automatically",
+    "Boarding remains parked and unmodified"
+  ]
+}
