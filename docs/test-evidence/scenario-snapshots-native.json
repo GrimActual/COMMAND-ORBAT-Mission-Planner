@@ -1,0 +1,272 @@
+{
+  "success": true,
+  "scope": "Actual isolated Enfusion diagnostic server profile JSON write, process restart, no-spawn review, separate approved restore, supported squad setting, frozen review identity and malformed file/addon/prefab rejection through the production host bridge and loopback relay",
+  "outcomes": [
+    {
+      "id": "plan1",
+      "phase": "executed",
+      "message": "Saved server profile snapshot: plan1.json",
+      "snapshot": {
+        "snapshotName": "plan1",
+        "mode": "planned",
+        "entityCount": 1,
+        "world": "Worlds/BridgeRuntime.ent",
+        "requiredAddons": [
+          "5614BBCCBB55ED1C",
+          "58D0FB3206B6F859",
+          "6A969EB0C5012BB9"
+        ],
+        "entities": [
+          {
+            "resourceName": "{4A71F755A4513227}Prefabs/Vehicles/Wheeled/M998/M1025.et",
+            "worldX": 4710,
+            "worldY": 25.40625,
+            "worldZ": 11950,
+            "headingDegrees": 0,
+            "unitId": "plannedCar",
+            "factionKey": "",
+            "memberCount": 0,
+            "orderCount": 0,
+            "ordersText": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "squad",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "car",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "stance",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "move",
+      "phase": "executed",
+      "message": "AI move waypoint accepted; arrival is not confirmed"
+    },
+    {
+      "id": "current1",
+      "phase": "executed",
+      "message": "Saved server profile snapshot: current1.json",
+      "snapshot": {
+        "snapshotName": "current1",
+        "mode": "current",
+        "entityCount": 2,
+        "world": "Worlds/BridgeRuntime.ent",
+        "requiredAddons": [
+          "5614BBCCBB55ED1C",
+          "58D0FB3206B6F859",
+          "6A969EB0C5012BB9"
+        ],
+        "entities": [
+          {
+            "resourceName": "{84E5BBAB25EA23E5}Prefabs/Groups/BLUFOR/Group_US_FireTeam.et",
+            "worldX": 4700,
+            "worldY": 26.6441593170166,
+            "worldZ": 11950,
+            "headingDegrees": 0,
+            "unitId": "squad",
+            "factionKey": "US",
+            "memberCount": 4,
+            "orderCount": 2,
+            "ordersText": "ai-stance crouch | ai-move X 4700 Z 11950"
+          },
+          {
+            "resourceName": "{4A71F755A4513227}Prefabs/Vehicles/Wheeled/M998/M1025.et",
+            "worldX": 4705.9462890625,
+            "worldY": 25.71347999572754,
+            "worldZ": 11949.99609375,
+            "headingDegrees": 358.6482238769531,
+            "unitId": "car",
+            "factionKey": "US",
+            "memberCount": 0,
+            "orderCount": 0,
+            "ordersText": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "review1",
+      "phase": "executed",
+      "message": "Snapshot reviewed and frozen; separate restore approval required",
+      "snapshot": {
+        "snapshotName": "current1",
+        "mode": "current",
+        "entityCount": 2,
+        "world": "Worlds/BridgeRuntime.ent",
+        "requiredAddons": [
+          "5614BBCCBB55ED1C",
+          "58D0FB3206B6F859",
+          "6A969EB0C5012BB9"
+        ],
+        "entities": [
+          {
+            "resourceName": "{84E5BBAB25EA23E5}Prefabs/Groups/BLUFOR/Group_US_FireTeam.et",
+            "worldX": 4700,
+            "worldY": 26.6441593170166,
+            "worldZ": 11950,
+            "headingDegrees": 0,
+            "unitId": "squad",
+            "factionKey": "US",
+            "memberCount": 4,
+            "orderCount": 2,
+            "ordersText": "ai-stance crouch | ai-move X 4700 Z 11950"
+          },
+          {
+            "resourceName": "{4A71F755A4513227}Prefabs/Vehicles/Wheeled/M998/M1025.et",
+            "worldX": 4705.9462890625,
+            "worldY": 25.71347999572754,
+            "worldZ": 11949.99609375,
+            "headingDegrees": 358.6482238769531,
+            "unitId": "car",
+            "factionKey": "US",
+            "memberCount": 0,
+            "orderCount": 0,
+            "ordersText": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "restore1",
+      "phase": "executed",
+      "message": "Approved COMMAND snapshot restored; inventory and wider game state are outside this snapshot",
+      "snapshot": {
+        "snapshotName": "current1",
+        "mode": "current",
+        "entityCount": 2,
+        "world": "Worlds/BridgeRuntime.ent",
+        "requiredAddons": [
+          "5614BBCCBB55ED1C",
+          "58D0FB3206B6F859",
+          "6A969EB0C5012BB9"
+        ],
+        "entities": [
+          {
+            "resourceName": "{84E5BBAB25EA23E5}Prefabs/Groups/BLUFOR/Group_US_FireTeam.et",
+            "worldX": 4700,
+            "worldY": 26.6441593170166,
+            "worldZ": 11950,
+            "headingDegrees": 0,
+            "unitId": "squad",
+            "factionKey": "US",
+            "memberCount": 4,
+            "orderCount": 2,
+            "ordersText": "ai-stance crouch | ai-move X 4700 Z 11950"
+          },
+          {
+            "resourceName": "{4A71F755A4513227}Prefabs/Vehicles/Wheeled/M998/M1025.et",
+            "worldX": 4705.9462890625,
+            "worldY": 25.71347999572754,
+            "worldZ": 11949.99609375,
+            "headingDegrees": 358.6482238769531,
+            "unitId": "car",
+            "factionKey": "US",
+            "memberCount": 0,
+            "orderCount": 0,
+            "ordersText": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "restore_duplicate",
+      "phase": "failed",
+      "message": "Snapshot already restored in this session; remove its prior batch first"
+    },
+    {
+      "id": "review_changed",
+      "phase": "failed",
+      "message": "Snapshot JSON or identity invalid"
+    },
+    {
+      "id": "review_badworld",
+      "phase": "failed",
+      "message": "Invalid snapshot version, world or entity count"
+    },
+    {
+      "id": "review_badaddon",
+      "phase": "failed",
+      "message": "A required snapshot addon is not loaded"
+    },
+    {
+      "id": "review_badprefab",
+      "phase": "failed",
+      "message": "Required exact prefab is unavailable"
+    },
+    {
+      "id": "review_badmember",
+      "phase": "failed",
+      "message": "Required exact member prefab is unavailable"
+    },
+    {
+      "id": "review_partial",
+      "phase": "executed",
+      "message": "Snapshot reviewed and frozen; separate restore approval required",
+      "snapshot": {
+        "snapshotName": "partial",
+        "mode": "current",
+        "entityCount": 2,
+        "world": "Worlds/BridgeRuntime.ent",
+        "requiredAddons": [
+          "5614BBCCBB55ED1C",
+          "58D0FB3206B6F859",
+          "6A969EB0C5012BB9"
+        ],
+        "entities": [
+          {
+            "resourceName": "{84E5BBAB25EA23E5}Prefabs/Groups/BLUFOR/Group_US_FireTeam.et",
+            "worldX": 4700,
+            "worldY": 26.6441593170166,
+            "worldZ": 11950,
+            "headingDegrees": 0,
+            "unitId": "squad",
+            "factionKey": "US",
+            "memberCount": 3,
+            "orderCount": 2,
+            "ordersText": "ai-stance crouch | ai-move X 4700 Z 11950"
+          },
+          {
+            "resourceName": "{4A71F755A4513227}Prefabs/Vehicles/Wheeled/M998/M1025.et",
+            "worldX": 4705.9462890625,
+            "worldY": 25.71347999572754,
+            "worldZ": 11949.99609375,
+            "headingDegrees": 358.6482238769531,
+            "unitId": "car",
+            "factionKey": "US",
+            "memberCount": 0,
+            "orderCount": 0,
+            "ordersText": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "restore_partial",
+      "phase": "failed",
+      "message": "Restore membership was not ready; partial batch removed"
+    },
+    {
+      "id": "review_oversize",
+      "phase": "failed",
+      "message": "Snapshot file size rejected"
+    },
+    {
+      "id": "plan1",
+      "phase": "failed",
+      "message": "Snapshot filename already exists; choose a new request ID"
+    }
+  ],
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "processStopped": true
+}

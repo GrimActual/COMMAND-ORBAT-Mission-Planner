@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "scope": "Offline isolated Electron with mocked command IPC; actual native treatment tested separately",
+  "checks": [
+    "safe target text, explicit one-member scope, reviewed exact owned squad request and cancellation",
+    "English/French/German preserve target identity",
+    "input, plan and pairing changes invalidate review; missing capability blocks controls",
+    "Sarge and Settings destinations open treatment controls",
+    "offline startup, unchanged mission and no page errors"
+  ],
+  "gameClientLaunched": false
+}

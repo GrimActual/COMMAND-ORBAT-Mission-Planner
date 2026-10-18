@@ -1,0 +1,35 @@
+{
+  "scope": "Offline isolated Electron profiles; mocked command IPC and synthetic vehicle snapshot. Matched three-second idle samples, not sustained multiplayer certification.",
+  "checks": [
+    "review/send",
+    "safe target text",
+    "12 seat fields",
+    "EN/FR/DE labels",
+    "mission change invalidates review",
+    "pairing clears snapshot",
+    "old mod disables inspection",
+    "mission unchanged"
+  ],
+  "metrics": [
+    {
+      "label": "prior",
+      "p95FrameMs": 16.80000000000109,
+      "stallsOver100ms": 0,
+      "domBefore": 1948,
+      "domAfter": 1948,
+      "heapBytes": 11900000,
+      "missionUnchanged": true,
+      "pageErrors": []
+    },
+    {
+      "label": "candidate",
+      "p95FrameMs": 16.80000000000109,
+      "stallsOver100ms": 0,
+      "domBefore": 1955,
+      "domAfter": 1955,
+      "heapBytes": 15200000,
+      "missionUnchanged": true,
+      "pageErrors": []
+    }
+  ]
+}

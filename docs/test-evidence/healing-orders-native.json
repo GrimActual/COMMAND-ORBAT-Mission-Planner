@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "scope": "Isolated diagnostic server with real Everon terrain and GM navmeshes; production typed healing requests, healthy-target rejection, native treatment observation and approved cancellation; diagnostic-only actual wound through production host adapter and loopback relay; no connected humans",
+  "outcomes": [
+    {
+      "id": "squad",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "healthy",
+      "phase": "failed",
+      "message": "No supported bleeding patient or bandage in selected squad"
+    },
+    {
+      "id": "heal",
+      "phase": "executed",
+      "message": "Observed native treatment: one squad member stopped bleeding and a real bandage was consumed; other injuries may remain"
+    },
+    {
+      "id": "healthy_again",
+      "phase": "failed",
+      "message": "No supported bleeding patient or bandage in selected squad"
+    }
+  ],
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "processStopped": true,
+  "fixtureWarning": "The plain-game-mode fixture has no radio callsign. Only the exact REPORT_MOUNT_AS missing-callsign diagnostics are classified as ambient; all other engine errors fail the test. Radio functionality is not tested."
+}

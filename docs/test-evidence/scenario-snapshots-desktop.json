@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "scope": "Offline isolated Electron with original neutral mission and mocked command IPC; native server tested separately",
+  "checks": [
+    "reviewed planned save uses exact deployment coordinates and separate command",
+    "current capture targets exact paired roots including restored entities; safe text and pending cancellation",
+    "server ID rejects paths and review is separate from restore",
+    "restore shows saved orders and addons and references completed review",
+    "EN/FR/DE preserve selected identities and saved content",
+    "plan/pairing changes invalidate review; old mod gates actions",
+    "Settings destination opens snapshot controls",
+    "offline startup, unchanged mission and no page errors"
+  ],
+  "gameClientLaunched": false
+}

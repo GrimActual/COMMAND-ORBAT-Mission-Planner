@@ -1,0 +1,14 @@
+{
+  "scope": "Offline isolated Electron; mocked command IPC and synthetic identities. UI checks only; first performance comparison excluded because pairing reset cleared candidate markers.",
+  "checks": [
+    "embark review and exact role fields",
+    "dismount review",
+    "cancel",
+    "safe target text",
+    "EN/FR/DE",
+    "input/mission changes invalidate review",
+    "pairing clears targets",
+    "old mod disables transport",
+    "mission unchanged"
+  ]
+}

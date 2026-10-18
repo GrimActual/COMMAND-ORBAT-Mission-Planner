@@ -1,0 +1,87 @@
+{
+  "success": true,
+  "scope": "Actual isolated native server, host-approval test driver and loopback relay; one synthetic vehicle with an AI occupant, one nonvehicle target, no terrain/navmesh travel or real players",
+  "outcomes": [
+    {
+      "id": "car",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "inspect_empty",
+      "phase": "executed",
+      "message": "Read-only vehicle seat snapshot; no occupants moved",
+      "vehicle": {
+        "capacity": 4,
+        "occupied": 0,
+        "available": 4,
+        "reserved": 0,
+        "locked": 0,
+        "inaccessible": 0,
+        "players": 0,
+        "ai": 0,
+        "other": 0,
+        "driverAvailable": 1,
+        "gunnerAvailable": 0,
+        "cargoAvailable": 3
+      }
+    },
+    {
+      "id": "inspect_ai",
+      "phase": "executed",
+      "message": "Read-only vehicle seat snapshot; no occupants moved",
+      "vehicle": {
+        "capacity": 4,
+        "occupied": 1,
+        "available": 3,
+        "reserved": 0,
+        "locked": 0,
+        "inaccessible": 0,
+        "players": 0,
+        "ai": 1,
+        "other": 0,
+        "driverAvailable": 1,
+        "gunnerAvailable": 0,
+        "cargoAvailable": 2
+      }
+    },
+    {
+      "id": "inspect_restricted",
+      "phase": "executed",
+      "message": "Read-only vehicle seat snapshot; no occupants moved",
+      "vehicle": {
+        "capacity": 4,
+        "occupied": 1,
+        "available": 1,
+        "reserved": 1,
+        "locked": 0,
+        "inaccessible": 1,
+        "players": 0,
+        "ai": 1,
+        "other": 0,
+        "driverAvailable": 1,
+        "gunnerAvailable": 0,
+        "cargoAvailable": 0
+      }
+    },
+    {
+      "id": "not_car",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "inspect_nonvehicle",
+      "phase": "failed",
+      "message": "Target has no supported 1 to 128 seat native compartment manager"
+    }
+  ],
+  "waypointTrace": [
+    "[COMMAND VEHICLE TEST] seeded=1 occupant-bound=0",
+    "[COMMAND VEHICLE TEST] completed seeded=1 occupant-bound=1",
+    "[COMMAND VEHICLE TEST] seeded=1 occupant-bound=0",
+    "[COMMAND VEHICLE TEST] completed seeded=1 occupant-bound=1"
+  ],
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "processStopped": true
+}

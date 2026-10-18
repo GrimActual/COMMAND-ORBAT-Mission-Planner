@@ -382,6 +382,203 @@
           ]
         }
       }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "requestId",
+        "kind",
+        "targetRequestId",
+        "unitId"
+      ],
+      "properties": {
+        "version": {
+          "const": 2
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "kind": {
+          "const": "vehicle-inspect"
+        },
+        "targetRequestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "unitId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "requestId",
+        "targetRequestId",
+        "unitId",
+        "kind",
+        "vehicleRequestId",
+        "vehicleUnitId",
+        "timeoutSeconds",
+        "driverAllowed",
+        "gunnerAllowed",
+        "cargoAllowed"
+      ],
+      "properties": {
+        "version": {
+          "const": 2
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "targetRequestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "unitId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        },
+        "kind": {
+          "const": "ai-embark"
+        },
+        "vehicleRequestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "vehicleUnitId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        },
+        "timeoutSeconds": {
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 120
+        },
+        "driverAllowed": {
+          "type": "boolean"
+        },
+        "gunnerAllowed": {
+          "type": "boolean"
+        },
+        "cargoAllowed": {
+          "type": "boolean"
+        }
+      },
+      "anyOf": [
+        {
+          "properties": {
+            "driverAllowed": {
+              "const": true
+            }
+          }
+        },
+        {
+          "properties": {
+            "gunnerAllowed": {
+              "const": true
+            }
+          }
+        },
+        {
+          "properties": {
+            "cargoAllowed": {
+              "const": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "requestId",
+        "targetRequestId",
+        "unitId",
+        "kind",
+        "vehicleRequestId",
+        "vehicleUnitId",
+        "timeoutSeconds"
+      ],
+      "properties": {
+        "version": {
+          "const": 2
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "targetRequestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "unitId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        },
+        "kind": {
+          "const": "ai-dismount"
+        },
+        "vehicleRequestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "vehicleUnitId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        },
+        "timeoutSeconds": {
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 120
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "requestId",
+        "targetRequestId",
+        "unitId",
+        "kind",
+        "timeoutSeconds"
+      ],
+      "properties": {
+        "version": {
+          "const": 2
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "targetRequestId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,40}$"
+        },
+        "unitId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        },
+        "kind": {
+          "const": "ai-heal"
+        },
+        "timeoutSeconds": {
+          "type": "integer",
+          "minimum": 15,
+          "maximum": 120
+        }
+      }
     }
   ]
 }

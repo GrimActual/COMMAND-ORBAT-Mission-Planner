@@ -746,3 +746,21 @@ Followon.5 / bridge 0.9.0 candidate adds explicit live-marker selection, reviewe
 ### Native squad-settings checkpoint — 16 October 2026
 
 Followon.6 / bridge 0.10.0 candidate adds four verified formation definitions with restoration, persistent native stance settings and distinct native fire policies. Synthetic readback, membership propagation, foreign editor-setting protection and desktop review gates passed. Diamond/Circle, adaptive Auto, physical formation/combat acceptance and other command families remain open. See docs/SQUAD-SETTINGS-PILOT.md. Existing roadmap goals are retained.
+
+
+### Vehicle seat inspection checkpoint — 17 October 2026
+
+Step 71 adds separately negotiated, host-approved read-only snapshots of bridge-created vehicles. Empty, AI-occupied, reserved/inaccessible and nonvehicle cases passed native diagnostics; offline Electron checks passed review, safe display, three languages, stale review, pairing cleanup and mission preservation. Source checkpoint only: no new release or Workshop publication. Steps 72–74 and real-player/combat acceptance remain open. See docs/VEHICLE-INSPECTION-PILOT.md. All existing goals remain.
+
+
+### Embark preflight groundwork — 17 October 2026
+
+Step 72 is partial: original native read-only role/capacity checks compiled and passed eight isolated checks. Vehicle inspection now rejects recruited infantry at the relay. Reviewed boarding requests, execution authority/lifecycle, actual boarding, dismount and mixed-human transport remain unfinished. No action is advertised and no release is packaged. See docs/EMBARK-PREFLIGHT.md. All existing goals remain.
+
+### Transport and server snapshot development — 17 October 2026
+
+Original reviewed embark/dismount now pass actual four-member native boarding, partial recovery, cancellation, foreign-reservation preservation and pairing cleanup. Server snapshots separately save planned deployment or supported current COMMAND state inside the server profile. Native process-restart, frozen no-spawn review, separately approved restoration, exact member positions, saved move/stance and incompatible-restore rollback passed. Offline desktop checks cover both workflows, three languages and unchanged mission data. Source development only; no new release or Workshop publication yet. Vehicle driving, convoy, supported healing and building metadata remain active next work. See docs/SQUAD-TRANSPORT-PILOT.md and docs/SERVER-SCENARIO-SNAPSHOTS.md. All existing roadmap goals and external acceptance remain.
+
+### 18 October 2026 — integrated control development pilot
+
+Original reviewed transport, server-side COMMAND scenario snapshots, separate vehicle routes, bounded convoy pursuit and one-member native treatment now have isolated native and offline desktop evidence. Read docs/CONTROL-PILOT-RELEASE.md and docs/test-evidence/control-pilot-validation.json. Native building door metadata assessment passed without enabling entry/navigation. This is development scope; connected-human, multiplayer, combat and remaining NEXT100 acceptance work stays open.

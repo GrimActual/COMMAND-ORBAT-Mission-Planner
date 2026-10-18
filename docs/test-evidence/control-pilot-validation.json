@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-18",
+  "developmentVersion": "2.9.1-dev.followon.7",
+  "bridgeVersion": "0.11.0",
+  "regression": {
+    "tests": 878,
+    "pass": 877,
+    "fail": 0,
+    "skipped": 1,
+    "skipReason": "Independent C preprocessor unavailable; no native Arma preprocessing parity claim"
+  },
+  "scope": "Integrated original command workflows; native diagnostic server and offline Electron, no connected humans or combat acceptance",
+  "nativeReceipts": [
+    "transport-orders-native.json",
+    "transport-safety-native.json",
+    "transport-extended-native.json",
+    "scenario-snapshots-native.json",
+    "vehicle-routing-native.json",
+    "vehicle-routing-safety-native.json",
+    "convoy-native.json",
+    "convoy-lifecycle-native.json",
+    "healing-orders-native.json",
+    "healing-safety-native.json",
+    "building-metadata-native.json",
+    "control-snapshot-orders-native.json",
+    "control-human-signal-native.json"
+  ],
+  "desktopReceipts": [
+    "transport-orders-desktop.json",
+    "scenario-snapshots-desktop.json",
+    "vehicle-control-desktop.json",
+    "healing-orders-desktop.json"
+  ],
+  "performanceReceipt": "control-pilot-performance.json",
+  "distributionSourceAudit": {
+    "ok": true,
+    "violations": 0,
+    "checked": 1024
+  },
+  "publication": "Development pair packaged and verified; external acceptance remains pending",
+  "packageReceipts": [
+    "control-package-native.json",
+    "control-package-desktop.json"
+  ],
+  "runtimeDistributionAudit": {
+    "checked": 371,
+    "ok": true,
+    "violations": 0
+  },
+  "protectionScope": "Production guards verified with an explicitly simulated human-control signal at the native platform boundary; actual connected-human acceptance remains external"
+}

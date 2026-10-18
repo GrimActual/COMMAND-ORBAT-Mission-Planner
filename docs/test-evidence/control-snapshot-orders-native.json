@@ -1,0 +1,45 @@
+{
+  "success": true,
+  "scope": "Isolated diagnostic server with real Everon terrain and GM navmeshes; native treatment replaces a real prior route, current-state disk snapshot excludes superseded movement and retains native formation preference; diagnostic-only wound through production host adapter and loopback relay; no connected humans",
+  "outcomes": [
+    {
+      "id": "squad",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "prior_route",
+      "phase": "executed",
+      "message": "Native route installed in order; travel and arrival are not confirmed"
+    },
+    {
+      "id": "prior_formation",
+      "phase": "executed",
+      "message": "Native squad setting applied; physical movement and combat outcome are not confirmed"
+    },
+    {
+      "id": "healthy",
+      "phase": "failed",
+      "message": "No supported bleeding patient or bandage in selected squad"
+    },
+    {
+      "id": "heal",
+      "phase": "executed",
+      "message": "Observed native treatment: one squad member stopped bleeding and a real bandage was consumed; other injuries may remain"
+    },
+    {
+      "id": "after_treatment",
+      "phase": "executed",
+      "message": "Saved server profile snapshot: after_treatment.json"
+    },
+    {
+      "id": "healthy_again",
+      "phase": "failed",
+      "message": "No supported bleeding patient or bandage in selected squad"
+    }
+  ],
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "processStopped": true,
+  "fixtureWarning": "The plain-game-mode fixture has no radio callsign. Only the exact REPORT_MOUNT_AS missing-callsign diagnostics are classified as ambient; all other engine errors fail the test. Radio functionality is not tested."
+}

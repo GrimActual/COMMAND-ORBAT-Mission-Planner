@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "scope": "Offline isolated Electron; mocked command IPC and map picker; native driving tested separately; convoy payloads use an explicit mock capability and do not establish native convoy acceptance",
+  "checks": [
+    "separate two-point route overlay, exact map conversion, reviewed request and cancellation",
+    "convoy controls disabled without separately accepted convoy capability",
+    "distinct reviewed attach and detach payloads; safe target text",
+    "English/French/German preserve exact selected identities",
+    "changed input, mission and pairing invalidate review; pairing clears route; old mod gates controls",
+    "offline startup, unchanged mission and no page errors"
+  ],
+  "gameClientLaunched": false
+}

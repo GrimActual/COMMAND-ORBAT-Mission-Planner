@@ -1,8 +1,8 @@
-# Next-100 progress — 16 October 2026
+# Next-100 progress — 17 October 2026
 
 This records delivered scope, not completion of all 100 steps. Complete-existing identifies functionality already present. General runtime/type claims and unimplemented engine features remain pending.
 
-awaiting-external: 10 | complete-existing: 9 | complete-new: 45 | partial: 9 | pending-development: 27
+awaiting-external: 10 | complete-existing: 9 | complete-new: 52 | partial: 10 | pending-development: 19
 
 | Step | Status | Task / evidence |
 | --- | --- | --- |
@@ -76,14 +76,14 @@ awaiting-external: 10 | complete-existing: 9 | complete-new: 45 | partial: 9 | p
 | 68 | pending-development | Add suppression and look-at adapters where supported.  |
 | 69 | complete-new | Host-reviewed recruitment and release of existing selected AI squads; native faction/membership/selection guards, deletion prohibition and lifecycle checks passed. Real-session acceptance remains separate. |
 | 70 | complete-existing | Keep host approval and owned-group boundaries visible. Existing native approval, capability and bridge-owned-target gates retained. |
-| 71 | pending-development | Add vehicle seat and capacity inspection.  |
-| 72 | pending-development | Add reviewed squad embark requests.  |
-| 73 | pending-development | Add dismount requests with clear results.  |
-| 74 | pending-development | Handle mixed human and AI occupants explicitly.  |
-| 75 | pending-development | Add convoy attach and detach adapters.  |
-| 76 | pending-development | Verify vehicle route handling separately from infantry.  |
-| 77 | pending-development | Add healing requests with supported-target checks.  |
-| 78 | pending-development | Investigate building entry points using native metadata.  |
+| 71 | complete-new | Read-only vehicle seat/capacity inspection implemented and verified in an isolated native server and offline Electron. Separate capability and host approval required. Source checkpoint only; see VEHICLE-INSPECTION-PILOT.md. No boarding/transport or real-player acceptance claim. |
+| 72 | complete-new | Reviewed embark with explicit roles, exact paired ownership, bounded cleanup and observed boarding passed native and offline desktop gates. Foreign reservations and waypoints are retained. See SQUAD-TRANSPORT-PILOT.md. |
+| 73 | complete-new | Native dismount reports observed member results. Deliberate 3-of-4 boarding timeout recovered by dismounting only mounted members; the fourth stayed on foot. Native and desktop receipts linked in SQUAD-TRANSPORT-PILOT.md. |
+| 74 | partial | Native production guards reject a simulated human-control signal for transport, dismount, driving and treatment; four actual AI occupants retained. See control-human-signal-native.json. Real connected-player behavior remains an external acceptance gate. |
+| 75 | complete-new | Original convoy pursuit followed a moving leader across multiple native segments with four crew retained; cycles rejected, detach, fixed expiry and pairing shutdown passed. See convoy-native.json and convoy-lifecycle-native.json. Development pilot, no live-state guarantee. |
+| 76 | complete-new | Verify vehicle route handling separately from infantry. Native two-point observed vehicle arrival with four AI occupants; separate offline desktop review. See vehicle-routing-native.json and vehicle-control-desktop.json. Development source only. |
+| 77 | complete-new | Original separately approved native treatment for one supported wounded squad member. Healthy-target rejection, actual bandage consumption/bleeding cessation, timeout, cancellation, foreign-waypoint preservation and localized desktop workflow passed. See SQUAD-TREATMENT-PILOT.md. |
+| 78 | complete-new | Investigate building entry points using native metadata. Bounded original door metadata assessment passed on native house; no navigability or building-entry claim. See BUILDING-METADATA-ASSESSMENT.md. |
 | 79 | pending-development | Prototype garrison behavior in an isolated scenario.  |
 | 80 | pending-development | Prototype room-clearing behavior only after navigation validation.  |
 | 81 | awaiting-external | Run a user-led mixed human and AI 60-entity session.  |
@@ -113,3 +113,7 @@ See NEXT100-DELIVERY.md and NEXT100-INITIALIZATION.md for exact boundaries. The 
 
 
 17 October 2026: Native AI order audit added without removing roadmap goals. Move, timed Hold, Defend, two-point routes, synthetic-character Follow and cancellation were exercised with active AI on Everon navigation data. Bridge 0.10.1 corrects a reproduced idle-stance response issue. See NATIVE-AI-ORDER-AUDIT.md for exact evidence and limits; formation spacing and strict Hold Fire under attack remain unverified.
+
+## Additional server snapshot request — 17 October 2026
+
+Implemented outside the original 100-row numbering: separately approved planned-deployment save, supported current-state capture to the server profile, no-spawn review and frozen separately approved restoration. Actual server process restart, exact member positions, saved move/stance and partial rollback gates passed; offline Electron passed three languages, Settings destination, stale review and unchanged mission data. No local file inbox or automatic recovery was added. Source development only until the matching release is identified. See SERVER-SCENARIO-SNAPSHOTS.md.

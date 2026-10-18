@@ -1,0 +1,49 @@
+{
+  "success": true,
+  "scope": "Isolated diagnostic server with real Everon terrain and GM navmeshes; actual mounted four-member AI crew driving to two ordered vehicle destinations through production host adapter and loopback relay; no connected humans",
+  "outcomes": [
+    {
+      "id": "squad",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "car",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "embark",
+      "phase": "executed",
+      "message": "Observed transport completion: 4 of 4 members"
+    },
+    {
+      "id": "drive",
+      "phase": "executed",
+      "message": "Observed vehicle route: 2 of 2 points reached in order"
+    },
+    {
+      "id": "after_route",
+      "phase": "executed",
+      "message": "Read-only vehicle seat snapshot; no occupants moved",
+      "vehicle": {
+        "capacity": 4,
+        "occupied": 4,
+        "available": 0,
+        "reserved": 0,
+        "locked": 0,
+        "inaccessible": 0,
+        "players": 0,
+        "ai": 4,
+        "other": 0,
+        "driverAvailable": 0,
+        "gunnerAvailable": 0,
+        "cargoAvailable": 0
+      }
+    }
+  ],
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "processStopped": true,
+  "fixtureWarning": "The plain-game-mode fixture has no radio callsign. Only the exact REPORT_MOUNT_AS missing-callsign diagnostics are classified as ambient; all other engine errors fail the test. Radio functionality is not tested."
+}

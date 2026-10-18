@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "scope": "Isolated diagnostic server with real Everon terrain and GM navmeshes; packaged bridge project compilation, advertised capabilities and native healthy-target rejection through production host adapter and loopback relay; no connected humans",
+  "outcomes": [
+    {
+      "id": "squad",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "healthy",
+      "phase": "failed",
+      "message": "No supported bleeding patient or bandage in selected squad"
+    }
+  ],
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "processStopped": true,
+  "fixtureWarning": "The plain-game-mode fixture has no radio callsign. Only the exact REPORT_MOUNT_AS missing-callsign diagnostics are classified as ambient; all other engine errors fail the test. Radio functionality is not tested.",
+  "finalSourceFilesMatchedToCompiledCandidateAndPackage": 24,
+  "finalBehaviorReceipt": "control-snapshot-orders-native.json",
+  "finalCompiledComparison": "Identical source content, normalizing line endings and trailing blank lines only; no native executable statements changed after final acceptance"
+}

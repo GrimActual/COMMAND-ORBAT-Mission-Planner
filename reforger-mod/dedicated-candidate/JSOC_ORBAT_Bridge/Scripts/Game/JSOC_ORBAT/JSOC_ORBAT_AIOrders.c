@@ -23,7 +23,7 @@ class JSOC_ORBAT_AIOrders
         }
         return false;
     }
-    static string Check(SCR_AIGroup group, AIWaypoint ownedWaypoint, array<AIWaypoint> ownedRoute = null)
+    static string Check(SCR_AIGroup group, AIWaypoint ownedWaypoint, array<AIWaypoint> ownedRoute = null, bool allowMounted = false)
     {
         if (!group) return "Target must be a bridge-created infantry AI group";
         if (!group.GetGroupUtilityComponent()) return "Native group AI utility and waypoint processing are unavailable";
@@ -37,7 +37,7 @@ class JSOC_ORBAT_AIOrders
             if (!member) return "AI member has no resolved character";
             SCR_EditableCharacterComponent editable = SCR_EditableCharacterComponent.Cast(member.FindComponent(SCR_EditableCharacterComponent));
             if (!editable) return "Only standard editable infantry members are supported";
-            if (editable.GetVehicle()) return "Mounted troops require the future transport-order adapter";
+            if (!allowMounted && editable.GetVehicle()) return "Use separate transport or vehicle controls for mounted troops";
         }
         if (!group.GetLeaderEntity()) return "AI group leader is not ready";
         array<AIWaypoint> waypoints = {}; group.GetWaypoints(waypoints);

@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "scope": "Isolated diagnostic server with real Everon terrain and GM navmeshes; native healing API feasibility probe with diagnostic-only bleeding injury and real treatment consumption through production host adapter and loopback relay; no connected humans",
+  "outcomes": [
+    {
+      "id": "squad",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    }
+  ],
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "processStopped": true,
+  "fixtureWarning": "The plain-game-mode fixture has no radio callsign. Only the exact REPORT_MOUNT_AS missing-callsign diagnostics are classified as ambient; all other engine errors fail the test. Radio functionality is not tested."
+}

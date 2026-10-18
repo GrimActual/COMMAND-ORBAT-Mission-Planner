@@ -1,0 +1,154 @@
+{
+  "success": true,
+  "scope": "Isolated diagnostic server with real Everon terrain and GM navmeshes; actual faction mismatch, foreign reservation, partial boarding recovery and pairing-stop protection through production host adapter and loopback relay; no connected humans",
+  "outcomes": [
+    {
+      "id": "squad",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "car",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "faction_rejected",
+      "phase": "failed",
+      "message": "Squad and vehicle factions do not match"
+    },
+    {
+      "id": "after_faction",
+      "phase": "executed",
+      "message": "Read-only vehicle seat snapshot; no occupants moved",
+      "vehicle": {
+        "capacity": 4,
+        "occupied": 0,
+        "available": 4,
+        "reserved": 0,
+        "locked": 0,
+        "inaccessible": 0,
+        "players": 0,
+        "ai": 0,
+        "other": 0,
+        "driverAvailable": 1,
+        "gunnerAvailable": 0,
+        "cargoAvailable": 3
+      }
+    },
+    {
+      "id": "foreign_reservation",
+      "phase": "failed",
+      "message": "Transport stopped: 0 of 4 completed; timed out; no forced movement"
+    },
+    {
+      "id": "after_foreign_reservation",
+      "phase": "executed",
+      "message": "Read-only vehicle seat snapshot; no occupants moved",
+      "vehicle": {
+        "capacity": 4,
+        "occupied": 0,
+        "available": 3,
+        "reserved": 1,
+        "locked": 0,
+        "inaccessible": 0,
+        "players": 0,
+        "ai": 0,
+        "other": 0,
+        "driverAvailable": 1,
+        "gunnerAvailable": 0,
+        "cargoAvailable": 2
+      }
+    },
+    {
+      "id": "stable_foreign",
+      "phase": "executed",
+      "message": "Read-only vehicle seat snapshot; no occupants moved",
+      "vehicle": {
+        "capacity": 4,
+        "occupied": 0,
+        "available": 3,
+        "reserved": 1,
+        "locked": 0,
+        "inaccessible": 0,
+        "players": 0,
+        "ai": 0,
+        "other": 0,
+        "driverAvailable": 1,
+        "gunnerAvailable": 0,
+        "cargoAvailable": 2
+      }
+    },
+    {
+      "id": "clear_foreign",
+      "phase": "executed",
+      "message": "Read-only vehicle seat snapshot; no occupants moved",
+      "vehicle": {
+        "capacity": 4,
+        "occupied": 0,
+        "available": 4,
+        "reserved": 0,
+        "locked": 0,
+        "inaccessible": 0,
+        "players": 0,
+        "ai": 0,
+        "other": 0,
+        "driverAvailable": 1,
+        "gunnerAvailable": 0,
+        "cargoAvailable": 3
+      }
+    },
+    {
+      "id": "partial",
+      "phase": "failed",
+      "message": "Transport stopped: 3 of 4 completed; timed out; no forced movement"
+    },
+    {
+      "id": "after_partial",
+      "phase": "executed",
+      "message": "Read-only vehicle seat snapshot; no occupants moved",
+      "vehicle": {
+        "capacity": 4,
+        "occupied": 3,
+        "available": 1,
+        "reserved": 0,
+        "locked": 0,
+        "inaccessible": 0,
+        "players": 0,
+        "ai": 3,
+        "other": 0,
+        "driverAvailable": 0,
+        "gunnerAvailable": 0,
+        "cargoAvailable": 1
+      }
+    },
+    {
+      "id": "recover_partial",
+      "phase": "executed",
+      "message": "Observed transport completion: 4 of 4 members"
+    },
+    {
+      "id": "after_recovery",
+      "phase": "executed",
+      "message": "Read-only vehicle seat snapshot; no occupants moved",
+      "vehicle": {
+        "capacity": 4,
+        "occupied": 0,
+        "available": 4,
+        "reserved": 0,
+        "locked": 0,
+        "inaccessible": 0,
+        "players": 0,
+        "ai": 0,
+        "other": 0,
+        "driverAvailable": 1,
+        "gunnerAvailable": 0,
+        "cargoAvailable": 3
+      }
+    }
+  ],
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "processStopped": true,
+  "fixtureWarning": "The plain-game-mode fixture has no radio callsign. Only the exact REPORT_MOUNT_AS missing-callsign diagnostics are classified as ambient; all other engine errors fail the test. Radio functionality is not tested."
+}

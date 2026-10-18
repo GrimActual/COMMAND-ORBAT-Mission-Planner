@@ -1,0 +1,111 @@
+{
+  "success": true,
+  "scope": "Isolated diagnostic server with real Everon terrain and GM navmeshes; actual timeout, cancellation, foreign waypoint and membership-change protection through production host adapter and loopback relay; no connected humans",
+  "outcomes": [
+    {
+      "id": "squad",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "car",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "timeout",
+      "phase": "failed",
+      "message": "Transport stopped: 0 of 4 completed; timed out; no forced movement"
+    },
+    {
+      "id": "after_timeout",
+      "phase": "executed",
+      "message": "Read-only vehicle seat snapshot; no occupants moved",
+      "vehicle": {
+        "capacity": 4,
+        "occupied": 0,
+        "available": 4,
+        "reserved": 0,
+        "locked": 0,
+        "inaccessible": 0,
+        "players": 0,
+        "ai": 0,
+        "other": 0,
+        "driverAvailable": 1,
+        "gunnerAvailable": 0,
+        "cargoAvailable": 3
+      }
+    },
+    {
+      "id": "after_cancel",
+      "phase": "executed",
+      "message": "Read-only vehicle seat snapshot; no occupants moved",
+      "vehicle": {
+        "capacity": 4,
+        "occupied": 0,
+        "available": 4,
+        "reserved": 0,
+        "locked": 0,
+        "inaccessible": 0,
+        "players": 0,
+        "ai": 0,
+        "other": 0,
+        "driverAvailable": 1,
+        "gunnerAvailable": 0,
+        "cargoAvailable": 3
+      }
+    },
+    {
+      "id": "foreign_rejected",
+      "phase": "failed",
+      "message": "Existing in-game waypoints must be cleared by the host first"
+    },
+    {
+      "id": "after_foreign",
+      "phase": "executed",
+      "message": "Read-only vehicle seat snapshot; no occupants moved",
+      "vehicle": {
+        "capacity": 4,
+        "occupied": 0,
+        "available": 4,
+        "reserved": 0,
+        "locked": 0,
+        "inaccessible": 0,
+        "players": 0,
+        "ai": 0,
+        "other": 0,
+        "driverAvailable": 1,
+        "gunnerAvailable": 0,
+        "cargoAvailable": 3
+      }
+    },
+    {
+      "id": "identity_start",
+      "phase": "failed",
+      "message": "Transport stopped: 0 of 4 completed; Transport squad membership changed; no forced movement"
+    },
+    {
+      "id": "after_identity",
+      "phase": "executed",
+      "message": "Read-only vehicle seat snapshot; no occupants moved",
+      "vehicle": {
+        "capacity": 4,
+        "occupied": 0,
+        "available": 4,
+        "reserved": 0,
+        "locked": 0,
+        "inaccessible": 0,
+        "players": 0,
+        "ai": 0,
+        "other": 0,
+        "driverAvailable": 1,
+        "gunnerAvailable": 0,
+        "cargoAvailable": 3
+      }
+    }
+  ],
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "processStopped": true,
+  "fixtureWarning": "The plain-game-mode fixture has no radio callsign. Only the exact REPORT_MOUNT_AS missing-callsign diagnostics are classified as ambient; all other engine errors fail the test. Radio functionality is not tested."
+}

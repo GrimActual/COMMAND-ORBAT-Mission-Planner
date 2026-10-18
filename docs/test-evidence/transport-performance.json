@@ -1,0 +1,27 @@
+{
+  "scope": "Matched offline Electron samples with 60 synthetic named markers and identical positions; three seconds each after settling. No multiplayer or speedup claim; heap is a short snapshot.",
+  "metrics": [
+    {
+      "label": "prior",
+      "p95FrameMs": 16.800000000000182,
+      "stallsOver100ms": 0,
+      "domBefore": 2451,
+      "domAfter": 2451,
+      "markerCount": 60,
+      "tileCount": 25,
+      "heapBytes": 11900000,
+      "missionUnchanged": true
+    },
+    {
+      "label": "candidate",
+      "p95FrameMs": 16.800000000000182,
+      "stallsOver100ms": 0,
+      "domBefore": 2489,
+      "domAfter": 2489,
+      "markerCount": 60,
+      "tileCount": 25,
+      "heapBytes": 11200000,
+      "missionUnchanged": true
+    }
+  ]
+}

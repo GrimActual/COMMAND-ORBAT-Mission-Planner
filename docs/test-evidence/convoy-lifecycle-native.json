@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "scope": "Isolated diagnostic server with real Everon terrain and GM navmeshes; actual timed convoy expiry and pairing shutdown with owned-waypoint removal and four occupants retained through production host adapter and loopback relay; no connected humans",
+  "outcomes": [
+    {
+      "id": "squad",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "car",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "leadcrew",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "leadcar",
+      "phase": "executed",
+      "message": "Approved prefab batch spawned"
+    },
+    {
+      "id": "embark",
+      "phase": "executed",
+      "message": "Observed transport completion: 4 of 4 members"
+    },
+    {
+      "id": "embark_leader",
+      "phase": "executed",
+      "message": "Observed transport completion: 4 of 4 members"
+    },
+    {
+      "id": "attach_expiry",
+      "phase": "executed",
+      "message": "Native convoy follow installed for 15 seconds; this is not a live convoy-state report"
+    },
+    {
+      "id": "attach_stop",
+      "phase": "executed",
+      "message": "Native convoy follow installed for 60 seconds; this is not a live convoy-state report"
+    }
+  ],
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "processStopped": true,
+  "fixtureWarning": "The plain-game-mode fixture has no radio callsign. Only the exact REPORT_MOUNT_AS missing-callsign diagnostics are classified as ambient; all other engine errors fail the test. Radio functionality is not tested."
+}
