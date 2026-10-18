@@ -796,3 +796,11 @@ Fresh native individual movement, physical stances, Hold-to-Move, snapshot resta
 
 
 18 October native-data checkpoint: an original isolated Game-module JSON probe compiled and reproduced seven scalar-read cases on engine1.8.0.13. Native null-to-empty-string behavior is now explicit. Workbench's planned native wire uses opaque managed IDs; the desktop review binds exact typed planner IDs from its trusted baseline, with26 focused checks passing. Added a non-launching isolated reproduction-project preparer. Full native editor importer/exporter, identity persistence, placement review and atomic one-Undo application remain planned and gated; no game client or Workbench was launched and the existing bridge/releases remain unchanged.
+
+
+### 18 October 2026 — Workbench desktop candidate development gate
+
+- Complete: source-only explicit add/move/remove candidate with exact stale/identity/resource/lock/hierarchy checks, optional auto-names, foreign-data preservation, and bounded whole-plan validation. Shared prefab definitions remain consistent; full reviewed poses are unit-level provenance, not write authority. Ordinary plans remain format4; candidates with reviewed poses use format5 and are safely rejected by followon.11.
+- Verified: 41 focused checks; full regression936pass/0fail/1skip; actual isolated offline generic desktop batch edit, single Undo/Redo and stale/invalid rejection on small and1,000-managed-unit synthetic fixtures. Source preparation median159ms/5runs; large desktop call1216ms includingIPC/render/storage. Profile larger interactive imports before enabling them.
+- Pending: original native Workbench importer/exporter compilation, durable identity acrosssave/reopen/copy, protected layer scans, exact world/transform round-trip, partial failure rollback and full native/desktop acceptance. Import editor changes stays planned/disabled; no public release or bridge change.
+- Original50-task count remains47complete. Boarding tasks32–34 need new reproducing evidence; no unobserved cause or fix claimed.

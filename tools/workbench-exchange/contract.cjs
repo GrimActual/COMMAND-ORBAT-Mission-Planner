@@ -84,4 +84,5 @@ function reviewNative(missionText,baselineText,wireText){
  // Only the trusted baseline binds native managed IDs to typed planner IDs.
  return reviewParsed(plan,base,{...wire,schema:'command-workbench-snapshot',entities});
 }
-module.exports={LIMIT,BYTES,createBaseline,review,reviewNative};
+function decodeJSON(text,max=BYTES){if(!Number.isSafeInteger(max)||max<1||max>5*1024*1024)fail('LIMIT','Unsupported JSON byte budget');return parse(text,max);}
+module.exports={LIMIT,BYTES,createBaseline,review,reviewNative,decodeJSON};

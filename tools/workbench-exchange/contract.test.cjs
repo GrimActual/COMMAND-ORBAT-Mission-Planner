@@ -74,3 +74,5 @@ test('native snapshot cannot inject planner IDs or use null, empty, numeric or d
 test('native unknown managed IDs are reviewed as additions and retain all normal scope gates',()=>{
  const f=fixture(),wire=nativeSnapshot(f);wire.entities.push({...clone(wire.entities[0]),managedId:'new-native'});const r=X.reviewNative(json(f.mission),json(f.baseline),json(wire));a.equal(r.added[0].unitId,null);wire.world.guid='1111111111111111';a.throws(()=>X.reviewNative(json(f.mission),json(f.baseline),json(wire)),e=>e.code==='SCOPE');
 });
+
+test('shared JSON decoder cannot disable byte limits through an invalid budget',()=>{for(const budget of [Infinity,NaN,0,-1,6*1024*1024])a.throws(()=>X.decodeJSON('{}',budget),e=>e.code==='LIMIT');a.deepEqual(X.decodeJSON('{}'),{});});

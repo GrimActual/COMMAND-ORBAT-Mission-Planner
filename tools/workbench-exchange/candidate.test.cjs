@@ -1,0 +1,38 @@
+'use strict';
+const {test}=require('node:test'),a=require('node:assert/strict'),C=require('../../planner/planner-core'),A=require('../../planner/resource-asset'),X=require('./contract.cjs'),P=require('./candidate.cjs');
+const json=JSON.stringify,copy=structuredClone;
+const {fixture}=require('./fixtures.cjs');
+
+function rebase(f){const prepared=X.createBaseline(json(f.mission),json(f.config));f.baseline=prepared.baseline;f.wire.baselineSha256=prepared.baselineSha256;}
+function prepare(f){return P.prepare(json(f.mission),json(f.baseline),json(f.wire),json(f.index),json(f.choices));}
+test('one complete candidate preserves full pose and existing fields, changes only managed units and auto-names additions',()=>{
+ const f=fixture(),before=json(f),result=prepare(f),units=result.candidate.orderOfBattle,move=units.find(u=>u.id===1),added=units.find(u=>u.id===result.assigned[0].unitId);
+ a.equal(json(f),before);a.deepEqual(move.position,{lng:170,lat:280});a.equal(move.name,'Keep my name');a.equal(move.strength,'Keep my notes');a.deepEqual(move.workbenchReview.transform,{position:[120,12,230],angles:[135,2,-3]});a.equal(move.workbenchReview.nativeValidationRequired,true);a.equal(units.some(u=>u.id==='unit-2'),false);a.deepEqual(units.find(u=>u.id==='foreign'),f.mission.orderOfBattle[2]);a.equal(added.name,'Unit workbench-1');a.equal(added.side,'green');a.equal(added.assetCatalogItem.resourceReference.id,'p2');a.deepEqual(added.position,{lng:350,lat:450});a.equal(result.canApply,false);a.equal(result.apply,undefined);a.deepEqual(C.validate(result.candidate),result.candidate);
+});
+test('movement and removal require exact explicit confirmations without partial output',()=>{
+ for(const mutate of [f=>f.choices.confirmedMovedIds=[],f=>f.choices.confirmedRemovedIds=[],f=>f.choices.confirmedRemovedIds=['other'],f=>f.choices.confirmedMovedIds=['one','one']]){const f=fixture();mutate(f);const before=json(f);a.throws(()=>prepare(f),e=>e.code==='CONFIRMATION');a.equal(json(f),before);}
+});
+test('new classification is explicit, optional names remain optional and duplicate choices cannot rebind additions',()=>{
+ for(const mutate of [f=>f.choices.added=[],f=>f.choices.added[0].side='guessed',f=>f.choices.added[0].unitType='guessed',f=>f.choices.added[0].name='bad\nname',f=>f.choices.added[0].parentId='missing',f=>f.choices.added[0].phaseId='missing',f=>f.choices.added[0].force=true]){const f=fixture();mutate(f);a.throws(()=>prepare(f));}
+ const f=fixture();f.choices.added[0].name=' ';a.match(prepare(f).candidate.orderOfBattle.at(-1).name,/^Unit /);
+});
+test('added prefab must match the selected current resource index, not a filename guess',()=>{const f=fixture();f.choices.added[0].resourceId='p1';a.throws(()=>prepare(f),e=>e.code==='RESOURCE');});
+test('stale plans, locked units and retained-child conflicts reject the entire candidate',()=>{
+ const stale=fixture();stale.mission.orderOfBattle[0].name='Changed';a.throws(()=>prepare(stale),e=>e.code==='STALE');
+ for(const mutate of [f=>f.mission.orderOfBattle[0].locked=true,f=>f.mission.orderOfBattle[2].parentId='unit-2']){const f=fixture();mutate(f);rebase(f);a.throws(()=>prepare(f),e=>e.code==='REVIEW_BLOCKED');}
+});
+test('new IDs never reuse identities of removed units',()=>{const f=fixture();f.mission.orderOfBattle[1].id='workbench-1';f.config.entities[1].unitId='workbench-1';rebase(f);const result=prepare(f);a.equal(result.assigned[0].unitId,'workbench-2');});
+test('unrecognized unit review metadata cannot be normalized or silently overwritten',()=>{const f=fixture();f.mission.orderOfBattle[0].workbenchReview={unrecognized:true};a.throws(()=>rebase(f),/Workbench review/);});
+test('candidate validates whole-mission size before any application',()=>{const f=fixture(),size=Buffer.byteLength(json(f.mission));f.mission.orderOfBattle[2].assetCatalogItem.padding='x'.repeat(5*1024*1024-size-100);rebase(f);a.throws(()=>prepare(f),e=>e.code==='LIMIT');});
+test('duplicate JSON choice keys and forged fields are rejected',()=>{
+ const f=fixture();a.throws(()=>P.prepare(json(f.mission),json(f.baseline),json(f.wire),json(f.index),json(f.choices).replace('"version":1','"version":1,"version":1')),e=>e.code==='DUPLICATE');f.choices.canApply=true;a.throws(()=>prepare(f),e=>e.code==='CHOICES');
+});
+
+test('existing moves/removals need no new resource index but additions still require one',()=>{const f=fixture();a.throws(()=>P.prepare(json(f.mission),json(f.baseline),json(f.wire),null,json(f.choices)),e=>e.code==='RESOURCE');f.wire.entities.pop();f.choices.added=[];const result=P.prepare(json(f.mission),json(f.baseline),json(f.wire),null,json(f.choices));a.equal(result.candidate.orderOfBattle.length,2);a.equal(result.candidate.orderOfBattle[0].name,'Keep my name');});
+
+function catalog(candidate){const K=require('../../planner/asset-catalog');return K.combine([],candidate.orderOfBattle.filter(u=>u.asset&&u.asset!=='none'&&u.assetCatalogItem).map(u=>({...u.assetCatalogItem,id:u.asset,name:u.assetName||u.asset})));}
+test('per-unit poses never alter shared catalog definitions and new tactical types do not guess asset geometry',()=>{const f=fixture(),second=copy(f.wire.entities[1]);second.managedId='new-two';second.transform.position=[400,30,500];f.wire.entities.push(second);f.choices.added.push({...f.choices.added[0],managedId:'new-two',unitType:'infantry'});const result=prepare(f);a.equal(result.candidate.schemaVersion,5);a.equal(catalog(result.candidate).assets.length,2);const added=result.candidate.orderOfBattle.slice(-2);a.deepEqual(added[0].assetCatalogItem,added[1].assetCatalogItem);a.equal(added[0].assetCatalogItem.assetKind,'other');a.notDeepEqual(added[0].workbenchReview.transform,added[1].workbenchReview.transform);a.equal(f.mission.schemaVersion,4);});
+test('adding an existing prefab retains its exact catalog definition and rejects conflicting metadata',()=>{const f=fixture();f.wire.entities[1].prefab=copy(f.config.resources[0]);f.choices.added[0].resourceId='p1';const result=prepare(f);a.equal(catalog(result.candidate).assets.length,1);a.deepEqual(result.candidate.orderOfBattle.at(-1).assetCatalogItem,f.mission.orderOfBattle[0].assetCatalogItem);const conflict=copy(f);conflict.index.resources[0].provenance.source='Different source';a.throws(()=>prepare(conflict),e=>e.code==='RESOURCE_CONFLICT');f.mission.orderOfBattle[1].assetCatalogItem.assetKind='tank';rebase(f);a.throws(()=>prepare(f),e=>e.code==='RESOURCE_CONFLICT');});
+
+test('reviewed poses survive JSON and CSV without changing ordinary plan version or symbol defaults',()=>{const CSV=require('../../planner/plan-csv'),f=fixture(),result=prepare(f).candidate;a.deepEqual(C.validate(CSV.decode(CSV.encode(result))),result);a.deepEqual(C.validate(JSON.parse(json(result))),result);for(const version of [1,2,3,4]){const plan=copy(f.mission);plan.schemaVersion=version;a.equal(C.validate(plan).schemaVersion,4);}a.equal(C.empty().schemaVersion,4);a.equal(C.VERSION,5);a.equal(result.orderOfBattle[0].symbolMode,'nato');});
+test('malformed reviewed transforms, identity and world data reject the whole mission without mutation',()=>{const result=prepare(fixture()).candidate;for(const mutate of [p=>p.world.path='../Eden.ent',p=>p.world.guid='0000000000000000',p=>p.managedId='',p=>p.mapOffset.east=Infinity,p=>p.transform.position=[1,2],p=>p.transform.angles=[0,181,0],p=>p.nativeValidationRequired=false,p=>p.extra=true,p=>p.space='local']){const candidate=copy(result);mutate(candidate.orderOfBattle[0].workbenchReview);const before=json(candidate);a.throws(()=>C.validate(candidate));a.equal(json(candidate),before);}});

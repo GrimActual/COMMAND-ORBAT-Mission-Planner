@@ -1,0 +1,120 @@
+{
+  "schema": "command-workbench-candidate-checkpoint",
+  "version": 1,
+  "date": "2026-10-18",
+  "scope": "Original source-only candidate and actual isolated offline generic desktop batch-edit/Undo with synthetic native-format data; no native editor importer or game",
+  "focused": {
+    "pass": 41,
+    "fail": 0,
+    "skip": 0
+  },
+  "regression": {
+    "pass": 936,
+    "fail": 0,
+    "skip": 1,
+    "total": 937
+  },
+  "small": {
+    "success": true,
+    "scope": "Actual isolated offline Electron and existing generic batch-edit/Undo path, using source-only candidate and synthetic native-format data; no native Workbench importer or game",
+    "singleUndoRestoredExactBefore": true,
+    "singleRedoRestoredExactAfter": true,
+    "fullPoseRetained": true,
+    "simultaneousAddedMovedRemoved": true,
+    "foreignUnitsUnchanged": true,
+    "staleAndInvalidRejectedWithoutMutationOrHistoryEntry": true,
+    "bulk": false,
+    "applyWallMs": 14,
+    "sourceHashes": {
+      "planner.js": "d224beb19cb6f36ad31354d4bd8abd1aba80ebc752e67d2579d61baa4a7b7911",
+      "planner-core.js": "0b9eaceab0e55e527b28ef9b2fa78256300bd3bfcd5eea0f8f06167f360f1fb7",
+      "main.js": "6485d02d3079b25c50a8d5f379174fb3deaa74b220b7a0e09f42cc737622f48e",
+      "preload.js": "5ea2c742a4eab3dda33f1fca4f17f8210f3e9b4b0f718af46e44aa13f388199c"
+    },
+    "counts": {
+      "before": 3,
+      "after": 3,
+      "added": 1,
+      "moved": 1,
+      "removed": 1
+    },
+    "hashes": {
+      "before": "eefee5ff89124b70f96e889097802a983cc37fe1f106af7824156c8b2b482370",
+      "after": "59623d33984fd12e243d84400ae0934f34a8d73ab796efe10570d26367677bb2",
+      "undo": "eefee5ff89124b70f96e889097802a983cc37fe1f106af7824156c8b2b482370",
+      "redo": "59623d33984fd12e243d84400ae0934f34a8d73ab796efe10570d26367677bb2"
+    },
+    "pageErrors": [],
+    "canApplyInProduct": false,
+    "nativeEditorWorkflowAccepted": false,
+    "applicationClosed": true,
+    "normalGameClientLaunched": false
+  },
+  "large": {
+    "success": true,
+    "scope": "Actual isolated offline Electron and existing generic batch-edit/Undo path, using source-only candidate and synthetic native-format data; no native Workbench importer or game",
+    "singleUndoRestoredExactBefore": true,
+    "singleRedoRestoredExactAfter": true,
+    "fullPoseRetained": true,
+    "simultaneousAddedMovedRemoved": true,
+    "foreignUnitsUnchanged": true,
+    "staleAndInvalidRejectedWithoutMutationOrHistoryEntry": true,
+    "bulk": true,
+    "applyWallMs": 1216,
+    "sourceHashes": {
+      "planner.js": "d224beb19cb6f36ad31354d4bd8abd1aba80ebc752e67d2579d61baa4a7b7911",
+      "planner-core.js": "0b9eaceab0e55e527b28ef9b2fa78256300bd3bfcd5eea0f8f06167f360f1fb7",
+      "main.js": "6485d02d3079b25c50a8d5f379174fb3deaa74b220b7a0e09f42cc737622f48e",
+      "preload.js": "5ea2c742a4eab3dda33f1fca4f17f8210f3e9b4b0f718af46e44aa13f388199c"
+    },
+    "counts": {
+      "before": 1001,
+      "after": 1001,
+      "added": 1,
+      "moved": 500,
+      "removed": 1
+    },
+    "hashes": {
+      "before": "2d9941147f7bbb56ec9f374a376dc14bec5612ba9e0b04d12a0774a29233991b",
+      "after": "06505c0a5b4914cab122a8955fa48318a060715f1134b72c8720bbb5c11410e6",
+      "undo": "2d9941147f7bbb56ec9f374a376dc14bec5612ba9e0b04d12a0774a29233991b",
+      "redo": "06505c0a5b4914cab122a8955fa48318a060715f1134b72c8720bbb5c11410e6"
+    },
+    "pageErrors": [],
+    "canApplyInProduct": false,
+    "nativeEditorWorkflowAccepted": false,
+    "applicationClosed": true,
+    "normalGameClientLaunched": false
+  },
+  "backwardCompatibility": {
+    "ordinaryPlanFormat": 4,
+    "reviewedPosePlanFormat": 5,
+    "previousFollowon11RejectsFormat5": true,
+    "previousFollowon11ReadsOrdinaryFormat4": true,
+    "jsonAndCsvRoundTrip": true
+  },
+  "preparation": {
+    "scope": "Source-only synthetic 1000 managed plus one foreign fixture, 500 moves, one addition, one removal",
+    "runs": 5,
+    "medianMs": 159.0894,
+    "bytesBefore": 853275,
+    "bytesAfter": 1057824
+  },
+  "limitations": [
+    "Native Workbench importer/exporter, durable editor identities, layer protection, transform round-trip and rollback remain pending",
+    "Large interactive imports need responsiveness profiling before enabling",
+    "Saved last-reviewed pose is provenance, not ownership or guaranteed current position",
+    "No product Apply or public release enabled"
+  ],
+  "sources": {
+    "planner/planner-core.js": "0b9eaceab0e55e527b28ef9b2fa78256300bd3bfcd5eea0f8f06167f360f1fb7",
+    "tools/workbench-exchange/candidate.cjs": "86ec6189e94f4c98bf127f61e7be756f65fc12ede3c18e754ea5af0818369162",
+    "tools/workbench-exchange/contract.cjs": "5ee7c90278d7fe8147c2a21d5fbddab4e6684770d3c8837cf981f11663a04819",
+    "tools/workbench-exchange/candidate.test.cjs": "a387c87459ceafa6b83ebd41ca81fcb0eb3fc12a614abf94e98e715cf8a6c92c",
+    "tools/workbench-exchange/verify-desktop.cjs": "5e428482123ebee2dd2c1a6c513ba1cbb010a5e84732666453328eeb4c89f4de"
+  },
+  "distributionAudit": {
+    "ok": true,
+    "checked": 1129
+  }
+}

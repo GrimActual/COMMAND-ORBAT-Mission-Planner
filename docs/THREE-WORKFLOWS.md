@@ -23,8 +23,8 @@ Trois flux séparés et vérifiés : Game Master rend le jeu dans sa propre fen�
 Drei getrennte, geprüfte Abläufe: Game Master rendert in seinem eigenen Fenster; COMMAND sendet unterstützte Aktionen nach Prüfung und Genehmigung. Der Workbench-Austausch in eine eigene COMMAND-Szenenebene ist geplant. Der Änderungsimport muss hinzugefügte, verschobene und entfernte COMMAND-Entitäten anzeigen, Identitäten und Konflikte prüfen und alles in einem Rückgängig-Schritt anwenden. Die optionale 3D-Vorschau nutzt Höhen, passende Texturen und Platzhalter, ohne den Engine-Viewport einzubetten oder das Spiel zu ändern.
 
 
-Development milestone: a source-only [identity and change-review contract](WORKBENCH-EXCHANGE-CONTRACT.md) is tested. Native Workbench exchange and Import editor changes remain planned; Apply is disabled. This does not establish the required one-step Undo.
+Development milestone: a source-only [identity and change-review contract](WORKBENCH-EXCHANGE-CONTRACT.md) is tested. Native Workbench exchange and Import editor changes remain planned; Apply is disabled. A source-only candidate now passed exact one-step Undo/Redo through the existing desktop edit path using synthetic data. Native editor identity and complete exchange acceptance remain pending.
 
-Français : le contrat de revue des identités est testé uniquement dans les outils de développement. L’échange natif et l’import restent prévus ; Appliquer est désactivé.
+Français : le contrat de revue des identités est testé uniquement dans les outils de développement. Annuler/Rétablir est vérifié pour le candidat synthétique hors ligne ; l’échange natif et l’import restent prévus, Appliquer est désactivé.
 
-Deutsch: Der Identitäts- und Änderungsvertrag ist nur in den Entwicklungswerkzeugen getestet. Nativer Austausch und Import bleiben geplant; Anwenden ist deaktiviert.
+Deutsch: Der Identitäts- und Änderungsvertrag ist nur in den Entwicklungswerkzeugen getestet. Rückgängig/Wiederholen ist für den synthetischen Offline-Kandidaten geprüft. Nativer Austausch und Import bleiben geplant; Anwenden ist deaktiviert.

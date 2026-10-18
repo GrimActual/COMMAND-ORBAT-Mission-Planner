@@ -2,7 +2,7 @@
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.PlannerCore=api})(typeof globalThis==='object'?globalThis:this,function(){
 'use strict';
 const Clock=typeof module==='object'&&module.exports?require('./mission-clock'):globalThis.PlannerClock;
-const VERSION=4;
+const VERSION=5;
 const SIDES={blue:'Bluefor / Friendly',red:'Opfor / Hostile',green:'Independent / Guerrilla / FIA',neutral:'Civilian / Neutral'};
 const COLORS={blue:'#62B8FF',red:'#FF7777',green:'#59C76E',neutral:'#EBC66F'};
 const TYPES={headquarters:'Headquarters',infantry:'Infantry',motorized:'Motorized',mechanized:'Mechanized',armor:'Armor',rotary:'Rotary Wing',fixed:'Fixed Wing',airDefense:'Air Defense',mortar:'Mortar',artillery:'Artillery',logistics:'Logistics / Supply',medical:'Medical',engineer:'Engineer',recon:'Recon',special:'Special Force',other:'Other / Objective'};
@@ -44,6 +44,18 @@ function treeValid(units){
  return true;
 }
 function canParent(units,child,parent){try{treeValid(units.map(u=>String(u.id)===String(child)?{...u,parentId:parent}:u));return true}catch{return false}}
+function workbenchReview(v){
+ const exact=(value,keys)=>{if(!value||typeof value!=='object'||Array.isArray(value)||![Object.prototype,null].includes(Object.getPrototypeOf(value))||Reflect.ownKeys(value).length!==keys.length||keys.some(key=>{const d=Object.getOwnPropertyDescriptor(value,key);return !d||!('value'in d)||!d.enumerable;}))fail('Invalid Workbench review fields');};
+ exact(v,['schema','version','planId','exchangeId','managedId','world','space','mapOffset','transform','nativeValidationRequired']);
+ if(v.schema!=='command-workbench-review-pose'||v.version!==1||v.space!=='world-metres-yaw-pitch-roll-degrees'||v.nativeValidationRequired!==true)fail('Invalid Workbench review contract');
+ for(const key of ['planId','exchangeId','managedId'])if(typeof v[key]!=='string'||!/^[A-Za-z0-9][A-Za-z0-9_-]{0,79}$/.test(v[key]))fail('Invalid Workbench review identity');
+ exact(v.world,['addonId','guid','path']);for(const key of ['addonId','guid'])if(typeof v.world[key]!=='string'||!/^[A-F0-9]{16}$/.test(v.world[key])||/^0{16}$/.test(v.world[key]))fail('Invalid Workbench review world');
+ const path=text(v.world.path,'',512);if(!path.endsWith('.ent')||path.startsWith('/')||/[\\<>:"|?*{}%\x00-\x1f\x7f]/.test(path)||path.split('/').some(part=>!part||part==='.'||part==='..'||part!==part.trim()||part.endsWith('.')||/^(con|prn|aux|nul|com[1-9]|lpt[1-9])(?:\.|$)/i.test(part)))fail('Invalid Workbench review world path');
+ exact(v.mapOffset,['east','north']);number(v.mapOffset.east,-10000000,10000000,'Workbench map offset');number(v.mapOffset.north,-10000000,10000000,'Workbench map offset');exact(v.transform,['position','angles']);
+ const triple=(value,min,max)=>{if(!Array.isArray(value)||value.length!==3||![0,1,2].every(i=>Object.hasOwn(value,i)))fail('Invalid Workbench review vector');return value.map(n=>number(n,min,max,'Workbench review vector'));};
+ triple(v.transform.position,-10000000,10000000);const angles=triple(v.transform.angles,-180,360);if(angles[1]>180||angles[2]>180)fail('Invalid Workbench review pitch or roll');
+ return clone(v);
+}
 function validate(d){
  if(!d||typeof d!=='object'||Array.isArray(d))fail('Expected a plan object');
  if(d.schema&&d.schema!=='everon-orbat-plan')fail('Unsupported plan schema');
@@ -57,10 +69,10 @@ function validate(d){
   if(!u||typeof u!=='object')fail('Invalid marker');
   const side=u.side??'blue';if(!has(SIDES,side))fail('Invalid affiliation');
   const icon=u.icon??'auto';if(!ICONS.includes(icon))fail('Invalid asset icon');
-  const symbolMode=u.symbolMode??(d.schemaVersion===4?'nato':'asset');if(!['nato','asset','text'].includes(symbolMode))fail('Invalid symbol mode');
+  const symbolMode=u.symbolMode??(d.schemaVersion>=4?'nato':'asset');if(!['nato','asset','text'].includes(symbolMode))fail('Invalid symbol mode');
   const asset=u.assetCatalogItem??{};if(!asset||typeof asset!=='object'||Array.isArray(asset))fail('Invalid embedded asset');
   const pos=point(u.position??{lat:u.lat,lng:u.lng});
-  return {...(u.locked===true?{locked:true}:{}),id:id(u.id,i+1),name:text(u.name,''),symbol:text(u.symbol,'I',100),side,type:text(u.type,'Infantry',100),unitType:unitType(u.unitType??u.type),symbolMode,icon,color:color(u.color),phaseId:phase(u.phaseId),parentId:u.parentId==null?null:id(u.parentId),asset:text(u.asset??asset.id,'none',200),assetName:text(u.assetName??asset.name??u.asset,'No asset assigned',500),assetCatalogItem:clone(asset),strength:text(u.strength,''),position:pos};
+  return {...(Object.hasOwn(u,'workbenchReview')?{workbenchReview:workbenchReview(u.workbenchReview)}:{}),...(u.locked===true?{locked:true}:{}),id:id(u.id,i+1),name:text(u.name,''),symbol:text(u.symbol,'I',100),side,type:text(u.type,'Infantry',100),unitType:unitType(u.unitType??u.type),symbolMode,icon,color:color(u.color),phaseId:phase(u.phaseId),parentId:u.parentId==null?null:id(u.parentId),asset:text(u.asset??asset.id,'none',200),assetName:text(u.assetName??asset.name??u.asset,'No asset assigned',500),assetCatalogItem:clone(asset),strength:text(u.strength,''),position:pos};
  }),'marker');treeValid(units);
  let totalPoints=0;
  const points=(p,min,max=2000)=>{const arr=entries(p,'waypoints',max).map(point);if(arr.length<min)fail('Not enough waypoints');totalPoints+=arr.length;if(totalPoints>30000)fail('Plan exceeds 30,000 waypoints');return arr};
@@ -80,7 +92,7 @@ function validate(d){
  }),'area');
  const o=d.operation??{};if(typeof o!=='object'||Array.isArray(o))fail('Invalid operation');
  const v=d.view??{},layers=v.layers??{};
- return {schema:'everon-orbat-plan',schemaVersion:VERSION,app:'Everon ORBAT Mapper',operation:{...(o.timing!=null?{timing:Clock.validate(o.timing)}:{}),name:text(o.name,'OPERATION EVERON',300),taskForce:text(o.taskForce,'COMMAND',200),version:text(o.version,'01',50),briefing:text(o.briefing,'')},map:{name:'Everon',game:'Arma Reforger',coordinateSystem:'mapper-local',gridOrder:'easting-northing'},phases,orderOfBattle:units,routes,areas,view:{...(Array.isArray(v.hiddenAreas)?{hiddenAreas:v.hiddenAreas.filter(id=>areas.some(a=>String(a.id)===String(id))).map(String)}:{}),gridDigits:v.gridDigits===8?8:6,hiddenPhases:Array.isArray(v.hiddenPhases)?v.hiddenPhases.filter(x=>x==='shared'||phaseIds.has(x)):[],layers:{grid:layers.grid===true,units:layers.units!==false,routes:layers.routes!==false,areas:layers.areas!==false,labels:layers.labels!==false}}};
+ return {schema:'everon-orbat-plan',schemaVersion:units.some(unit=>Object.hasOwn(unit,'workbenchReview'))?5:4,app:'Everon ORBAT Mapper',operation:{...(o.timing!=null?{timing:Clock.validate(o.timing)}:{}),name:text(o.name,'OPERATION EVERON',300),taskForce:text(o.taskForce,'COMMAND',200),version:text(o.version,'01',50),briefing:text(o.briefing,'')},map:{name:'Everon',game:'Arma Reforger',coordinateSystem:'mapper-local',gridOrder:'easting-northing'},phases,orderOfBattle:units,routes,areas,view:{...(Array.isArray(v.hiddenAreas)?{hiddenAreas:v.hiddenAreas.filter(id=>areas.some(a=>String(a.id)===String(id))).map(String)}:{}),gridDigits:v.gridDigits===8?8:6,hiddenPhases:Array.isArray(v.hiddenPhases)?v.hiddenPhases.filter(x=>x==='shared'||phaseIds.has(x)):[],layers:{grid:layers.grid===true,units:layers.units!==false,routes:layers.routes!==false,areas:layers.areas!==false,labels:layers.labels!==false}}};
 }
 function empty(){return validate({schemaVersion:4,orderOfBattle:[],routes:[],areas:[]})}
 function visible(plan,item){return !(plan.areas.includes(item)&&(plan.view.hiddenAreas||[]).includes(String(item.id)))&&!plan.view.hiddenPhases.includes(item.phaseId??'shared')}
