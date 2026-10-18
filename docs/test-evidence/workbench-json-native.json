@@ -1,0 +1,89 @@
+{
+  "success": true,
+  "scope": "Actual native Game-module JSON scalar read semantics from the source-provided isolated reproduction project; no Workbench importer, scene editing, normal client or humans",
+  "engineVersion": "1.8.0.13",
+  "cases": [
+    {
+      "label": "numeric",
+      "loadedString": true,
+      "readString": false,
+      "stringValue": "unchanged",
+      "stringContextValid": true,
+      "loadedInt": true,
+      "readInt": true,
+      "intValue": 1,
+      "intContextValid": true
+    },
+    {
+      "label": "text-numeric",
+      "loadedString": true,
+      "readString": true,
+      "stringValue": "1",
+      "stringContextValid": true,
+      "loadedInt": true,
+      "readInt": false,
+      "intValue": -123456,
+      "intContextValid": true
+    },
+    {
+      "label": "text-id",
+      "loadedString": true,
+      "readString": true,
+      "stringValue": "unit-1",
+      "stringContextValid": true,
+      "loadedInt": true,
+      "readInt": false,
+      "intValue": -123456,
+      "intContextValid": true
+    },
+    {
+      "label": "missing",
+      "loadedString": true,
+      "readString": false,
+      "stringValue": "unchanged",
+      "stringContextValid": true,
+      "loadedInt": true,
+      "readInt": false,
+      "intValue": -123456,
+      "intContextValid": true
+    },
+    {
+      "label": "null",
+      "loadedString": true,
+      "readString": true,
+      "stringValue": "",
+      "stringContextValid": true,
+      "loadedInt": true,
+      "readInt": false,
+      "intValue": -123456,
+      "intContextValid": true
+    },
+    {
+      "label": "boolean",
+      "loadedString": true,
+      "readString": false,
+      "stringValue": "unchanged",
+      "stringContextValid": true,
+      "loadedInt": true,
+      "readInt": false,
+      "intValue": -123456,
+      "intContextValid": true
+    },
+    {
+      "label": "fractional",
+      "loadedString": true,
+      "readString": false,
+      "stringValue": "unchanged",
+      "stringContextValid": true,
+      "loadedInt": true,
+      "readInt": false,
+      "intValue": -123456,
+      "intContextValid": true
+    }
+  ],
+  "normalClientLaunched": false,
+  "processStopped": true,
+  "schema": "command-workbench-json-native-checkpoint",
+  "sourceSha256": "4c4bbf019158c8891da055f5ee8a7c35d45195558d60662619b2ef9018b3dc1d",
+  "sourceIncluded": false
+}

@@ -64,3 +64,13 @@ test('removing a parent identifies retained children without silently reparentin
  const f=fixture();f.mission.orderOfBattle[1].parentId=1;const prepared=X.createBaseline(json(f.mission),json(f.config));f.baseline=prepared.baseline;f.snapshot.baselineSha256=prepared.baselineSha256;f.snapshot.entities.shift();a.deepEqual(review(f).issues,[{managedId:'managed-1',code:'REMAINING_CHILDREN',unitIds:[2]}]);a.equal(f.mission.orderOfBattle[1].parentId,1);
  f.snapshot.entities.shift();a.deepEqual(review(f).issues,[]);
 });
+function nativeSnapshot(f){return {...clone(f.snapshot),schema:'command-workbench-native-snapshot',entities:f.snapshot.entities.map(({unitId,...row})=>clone(row))};}
+test('native snapshots bind planner identity only through the baseline, preserving large numeric and text IDs',()=>{
+ const f=fixture();f.mission.orderOfBattle[0].id=Number.MAX_SAFE_INTEGER;f.config.entities[0].unitId=Number.MAX_SAFE_INTEGER;f.mission.orderOfBattle[1].id='unit-2';f.config.entities[1].unitId='unit-2';const prepared=X.createBaseline(json(f.mission),json(f.config));f.baseline=prepared.baseline;f.snapshot.baselineSha256=prepared.baselineSha256;const wire=nativeSnapshot(f);wire.entities[0].transform.position[0]++;wire.entities[1].transform.angles[0]++;const r=X.reviewNative(json(f.mission),json(f.baseline),json(wire));a.deepEqual(r.moved.map(e=>e.unitId),[Number.MAX_SAFE_INTEGER,'unit-2']);a.equal(r.canApply,false);
+});
+test('native snapshot cannot inject planner IDs or use null, empty, numeric or duplicate managed IDs',()=>{
+ for(const mutate of [w=>w.entities[0].unitId=2,w=>w.entities[0].managedId=null,w=>w.entities[0].managedId='',w=>w.entities[0].managedId=1,w=>w.entities.push(clone(w.entities[0]))]){const f=fixture(),wire=nativeSnapshot(f);mutate(wire);a.throws(()=>X.reviewNative(json(f.mission),json(f.baseline),json(wire)));}
+});
+test('native unknown managed IDs are reviewed as additions and retain all normal scope gates',()=>{
+ const f=fixture(),wire=nativeSnapshot(f);wire.entities.push({...clone(wire.entities[0]),managedId:'new-native'});const r=X.reviewNative(json(f.mission),json(f.baseline),json(wire));a.equal(r.added[0].unitId,null);wire.world.guid='1111111111111111';a.throws(()=>X.reviewNative(json(f.mission),json(f.baseline),json(wire)),e=>e.code==='SCOPE');
+});

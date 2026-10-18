@@ -31,7 +31,7 @@ Workbench's `BeginEntityAction` / `EndEntityAction` history is separate from COM
 5. Build the entire candidate through the existing validated mission edit path, atomically, with **one Undo step**. Prove Undo/Redo restores the exact before/after mission and that failed validation, stale review or locked entries cause no partial mutation or history entry. A pure contract test or simulated native receipt cannot satisfy this gate.
 6. Test the actual original native importer/exporter and desktop review together: failed partial spawn rollback, stale baselines, conflicts, wrong world/addons, foreign layers unchanged and editor save/reopen identity. Only then enable Apply and describe the workflow as working. Continuous synchronization remains later work.
 
-The 22 development checks cover the declarative identity/diff and file contracts. They do not certify Workbench compilation, native identity persistence, scene editing, mission application or Undo. No game/editor was launched for this milestone.
+The 26 development checks cover the declarative identity/diff and file contracts. They do not certify Workbench compilation, native identity persistence, scene editing, mission application or Undo. No normal game client or Workbench was launched. A separate isolated diagnostic server exercised only native JSON scalar reads, as described below.
 
 ## Français
 
@@ -40,3 +40,18 @@ Fondation de développement uniquement : un contrat JSON vérifie les identités
 ## Deutsch
 
 Nur eine Entwicklungsgrundlage: Ein JSON-Vertrag prüft deklarierte Identitäten, Prefab-Verweise, den Ausgangsplan und Grenzen. Hinzugefügte, verschobene und entfernte verwaltete Einheiten erscheinen getrennt. Vorhandene Dateien werden nicht überschrieben und der Plan bleibt unverändert. Workbench-Importer, native Identitätsprüfung und atomare Anwendung mit einem Rückgängig-Schritt müssen noch implementiert und getestet werden. Gültiges JSON beweist weder die Herkunft der Datei noch einen funktionierenden Editor-Austausch; Anwenden bleibt deaktiviert.
+
+
+## Native JSON boundary and opaque managed IDs
+
+A separate original Game-module probe was compiled and executed on diagnostic engine **1.8.0.13**. Seven scalar cases were reproduced from the source-provided isolated project: number, numeric-looking text, ordinary text, missing field, null, Boolean and fractional number. Native `ReadValue` distinguished numbers from text. However, reading JSON null into a string returned success with an empty string. Failed scalar reads did not invalidate the overall context. An importer therefore must check each read result and reject empty identities; context validity alone is insufficient. The [JsonLoadContext API](https://community.bistudio.com/wikidata/external-data/arma-reforger/ArmaReforgerScriptAPIPublic/interfaceJsonLoadContext.html) was checked against the installed Game API before the probe.
+
+The native wire schema is `command-workbench-native-snapshot`, version1. Its envelope is the same as the normalized snapshot, but each entity has only `managedId`, `prefab` and `transform`. Native rows cannot supply a planner unit ID. `reviewNative` resolves that ID from the trusted baseline and then runs the same review checks. Unknown managed IDs become additions with no planner identity. Numeric, empty and null managed IDs are rejected. This preserves typed planner IDs, including safe integers larger than a native 32-bit integer, without converting them through Enfusion's numeric fields. The normal review schema remains available for development fixtures.
+
+Use `review-native` with the same explicit file options as `review`. `prepare-native-probe.cjs --out NEW_PROJECT_DIRECTORY` creates an isolated reproduction project and prints its project, world resource and profile paths. It launches nothing and refuses an existing directory. Its Game startup probe belongs only in this diagnostic fixture; do not add it to the production bridge or a live mission. The generated project was executed with the diagnostic server and matched all seven recorded cases. This is **Game JSON data proof**, not World Editor compilation, native placement/identity persistence, scene exchange or Undo proof.
+
+The 1,000-record synthetic fixture also compares normalized and opaque-native-ID reviews for identical reports. The native mapping path shares already-parsed validation data rather than reparsing and hashing the same baseline twice. Timings and coarse heap samples are recorded in the evidence; they do not certify editor, graphics, lifetime memory or universal performance.
+
+Français : les identifiants gérés du flux natif restent des chaînes opaques ; les identifiants exacts du plan sont retrouvés uniquement dans le registre de référence. Sept lectures JSON ont été vérifiées dans le serveur de diagnostic, mais l'importeur de l'éditeur et Annuler restent non vérifiés et désactivés.
+
+Deutsch: Der native Datenstrom verwendet nur undurchsichtige Verwaltungskennungen; die exakten Plan-IDs werden ausschließlich aus dem vertrauenswürdigen Ausgangsregister zugeordnet. Sieben JSON-Lesefälle wurden im Diagnoseserver geprüft. Editor-Importer und Rückgängig bleiben ungeprüft und deaktiviert.

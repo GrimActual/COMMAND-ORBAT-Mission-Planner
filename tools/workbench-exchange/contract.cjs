@@ -48,10 +48,13 @@ function createBaseline(missionText,configurationText){
  const base=envelope({schema:'command-workbench-baseline',version:1,...config,planSha256:hash(plan),layerId:'COMMAND_'+config.exchangeId,space:'world-metres-yaw-pitch-roll-degrees'});verifyPlan(plan,base);return {baseline:base,baselineSha256:hash(base),nativeValidationRequired:true};
 }
 function review(missionText,baselineText,snapshotText){
- const plan=mission(missionText),base=envelope(parse(baselineText)),units=verifyPlan(plan,base),snapshot=parse(snapshotText);
+ return reviewParsed(mission(missionText),envelope(parse(baselineText)),parse(snapshotText));
+}
+function reviewParsed(plan,base,snapshot){
+ const units=verifyPlan(plan,base),baselineSha256=hash(base);
  fields(snapshot,['schema','version','planId','exchangeId','baselineSha256','world','layerId','space','scanComplete','scanErrors','unmanagedEntityCount','entities']);
  if(snapshot.schema!=='command-workbench-snapshot'||snapshot.version!==1)fail('SCHEMA','Unsupported editor snapshot');
- if(snapshot.planId!==base.planId||snapshot.exchangeId!==base.exchangeId||snapshot.baselineSha256!==hash(base))fail('IDENTITY','Snapshot does not match the reviewed exchange');
+ if(snapshot.planId!==base.planId||snapshot.exchangeId!==base.exchangeId||snapshot.baselineSha256!==baselineSha256)fail('IDENTITY','Snapshot does not match the reviewed exchange');
  if(stable(snapshot.world)!==stable(base.world)||snapshot.layerId!==base.layerId||snapshot.space!==base.space)fail('SCOPE','World, layer or transform space mismatch');
  if(snapshot.scanComplete!==true||!Array.isArray(snapshot.scanErrors)||snapshot.scanErrors.length)fail('INCOMPLETE','Partial or failed scans cannot imply removals');
  if(!Number.isSafeInteger(snapshot.unmanagedEntityCount)||snapshot.unmanagedEntityCount<0)fail('SCOPE','Invalid unmanaged-entity count');
@@ -70,6 +73,15 @@ function review(missionText,baselineText,snapshotText){
  const removedIds=new Set(removed.map(e=>String(e.unitId)));
  const retainedChildren=new Map();for(const unit of plan.orderOfBattle){if(unit.parentId==null||removedIds.has(String(unit.id)))continue;const key=String(unit.parentId);if(!retainedChildren.has(key))retainedChildren.set(key,[]);retainedChildren.get(key).push(unit.id);}
  for(const previous of removed){const children=retainedChildren.get(String(previous.unitId));if(children?.length)issues.push({managedId:previous.managedId,code:'REMAINING_CHILDREN',unitIds:children});}
- return {schema:'command-workbench-change-review',version:1,status:'development-review-only',canApply:false,nativeValidationRequired:true,planId:base.planId,exchangeId:base.exchangeId,baselineSha256:hash(base),ignoredUnmanagedCount:snapshot.unmanagedEntityCount,added,moved,removed,unchanged,issues};
+ return {schema:'command-workbench-change-review',version:1,status:'development-review-only',canApply:false,nativeValidationRequired:true,planId:base.planId,exchangeId:base.exchangeId,baselineSha256,ignoredUnmanagedCount:snapshot.unmanagedEntityCount,added,moved,removed,unchanged,issues};
 }
-module.exports={LIMIT,BYTES,createBaseline,review};
+function reviewNative(missionText,baselineText,wireText){
+ const plan=mission(missionText),base=envelope(parse(baselineText)),wire=parse(wireText);
+ fields(wire,['schema','version','planId','exchangeId','baselineSha256','world','layerId','space','scanComplete','scanErrors','unmanagedEntityCount','entities']);
+ if(wire.schema!=='command-workbench-native-snapshot'||wire.version!==1)fail('SCHEMA','Unsupported native snapshot');
+ const before=new Map(base.entities.map(entity=>[entity.managedId,entity.unitId]));
+ const entities=array(wire.entities).map(row=>{fields(row,['managedId','prefab','transform']);token(row.managedId);return {...row,unitId:before.has(row.managedId)?before.get(row.managedId):null};});
+ // Only the trusted baseline binds native managed IDs to typed planner IDs.
+ return reviewParsed(plan,base,{...wire,schema:'command-workbench-snapshot',entities});
+}
+module.exports={LIMIT,BYTES,createBaseline,review,reviewNative};

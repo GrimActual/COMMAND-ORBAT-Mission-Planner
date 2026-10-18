@@ -3,7 +3,7 @@
   "version": 1,
   "scope": "Source-only original declarative contract and explicit-file CLI; synthetic fixtures; no native editor or desktop Apply",
   "checks": {
-    "pass": 22,
+    "pass": 26,
     "fail": 0,
     "skip": 0
   },
@@ -15,31 +15,40 @@
     "bytes": {
       "mission": 398529,
       "baseline": 193463,
-      "snapshot": 193344
+      "snapshot": 193344,
+      "nativeSnapshot": 180458
     },
     "medianMs": {
-      "prepare": 72.78749999999997,
-      "review": 98.48379999999997
+      "prepare": 69.51419999999996,
+      "review": 94.61069999999995,
+      "nativeReview": 95.95619999999985
     },
     "samplesMs": {
       "prepare": [
-        73.41719999999998,
-        72.78749999999997,
-        68.56689999999998,
-        73.21320000000003,
-        67.74199999999996
+        76.214,
+        71.24619999999999,
+        69.51419999999996,
+        67.66960000000006,
+        68.34370000000013
       ],
       "review": [
-        113.13839999999999,
-        104.488,
-        98.48379999999997,
-        97.87529999999992,
-        94.45270000000005
+        110.64670000000001,
+        94.70630000000006,
+        92.72919999999999,
+        90.55489999999986,
+        94.61069999999995
+      ],
+      "nativeReview": [
+        105.7133,
+        100.78340000000003,
+        91.96770000000004,
+        95.95619999999985,
+        91.09230000000002
       ]
     },
     "heapUsedBytes": {
-      "before": 7687824,
-      "after": 40784176
+      "before": 7681376,
+      "after": 41219616
     },
     "moved": 334,
     "unchanged": 666,
@@ -49,16 +58,25 @@
   "canApply": false,
   "nativeImporterAccepted": false,
   "singleUndoAccepted": false,
-  "appOrGameLaunched": false,
   "sourceIncluded": false,
   "sourceHashes": {
-    "contract.cjs": "b787814f29464dc832c81155db813444a4d112f3e28417e0513f320895cc9106",
-    "contract.test.cjs": "01e17ed6288760b672f8ef2618a6bf38eca720933e34b68591a5036e764b34f5",
-    "cli.cjs": "b0d58722510832094d9b85f6db19796cce0ba567f3d746b81e9d4a088e70e5d6",
-    "cli.test.cjs": "32aae37ff712352372fd069b3f9798451f85960648a93b9df37f8386d507e7c8"
+    "contract.cjs": "a78aa4167a86e95bd0e5d66973ac207baf0d970d80d94ab3df183258b9dc31ae",
+    "contract.test.cjs": "68872e20f4dc706ef14e75ddae62deb721d4bbda717adabbf069ce91d4224fd5",
+    "cli.cjs": "f959c9b034aca09dbc0a6f468987e403bd1a6b0b7508d6a53dc7c1384b321df1",
+    "cli.test.cjs": "8bb740024e2e38bddc1a6198b8319e4da0df589c69b30f0c7d46d7c3aa633dd1",
+    "prepare-native-probe.cjs": "34492c9316684229c172d915f73f122f8ef6acb3be6376312964ce9b6b26b5a3"
   },
+  "nativeDataProbe": {
+    "engine": "1.8.0.13",
+    "cases": 7,
+    "passed": true,
+    "editorImporterProof": false
+  },
+  "normalClientLaunched": false,
+  "workbenchLaunched": false,
+  "isolatedDiagnosticServerLaunched": true,
   "sourceAudit": {
-    "checked": 1119,
+    "checked": 1122,
     "ok": true,
     "violations": []
   }
