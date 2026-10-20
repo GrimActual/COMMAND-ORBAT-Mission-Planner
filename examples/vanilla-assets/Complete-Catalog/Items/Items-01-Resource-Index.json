@@ -1,0 +1,3270 @@
+{
+  "schema": "companion-resource-index",
+  "version": 1,
+  "addons": [
+    {
+      "id": "58D0FB3206B6F859",
+      "name": "Arma Reforger",
+      "version": null,
+      "dependencies": [
+        "5614BBCCBB55ED1C"
+      ]
+    },
+    {
+      "id": "5614BBCCBB55ED1C",
+      "name": "Enfusion core data",
+      "version": null,
+      "dependencies": []
+    }
+  ],
+  "resources": [
+    {
+      "id": "vanilla_09D6A1C9543E4A95",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Core/Backpack_Base.et",
+      "guid": "09D6A1C9543E4A95",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_914847E3090FF52D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Core/Canister_base.et",
+      "guid": "914847E3090FF52D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9071E75706E55A5A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Core/Canteen_base.et",
+      "guid": "9071E75706E55A5A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7CEEC3FF35A201A2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Core/Compass_Base.et",
+      "guid": "7CEEC3FF35A201A2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_61127FAA581F91FB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Core/DeployablePart_Base.et",
+      "guid": "61127FAA581F91FB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E0DDD854DF1DE9E2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Core/DeployablePart_Main_Base.et",
+      "guid": "E0DDD854DF1DE9E2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_92C144FDC924D81D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Core/DeployablePreview_Base.et",
+      "guid": "92C144FDC924D81D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2149560A9BEFBAC2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Core/Equip_Accessory_base.et",
+      "guid": "2149560A9BEFBAC2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_44FC3E59DFA001A4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Core/ETool_base.et",
+      "guid": "44FC3E59DFA001A4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_03310FA6C5D7CD5C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Core/Inventory_Virtual_Entity.et",
+      "guid": "03310FA6C5D7CD5C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C95E11C60810F432",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Core/Item_Base.et",
+      "guid": "C95E11C60810F432",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5C848F741AE1CE15",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Core/ItemGameEntity_base.et",
+      "guid": "5C848F741AE1CE15",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7B6990100263E2B3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Core/Map_Base.et",
+      "guid": "7B6990100263E2B3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5879D8E9C56E358D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Core/Radio_base.et",
+      "guid": "5879D8E9C56E358D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_65CFF7E95B53C338",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Core/Watch_Base.et",
+      "guid": "65CFF7E95B53C338",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_37535B53F57D1632",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Demining/MineFlags/MineFlag_base.et",
+      "guid": "37535B53F57D1632",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EC13D4E934B2ADD8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Demining/MineFlags/MineFlag_US.et",
+      "guid": "EC13D4E934B2ADD8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AC67BAB9763A3977",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Demining/MineFlags/MineFlag_USSR.et",
+      "guid": "AC67BAB9763A3977",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DC625458E7EA246D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/ETool_ALICE/ETool_ALICE_base.et",
+      "guid": "DC625458E7EA246D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_489C0EF4C8D47EBC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/ETool_ALICE/ETool_ALICE_carrier_base.et",
+      "guid": "489C0EF4C8D47EBC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B36BDC5D2E327181",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/ETool_ALICE/ETool_ALICE_carrier.et",
+      "guid": "B36BDC5D2E327181",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6E35D94130954509",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/ETool_ALICE/ETool_ALICE_FreeRoamBuilding_Gadget.et",
+      "guid": "6E35D94130954509",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0619993AE6CDBF85",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/ETool_ALICE/ETool_ALICE.et",
+      "guid": "0619993AE6CDBF85",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_79746A009471133A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/ETool_MPL50/ETool_MPL50_base.et",
+      "guid": "79746A009471133A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0C9BF4A16361B9A3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/ETool_MPL50/ETool_MPL50_carrier_base.et",
+      "guid": "0C9BF4A16361B9A3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FD2D7BBBF6918780",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/ETool_MPL50/ETool_MPL50_carrier_empty.et",
+      "guid": "FD2D7BBBF6918780",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_963F3B153A0A2564",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/ETool_MPL50/ETool_MPL50_carrier.et",
+      "guid": "963F3B153A0A2564",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_062E2F1D7F6739D6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/ETool_MPL50/ETool_MPL50_FreeRoamBuilding_Gadget.et",
+      "guid": "062E2F1D7F6739D6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8A89D3F70713E55B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/ETool_MPL50/ETool_MPL50.et",
+      "guid": "8A89D3F70713E55B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C9A4A8A1B5C0742D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Holster_M12/Holster_M12_base.et",
+      "guid": "C9A4A8A1B5C0742D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_12ABDF09B92D9545",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Holster_M12/Holster_M12_magpouch_base.et",
+      "guid": "12ABDF09B92D9545",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7E9C22C159E879A2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Holster_M12/Holster_M12_magpouch.et",
+      "guid": "7E9C22C159E879A2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6B9646EC0757693C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Holster_M12/Holster_M12.et",
+      "guid": "6B9646EC0757693C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7B4A894533CAF77E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Holster_PM/Holster_PM_base.et",
+      "guid": "7B4A894533CAF77E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B55078010CC0FF57",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Holster_PM/Holster_PM_Black.et",
+      "guid": "B55078010CC0FF57",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4BF77B3996096D3F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Holster_PM/Holster_PM_magpouch_base.et",
+      "guid": "4BF77B3996096D3F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9BD20A721C3BF593",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Holster_PM/Holster_PM_magpouch_Black.et",
+      "guid": "9BD20A721C3BF593",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D3C36A56E140D8AB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Holster_PM/Holster_PM_magpouch.et",
+      "guid": "D3C36A56E140D8AB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_50084B2B2B8004FA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Holster_PM/Holster_PM.et",
+      "guid": "50084B2B2B8004FA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9DE547DE239F120C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Pouch_ALICE_200rnd_M249/Pouch_ALICE_200rnd_M249_base.et",
+      "guid": "9DE547DE239F120C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4F018E3CF74D8636",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Pouch_ALICE_200rnd_M249/Pouch_ALICE_200rnd_M249.et",
+      "guid": "4F018E3CF74D8636",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_40DBE127E69CCD59",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Pouch_ALICE_20rnd_M14/Pouch_ALICE_20rnd_M14_base.et",
+      "guid": "40DBE127E69CCD59",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9C00CF3A286C048F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Pouch_ALICE_20rnd_M14/Pouch_ALICE_20rnd_M14.et",
+      "guid": "9C00CF3A286C048F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0B0D67BC8F43A052",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Pouch_ALICE_30rnd_STANAG/Pouch_ALICE_30rnd_STANAG_base.et",
+      "guid": "0B0D67BC8F43A052",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E3154E0EAC48D67B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Pouch_ALICE_30rnd_STANAG/Pouch_ALICE_30rnd_STANAG.et",
+      "guid": "E3154E0EAC48D67B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FDC0074A9D46125F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Pouch_Soviet_100rnd_PKM/Pouch_Soviet_100rnd_PKM_base.et",
+      "guid": "FDC0074A9D46125F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D39F54EC5B108045",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Pouch_Soviet_100rnd_PKM/Pouch_Soviet_100rnd_PKM_Black.et",
+      "guid": "D39F54EC5B108045",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F03EAAE51C256CFA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Pouch_Soviet_100rnd_PKM/Pouch_Soviet_100rnd_PKM.et",
+      "guid": "F03EAAE51C256CFA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A01218E4F8EE0DE7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Pouch_Soviet_10rnd_SVD/Pouch_Soviet_10rnd_SVD.et",
+      "guid": "A01218E4F8EE0DE7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EA5FBB191D7747AB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Pouch_Soviet_30rnd_AK74/Pouch_Soviet_30rnd_AK74_Black.et",
+      "guid": "EA5FBB191D7747AB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8C9F39278B899AE6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Pouch_Soviet_30rnd_AK74/Pouch_Soviet_30rnd_AK74.et",
+      "guid": "8C9F39278B899AE6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D58833B85D5C777A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Pouch_Soviet_45rnd_RPK74/Pouch_Soviet_45rnd_RPK74_Black.et",
+      "guid": "D58833B85D5C777A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B6EEF03975F21E4E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Pouch_Soviet_45rnd_RPK74/Pouch_Soviet_45rnd_RPK74.et",
+      "guid": "B6EEF03975F21E4E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5490FDEE87450C53",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Scabbard_Bayonet_6Kh4/Scabbard_Bayonet_6Kh4_base.et",
+      "guid": "5490FDEE87450C53",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1EAB6F88CBC0C0A5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Scabbard_Bayonet_6Kh4/Scabbard_Bayonet_6Kh4_empty.et",
+      "guid": "1EAB6F88CBC0C0A5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F759F0488730620F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Scabbard_Bayonet_6Kh4/Scabbard_Bayonet_6Kh4.et",
+      "guid": "F759F0488730620F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_64A970D059436047",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Scabbard_Bayonet_M9/Scabbard_Bayonet_M9_base.et",
+      "guid": "64A970D059436047",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_281E0545025733BB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Scabbard_Bayonet_M9/Scabbard_Bayonet_M9_empty.et",
+      "guid": "281E0545025733BB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EE7FBAD35CA9D0F2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Scabbard_Bayonet_M9/Scabbard_Bayonet_M9.et",
+      "guid": "EE7FBAD35CA9D0F2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2BD8B661902FFEB5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Scabbard_Bayonet_VZ58/Scabbard_Bayonet_VZ58_base.et",
+      "guid": "2BD8B661902FFEB5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_04435D27BAA1BDC5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Scabbard_Bayonet_VZ58/Scabbard_Bayonet_VZ58_empty.et",
+      "guid": "04435D27BAA1BDC5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_03B5BF4D26856154",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Scabbard_Bayonet_VZ58/Scabbard_Bayonet_VZ58_v1.et",
+      "guid": "03B5BF4D26856154",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6FE18BAD9A41EE7A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Scabbard_Bayonet_VZ58/Scabbard_Bayonet_VZ58_v2.et",
+      "guid": "6FE18BAD9A41EE7A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8A7DC75496A47911",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Accessories/Scabbard_Bayonet_VZ58/Scabbard_Bayonet_VZ58_v3.et",
+      "guid": "8A7DC75496A47911",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5C5C6EE05EE2FF1A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_assembled.et",
+      "guid": "5C5C6EE05EE2FF1A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_841162A79157C494",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_frame.et",
+      "guid": "841162A79157C494",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_06B68C58B72EAAC6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium.et",
+      "guid": "06B68C58B72EAAC6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_95D4766BBE46F23D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_IIFS_FieldPack.et",
+      "guid": "95D4766BBE46F23D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_41A9C55B61F375F0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_Kolobok.et",
+      "guid": "41A9C55B61F375F0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FDA7B6630DB87991",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss.et",
+      "guid": "FDA7B6630DB87991",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4805E67E2AE30F8D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_Medical_M5.et",
+      "guid": "4805E67E2AE30F8D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_79015191C0E77E48",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet_02.et",
+      "guid": "79015191C0E77E48",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AC298BA8A7D27007",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet_NoCross_01.et",
+      "guid": "AC298BA8A7D27007",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E90F2EB67A9CF49A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet_NoCross_02.et",
+      "guid": "E90F2EB67A9CF49A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7AC107CA7AFC9B59",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et",
+      "guid": "7AC107CA7AFC9B59",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_26223738A07F8202",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_RPG_Assistant_Black.et",
+      "guid": "26223738A07F8202",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6A39B5843B3F36DA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_RPG_Assistant.et",
+      "guid": "6A39B5843B3F36DA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9A201604DEF3BAAC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_RPG_Gunner_Black.et",
+      "guid": "9A201604DEF3BAAC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0D39750E5695B9D8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_RPG_Gunner.et",
+      "guid": "0D39750E5695B9D8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_443304F1EC50BC27",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_Veshmeshok_Black.et",
+      "guid": "443304F1EC50BC27",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3DE0155EC9767B98",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Backpacks/Backpack_Veshmeshok.et",
+      "guid": "3DE0155EC9767B98",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_35D7F1189BE00E94",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/BallisticTable/BallisticTable_base.et",
+      "guid": "35D7F1189BE00E94",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_792F06155BEBD71D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/BallisticTable/BallisticTable_US_base.et",
+      "guid": "792F06155BEBD71D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6113990D163E5249",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/BallisticTable/BallisticTable_US.et",
+      "guid": "6113990D163E5249",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_274C3547D26107C6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/BallisticTable/BallisticTable_USSR_base.et",
+      "guid": "274C3547D26107C6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B41607EAB58A4252",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/BallisticTable/BallisticTable_USSR.et",
+      "guid": "B41607EAB58A4252",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_26A0525B57F9AEF8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Binoculars/Binoculars_B12/Binoculars_B12_base.et",
+      "guid": "26A0525B57F9AEF8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F2539FA5706E51E4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Binoculars/Binoculars_B12/Binoculars_B12.et",
+      "guid": "F2539FA5706E51E4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B9050CD07513AE2B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Binoculars/Binoculars_B8/Binoculars_B8_base.et",
+      "guid": "B9050CD07513AE2B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_243948B23D90BECB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Binoculars/Binoculars_B8/Binoculars_B8.et",
+      "guid": "243948B23D90BECB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_447D9C49127DE98B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Binoculars/Binoculars_base.et",
+      "guid": "447D9C49127DE98B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E4E4CA52CCB2D22C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Binoculars/Binoculars_M22/Binoculars_M22_base.et",
+      "guid": "E4E4CA52CCB2D22C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0CF54B9A85D8E0D4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Binoculars/Binoculars_M22/Binoculars_M22.et",
+      "guid": "0CF54B9A85D8E0D4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_62D174018D1046F5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Canteens/Canteen_Soviet_01_Black.et",
+      "guid": "62D174018D1046F5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_70BC751317551D9B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Canteens/Canteen_Soviet_01.et",
+      "guid": "70BC751317551D9B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_630FB4AD4A735264",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Canteens/Canteen_US_01.et",
+      "guid": "630FB4AD4A735264",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C819E0B7454461F2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Compass/Compass_Adrianov_Map.et",
+      "guid": "C819E0B7454461F2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7CEF68E2BC68CE71",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Compass/Compass_Adrianov.et",
+      "guid": "7CEF68E2BC68CE71",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_72691366C26BD901",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Compass/Compass_SY183_Map.et",
+      "guid": "72691366C26BD901",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_61D4F80E49BF9B12",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Compass/Compass_SY183.et",
+      "guid": "61D4F80E49BF9B12",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5C053ACAE9D17683",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Detonators/BlastingMachine_KPM_3U1/ArmedDetonatorWires_KPM_3U1.et",
+      "guid": "5C053ACAE9D17683",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_36117D7F423AB44E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Detonators/BlastingMachine_KPM_3U1/BlastingMachine_KPM_3U1_base.et",
+      "guid": "36117D7F423AB44E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_90976DC90A223095",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Detonators/BlastingMachine_KPM_3U1/BlastingMachine_KPM_3U1.et",
+      "guid": "90976DC90A223095",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5A20F67EA2EF821A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Detonators/BlastingMachine_KPM_3U1/DeployableDetonatorReplacementUSSR.et",
+      "guid": "5A20F67EA2EF821A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3F3A1D96CA18DB53",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Detonators/BlastingMachine_M34/ArmedDetonatorWires_M34.et",
+      "guid": "3F3A1D96CA18DB53",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CE0AF733722B3977",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Detonators/BlastingMachine_M34/BlastingMachine_M34_base.et",
+      "guid": "CE0AF733722B3977",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CE0AF733722B3978",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Detonators/BlastingMachine_M34/BlastingMachine_M34.et",
+      "guid": "CE0AF733722B3978",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1BE3AC5A76F84398",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Detonators/BlastingMachine_M34/DeployableDetonatorReplacementUS.et",
+      "guid": "1BE3AC5A76F84398",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3A4927C454787B6B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Flashlights/Flashlight_base.et",
+      "guid": "3A4927C454787B6B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_61E466904E8D18D5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Flashlights/Flashlight_MX991/Flashlight_MX991_base.et",
+      "guid": "61E466904E8D18D5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3A421547BC29F679",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Flashlights/Flashlight_MX991/Flashlight_MX991.et",
+      "guid": "3A421547BC29F679",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_33EA038E98843FAE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01/Flashlight_Soviet_01_base.et",
+      "guid": "33EA038E98843FAE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_575EA58E67448C2A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01/Flashlight_Soviet_01.et",
+      "guid": "575EA58E67448C2A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_46FD263F0F368A92",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/MedicalKit_01/MedicalKit_01_base.et",
+      "guid": "46FD263F0F368A92",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9132672C4D9B2102",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/MedicalKit_01/MedicalKit_01_FIA.et",
+      "guid": "9132672C4D9B2102",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9DDD398F7463A42A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/MedicalKit_01/MedicalKit_01_open_base.et",
+      "guid": "9DDD398F7463A42A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9DDD398F7463A42B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/MedicalKit_01/MedicalKit_01_open.et",
+      "guid": "9DDD398F7463A42B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AE578EEA4244D41F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/MedicalKit_01/MedicalKit_01_US.et",
+      "guid": "AE578EEA4244D41F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_21EF98BFC1EB3793",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/MedicalKit_01/MedicalKit_01_USSR.et",
+      "guid": "21EF98BFC1EB3793",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8F126533C9197CFF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/MortarRearmingKit/MortarRearmingKit_base.et",
+      "guid": "8F126533C9197CFF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6D23A74151533374",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/MortarRearmingKit/MortarRearmingKit_FIA.et",
+      "guid": "6D23A74151533374",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_905F6CCA37A82DDB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/MortarRearmingKit/MortarRearmingKit_US.et",
+      "guid": "905F6CCA37A82DDB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6DC231B93D42AF21",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/MortarRearmingKit/MortarRearmingKit_USSR.et",
+      "guid": "6DC231B93D42AF21",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7738517A4B046266",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/RearmingKit_01/RearmingKit_01_base.et",
+      "guid": "7738517A4B046266",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_36696C3AC01ACE96",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/RearmingKit_01/RearmingKit_01_FIA.et",
+      "guid": "36696C3AC01ACE96",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5028D9E699AE3A73",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/RearmingKit_01/RearmingKit_01_US.et",
+      "guid": "5028D9E699AE3A73",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CE46DE74E8896BEA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/RearmingKit_01/RearmingKit_01_USSR.et",
+      "guid": "CE46DE74E8896BEA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4AF9664BEE9263A4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/RepairKit_01/RepairKit_01_base.et",
+      "guid": "4AF9664BEE9263A4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_33B2DFDCD0EBA3DC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/RepairKit_01/RepairKit_01_wrench_base.et",
+      "guid": "33B2DFDCD0EBA3DC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_33B2DFDCD0EBA3DB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Kits/RepairKit_01/RepairKit_01_wrench.et",
+      "guid": "33B2DFDCD0EBA3DB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_942A96E02BC7AFA6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Maps/Map_Paper_01/Map_Paper_01_unfolded_table_USSR.et",
+      "guid": "942A96E02BC7AFA6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D60220233693B077",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Maps/Map_Paper_01/Map_Paper_01_unfolded_table.et",
+      "guid": "D60220233693B077",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_983B57B8E95C1F52",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_01_folded_FIA.et",
+      "guid": "983B57B8E95C1F52",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6D4780D5233AD3DD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_01_folded_Kolguyev.et",
+      "guid": "6D4780D5233AD3DD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_922F95F91943F69A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_01_folded_US.et",
+      "guid": "922F95F91943F69A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F849217AB3BA88BE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_01_folded_USSR.et",
+      "guid": "F849217AB3BA88BE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_13772C903CB5E4F7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_01_folded.et",
+      "guid": "13772C903CB5E4F7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D5D6F45EEA5F4140",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_01_full_Kolguyev.et",
+      "guid": "D5D6F45EEA5F4140",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_865B9E01D2C0B2D7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_01_full.et",
+      "guid": "865B9E01D2C0B2D7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_88B3A9FF09D43C1B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_FastTravel_CO.et",
+      "guid": "88B3A9FF09D43C1B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C728264121D858ED",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_FastTravel_COK.et",
+      "guid": "C728264121D858ED",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3E4984A669350723",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Maps/Map_Paper_02/Map_Paper_02_unfolded.et",
+      "guid": "3E4984A669350723",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F62E5FBCD723FF73",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Mortars/2B14/Part_2B14_Barrel.et",
+      "guid": "F62E5FBCD723FF73",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4323046B2CC94818",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Mortars/2B14/Part_2B14_BasePlate.et",
+      "guid": "4323046B2CC94818",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_00B1E3F86A9EF45D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Mortars/2B14/Part_2B14_Bipod.et",
+      "guid": "00B1E3F86A9EF45D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_62B704DD79A3B5BE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Mortars/M252/Part_M252_Barrel.et",
+      "guid": "62B704DD79A3B5BE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0D540E16A6E53433",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Mortars/M252/Part_M252_BasePlate.et",
+      "guid": "0D540E16A6E53433",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_80D38046CB4D4663",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Mortars/M252/Part_M252_Bipod.et",
+      "guid": "80D38046CB4D4663",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_73950FBA2D7DB5C5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Radios/Radio_ANPRC68.et",
+      "guid": "73950FBA2D7DB5C5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C44F542754C0C46F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Radios/Radio_ANPRC77_COK.et",
+      "guid": "C44F542754C0C46F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9B6B61BB3FE3DFB0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Radios/Radio_ANPRC77.et",
+      "guid": "9B6B61BB3FE3DFB0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5879D8E9C56E358E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Radios/Radio_Deployable_Base.et",
+      "guid": "5879D8E9C56E358E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4181B1C8B5E56392",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Radios/Radio_R107M_FIA.et",
+      "guid": "4181B1C8B5E56392",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_54C68E438DD34265",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Radios/Radio_R107M.et",
+      "guid": "54C68E438DD34265",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_540C08AD5F21A5FA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Radios/Radio_R148_FIA.et",
+      "guid": "540C08AD5F21A5FA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E1A5D4B878AA8980",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Radios/Radio_R148.et",
+      "guid": "E1A5D4B878AA8980",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B15E9D81210CFC1C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Radios/Radio_RF10/Radio_RF10_base.et",
+      "guid": "B15E9D81210CFC1C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_73EFD7591F4134D3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Radios/Radio_RF10/Radio_RF10.et",
+      "guid": "73EFD7591F4134D3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9D4607422CBA0335",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tents/Tent_Deployable_Base.et",
+      "guid": "9D4607422CBA0335",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4FD388D9CD34DC6B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tents/Tent_Deployable_FIA_Conflict.et",
+      "guid": "4FD388D9CD34DC6B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_677DDAF7F9AE1765",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tents/Tent_Deployable_FIA.et",
+      "guid": "677DDAF7F9AE1765",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EE55606EA809CDDE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tents/Tent_US.et",
+      "guid": "EE55606EA809CDDE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_02238AA6EEB084D1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tents/Tent_USSR.et",
+      "guid": "02238AA6EEB084D1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_86E03364AB549230",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tents/TentSmallFIA_01_packed.et",
+      "guid": "86E03364AB549230",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7F39A38AB2C316F3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Test/CharacterWeaponStorage.et",
+      "guid": "7F39A38AB2C316F3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_11F1F37C80152062",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Test/InventoryTestBackpack.et",
+      "guid": "11F1F37C80152062",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8C3C6924C9ECC06A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Test/InventoryTestLoadoutStorage.et",
+      "guid": "8C3C6924C9ECC06A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_710697B3C5BE9AB8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tripods/6T7/DeployablePreview_Tripod_6T7_NSV_Optic.et",
+      "guid": "710697B3C5BE9AB8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C1DD26CBDC2FD74B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tripods/6T7/DeployablePreview_Tripod_6T7_NSV.et",
+      "guid": "C1DD26CBDC2FD74B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DE6458E8239A3A4A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tripods/6T7/Part_NSV_Gun_Optic.et",
+      "guid": "DE6458E8239A3A4A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_184DFCEFE574E775",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tripods/6T7/Part_NSV_Gun.et",
+      "guid": "184DFCEFE574E775",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_184DFCEFE574E776",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tripods/6T7/Part_NSV_Tripod.et",
+      "guid": "184DFCEFE574E776",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A00DDA94ECA83787",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tripods/M2/DeployablePreview_Tripod_M3_M2HB.et",
+      "guid": "A00DDA94ECA83787",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9B625CAE6DEE1DAB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tripods/M2/Part_M2_Gun.et",
+      "guid": "9B625CAE6DEE1DAB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6A3EF260029FE220",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tripods/M2/Part_M3_Tripod.et",
+      "guid": "6A3EF260029FE220",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2283848CB2B05F1E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tripods/M60/DeployablePreview_Tripod_M122_M60.et",
+      "guid": "2283848CB2B05F1E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EF55A296E50DC8B8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tripods/M60/Part_Tripod_M122.et",
+      "guid": "EF55A296E50DC8B8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EE008959836D1E20",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tripods/PKM/DeployablePreview_Tripod_6T5_PKM.et",
+      "guid": "EE008959836D1E20",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F0215952204C9476",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tripods/PKM/DeployablePreview_Tripod_6T5_PKMN_1P29.et",
+      "guid": "F0215952204C9476",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1ACE18D9C74BF7B1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tripods/PKM/DeployablePreview_Tripod_6T5_PKMN.et",
+      "guid": "1ACE18D9C74BF7B1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F6490587042BFEE5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Tripods/PKM/Part_Tripod_6T5.et",
+      "guid": "F6490587042BFEE5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_76DC002A74976117",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Watches/Watch_Orlik38/Watch_Orlik38_base.et",
+      "guid": "76DC002A74976117",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DCB293AEF79CCD7D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Watches/Watch_Orlik38/Watch_Orlik38_Map.et",
+      "guid": "DCB293AEF79CCD7D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_61A705D76908160C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Watches/Watch_Orlik38/Watch_Orlik38.et",
+      "guid": "61A705D76908160C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6ECDF523E1035A0F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Watches/Watch_SandY184A_Map.et",
+      "guid": "6ECDF523E1035A0F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_78ED4FEF62BBA728",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Watches/Watch_SandY184A.et",
+      "guid": "78ED4FEF62BBA728",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4FAD128BE9F66C6F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Watches/Watch_Vostok_Map.et",
+      "guid": "4FAD128BE9F66C6F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6FD6C96121905202",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Equipment/Watches/Watch_Vostok.et",
+      "guid": "6FD6C96121905202",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_50A68300B537EDFA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Food/ArmyCrackers_Soviet_01.et",
+      "guid": "50A68300B537EDFA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C22A2F123CD609FC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Food/Meat_01_Dry.et",
+      "guid": "C22A2F123CD609FC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_128A19AA9F731095",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Food/MeatLeg_01.et",
+      "guid": "128A19AA9F731095",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EB21D26B8D5A3232",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Food/MRE.et",
+      "guid": "EB21D26B8D5A3232",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E7DF31108D38A8A8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Fuel/Jerrycan_01/Jerrycan_01_item_base.et",
+      "guid": "E7DF31108D38A8A8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_12D5AD21E383B768",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Fuel/Jerrycan_01/Jerrycan_01_item.et",
+      "guid": "12D5AD21E383B768",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C98FCC6CA6C56069",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/AspirinBottle.et",
+      "guid": "C98FCC6CA6C56069",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0845FCD5D1E53541",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_01_Base.et",
+      "guid": "0845FCD5D1E53541",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_30CDE9F71FC702E8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01_Base.et",
+      "guid": "30CDE9F71FC702E8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A81F501D3EF6F38E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et",
+      "guid": "A81F501D3EF6F38E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D511F5C330B1697E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_USSR_01_Base.et",
+      "guid": "D511F5C330B1697E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C3F1FA1E2EC2B345",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_USSR_01.et",
+      "guid": "C3F1FA1E2EC2B345",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CDCC313B2FB76FE7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/FieldDressing_01/Gauze_01.et",
+      "guid": "CDCC313B2FB76FE7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AF3411AAF94D18C2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/Gauze_02/Gauze_02.et",
+      "guid": "AF3411AAF94D18C2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3238FC0BDB67AA78",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01_base.et",
+      "guid": "3238FC0BDB67AA78",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0D9A5DCF89AE7AA9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et",
+      "guid": "0D9A5DCF89AE7AA9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8435F7561C0FBB44",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/SalineBag_01/SalineBag_01_base.et",
+      "guid": "8435F7561C0FBB44",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4CDB9A030F685F80",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/SalineBag_01/SalineBag_US_01_base.et",
+      "guid": "4CDB9A030F685F80",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_00E36F41CA310E2A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/SalineBag_01/SalineBag_US_01.et",
+      "guid": "00E36F41CA310E2A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8AF07D321C44DDC4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/SalineBag_01/SalineBag_USSR_01_base.et",
+      "guid": "8AF07D321C44DDC4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_527D7C5D2E476BDC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/SalineBag_01/SalineBag_USSR_01.et",
+      "guid": "527D7C5D2E476BDC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_00CCF2C580A018F1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_base.et",
+      "guid": "00CCF2C580A018F1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_260827F90690140A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01_base.et",
+      "guid": "260827F90690140A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D70216B1B2889129",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et",
+      "guid": "D70216B1B2889129",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FEF9FA4072013B5B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_USSR_01_base.et",
+      "guid": "FEF9FA4072013B5B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_80E75A71C29190DB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_USSR_01.et",
+      "guid": "80E75A71C29190DB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B2B880342435C25B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Misc/BarbedTape/Barbed_Tape_Base.et",
+      "guid": "B2B880342435C25B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2997FA6F521B519C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Misc/BarbedTape/Barbed_Tape.et",
+      "guid": "2997FA6F521B519C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EEECA5328983D468",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Misc/BarbedTape/BarbedTape_Stake_Base.et",
+      "guid": "EEECA5328983D468",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_55F8A472A0533C7E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Misc/BarbedTape/BarbedTape_Stake.et",
+      "guid": "55F8A472A0533C7E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_921CB34046441F46",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Misc/Caches/Campaign_CacheNote_Base.et",
+      "guid": "921CB34046441F46",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_07C703B76CD25499",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Misc/Caches/Campaign_CacheNote_FIA.et",
+      "guid": "07C703B76CD25499",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_058AA6AF360CEB97",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Misc/Caches/Campaign_CacheNote_Preview.et",
+      "guid": "058AA6AF360CEB97",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5CF603986376EAA9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01_base.et",
+      "guid": "5CF603986376EAA9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6D56FED1E55A8F84",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Misc/IntelligenceFolder_E_01/IntelligenceFolder_E_01.et",
+      "guid": "6D56FED1E55A8F84",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B58E8763B8883B5A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Misc/Sandbags/Part_Sandbag_Base.et",
+      "guid": "B58E8763B8883B5A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0B14A519BC3B6A2F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Misc/Sandbags/Part_Sandbag_Burlap_Preview.et",
+      "guid": "0B14A519BC3B6A2F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_07BC23F8D9223863",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Misc/Sandbags/Part_Sandbag_Burlap.et",
+      "guid": "07BC23F8D9223863",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1742632597955A55",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/Misc/Sandbags/Part_Sandbag_Plastic.et",
+      "guid": "1742632597955A55",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B260126B778C842A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/PersonalBelongings/PersonalBelongings_base.et",
+      "guid": "B260126B778C842A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E7FF723379730BD5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/PersonalBelongings/PersonalBelongings_CIV.et",
+      "guid": "E7FF723379730BD5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AE2B7341B5A82545",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/PersonalBelongings/PersonalBelongings_FIA.et",
+      "guid": "AE2B7341B5A82545",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6676FF9B716402CC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/PersonalBelongings/PersonalBelongings_US.et",
+      "guid": "6676FF9B716402CC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E096C6BD45C87B63",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Items/PersonalBelongings/PersonalBelongings_USSR.et",
+      "guid": "E096C6BD45C87B63",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    }
+  ]
+}

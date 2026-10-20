@@ -1,0 +1,22 @@
+{
+  "mapping": "command-exact-integer-v1",
+  "moduleSHA256": {
+    "sqf-integer-fragments.js": "62a7cb2512e0f9da17b60ae5f153a20fb98a5fc5796e93b28dac72fa60a11efe",
+    "sqf-expression-ast.js": "f56fee7869523ae4ae72b9c0eb7382c7777a1a23322c66987a028a2912b7530d",
+    "sqf-structural-ast.js": "4e10668a148b4b0b4eaefe346481799d557bbc1e9e1ce3bd36a4dc698d139a47",
+    "sqf-migration.js": "3e34ffe74cfb27f718b478e2ff298dcf997130c1fc84422ba1b042c6147274f5",
+    "sqf-source-dependencies.js": "b24fdc5ea804bc1911f26cd01a3969d6f7ddad4c0f165a0355927ba7c69c1478"
+  },
+  "mappingHashScope": "utf8-module-with-lf-newlines",
+  "fixtureSHA256": "0f1621253e81da1f5128a2a7cd524e0ce924ce6336c2555e77cbd10c42e11742",
+  "compiled": true,
+  "executed": true,
+  "failures": 0,
+  "cases": 42,
+  "engineVersion": "1.8.0.13",
+  "environment": "ArmaReforgerServerDiag Game scripts, isolated EmptyEden fixture",
+  "gameClientLaunched": false,
+  "sourceSQFExecuted": false,
+  "sourceSemantics": "Exact bounded integer arithmetic; no Arma 3 runtime comparison",
+  "proofScope": "Exact integer expression values within bounded intermediates; no parent statement or mission conversion"
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "command-deployment-composition",
+  "version": 1,
+  "name": "Neutral checkpoint",
+  "anchor": {
+    "lat": 1000,
+    "lng": 1000
+  },
+  "headingDegrees": 0,
+  "units": [
+    {
+      "id": "sample-0",
+      "name": "Neutral checkpoint 1",
+      "symbol": "I",
+      "side": "neutral",
+      "type": "Infantry",
+      "unitType": "other",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "none",
+      "assetName": "No asset assigned",
+      "assetCatalogItem": {},
+      "strength": "",
+      "position": {
+        "lat": 1000,
+        "lng": 1000
+      }
+    },
+    {
+      "id": "sample-1",
+      "name": "Neutral checkpoint 2",
+      "symbol": "I",
+      "side": "neutral",
+      "type": "Infantry",
+      "unitType": "other",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": "sample-0",
+      "asset": "none",
+      "assetName": "No asset assigned",
+      "assetCatalogItem": {},
+      "strength": "",
+      "position": {
+        "lat": 1000,
+        "lng": 1012
+      }
+    },
+    {
+      "id": "sample-2",
+      "name": "Neutral checkpoint 3",
+      "symbol": "I",
+      "side": "neutral",
+      "type": "Infantry",
+      "unitType": "other",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": "sample-0",
+      "asset": "none",
+      "assetName": "No asset assigned",
+      "assetCatalogItem": {},
+      "strength": "",
+      "position": {
+        "lat": 1008,
+        "lng": 1000
+      }
+    }
+  ]
+}

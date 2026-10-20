@@ -1,3 +1,7 @@
+# COMMAND v1.0.0 — Mission Planning & Control
+
+20 October 2026. Stable planner, experimental live controls. [Release notes](docs/release-v1.0.0/RELEASE-NOTES.md). Earlier version tags and packages remain unchanged.
+
 # Release history
 
 Published oldest first; GitHub displays newest first.
@@ -28,3 +32,10 @@ Published oldest first; GitHub displays newest first.
 - [v2.9.0-rc.2](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/releases/tag/v2.9.0-rc.2-command) — prerelease
 
 - [v2.9.1-rc.1](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/releases/tag/v2.9.1-rc.1-command) — consolidated prerelease candidate
+
+
+- [v2.9.1-dev.gm.5 — reviewed native infantry AI orders](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/releases/tag/v2.9.1-dev.gm.5-command)
+
+- [v2.9.1-rc.3 — migration adapters](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/releases/tag/v2.9.1-rc.3-command)
+
+- [v2.9.1-dev.followon.7 — control pilot with bridge 0.11.0](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/releases/tag/v2.9.1-dev.followon.7-command) — development prerelease

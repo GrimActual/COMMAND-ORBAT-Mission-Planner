@@ -1,0 +1,13 @@
+{
+  "schemaAndDeploymentReview": true,
+  "plannedRootCount": 3,
+  "expectedOccupants": 5,
+  "exactPrefabIdentities": 3,
+  "worldCoordinatesVerified": true,
+  "automaticOrders": false,
+  "gameAssetsIncluded": false,
+  "liveAcceptance": false,
+  "productionOccupiedGroupFlight": "passed isolated native execution through production reviewed pipeline",
+  "humanMultiplayerAcceptance": false,
+  "knownWalkingBoardingIssue": "unresolved; direct seating is a separate operation"
+}

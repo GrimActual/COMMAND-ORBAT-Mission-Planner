@@ -1,0 +1,79 @@
+{
+  "assets": [
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-E2B42E634BC002F4",
+      "name": "Barrel — CustomPrefabs",
+      "category": "Vanilla / ScenarioFramework",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_E2B42E634BC002F4",
+        "addonId": "58D0FB3206B6F859",
+        "path": "worlds/ScenarioFramework/CustomPrefabs/Barrel.et",
+        "guid": "E2B42E634BC002F4",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-65726388F6BE4647",
+      "name": "Character FIA Custom — CustomPrefabs",
+      "category": "Vanilla / ScenarioFramework",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_65726388F6BE4647",
+        "addonId": "58D0FB3206B6F859",
+        "path": "worlds/ScenarioFramework/CustomPrefabs/Character_FIA_Custom.et",
+        "guid": "65726388F6BE4647",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-56C2CDD8F4513E84",
+      "name": "Character US Custom — CustomPrefabs",
+      "category": "Vanilla / ScenarioFramework",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_56C2CDD8F4513E84",
+        "addonId": "58D0FB3206B6F859",
+        "path": "worlds/ScenarioFramework/CustomPrefabs/Character_US_Custom.et",
+        "guid": "56C2CDD8F4513E84",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    }
+  ]
+}

@@ -1,0 +1,927 @@
+{
+  "schema": "everon-orbat-plan",
+  "schemaVersion": 4,
+  "app": "Everon ORBAT Mapper",
+  "operation": {
+    "name": "OPERATION WATCHTOWER",
+    "taskForce": "COMMAND TEST DETACHMENT",
+    "version": "BRIDGE 0.12.1 TEST MISSION 1",
+    "briefing": "OPERATION WATCHTOWER\nEVERON / SAINT-PHILIPPE AIRFIELD SECTOR\n\nSITUATION\nA communications relay north of the assembly point has stopped reporting. Your patrol must secure the checkpoint, investigate the marked relay search area and recover to the airfield. Opposition is an optional second deployment, introduced only when the friendly force is ready. No radio tower, intel object, medical supplies or scripted engine objectives are spawned by this plan; marked areas are role-play objectives.\n\nMISSION\nACTUAL commands ALPHA and BRAVO on foot, CHARLIE in reserve, BISON 1/2 as ground support and EAGLE as a parked troop-transport helicopter. ANGEL holds the casualty collection point. Names and exact prefab references are already assigned.\n\nPHASE 1 - ASSEMBLY\nDeploy the 12 friendly plan roots once. This is 12 prefab roots, not 12 soldiers. Check all spawned group members and vehicles. Inspect seats before requesting embark. BISON 1 CREW boards BISON 1; BISON 2 CREW boards BISON 2. Inspect allowed seat roles and actual occupancy. CHARLIE boards EAGLE cargo seats only after checking capacity. EAGLE pilot and co-pilot are separate living AI characters; they start beside the aircraft and need individual seating requests or normal GM placement. Aircraft remain parked. One approved spawn does not pre-seat anyone or execute these orders.\n\nPHASE 2 - CHECKPOINT NORTH\nALPHA moves to CHECKPOINT, then holds 30 seconds. BRAVO moves to OVERWATCH, then holds/defends as supported. Only proceed after actual arrival, not merely an installed waypoint. BISON vehicles stage at SUPPORT HOLD along an inspected drivable route after their crews are correctly mounted. Keep aircraft stationary until a GM/player is ready to fly.\n\nPHASE 3 - RELAY\nALPHA moves to RELAY. BRAVO remains cover or uses WEST ALTERNATE if the direct approach is blocked. Optional: separately deploy the two opposition fireteams using file 04 after inspecting their positions in-game. Hostile AI may engage immediately; the reinforcement file is deliberately separate. Announce contact over role-play radio. Nothing automatically schedules enemy waves. The relay is secured when the GM confirms the area is clear and the search is complete.\n\nPHASE 4 - RECOVERY\nIf there is an actual eligible casualty, use supported treatment with ANGEL's control group and observe the outcome. If the force remains effective, return on foot to ASSEMBLY. If extraction is required, move the reserve/patrol to LZ and use GM/player-operated EAGLE. The bridge has wheeled-vehicle driving, not helicopter flight orders. Never issue an infantry or wheeled route as a helicopter flight order. Board AI passengers before a human enters the aircraft because player-occupied vehicles are protected.\n\nCONNECTION AND SNAPSHOT CHECK\nSave a supported planned deployment separately from current state. Current-state snapshots require supported on-foot groups or empty vehicles; dismount and empty vehicles first, and omit unsupported targets such as the helicopter if rejected. Review before a separately approved restore. Avoid duplicate deployment. This is not a full scenario/world save.\n\nREAD 00-START-HERE.md and 06-ORDERS-AND-RADIO.md in this test pack. All drawn routes/areas are planner annotations, not installed live orders. Optional file 05 drives offline rehearsal only and never controls the game.\n\nPLACEMENT\nPositions use the existing +50 metre planner display offset once. Before approval inspect every placement for existing entities, buildings, slopes and usable ground. Live collision, navmesh, helicopter seating and boarding completion remain to be observed. No private data or game geometry is included."
+  },
+  "map": {
+    "name": "Everon",
+    "game": "Arma Reforger",
+    "coordinateSystem": "mapper-local",
+    "gridOrder": "easting-northing"
+  },
+  "phases": [
+    {
+      "id": "assembly",
+      "name": "1 - Assembly and loading"
+    },
+    {
+      "id": "checkpoint",
+      "name": "2 - Checkpoint North"
+    },
+    {
+      "id": "relay",
+      "name": "3 - Relay search"
+    },
+    {
+      "id": "recovery",
+      "name": "4 - Recovery and extraction"
+    }
+  ],
+  "orderOfBattle": [
+    {
+      "id": "ACTUAL",
+      "name": "ACTUAL - Mission commander",
+      "symbol": "I",
+      "side": "blue",
+      "type": "Infantry",
+      "unitType": "infantry",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-26A9756790131354",
+      "assetName": "Character US Rifleman — US_Army",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-26A9756790131354",
+        "name": "Character US Rifleman — US_Army",
+        "category": "Vanilla / Characters",
+        "assetKind": "infantry",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_26A9756790131354",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et",
+          "guid": "26A9756790131354",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "Command from the assembly point; authorize each phase after checking actual game state.",
+      "position": {
+        "lat": 11910,
+        "lng": 4750
+      }
+    },
+    {
+      "id": "ALPHA",
+      "name": "ALPHA - Checkpoint team",
+      "symbol": "I",
+      "side": "blue",
+      "type": "Infantry",
+      "unitType": "infantry",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-84E5BBAB25EA23E5",
+      "assetName": "Group US FireTeam — BLUFOR",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-84E5BBAB25EA23E5",
+        "name": "Group US FireTeam — BLUFOR",
+        "category": "Vanilla / Groups",
+        "assetKind": "infantry",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_84E5BBAB25EA23E5",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Groups/BLUFOR/Group_US_FireTeam.et",
+          "guid": "84E5BBAB25EA23E5",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "Advance on foot to CHECKPOINT NORTH, hold and report. Then search RELAY.",
+      "position": {
+        "lat": 11950,
+        "lng": 4750
+      }
+    },
+    {
+      "id": "BRAVO",
+      "name": "BRAVO - Overwatch team",
+      "symbol": "I",
+      "side": "blue",
+      "type": "Infantry",
+      "unitType": "infantry",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-84E5BBAB25EA23E5",
+      "assetName": "Group US FireTeam — BLUFOR",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-84E5BBAB25EA23E5",
+        "name": "Group US FireTeam — BLUFOR",
+        "category": "Vanilla / Groups",
+        "assetKind": "infantry",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_84E5BBAB25EA23E5",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Groups/BLUFOR/Group_US_FireTeam.et",
+          "guid": "84E5BBAB25EA23E5",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "Cover ALPHA from OVERWATCH. Use the WEST ALTERNATE if the direct route is blocked.",
+      "position": {
+        "lat": 11950,
+        "lng": 4790
+      }
+    },
+    {
+      "id": "CHARLIE",
+      "name": "CHARLIE - Air-mobile reserve",
+      "symbol": "I",
+      "side": "blue",
+      "type": "Infantry",
+      "unitType": "infantry",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-84E5BBAB25EA23E5",
+      "assetName": "Group US FireTeam — BLUFOR",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-84E5BBAB25EA23E5",
+        "name": "Group US FireTeam — BLUFOR",
+        "category": "Vanilla / Groups",
+        "assetKind": "infantry",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_84E5BBAB25EA23E5",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Groups/BLUFOR/Group_US_FireTeam.et",
+          "guid": "84E5BBAB25EA23E5",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "Board EAGLE passenger seats after inspection; remain reserve until called.",
+      "position": {
+        "lat": 11850,
+        "lng": 4950
+      }
+    },
+    {
+      "id": "BISON1_CREW",
+      "name": "BISON 1 - Escort crew",
+      "symbol": "I",
+      "side": "blue",
+      "type": "Infantry",
+      "unitType": "infantry",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-3BF36BDEEB33AEC9",
+      "assetName": "Group US SentryTeam — BLUFOR",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-3BF36BDEEB33AEC9",
+        "name": "Group US SentryTeam — BLUFOR",
+        "category": "Vanilla / Groups",
+        "assetKind": "infantry",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_3BF36BDEEB33AEC9",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et",
+          "guid": "3BF36BDEEB33AEC9",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "Board BISON 1 using permitted driver/gunner/passenger roles, then escort the support vehicle.",
+      "position": {
+        "lat": 11870,
+        "lng": 4840
+      }
+    },
+    {
+      "id": "BISON2_CREW",
+      "name": "BISON 2 - Support crew",
+      "symbol": "I",
+      "side": "blue",
+      "type": "Infantry",
+      "unitType": "infantry",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-3BF36BDEEB33AEC9",
+      "assetName": "Group US SentryTeam — BLUFOR",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-3BF36BDEEB33AEC9",
+        "name": "Group US SentryTeam — BLUFOR",
+        "category": "Vanilla / Groups",
+        "assetKind": "infantry",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_3BF36BDEEB33AEC9",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et",
+          "guid": "3BF36BDEEB33AEC9",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "Board BISON 2 with a driver; stage at SUPPORT HOLD and remain available for recovery.",
+      "position": {
+        "lat": 11870,
+        "lng": 4880
+      }
+    },
+    {
+      "id": "ANGEL",
+      "name": "ANGEL - Medic",
+      "symbol": "I",
+      "side": "blue",
+      "type": "Infantry",
+      "unitType": "medical",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-C9E4FEAF5AAC8D8C",
+      "assetName": "Character US Medic — US_Army",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-C9E4FEAF5AAC8D8C",
+        "name": "Character US Medic — US_Army",
+        "category": "Vanilla / Characters",
+        "assetKind": "infantry",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_C9E4FEAF5AAC8D8C",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Medic.et",
+          "guid": "C9E4FEAF5AAC8D8C",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "Remain at the casualty collection point. Treatment requests are conditional on an actual eligible casualty.",
+      "position": {
+        "lat": 11910,
+        "lng": 4770
+      }
+    },
+    {
+      "id": "EAGLE_PILOT",
+      "name": "EAGLE - Pilot",
+      "symbol": "I",
+      "side": "blue",
+      "type": "Infantry",
+      "unitType": "infantry",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-42A502E3BB727CEB",
+      "assetName": "Character US HeliPilot — US_Army",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-42A502E3BB727CEB",
+        "name": "Character US HeliPilot — US_Army",
+        "category": "Vanilla / Characters",
+        "assetKind": "infantry",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_42A502E3BB727CEB",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_HeliPilot.et",
+          "guid": "42A502E3BB727CEB",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "Crew EAGLE while parked. Flight and landing are Game Master/player operated in this build.",
+      "position": {
+        "lat": 11810,
+        "lng": 4920
+      }
+    },
+    {
+      "id": "EAGLE_COPILOT",
+      "name": "EAGLE - Co-pilot",
+      "symbol": "I",
+      "side": "blue",
+      "type": "Infantry",
+      "unitType": "infantry",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-42A502E3BB727CEB",
+      "assetName": "Character US HeliPilot — US_Army",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-42A502E3BB727CEB",
+        "name": "Character US HeliPilot — US_Army",
+        "category": "Vanilla / Characters",
+        "assetKind": "infantry",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_42A502E3BB727CEB",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_HeliPilot.et",
+          "guid": "42A502E3BB727CEB",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "Take an appropriate available aircraft seat through a separate reviewed request or normal Game Master controls.",
+      "position": {
+        "lat": 11810,
+        "lng": 4910
+      }
+    },
+    {
+      "id": "BISON1",
+      "name": "BISON 1 - Armed M1025 escort",
+      "symbol": "I",
+      "side": "blue",
+      "type": "Infantry",
+      "unitType": "motorized",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-3EA6F47D95867114",
+      "assetName": "M1025 armed M2HB — M998",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-3EA6F47D95867114",
+        "name": "M1025 armed M2HB — M998",
+        "category": "Vanilla / Vehicles",
+        "assetKind": "other",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_3EA6F47D95867114",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB.et",
+          "guid": "3EA6F47D95867114",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "Parked initially. Drive only with its complete same-faction AI crew aboard and a conscious owned driver.",
+      "position": {
+        "lat": 11900,
+        "lng": 4850
+      }
+    },
+    {
+      "id": "BISON2",
+      "name": "BISON 2 - M1025 support",
+      "symbol": "I",
+      "side": "blue",
+      "type": "Infantry",
+      "unitType": "logistics",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-4A71F755A4513227",
+      "assetName": "M1025 — M998",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-4A71F755A4513227",
+        "name": "M1025 — M998",
+        "category": "Vanilla / Vehicles",
+        "assetKind": "other",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_4A71F755A4513227",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Vehicles/Wheeled/M998/M1025.et",
+          "guid": "4A71F755A4513227",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "Parked initially. Follow the inspected vehicle route after boarding succeeds.",
+      "position": {
+        "lat": 11900,
+        "lng": 4890
+      }
+    },
+    {
+      "id": "EAGLE",
+      "name": "EAGLE - UH-1H transport",
+      "symbol": "I",
+      "side": "blue",
+      "type": "Infantry",
+      "unitType": "rotary",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-70BAEEFC2D3FEE64",
+      "assetName": "UH1H — UH1H",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-70BAEEFC2D3FEE64",
+        "name": "UH1H — UH1H",
+        "category": "Vanilla / Vehicles",
+        "assetKind": "helicopter",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_70BAEEFC2D3FEE64",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Vehicles/Helicopters/UH1H/UH1H.et",
+          "guid": "70BAEEFC2D3FEE64",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "Parked transport for CHARLIE. No COMMAND helicopter flight/autopilot order is provided.",
+      "position": {
+        "lat": 11790,
+        "lng": 4980
+      }
+    }
+  ],
+  "routes": [
+    {
+      "id": "alpha-checkpoint",
+      "name": "ALPHA - Advance to Checkpoint",
+      "phaseId": null,
+      "points": [
+        {
+          "lat": 11910,
+          "lng": 4750
+        },
+        {
+          "lat": 12050,
+          "lng": 4750
+        }
+      ],
+      "style": {
+        "color": "#62B8FF",
+        "width": 3,
+        "pattern": "arrow",
+        "opacity": 0.15
+      },
+      "start": {
+        "lat": 11910,
+        "lng": 4750
+      },
+      "end": {
+        "lat": 12050,
+        "lng": 4750
+      }
+    },
+    {
+      "id": "alpha-relay",
+      "name": "ALPHA - Relay approach",
+      "phaseId": null,
+      "points": [
+        {
+          "lat": 12050,
+          "lng": 4750
+        },
+        {
+          "lat": 12200,
+          "lng": 4750
+        }
+      ],
+      "style": {
+        "color": "#62B8FF",
+        "width": 3,
+        "pattern": "arrow",
+        "opacity": 0.15
+      },
+      "start": {
+        "lat": 12050,
+        "lng": 4750
+      },
+      "end": {
+        "lat": 12200,
+        "lng": 4750
+      }
+    },
+    {
+      "id": "bravo-cover",
+      "name": "BRAVO - Overwatch",
+      "phaseId": null,
+      "points": [
+        {
+          "lat": 11950,
+          "lng": 4790
+        },
+        {
+          "lat": 12080,
+          "lng": 4830
+        }
+      ],
+      "style": {
+        "color": "#62B8FF",
+        "width": 3,
+        "pattern": "arrow",
+        "opacity": 0.15
+      },
+      "start": {
+        "lat": 11950,
+        "lng": 4790
+      },
+      "end": {
+        "lat": 12080,
+        "lng": 4830
+      }
+    },
+    {
+      "id": "west-alternate",
+      "name": "BRAVO - Optional west alternate",
+      "phaseId": null,
+      "points": [
+        {
+          "lat": 12080,
+          "lng": 4830
+        },
+        {
+          "lat": 12130,
+          "lng": 4630
+        },
+        {
+          "lat": 12200,
+          "lng": 4750
+        }
+      ],
+      "style": {
+        "color": "#EBC66F",
+        "width": 3,
+        "pattern": "arrow",
+        "opacity": 0.15
+      },
+      "start": {
+        "lat": 12080,
+        "lng": 4830
+      },
+      "end": {
+        "lat": 12200,
+        "lng": 4750
+      }
+    },
+    {
+      "id": "ground-support",
+      "name": "BISON - Inspect ground route before driving",
+      "phaseId": null,
+      "points": [
+        {
+          "lat": 11900,
+          "lng": 4850
+        },
+        {
+          "lat": 12000,
+          "lng": 4850
+        },
+        {
+          "lat": 12050,
+          "lng": 4850
+        }
+      ],
+      "style": {
+        "color": "#59C76E",
+        "width": 3,
+        "pattern": "arrow",
+        "opacity": 0.15
+      },
+      "start": {
+        "lat": 11900,
+        "lng": 4850
+      },
+      "end": {
+        "lat": 12050,
+        "lng": 4850
+      }
+    },
+    {
+      "id": "recovery",
+      "name": "Foot recovery / GM-flown extraction destination",
+      "phaseId": null,
+      "points": [
+        {
+          "lat": 12200,
+          "lng": 4750
+        },
+        {
+          "lat": 12170,
+          "lng": 4590
+        }
+      ],
+      "style": {
+        "color": "#B8A3FF",
+        "width": 3,
+        "pattern": "arrow",
+        "opacity": 0.15
+      },
+      "start": {
+        "lat": 12200,
+        "lng": 4750
+      },
+      "end": {
+        "lat": 12170,
+        "lng": 4590
+      }
+    }
+  ],
+  "areas": [
+    {
+      "id": "zone-ASSEMBLY",
+      "name": "ASSEMBLY",
+      "phaseId": null,
+      "kind": "circle",
+      "style": {
+        "color": "#EBC66F",
+        "width": 2,
+        "pattern": "dashed",
+        "opacity": 0.08
+      },
+      "center": {
+        "lat": 11910,
+        "lng": 4750
+      },
+      "radius": 18
+    },
+    {
+      "id": "zone-CHECKPOINT",
+      "name": "CHECKPOINT",
+      "phaseId": null,
+      "kind": "circle",
+      "style": {
+        "color": "#EBC66F",
+        "width": 2,
+        "pattern": "dashed",
+        "opacity": 0.08
+      },
+      "center": {
+        "lat": 12050,
+        "lng": 4750
+      },
+      "radius": 18
+    },
+    {
+      "id": "zone-OVERWATCH",
+      "name": "OVERWATCH",
+      "phaseId": null,
+      "kind": "circle",
+      "style": {
+        "color": "#EBC66F",
+        "width": 2,
+        "pattern": "dashed",
+        "opacity": 0.08
+      },
+      "center": {
+        "lat": 12080,
+        "lng": 4830
+      },
+      "radius": 18
+    },
+    {
+      "id": "zone-RELAY",
+      "name": "RELAY",
+      "phaseId": null,
+      "kind": "circle",
+      "style": {
+        "color": "#EBC66F",
+        "width": 2,
+        "pattern": "dashed",
+        "opacity": 0.08
+      },
+      "center": {
+        "lat": 12200,
+        "lng": 4750
+      },
+      "radius": 18
+    },
+    {
+      "id": "zone-WEST_ALTERNATE",
+      "name": "WEST ALTERNATE",
+      "phaseId": null,
+      "kind": "circle",
+      "style": {
+        "color": "#EBC66F",
+        "width": 2,
+        "pattern": "dashed",
+        "opacity": 0.08
+      },
+      "center": {
+        "lat": 12130,
+        "lng": 4630
+      },
+      "radius": 18
+    },
+    {
+      "id": "zone-SUPPORT_HOLD",
+      "name": "SUPPORT HOLD",
+      "phaseId": null,
+      "kind": "circle",
+      "style": {
+        "color": "#EBC66F",
+        "width": 2,
+        "pattern": "dashed",
+        "opacity": 0.08
+      },
+      "center": {
+        "lat": 12050,
+        "lng": 4850
+      },
+      "radius": 18
+    },
+    {
+      "id": "zone-CCP",
+      "name": "CCP",
+      "phaseId": null,
+      "kind": "circle",
+      "style": {
+        "color": "#EBC66F",
+        "width": 2,
+        "pattern": "dashed",
+        "opacity": 0.08
+      },
+      "center": {
+        "lat": 11910,
+        "lng": 4770
+      },
+      "radius": 18
+    },
+    {
+      "id": "zone-LZ",
+      "name": "LZ",
+      "phaseId": null,
+      "kind": "circle",
+      "style": {
+        "color": "#B8A3FF",
+        "width": 2,
+        "pattern": "dashed",
+        "opacity": 0.08
+      },
+      "center": {
+        "lat": 12170,
+        "lng": 4590
+      },
+      "radius": 30
+    },
+    {
+      "id": "eagle-pad",
+      "name": "EAGLE PAD - park / inspect rotor clearance",
+      "phaseId": null,
+      "kind": "circle",
+      "style": {
+        "color": "#B8A3FF",
+        "width": 2,
+        "pattern": "dashed",
+        "opacity": 0.08
+      },
+      "center": {
+        "lat": 11790,
+        "lng": 4980
+      },
+      "radius": 30
+    }
+  ],
+  "view": {
+    "gridDigits": 8,
+    "hiddenPhases": [],
+    "layers": {
+      "grid": true,
+      "units": true,
+      "routes": true,
+      "areas": true,
+      "labels": true
+    }
+  }
+}

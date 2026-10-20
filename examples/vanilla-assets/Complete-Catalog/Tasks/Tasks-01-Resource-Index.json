@@ -1,0 +1,358 @@
+{
+  "schema": "companion-resource-index",
+  "version": 1,
+  "addons": [
+    {
+      "id": "58D0FB3206B6F859",
+      "name": "Arma Reforger",
+      "version": null,
+      "dependencies": [
+        "5614BBCCBB55ED1C"
+      ]
+    },
+    {
+      "id": "5614BBCCBB55ED1C",
+      "name": "Enfusion core data",
+      "version": null,
+      "dependencies": []
+    }
+  ],
+  "resources": [
+    {
+      "id": "vanilla_1D0F815858EE24AD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/BaseTask.et",
+      "guid": "1D0F815858EE24AD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_830711F178046FA7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/BaseTriggerTask.et",
+      "guid": "830711F178046FA7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_364B2D3B6F76F9C3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/AttackTaskEntity.et",
+      "guid": "364B2D3B6F76F9C3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4C03C49DE79C6E99",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/BuildingCampaignMilitaryBaseTaskEntity.et",
+      "guid": "4C03C49DE79C6E99",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1539F1947103BA81",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/ClearTaskEntity.et",
+      "guid": "1539F1947103BA81",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_197884B9F86A3785",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/DismantleCampaignMilitaryBaseTaskEntity.et",
+      "guid": "197884B9F86A3785",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_31441D83DB0B8280",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/EstablishBaseRequestedTaskEntity.et",
+      "guid": "31441D83DB0B8280",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FF81AEB7D26E6742",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/EstablishBaseTaskEntity.et",
+      "guid": "FF81AEB7D26E6742",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9768DC279EB30326",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/FireSupportRequestedTaskEntity.et",
+      "guid": "9768DC279EB30326",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A14BCD8C52D8F686",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/HoldCampaignMilitaryBaseTaskEntity.et",
+      "guid": "A14BCD8C52D8F686",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BD6CBF6E1AC891FC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/PickupRequestedTaskEntity.et",
+      "guid": "BD6CBF6E1AC891FC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0B4C4DE15E26A328",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/RearmRequestedTaskEntity.et",
+      "guid": "0B4C4DE15E26A328",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DDC3F5DC0AFD7D3B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/ReconTaskEntity.et",
+      "guid": "DDC3F5DC0AFD7D3B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C6EED559E4546290",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/ReinforceRequestedTaskEntity.et",
+      "guid": "C6EED559E4546290",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_56E4B9D5D4AFAAB6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/RepairRequestedTaskEntity.et",
+      "guid": "56E4B9D5D4AFAAB6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_97BDFA133F27A9BB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/ResupplyCampaignMilitaryBaseTaskEntity.et",
+      "guid": "97BDFA133F27A9BB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1CE0D63C852E747B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/SeizeCampaignMilitaryBaseTaskEntity.et",
+      "guid": "1CE0D63C852E747B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_349C8E58C5ACAF4D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/Campaign/TransportUnitHelpTaskEntity.et",
+      "guid": "349C8E58C5ACAF4D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3AD0A1257870E6C7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/CustomTask.et",
+      "guid": "3AD0A1257870E6C7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A571DFFA17CD3779",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/DefendTask.et",
+      "guid": "A571DFFA17CD3779",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CF6A2A13DF7B1018",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/ExtendedTask.et",
+      "guid": "CF6A2A13DF7B1018",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7259F0B101761BD5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/MoveTask.et",
+      "guid": "7259F0B101761BD5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8B73FFC80AC98B1C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/NeutralizeTask.et",
+      "guid": "8B73FFC80AC98B1C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7F7B81D412CB6752",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Tasks/SeizeTask.et",
+      "guid": "7F7B81D412CB6752",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    }
+  ]
+}

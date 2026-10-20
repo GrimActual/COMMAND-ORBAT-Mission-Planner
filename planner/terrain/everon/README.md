@@ -1,0 +1,1 @@
+COMMAND: no imagery is distributed in the release candidate. Add only permitted matching tiles as described in ../../operator-guides/08-IMAGERY.md. Existing source/local images are preserved but excluded from the distributable.

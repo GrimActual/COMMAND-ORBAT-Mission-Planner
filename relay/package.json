@@ -1,6 +1,6 @@
 {
-  "name": "jsoc-orbat-relay",
-  "version": "0.1.0",
+  "name": "command-https-relay",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node server.js",
@@ -9,6 +9,6 @@
   "engines": {
     "node": ">=22"
   },
-  "description": "COMMAND ORBAT Bridge HTTPS relay",
+  "description": "COMMAND \u2014 independent ORBAT and mission planner for Arma Reforger.",
   "license": "GPL-3.0-only"
 }

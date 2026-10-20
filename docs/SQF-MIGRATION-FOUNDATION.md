@@ -1,0 +1,17 @@
+# Arma 3 to Enfusion migration foundation
+
+Drop selected `.sqf`, `.sqm`, `.ext` and `.hpp` text files in Assets → Arma 3 migration review. Settings → Game Master has a shortcut. Export the session-only review as JSON through the validated native Save dialog (browser mode uses a download). Source files, mission data, undo, rehearsal and bridge state are untouched. Your existing dev.gm.6 test executable is unchanged; this workflow ships in the separate 2.9.1-dev.gm.7 development release.
+
+The worker scans bounded lexical tokens without evaluating scripts. It ignores comments and quoted command names, records source file/line/column, identifies known command families and unresolved BIS/custom functions, inventories literal dependencies and class names, and offers advisory movement bindings. It does not parse the full SQF grammar, preprocess includes/macros, unpack PBOs, interpret SQM scene hierarchies or promise complete command coverage. A file with no recognized commands is not certified convertible. Configuration files are inventory-only.
+
+`doMove` and `addWaypoint` suggest the verified native Move waypoint `{750A8D1695BD6998}Prefabs/AI/Waypoints/AIWaypoint_Move.et`. Individual SQF orders do not become group orders automatically. Conditional flow and execution order remain unresolved. Literal source `[x,y,z]` is shown as a proposed Enfusion `[x,z,y]`, with terrain validation explicitly false; neither source-world alignment nor ASL/ATL elevation is assumed. No gameplay request, behaviour-tree rewrite, .layer, .c or executable output is generated.
+
+Arma 3 class names are not Enfusion GUIDs. `createUnit`/`createVehicle` require an explicit class-to-resource mapping with reviewed addon ID, exact prefab GUID/path, provenance and dependencies. Similar names are insufficient. Networking, scheduler semantics, embedded init strings, dynamic compilation, vehicle seats, trigger lifecycle, strict fire control and medical behavior remain manual review items.
+
+Bounds: 64 files, 256 KiB per file, 2 MiB total, 50,000 tokens per file, nesting 64, 2,000 findings; UI pages 40 findings. Rejected imports retain the prior review. New loads/clear terminate the worker and invalidate late results. No recursive filesystem discovery, downloads, execution or automatic bridge actions occur.
+
+Additive next milestones: explicit asset-mapping editor against the resource index; supported-pattern AST and symbol resolution; source-terrain to target-terrain calibration; mission SQM entity/waypoint adapter; reviewed neutral migration-intent schema; mapping diagnostics for locality and lifecycle; verified Enforce component/resource adapters; optional Workbench export and native validation. Preserve existing roadmap packages and AI-command delivery.
+
+Primary syntax references: [doMove](https://community.bistudio.com/wiki/doMove), [addWaypoint](https://community.bistudio.com/wiki/addWaypoint), [createUnit](https://community.bistudio.com/wiki/createUnit). This is a migration review foundation, not a universal SQF transpiler.
+
+Validation: 226/226 release regression tests passed. Actual offline Electron worker/drop/picker checks passed safe display, rejected-input retention, locale context and mission isolation. Final 40-row paging, Settings shortcut and validated native filesystem export passed with automated dialog selection. Existing native source hashes match retained PC/Workbench/runtime evidence exactly; no game or repeated server test was launched.

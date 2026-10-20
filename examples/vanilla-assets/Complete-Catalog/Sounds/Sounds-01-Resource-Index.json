@@ -1,0 +1,344 @@
+{
+  "schema": "companion-resource-index",
+  "version": 1,
+  "addons": [
+    {
+      "id": "58D0FB3206B6F859",
+      "name": "Arma Reforger",
+      "version": null,
+      "dependencies": [
+        "5614BBCCBB55ED1C"
+      ]
+    },
+    {
+      "id": "5614BBCCBB55ED1C",
+      "name": "Enfusion core data",
+      "version": null,
+      "dependencies": []
+    }
+  ],
+  "resources": [
+    {
+      "id": "vanilla_434AFBBE90F2B078",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Environment/AmbientSounds_Everon.et",
+      "guid": "434AFBBE90F2B078",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_56DA7A01AE88C7D6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Environment/Arland/AmbientSounds_Arland.et",
+      "guid": "56DA7A01AE88C7D6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AE3C76A327E80EA3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Environment/Cain/AmbientSounds_Kolguyev.et",
+      "guid": "AE3C76A327E80EA3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_359452CCDBDD03F6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Music/MusicManager_Base.et",
+      "guid": "359452CCDBDD03F6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A867D3EE4A35D38F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Music/MusicManager_Campaign_Kolguyev.et",
+      "guid": "A867D3EE4A35D38F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_359452CCDBDD03F5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Music/MusicManager_Campaign.et",
+      "guid": "359452CCDBDD03F5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2B6D164CF954BE80",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Music/MusicManager_KS_01_Insertion.et",
+      "guid": "2B6D164CF954BE80",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E1CB07A5F0C7E223",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Music/MusicManager_KS_02_Steal.et",
+      "guid": "E1CB07A5F0C7E223",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_826F40FEEBBFB4EC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Music/MusicManager_KS_03_Rescue.et",
+      "guid": "826F40FEEBBFB4EC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D7EE85CA6066A77B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Music/MusicManager_KS_04_Sabotage.et",
+      "guid": "D7EE85CA6066A77B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A56DC6334CB11225",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Music/MusicManager_KS_05_Hill.et",
+      "guid": "A56DC6334CB11225",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8BB24B8B601FEEA4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Music/MusicManager_KS_Base.et",
+      "guid": "8BB24B8B601FEEA4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A3DA67B0FF5AD7AE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Music/MusicManager_SP01.et",
+      "guid": "A3DA67B0FF5AD7AE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CF8E5350439E5880",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Music/MusicManager_SP02.et",
+      "guid": "CF8E5350439E5880",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3C5CC57306531EAF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Music/MusicManager_Tutorial.et",
+      "guid": "3C5CC57306531EAF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EAFF9DEA6BDEC26C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/SoundWorld/Arland/SoundWorld_Arland.et",
+      "guid": "EAFF9DEA6BDEC26C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C1BAAAA19ED38011",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/SoundWorld/SF-Tutorial/SoundWorld_SF-Tutorial.et",
+      "guid": "C1BAAAA19ED38011",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FBE5065D0273E9E1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/SoundWorld/SoundWorld_Base.et",
+      "guid": "FBE5065D0273E9E1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9D6FFA0DD08F974E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/SoundWorld/SoundWorld_Cain.et",
+      "guid": "9D6FFA0DD08F974E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8A8604E158704937",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/SoundWorld/SoundWorld_Eden.et",
+      "guid": "8A8604E158704937",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_11B3A6066129ABD6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Sources/SoundSource_Base.et",
+      "guid": "11B3A6066129ABD6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8792D3CCB7359A71",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Sources/SoundSource_WaterFall_Large.et",
+      "guid": "8792D3CCB7359A71",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F70A3289977E44EA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Sounds/Sources/SoundSource_WaterFall_Medium.et",
+      "guid": "F70A3289977E44EA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    }
+  ]
+}

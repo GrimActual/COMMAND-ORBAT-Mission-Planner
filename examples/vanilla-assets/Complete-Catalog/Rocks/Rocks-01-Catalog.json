@@ -1,0 +1,1804 @@
+{
+  "assets": [
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-6952A4DE80DA2D8C",
+      "name": "Fumarole 01 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_6952A4DE80DA2D8C",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Fumarole_01.et",
+        "guid": "6952A4DE80DA2D8C",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-F083999B0505890C",
+      "name": "Fumarole base — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_F083999B0505890C",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Fumarole_base.et",
+        "guid": "F083999B0505890C",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-1AB01E99A27B8178",
+      "name": "Granite BeachCluster 01 Fucus — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_1AB01E99A27B8178",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_BeachCluster_01_Fucus.et",
+        "guid": "1AB01E99A27B8178",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-FA8C2031F43C6684",
+      "name": "Granite BeachCluster 01 waterline — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_FA8C2031F43C6684",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_BeachCluster_01_waterline.et",
+        "guid": "FA8C2031F43C6684",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-45BE489A63A25CA6",
+      "name": "Granite BeachCluster 01 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_45BE489A63A25CA6",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_BeachCluster_01.et",
+        "guid": "45BE489A63A25CA6",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-5A403FBC1467033F",
+      "name": "Granite BeachCluster 02 Fucus — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_5A403FBC1467033F",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_BeachCluster_02_Fucus.et",
+        "guid": "5A403FBC1467033F",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-BA7C01144220E4C3",
+      "name": "Granite BeachCluster 02 waterline — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_BA7C01144220E4C3",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_BeachCluster_02_waterline.et",
+        "guid": "BA7C01144220E4C3",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-29EA7C7ADF66D388",
+      "name": "Granite BeachCluster 02 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_29EA7C7ADF66D388",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_BeachCluster_02.et",
+        "guid": "29EA7C7ADF66D388",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-61D0CF51FA10895C",
+      "name": "Granite BeachStone 01 Fucus — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_61D0CF51FA10895C",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_BeachStone_01_Fucus.et",
+        "guid": "61D0CF51FA10895C",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-07FBB9A2F51332E4",
+      "name": "Granite BeachStone 01 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_07FBB9A2F51332E4",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_BeachStone_01.et",
+        "guid": "07FBB9A2F51332E4",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-2120EE744C0C0B1B",
+      "name": "Granite BeachStone 02 Fucus — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_2120EE744C0C0B1B",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_BeachStone_02_Fucus.et",
+        "guid": "2120EE744C0C0B1B",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-6BAF8D4249D7BDCA",
+      "name": "Granite BeachStone 02 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_6BAF8D4249D7BDCA",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_BeachStone_02.et",
+        "guid": "6BAF8D4249D7BDCA",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-DF20AE31B95E6757",
+      "name": "Granite BeachStone 03 Fucus — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_DF20AE31B95E6757",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_BeachStone_03_Fucus.et",
+        "guid": "DF20AE31B95E6757",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-8E33C1BB45322AA1",
+      "name": "Granite BeachStone 03 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_8E33C1BB45322AA1",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_BeachStone_03.et",
+        "guid": "8E33C1BB45322AA1",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-B8AFE63C458E65E2",
+      "name": "Granite Boulder 01 Fucus — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_B8AFE63C458E65E2",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Boulder_01_Fucus.et",
+        "guid": "B8AFE63C458E65E2",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-ADC53C3320B368DA",
+      "name": "Granite Boulder 01 V2 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_ADC53C3320B368DA",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Boulder_01_V2.et",
+        "guid": "ADC53C3320B368DA",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-735E970ACBB1B473",
+      "name": "Granite Boulder 01 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_735E970ACBB1B473",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Boulder_01.et",
+        "guid": "735E970ACBB1B473",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-F85FC719F392E7A5",
+      "name": "Granite Boulder 02 Fucus — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_F85FC719F392E7A5",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Boulder_02_Fucus.et",
+        "guid": "F85FC719F392E7A5",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-A7606C7E96A39B5D",
+      "name": "Granite Boulder 02 V2 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_A7606C7E96A39B5D",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Boulder_02_V2.et",
+        "guid": "A7606C7E96A39B5D",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-1F0AA3EA77753B5D",
+      "name": "Granite Boulder 02 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_1F0AA3EA77753B5D",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Boulder_02.et",
+        "guid": "1F0AA3EA77753B5D",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-4F3A4335F9AD5B2A",
+      "name": "Granite Cluster 01 Fucus — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_4F3A4335F9AD5B2A",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Cluster_01_Fucus.et",
+        "guid": "4F3A4335F9AD5B2A",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-2B2D2ABA0B35CDCD",
+      "name": "Granite Cluster 01 sulfur — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_2B2D2ABA0B35CDCD",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Cluster_01_sulfur.et",
+        "guid": "2B2D2ABA0B35CDCD",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-221F1E889AAF89B2",
+      "name": "Granite Cluster 01 V2 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_221F1E889AAF89B2",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Cluster_01_V2.et",
+        "guid": "221F1E889AAF89B2",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-450AAF1BC197F8C9",
+      "name": "Granite Cluster 01 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_450AAF1BC197F8C9",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Cluster_01.et",
+        "guid": "450AAF1BC197F8C9",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-0FCA62104FB1D96D",
+      "name": "Granite Cluster 02 Fucus — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_0FCA62104FB1D96D",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Cluster_02_Fucus.et",
+        "guid": "0FCA62104FB1D96D",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-28BA4EC52CBF7A35",
+      "name": "Granite Cluster 02 V2 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_28BA4EC52CBF7A35",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Cluster_02_V2.et",
+        "guid": "28BA4EC52CBF7A35",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-295E9BFB7D5377E7",
+      "name": "Granite Cluster 02 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_295E9BFB7D5377E7",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Cluster_02.et",
+        "guid": "295E9BFB7D5377E7",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-F1CA2255BAE3B521",
+      "name": "Granite Cluster 03 fucus — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_F1CA2255BAE3B521",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Cluster_03_fucus.et",
+        "guid": "F1CA2255BAE3B521",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-EF76DE58D9E93939",
+      "name": "Granite Cluster 03 V2 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_EF76DE58D9E93939",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Cluster_03_V2.et",
+        "guid": "EF76DE58D9E93939",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-CCC2D70271B6E08C",
+      "name": "Granite Cluster 03 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_CCC2D70271B6E08C",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Cluster_03.et",
+        "guid": "CCC2D70271B6E08C",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-38473AF4D96A4E11",
+      "name": "Granite Cluster 04 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_38473AF4D96A4E11",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Cluster_04.et",
+        "guid": "38473AF4D96A4E11",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-DDDB760DD58FD97A",
+      "name": "Granite Cluster 05 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_DDDB760DD58FD97A",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Cluster_05.et",
+        "guid": "DDDB760DD58FD97A",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-B18F42ED694B5654",
+      "name": "Granite Cluster 06 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_B18F42ED694B5654",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Cluster_06.et",
+        "guid": "B18F42ED694B5654",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-BA73CB6DADFB194E",
+      "name": "Granite Cluster Large 01 V2 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_BA73CB6DADFB194E",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Cluster_Large_01_V2.et",
+        "guid": "BA73CB6DADFB194E",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-A5A0B5EF1773A200",
+      "name": "Granite Cluster Large 01 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_A5A0B5EF1773A200",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_Cluster_Large_01.et",
+        "guid": "A5A0B5EF1773A200",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-28B3BD910DA69CD5",
+      "name": "Granite ForestCluster 01 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_28B3BD910DA69CD5",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_ForestCluster_01.et",
+        "guid": "28B3BD910DA69CD5",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-44E78971B16213FB",
+      "name": "Granite ForestCluster 02 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_44E78971B16213FB",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_ForestCluster_02.et",
+        "guid": "44E78971B16213FB",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-FF676E917668C455",
+      "name": "Granite ForestStone 01 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_FF676E917668C455",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_ForestStone_01.et",
+        "guid": "FF676E917668C455",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-93335A71CAAC4B7B",
+      "name": "Granite ForestStone 02 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_93335A71CAAC4B7B",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_ForestStone_02.et",
+        "guid": "93335A71CAAC4B7B",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-76AF1688C649DC10",
+      "name": "Granite ForestStone 03 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_76AF1688C649DC10",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/Granite_ForestStone_03.et",
+        "guid": "76AF1688C649DC10",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-B06A2E966157FE64",
+      "name": "GraniteCliff 01 Fucus — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_B06A2E966157FE64",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteCliff_01_Fucus.et",
+        "guid": "B06A2E966157FE64",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-3F68EE5DCB004B10",
+      "name": "GraniteCliff 01 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_3F68EE5DCB004B10",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteCliff_01.et",
+        "guid": "3F68EE5DCB004B10",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-F09A0FB3D74B7C23",
+      "name": "GraniteCliff 02 Fucus — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_F09A0FB3D74B7C23",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteCliff_02_Fucus.et",
+        "guid": "F09A0FB3D74B7C23",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-533CDABD77C4C43E",
+      "name": "GraniteCliff 02 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_533CDABD77C4C43E",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteCliff_02.et",
+        "guid": "533CDABD77C4C43E",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-0E9A4FF62219106F",
+      "name": "GraniteCliff 03 Fucus — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_0E9A4FF62219106F",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteCliff_03_Fucus.et",
+        "guid": "0E9A4FF62219106F",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-B6A096447B215355",
+      "name": "GraniteCliff 03 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_B6A096447B215355",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteCliff_03.et",
+        "guid": "B6A096447B215355",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-2BBA69F7F0BCD76E",
+      "name": "GraniteRock 01 Forest — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_2BBA69F7F0BCD76E",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteRock_01_Forest.et",
+        "guid": "2BBA69F7F0BCD76E",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-DF692A1784D6B324",
+      "name": "GraniteRock 01 V2 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_DF692A1784D6B324",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteRock_01_V2.et",
+        "guid": "DF692A1784D6B324",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-9633134198F3AB1A",
+      "name": "GraniteRock 01 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_9633134198F3AB1A",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteRock_01.et",
+        "guid": "9633134198F3AB1A",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-019E4E540652B141",
+      "name": "GraniteRock 02 Forest — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_019E4E540652B141",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteRock_02_Forest.et",
+        "guid": "019E4E540652B141",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-D5CC7A5A32C640A3",
+      "name": "GraniteRock 02 V2 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_D5CC7A5A32C640A3",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteRock_02_V2.et",
+        "guid": "D5CC7A5A32C640A3",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-FA6727A124372434",
+      "name": "GraniteRock 02 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_FA6727A124372434",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteRock_02.et",
+        "guid": "FA6727A124372434",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-D9D20C6C33517ED5",
+      "name": "GraniteRock 03 Forest — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_D9D20C6C33517ED5",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteRock_03_Forest.et",
+        "guid": "D9D20C6C33517ED5",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-1200EAC7C79003AF",
+      "name": "GraniteRock 03 V2 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_1200EAC7C79003AF",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteRock_03_V2.et",
+        "guid": "1200EAC7C79003AF",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-1FFB6B5828D2B35F",
+      "name": "GraniteRock 03 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_1FFB6B5828D2B35F",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteRock_03.et",
+        "guid": "1FFB6B5828D2B35F",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-F5837A3933EFF7CF",
+      "name": "GraniteStone 01 V2 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_F5837A3933EFF7CF",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteStone_01_V2.et",
+        "guid": "F5837A3933EFF7CF",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-038844285FEE0D7A",
+      "name": "GraniteStone 01 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_038844285FEE0D7A",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteStone_01.et",
+        "guid": "038844285FEE0D7A",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-FF262A7485FF0448",
+      "name": "GraniteStone 02 V2 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_FF262A7485FF0448",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteStone_02_V2.et",
+        "guid": "FF262A7485FF0448",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-6FDC70C8E32A8254",
+      "name": "GraniteStone 02 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_6FDC70C8E32A8254",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteStone_02.et",
+        "guid": "6FDC70C8E32A8254",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-38EABAE970A94744",
+      "name": "GraniteStone 03 V2 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_38EABAE970A94744",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteStone_03_V2.et",
+        "guid": "38EABAE970A94744",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-8A403C31EFCF153F",
+      "name": "GraniteStone 03 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_8A403C31EFCF153F",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteStone_03.et",
+        "guid": "8A403C31EFCF153F",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-5F799252A82209D2",
+      "name": "GraniteSurfaceStone 01 Forest — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_5F799252A82209D2",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteSurfaceStone_01_Forest.et",
+        "guid": "5F799252A82209D2",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-50E63E69B37539DB",
+      "name": "GraniteSurfaceStone 01 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_50E63E69B37539DB",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteSurfaceStone_01.et",
+        "guid": "50E63E69B37539DB",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-755DB5F15ECC6FFD",
+      "name": "GraniteSurfaceStone 02 Forest — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_755DB5F15ECC6FFD",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteSurfaceStone_02_Forest.et",
+        "guid": "755DB5F15ECC6FFD",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-3CB20A890FB1B6F5",
+      "name": "GraniteSurfaceStone 02 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_3CB20A890FB1B6F5",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteSurfaceStone_02.et",
+        "guid": "3CB20A890FB1B6F5",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-7813FBBE77324674",
+      "name": "GraniteSurfaceStone 03 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_7813FBBE77324674",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteSurfaceStone_03.et",
+        "guid": "7813FBBE77324674",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-4527DE86025ECF43",
+      "name": "GraniteSurfaceStone 04 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_4527DE86025ECF43",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteSurfaceStone_04.et",
+        "guid": "4527DE86025ECF43",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-A0BB927F0EBB5828",
+      "name": "GraniteSurfaceStone 05 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_A0BB927F0EBB5828",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteSurfaceStone_05.et",
+        "guid": "A0BB927F0EBB5828",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-CCEFA69FB27FD706",
+      "name": "GraniteSurfaceStone 06 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_CCEFA69FB27FD706",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteSurfaceStone_06.et",
+        "guid": "CCEFA69FB27FD706",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-2973EA66BE9A406D",
+      "name": "GraniteSurfaceStone 07 — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_2973EA66BE9A406D",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteSurfaceStone_07.et",
+        "guid": "2973EA66BE9A406D",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-D52660D5BB19E3CA",
+      "name": "GraniteSurfaceStone base — Granite",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_D52660D5BB19E3CA",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Granite/GraniteSurfaceStone_base.et",
+        "guid": "D52660D5BB19E3CA",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-B94DDC61F0B7F9D7",
+      "name": "Rock Base — Rocks",
+      "category": "Vanilla / Rocks",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_B94DDC61F0B7F9D7",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Rocks/Rock_Base.et",
+        "guid": "B94DDC61F0B7F9D7",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    }
+  ]
+}

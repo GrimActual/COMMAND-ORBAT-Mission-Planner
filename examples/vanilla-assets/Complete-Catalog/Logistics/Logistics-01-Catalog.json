@@ -1,0 +1,104 @@
+{
+  "assets": [
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-A38866CE657ECAA5",
+      "name": "Battery 01 — Prefabs",
+      "category": "Vanilla / Logistics",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_A38866CE657ECAA5",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Particles/Logistics/Prefabs/Battery_01.et",
+        "guid": "A38866CE657ECAA5",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-CFDC522ED9BA458B",
+      "name": "Battery 02 — Prefabs",
+      "category": "Vanilla / Logistics",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_CFDC522ED9BA458B",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Particles/Logistics/Prefabs/Battery_02.et",
+        "guid": "CFDC522ED9BA458B",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-CA0521A50322FCEE",
+      "name": "Smoke Trail Medium — Prefabs",
+      "category": "Vanilla / Logistics",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_CA0521A50322FCEE",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Particles/Logistics/Prefabs/Smoke_Trail_Medium.et",
+        "guid": "CA0521A50322FCEE",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-486D19BD85F31B89",
+      "name": "Smoke Trail Small — Prefabs",
+      "category": "Vanilla / Logistics",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_486D19BD85F31B89",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Particles/Logistics/Prefabs/Smoke_Trail_Small.et",
+        "guid": "486D19BD85F31B89",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    }
+  ]
+}

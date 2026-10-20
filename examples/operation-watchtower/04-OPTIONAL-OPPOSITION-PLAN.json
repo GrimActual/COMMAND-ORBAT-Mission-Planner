@@ -1,0 +1,158 @@
+{
+  "schema": "everon-orbat-plan",
+  "schemaVersion": 4,
+  "app": "Everon ORBAT Mapper",
+  "operation": {
+    "name": "WATCHTOWER - OPTIONAL OPPOSITION ONLY",
+    "taskForce": "COMMAND SCENARIO OPPOSITION",
+    "version": "01",
+    "briefing": "Optional separate reinforcement deployment: two USSR fireteam prefab roots. They may engage immediately. Do not deploy until friendly forces are ready. Import this file, select its two units only, review and approve. Reimport file 01 afterward to restore the main planning view; do not resend the friendly deployment. Deployment does not install patrol/attack waypoints. Existing friendly ownership is pairing-bound; refresh live target lists."
+  },
+  "map": {
+    "name": "Everon",
+    "game": "Arma Reforger",
+    "coordinateSystem": "mapper-local",
+    "gridOrder": "easting-northing"
+  },
+  "phases": [
+    {
+      "id": "assembly",
+      "name": "1 - Assembly and loading"
+    },
+    {
+      "id": "checkpoint",
+      "name": "2 - Checkpoint North"
+    },
+    {
+      "id": "relay",
+      "name": "3 - Relay search"
+    },
+    {
+      "id": "recovery",
+      "name": "4 - Recovery and extraction"
+    }
+  ],
+  "orderOfBattle": [
+    {
+      "id": "OPFOR_NORTH",
+      "name": "OPFOR NORTH - Relay reserve",
+      "symbol": "I",
+      "side": "red",
+      "type": "Infantry",
+      "unitType": "infantry",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-657590C1EC9E27D3",
+      "assetName": "Group USSR LightFireTeam — OPFOR",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-657590C1EC9E27D3",
+        "name": "Group USSR LightFireTeam — OPFOR",
+        "category": "Vanilla / Groups",
+        "assetKind": "infantry",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_657590C1EC9E27D3",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et",
+          "guid": "657590C1EC9E27D3",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "Optional opposition; GM controls its actual actions.",
+      "position": {
+        "lat": 12350,
+        "lng": 4680
+      }
+    },
+    {
+      "id": "OPFOR_FLANK",
+      "name": "OPFOR FLANK - Counter-patrol",
+      "symbol": "I",
+      "side": "red",
+      "type": "Infantry",
+      "unitType": "infantry",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-657590C1EC9E27D3",
+      "assetName": "Group USSR LightFireTeam — OPFOR",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-657590C1EC9E27D3",
+        "name": "Group USSR LightFireTeam — OPFOR",
+        "category": "Vanilla / Groups",
+        "assetKind": "infantry",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_657590C1EC9E27D3",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et",
+          "guid": "657590C1EC9E27D3",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "Optional opposition; GM controls its actual actions.",
+      "position": {
+        "lat": 12370,
+        "lng": 4600
+      }
+    }
+  ],
+  "routes": [],
+  "areas": [
+    {
+      "id": "enemy-staging",
+      "name": "OPTIONAL OPPOSITION STAGING",
+      "phaseId": null,
+      "kind": "circle",
+      "style": {
+        "color": "#FF7777",
+        "width": 2,
+        "pattern": "dashed",
+        "opacity": 0.08
+      },
+      "center": {
+        "lat": 12360,
+        "lng": 4640
+      },
+      "radius": 80
+    }
+  ],
+  "view": {
+    "gridDigits": 6,
+    "hiddenPhases": [],
+    "layers": {
+      "grid": true,
+      "units": true,
+      "routes": true,
+      "areas": true,
+      "labels": true
+    }
+  }
+}

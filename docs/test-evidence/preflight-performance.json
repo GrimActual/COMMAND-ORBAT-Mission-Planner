@@ -1,7 +1,0 @@
-{
-  "fixture": "100 objectives / 200 events, capped 500 diagnostic rows; one explicit review",
-  "analyseAndDomMs": 43.20000001788139,
-  "throughPaintMs": 157.30000001192093,
-  "renderedFindings": 500,
-  "heapMB": 14.495849609375
-}

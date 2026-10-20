@@ -1,0 +1,6 @@
+GameProject {
+ ID "COMMANDVanillaIndex"
+ GUID "7DAB03CFE931A207"
+ TITLE "COMMAND read-only vanilla index"
+ Dependencies { "58D0FB3206B6F859" }
+}

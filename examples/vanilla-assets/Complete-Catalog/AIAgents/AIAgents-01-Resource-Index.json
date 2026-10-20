@@ -1,0 +1,64 @@
+{
+  "schema": "companion-resource-index",
+  "version": 1,
+  "addons": [
+    {
+      "id": "58D0FB3206B6F859",
+      "name": "Arma Reforger",
+      "version": null,
+      "dependencies": [
+        "5614BBCCBB55ED1C"
+      ]
+    },
+    {
+      "id": "5614BBCCBB55ED1C",
+      "name": "Enfusion core data",
+      "version": null,
+      "dependencies": []
+    }
+  ],
+  "resources": [
+    {
+      "id": "vanilla_5939FFCC6CC2FA96",
+      "addonId": "58D0FB3206B6F859",
+      "path": "AI/AIAgents/ChimeraAIAgentFull.et",
+      "guid": "5939FFCC6CC2FA96",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3C04D2994CF9F7EF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "AI/AIAgents/ChimeraAIAgentVehicle.et",
+      "guid": "3C04D2994CF9F7EF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B4C861A6DA2F5E05",
+      "addonId": "58D0FB3206B6F859",
+      "path": "AI/AIAgents/SCR_ChimeraAIAgentFull.et",
+      "guid": "B4C861A6DA2F5E05",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    }
+  ]
+}

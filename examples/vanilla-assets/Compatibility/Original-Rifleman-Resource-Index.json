@@ -1,0 +1,36 @@
+{
+  "schema": "companion-resource-index",
+  "version": 1,
+  "addons": [
+    {
+      "id": "58D0FB3206B6F859",
+      "name": "Arma Reforger",
+      "version": null,
+      "dependencies": [
+        "5614BBCCBB55ED1C"
+      ]
+    },
+    {
+      "id": "5614BBCCBB55ED1C",
+      "name": "Enfusion core data",
+      "version": null,
+      "dependencies": []
+    }
+  ],
+  "resources": [
+    {
+      "id": "vanilla_us_rifleman",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et",
+      "guid": "26A9756790131354",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "ArmaReforger resourceDatabase.rdb; ResourceDatabase.SearchResources and exact Resource.Load identity verified locally on 2026-10-13",
+        "license": null
+      },
+      "dependencies": []
+    }
+  ]
+}

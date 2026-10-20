@@ -1,0 +1,229 @@
+{
+  "assets": [
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-26A9756790131354",
+      "name": "Character US Rifleman — US_Army",
+      "category": "Vanilla / Characters",
+      "assetKind": "infantry",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_26A9756790131354",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et",
+        "guid": "26A9756790131354",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-C9E4FEAF5AAC8D8C",
+      "name": "Character US Medic — US_Army",
+      "category": "Vanilla / Characters",
+      "assetKind": "infantry",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_C9E4FEAF5AAC8D8C",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Medic.et",
+        "guid": "C9E4FEAF5AAC8D8C",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-42A502E3BB727CEB",
+      "name": "Character US HeliPilot — US_Army",
+      "category": "Vanilla / Characters",
+      "assetKind": "infantry",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_42A502E3BB727CEB",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_HeliPilot.et",
+        "guid": "42A502E3BB727CEB",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-84E5BBAB25EA23E5",
+      "name": "Group US FireTeam — BLUFOR",
+      "category": "Vanilla / Groups",
+      "assetKind": "infantry",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_84E5BBAB25EA23E5",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Groups/BLUFOR/Group_US_FireTeam.et",
+        "guid": "84E5BBAB25EA23E5",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-3BF36BDEEB33AEC9",
+      "name": "Group US SentryTeam — BLUFOR",
+      "category": "Vanilla / Groups",
+      "assetKind": "infantry",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_3BF36BDEEB33AEC9",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et",
+        "guid": "3BF36BDEEB33AEC9",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-3EA6F47D95867114",
+      "name": "M1025 armed M2HB — M998",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_3EA6F47D95867114",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB.et",
+        "guid": "3EA6F47D95867114",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-4A71F755A4513227",
+      "name": "M1025 — M998",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_4A71F755A4513227",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/M998/M1025.et",
+        "guid": "4A71F755A4513227",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-70BAEEFC2D3FEE64",
+      "name": "UH1H — UH1H",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "helicopter",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_70BAEEFC2D3FEE64",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Helicopters/UH1H/UH1H.et",
+        "guid": "70BAEEFC2D3FEE64",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-657590C1EC9E27D3",
+      "name": "Group USSR LightFireTeam — OPFOR",
+      "category": "Vanilla / Groups",
+      "assetKind": "infantry",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_657590C1EC9E27D3",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et",
+        "guid": "657590C1EC9E27D3",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    }
+  ]
+}

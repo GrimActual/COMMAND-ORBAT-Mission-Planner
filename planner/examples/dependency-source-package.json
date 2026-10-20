@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "name": "init.sqf",
+      "text": "#include \"settings.hpp\"\n#include \"missing.hpp\"\n// This package is inspected, never executed.\n"
+    },
+    {
+      "name": "settings.hpp",
+      "text": "#define EXAMPLE_MARKER\n"
+    }
+  ],
+  "mounts": []
+}

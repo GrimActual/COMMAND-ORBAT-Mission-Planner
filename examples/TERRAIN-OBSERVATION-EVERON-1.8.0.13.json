@@ -1,0 +1,29 @@
+{
+  "schema": "command-terrain-observation",
+  "version": 1,
+  "world": {
+    "addonId": "58D0FB3206B6F859",
+    "guid": "55A3176BBDD01AAE",
+    "path": "worlds/Eden/EmptyEden.ent"
+  },
+  "observedWorldFile": "worlds/eden/emptyeden.ent",
+  "engineVersion": "1.8.0.13",
+  "method": "GetSurfaceY",
+  "samples": [
+    {
+      "worldX": 4241.47021484375,
+      "worldZ": 9469.759765625,
+      "surfaceY": -6.5279083251953125
+    },
+    {
+      "worldX": 4830.77001953125,
+      "worldZ": 12279.2001953125,
+      "surfaceY": 13.012908935546875
+    },
+    {
+      "worldX": 6500,
+      "worldZ": 6500,
+      "surfaceY": 161.875
+    }
+  ]
+}

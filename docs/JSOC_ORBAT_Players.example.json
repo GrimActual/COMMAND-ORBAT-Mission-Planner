@@ -1,0 +1,11 @@
+{
+  "enabled": false,
+  "source": "players",
+  "endpoint": "https://relay.example/",
+  "pairingCode": "",
+  "playerIds": [1, 2],
+  "entityIds": ["alpha_player", "bravo_player"],
+  "intervalMs": 1000,
+  "timeoutSeconds": 10,
+  "autoReconnect": true
+}

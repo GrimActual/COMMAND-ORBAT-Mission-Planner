@@ -1,0 +1,62 @@
+name: SQF compiler review checks
+
+on:
+  push:
+    paths:
+      - 'planner/sqf-*.js'
+      - 'planner/package.json'
+      - 'tools/sqf-review/**'
+      - 'tools/boolean-mapping/**'
+      - 'planner/native-evidence/**'
+      - 'planner/native-adapters/**'
+      - 'planner/migration-handoff*'
+      - 'tools/distribution-audit*'
+      - 'planner/compatibility-*'
+      - 'planner/asset-browser*'
+      - '.github/workflows/sqf-review.yml'
+  pull_request:
+    paths:
+      - 'planner/sqf-*.js'
+      - 'planner/package.json'
+      - 'tools/sqf-review/**'
+      - 'tools/boolean-mapping/**'
+      - 'planner/native-evidence/**'
+      - 'planner/native-adapters/**'
+      - 'planner/migration-handoff*'
+      - 'tools/distribution-audit*'
+      - 'planner/compatibility-*'
+      - 'planner/asset-browser*'
+      - '.github/workflows/sqf-review.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sqf-review-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  review:
+    name: Core and worker checks (${{ matrix.os }}, Node ${{ matrix.node }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            node: '24'
+          - os: windows-2022
+            node: '22'
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Set up Node
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Test bounded compiler cores, review tools and worker cleanup
+        run: npm run test:sqf-core --prefix planner

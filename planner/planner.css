@@ -17,3 +17,64 @@ dialog{color:var(--text);background:var(--panel);border:1px solid var(--line);bo
 
 /* Native system-font rasterization; no blanket 3D/compositor transforms on text panels. */
 :root{--ui-font:"Segoe UI Variable Text","Segoe UI",system-ui,Arial,sans-serif}body{font-family:var(--ui-font);font-kerning:normal;text-rendering:auto}button,input,select,textarea,summary{font-family:inherit}
+
+/* Paged asset chooser: long resource names stay readable within the sidebar. */
+#assetBrowse{width:100%;text-align:left;white-space:normal;overflow-wrap:anywhere;min-height:44px}
+.asset-browser{padding:10px;margin-top:8px;border:1px solid var(--border,#405a4c);border-radius:6px}
+#assetResults{display:grid;gap:8px;max-height:460px;overflow-y:auto}
+.asset-result{display:grid;gap:5px;text-align:left;width:100%;padding:12px;min-height:78px;white-space:normal}
+.asset-result strong{font-size:15px;line-height:1.35}.asset-result span{font-size:13px}.asset-result small{font-size:12px;line-height:1.4;opacity:.8;overflow-wrap:anywhere}
+.asset-result[aria-pressed="true"]{outline:2px solid #62b8ff;outline-offset:-2px}
+.asset-browser input[type="search"]{font-size:15px}.asset-browser .check{display:flex;gap:8px;align-items:center}
+#assetResultCount{font-size:13px}.asset-browser .actions{display:flex;justify-content:space-between}
+
+/* Optional GM workspace: map stays primary; editor and drawers are reversible. */
+body.gm-workspace main{display:block;position:relative}body.gm-workspace .map-shell{height:100%;min-height:420px;width:100%}
+body.gm-workspace main>aside{display:none;position:absolute;z-index:850;right:10px;top:90px;bottom:105px;width:360px;max-width:calc(100% - 20px);overflow:auto;border:1px solid var(--line);border-radius:7px;box-shadow:0 4px 18px #0008}
+body.gm-workspace.gm-workspace-editor main>aside{display:block}
+#gmWorkspaceBar{position:absolute;z-index:900;top:82px;left:12px;right:auto;width:max-content;max-width:calc(100% - 24px);display:flex;flex-wrap:wrap;gap:5px;align-items:center;padding:7px;background:var(--panel);border:1px solid var(--line);border-radius:6px}
+#gmWorkspaceBar button{font-size:12px;min-height:34px;padding:6px 9px}#gmWorkspaceBar span{font-size:11px;max-width:240px;overflow-wrap:anywhere}
+.gm-drawer{position:absolute;z-index:800;top:176px;bottom:105px;width:320px;max-width:calc(100% - 24px);overflow:auto;padding:12px;background:var(--panel);border:1px solid var(--line);border-radius:7px;box-shadow:0 4px 18px #0008}
+#gmAssetDrawer{left:12px}#gmSelectionInspector{right:12px}.gm-drawer .section-heading{gap:6px}.gm-drawer h2{font-size:14px}.gm-drawer .section-heading button{font-size:11px;padding:5px;min-height:32px}.gm-inspector-card{padding:9px;border:1px solid var(--line);border-radius:5px;margin-bottom:8px}.gm-inspector-card p{margin:5px 0;font-size:12px;overflow-wrap:anywhere}.gm-inspector-card strong{font-size:14px;overflow-wrap:anywhere}
+body.gm-workspace.gm-workspace-editor #gmSelectionInspector{display:none}
+body.briefing-mode #gmWorkspaceBar,body.briefing-mode .gm-drawer{display:none!important}
+@media(max-width:950px){body.gm-workspace{height:100dvh;overflow:hidden}body.gm-workspace .map-shell{height:100%;min-height:300px}.gm-drawer{top:200px;bottom:110px;width:300px}body.gm-workspace main>aside{top:140px}#gmWorkspaceBar{top:92px}}
+@media(max-width:650px){#gmWorkspaceBar{top:92px;gap:3px}#gmWorkspaceBar span{display:none}.gm-drawer{top:210px;bottom:110px;width:calc(100% - 24px)}body.gm-workspace:has(#gmAssetDrawer:not([hidden])) #gmSelectionInspector{display:none}}
+
+#gmWorkspaceBar .gm-workspace-state{font-size:12px;line-height:1.4;padding:5px 8px;border:1px solid var(--line);border-radius:5px;background:var(--panel2);max-width:290px}
+
+/* Keep the floating editor clear of map tools and contain long labels/source paths. */
+body.gm-workspace main>aside .row{flex-wrap:wrap}
+body.gm-workspace main>aside .row>button{flex-shrink:1}
+body.gm-workspace main>aside :is(button,input,select,textarea,details,.panel){max-width:100%;min-width:0}
+body.gm-workspace main>aside :is(button,p,summary,small){overflow-wrap:anywhere}
+body.gm-workspace main>aside button{white-space:normal}
+body.gm-workspace main>aside pre{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%}
+
+/* Small floating command group; secondary GM controls open only when requested. */
+#gmWorkspaceBar{padding:4px;background:color-mix(in srgb,var(--panel) 92%,transparent);gap:4px;border-radius:8px;box-shadow:0 2px 8px #0003}
+#gmWorkspaceMenu{margin:0;position:static}
+#gmWorkspaceMenu>summary{list-style:none;font-size:12px;min-height:34px;padding:6px 9px;color:var(--text);background:var(--panel2);border:1px solid var(--line);border-radius:6px;display:flex;align-items:center;gap:7px}
+#gmWorkspaceMenu>summary::after{content:'▾';font-size:10px}
+#gmWorkspaceMenu[open]>summary{border-color:var(--green)}
+#gmWorkspaceActions{position:absolute;left:0;top:calc(100% + 8px);width:270px;max-width:calc(100vw - 24px);max-height:60dvh;overflow:auto;display:grid;gap:5px;padding:8px;background:var(--panel);border:1px solid var(--line);border-radius:8px;box-shadow:0 5px 16px #0006}
+#gmWorkspaceActions button{text-align:left;white-space:normal;overflow-wrap:anywhere;width:100%}
+#gmWorkspaceBar #gmWorkspaceLive{display:inline-block;border:0;background:none;padding:3px 6px;color:var(--muted)}
+#gmWorkspaceBar #gmWorkspaceRehearsal{display:block;max-width:100%;overflow-wrap:anywhere}
+
+/* Source review stays in one explicit diagnostics window, outside the map editor. */
+#sourceDiagnostics{width:min(1000px,94vw);max-height:90dvh}
+#sourceDiagnosticsBody{max-height:72dvh;overflow:auto;min-width:0}
+.source-diagnostic-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.source-diagnostic-tabs [aria-pressed=true]{border-color:var(--green);background:var(--panel2)}
+#sourceDiagnostics #sqfDependencyReview{margin:8px 0}
+#functionRows,#typeRows,#effectRows{max-height:36dvh;overflow:auto;margin:10px 0}
+.function-review-row{border-bottom:1px solid var(--line);padding:8px 0;overflow-wrap:anywhere}
+.function-review-row button{margin:3px 5px 3px 0;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+#sourceDiagnostics pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:24dvh;overflow:auto;padding:10px;border:1px solid var(--line);background:var(--panel2)}
+
+.function-review-layout{display:grid;gap:12px;grid-template-columns:minmax(0,1fr);align-items:start}
+.function-review-layout:has(.source-review-preview:not([hidden])){grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.function-review-list{min-width:0}
+@media(max-width:720px){.function-review-layout:has(.source-review-preview:not([hidden])){grid-template-columns:minmax(0,1fr)}}
+#sqfDiagnosticExport :is(p,button,label){overflow-wrap:anywhere}#sqfDiagnosticExport button{max-width:100%;white-space:normal;margin:4px 4px 4px 0}

@@ -1,0 +1,1716 @@
+{
+  "schema": "companion-resource-index",
+  "version": 1,
+  "addons": [
+    {
+      "id": "58D0FB3206B6F859",
+      "name": "Arma Reforger",
+      "version": null,
+      "dependencies": [
+        "5614BBCCBB55ED1C"
+      ]
+    },
+    {
+      "id": "5614BBCCBB55ED1C",
+      "name": "Enfusion core data",
+      "version": null,
+      "dependencies": []
+    }
+  ],
+  "resources": [
+    {
+      "id": "vanilla_DE04E1B859AFE58E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/CapturePoint/E_CapturePoint_FIA_metal.et",
+      "guid": "DE04E1B859AFE58E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_83F322475C58944D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/CapturePoint/E_CapturePoint_FIA.et",
+      "guid": "83F322475C58944D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_61788A1E1DD4BD24",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/CapturePoint/E_CapturePoint_Neutral_metal.et",
+      "guid": "61788A1E1DD4BD24",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6C5B2C9BE3D76F4A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/CapturePoint/E_CapturePoint_US_Hidden.et",
+      "guid": "6C5B2C9BE3D76F4A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_890AC363D31C7C5A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/CapturePoint/E_CapturePoint_US_metal.et",
+      "guid": "890AC363D31C7C5A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C6C1569049823D59",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/CapturePoint/E_CapturePoint_US.et",
+      "guid": "C6C1569049823D59",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_29C523AD35155EB5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/CapturePoint/E_CapturePoint_USSR_Hidden.et",
+      "guid": "29C523AD35155EB5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_549C3AB8EB762CB8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/CapturePoint/E_CapturePoint_USSR_metal.et",
+      "guid": "549C3AB8EB762CB8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_03764886C16B905A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/CapturePoint/E_CapturePoint_USSR.et",
+      "guid": "03764886C16B905A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_54905A0058BCA794",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/EntitySpawnerSlot/E_EntitySpawnerSlot_Character.et",
+      "guid": "54905A0058BCA794",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3924DD8432850C45",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/EntitySpawnerSlot/E_EntitySpawnerSlot_Vehicle_Large.et",
+      "guid": "3924DD8432850C45",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_430D7FD4AAEBD251",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/EntitySpawnerSlot/E_EntitySpawnerSlot_Vehicle_Medium.et",
+      "guid": "430D7FD4AAEBD251",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_64F33EB8C469D699",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/EntitySpawnerSlot/E_EntitySpawnerSlot_Vehicle_Small.et",
+      "guid": "64F33EB8C469D699",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_796E3FDF20CD2136",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/GameLogic/E_GameLogic_RallyPoint.et",
+      "guid": "796E3FDF20CD2136",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_88A69E176401004C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/PatrolPoint/E_PatrolPoint_LoiterPoint_LeanLeft.et",
+      "guid": "88A69E176401004C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C5598D40BF12C4CF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/PatrolPoint/E_PatrolPoint_LoiterPoint_LeanRight.et",
+      "guid": "C5598D40BF12C4CF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_910D0810DB232ED5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/PatrolPoint/E_PatrolPoint_LoiterPoint.et",
+      "guid": "910D0810DB232ED5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F0AC39FB028EE442",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/PatrolPoint/E_PatrolPoint_ObservationPoint.et",
+      "guid": "F0AC39FB028EE442",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6223E6F50D18522D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/Compositions/RallyPoint/E_RallyPoint_Move.et",
+      "guid": "6223E6F50D18522D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_308E000E2051D357",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Systems/SpawnPoints/E_SpawnPosition.et",
+      "guid": "308E000E2051D357",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_20449085DE597F06",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Vegetation/Cuttings/E_Betula_pendula_medium_01.et",
+      "guid": "20449085DE597F06",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3F466D6A674B1F5E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Vegetation/Cuttings/E_Carpinus_betulus_large_01.et",
+      "guid": "3F466D6A674B1F5E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C22D1A66EFA90AA5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Vegetation/Cuttings/E_Corylus_avellana_small_01.et",
+      "guid": "C22D1A66EFA90AA5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C5CAA04B5F0EF41A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Vegetation/Cuttings/E_Juniperus_communis_medium_01.et",
+      "guid": "C5CAA04B5F0EF41A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_21CEA2E945EF2C70",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Vegetation/Cuttings/E_Malus_domestica_large_01.et",
+      "guid": "21CEA2E945EF2C70",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_06E261BB7520CA65",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Vegetation/Cuttings/E_Picea_abies_medium_01.et",
+      "guid": "06E261BB7520CA65",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2094003B6946CA18",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Vegetation/Cuttings/E_Pinus_sylvestris_medium_01.et",
+      "guid": "2094003B6946CA18",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AB6F2026BAB8DFCE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Vegetation/Cuttings/E_Rosa_canina_small_01.et",
+      "guid": "AB6F2026BAB8DFCE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B953D46315370387",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Vegetation/Cuttings/E_Rubus_idaeus_small_01.et",
+      "guid": "B953D46315370387",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_879622F68D50A40E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Vegetation/Cuttings/E_Salix_cinerea_medium_01.et",
+      "guid": "879622F68D50A40E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_488C2150293BCAFA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Auto/Vegetation/Cuttings/E_Sambucus_Nigra_medium_01.et",
+      "guid": "488C2150293BCAFA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E436A9CE80AF79DF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/E_EmptyLayer_01.et",
+      "guid": "E436A9CE80AF79DF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_63611FABA52B31BA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/BaseEffectModule_Zoned.et",
+      "guid": "63611FABA52B31BA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_95C76850F56E4CEB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/BaseEffectModule.et",
+      "guid": "95C76850F56E4CEB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9EAFB347CCEF61EB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Flares/EffectModule_Flare_Base.et",
+      "guid": "9EAFB347CCEF61EB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AA7F04F403FD2E00",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Flares/EffectModule_Mortar_Flare_Illumination.et",
+      "guid": "AA7F04F403FD2E00",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_924C2EA12866EC41",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Flares/EffectModule_UGL_Flare_Green.et",
+      "guid": "924C2EA12866EC41",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8431C8CB8D63AFCE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Flares/EffectModule_UGL_Flare_Red.et",
+      "guid": "8431C8CB8D63AFCE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5C44DBD7E2978B22",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Flares/EffectModule_UGL_Flare_White.et",
+      "guid": "5C44DBD7E2978B22",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BA5F9852DD7255E4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/BaseEffectModule_MineField_Large.et",
+      "guid": "BA5F9852DD7255E4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6C5E1ADBF6188A6D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/BaseEffectModule_MineField_Medium.et",
+      "guid": "6C5E1ADBF6188A6D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0BA1D0F9A229183C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/BaseEffectModule_MineField_Rect_Row.et",
+      "guid": "0BA1D0F9A229183C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E7887B6E2B9E8F38",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/BaseEffectModule_MineField_Small.et",
+      "guid": "E7887B6E2B9E8F38",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3A65DAE7479234D8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/EffectModule_MineField_AP_Medium_US.et",
+      "guid": "3A65DAE7479234D8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_34EB1F16E01716A4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/EffectModule_MineField_AP_Medium_USSR.et",
+      "guid": "34EB1F16E01716A4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_383E34B5B5A0DE87",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/EffectModule_MineField_AP_Small_US.et",
+      "guid": "383E34B5B5A0DE87",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2F0CCC459889B8EE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/EffectModule_MineField_AP_Small_USSR.et",
+      "guid": "2F0CCC459889B8EE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E54FEBE04DBDD4CE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/EffectModule_MineField_Large_US.et",
+      "guid": "E54FEBE04DBDD4CE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_28ECED0C0F3655DB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/EffectModule_MineField_Large_USSR.et",
+      "guid": "28ECED0C0F3655DB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D3FDAE504F8621E8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/EffectModule_MineField_Medium_US.et",
+      "guid": "D3FDAE504F8621E8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1BAE4DF554AED35C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/EffectModule_MineField_Medium_USSR.et",
+      "guid": "1BAE4DF554AED35C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_36108DAFF38E0C07",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/EffectModule_MineField_Rect_Row_US.et",
+      "guid": "36108DAFF38E0C07",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B86FFB24E23D8055",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/EffectModule_MineField_Rect_Row_USSR.et",
+      "guid": "B86FFB24E23D8055",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_583D04DE7E5A8D22",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/EffectModule_MineField_Small_US.et",
+      "guid": "583D04DE7E5A8D22",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0D6A1225534F164D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mine/EffectModule_MineField_Small_USSR.et",
+      "guid": "0D6A1225534F164D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6B333D1470B7D617",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mortar/BaseEffectModule_MortarShell.et",
+      "guid": "6B333D1470B7D617",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3A3331F61766D055",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mortar/EffectModule_MortarShell.et",
+      "guid": "3A3331F61766D055",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5E0F494A46B3B604",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mortar/EffectModule_Zoned_MortarBarrage_Combing.et",
+      "guid": "5E0F494A46B3B604",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F5FAFFDBC271088C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mortar/EffectModule_Zoned_MortarBarrage_Creeping.et",
+      "guid": "F5FAFFDBC271088C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1DDF7187608968F2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mortar/EffectModule_Zoned_MortarBarrage_Large.et",
+      "guid": "1DDF7187608968F2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E7B7D4467E9A82DD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mortar/EffectModule_Zoned_MortarBarrage_Medium.et",
+      "guid": "E7B7D4467E9A82DD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5D48E2F7DB0C3714",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mortar/EffectModule_Zoned_MortarBarrage_Small.et",
+      "guid": "5D48E2F7DB0C3714",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4B3828A8AFFB60A2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mortar/Smoke/EffectModule_MortarShell_Smoke.et",
+      "guid": "4B3828A8AFFB60A2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B12C93E225913EFE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mortar/Smoke/EffectModule_Zoned_MortarBarrage_Smoke_Large.et",
+      "guid": "B12C93E225913EFE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D01FB74BE7440B16",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mortar/Smoke/EffectModule_Zoned_MortarBarrage_Smoke_Line.et",
+      "guid": "D01FB74BE7440B16",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2FDF3089DF6EC422",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mortar/Smoke/EffectModule_Zoned_MortarBarrage_Smoke_Medium.et",
+      "guid": "2FDF3089DF6EC422",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_ECFB70DED37DE422",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Mortar/Smoke/EffectModule_Zoned_MortarBarrage_Smoke_Small.et",
+      "guid": "ECFB70DED37DE422",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_42D7395BEEDA170A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Smoke/BaseEffectModule_Smoke.et",
+      "guid": "42D7395BEEDA170A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_19A70761A19A91AA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Smoke/EffectModule_Smoke_Green.et",
+      "guid": "19A70761A19A91AA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1BBEB0BB59A93FFE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Smoke/EffectModule_Smoke_Purple.et",
+      "guid": "1BBEB0BB59A93FFE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1F7300EC0835D898",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Smoke/EffectModule_Smoke_Red.et",
+      "guid": "1F7300EC0835D898",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_86BF42335C64B008",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Smoke/EffectModule_Smoke_White.et",
+      "guid": "86BF42335C64B008",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_94C2FE6E02662E76",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/EffectsModules/Smoke/EffectModule_Smoke_Yellow.et",
+      "guid": "94C2FE6E02662E76",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D9B1F65D20081DEF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Explosives/E_DemoBlock_M112.et",
+      "guid": "D9B1F65D20081DEF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_73F69547963CAEE0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Explosives/E_DemoBlock_TSh400g.et",
+      "guid": "73F69547963CAEE0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C72C9E090CED8B05",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Mines/E_Mine_M14.et",
+      "guid": "C72C9E090CED8B05",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B63D38376558C9DD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Mines/E_Mine_M15AT.et",
+      "guid": "B63D38376558C9DD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4F6673E18A5A5974",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Mines/E_Mine_PMN4.et",
+      "guid": "4F6673E18A5A5974",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_44DCCCB56D42C43B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Mines/E_Mine_TM62M.et",
+      "guid": "44DCCCB56D42C43B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7846A93EA395CFBA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/RestrictionZone/E_EditorRestrictionZoneBase.et",
+      "guid": "7846A93EA395CFBA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B2A519402E9AC209",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/RestrictionZone/E_EditorRestrictionZoneLarge.et",
+      "guid": "B2A519402E9AC209",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6144B0BE2EAC6897",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/RestrictionZone/E_EditorRestrictionZoneMedium.et",
+      "guid": "6144B0BE2EAC6897",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EF72FA7CD87618D5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/RestrictionZone/E_EditorRestrictionZoneSmall.et",
+      "guid": "EF72FA7CD87618D5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3526B3B4DC6320E8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Slots/E_SlotBase.et",
+      "guid": "3526B3B4DC6320E8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_055DDE93F47A6A1D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Slots/Flat/E_SlotFlatLarge.et",
+      "guid": "055DDE93F47A6A1D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4B1C4BDDF6683101",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Slots/Flat/E_SlotFlatMedium.et",
+      "guid": "4B1C4BDDF6683101",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_588A3DAF0296B0C1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Slots/Flat/E_SlotFlatSmall.et",
+      "guid": "588A3DAF0296B0C1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_881CE7B0098504C2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Slots/Road/E_SlotRoadLarge.et",
+      "guid": "881CE7B0098504C2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F4066B8425BEC47C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Slots/Road/E_SlotRoadMedium.et",
+      "guid": "F4066B8425BEC47C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_66265A506DF1FE2B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Slots/Road/E_SlotRoadSmall.et",
+      "guid": "66265A506DF1FE2B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A79A87C616EEA08A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SpawnPoints/E_SpawnPoint_CIV.et",
+      "guid": "A79A87C616EEA08A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_38550EF41BBBB77C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SpawnPoints/E_SpawnPoint_FIA_Supplies.et",
+      "guid": "38550EF41BBBB77C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_72713ED566A531F3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SpawnPoints/E_SpawnPoint_FIA.et",
+      "guid": "72713ED566A531F3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A23E48ADD624B74E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SpawnPoints/E_SpawnPoint_NoFaction_Supplies.et",
+      "guid": "A23E48ADD624B74E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_70272F740D363793",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SpawnPoints/E_SpawnPoint_US_Supplies.et",
+      "guid": "70272F740D363793",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CEA2B24051A44525",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SpawnPoints/E_SpawnPoint_US.et",
+      "guid": "CEA2B24051A44525",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_468CE027659EC835",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SpawnPoints/E_SpawnPoint_USSR_Supplies.et",
+      "guid": "468CE027659EC835",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_45225582B358C31A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SpawnPoints/E_SpawnPoint_USSR.et",
+      "guid": "45225582B358C31A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_987991DCED3DC197",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SpawnPoints/E_SpawnPoint.et",
+      "guid": "987991DCED3DC197",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1D7174C97DF571DC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SupportStationSystems/E_SupportStationSystem_Base.et",
+      "guid": "1D7174C97DF571DC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_47B7E8CA1935BB28",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SupportStationSystems/E_SupportStationSystem_Fuel.et",
+      "guid": "47B7E8CA1935BB28",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D4F15B34CEB62C2C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SupportStationSystems/E_SupportStationSystem_Heal_Medium.et",
+      "guid": "D4F15B34CEB62C2C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F161BC650B2BD9D4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SupportStationSystems/E_SupportStationSystem_Heal.et",
+      "guid": "F161BC650B2BD9D4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7BDAD0F4A6195C01",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SupportStationSystems/E_SupportStationSystem_Repair_Helipad_BoundingBox.et",
+      "guid": "7BDAD0F4A6195C01",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3282CF3ABA80168A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SupportStationSystems/E_SupportStationSystem_Repair_Medium.et",
+      "guid": "3282CF3ABA80168A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_64454FA087931713",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/SupportStationSystems/E_SupportStationSystem_Repair.et",
+      "guid": "64454FA087931713",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_934A3C3A870634DC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/System/E_Comment.et",
+      "guid": "934A3C3A870634DC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_66FF352A0B724D51",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/System/E_CompositionBase.et",
+      "guid": "66FF352A0B724D51",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_94D481BAEC3B8573",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/System/E_FactionDelegate.et",
+      "guid": "94D481BAEC3B8573",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6143F22A2E336CF8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/System/E_PingEntity_GM.et",
+      "guid": "6143F22A2E336CF8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6143F22A2E336CF9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/System/E_PingEntity_UnlimitedOnly.et",
+      "guid": "6143F22A2E336CF9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_712601A9A89CA03C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/System/E_PingEntity.et",
+      "guid": "712601A9A89CA03C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A788190C069077B8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/System/E_PlayerDelegate.et",
+      "guid": "A788190C069077B8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1485D218DB14A25F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/System/E_Preview.et",
+      "guid": "1485D218DB14A25F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_394C10C8CA25BE3A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/System/E_PreviewWaiting.et",
+      "guid": "394C10C8CA25BE3A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4FEB14F1AE86C2B3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/System/E_WorldEntityDelegate.et",
+      "guid": "4FEB14F1AE86C2B3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_612E150AE7C36F07",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Tasks/E_CustomTask.et",
+      "guid": "612E150AE7C36F07",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2BB71CBCC1B8ACCC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Tasks/E_DefendTask.et",
+      "guid": "2BB71CBCC1B8ACCC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_28035CE77901DF88",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Tasks/E_MoveTask.et",
+      "guid": "28035CE77901DF88",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2300E0B078A5AF3B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Tasks/E_NeutralizeTask.et",
+      "guid": "2300E0B078A5AF3B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F1BD4292C4BEFCE7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "PrefabsEditable/Tasks/E_SeizeTask.et",
+      "guid": "F1BD4292C4BEFCE7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "command-release-scope-v1",
+  "desktopVersion": "1.0.0",
+  "matchingBridgeVersion": "0.13.0",
+  "channel": "stable-planner",
+  "stablePublicationAllowed": true,
+  "core": [
+    "offline-planning",
+    "mission-save-load",
+    "catalog-import-and-asset-selection",
+    "drawing-and-briefing",
+    "import-export",
+    "undo-redo",
+    "settings-and-translations",
+    "sarge-guidance",
+    "deployment-compositions",
+    "unified-game-master-workspace",
+    "portable-mission-package"
+  ],
+  "experimental": [
+    "live-tracking-and-reviewed-native-controls",
+    "scoped-native-auto-approval",
+    "server-managed-HTTPS-relay",
+    "server-scenario-snapshots",
+    "vehicle-transport-treatment-convoys",
+    "read-only-authorized-terrain-preview",
+    "source-migration-review-tools",
+    "occupied-vehicle-and-cargo-group-deployment",
+    "reviewed-ground-reinforcement",
+    "stock-refuel-once",
+    "force-assisted-vanilla-UH1H-insertion"
+  ],
+  "disabledOrPlanned": [
+    "native-workbench-import-and-apply",
+    "continuous-two-way-editing",
+    "full-world-rendering-and-exact-game-models",
+    "websockets",
+    "relay-restart-persistence",
+    "multi-admin-roles"
+  ],
+  "knownIssues": [
+    "historical-boarding-timeout-unexplained",
+    "human-multiplayer-and-combat-acceptance-incomplete",
+    "old-bad-snapshot-headings-require-review-or-resave",
+    "general-existing-vehicle-registration-unfinished",
+    "experimental-flight-slow-takeoff-and-backward-travel",
+    "no-flight-obstacle-avoidance-or-guaranteed-tree-building-clearance"
+  ],
+  "requiredExternalAcceptance": [
+    "actual-matching-Workshop-build",
+    "two-client-host-or-dedicated-session",
+    "player-death-respawn-and-reconnect-protection",
+    "physical-single-and-squad-orders-and-spawn-removal",
+    "experimental-Huey-human-takeover-and-two-client-flight-observation"
+  ],
+  "stableScope": "Offline mission planning and reviewed planning-data workflows only",
+  "liveIntegrationStatus": "experimental",
+  "publicReleaseTitle": "COMMAND v1.0.0 \u2014 Mission Planning & Control"
+}

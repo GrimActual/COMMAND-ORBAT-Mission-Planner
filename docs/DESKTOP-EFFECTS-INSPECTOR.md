@@ -1,0 +1,31 @@
+# Desktop Effects Inspector
+
+## English
+
+Open **Assets → Arma 3 migration review → Open source diagnostics → Effects**. Settings has **Open Effects Inspector** and Sarge has the matching topic. The four tabs keep independent selected sources, searches and previews.
+
+Select SQF/SQM/EXT/HPP files together or one source-package JSON containing exactly `files` and `mounts`. This pass retains the structural limits: 64 files, 256 KiB per file, 2 MiB total, plus existing bounded report/node budgets and a 15-second worker deadline. CPP/INC are not accepted here; use Dependencies or Functions for their inventory. Configuration files remain inventory-only. Includes/macros and referenced files are not automatically expanded or loaded.
+
+Search names, effect identifiers, context IDs or paths. Filters show execution contexts, possible writes, command candidates, code invocation candidates, scheduling candidates, cleanup/lifetime obligations and unreviewed regions. Technical effect/review identifiers remain unchanged across languages so developers can search and compare them with exported developer reports. **View source** displays captured lines beside the list, or below it on narrow screens. Source spans use UTF-16 offsets with CRLF/CR/LF-aware line indexing. Forty rows are rendered per page.
+
+These are potential effects from bounded source regions, not a full engine-effect model. Stored callbacks have separate contexts. A callback candidate links its owner and possible target context without invoking either. A possible write does not establish its runtime value, reachability or multiplayer locality. Scheduling labels describe selected supported syntax, not a working scheduler. Cleanup obligations flag required review; they do not prove cleanup exists or is missing. Unsupported syntax stays visible under unreviewed regions. General namespace mutation, arbitrary `spawn`/dynamic compilation, full statement semantics and native behavior remain unresolved. This inspector does not turn any source green for emission.
+
+Tab and language changes retain context. Cancel or rejected input retains the previous review. Clear removes only this session view. Native analysis runs in a bounded worker which is terminated after completion/cancellation; navigation, renderer loss and app exit cancel outstanding work. No source execution, mission edits, automatic connection or Enforce generation occurs. The existing analysis producer and prior report formats are unchanged.
+
+## Français
+
+**Assets → Revue de migration Arma 3 → Ouvrir les diagnostics source → Effets**, également dans les paramètres et Sarge. Choisissez SQF/SQM/EXT/HPP ou un JSON avec `files` et `mounts`. Recherchez un nom, un identifiant d’effet/contexte ou un chemin ; filtrez écritures possibles, commandes, invocations candidates, planification, nettoyage et régions non examinées. Voir la source montre les lignes capturées. Les identifiants techniques restent inchangés. Les callbacks stockés gardent des contextes séparés ; aucun candidat ne prouve invocation, valeur, localité ou nettoyage. Configurations limitées à l’inventaire ; inclusions/macros non développées. Onglets et langue gardent le contexte ; annulation/refus conserve la revue, Effacer retire seulement la vue de session. Aucun changement de mission, exécution source ou génération Enforce.
+
+## Deutsch
+
+**Assets → Arma-3-Migrationsprüfung → Quelltextdiagnose öffnen → Effekte**, auch über Einstellungen und Sarge. SQF/SQM/EXT/HPP oder JSON mit `files` und `mounts` auswählen. Nach Name, Effekt-/Kontextkennung oder Pfad suchen; mögliche Schreibvorgänge, Kommandos, Codeaufrufe, Ablaufplanung, Bereinigung und ungeprüfte Bereiche filtern. Quelle anzeigen zeigt erfasste Zeilen. Technische Kennungen bleiben unverändert. Gespeicherte Callbacks behalten eigene Kontexte; Kandidaten beweisen weder Aufruf, Wert, Lokalität noch Bereinigung. Konfigurationen bleiben Inventardaten, Includes/Makros werden nicht expandiert. Tabs und Sprache behalten den Kontext; Abbruch/Ablehnung erhält Daten, Löschen entfernt nur die Sitzungsansicht. Keine Missionsänderung, Quellausführung oder Enforce-Erzeugung.
+
+## Verification
+
+28 new/affected native worker, picker, source-span, localization, lifecycle and browser-route cases passed. The packaged application inspected six real radio sources (50 command and eight invocation candidates), then a larger 120-stored-function fixture with 240 invocation candidates. Filters, 40-row paging, exact CRLF source previews, inert Unicode/script-like comments, wide/narrow layout, independent tabs, EN/FR/DE switching, cancel/reject retention and session-only clearing passed. Mission and selected source were unchanged; no renderer errors or game launch. Only the OS file chooser was substituted; native reads and workers were real. Evidence: `docs/test-evidence/effects-inspector-desktop.json`.
+
+The larger fixture took about 335 ms from automated click to ready in one observation, including analysis/result delivery. It is not a universal parser time or UI-stall measure. The separate matched 400-unit map sample is recorded in `docs/test-evidence/effects-inspector-performance.json`; compare with the existing type-review baseline rather than rerunning that completed baseline. Short samples do not establish sustained FPS or a causal speedup.
+
+Development executable: `A:/Everon-ORBAT-Development/work/effects-inspector/COMMAND-Effects-Candidate/COMMAND Planner.exe`. Includes prior diagnostics and compact GM workspace. The existing dev.gm.8 runtime/version label is retained; this is a development checkpoint, not a new public release. Example: `Examples/effects-source-package.json`. Previous candidates are preserved. Combined diagnostic export and tiered scaffold export remain later milestones.
+
+Hosted compiler/worker verification passed on Ubuntu 24.04 / Node 24 and Windows 2022 / Node 22 for source commit `29acf87429b12e5588ddd77f851ad200d2014d0e`: [run 38786904422](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/actions/runs/38786904422). This does not claim a Linux Electron GUI test. The matched local 400-marker map sample measured median/p95 16.7/16.8 ms, maximum 16.9 ms, no frame above 100 ms, two tiles and unchanged mission data. The completed prior type-review sample had the same median/p95.

@@ -1,4 +1,6 @@
-# Proposed package 14.1 — optional Game Master workspace
+Implementation update, 14 October 2026: the compact shell is delivered in development pilot 2.9.1-dev.gm.4. [Current controls and limits](COMPACT-GM-WORKSPACE.md). The original proposal below is retained as design history; future behavior/waypoint/native-property controls are not claimed as delivered.
+
+# Package 14.1 — optional Game Master workspace plan
 
 User clarification reviewed 13 October 2026. This is a proposed design milestone inside the existing COMMAND — ORBAT / Mission Planner, not a separate app, replacement interface or implemented feature. MagicPath is the proposed design workspace for panel hierarchy and component boundaries; no MagicPath prototype has been created in this increment.
 

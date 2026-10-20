@@ -1,12 +1,12 @@
 FrameWidgetClass {
  Name "JSOCPairing"
- Slot FrameWidgetSlot { Anchor 1 0 1 0 PositionX -620 OffsetLeft -620 PositionY 140 OffsetTop 140 SizeX 580 OffsetRight 40 SizeY 400 OffsetBottom -540 }
+ Slot FrameWidgetSlot { Anchor 1 0 1 0 PositionX -620 OffsetLeft -620 PositionY 140 OffsetTop 140 SizeX 580 OffsetRight 40 SizeY 480 OffsetBottom -620 }
  "Z Order" 20
  {
   TextWidgetClass : "{3132F64DB8B4CB44}UI/layouts/WidgetLibrary/TextWidgets/Text_Body.layout" {
    Name "JSOCTitle"
    Slot FrameWidgetSlot { Anchor 0 0 1 0 PositionX 16 OffsetLeft 16 PositionY 12 OffsetTop 12 SizeX 0 OffsetRight 16 SizeY 40 OffsetBottom -52 }
-   Text "COMMAND - HOST PAIRING" "Font Size" 20
+   Text "COMMAND - HOST PAIRING 0.13.0" "Font Size" 20
   }
   TextWidgetClass : "{3132F64DB8B4CB44}UI/layouts/WidgetLibrary/TextWidgets/Text_Body.layout" {
    Name "JSOCHelp"
@@ -40,5 +40,11 @@ FrameWidgetClass {
    Slot FrameWidgetSlot { Anchor 0 0 1 0 PositionX 16 OffsetLeft 16 PositionY 325 OffsetTop 325 SizeX 0 OffsetRight 16 SizeY 60 OffsetBottom -385 }
    Text "Disconnected" "Font Size" 16
   }
+  ButtonWidgetClass {
+   Name "JSOCMixed"
+   Slot FrameWidgetSlot { Anchor 0 0 1 0 PositionX 16 OffsetLeft 16 PositionY 390 OffsetTop 390 SizeX 0 OffsetRight 16 SizeY 36 OffsetBottom -426 }
+   { TextWidgetClass : "{3132F64DB8B4CB44}UI/layouts/WidgetLibrary/TextWidgets/Text_Body.layout" { Name "MixedText" Slot ButtonWidgetSlot { HorizontalAlign 1 VerticalAlign 1 } Color 0.05 0.08 0.07 1 "Inherit Color" 0 Text "PLAYERS / AI / FACTIONS (MIXED)" "Font Size" 16 "Ignore Cursor" 1 } }
+  }
+  ButtonWidgetClass { Name "JSOCGM" Slot FrameWidgetSlot { Anchor 0 0 1 0 PositionX 16 OffsetLeft 16 PositionY 432 OffsetTop 432 SizeX 0 OffsetRight 16 SizeY 36 OffsetBottom -468 } { TextWidgetClass : "{3132F64DB8B4CB44}UI/layouts/WidgetLibrary/TextWidgets/Text_Body.layout" { Name "GMText" Slot ButtonWidgetSlot { HorizontalAlign 1 VerticalAlign 1 } Color 0.05 0.08 0.07 1 "Inherit Color" 0 Text "REVIEW GM REQUESTS" "Font Size" 16 "Ignore Cursor" 1 } } }
  }
 }

@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "actualCatalogFileImported": true,
+  "importDoesNotChangePlan": true,
+  "vanillaReferenceAssignedAndReloaded": true,
+  "deploymentIndexFile": "02-Vanilla-US-Rifleman-Resource-Index.json",
+  "reviewReadyToSend": true,
+  "reviewDoesNotChangePlan": true,
+  "nativePickerMocked": true,
+  "noGameCommandSent": true,
+  "rendererErrors": []
+}

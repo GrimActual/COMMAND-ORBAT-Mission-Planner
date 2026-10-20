@@ -1,0 +1,3029 @@
+{
+  "schema": "command-sqf-structural-ast",
+  "version": 1,
+  "executable": false,
+  "syntaxOnly": true,
+  "offsetEncoding": "utf16-code-units",
+  "requiredReview": [
+    "expression-types-and-effects",
+    "variable-scopes-and-bindings",
+    "scheduling-and-locality",
+    "native-adapter-semantics",
+    "control-flow-lowering"
+  ],
+  "files": [
+    {
+      "name": "nested.sqf",
+      "textBytes": 706,
+      "textLength": 704,
+      "tokenCount": 287,
+      "sha256": "62c296cc1ff6bcf831a139cfa1fb745cb7e891eef8a58f5b19269f19223a2c40",
+      "hashScope": "decoded-utf8-text",
+      "mode": "structural-ast",
+      "rootId": "node-0"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "node-0",
+      "kind": "Program",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 1,
+        "start": 0,
+        "end": 704
+      },
+      "preview": "_fn={ if (_ready) then { for \"_i\" from 0 to 3 do { if (_i==2) exitWith {hint \"stop\";}; }; } else {while {alive _u} do {sleep 1;};}; {_x doMove [1,2,3];} forEach",
+      "parts": [],
+      "children": [
+        {
+          "role": "statement",
+          "nodeId": "node-1"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-19"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-25"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-26"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-27"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-28"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-29"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-30"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-31"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-32"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-33"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-34"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-35"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-36"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-37"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-38"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-39"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-40"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-41"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-42"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-43"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-44"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-45"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-46"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-47"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-48"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-49"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-50"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-51"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-52"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-53"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-54"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-55"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-56"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-57"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-58"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-59"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-60"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-61"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-62"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-63"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-64"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-65"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-66"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-67"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-68"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-69"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-70"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-71"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-72"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-73"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-74"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-75"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-1",
+      "kind": "CodeAssignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 1,
+        "start": 0,
+        "end": 172
+      },
+      "preview": "_fn={ if (_ready) then { for \"_i\" from 0 to 3 do { if (_i==2) exitWith {hint \"stop\";}; }; } else {while {alive _u} do {sleep 1;};}; {_x doMove [1,2,3];} forEach",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 1,
+            "column": 1,
+            "start": 0,
+            "end": 3
+          },
+          "preview": "_fn",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [
+        {
+          "role": "body",
+          "nodeId": "node-2"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required",
+        "code-value-execution-unresolved"
+      ]
+    },
+    {
+      "id": "node-2",
+      "kind": "Block",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 5,
+        "start": 4,
+        "end": 172
+      },
+      "preview": "{ if (_ready) then { for \"_i\" from 0 to 3 do { if (_i==2) exitWith {hint \"stop\";}; }; } else {while {alive _u} do {sleep 1;};}; {_x doMove [1,2,3];} forEach uni",
+      "parts": [],
+      "children": [
+        {
+          "role": "statement",
+          "nodeId": "node-3"
+        },
+        {
+          "role": "statement",
+          "nodeId": "node-16"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-3",
+      "kind": "If",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 7,
+        "start": 6,
+        "end": 130
+      },
+      "preview": "if (_ready) then { for \"_i\" from 0 to 3 do { if (_i==2) exitWith {hint \"stop\";}; }; } else {while {alive _u} do {sleep 1;};}",
+      "parts": [
+        {
+          "role": "condition",
+          "source": {
+            "file": "nested.sqf",
+            "line": 1,
+            "column": 10,
+            "start": 9,
+            "end": 17
+          },
+          "preview": "(_ready)",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [
+        {
+          "role": "then",
+          "nodeId": "node-4"
+        },
+        {
+          "role": "else",
+          "nodeId": "node-10"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-4",
+      "kind": "Block",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 24,
+        "start": 23,
+        "end": 91
+      },
+      "preview": "{ for \"_i\" from 0 to 3 do { if (_i==2) exitWith {hint \"stop\";}; }; }",
+      "parts": [],
+      "children": [
+        {
+          "role": "statement",
+          "nodeId": "node-5"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-5",
+      "kind": "ForRange",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 26,
+        "start": 25,
+        "end": 88
+      },
+      "preview": "for \"_i\" from 0 to 3 do { if (_i==2) exitWith {hint \"stop\";}; }",
+      "parts": [
+        {
+          "role": "counter",
+          "source": {
+            "file": "nested.sqf",
+            "line": 1,
+            "column": 30,
+            "start": 29,
+            "end": 33
+          },
+          "preview": "\"_i\"",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "from",
+          "source": {
+            "file": "nested.sqf",
+            "line": 1,
+            "column": 40,
+            "start": 39,
+            "end": 40
+          },
+          "preview": "0",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "to",
+          "source": {
+            "file": "nested.sqf",
+            "line": 1,
+            "column": 45,
+            "start": 44,
+            "end": 45
+          },
+          "preview": "3",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [
+        {
+          "role": "body",
+          "nodeId": "node-6"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required",
+        "loop-runtime-semantics-unresolved"
+      ]
+    },
+    {
+      "id": "node-6",
+      "kind": "Block",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 50,
+        "start": 49,
+        "end": 88
+      },
+      "preview": "{ if (_i==2) exitWith {hint \"stop\";}; }",
+      "parts": [],
+      "children": [
+        {
+          "role": "statement",
+          "nodeId": "node-7"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-7",
+      "kind": "ExitWith",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 52,
+        "start": 51,
+        "end": 85
+      },
+      "preview": "if (_i==2) exitWith {hint \"stop\";}",
+      "parts": [
+        {
+          "role": "condition",
+          "source": {
+            "file": "nested.sqf",
+            "line": 1,
+            "column": 55,
+            "start": 54,
+            "end": 61
+          },
+          "preview": "(_i==2)",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [
+        {
+          "role": "body",
+          "nodeId": "node-8"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required",
+        "scope-exit-target-unresolved"
+      ]
+    },
+    {
+      "id": "node-8",
+      "kind": "Block",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 72,
+        "start": 71,
+        "end": 85
+      },
+      "preview": "{hint \"stop\";}",
+      "parts": [],
+      "children": [
+        {
+          "role": "statement",
+          "nodeId": "node-9"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-9",
+      "kind": "OpaqueStatement",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 73,
+        "start": 72,
+        "end": 83
+      },
+      "preview": "hint \"stop\"",
+      "parts": [],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required",
+        "expression-and-command-semantics-unresolved"
+      ]
+    },
+    {
+      "id": "node-10",
+      "kind": "Block",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 98,
+        "start": 97,
+        "end": 130
+      },
+      "preview": "{while {alive _u} do {sleep 1;};}",
+      "parts": [],
+      "children": [
+        {
+          "role": "statement",
+          "nodeId": "node-11"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-11",
+      "kind": "While",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 99,
+        "start": 98,
+        "end": 128
+      },
+      "preview": "while {alive _u} do {sleep 1;}",
+      "parts": [],
+      "children": [
+        {
+          "role": "condition",
+          "nodeId": "node-12"
+        },
+        {
+          "role": "body",
+          "nodeId": "node-14"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required",
+        "loop-runtime-semantics-unresolved"
+      ]
+    },
+    {
+      "id": "node-12",
+      "kind": "Block",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 105,
+        "start": 104,
+        "end": 114
+      },
+      "preview": "{alive _u}",
+      "parts": [],
+      "children": [
+        {
+          "role": "statement",
+          "nodeId": "node-13"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-13",
+      "kind": "OpaqueStatement",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 106,
+        "start": 105,
+        "end": 113
+      },
+      "preview": "alive _u",
+      "parts": [],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required",
+        "expression-and-command-semantics-unresolved"
+      ]
+    },
+    {
+      "id": "node-14",
+      "kind": "Block",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 119,
+        "start": 118,
+        "end": 128
+      },
+      "preview": "{sleep 1;}",
+      "parts": [],
+      "children": [
+        {
+          "role": "statement",
+          "nodeId": "node-15"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-15",
+      "kind": "OpaqueStatement",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 120,
+        "start": 119,
+        "end": 126
+      },
+      "preview": "sleep 1",
+      "parts": [],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required",
+        "expression-and-command-semantics-unresolved"
+      ]
+    },
+    {
+      "id": "node-16",
+      "kind": "ForEach",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 133,
+        "start": 132,
+        "end": 169
+      },
+      "preview": "{_x doMove [1,2,3];} forEach units _g",
+      "parts": [
+        {
+          "role": "iterable",
+          "source": {
+            "file": "nested.sqf",
+            "line": 1,
+            "column": 162,
+            "start": 161,
+            "end": 169
+          },
+          "preview": "units _g",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [
+        {
+          "role": "body",
+          "nodeId": "node-17"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required",
+        "loop-runtime-semantics-unresolved"
+      ]
+    },
+    {
+      "id": "node-17",
+      "kind": "Block",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 133,
+        "start": 132,
+        "end": 152
+      },
+      "preview": "{_x doMove [1,2,3];}",
+      "parts": [],
+      "children": [
+        {
+          "role": "statement",
+          "nodeId": "node-18"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-18",
+      "kind": "OpaqueStatement",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 134,
+        "start": 133,
+        "end": 150
+      },
+      "preview": "_x doMove [1,2,3]",
+      "parts": [],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required",
+        "expression-and-command-semantics-unresolved"
+      ]
+    },
+    {
+      "id": "node-19",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 175,
+        "start": 174,
+        "end": 216
+      },
+      "preview": "private _value=if (true) then {1} else {0}",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 1,
+            "column": 183,
+            "start": 182,
+            "end": 188
+          },
+          "preview": "_value",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [
+        {
+          "role": "value",
+          "nodeId": "node-20"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-20",
+      "kind": "If",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 190,
+        "start": 189,
+        "end": 216
+      },
+      "preview": "if (true) then {1} else {0}",
+      "parts": [
+        {
+          "role": "condition",
+          "source": {
+            "file": "nested.sqf",
+            "line": 1,
+            "column": 193,
+            "start": 192,
+            "end": 198
+          },
+          "preview": "(true)",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [
+        {
+          "role": "then",
+          "nodeId": "node-21"
+        },
+        {
+          "role": "else",
+          "nodeId": "node-23"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-21",
+      "kind": "Block",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 205,
+        "start": 204,
+        "end": 207
+      },
+      "preview": "{1}",
+      "parts": [],
+      "children": [
+        {
+          "role": "statement",
+          "nodeId": "node-22"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-22",
+      "kind": "OpaqueStatement",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 206,
+        "start": 205,
+        "end": 206
+      },
+      "preview": "1",
+      "parts": [],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required",
+        "expression-and-command-semantics-unresolved"
+      ]
+    },
+    {
+      "id": "node-23",
+      "kind": "Block",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 214,
+        "start": 213,
+        "end": 216
+      },
+      "preview": "{0}",
+      "parts": [],
+      "children": [
+        {
+          "role": "statement",
+          "nodeId": "node-24"
+        }
+      ],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-24",
+      "kind": "OpaqueStatement",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 215,
+        "start": 214,
+        "end": 215
+      },
+      "preview": "0",
+      "parts": [],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required",
+        "expression-and-command-semantics-unresolved"
+      ]
+    },
+    {
+      "id": "node-25",
+      "kind": "OpaqueStatement",
+      "source": {
+        "file": "nested.sqf",
+        "line": 1,
+        "column": 219,
+        "start": 218,
+        "end": 273
+      },
+      "preview": "hint \"😀 <script>globalThis.AST_INJECTED=true</script>\"",
+      "parts": [],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required",
+        "expression-and-command-semantics-unresolved"
+      ]
+    },
+    {
+      "id": "node-26",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 2,
+        "column": 1,
+        "start": 275,
+        "end": 280
+      },
+      "preview": "_n0=0",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 2,
+            "column": 1,
+            "start": 275,
+            "end": 278
+          },
+          "preview": "_n0",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 2,
+            "column": 5,
+            "start": 279,
+            "end": 280
+          },
+          "preview": "0",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-27",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 3,
+        "column": 1,
+        "start": 282,
+        "end": 287
+      },
+      "preview": "_n1=1",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 3,
+            "column": 1,
+            "start": 282,
+            "end": 285
+          },
+          "preview": "_n1",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 3,
+            "column": 5,
+            "start": 286,
+            "end": 287
+          },
+          "preview": "1",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-28",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 4,
+        "column": 1,
+        "start": 289,
+        "end": 294
+      },
+      "preview": "_n2=2",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 4,
+            "column": 1,
+            "start": 289,
+            "end": 292
+          },
+          "preview": "_n2",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 4,
+            "column": 5,
+            "start": 293,
+            "end": 294
+          },
+          "preview": "2",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-29",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 5,
+        "column": 1,
+        "start": 296,
+        "end": 301
+      },
+      "preview": "_n3=3",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 5,
+            "column": 1,
+            "start": 296,
+            "end": 299
+          },
+          "preview": "_n3",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 5,
+            "column": 5,
+            "start": 300,
+            "end": 301
+          },
+          "preview": "3",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-30",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 6,
+        "column": 1,
+        "start": 303,
+        "end": 308
+      },
+      "preview": "_n4=4",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 6,
+            "column": 1,
+            "start": 303,
+            "end": 306
+          },
+          "preview": "_n4",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 6,
+            "column": 5,
+            "start": 307,
+            "end": 308
+          },
+          "preview": "4",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-31",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 7,
+        "column": 1,
+        "start": 310,
+        "end": 315
+      },
+      "preview": "_n5=5",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 7,
+            "column": 1,
+            "start": 310,
+            "end": 313
+          },
+          "preview": "_n5",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 7,
+            "column": 5,
+            "start": 314,
+            "end": 315
+          },
+          "preview": "5",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-32",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 8,
+        "column": 1,
+        "start": 317,
+        "end": 322
+      },
+      "preview": "_n6=6",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 8,
+            "column": 1,
+            "start": 317,
+            "end": 320
+          },
+          "preview": "_n6",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 8,
+            "column": 5,
+            "start": 321,
+            "end": 322
+          },
+          "preview": "6",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-33",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 9,
+        "column": 1,
+        "start": 324,
+        "end": 329
+      },
+      "preview": "_n7=7",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 9,
+            "column": 1,
+            "start": 324,
+            "end": 327
+          },
+          "preview": "_n7",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 9,
+            "column": 5,
+            "start": 328,
+            "end": 329
+          },
+          "preview": "7",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-34",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 10,
+        "column": 1,
+        "start": 331,
+        "end": 336
+      },
+      "preview": "_n8=8",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 10,
+            "column": 1,
+            "start": 331,
+            "end": 334
+          },
+          "preview": "_n8",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 10,
+            "column": 5,
+            "start": 335,
+            "end": 336
+          },
+          "preview": "8",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-35",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 11,
+        "column": 1,
+        "start": 338,
+        "end": 343
+      },
+      "preview": "_n9=9",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 11,
+            "column": 1,
+            "start": 338,
+            "end": 341
+          },
+          "preview": "_n9",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 11,
+            "column": 5,
+            "start": 342,
+            "end": 343
+          },
+          "preview": "9",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-36",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 12,
+        "column": 1,
+        "start": 345,
+        "end": 352
+      },
+      "preview": "_n10=10",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 12,
+            "column": 1,
+            "start": 345,
+            "end": 349
+          },
+          "preview": "_n10",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 12,
+            "column": 6,
+            "start": 350,
+            "end": 352
+          },
+          "preview": "10",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-37",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 13,
+        "column": 1,
+        "start": 354,
+        "end": 361
+      },
+      "preview": "_n11=11",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 13,
+            "column": 1,
+            "start": 354,
+            "end": 358
+          },
+          "preview": "_n11",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 13,
+            "column": 6,
+            "start": 359,
+            "end": 361
+          },
+          "preview": "11",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-38",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 14,
+        "column": 1,
+        "start": 363,
+        "end": 370
+      },
+      "preview": "_n12=12",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 14,
+            "column": 1,
+            "start": 363,
+            "end": 367
+          },
+          "preview": "_n12",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 14,
+            "column": 6,
+            "start": 368,
+            "end": 370
+          },
+          "preview": "12",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-39",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 15,
+        "column": 1,
+        "start": 372,
+        "end": 379
+      },
+      "preview": "_n13=13",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 15,
+            "column": 1,
+            "start": 372,
+            "end": 376
+          },
+          "preview": "_n13",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 15,
+            "column": 6,
+            "start": 377,
+            "end": 379
+          },
+          "preview": "13",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-40",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 16,
+        "column": 1,
+        "start": 381,
+        "end": 388
+      },
+      "preview": "_n14=14",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 16,
+            "column": 1,
+            "start": 381,
+            "end": 385
+          },
+          "preview": "_n14",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 16,
+            "column": 6,
+            "start": 386,
+            "end": 388
+          },
+          "preview": "14",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-41",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 17,
+        "column": 1,
+        "start": 390,
+        "end": 397
+      },
+      "preview": "_n15=15",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 17,
+            "column": 1,
+            "start": 390,
+            "end": 394
+          },
+          "preview": "_n15",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 17,
+            "column": 6,
+            "start": 395,
+            "end": 397
+          },
+          "preview": "15",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-42",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 18,
+        "column": 1,
+        "start": 399,
+        "end": 406
+      },
+      "preview": "_n16=16",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 18,
+            "column": 1,
+            "start": 399,
+            "end": 403
+          },
+          "preview": "_n16",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 18,
+            "column": 6,
+            "start": 404,
+            "end": 406
+          },
+          "preview": "16",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-43",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 19,
+        "column": 1,
+        "start": 408,
+        "end": 415
+      },
+      "preview": "_n17=17",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 19,
+            "column": 1,
+            "start": 408,
+            "end": 412
+          },
+          "preview": "_n17",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 19,
+            "column": 6,
+            "start": 413,
+            "end": 415
+          },
+          "preview": "17",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-44",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 20,
+        "column": 1,
+        "start": 417,
+        "end": 424
+      },
+      "preview": "_n18=18",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 20,
+            "column": 1,
+            "start": 417,
+            "end": 421
+          },
+          "preview": "_n18",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 20,
+            "column": 6,
+            "start": 422,
+            "end": 424
+          },
+          "preview": "18",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-45",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 21,
+        "column": 1,
+        "start": 426,
+        "end": 433
+      },
+      "preview": "_n19=19",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 21,
+            "column": 1,
+            "start": 426,
+            "end": 430
+          },
+          "preview": "_n19",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 21,
+            "column": 6,
+            "start": 431,
+            "end": 433
+          },
+          "preview": "19",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-46",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 22,
+        "column": 1,
+        "start": 435,
+        "end": 442
+      },
+      "preview": "_n20=20",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 22,
+            "column": 1,
+            "start": 435,
+            "end": 439
+          },
+          "preview": "_n20",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 22,
+            "column": 6,
+            "start": 440,
+            "end": 442
+          },
+          "preview": "20",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-47",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 23,
+        "column": 1,
+        "start": 444,
+        "end": 451
+      },
+      "preview": "_n21=21",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 23,
+            "column": 1,
+            "start": 444,
+            "end": 448
+          },
+          "preview": "_n21",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 23,
+            "column": 6,
+            "start": 449,
+            "end": 451
+          },
+          "preview": "21",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-48",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 24,
+        "column": 1,
+        "start": 453,
+        "end": 460
+      },
+      "preview": "_n22=22",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 24,
+            "column": 1,
+            "start": 453,
+            "end": 457
+          },
+          "preview": "_n22",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 24,
+            "column": 6,
+            "start": 458,
+            "end": 460
+          },
+          "preview": "22",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-49",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 25,
+        "column": 1,
+        "start": 462,
+        "end": 469
+      },
+      "preview": "_n23=23",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 25,
+            "column": 1,
+            "start": 462,
+            "end": 466
+          },
+          "preview": "_n23",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 25,
+            "column": 6,
+            "start": 467,
+            "end": 469
+          },
+          "preview": "23",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-50",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 26,
+        "column": 1,
+        "start": 471,
+        "end": 478
+      },
+      "preview": "_n24=24",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 26,
+            "column": 1,
+            "start": 471,
+            "end": 475
+          },
+          "preview": "_n24",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 26,
+            "column": 6,
+            "start": 476,
+            "end": 478
+          },
+          "preview": "24",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-51",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 27,
+        "column": 1,
+        "start": 480,
+        "end": 487
+      },
+      "preview": "_n25=25",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 27,
+            "column": 1,
+            "start": 480,
+            "end": 484
+          },
+          "preview": "_n25",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 27,
+            "column": 6,
+            "start": 485,
+            "end": 487
+          },
+          "preview": "25",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-52",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 28,
+        "column": 1,
+        "start": 489,
+        "end": 496
+      },
+      "preview": "_n26=26",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 28,
+            "column": 1,
+            "start": 489,
+            "end": 493
+          },
+          "preview": "_n26",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 28,
+            "column": 6,
+            "start": 494,
+            "end": 496
+          },
+          "preview": "26",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-53",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 29,
+        "column": 1,
+        "start": 498,
+        "end": 505
+      },
+      "preview": "_n27=27",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 29,
+            "column": 1,
+            "start": 498,
+            "end": 502
+          },
+          "preview": "_n27",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 29,
+            "column": 6,
+            "start": 503,
+            "end": 505
+          },
+          "preview": "27",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-54",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 30,
+        "column": 1,
+        "start": 507,
+        "end": 514
+      },
+      "preview": "_n28=28",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 30,
+            "column": 1,
+            "start": 507,
+            "end": 511
+          },
+          "preview": "_n28",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 30,
+            "column": 6,
+            "start": 512,
+            "end": 514
+          },
+          "preview": "28",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-55",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 31,
+        "column": 1,
+        "start": 516,
+        "end": 523
+      },
+      "preview": "_n29=29",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 31,
+            "column": 1,
+            "start": 516,
+            "end": 520
+          },
+          "preview": "_n29",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 31,
+            "column": 6,
+            "start": 521,
+            "end": 523
+          },
+          "preview": "29",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-56",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 32,
+        "column": 1,
+        "start": 525,
+        "end": 532
+      },
+      "preview": "_n30=30",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 32,
+            "column": 1,
+            "start": 525,
+            "end": 529
+          },
+          "preview": "_n30",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 32,
+            "column": 6,
+            "start": 530,
+            "end": 532
+          },
+          "preview": "30",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-57",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 33,
+        "column": 1,
+        "start": 534,
+        "end": 541
+      },
+      "preview": "_n31=31",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 33,
+            "column": 1,
+            "start": 534,
+            "end": 538
+          },
+          "preview": "_n31",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 33,
+            "column": 6,
+            "start": 539,
+            "end": 541
+          },
+          "preview": "31",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-58",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 34,
+        "column": 1,
+        "start": 543,
+        "end": 550
+      },
+      "preview": "_n32=32",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 34,
+            "column": 1,
+            "start": 543,
+            "end": 547
+          },
+          "preview": "_n32",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 34,
+            "column": 6,
+            "start": 548,
+            "end": 550
+          },
+          "preview": "32",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-59",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 35,
+        "column": 1,
+        "start": 552,
+        "end": 559
+      },
+      "preview": "_n33=33",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 35,
+            "column": 1,
+            "start": 552,
+            "end": 556
+          },
+          "preview": "_n33",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 35,
+            "column": 6,
+            "start": 557,
+            "end": 559
+          },
+          "preview": "33",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-60",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 36,
+        "column": 1,
+        "start": 561,
+        "end": 568
+      },
+      "preview": "_n34=34",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 36,
+            "column": 1,
+            "start": 561,
+            "end": 565
+          },
+          "preview": "_n34",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 36,
+            "column": 6,
+            "start": 566,
+            "end": 568
+          },
+          "preview": "34",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-61",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 37,
+        "column": 1,
+        "start": 570,
+        "end": 577
+      },
+      "preview": "_n35=35",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 37,
+            "column": 1,
+            "start": 570,
+            "end": 574
+          },
+          "preview": "_n35",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 37,
+            "column": 6,
+            "start": 575,
+            "end": 577
+          },
+          "preview": "35",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-62",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 38,
+        "column": 1,
+        "start": 579,
+        "end": 586
+      },
+      "preview": "_n36=36",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 38,
+            "column": 1,
+            "start": 579,
+            "end": 583
+          },
+          "preview": "_n36",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 38,
+            "column": 6,
+            "start": 584,
+            "end": 586
+          },
+          "preview": "36",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-63",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 39,
+        "column": 1,
+        "start": 588,
+        "end": 595
+      },
+      "preview": "_n37=37",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 39,
+            "column": 1,
+            "start": 588,
+            "end": 592
+          },
+          "preview": "_n37",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 39,
+            "column": 6,
+            "start": 593,
+            "end": 595
+          },
+          "preview": "37",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-64",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 40,
+        "column": 1,
+        "start": 597,
+        "end": 604
+      },
+      "preview": "_n38=38",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 40,
+            "column": 1,
+            "start": 597,
+            "end": 601
+          },
+          "preview": "_n38",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 40,
+            "column": 6,
+            "start": 602,
+            "end": 604
+          },
+          "preview": "38",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-65",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 41,
+        "column": 1,
+        "start": 606,
+        "end": 613
+      },
+      "preview": "_n39=39",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 41,
+            "column": 1,
+            "start": 606,
+            "end": 610
+          },
+          "preview": "_n39",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 41,
+            "column": 6,
+            "start": 611,
+            "end": 613
+          },
+          "preview": "39",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-66",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 42,
+        "column": 1,
+        "start": 615,
+        "end": 622
+      },
+      "preview": "_n40=40",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 42,
+            "column": 1,
+            "start": 615,
+            "end": 619
+          },
+          "preview": "_n40",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 42,
+            "column": 6,
+            "start": 620,
+            "end": 622
+          },
+          "preview": "40",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-67",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 43,
+        "column": 1,
+        "start": 624,
+        "end": 631
+      },
+      "preview": "_n41=41",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 43,
+            "column": 1,
+            "start": 624,
+            "end": 628
+          },
+          "preview": "_n41",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 43,
+            "column": 6,
+            "start": 629,
+            "end": 631
+          },
+          "preview": "41",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-68",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 44,
+        "column": 1,
+        "start": 633,
+        "end": 640
+      },
+      "preview": "_n42=42",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 44,
+            "column": 1,
+            "start": 633,
+            "end": 637
+          },
+          "preview": "_n42",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 44,
+            "column": 6,
+            "start": 638,
+            "end": 640
+          },
+          "preview": "42",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-69",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 45,
+        "column": 1,
+        "start": 642,
+        "end": 649
+      },
+      "preview": "_n43=43",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 45,
+            "column": 1,
+            "start": 642,
+            "end": 646
+          },
+          "preview": "_n43",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 45,
+            "column": 6,
+            "start": 647,
+            "end": 649
+          },
+          "preview": "43",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-70",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 46,
+        "column": 1,
+        "start": 651,
+        "end": 658
+      },
+      "preview": "_n44=44",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 46,
+            "column": 1,
+            "start": 651,
+            "end": 655
+          },
+          "preview": "_n44",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 46,
+            "column": 6,
+            "start": 656,
+            "end": 658
+          },
+          "preview": "44",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-71",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 47,
+        "column": 1,
+        "start": 660,
+        "end": 667
+      },
+      "preview": "_n45=45",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 47,
+            "column": 1,
+            "start": 660,
+            "end": 664
+          },
+          "preview": "_n45",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 47,
+            "column": 6,
+            "start": 665,
+            "end": 667
+          },
+          "preview": "45",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-72",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 48,
+        "column": 1,
+        "start": 669,
+        "end": 676
+      },
+      "preview": "_n46=46",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 48,
+            "column": 1,
+            "start": 669,
+            "end": 673
+          },
+          "preview": "_n46",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 48,
+            "column": 6,
+            "start": 674,
+            "end": 676
+          },
+          "preview": "46",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-73",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 49,
+        "column": 1,
+        "start": 678,
+        "end": 685
+      },
+      "preview": "_n47=47",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 49,
+            "column": 1,
+            "start": 678,
+            "end": 682
+          },
+          "preview": "_n47",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 49,
+            "column": 6,
+            "start": 683,
+            "end": 685
+          },
+          "preview": "47",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-74",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 50,
+        "column": 1,
+        "start": 687,
+        "end": 694
+      },
+      "preview": "_n48=48",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 50,
+            "column": 1,
+            "start": 687,
+            "end": 691
+          },
+          "preview": "_n48",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 50,
+            "column": 6,
+            "start": 692,
+            "end": 694
+          },
+          "preview": "48",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    },
+    {
+      "id": "node-75",
+      "kind": "Assignment",
+      "source": {
+        "file": "nested.sqf",
+        "line": 51,
+        "column": 1,
+        "start": 696,
+        "end": 703
+      },
+      "preview": "_n49=49",
+      "parts": [
+        {
+          "role": "target",
+          "source": {
+            "file": "nested.sqf",
+            "line": 51,
+            "column": 1,
+            "start": 696,
+            "end": 700
+          },
+          "preview": "_n49",
+          "semanticStatus": "unresolved"
+        },
+        {
+          "role": "expression",
+          "source": {
+            "file": "nested.sqf",
+            "line": 51,
+            "column": 6,
+            "start": 701,
+            "end": 703
+          },
+          "preview": "49",
+          "semanticStatus": "unresolved"
+        }
+      ],
+      "children": [],
+      "blockers": [
+        "semantic-analysis-required"
+      ]
+    }
+  ],
+  "findings": [],
+  "summary": {
+    "files": 1,
+    "nodes": 76,
+    "blocks": 10,
+    "conditionals": 3,
+    "loops": 3,
+    "codeAssignments": 1,
+    "opaqueStatements": 7,
+    "unsupported": 0,
+    "findings": 0,
+    "executionReady": 0
+  }
+}

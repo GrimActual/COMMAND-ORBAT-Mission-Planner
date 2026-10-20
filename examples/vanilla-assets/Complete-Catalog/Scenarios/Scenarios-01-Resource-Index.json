@@ -1,0 +1,400 @@
+{
+  "schema": "companion-resource-index",
+  "version": 1,
+  "addons": [
+    {
+      "id": "58D0FB3206B6F859",
+      "name": "Arma Reforger",
+      "version": null,
+      "dependencies": [
+        "5614BBCCBB55ED1C"
+      ]
+    },
+    {
+      "id": "5614BBCCBB55ED1C",
+      "name": "Enfusion core data",
+      "version": null,
+      "dependencies": []
+    }
+  ],
+  "resources": [
+    {
+      "id": "vanilla_0C276AABFBC0C3A3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP01/SP01_Character_USSR_Officer.et",
+      "guid": "0C276AABFBC0C3A3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6BDF7D3E72D31F29",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP01/SP01_Mi8MT_unarmed_transport.et",
+      "guid": "6BDF7D3E72D31F29",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3F19D486EC1E5374",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP01/SP01_Radio_ANPRC68.et",
+      "guid": "3F19D486EC1E5374",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_208FEE0BF258449B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP01/SP01_UAZ469_USSR.et",
+      "guid": "208FEE0BF258449B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5E98DCEB06C4B581",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP02/AS_SF_GROUP.et",
+      "guid": "5E98DCEB06C4B581",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_701EB3E07E9AC55A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP02/Group_USSR_Crew.et",
+      "guid": "701EB3E07E9AC55A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_ED08B3CE0C8DD8EB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP02/Group_USSR_SP02_LARGE.et",
+      "guid": "ED08B3CE0C8DD8EB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D4AE2FA6F36DBC02",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP02/SP02_COPILOT.et",
+      "guid": "D4AE2FA6F36DBC02",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F46762C6DE4172D3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP02/SP02_DoorGunner.et",
+      "guid": "F46762C6DE4172D3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_253294F6DD92BC29",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP02/SP02_EngineerA.et",
+      "guid": "253294F6DD92BC29",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_560BE7893E22B7CE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP02/SP02_EngineerB.et",
+      "guid": "560BE7893E22B7CE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9EDC001209A2F478",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP02/SP02_Officer.et",
+      "guid": "9EDC001209A2F478",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_861F9981413CAA7F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP02/SP02_Pilot.et",
+      "guid": "861F9981413CAA7F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_34AA27E2CA26B79C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP02/SP02_PLAYER.et",
+      "guid": "34AA27E2CA26B79C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D3BBCBCE237D8E5F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP02/SP02_SoldierA.et",
+      "guid": "D3BBCBCE237D8E5F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BFEFFF2E9FB90171",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP02/SP02_SoldierB.et",
+      "guid": "BFEFFF2E9FB90171",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F6A14A8001A7864C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP02/SupplyDropArea.et",
+      "guid": "F6A14A8001A7864C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A3983F27553517D5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/SP02/US_Pilots.et",
+      "guid": "A3983F27553517D5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6C4B8F00388254FE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/Tutorial/Courses/CourseDrivingRange.et",
+      "guid": "6C4B8F00388254FE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8D2B726687815918",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/Tutorial/Courses/Tutorial_SpecialWeapons_C4_PILE.et",
+      "guid": "8D2B726687815918",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_80AC9E78939CFBEA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/Tutorial/Courses/Tutorial_SpecialWeapons_Obstace.et",
+      "guid": "80AC9E78939CFBEA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4A6436E90A521827",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/Tutorial/Tutorial_CommandBox.et",
+      "guid": "4A6436E90A521827",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2827EBBD11C09F0D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/Tutorial/Tutorial_Fake_Base.et",
+      "guid": "2827EBBD11C09F0D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7F825325C95B2D00",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/Tutorial/Tutorial_FastTravel_Pos.et",
+      "guid": "7F825325C95B2D00",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_23569E8ACA6C4481",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/Tutorial/Tutorial_MobileHQ.et",
+      "guid": "23569E8ACA6C4481",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B6F5006CBD24E9A1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/Tutorial/TutorialDrivingRange.et",
+      "guid": "B6F5006CBD24E9A1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7F3BE9FB451D10AA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Scenarios/Tutorial/Weapons/AmmoBox/AmmoboxTutorialShortRange.et",
+      "guid": "7F3BE9FB451D10AA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    }
+  ]
+}

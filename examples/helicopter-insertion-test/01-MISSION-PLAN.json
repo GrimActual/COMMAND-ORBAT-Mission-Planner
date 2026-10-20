@@ -1,0 +1,189 @@
+{
+  "schema": "everon-orbat-plan",
+  "schemaVersion": 4,
+  "app": "COMMAND",
+  "operation": {
+    "name": "COMMAND HUEY INSERTION CHECK",
+    "taskForce": "COMMAND TEST TEAM",
+    "version": "rc.3 / bridge0.13.0 / runway",
+    "briefing": "Private test on Everon. Inspect a clear route and flat landing area in the actual game before deployment. Deploy the three planned roots as one occupied request: HUEY vehicle, PILOT in an automatic pilot seat, TEAM in automatic cargo seats. TEAM is one actual four-person infantry group. Verify all five occupants before flight. Separately review and manually approve the experimental insertion to world X4771 Z11737,100m north. Observe takeoff, flight, sustained landing, four complete passenger exits and retained pilot. A map annotation is not a live order. This test does not automate flight on import, grant approval or repair walking boarding. Human observers stay outside the aircraft. Read00-START-HERE.md. Departure uses the operator-confirmed runway point: planner E4821 N11687, native world X4771 Z11637. The proposed LZ is100m north at planner E4821 N11787, native X4771 Z11737. Inspect the full route and LZ in the current session before flight approval."
+  },
+  "map": {
+    "name": "Everon",
+    "game": "Arma Reforger",
+    "coordinateSystem": "mapper-local",
+    "gridOrder": "easting-northing"
+  },
+  "phases": [],
+  "orderOfBattle": [
+    {
+      "id": "HUEY",
+      "name": "HUEY - UH-1H",
+      "symbol": "I",
+      "side": "blue",
+      "type": "Infantry",
+      "unitType": "rotary",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-70BAEEFC2D3FEE64",
+      "assetName": "UH1H — UH1H",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-70BAEEFC2D3FEE64",
+        "name": "UH1H — UH1H",
+        "category": "Vanilla / Vehicles",
+        "assetKind": "helicopter",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_70BAEEFC2D3FEE64",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Vehicles/Helicopters/UH1H/UH1H.et",
+          "guid": "70BAEEFC2D3FEE64",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "One vehicle root; experimental force-assisted flight only after separate approval.",
+      "position": {
+        "lng": 4821,
+        "lat": 11687
+      },
+      "headingDegrees": 0
+    },
+    {
+      "id": "PILOT",
+      "name": "PILOT - AI flight crew",
+      "symbol": "I",
+      "side": "blue",
+      "type": "Infantry",
+      "unitType": "infantry",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-42A502E3BB727CEB",
+      "assetName": "Character US HeliPilot — US_Army",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-42A502E3BB727CEB",
+        "name": "Character US HeliPilot — US_Army",
+        "category": "Vanilla / Characters",
+        "assetKind": "infantry",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_42A502E3BB727CEB",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_HeliPilot.et",
+          "guid": "42A502E3BB727CEB",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "Individual living AI pilot; retain aboard after landing.",
+      "position": {
+        "lng": 4831,
+        "lat": 11687
+      },
+      "headingDegrees": 0
+    },
+    {
+      "id": "TEAM",
+      "name": "TEAM - Four cargo passengers",
+      "symbol": "I",
+      "side": "blue",
+      "type": "Infantry",
+      "unitType": "infantry",
+      "symbolMode": "nato",
+      "icon": "auto",
+      "color": null,
+      "phaseId": null,
+      "parentId": null,
+      "asset": "prefab-58D0FB3206B6F859-84E5BBAB25EA23E5",
+      "assetName": "Group US FireTeam — BLUFOR",
+      "assetCatalogItem": {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-84E5BBAB25EA23E5",
+        "name": "Group US FireTeam — BLUFOR",
+        "category": "Vanilla / Groups",
+        "assetKind": "infantry",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_84E5BBAB25EA23E5",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Groups/BLUFOR/Group_US_FireTeam.et",
+          "guid": "84E5BBAB25EA23E5",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      "strength": "One actual four-person fireteam root; assign whole group automatic cargo seats.",
+      "position": {
+        "lng": 4831,
+        "lat": 11692
+      },
+      "headingDegrees": 0
+    }
+  ],
+  "routes": [],
+  "areas": [
+    {
+      "id": "HUEY-LZ",
+      "name": "LZ - world X4771 Z11737",
+      "phaseId": null,
+      "kind": "circle",
+      "style": {
+        "color": "#EBC66F",
+        "width": 2,
+        "pattern": "dashed",
+        "opacity": 0.08
+      },
+      "center": {
+        "lng": 4821,
+        "lat": 11787
+      },
+      "radius": 10
+    }
+  ],
+  "view": {
+    "gridDigits": 8,
+    "hiddenPhases": [],
+    "layers": {
+      "grid": true,
+      "units": true,
+      "routes": true,
+      "areas": true,
+      "labels": true
+    }
+  }
+}

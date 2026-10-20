@@ -1,0 +1,679 @@
+{
+  "assets": [
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-0C276AABFBC0C3A3",
+      "name": "SP01 Character USSR Officer — SP01",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_0C276AABFBC0C3A3",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP01/SP01_Character_USSR_Officer.et",
+        "guid": "0C276AABFBC0C3A3",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-6BDF7D3E72D31F29",
+      "name": "SP01 Mi8MT unarmed transport — SP01",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_6BDF7D3E72D31F29",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP01/SP01_Mi8MT_unarmed_transport.et",
+        "guid": "6BDF7D3E72D31F29",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-3F19D486EC1E5374",
+      "name": "SP01 Radio ANPRC68 — SP01",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_3F19D486EC1E5374",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP01/SP01_Radio_ANPRC68.et",
+        "guid": "3F19D486EC1E5374",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-208FEE0BF258449B",
+      "name": "SP01 UAZ469 USSR — SP01",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_208FEE0BF258449B",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP01/SP01_UAZ469_USSR.et",
+        "guid": "208FEE0BF258449B",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-5E98DCEB06C4B581",
+      "name": "AS SF GROUP — SP02",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_5E98DCEB06C4B581",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP02/AS_SF_GROUP.et",
+        "guid": "5E98DCEB06C4B581",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-701EB3E07E9AC55A",
+      "name": "Group USSR Crew — SP02",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_701EB3E07E9AC55A",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP02/Group_USSR_Crew.et",
+        "guid": "701EB3E07E9AC55A",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-ED08B3CE0C8DD8EB",
+      "name": "Group USSR SP02 LARGE — SP02",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_ED08B3CE0C8DD8EB",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP02/Group_USSR_SP02_LARGE.et",
+        "guid": "ED08B3CE0C8DD8EB",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-D4AE2FA6F36DBC02",
+      "name": "SP02 COPILOT — SP02",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_D4AE2FA6F36DBC02",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP02/SP02_COPILOT.et",
+        "guid": "D4AE2FA6F36DBC02",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-F46762C6DE4172D3",
+      "name": "SP02 DoorGunner — SP02",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_F46762C6DE4172D3",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP02/SP02_DoorGunner.et",
+        "guid": "F46762C6DE4172D3",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-253294F6DD92BC29",
+      "name": "SP02 EngineerA — SP02",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_253294F6DD92BC29",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP02/SP02_EngineerA.et",
+        "guid": "253294F6DD92BC29",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-560BE7893E22B7CE",
+      "name": "SP02 EngineerB — SP02",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_560BE7893E22B7CE",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP02/SP02_EngineerB.et",
+        "guid": "560BE7893E22B7CE",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-9EDC001209A2F478",
+      "name": "SP02 Officer — SP02",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_9EDC001209A2F478",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP02/SP02_Officer.et",
+        "guid": "9EDC001209A2F478",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-861F9981413CAA7F",
+      "name": "SP02 Pilot — SP02",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_861F9981413CAA7F",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP02/SP02_Pilot.et",
+        "guid": "861F9981413CAA7F",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-34AA27E2CA26B79C",
+      "name": "SP02 PLAYER — SP02",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_34AA27E2CA26B79C",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP02/SP02_PLAYER.et",
+        "guid": "34AA27E2CA26B79C",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-D3BBCBCE237D8E5F",
+      "name": "SP02 SoldierA — SP02",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_D3BBCBCE237D8E5F",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP02/SP02_SoldierA.et",
+        "guid": "D3BBCBCE237D8E5F",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-BFEFFF2E9FB90171",
+      "name": "SP02 SoldierB — SP02",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_BFEFFF2E9FB90171",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP02/SP02_SoldierB.et",
+        "guid": "BFEFFF2E9FB90171",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-F6A14A8001A7864C",
+      "name": "SupplyDropArea — SP02",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_F6A14A8001A7864C",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP02/SupplyDropArea.et",
+        "guid": "F6A14A8001A7864C",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-A3983F27553517D5",
+      "name": "US Pilots — SP02",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_A3983F27553517D5",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/SP02/US_Pilots.et",
+        "guid": "A3983F27553517D5",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-6C4B8F00388254FE",
+      "name": "CourseDrivingRange — Courses",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_6C4B8F00388254FE",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/Tutorial/Courses/CourseDrivingRange.et",
+        "guid": "6C4B8F00388254FE",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-8D2B726687815918",
+      "name": "Tutorial SpecialWeapons C4 PILE — Courses",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_8D2B726687815918",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/Tutorial/Courses/Tutorial_SpecialWeapons_C4_PILE.et",
+        "guid": "8D2B726687815918",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-80AC9E78939CFBEA",
+      "name": "Tutorial SpecialWeapons Obstace — Courses",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_80AC9E78939CFBEA",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/Tutorial/Courses/Tutorial_SpecialWeapons_Obstace.et",
+        "guid": "80AC9E78939CFBEA",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-4A6436E90A521827",
+      "name": "Tutorial CommandBox — Tutorial",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_4A6436E90A521827",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/Tutorial/Tutorial_CommandBox.et",
+        "guid": "4A6436E90A521827",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-2827EBBD11C09F0D",
+      "name": "Tutorial Fake Base — Tutorial",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_2827EBBD11C09F0D",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/Tutorial/Tutorial_Fake_Base.et",
+        "guid": "2827EBBD11C09F0D",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-7F825325C95B2D00",
+      "name": "Tutorial FastTravel Pos — Tutorial",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_7F825325C95B2D00",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/Tutorial/Tutorial_FastTravel_Pos.et",
+        "guid": "7F825325C95B2D00",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-23569E8ACA6C4481",
+      "name": "Tutorial MobileHQ — Tutorial",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_23569E8ACA6C4481",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/Tutorial/Tutorial_MobileHQ.et",
+        "guid": "23569E8ACA6C4481",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-B6F5006CBD24E9A1",
+      "name": "TutorialDrivingRange — Tutorial",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_B6F5006CBD24E9A1",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/Tutorial/TutorialDrivingRange.et",
+        "guid": "B6F5006CBD24E9A1",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-7F3BE9FB451D10AA",
+      "name": "AmmoboxTutorialShortRange — AmmoBox",
+      "category": "Vanilla / Scenarios",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_7F3BE9FB451D10AA",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Scenarios/Tutorial/Weapons/AmmoBox/AmmoboxTutorialShortRange.et",
+        "guid": "7F3BE9FB451D10AA",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    }
+  ]
+}

@@ -16,9 +16,10 @@ function createFreeBridge(onState=()=>{},deps={}) {
  }
  async function start(options={}) {
   if(starting||state.status!=='off'&&state.status!=='error')return {...state};
-  stop();const ticket=generation;starting=true;cancel=new AbortController();const signal=cancel.signal;
+  stop();const ticket=generation;starting=true;cancel=new AbortController();const signal=cancel.signal;const startedAt=Date.now();
   const check=()=>{if(ticket!==generation)throw Error('Cancelled');};
-  state.status='starting';publish();
+  const progress=(phase,details={})=>{if(ticket!==generation||signal.aborted)return;state={...state,startup:{phase,elapsedMs:Date.now()-startedAt,...details}};publish();};
+  state.status='starting';progress('requesting-address');
   try {
    const exe=path.join(__dirname,'bridge-runtime/cloudflared.exe');
    if(!deps.spawn&&!fs.existsSync(exe))throw Error('Tunnel helper is missing. Extract the whole application ZIP.');
@@ -30,26 +31,33 @@ function createFreeBridge(onState=()=>{},deps={}) {
     let buffer='',publicURL='',registered=false;const timeout=setTimeout(()=>finish(Error('Tunnel startup timed out. Check your internet connection and retry.')),45000);
     const aborted=()=>finish(Error('Cancelled'));
     function finish(error,url){clearTimeout(timeout);signal.removeEventListener('abort',aborted);helper.stdout.removeListener('data',output);helper.stderr.removeListener('data',output);if(error)reject(error);else resolve(url);}
-    function output(chunk){buffer=(buffer+String(chunk)).slice(-16000);const match=buffer.match(/https:\/\/[a-z0-9-]+\.trycloudflare\.com/);if(match)publicURL=match[0]+'/';if(buffer.includes('Registered tunnel connection'))registered=true;if(publicURL&&registered)finish(null,publicURL);}
+    function output(chunk){buffer=(buffer+String(chunk)).slice(-16000);const match=buffer.match(/https:\/\/[a-z0-9-]+\.trycloudflare\.com/);if(match&&!publicURL){publicURL=match[0]+'/';progress('connecting-edge');}if(buffer.includes('Registered tunnel connection'))registered=true;if(publicURL&&registered)finish(null,publicURL);}
     helper.stdout.on('data',output);helper.stderr.on('data',output);signal.addEventListener('abort',aborted,{once:true});
     helper.once('error',()=>{finish(Error('Tunnel helper could not start.'));if(ticket===generation)stop('Tunnel helper could not start.');});
     helper.once('exit',()=>{finish(Error('Tunnel stopped. Click Start free connection to create a new address.'));if(ticket===generation)stop('Tunnel stopped. Start again and copy the new address and code into the game.');});
    });check();
    // Drain output but do not persist addresses or credentials in logs.
    helper.stdout.resume();helper.stderr.resume();
-   state={...state,status:'pairing',endpoint};publish();
+   state={...state,status:'pairing',endpoint,publicReachability:'checking'};progress('creating-code');
    remote=remoteFactory(s=>{
     if(ticket!==generation)return;
     if(['off','expired','authentication-failed','security-lockout','unsupported','interrupted','error'].includes(s.status)){if(!starting||s.status!=='off')stop(s.error||'Pairing expired. Start again and copy the new code into the game.');return;}
-    state={...s,mode:'free',endpoint,error:''};publish();
+    state={...s,mode:'free',endpoint,error:'',publicReachability:s.received>0?'verified-by-game':state.publicReachability||'checking',connectionWarning:s.received>0?'':state.connectionWarning||'',...(s.status==='starting'?{startup:{phase:'creating-code',elapsedMs:Date.now()-startedAt}}:{})};publish();
    });
    // The planner and relay share this PC. Keep reads and pairing local;
    // only the game needs the public tunnel. Never expose this loopback URL in UI.
    await remote.start('http://127.0.0.1:'+srv.address().port+'/',options);
-   check();starting=false;return {...state};
+   check();starting=false;
+   // Local credentials do not depend on this PC resolving a newly issued public hostname.
+   // Registration is required above; public reachability remains explicit, never assumed.
+   void (async()=>{try{
+    await (deps.probe||require('./public-relay-health').waitForPublicRelay)(endpoint,signal,{onProgress:info=>{if(ticket===generation&&!signal.aborted){state={...state,publicCheck:{...info,elapsedMs:Date.now()-startedAt}};publish();}}});
+    if(ticket===generation&&!signal.aborted){state={...state,publicReachability:'verified',connectionWarning:''};publish();}
+   }catch(error){if(ticket===generation&&!signal.aborted&&!state.received){state={...state,publicReachability:'unconfirmed',connectionWarning:'Public reachability could not be confirmed from this PC. The address and code remain available; check whether the game can connect.'};publish();}}})();
+   return {...state};
   }catch(e){if(ticket===generation)stop(e.message);return {...state};}
  }
- return {start,stop,status:()=>({...state})};
+ return {start,stop,gm:(action,payload)=>{if(!remote)throw Error('Connect first');return remote.gm(action,payload);},status:()=>({...state})};
 }
 module.exports={createFreeBridge};
 

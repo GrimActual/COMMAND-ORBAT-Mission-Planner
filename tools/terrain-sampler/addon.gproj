@@ -1,0 +1,6 @@
+GameProject {
+ ID "COMMANDTerrainSampler"
+ GUID "7CA91F43BC026D18"
+ TITLE "COMMAND read-only terrain sampler"
+ Dependencies { "58D0FB3206B6F859" }
+}

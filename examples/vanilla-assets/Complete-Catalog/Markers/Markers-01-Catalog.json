@@ -1,0 +1,129 @@
+{
+  "assets": [
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-9DEFDDD21D8D3891",
+      "name": "CampaignHQCMapMarkerSquadLeader — Markers",
+      "category": "Vanilla / Markers",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_9DEFDDD21D8D3891",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Markers/CampaignHQCMapMarkerSquadLeader.et",
+        "guid": "9DEFDDD21D8D3891",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-EC95FBEA75AE409B",
+      "name": "MapMarkerDotCircle — Markers",
+      "category": "Vanilla / Markers",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_EC95FBEA75AE409B",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Markers/MapMarkerDotCircle.et",
+        "guid": "EC95FBEA75AE409B",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-DD74BE2BBAE07192",
+      "name": "MapMarkerEntityBase — Markers",
+      "category": "Vanilla / Markers",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_DD74BE2BBAE07192",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Markers/MapMarkerEntityBase.et",
+        "guid": "DD74BE2BBAE07192",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-C5177ACD0BB1CF5E",
+      "name": "MapMarkerSquadLeader — Markers",
+      "category": "Vanilla / Markers",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_C5177ACD0BB1CF5E",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Markers/MapMarkerSquadLeader.et",
+        "guid": "C5177ACD0BB1CF5E",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-E250A3D57FDDB29B",
+      "name": "MapMarkerSquadMember — Markers",
+      "category": "Vanilla / Markers",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_E250A3D57FDDB29B",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Markers/MapMarkerSquadMember.et",
+        "guid": "E250A3D57FDDB29B",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    }
+  ]
+}

@@ -1,0 +1,1800 @@
+{
+  "schema": "companion-resource-index",
+  "version": 1,
+  "addons": [
+    {
+      "id": "58D0FB3206B6F859",
+      "name": "Arma Reforger",
+      "version": null,
+      "dependencies": [
+        "5614BBCCBB55ED1C"
+      ]
+    },
+    {
+      "id": "5614BBCCBB55ED1C",
+      "name": "Enfusion core data",
+      "version": null,
+      "dependencies": []
+    }
+  ],
+  "resources": [
+    {
+      "id": "vanilla_94B5E9E3D8E4B887",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/AmbientPatrols/Group_US_FireTeam_NotSpawned.et",
+      "guid": "94B5E9E3D8E4B887",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DA987D8C5A311713",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/AmbientPatrols/Group_US_MachineGunTeam_NotSpawned.et",
+      "guid": "DA987D8C5A311713",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4F6811B5E789FA88",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/AmbientPatrols/Group_US_RifleSquad_NotSpawned.et",
+      "guid": "4F6811B5E789FA88",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FB7A6A8BF391D93E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/AmbientPatrols/Group_US_SentryTeam_NotSpawned.et",
+      "guid": "FB7A6A8BF391D93E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3EC052EA1F35DCA4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/AmbientPatrols/Group_US_Team_LAT_NotSpawned.et",
+      "guid": "3EC052EA1F35DCA4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_35681BE27C302FF5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/GreenBerets/Group_US_GreenBeret_SentryTeam.et",
+      "guid": "35681BE27C302FF5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D0886786634E55AE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/GreenBerets/Group_US_GreenBeret_Squad.et",
+      "guid": "D0886786634E55AE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1F468430E5AB477E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/GreenBerets/Suppressed/Group_US_GreenBeret_ReconSquad.et",
+      "guid": "1F468430E5AB477E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AC473DE5F4B24E82",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/GreenBerets/Suppressed/Group_US_GreenBeret_ReconTeam.et",
+      "guid": "AC473DE5F4B24E82",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F72EF3429D8C8DF5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_AmmoTeam.et",
+      "guid": "F72EF3429D8C8DF5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EACD97CF4A702FAE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_Base.et",
+      "guid": "EACD97CF4A702FAE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6B2A6EE5002D200F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_EngineerTeam.et",
+      "guid": "6B2A6EE5002D200F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0A8E20F50DA233E1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_FireTeam_Guard.et",
+      "guid": "0A8E20F50DA233E1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_84E5BBAB25EA23E5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_FireTeam.et",
+      "guid": "84E5BBAB25EA23E5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FCF7F5DC4F83955C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_LightFireTeam.et",
+      "guid": "FCF7F5DC4F83955C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_958039B857396B7B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_MachineGunTeam.et",
+      "guid": "958039B857396B7B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EF62027CC75A7459",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_MedicalSection.et",
+      "guid": "EF62027CC75A7459",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B7AB5D3F8A7ADAE4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_PlatoonHQ.et",
+      "guid": "B7AB5D3F8A7ADAE4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F65B7BB712F46FEE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_ReconTeam.et",
+      "guid": "F65B7BB712F46FEE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DDF3799FA1387848",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_RifleSquad.et",
+      "guid": "DDF3799FA1387848",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9624D2B39397E148",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_SapperTeam.et",
+      "guid": "9624D2B39397E148",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3BF36BDEEB33AEC9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et",
+      "guid": "3BF36BDEEB33AEC9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D807C7047E818488",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_SniperTeam.et",
+      "guid": "D807C7047E818488",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DE747BC9217D383C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_Team_GL.et",
+      "guid": "DE747BC9217D383C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FAEA8B9E1252F56E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_Team_LAT.et",
+      "guid": "FAEA8B9E1252F56E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_81B6DBF2B88545F5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_Team_Suppress.et",
+      "guid": "81B6DBF2B88545F5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_727C134094032B1F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/Group_US_Transport.et",
+      "guid": "727C134094032B1F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_013481F049CB12ED",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/OmegaGroups/KS05_SF_GROUP_A.et",
+      "guid": "013481F049CB12ED",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6D60B510F50F9DC3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/OmegaGroups/KS05_SF_GROUP_B.et",
+      "guid": "6D60B510F50F9DC3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_88FCF9E9F9EA0AA8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/BLUFOR/OmegaGroups/KS05_SF_GROUP_C.et",
+      "guid": "88FCF9E9F9EA0AA8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_077C06EB9DE8EC93",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/Campaign_PlayableGroup.et",
+      "guid": "077C06EB9DE8EC93",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_079F822A6E7FEA30",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/Campaign/Group_FIA_Remnants_AT.et",
+      "guid": "079F822A6E7FEA30",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0D998255A1CD3AAB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/Campaign/Group_FIA_Remnants_Base.et",
+      "guid": "0D998255A1CD3AAB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_70E71EB56B314A98",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/Campaign/Group_FIA_Remnants_Fireteam.et",
+      "guid": "70E71EB56B314A98",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8D2035F179B9E08F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/Campaign/Group_FIA_Remnants_MG.et",
+      "guid": "8D2035F179B9E08F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_38A76CDB74AAD1B4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/Campaign/Group_FIA_Remnants_Patrol.et",
+      "guid": "38A76CDB74AAD1B4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_80869F02B006BF29",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/Campaign/Group_FIA_Remnants_Sniper.et",
+      "guid": "80869F02B006BF29",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F22EDFBEFC193357",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/Campaign/Group_FIA_Remnants.et",
+      "guid": "F22EDFBEFC193357",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_086A7C8A71850C82",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/Campaign/Group_Remnants_Base.et",
+      "guid": "086A7C8A71850C82",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D4A1576757665D02",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/Campaign/Group_US_Defenders.et",
+      "guid": "D4A1576757665D02",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_412A7767B11310C5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/Campaign/Group_US.et",
+      "guid": "412A7767B11310C5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_359353A0A5A52216",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/Campaign/Group_USSR_Defenders.et",
+      "guid": "359353A0A5A52216",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9E45E4F7AE1CB45A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/Campaign/Group_USSR.et",
+      "guid": "9E45E4F7AE1CB45A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_92F9879EA0B03967",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/CaptureAndHold_PlayableGroup.et",
+      "guid": "92F9879EA0B03967",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8D5E0E187752F5FB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/AmbientPatrols/Group_FIA_FireTeam_NotSpawned.et",
+      "guid": "8D5E0E187752F5FB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0C9C86FCE951AF19",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/AmbientPatrols/Group_FIA_LoneWolfSniper_NotSpawned.et",
+      "guid": "0C9C86FCE951AF19",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_870472E4AE81F971",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/AmbientPatrols/Group_FIA_MachineGunTeam_Elite_NotSpawned.et",
+      "guid": "870472E4AE81F971",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_421CA62CC2E5F16A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/AmbientPatrols/Group_FIA_MachineGunTeam_NotSpawned.et",
+      "guid": "421CA62CC2E5F16A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DB3D2D4FC5922C6A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/AmbientPatrols/Group_FIA_PartisanTeam_NotSpawned.et",
+      "guid": "DB3D2D4FC5922C6A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_908BF313909635F2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/AmbientPatrols/Group_FIA_ReconTeam_NotSpawned.et",
+      "guid": "908BF313909635F2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_265B11E8E53F9FBA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/AmbientPatrols/Group_FIA_RifleSquad_NotSpawned.et",
+      "guid": "265B11E8E53F9FBA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4FB92A28AC66B970",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/AmbientPatrols/Group_FIA_SniperTeam_NotSpawned.et",
+      "guid": "4FB92A28AC66B970",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6F8CE29DEFA96B0D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/AmbientPatrols/Group_FIA_Team_AT_NotSpawned.et",
+      "guid": "6F8CE29DEFA96B0D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C1E39427E43B1E79",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/Group_FIA_AmmoTeam.et",
+      "guid": "C1E39427E43B1E79",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_242BC3C6BCE96EA5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/Group_FIA_Base.et",
+      "guid": "242BC3C6BCE96EA5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5BEA04939D148B1D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/Group_FIA_FireTeam.et",
+      "guid": "5BEA04939D148B1D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1BB20A4B3A53D0F5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/Group_FIA_LightFireTeam.et",
+      "guid": "1BB20A4B3A53D0F5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_22F33D3EC8F281AB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/Group_FIA_MachineGunTeam.et",
+      "guid": "22F33D3EC8F281AB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_581106FA58919E89",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/Group_FIA_MedicalSection.et",
+      "guid": "581106FA58919E89",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EE92725E9B949C3D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/Group_FIA_PlatoonHQ.et",
+      "guid": "EE92725E9B949C3D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2E9C920C3ACA2C6F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/Group_FIA_ReconTeam.et",
+      "guid": "2E9C920C3ACA2C6F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CE41AF625D05D0F0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/Group_FIA_RifleSquad.et",
+      "guid": "CE41AF625D05D0F0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A0E9B5D6EA2072C4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/Group_FIA_SapperTeam.et",
+      "guid": "A0E9B5D6EA2072C4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6E725D44CA973C24",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/Group_FIA_SentryTeam.et",
+      "guid": "6E725D44CA973C24",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6307F42403E9B8A4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/Group_FIA_SharpshooterTeam.et",
+      "guid": "6307F42403E9B8A4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2CC26054775FBA2C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/Group_FIA_Team_AT.et",
+      "guid": "2CC26054775FBA2C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9328FE7DD0019E60",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/INDFOR/Group_FIA_Team_LAT.et",
+      "guid": "9328FE7DD0019E60",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EC8BAC199BAF3740",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/AmbientPatrols/Group_USSR_FireGroup_NotSpawned.et",
+      "guid": "EC8BAC199BAF3740",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_06D32ED260762934",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/AmbientPatrols/Group_USSR_MachineGunTeam_NotSpawned.et",
+      "guid": "06D32ED260762934",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7159E20D1B547A4E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/AmbientPatrols/Group_USSR_RifleSquad_NotSpawned.et",
+      "guid": "7159E20D1B547A4E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C54B99330F4C59F8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/AmbientPatrols/Group_USSR_SentryTeam_NotSpawned.et",
+      "guid": "C54B99330F4C59F8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_96FD5857FC75F022",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/AmbientPatrols/Group_USSR_Team_AT_NotSpawned.et",
+      "guid": "96FD5857FC75F022",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C8622D0595B48437",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_AmmoTeam.et",
+      "guid": "C8622D0595B48437",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8DE0C0830FE0C33D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_Base.et",
+      "guid": "8DE0C0830FE0C33D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_344B4B6F787CFB23",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_EngineerTeam.et",
+      "guid": "344B4B6F787CFB23",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6F72F05752ED62A8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_FireGroup_Guard.et",
+      "guid": "6F72F05752ED62A8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_30ED11AA4F0D41E5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_FireGroup.et",
+      "guid": "30ED11AA4F0D41E5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0C9A82FEAB4794D7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_LessArmored.et",
+      "guid": "0C9A82FEAB4794D7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_657590C1EC9E27D3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et",
+      "guid": "657590C1EC9E27D3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A2F75E45C66B1C0A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et",
+      "guid": "A2F75E45C66B1C0A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1A5F0D93609DA5DA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_ManeuverGroup.et",
+      "guid": "1A5F0D93609DA5DA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D815658156080328",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_MedicalSection.et",
+      "guid": "D815658156080328",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0D10CCEEC7B3EC34",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_PlatoonHQ.et",
+      "guid": "0D10CCEEC7B3EC34",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E552DABF3636C2AD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et",
+      "guid": "E552DABF3636C2AD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BB2E6C2CC2755E9B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_SapperTeam.et",
+      "guid": "BB2E6C2CC2755E9B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3A76D9342C76A1F5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_SearchGroup.et",
+      "guid": "3A76D9342C76A1F5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CB58D90EA14430AD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et",
+      "guid": "CB58D90EA14430AD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_96BAB56E6558788E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_Team_AT.et",
+      "guid": "96BAB56E6558788E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_43C7A28EEB660FF8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_Team_GL.et",
+      "guid": "43C7A28EEB660FF8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2E59ECDA9ED0B993",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_Team_LAT.et",
+      "guid": "2E59ECDA9ED0B993",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1C0502B5729E7231",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_Team_Suppress.et",
+      "guid": "1C0502B5729E7231",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_29DFCC25F263026B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_Transport.et",
+      "guid": "29DFCC25F263026B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5BEB08E423F8CD0D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Group_USSR_WithDriver.et",
+      "guid": "5BEB08E423F8CD0D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_17F51B6521F7194A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/KLMK/Group_USSR_AmmoTeam_KLMK.et",
+      "guid": "17F51B6521F7194A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_13A616F83A41C610",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/KLMK/Group_USSR_FireGroup_KLMK.et",
+      "guid": "13A616F83A41C610",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5B08C42EA0661A20",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/KLMK/Group_USSR_LightFireTeam_KLMK.et",
+      "guid": "5B08C42EA0661A20",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_56DC5F9D2D6119F2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/KLMK/Group_USSR_MachineGunTeam_KLMK.et",
+      "guid": "56DC5F9D2D6119F2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_195CE45AF822820B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/KLMK/Group_USSR_ManeuverGroup_KLMK.et",
+      "guid": "195CE45AF822820B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8E29E7581DE832CC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/KLMK/Group_USSR_MedicalSection_KLMK.et",
+      "guid": "8E29E7581DE832CC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B69270E9F222F356",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/KLMK/Group_USSR_PlatoonHQ_KLMK.et",
+      "guid": "B69270E9F222F356",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_06F0C9675883F18A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/KLMK/Group_USSR_ReconTeam.et",
+      "guid": "06F0C9675883F18A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_97D45056CFC22FF2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/KLMK/Group_USSR_RifleSquad_KLMK.et",
+      "guid": "97D45056CFC22FF2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8EDE6E160E71ABB4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/KLMK/Group_USSR_SapperTeam_KLMK.et",
+      "guid": "8EDE6E160E71ABB4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_61E209AA5933AC95",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/KLMK/Group_USSR_SentryTeam_KLMK.et",
+      "guid": "61E209AA5933AC95",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_129039549B0B82FF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/KLMK/Group_USSR_Team_AT_KLMK.et",
+      "guid": "129039549B0B82FF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E382595E188AF8A1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/KLMK/Group_USSR_Team_GL_KLMK.et",
+      "guid": "E382595E188AF8A1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A286509C2F94005F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/KLMK/Group_USSR_Team_LAT_KLMK.et",
+      "guid": "A286509C2F94005F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_014B050050A8B5B5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/KLMK/Group_USSR_Team_Suppress_KLMK.et",
+      "guid": "014B050050A8B5B5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AEC45E0050F58730",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Naval_Infantry/Group_USSR_AmmoTeam_NI.et",
+      "guid": "AEC45E0050F58730",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_26099EE31B5CC43A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Naval_Infantry/Group_USSR_FireGroup_NI.et",
+      "guid": "26099EE31B5CC43A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8E1B1AEBBB1AA155",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Naval_Infantry/Group_USSR_LightFireTeam_NI.et",
+      "guid": "8E1B1AEBBB1AA155",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_10E7872ECBF80AC5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Naval_Infantry/Group_USSR_MachineGunTeam_NI.et",
+      "guid": "10E7872ECBF80AC5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D3117480BFB20776",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Naval_Infantry/Group_USSR_ManeuverGroup_NI.et",
+      "guid": "D3117480BFB20776",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6A05BCEA5B9B15E7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Naval_Infantry/Group_USSR_MedicalSection_NI.et",
+      "guid": "6A05BCEA5B9B15E7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1BF443A793E269EB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Naval_Infantry/Group_USSR_PlatoonHQ_NI.et",
+      "guid": "1BF443A793E269EB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_250BBF11AA24076F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Naval_Infantry/Group_USSR_RifleSquad_NI.et",
+      "guid": "250BBF11AA24076F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6AF3751BFA86836E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Naval_Infantry/Group_USSR_SapperTeam_NI.et",
+      "guid": "6AF3751BFA86836E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_85384D373DB6EBBB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Naval_Infantry/Group_USSR_SentryTeam_NI.et",
+      "guid": "85384D373DB6EBBB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A665FE0F7C136660",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Naval_Infantry/Group_USSR_Team_AT_NI.et",
+      "guid": "A665FE0F7C136660",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7318E9EFF22D1116",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Naval_Infantry/Group_USSR_Team_GL_NI.et",
+      "guid": "7318E9EFF22D1116",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CA4790822E4ECE29",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Naval_Infantry/Group_USSR_Team_LAT_NI.et",
+      "guid": "CA4790822E4ECE29",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1C6721180B16D6E5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Naval_Infantry/Group_USSR_Team_Suppress_NI.et",
+      "guid": "1C6721180B16D6E5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4C44B4D8F2820F25",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_SentryTeam.et",
+      "guid": "4C44B4D8F2820F25",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4D3BBEC1A955626A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_Squad.et",
+      "guid": "4D3BBEC1A955626A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_666A2B0A6B1967AE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Spetsnaz/Suppressed/Group_USSR_Spetsnaz_ReconSquad.et",
+      "guid": "666A2B0A6B1967AE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B721D5A8C1B556CE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/OPFOR/Spetsnaz/Suppressed/Group_USSR_Spetsnaz_ReconTeam.et",
+      "guid": "B721D5A8C1B556CE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8B4D49A9F324E7D5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Groups/PlayableGroup.et",
+      "guid": "8B4D49A9F324E7D5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    }
+  ]
+}

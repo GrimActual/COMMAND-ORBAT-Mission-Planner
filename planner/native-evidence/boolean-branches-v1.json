@@ -1,0 +1,23 @@
+{
+  "mapping": "command-boolean-branches-v1",
+  "moduleSHA256": {
+    "sqf-boolean-branches.js": "810ad821a227851021859714aaabd33696495b68bb293a7555daba2a063df265",
+    "sqf-boolean-locals.js": "a5df995159fe92ba5d9eff9f6e4a665ce899960518d09dda0c526716823a8a38",
+    "sqf-expression-ast.js": "f56fee7869523ae4ae72b9c0eb7382c7777a1a23322c66987a028a2912b7530d",
+    "sqf-structural-ast.js": "4e10668a148b4b0b4eaefe346481799d557bbc1e9e1ce3bd36a4dc698d139a47",
+    "sqf-migration.js": "3e34ffe74cfb27f718b478e2ff298dcf997130c1fc84422ba1b042c6147274f5",
+    "sqf-source-dependencies.js": "b24fdc5ea804bc1911f26cd01a3969d6f7ddad4c0f165a0355927ba7c69c1478"
+  },
+  "mappingHashScope": "utf8-module-with-lf-newlines",
+  "fixtureSHA256": "ae9476c3c3e485cac4974b8bebb6c930a2af1a3f49915b9b652c510a227275b1",
+  "compiled": true,
+  "executed": true,
+  "failures": 0,
+  "cases": 32,
+  "engineVersion": "1.8.0.13",
+  "environment": "ArmaReforgerServerDiag Game scripts, isolated EmptyEden fixture",
+  "gameClientLaunched": false,
+  "sourceSQFExecuted": false,
+  "sourceSemantics": "Documented pure Boolean truth tables; no Arma 3 runtime comparison",
+  "proofScope": "Isolated pure Boolean if/else blocks over initialized locals; no caller, source function or lifecycle integration"
+}

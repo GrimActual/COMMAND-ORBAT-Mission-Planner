@@ -34,7 +34,7 @@ test('hierarchy rejects self-parent, cycles and missing commanders',()=>{
 });
 test('invalid imports fail without mutating the source data',()=>{
  const bad=base({orderOfBattle:[unit(1,{position:{lat:'6450',lng:10}})]});const before=JSON.stringify(bad);assert.throws(()=>C.validate(bad));assert.equal(JSON.stringify(bad),before);
- for(const p of [base({schemaVersion:5}),base({schemaVersion:0}),base({orderOfBattle:[unit(1),unit('1')]}),base({orderOfBattle:[unit(1,{side:'<img>'})]}),base({orderOfBattle:[unit(1,{phaseId:'missing'})]}),base({orderOfBattle:[unit(1,{position:{lat:14000,lng:0}})]})])assert.throws(()=>C.validate(p));
+ for(const p of [base({schemaVersion:6}),base({schemaVersion:0}),base({orderOfBattle:[unit(1),unit('1')]}),base({orderOfBattle:[unit(1,{side:'<img>'})]}),base({orderOfBattle:[unit(1,{phaseId:'missing'})]}),base({orderOfBattle:[unit(1,{position:{lat:14000,lng:0}})]})])assert.throws(()=>C.validate(p));
 });
 test('geometry rejects degenerate paths, crossed polygons and invalid radii',()=>{
  assert.throws(()=>C.validate(base({routes:[{points:[{lat:1,lng:1},{lat:1,lng:1}]}]})),/length/);

@@ -1,0 +1,1786 @@
+{
+  "schema": "companion-resource-index",
+  "version": 1,
+  "addons": [
+    {
+      "id": "58D0FB3206B6F859",
+      "name": "Arma Reforger",
+      "version": null,
+      "dependencies": [
+        "5614BBCCBB55ED1C"
+      ]
+    },
+    {
+      "id": "5614BBCCBB55ED1C",
+      "name": "Enfusion core data",
+      "version": null,
+      "dependencies": []
+    }
+  ],
+  "resources": [
+    {
+      "id": "vanilla_0B6336953A280DC2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Cracks_01.et",
+      "guid": "0B6336953A280DC2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_77C91FAB81C2F906",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Cracks_02.et",
+      "guid": "77C91FAB81C2F906",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_925553528D276E6D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Cracks_03.et",
+      "guid": "925553528D276E6D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AF61766AF84BE75A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Cracks_04.et",
+      "guid": "AF61766AF84BE75A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4AFD3A93F4AE7031",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Cracks_05.et",
+      "guid": "4AFD3A93F4AE7031",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7C184D5F132A8987",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Crossroad_01.et",
+      "guid": "7C184D5F132A8987",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_104C79BFAFEE06A9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Crossroad_02.et",
+      "guid": "104C79BFAFEE06A9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_64EE12C783AE788D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Manhole_01.et",
+      "guid": "64EE12C783AE788D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_96F86A5624E9C5E3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Patch_Blob_01.et",
+      "guid": "96F86A5624E9C5E3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FAAC5EB6982D4ACD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Patch_Blob_02.et",
+      "guid": "FAAC5EB6982D4ACD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1F30124F94C8DDA6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Patch_Blob_03.et",
+      "guid": "1F30124F94C8DDA6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8C484B448BC8F500",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Patch_BlobCluster_01.et",
+      "guid": "8C484B448BC8F500",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E01C7FA4370C7A2E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Patch_BlobCluster_02.et",
+      "guid": "E01C7FA4370C7A2E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0580335D3BE9ED45",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Patch_BlobCluster_03.et",
+      "guid": "0580335D3BE9ED45",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_55A3456CBB93353B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Patch_L_01.et",
+      "guid": "55A3456CBB93353B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_417943792578BDB6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Patch_Rectangle_01_long.et",
+      "guid": "417943792578BDB6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_78FB682F3B40CFD3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Patch_Rectangle_01_short.et",
+      "guid": "78FB682F3B40CFD3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5E5E9B739C75615C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Patch_Square_01.et",
+      "guid": "5E5E9B739C75615C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_247656678ABE6215",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Smudge_01_large.et",
+      "guid": "247656678ABE6215",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B66B888533BE90E1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Asphalt/Decal_Asphalt_Smudge_01_medium.et",
+      "guid": "B66B888533BE90E1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3BD66CDD309673DB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/BloodStain_Drops_01.et",
+      "guid": "3BD66CDD309673DB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_71979372AFE909E5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/BloodStain_Large_01.et",
+      "guid": "71979372AFE909E5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1DC3A792132D86CB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/BloodStain_Large_02.et",
+      "guid": "1DC3A792132D86CB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CCE57C4C9C0E5009",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/BloodStain_Small_01.et",
+      "guid": "CCE57C4C9C0E5009",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_32D707B931FD52FE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/BloodStain_Wall_01.et",
+      "guid": "32D707B931FD52FE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_626BC09329441A79",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/Decal_Blood_1.et",
+      "guid": "626BC09329441A79",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F8B5EA117A88AD27",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/Decal_Blood_10.et",
+      "guid": "F8B5EA117A88AD27",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1D29A6E8766D3A4C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/Decal_Blood_11.et",
+      "guid": "1D29A6E8766D3A4C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_23547DEEEC8AB053",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/Decal_Blood_2.et",
+      "guid": "23547DEEEC8AB053",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C6C83117E06F2738",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/Decal_Blood_3.et",
+      "guid": "C6C83117E06F2738",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FBFC142F9503AE0F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/Decal_Blood_4.et",
+      "guid": "FBFC142F9503AE0F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1E6058D699E63964",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/Decal_Blood_5.et",
+      "guid": "1E6058D699E63964",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_72346C362522B64A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/Decal_Blood_6.et",
+      "guid": "72346C362522B64A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_97A820CF29C72121",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/Decal_Blood_7.et",
+      "guid": "97A820CF29C72121",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_085C2646CFFBA424",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/Decal_Blood_8.et",
+      "guid": "085C2646CFFBA424",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EDC06ABFC31E334F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Blood/Decal_Blood_9.et",
+      "guid": "EDC06ABFC31E334F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6655A585AEE41E2E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Concrete/Damage/DecalModel_Runway_Cracks_01.et",
+      "guid": "6655A585AEE41E2E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0A01916512209100",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Concrete/Damage/DecalModel_Runway_Cracks_02.et",
+      "guid": "0A01916512209100",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EF9DDD9C1EC5066B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Concrete/Damage/DecalModel_Runway_Cracks_03.et",
+      "guid": "EF9DDD9C1EC5066B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A5C6D3FF19D2C0ED",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Concrete/Damage/DecalModel_Runway_Cracks_base.et",
+      "guid": "A5C6D3FF19D2C0ED",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1BCCB7FD57F20F04",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Core/Decal_Entity_Base.et",
+      "guid": "1BCCB7FD57F20F04",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1CC4A1F04894BE0A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Core/Decal_GenericEntity_base.et",
+      "guid": "1CC4A1F04894BE0A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_73B7748FA21EDC24",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Core/Decal_StaticModel_base.et",
+      "guid": "73B7748FA21EDC24",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3396B75380E17042",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Core/PukeStain.et",
+      "guid": "3396B75380E17042",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B7AF69D585D9C715",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Crossroad_01_V2.et",
+      "guid": "B7AF69D585D9C715",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D0ADBF5A3B6783C0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Crossroad_01.et",
+      "guid": "D0ADBF5A3B6783C0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BD0A399833C93492",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Crossroad_02_V2.et",
+      "guid": "BD0A399833C93492",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BCF98BBA87A30CEE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Crossroad_02.et",
+      "guid": "BCF98BBA87A30CEE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FC56FA6166DEE7B7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Footprints_01.et",
+      "guid": "FC56FA6166DEE7B7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A8F7CB83AA7FE99B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Footprints_02.et",
+      "guid": "A8F7CB83AA7FE99B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BAA55688399B3545",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Patch_01.et",
+      "guid": "BAA55688399B3545",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AF4AA779A4546D51",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Patch_02.et",
+      "guid": "AF4AA779A4546D51",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4AD6EB80A8B1FA3A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Patch_03.et",
+      "guid": "4AD6EB80A8B1FA3A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_46679C8491043813",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Patch_04_V2.et",
+      "guid": "46679C8491043813",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_ACAEDB73441F87DB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Patch_04.et",
+      "guid": "ACAEDB73441F87DB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4932978A48FA10B0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Patch_05.et",
+      "guid": "4932978A48FA10B0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2566A36AF43E9F9E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Patch_06.et",
+      "guid": "2566A36AF43E9F9E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4CC2CCC92714CB94",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Patch_07_V2.et",
+      "guid": "4CC2CCC92714CB94",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C0FAEF93F8DB08F5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Patch_07.et",
+      "guid": "C0FAEF93F8DB08F5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_25AB7FF81B8EDEF9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Tracks_01.et",
+      "guid": "25AB7FF81B8EDEF9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9EE74738BD9E8CDB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Tracks_02.et",
+      "guid": "9EE74738BD9E8CDB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_28DBB1C4928B9FB6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Dirt/Decal_Dirt_Tracks_03.et",
+      "guid": "28DBB1C4928B9FB6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D53741D03AB3A652",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Fluids/Decal_OilStain_01_extralarge.et",
+      "guid": "D53741D03AB3A652",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B38FBA56FA69E392",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Fluids/Decal_OilStain_01_large.et",
+      "guid": "B38FBA56FA69E392",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_091747817467C504",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Fluids/Decal_OilStain_01_medium.et",
+      "guid": "091747817467C504",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EE58596A0C85394E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Fluids/Decal_OilStain_01_small.et",
+      "guid": "EE58596A0C85394E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2ACD219E71A51B54",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Fluids/Decal_PetrolStain_01_V1.et",
+      "guid": "2ACD219E71A51B54",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CDDCF6AC97F06199",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Fluids/Decal_PetrolStain_01_V2.et",
+      "guid": "CDDCF6AC97F06199",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2840BA559B15F6F2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Fluids/Decal_PetrolStain_01_V3.et",
+      "guid": "2840BA559B15F6F2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_15749F6DEE797FC5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Fluids/Decal_PetrolStain_01_V4.et",
+      "guid": "15749F6DEE797FC5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F1AE53B165066255",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Fluids/Decal_Puddle_01_extralarge.et",
+      "guid": "F1AE53B165066255",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_19E821F0CC18847D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Fluids/Decal_Puddle_01_large.et",
+      "guid": "19E821F0CC18847D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_438BFAD516A0E18F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Fluids/Decal_Puddle_01_medium.et",
+      "guid": "438BFAD516A0E18F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_443FC2CC3AF45EA1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Fluids/Decal_Puddle_01_small.et",
+      "guid": "443FC2CC3AF45EA1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D2DE0352ED00F315",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Infrastructure/Decal_DrainChannel_01.et",
+      "guid": "D2DE0352ED00F315",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_86571585DB88CB6A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Logistics/Explosion/Decal_Logistics_Explosion_01_large.et",
+      "guid": "86571585DB88CB6A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_703C9A0E83C56979",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Logistics/Explosion/Decal_Logistics_Explosion_01_medium.et",
+      "guid": "703C9A0E83C56979",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DB80F6B92D6411B6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Logistics/Explosion/Decal_Logistics_Explosion_01_small.et",
+      "guid": "DB80F6B92D6411B6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A69D551ECF2DEE00",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Logistics/Explosion/Decal_Logistics_Fire_01_large.et",
+      "guid": "A69D551ECF2DEE00",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7606F0E5072308A7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Logistics/Explosion/Decal_Logistics_Fire_01_medium.et",
+      "guid": "7606F0E5072308A7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FB4AB62239C134DC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Logistics/Explosion/Decal_Logistics_Fire_01_small.et",
+      "guid": "FB4AB62239C134DC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1B64597BC875F398",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Logistics/Explosion/Decal_Logistics_Fire_Tire_01.et",
+      "guid": "1B64597BC875F398",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C7B127F0CB5FFA2B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Logistics/Explosion/Decal_Logistics_Grenade_01.et",
+      "guid": "C7B127F0CB5FFA2B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AECC79C86E347F20",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Logistics/Explosion/Decal_Logistics_Impact_base.et",
+      "guid": "AECC79C86E347F20",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_05668A7DF030B88B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Logistics/Explosion/Decal_Logistics_RPG_01.et",
+      "guid": "05668A7DF030B88B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7F5B851062D38849",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Decal_CrossWalk_01.et",
+      "guid": "7F5B851062D38849",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3545F0B0C3BC9606",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Decal_RoadStripe_Dashed_01.et",
+      "guid": "3545F0B0C3BC9606",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_43B46F8CEC1AED3D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Decal_RoadStripe_DashedFull_01.et",
+      "guid": "43B46F8CEC1AED3D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FBFEE39CD9508816",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Decal_RoadStripe_DoubleFull_01.et",
+      "guid": "FBFEE39CD9508816",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1D47DB14DEFCF6A0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Decal_RoadStripe_Full_01.et",
+      "guid": "1D47DB14DEFCF6A0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E95CB8F4C4B2C210",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Helipad_01.et",
+      "guid": "E95CB8F4C4B2C210",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B45778978C786D97",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Crosswalk.et",
+      "guid": "B45778978C786D97",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2C6DD9770DAB615B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Letter_C.et",
+      "guid": "2C6DD9770DAB615B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B399DFFEEB97E45E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Letter_L.et",
+      "guid": "B399DFFEEB97E45E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CE8133068E04D8C7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Letter_R.et",
+      "guid": "CE8133068E04D8C7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E2596C697CCE542E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Line_1x30.et",
+      "guid": "E2596C697CCE542E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E8FC3C24CADEA7A9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Line_2x30.et",
+      "guid": "E8FC3C24CADEA7A9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_30DF5C6FE5B9F02C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Line_6x30.et",
+      "guid": "30DF5C6FE5B9F02C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C88B3E6AED6D32B7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Line_Wait.et",
+      "guid": "C88B3E6AED6D32B7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9ECFB26FBB0227A2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Line_White.et",
+      "guid": "9ECFB26FBB0227A2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FE11A9CA34B48B74",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Line_Yellow.et",
+      "guid": "FE11A9CA34B48B74",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9F365ECD6168E3AE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Num_0.et",
+      "guid": "9F365ECD6168E3AE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7AAA12346D8D74C5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Num_1.et",
+      "guid": "7AAA12346D8D74C5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_16FE26D4D149FBEB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Num_2.et",
+      "guid": "16FE26D4D149FBEB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F3626A2DDDAC6C80",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Num_3.et",
+      "guid": "F3626A2DDDAC6C80",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CE564F15A8C0E5B7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Num_4.et",
+      "guid": "CE564F15A8C0E5B7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2BCA03ECA42572DC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Num_5.et",
+      "guid": "2BCA03ECA42572DC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_479E370C18E1FDF2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Num_6.et",
+      "guid": "479E370C18E1FDF2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A2027BF514046A99",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Num_7.et",
+      "guid": "A2027BF514046A99",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3DF67D7CF238EF9C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Num_8.et",
+      "guid": "3DF67D7CF238EF9C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D86A3185FEDD78F7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/Decal_Runway_Num_9.et",
+      "guid": "D86A3185FEDD78F7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_588306CBD43BCB6D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/DecalModel_AircraftTirePrints_01_base.et",
+      "guid": "588306CBD43BCB6D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_93B0F2CFAEE378B9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/DecalModel_AircraftTirePrints_01_v1.et",
+      "guid": "93B0F2CFAEE378B9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FFE4C62F1227F797",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Markings/Runway/DecalModel_AircraftTirePrints_01_v2.et",
+      "guid": "FFE4C62F1227F797",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CA8AB522F7C90A28",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Miscellaneous/CigarButts_01.et",
+      "guid": "CA8AB522F7C90A28",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4E2502622DA0DB28",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Miscellaneous/Decal_Damage_Burnt_01.et",
+      "guid": "4E2502622DA0DB28",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D1D104EBCB9C5E2D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Miscellaneous/Decal_Damage_Burnt_02.et",
+      "guid": "D1D104EBCB9C5E2D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_80B1153302345834",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Miscellaneous/Decal_Damage_Burnt_03.et",
+      "guid": "80B1153302345834",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DCDDA2146192E9C9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Miscellaneous/Texts/Decal_SovietWarnings_01/Decal_SovietWarnings_01_base.et",
+      "guid": "DCDDA2146192E9C9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_696C6AE265ADDD7A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Miscellaneous/Texts/Decal_SovietWarnings_01/Decal_SovietWarnings_01_entryforbidden.et",
+      "guid": "696C6AE265ADDD7A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E0A412FBD58CC53F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Miscellaneous/Texts/Decal_SovietWarnings_01/Decal_SovietWarnings_01_exit.et",
+      "guid": "E0A412FBD58CC53F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_05385E02D9695254",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Miscellaneous/Texts/Decal_SovietWarnings_01/Decal_SovietWarnings_01_guardpost.et",
+      "guid": "05385E02D9695254",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_380C7B3AAC05DB63",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Miscellaneous/Texts/Decal_SovietWarnings_01/Decal_SovietWarnings_01_keepitclean.et",
+      "guid": "380C7B3AAC05DB63",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_54584FDA10C1544D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Miscellaneous/Texts/Decal_SovietWarnings_01/Decal_SovietWarnings_01_nosmoking.et",
+      "guid": "54584FDA10C1544D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DD9037C3A0E04C08",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Miscellaneous/Texts/Decal_SovietWarnings_01/Decal_SovietWarnings_01_wearproperprotection.et",
+      "guid": "DD9037C3A0E04C08",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6101CDF87726A87E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Decals/Soil/Decal_Soil_01.et",
+      "guid": "6101CDF87726A87E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    }
+  ]
+}

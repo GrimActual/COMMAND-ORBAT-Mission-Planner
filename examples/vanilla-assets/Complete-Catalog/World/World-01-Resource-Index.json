@@ -1,0 +1,4810 @@
+{
+  "schema": "companion-resource-index",
+  "version": 1,
+  "addons": [
+    {
+      "id": "58D0FB3206B6F859",
+      "name": "Arma Reforger",
+      "version": null,
+      "dependencies": [
+        "5614BBCCBB55ED1C"
+      ]
+    },
+    {
+      "id": "5614BBCCBB55ED1C",
+      "name": "Enfusion core data",
+      "version": null,
+      "dependencies": []
+    }
+  ],
+  "resources": [
+    {
+      "id": "vanilla_B6B6A21399C5571B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/DefaultWorld/EnvProbe_Default.et",
+      "guid": "B6B6A21399C5571B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_78D9BBF0F423FEB4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/DefaultWorld/FogHaze_Default.et",
+      "guid": "78D9BBF0F423FEB4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_221ABC927C672E4E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/DefaultWorld/GenericTerrain_Default.et",
+      "guid": "221ABC927C672E4E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_08A95D735ECC517F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/DefaultWorld/GenericWorld_Default.et",
+      "guid": "08A95D735ECC517F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3AFFB0B0EC055284",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/DefaultWorld/GenericWorldPP_Default.et",
+      "guid": "3AFFB0B0EC055284",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5B2B348D9520F7C7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/DefaultWorld/Lighting_Default.et",
+      "guid": "5B2B348D9520F7C7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_21C189074DAB7E90",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/DefaultWorld/MapEntity_Default.et",
+      "guid": "21C189074DAB7E90",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D657A221A7868426",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Arland/EnvProbe_Arland.et",
+      "guid": "D657A221A7868426",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8B5E047B9527E46D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Arland/FogHaze_Arland.et",
+      "guid": "8B5E047B9527E46D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_80F042D21CC0BBCA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Arland/GenericTerrain_Arland.et",
+      "guid": "80F042D21CC0BBCA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6C368E2D3ED6356D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Arland/GenericWorld_Arland.et",
+      "guid": "6C368E2D3ED6356D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BF7CD669B2F4A143",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Arland/Lighting_Arland.et",
+      "guid": "BF7CD669B2F4A143",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_66FBC1063149819B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Arland/MapEntity_Arland.et",
+      "guid": "66FBC1063149819B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5F7661408DB8C0A7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Arland/TimeAndWeatherManager_Arland.et",
+      "guid": "5F7661408DB8C0A7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D902318DAF9E7147",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Cain/EnvProbe_Cain.et",
+      "guid": "D902318DAF9E7147",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E9726F088EF14A75",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Cain/FogHaze_Cain.et",
+      "guid": "E9726F088EF14A75",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_17857A588EC4C3C0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Cain/GenericTerrain_Cain.et",
+      "guid": "17857A588EC4C3C0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_086E46E08A3675AE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Cain/GenericWorld_Cain.et",
+      "guid": "086E46E08A3675AE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8C2B6D286B2CED8B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Cain/Lighting_Cain.et",
+      "guid": "8C2B6D286B2CED8B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_99EBC3D9FE8F465C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Cain/MapEntity_Cain.et",
+      "guid": "99EBC3D9FE8F465C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C4DC66FF5350C358",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Cain/TimeAndWeathedManager_Cain.et",
+      "guid": "C4DC66FF5350C358",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CEEBCF612761AF3E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Eden/EnvProbe_Eden.et",
+      "guid": "CEEBCF612761AF3E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6D54F44158ECC25D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Eden/FogHaze_Eden.et",
+      "guid": "6D54F44158ECC25D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5AD924374E8C7AF6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Eden/GenericTerrain_Eden.et",
+      "guid": "5AD924374E8C7AF6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4F6BB9F7BFFB28DC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Eden/GenericWorld_Eden.et",
+      "guid": "4F6BB9F7BFFB28DC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_63F249E0AA3E7856",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Eden/Lighting_Eden.et",
+      "guid": "63F249E0AA3E7856",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E1B88C66BF6CA1F9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Eden/MapEntity_Everon.et",
+      "guid": "E1B88C66BF6CA1F9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D3B9D1746BA699D5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/Eden/TimeAndWeatherManager_Eden.et",
+      "guid": "D3B9D1746BA699D5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7699E66077068406",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/ForestSyncManager.et",
+      "guid": "7699E66077068406",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4391FE7994EE6FE2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/InventoryPreviewWorld.et",
+      "guid": "4391FE7994EE6FE2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9F18C476AB860F3B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/ItemPreviewManager.et",
+      "guid": "9F18C476AB860F3B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_731564B66F91B107",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/MapEntity.et",
+      "guid": "731564B66F91B107",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_028DAEAD63E056BE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/PerceptionManager.et",
+      "guid": "028DAEAD63E056BE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_46EF8569D1C875D8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/PrefabCache.et",
+      "guid": "46EF8569D1C875D8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_32BFDCDE99092FCE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/PreloadManager_Campaign.et",
+      "guid": "32BFDCDE99092FCE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_104F8505FD1871EF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/PreloadManager.et",
+      "guid": "104F8505FD1871EF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_33F9FD881E3700CC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/SCR_CameraManager.et",
+      "guid": "33F9FD881E3700CC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A3BAF78F6F03315B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/TimeAndWeatherManager.et",
+      "guid": "A3BAF78F6F03315B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_292486B7CA9C67BE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Game/UISoundEntity.et",
+      "guid": "292486B7CA9C67BE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9DF581350C9D3F55",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Aquatic/Arland_Bay_01.et",
+      "guid": "9DF581350C9D3F55",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F1A1B5D5B059B07B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Aquatic/Arland_Bay_02.et",
+      "guid": "F1A1B5D5B059B07B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_143DF92CBCBC2710",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Aquatic/Arland_Bay_03.et",
+      "guid": "143DF92CBCBC2710",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F0BDB1800BC7B4AA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Aquatic/Arland_Pond_01.et",
+      "guid": "F0BDB1800BC7B4AA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9CE98560B7033B84",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Aquatic/Arland_Pond_02.et",
+      "guid": "9CE98560B7033B84",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A99A1ADAF98F2D48",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Arleville.et",
+      "guid": "A99A1ADAF98F2D48",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C65EF20F6A441531",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Beauregard.et",
+      "guid": "C65EF20F6A441531",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4C860F6E204E8836",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_Cliff_01.et",
+      "guid": "4C860F6E204E8836",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_20D23B8E9C8A0718",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_Cliff_02.et",
+      "guid": "20D23B8E9C8A0718",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C54E7777906F9073",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_Cliff_03.et",
+      "guid": "C54E7777906F9073",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F4A535638AA461A9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_Coast_01.et",
+      "guid": "F4A535638AA461A9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6B3688F0FBF226B5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_Fields_01.et",
+      "guid": "6B3688F0FBF226B5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0762BC104736A99B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_Fields_02.et",
+      "guid": "0762BC104736A99B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9A8485FE4C528BC9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_Hill_01.et",
+      "guid": "9A8485FE4C528BC9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F6D0B11EF09604E7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_Hill_02.et",
+      "guid": "F6D0B11EF09604E7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_134CFDE7FC73938C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_Hill_03.et",
+      "guid": "134CFDE7FC73938C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EC79D0000D8B2DD0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_Island_01.et",
+      "guid": "EC79D0000D8B2DD0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E4BED27ADE790C33",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_point_01.et",
+      "guid": "E4BED27ADE790C33",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_88EAE69A62BD831D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_Point_02.et",
+      "guid": "88EAE69A62BD831D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6D76AA636E581476",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_Point_03.et",
+      "guid": "6D76AA636E581476",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_50428F5B1B349D41",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_Point_04.et",
+      "guid": "50428F5B1B349D41",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_11DFFA6CBB86E308",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_Ridge_01.et",
+      "guid": "11DFFA6CBB86E308",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7D8BCE8C07426C26",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Natural/Arland_Ridge_02.et",
+      "guid": "7D8BCE8C07426C26",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5834EE534F3EFF77",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Urban/Arland_Farm_01.et",
+      "guid": "5834EE534F3EFF77",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A7F990FD84B02BE0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Urban/Arland_Harbor_01.et",
+      "guid": "A7F990FD84B02BE0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0598E0F68E422BE0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Urban/Arland_Harbor_02.et",
+      "guid": "0598E0F68E422BE0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E004AC0F82A7BC8B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Urban/Arland_Harbor_03.et",
+      "guid": "E004AC0F82A7BC8B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BC0FB2492AD81F0D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Urban/Arland_Military_01.et",
+      "guid": "BC0FB2492AD81F0D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_84952F5960AD55BA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Urban/Arland_Military_02.et",
+      "guid": "84952F5960AD55BA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_610963A06C48C2D1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Arland/Urban/Arland_Military_03.et",
+      "guid": "610963A06C48C2D1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_06E5FE64D4F64921",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Aquatic/BasinBay_01.et",
+      "guid": "06E5FE64D4F64921",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3E809841F9410A18",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Aquatic/Berezovka_01.et",
+      "guid": "3E809841F9410A18",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0234AA206EEB36DF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Aquatic/CormorantBay_01.et",
+      "guid": "0234AA206EEB36DF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_ACA05806B4944C02",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Aquatic/DevilsRift_01.et",
+      "guid": "ACA05806B4944C02",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_77608B207246971D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Aquatic/GoluboyGlaz_01.et",
+      "guid": "77608B207246971D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_870F91BBFAF32921",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Aquatic/MusselCove_01.et",
+      "guid": "870F91BBFAF32921",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A1B0DA467730BCE5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Aquatic/PebbleBay_01.et",
+      "guid": "A1B0DA467730BCE5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5C740F1E32C5F945",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Aquatic/Pyritka_01.et",
+      "guid": "5C740F1E32C5F945",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9F172BDB280F651D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Aquatic/RockyBay_01.et",
+      "guid": "9F172BDB280F651D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B3D8DB4E69B8340A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Aquatic/Stupka_01.et",
+      "guid": "B3D8DB4E69B8340A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_862D85A87D448184",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Aquatic/Sulfurovka_01.et",
+      "guid": "862D85A87D448184",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_49306F183C75C931",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/BareRidge_01.et",
+      "guid": "49306F183C75C931",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D755B5C4BC92E0E5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/BelyIsland_01.et",
+      "guid": "D755B5C4BC92E0E5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_98D7B36846196673",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/GravelSpit_01.et",
+      "guid": "98D7B36846196673",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0E7F7702A60DC26E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/GreenHill_01.et",
+      "guid": "0E7F7702A60DC26E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8C31DDF88698BDB4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/HornHill_01.et",
+      "guid": "8C31DDF88698BDB4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A56522C59251CFDF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/KrasnyIsland_01.et",
+      "guid": "A56522C59251CFDF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_01DCAAD3BA9C08BF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/LampCape_01.et",
+      "guid": "01DCAAD3BA9C08BF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C266C1D8516B18CA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/MeadowRidge_01.et",
+      "guid": "C266C1D8516B18CA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_36BFB85B9E8C44B6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/Mine_Aurora_01.et",
+      "guid": "36BFB85B9E8C44B6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3CC171F974A70BFD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/Mine_KrasnyyOktyabr_01.et",
+      "guid": "3CC171F974A70BFD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FBED1391A5292069",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/Mine_Nadezhda_01.et",
+      "guid": "FBED1391A5292069",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B4BECBDC6FF56D89",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/Mine_Stakhanov_01.et",
+      "guid": "B4BECBDC6FF56D89",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_647E2B70E18FC359",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/Mine_Zenit_01.et",
+      "guid": "647E2B70E18FC359",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CEED8EFB4E6ABDA1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/NorthernBeach_01.et",
+      "guid": "CEED8EFB4E6ABDA1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3F3F204253C7AAD5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/PikPobedy_01.et",
+      "guid": "3F3F204253C7AAD5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C04582058FE2A48A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/RowanRidge_01.et",
+      "guid": "C04582058FE2A48A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BC3FCBFC6A66FEB1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/SeagullSpit_01.et",
+      "guid": "BC3FCBFC6A66FEB1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_73A6A413483549C2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/SeaweedShoal_01.et",
+      "guid": "73A6A413483549C2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CBCC398DE9C957B8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/SkalistyIsland_01.et",
+      "guid": "CBCC398DE9C957B8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9CCE36F94DE6B852",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/SosnovyIsland_01.et",
+      "guid": "9CCE36F94DE6B852",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2D93BA7335888F56",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/TrehgolovyIsland_01.et",
+      "guid": "2D93BA7335888F56",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_520BFD0D78D97454",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/TurtleRock_01.et",
+      "guid": "520BFD0D78D97454",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BE4C29134CC13BF7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Natural/WestCape_01.et",
+      "guid": "BE4C29134CC13BF7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FF7985CB49071CF9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/BareRidge_Military_01.et",
+      "guid": "FF7985CB49071CF9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1B321BF917C6AF5A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Berezovka_Military_01.et",
+      "guid": "1B321BF917C6AF5A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B311D13525124EF6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Bovemont_01.et",
+      "guid": "B311D13525124EF6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_735434698D3386CB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Bovemont_Military_01.et",
+      "guid": "735434698D3386CB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B2CF2FC465DD04B7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/East_Military_01.et",
+      "guid": "B2CF2FC465DD04B7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DE998437E3B1B86C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Gorshkovo_01.et",
+      "guid": "DE998437E3B1B86C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EF67BDBEB48CFF66",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/GreenHill_Military_01.et",
+      "guid": "EF67BDBEB48CFF66",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0CACFD6951DCAB89",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/GubaVilla_01.et",
+      "guid": "0CACFD6951DCAB89",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A595D9FDDC69E94B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/GubaVilla_Military_01.et",
+      "guid": "A595D9FDDC69E94B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0A0E5A24EB285BA0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Hamertin_01.et",
+      "guid": "0A0E5A24EB285BA0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2C6C379C092CAD06",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Hamertin_Sawmill_01.et",
+      "guid": "2C6C379C092CAD06",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_35AE47438A6F5854",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Kamensk_01.et",
+      "guid": "35AE47438A6F5854",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2731BB5C61686F16",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Kamensk_Harbor_01.et",
+      "guid": "2731BB5C61686F16",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_811D5119A743E6D3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Komsomolsk_01.et",
+      "guid": "811D5119A743E6D3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4235FF57A1C05047",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Langonnet_01.et",
+      "guid": "4235FF57A1C05047",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A36D69A17CC4A007",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Langonnet_Military_01.et",
+      "guid": "A36D69A17CC4A007",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_529CE8102B47477F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/LeRocher_01.et",
+      "guid": "529CE8102B47477F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_25E38864FE2A39A8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Meglerone_01.et",
+      "guid": "25E38864FE2A39A8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_49543E967EFACC33",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Meglerone_Military_01.et",
+      "guid": "49543E967EFACC33",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9F4A2CA1E511FB8D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Michurino_01.et",
+      "guid": "9F4A2CA1E511FB8D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6AEA3C9D161C987A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Mineraly_01.et",
+      "guid": "6AEA3C9D161C987A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_58C51BF6130DD6E3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Mineraly_Harbor_01.et",
+      "guid": "58C51BF6130DD6E3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_323C26EB798B103B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Mineraly_Military_01.et",
+      "guid": "323C26EB798B103B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_788557E5162B03D4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Nadezhda_Military_01.et",
+      "guid": "788557E5162B03D4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9D03AB67D66AC548",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/PebbleBay_Military_01.et",
+      "guid": "9D03AB67D66AC548",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AA5C3EC1048116DE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Querrien_01.et",
+      "guid": "AA5C3EC1048116DE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BD362FEE1915D1C0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Querrien_Harbor_01.et",
+      "guid": "BD362FEE1915D1C0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CE3E1A7D08DCFDE5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Querrien_Military_01.et",
+      "guid": "CE3E1A7D08DCFDE5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2F7C2037D5044B16",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/RowanRidge_Military_01.et",
+      "guid": "2F7C2037D5044B16",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9497733787228819",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/SosnovyMys_01.et",
+      "guid": "9497733787228819",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_015E2D26F9988EC8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Soumont_01.et",
+      "guid": "015E2D26F9988EC8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EEAAF12B4DCCB30B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Soumont_Sawmill_01.et",
+      "guid": "EEAAF12B4DCCB30B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_448FCE2BAA1032DA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Udarnik_01.et",
+      "guid": "448FCE2BAA1032DA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_62DA49C25BB524D6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Ugoldar_01.et",
+      "guid": "62DA49C25BB524D6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C8A7214DDC1BC9BC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Ugoldar_Harbor_01.et",
+      "guid": "C8A7214DDC1BC9BC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_21C13BF150C47F51",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Ugoldar_Harbor_02.et",
+      "guid": "21C13BF150C47F51",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CC437B12C08D84CE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Cain/Urban/Ugoldar_Military_01.et",
+      "guid": "CC437B12C08D84CE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4EB4324F83BA9483",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Aquatic/LocationAquaticBase.et",
+      "guid": "4EB4324F83BA9483",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3AA30075D24715D0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Aquatic/LocationAquaticFreshMajor.et",
+      "guid": "3AA30075D24715D0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DF251D54E828762C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Aquatic/LocationAquaticFreshMinor.et",
+      "guid": "DF251D54E828762C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0E009E942E9485D1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Aquatic/LocationAquaticSeaMajor.et",
+      "guid": "0E009E942E9485D1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EB8683B514FBE62D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Aquatic/LocationAquaticSeaMinor.et",
+      "guid": "EB8683B514FBE62D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_74ECB0169F30948C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/LocationBase.et",
+      "guid": "74ECB0169F30948C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_99AC5DC026801710",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Natural/LocationNaturalBase.et",
+      "guid": "99AC5DC026801710",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_94C044AE16EC805B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Natural/LocationNaturalGeneric.et",
+      "guid": "94C044AE16EC805B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_494EFB40103D8B0D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Natural/LocationNaturalHill.et",
+      "guid": "494EFB40103D8B0D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_33F43490C9704AC1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Natural/LocationNaturalIsland.et",
+      "guid": "33F43490C9704AC1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A3CF425C1BE37485",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Natural/LocationNaturalMajor.et",
+      "guid": "A3CF425C1BE37485",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_07555910A43107F9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Urban/LocationUrbanBase.et",
+      "guid": "07555910A43107F9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_740FEE2A86051AFA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Urban/LocationUrbanCity.et",
+      "guid": "740FEE2A86051AFA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7A02AC172076EC55",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Urban/LocationUrbanGeneric_Airport.et",
+      "guid": "7A02AC172076EC55",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FCDB8AFEE8AC7D8B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Urban/LocationUrbanGeneric_Castle.et",
+      "guid": "FCDB8AFEE8AC7D8B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AC269295CEBD6DFA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Urban/LocationUrbanGeneric_Farm.et",
+      "guid": "AC269295CEBD6DFA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6016446BCAB69116",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Urban/LocationUrbanGeneric_Harbour.et",
+      "guid": "6016446BCAB69116",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D89D75C1DC067868",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Urban/LocationUrbanGeneric_Lighthouse.et",
+      "guid": "D89D75C1DC067868",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0CD171EEC36CBFFE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Urban/LocationUrbanGeneric_MilitaryBase.et",
+      "guid": "0CD171EEC36CBFFE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_52441C1009A9E5F7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Urban/LocationUrbanGeneric_MilitaryHospital.et",
+      "guid": "52441C1009A9E5F7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F3F062C842A38D42",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Urban/LocationUrbanGeneric_Powerplant.et",
+      "guid": "F3F062C842A38D42",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_213BE463B7949C47",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Urban/LocationUrbanGeneric_Sawmill.et",
+      "guid": "213BE463B7949C47",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_911C459456637ABA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Urban/LocationUrbanGeneric.et",
+      "guid": "911C459456637ABA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A32CF2CDFDC85277",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Urban/LocationUrbanSettlement.et",
+      "guid": "A32CF2CDFDC85277",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7FE30F5687748FDA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Urban/LocationUrbanTown.et",
+      "guid": "7FE30F5687748FDA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_97CA105CBFA5884E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Common/Urban/LocationUrbanVillage.et",
+      "guid": "97CA105CBFA5884E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B5AA9B02E51A0F55",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Airport.et",
+      "guid": "B5AA9B02E51A0F55",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2CEE40B9E1D78EFC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Airport_Bay_01.et",
+      "guid": "2CEE40B9E1D78EFC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_40BA74595D1301D2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Airport_Bay_02.et",
+      "guid": "40BA74595D1301D2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A52638A051F696B9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Airport_Bay_03.et",
+      "guid": "A52638A051F696B9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F531B046248CD1C5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Airport_Pond_01.et",
+      "guid": "F531B046248CD1C5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_33B09717841D0003",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Center_South_Pond_01.et",
+      "guid": "33B09717841D0003",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5FE4A3F738D98F2D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Center_South_Pond_02.et",
+      "guid": "5FE4A3F738D98F2D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C5354BFB76A2D877",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Chotain_Pond_01.et",
+      "guid": "C5354BFB76A2D877",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_24C4CCDDD4265A46",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Chotain_Sea_01.et",
+      "guid": "24C4CCDDD4265A46",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_54DDEA5BF78785B7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Durras_Pond_01.et",
+      "guid": "54DDEA5BF78785B7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_546079B31964CC91",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/East_sea_minor01.et",
+      "guid": "546079B31964CC91",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_266CBAD92F0544FE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Gravette_Bay_01.et",
+      "guid": "266CBAD92F0544FE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5876B4D0E83D7F2C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Lakeside_Hotel_Lake_01.et",
+      "guid": "5876B4D0E83D7F2C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4BE4F6CD308C5420",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Lamentin_Bay_01.et",
+      "guid": "4BE4F6CD308C5420",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_593CA2ED1C7F0F2A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Meaux_Bay_01.et",
+      "guid": "593CA2ED1C7F0F2A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_539C547E58D3B92E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Military_Training_Area_pond_01.et",
+      "guid": "539C547E58D3B92E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3FC8609EE4173600",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Military_Training_Area_Pond_02.et",
+      "guid": "3FC8609EE4173600",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5BA6A0D63EB9F416",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Morton_Bay_01.et",
+      "guid": "5BA6A0D63EB9F416",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_37F29436827D7B38",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Morton_Bay_02.et",
+      "guid": "37F29436827D7B38",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AFE1C58DAC2EB54B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Morton_Sea_01.et",
+      "guid": "AFE1C58DAC2EB54B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_26DE57C923067589",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Mountains_East_04.et",
+      "guid": "26DE57C923067589",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BA924D6392B79D6F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Mountains_East_Bay_03.et",
+      "guid": "BA924D6392B79D6F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_013CE579A15366CB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Mountains_East_River_01.et",
+      "guid": "013CE579A15366CB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5F6E0DAF1F4289D3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Mountins_East_River_02.et",
+      "guid": "5F6E0DAF1F4289D3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_251DEA974295DF5B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Moutain_East_River_01.et",
+      "guid": "251DEA974295DF5B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9E9A5DEC79341A57",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Moutains_East_Bay_01.et",
+      "guid": "9E9A5DEC79341A57",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F2CE690CC5F09579",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Moutains_East_Bay_02.et",
+      "guid": "F2CE690CC5F09579",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_84D783FC09B893B7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Moutains_East_Lake_01.et",
+      "guid": "84D783FC09B893B7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AD7D2EB90EA00E82",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Moutains_West_River_01.et",
+      "guid": "AD7D2EB90EA00E82",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_35EF44757EEAC422",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Provins_Pond_01.et",
+      "guid": "35EF44757EEAC422",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BC273C6CCECBDC67",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Provins_Pond_03.et",
+      "guid": "BC273C6CCECBDC67",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_29F4B6EF9E9E318F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Provins_Pound_02.et",
+      "guid": "29F4B6EF9E9E318F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_38F1FC441995AED9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Saint_Pierre_Bay_01.et",
+      "guid": "38F1FC441995AED9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2DFF19C58C3C6978",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/St_Philippe_Bay_01.et",
+      "guid": "2DFF19C58C3C6978",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9ACA5C1980CB1515",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/St_Philippe_Pond_01.et",
+      "guid": "9ACA5C1980CB1515",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2D0BAB94F51B9B03",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/SW_Islands_Sea_01.et",
+      "guid": "2D0BAB94F51B9B03",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0D42C06EBAAFA05B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Tyrone_Bay_01.et",
+      "guid": "0D42C06EBAAFA05B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2D59BF1C800B51F0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Aquatic/Villeneuve_Pond_01.et",
+      "guid": "2D59BF1C800B51F0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_189186A76C9FB91A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Castle.et",
+      "guid": "189186A76C9FB91A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_557E35388A882BA2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Chotain.et",
+      "guid": "557E35388A882BA2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E1C8D51627A2927D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Durras.et",
+      "guid": "E1C8D51627A2927D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CEF274DE3E0882D6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/EntreDeux.et",
+      "guid": "CEF274DE3E0882D6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_92A64FF18CC8BDF5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Erquy_Lighthouse_01.et",
+      "guid": "92A64FF18CC8BDF5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_25E9E6584FE5A317",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Erquy.et",
+      "guid": "25E9E6584FE5A317",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7D27D95BCF6D90E7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Figari.et",
+      "guid": "7D27D95BCF6D90E7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_040D057187159F76",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Gravette.et",
+      "guid": "040D057187159F76",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_409D0CFE91116A83",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Lakeside_Hotel.et",
+      "guid": "409D0CFE91116A83",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_76415948ADE5ECE8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Lamentin_Harbour_01.et",
+      "guid": "76415948ADE5ECE8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6014CF6E2C5EA4A4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Lamentin.et",
+      "guid": "6014CF6E2C5EA4A4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2CFE1A9241B94C9B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Laruns.et",
+      "guid": "2CFE1A9241B94C9B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1A7B9A2560C087CC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Le_Moule_Sawmill_01.et",
+      "guid": "1A7B9A2560C087CC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8690FC2B65E515D5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Le_Moule.et",
+      "guid": "8690FC2B65E515D5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_29D1F359C80F7873",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Levie.et",
+      "guid": "29D1F359C80F7873",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DD00D9A8DDEF97F0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/MA_AA_MilitaryBase_01.et",
+      "guid": "DD00D9A8DDEF97F0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5CD71831F9CA53BE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Meaux.et",
+      "guid": "5CD71831F9CA53BE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4826C9A90F61FE87",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Military_Training_Area_MilitaryBase_01.et",
+      "guid": "4826C9A90F61FE87",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_93BF91468B98A55E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Montignac_Farm_01.et",
+      "guid": "93BF91468B98A55E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_87360B93CEAB464A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Montignac_Sawmil_01.et",
+      "guid": "87360B93CEAB464A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_453AD82BC2CE8E72",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Montignac.et",
+      "guid": "453AD82BC2CE8E72",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5193F17987FE1274",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Morton_Lighthouse_01.et",
+      "guid": "5193F17987FE1274",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_29639A95CD5CFCC8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Morton.et",
+      "guid": "29639A95CD5CFCC8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C9DAFA99EDB8FEA4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Mountains_West_Lighthouse_01.et",
+      "guid": "C9DAFA99EDB8FEA4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3DB2F031BC5D8E7C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Mountains_West_MilitaryBase_01.et",
+      "guid": "3DB2F031BC5D8E7C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_264C1489E91B0C40",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Airport_Coast_01.et",
+      "guid": "264C1489E91B0C40",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4A18206955DF836E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Airport_Coast_02.et",
+      "guid": "4A18206955DF836E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0040F78C014BF461",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Center_North_Hill_01.et",
+      "guid": "0040F78C014BF461",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6C14C36CBD8F7B4F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Center_North_Hill_02.et",
+      "guid": "6C14C36CBD8F7B4F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BADE082C5B0F836A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Center_North_Location_10.et",
+      "guid": "BADE082C5B0F836A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_87DB630B908AF1C9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Center_South_Forest_01.et",
+      "guid": "87DB630B908AF1C9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7A554A95D38AACBA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Center_South_hill_01.et",
+      "guid": "7A554A95D38AACBA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_16017E756F4E2394",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Center_South_Hill_02.et",
+      "guid": "16017E756F4E2394",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0A590D18E2C8503B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Center_South_Location_05.et",
+      "guid": "0A590D18E2C8503B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8413D1C86071676C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Center_South_Locations_06.et",
+      "guid": "8413D1C86071676C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2C62A624BBDA6B1C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Center_West_Hill_06.et",
+      "guid": "2C62A624BBDA6B1C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EDCA320BA56DA017",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Center_West_Location_01.et",
+      "guid": "EDCA320BA56DA017",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_35625BCADCE4BE4B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Center_West_Location_07.et",
+      "guid": "35625BCADCE4BE4B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F181AA789E05280F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Entre_Deux_Hill_01.et",
+      "guid": "F181AA789E05280F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A7A34EDF946E1048",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/EntreDeux_Location_08.et",
+      "guid": "A7A34EDF946E1048",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AAC804C09C9A50ED",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/EntreDeux_Ridge_01.et",
+      "guid": "AAC804C09C9A50ED",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DF638A582B4BBB55",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Lamentin_Location_01.et",
+      "guid": "DF638A582B4BBB55",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EE1BD24B2132C278",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Laruns_Hill_01.et",
+      "guid": "EE1BD24B2132C278",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_50BF03046F23DCF6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/MA_AA_Hill_01.et",
+      "guid": "50BF03046F23DCF6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7A689D327E76148B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Military_Training_Area_Coast_01.et",
+      "guid": "7A689D327E76148B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_163CA9D2C2B29BA5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Military_Training_Area_Coast_02.et",
+      "guid": "163CA9D2C2B29BA5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8CBD537B2CDBFE9A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Military_training_area_location_09.et",
+      "guid": "8CBD537B2CDBFE9A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4F22AC58F0A69FA7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Military_Training_Area_Valley_01.et",
+      "guid": "4F22AC58F0A69FA7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_36CF75FD927A7A23",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Morton_Forest_01.et",
+      "guid": "36CF75FD927A7A23",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2988248BA2511CD2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Morton_Hill_01.et",
+      "guid": "2988248BA2511CD2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C7D348CAB15FC4BA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Morton_Peninsula_01.et",
+      "guid": "C7D348CAB15FC4BA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_391ABA07BEE79E65",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Morton_Valley_01.et",
+      "guid": "391ABA07BEE79E65",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1D70EEAC7D6026BF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Mountains_East_coast_01.et",
+      "guid": "1D70EEAC7D6026BF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6A7A862489C2C9CF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Mountains_East_Coast_11.et",
+      "guid": "6A7A862489C2C9CF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8185FC371A1286AD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Mountains_East_Peninsula_01.et",
+      "guid": "8185FC371A1286AD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F80A21A34C42A41E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Mountains_East_Ridge_01.et",
+      "guid": "F80A21A34C42A41E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_945E1543F0862B30",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Mountains_East_Ridge_02.et",
+      "guid": "945E1543F0862B30",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C8EC7BF091215C13",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Mountains_West_Ridge_01.et",
+      "guid": "C8EC7BF091215C13",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A4B84F102DE5D33D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Mountains_West_Ridge_02.et",
+      "guid": "A4B84F102DE5D33D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_83115F150B9DB50D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Mountains_West_Valley_01.et",
+      "guid": "83115F150B9DB50D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3FC80B4D7F78F097",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Moutains_East_beach_01.et",
+      "guid": "3FC80B4D7F78F097",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2BEC318A607E67C2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Moutains_East_Hill_01.et",
+      "guid": "2BEC318A607E67C2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_47B8056ADCBAE8EC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Moutains_East_hill_02.et",
+      "guid": "47B8056ADCBAE8EC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A2244993D05F7F87",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Moutains_East_Hill_03.et",
+      "guid": "A2244993D05F7F87",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D5E49DB4895F0CF1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Moutains_East_pass_01.et",
+      "guid": "D5E49DB4895F0CF1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0F2E511EA21B089A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Moutains_West_beach_01.et",
+      "guid": "0F2E511EA21B089A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_07EB1F2552690919",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Moutains_West_headland_01.et",
+      "guid": "07EB1F2552690919",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FB96154F19A4BBEA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Moutains_West_Hill_01.et",
+      "guid": "FB96154F19A4BBEA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_97C221AFA56034C4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Moutains_West_Hill_02.et",
+      "guid": "97C221AFA56034C4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_725E6D56A985A3AF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Moutains_West_Hill_03.et",
+      "guid": "725E6D56A985A3AF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_40E18CDC7B5AE9E2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Moutains_West_Lighthouse_01.et",
+      "guid": "40E18CDC7B5AE9E2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_059EB971F085D0D9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Moutains_West_Pass_01.et",
+      "guid": "059EB971F085D0D9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1558EEFE1C682A63",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/NE_Island_Island_02.et",
+      "guid": "1558EEFE1C682A63",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FBDD7414666C0E2B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/North_East_Coast_03.et",
+      "guid": "FBDD7414666C0E2B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_57723A3835A6D01D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/NW_Islands_Island_05.et",
+      "guid": "57723A3835A6D01D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_45B91C9D2EEE266B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Provins_Fields_01.et",
+      "guid": "45B91C9D2EEE266B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4DB59F73674545A6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Regina_coast_01.et",
+      "guid": "4DB59F73674545A6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0A8F6F282688E1E4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Regina_vista_01.et",
+      "guid": "0A8F6F282688E1E4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EF7DF0423116CFEF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/St_Philippe_Hill_01.et",
+      "guid": "EF7DF0423116CFEF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5E3DBA337A3DD5B8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/St_Philippe_Location_11.et",
+      "guid": "5E3DBA337A3DD5B8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_01C5C12DDFE9150A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/SW_Islands_Island_03.et",
+      "guid": "01C5C12DDFE9150A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3CF1E415AA859C3D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/SW_Islands_Island_04.et",
+      "guid": "3CF1E415AA859C3D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2046885E7C17B1A5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/SW_Islands_Location_01.et",
+      "guid": "2046885E7C17B1A5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D541C63522C67DBC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Tyrone_Ridge_01.et",
+      "guid": "D541C63522C67DBC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_94FC91BA2FC8CDB6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Natural/Villeneuve_Forrest_01.et",
+      "guid": "94FC91BA2FC8CDB6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_92ACD0FE7F79FC8E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/North_East_Farm_01.et",
+      "guid": "92ACD0FE7F79FC8E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EDFC97FE3D25863B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/North_East_FishCannery_01.et",
+      "guid": "EDFC97FE3D25863B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1F22BDEB563FE017",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/North_East_Harbour_01.et",
+      "guid": "1F22BDEB563FE017",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_044F508013649A25",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/North_East_Lighthouse_01.et",
+      "guid": "044F508013649A25",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AB615FAC8D39C8E2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/North_East_Lighthouse_02.et",
+      "guid": "AB615FAC8D39C8E2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FA67E5D30FC5B7DA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/North_East_MilitaryBase_01.et",
+      "guid": "FA67E5D30FC5B7DA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_157CBD0AEBCE71BE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Power_Plant.et",
+      "guid": "157CBD0AEBCE71BE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6755A75FDE56C578",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Provins.et",
+      "guid": "6755A75FDE56C578",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A111CFBDA03D4191",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Regina_Sawmill_01.et",
+      "guid": "A111CFBDA03D4191",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E8AF900D698861ED",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Regina.et",
+      "guid": "E8AF900D698861ED",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AFBE737E0FDA7216",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/St_Philippe_Harbour_01.et",
+      "guid": "AFBE737E0FDA7216",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5A419F14E250BEB2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/St_Philippe.et",
+      "guid": "5A419F14E250BEB2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B9F7918E105ADEBF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/St_Pierre_Harbour_01.et",
+      "guid": "B9F7918E105ADEBF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_36B15B9779E73B71",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/St_Pierre.et",
+      "guid": "36B15B9779E73B71",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9AEDA01A5C634245",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Tyrone_MilitaryHospital_01.et",
+      "guid": "9AEDA01A5C634245",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C6ED807F1F93BF49",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Tyrone.et",
+      "guid": "C6ED807F1F93BF49",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1A892B4F46AF88B0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Airport_Hamlet_01.et",
+      "guid": "1A892B4F46AF88B0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_982E218BC87E6C25",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Airport_Military_01.et",
+      "guid": "982E218BC87E6C25",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_17C291FDB26B5ED4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Castle_Ruins_01.et",
+      "guid": "17C291FDB26B5ED4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D53D59958118D36F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Center_East_Hamlet_01.et",
+      "guid": "D53D59958118D36F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E608A8B236CA3044",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Center_East_industrial_01.et",
+      "guid": "E608A8B236CA3044",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E6701BC4D9B4C752",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Center_North_Hamlet_02.et",
+      "guid": "E6701BC4D9B4C752",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3ED87205A03DD90E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Center_North_Hamlet_04.et",
+      "guid": "3ED87205A03DD90E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8BF6B0099E8E520D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Center_North_LandFill_01.et",
+      "guid": "8BF6B0099E8E520D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A5DADE82B97A0076",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Center_South_Hamlet_09.et",
+      "guid": "A5DADE82B97A0076",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_701095BBDE88E334",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Center_South_Hamlet_11.et",
+      "guid": "701095BBDE88E334",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1393E0690C91FED3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Center_West_Hamlet_6.et",
+      "guid": "1393E0690C91FED3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BAF39BE4BE7D7F48",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Chotain_Farm_01.et",
+      "guid": "BAF39BE4BE7D7F48",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5BB1103795166442",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Chotain_Military_01.et",
+      "guid": "5BB1103795166442",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B30DFEDED620CD90",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Entre_Deux_Hamlet_01.et",
+      "guid": "B30DFEDED620CD90",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B40E827D2AC8F210",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Erquy_Harbor_01.et",
+      "guid": "B40E827D2AC8F210",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_81F2BD2F9A7DB5E4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Gravette_Military_01.et",
+      "guid": "81F2BD2F9A7DB5E4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5C1EF16121B66C61",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Lakeside_hotel_Hamlet_07.et",
+      "guid": "5C1EF16121B66C61",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9E18ED2A3FE8D57B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Lamentin_Harbor_01.et",
+      "guid": "9E18ED2A3FE8D57B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_720058BCB2AFB471",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/LeMoule_Farm_01.et",
+      "guid": "720058BCB2AFB471",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C6F2E9AE8E1B709F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Levie_Base_01.et",
+      "guid": "C6F2E9AE8E1B709F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B76F3F6A579A9E7B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Meaux_Harbor_01.et",
+      "guid": "B76F3F6A579A9E7B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B4275B8E24A524A8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Morton_Harbor_01.et",
+      "guid": "B4275B8E24A524A8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9C29A1235664E77A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Mountains_East_Hamlet_13.et",
+      "guid": "9C29A1235664E77A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_485F978E315C6097",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Moutains_East_quarry_01.et",
+      "guid": "485F978E315C6097",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6D667A20C58BB8B7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/MTA_ShootingRange_01.et",
+      "guid": "6D667A20C58BB8B7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_81988134AF46BD37",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/North_East_Hamlet_03.et",
+      "guid": "81988134AF46BD37",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_10977B8D2446D24D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/North_East_industrial_01.et",
+      "guid": "10977B8D2446D24D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_570ED1C4A0F16660",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/North_East_PowerPlant_01.et",
+      "guid": "570ED1C4A0F16660",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_70D370E32E04F6AB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/Regina_sawmill_01.et",
+      "guid": "70D370E32E04F6AB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_803B51D259973069",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/St_Philippe_Factory_01.et",
+      "guid": "803B51D259973069",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_37CFEB35F980713B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/St_Pierre_St_Pierre_01.et",
+      "guid": "37CFEB35F980713B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CD12752159DAB64C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/StPhilippe_Harbor_01.et",
+      "guid": "CD12752159DAB64C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_86F5BCC318699D5F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/StPhilippe_StPhilippe_01.et",
+      "guid": "86F5BCC318699D5F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_164B1BAD305C7154",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Urban/StPierre_Harbor_01.et",
+      "guid": "164B1BAD305C7154",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E62DB7CA39098402",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Vernon.et",
+      "guid": "E62DB7CA39098402",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8FB5DDBBFA822EB6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/Locations/Eden/Villeneuf.et",
+      "guid": "8FB5DDBBFA822EB6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_88ABCDC0EEC969DF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/World/PreviewWorld/MapCompassWorld.et",
+      "guid": "88ABCDC0EEC969DF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    }
+  ]
+}

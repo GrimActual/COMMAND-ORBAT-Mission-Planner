@@ -1,9 +1,0 @@
-{
-  "date": "2026-10-13",
-  "focusedTests": 8,
-  "focusedTestsPassed": 8,
-  "desktopWorkflow": "PASS: new preflight findings/export, safe name display, isolation, no-op/edit/undo/redo freshness, unapplied JSON, Settings/Sarge and bounded rendering",
-  "unrelatedGatesRepeated": false,
-  "prototypeCreated": false,
-  "published": false
-}

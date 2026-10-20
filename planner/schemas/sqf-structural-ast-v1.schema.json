@@ -1,0 +1,382 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "version",
+    "executable",
+    "syntaxOnly",
+    "offsetEncoding",
+    "requiredReview",
+    "files",
+    "nodes",
+    "findings",
+    "summary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "command-sqf-structural-ast"
+    },
+    "version": {
+      "const": 1
+    },
+    "executable": {
+      "const": false
+    },
+    "syntaxOnly": {
+      "const": true
+    },
+    "offsetEncoding": {
+      "const": "utf16-code-units"
+    },
+    "requiredReview": {
+      "const": [
+        "expression-types-and-effects",
+        "variable-scopes-and-bindings",
+        "scheduling-and-locality",
+        "native-adapter-semantics",
+        "control-flow-lowering"
+      ]
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 64,
+      "items": {
+        "$ref": "#/$defs/file"
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10000,
+      "items": {
+        "$ref": "#/$defs/node"
+      }
+    },
+    "findings": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 1000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "nodeId",
+          "source",
+          "message"
+        ],
+        "properties": {
+          "code": {
+            "enum": [
+              "UNSUPPORTED_CONTROL_SYNTAX",
+              "PREPROCESSING_UNRESOLVED",
+              "CONFIGURATION_ONLY"
+            ]
+          },
+          "nodeId": {
+            "type": "string",
+            "pattern": "^node-[0-9]+$",
+            "maxLength": 40
+          },
+          "source": {
+            "$ref": "#/$defs/source"
+          },
+          "message": {
+            "type": "string",
+            "maxLength": 256
+          }
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "files",
+        "nodes",
+        "blocks",
+        "conditionals",
+        "loops",
+        "codeAssignments",
+        "opaqueStatements",
+        "unsupported",
+        "findings",
+        "executionReady"
+      ],
+      "properties": {
+        "files": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "nodes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "blocks": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "conditionals": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "loops": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "codeAssignments": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "opaqueStatements": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "unsupported": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "findings": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "executionReady": {
+          "const": 0
+        }
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "file",
+        "line",
+        "column",
+        "start",
+        "end"
+      ],
+      "properties": {
+        "file": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 262145
+        },
+        "column": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 262145
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 262144
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 262144
+        }
+      }
+    },
+    "part": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "source",
+        "preview",
+        "semanticStatus"
+      ],
+      "properties": {
+        "role": {
+          "enum": [
+            "condition",
+            "counter",
+            "from",
+            "to",
+            "step",
+            "iterable",
+            "target",
+            "expression"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "preview": {
+          "type": "string",
+          "maxLength": 160
+        },
+        "semanticStatus": {
+          "const": "unresolved"
+        }
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "source",
+        "preview",
+        "parts",
+        "children",
+        "blockers"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^node-[0-9]+$",
+          "maxLength": 40
+        },
+        "kind": {
+          "enum": [
+            "Program",
+            "Block",
+            "If",
+            "ExitWith",
+            "While",
+            "ForRange",
+            "ForCode",
+            "ForEach",
+            "CodeAssignment",
+            "Assignment",
+            "CodeLiteral",
+            "OpaqueStatement",
+            "Unsupported"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "preview": {
+          "type": "string",
+          "maxLength": 160
+        },
+        "parts": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 6,
+          "items": {
+            "$ref": "#/$defs/part"
+          }
+        },
+        "children": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 10000,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "role",
+              "nodeId"
+            ],
+            "properties": {
+              "role": {
+                "enum": [
+                  "statement",
+                  "then",
+                  "else",
+                  "body",
+                  "condition",
+                  "init",
+                  "update",
+                  "code",
+                  "value",
+                  "nested-code"
+                ]
+              },
+              "nodeId": {
+                "type": "string",
+                "pattern": "^node-[0-9]+$",
+                "maxLength": 40
+              }
+            }
+          }
+        },
+        "blockers": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "string",
+            "maxLength": 80
+          }
+        }
+      }
+    },
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "textBytes",
+        "textLength",
+        "tokenCount",
+        "sha256",
+        "hashScope",
+        "mode",
+        "rootId"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "textBytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 262144
+        },
+        "textLength": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 262144
+        },
+        "tokenCount": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50000
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "hashScope": {
+          "const": "decoded-utf8-text"
+        },
+        "mode": {
+          "enum": [
+            "structural-ast",
+            "inventory-only"
+          ]
+        },
+        "rootId": {
+          "type": "string",
+          "pattern": "^node-[0-9]+$",
+          "maxLength": 40
+        }
+      }
+    }
+  }
+}

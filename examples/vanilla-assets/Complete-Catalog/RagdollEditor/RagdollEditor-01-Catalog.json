@@ -1,0 +1,29 @@
+{
+  "assets": [
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-1B38709A03D7D29F",
+      "name": "RagdollTest — RagdollEditor",
+      "category": "Vanilla / RagdollEditor",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_1B38709A03D7D29F",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/RagdollEditor/RagdollTest.et",
+        "guid": "1B38709A03D7D29F",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    }
+  ]
+}

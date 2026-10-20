@@ -1,0 +1,1779 @@
+{
+  "assets": [
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-E6AEC014D162D686",
+      "name": "Ural4320 FIA command — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_E6AEC014D162D686",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_FIA_command.et",
+        "guid": "E6AEC014D162D686",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-DC1C2350CF665F9E",
+      "name": "Ural4320 FIA tanker — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_DC1C2350CF665F9E",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_FIA_tanker.et",
+        "guid": "DC1C2350CF665F9E",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-6C9E196676394DE2",
+      "name": "Ural4320 FIA transport covered closed — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_6C9E196676394DE2",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_FIA_transport_covered_closed.et",
+        "guid": "6C9E196676394DE2",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-B70E6D12A8EC2410",
+      "name": "Ural4320 FIA transport covered — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_B70E6D12A8EC2410",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_FIA_transport_covered.et",
+        "guid": "B70E6D12A8EC2410",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-16E32C3ABEAFC2C6",
+      "name": "Ural4320 FIA transport — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_16E32C3ABEAFC2C6",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_FIA_transport.et",
+        "guid": "16E32C3ABEAFC2C6",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-34178E3A92776DA6",
+      "name": "Ural4320 repair FIA — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_34178E3A92776DA6",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_repair_FIA.et",
+        "guid": "34178E3A92776DA6",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-A5647958579A4149",
+      "name": "Ural4320 repair — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_A5647958579A4149",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_repair.et",
+        "guid": "A5647958579A4149",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-33BC05D02006BE44",
+      "name": "Ural4320 tanker CIV base — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_33BC05D02006BE44",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tanker_CIV_base.et",
+        "guid": "33BC05D02006BE44",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-4A59DAEFE645E8A0",
+      "name": "Ural4320 tanker CIV orange — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_4A59DAEFE645E8A0",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tanker_CIV_orange.et",
+        "guid": "4A59DAEFE645E8A0",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-B3C8EC88E7782C78",
+      "name": "Ural4320 tanker CIV pohona — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_B3C8EC88E7782C78",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tanker_CIV_pohona.et",
+        "guid": "B3C8EC88E7782C78",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-DCAF0585D17B917A",
+      "name": "Ural4320 tanker CIV randomized — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_DCAF0585D17B917A",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tanker_CIV_randomized.et",
+        "guid": "DCAF0585D17B917A",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-4C81D7ED8F8C0D87",
+      "name": "Ural4320 tanker — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_4C81D7ED8F8C0D87",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tanker.et",
+        "guid": "4C81D7ED8F8C0D87",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-A2E23CB8DDCFE82E",
+      "name": "Ural4320 transport CIV base — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_A2E23CB8DDCFE82E",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_CIV_base.et",
+        "guid": "A2E23CB8DDCFE82E",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-1449105FD658EDFB",
+      "name": "Ural4320 transport CIV forest — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_1449105FD658EDFB",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_CIV_forest.et",
+        "guid": "1449105FD658EDFB",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-EEAC3A94929A2B55",
+      "name": "Ural4320 transport CIV randomized — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_EEAC3A94929A2B55",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_CIV_randomized.et",
+        "guid": "EEAC3A94929A2B55",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-4BFB3CA9E83385D2",
+      "name": "Ural4320 transport covered CIV base — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_4BFB3CA9E83385D2",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_covered_CIV_base.et",
+        "guid": "4BFB3CA9E83385D2",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-F66EAD0D2016B6BA",
+      "name": "Ural4320 transport covered CIV blue — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_F66EAD0D2016B6BA",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_covered_CIV_blue.et",
+        "guid": "F66EAD0D2016B6BA",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-FB219B49A448A8EA",
+      "name": "Ural4320 transport covered CIV JZD — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_FB219B49A448A8EA",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_covered_CIV_JZD.et",
+        "guid": "FB219B49A448A8EA",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-66241E0CEDFCEDFF",
+      "name": "Ural4320 transport covered CIV orange — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_66241E0CEDFCEDFF",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_covered_CIV_orange.et",
+        "guid": "66241E0CEDFCEDFF",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-9DD4FD3527CB46C8",
+      "name": "Ural4320 transport covered closed — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_9DD4FD3527CB46C8",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_covered_closed.et",
+        "guid": "9DD4FD3527CB46C8",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-D9B91FAB817A6033",
+      "name": "Ural4320 transport covered — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_D9B91FAB817A6033",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_covered.et",
+        "guid": "D9B91FAB817A6033",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-B845B8B82C76BA68",
+      "name": "Ural4320 transport filled — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_B845B8B82C76BA68",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_filled.et",
+        "guid": "B845B8B82C76BA68",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-16C1F16C9B053801",
+      "name": "Ural4320 transport — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_16C1F16C9B053801",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport.et",
+        "guid": "16C1F16C9B053801",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-4597626AF36C0858",
+      "name": "Ural4320 — Ural4320",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_4597626AF36C0858",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/Ural4320.et",
+        "guid": "4597626AF36C0858",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-DBF3ACB6409531B2",
+      "name": "Ural4320 canvas CIV JZD — CIV",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_DBF3ACB6409531B2",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/CIV/Ural4320_canvas_CIV_JZD.et",
+        "guid": "DBF3ACB6409531B2",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-28ADC26474652E5D",
+      "name": "Ural4320 cargo canvas CIV JZD — CIV",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_28ADC26474652E5D",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/CIV/Ural4320_cargo_canvas_CIV_JZD.et",
+        "guid": "28ADC26474652E5D",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-B89A0EFDB0A9F2A3",
+      "name": "Ural4320 cargo canvas CIV Orange — CIV",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_B89A0EFDB0A9F2A3",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/CIV/Ural4320_cargo_canvas_CIV_Orange.et",
+        "guid": "B89A0EFDB0A9F2A3",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-94B79579DD7722B6",
+      "name": "Ural4320 cargo CIV Forest — CIV",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_94B79579DD7722B6",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/CIV/Ural4320_cargo_CIV_Forest.et",
+        "guid": "94B79579DD7722B6",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-380E9A5066154EE2",
+      "name": "Ural4320 fuel tank CIV fuel Orange — CIV",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_380E9A5066154EE2",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/CIV/Ural4320_fuel_tank_CIV_fuel_Orange.et",
+        "guid": "380E9A5066154EE2",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-C19FAC3767288A3A",
+      "name": "Ural4320 fuel tank CIV fuel Pohona — CIV",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_C19FAC3767288A3A",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/CIV/Ural4320_fuel_tank_CIV_fuel_Pohona.et",
+        "guid": "C19FAC3767288A3A",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-4969F622116CA561",
+      "name": "Ural4320 FIA canvas closed — FIA",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_4969F622116CA561",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/FIA/Ural4320_FIA_canvas_closed.et",
+        "guid": "4969F622116CA561",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-2B47747D85EE91A6",
+      "name": "Ural4320 FIA canvas — FIA",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_2B47747D85EE91A6",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/FIA/Ural4320_FIA_canvas.et",
+        "guid": "2B47747D85EE91A6",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-1BB2E73D40A7EE30",
+      "name": "Ural4320 FIA cargo canvas closed — FIA",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_1BB2E73D40A7EE30",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/FIA/Ural4320_FIA_cargo_canvas_closed.et",
+        "guid": "1BB2E73D40A7EE30",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-12D7EB72A88C923F",
+      "name": "Ural4320 FIA cargo canvas — FIA",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_12D7EB72A88C923F",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/FIA/Ural4320_FIA_cargo_canvas.et",
+        "guid": "12D7EB72A88C923F",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-655D7F2D222AACA8",
+      "name": "Ural4320 FIA cargo — FIA",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_655D7F2D222AACA8",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/FIA/Ural4320_FIA_cargo.et",
+        "guid": "655D7F2D222AACA8",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-DA7286CAAB5338C5",
+      "name": "Ural4320 FIA CoatOfArms decal — FIA",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_DA7286CAAB5338C5",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/FIA/Ural4320_FIA_CoatOfArms_decal.et",
+        "guid": "DA7286CAAB5338C5",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-37B2DC563DBE0711",
+      "name": "Ural4320 FIA combox spawn — FIA",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_37B2DC563DBE0711",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/FIA/Ural4320_FIA_combox_spawn.et",
+        "guid": "37B2DC563DBE0711",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-392FBE246E9CF91C",
+      "name": "Ural4320 FIA combox — FIA",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_392FBE246E9CF91C",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/FIA/Ural4320_FIA_combox.et",
+        "guid": "392FBE246E9CF91C",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-262E8E2506FF681D",
+      "name": "Ural4320 FIA fuel tank — FIA",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_262E8E2506FF681D",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/FIA/Ural4320_FIA_fuel_tank.et",
+        "guid": "262E8E2506FF681D",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-2EBDDB5751610937",
+      "name": "Ural4320 logo CIV forest — Logos",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_2EBDDB5751610937",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Logos/Ural4320_logo_CIV_forest.et",
+        "guid": "2EBDDB5751610937",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-BDDD05022788C1F3",
+      "name": "Ural4320 logo CIV fuel orange — Logos",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_BDDD05022788C1F3",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Logos/Ural4320_logo_CIV_fuel_orange.et",
+        "guid": "BDDD05022788C1F3",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-0D20B6BBA4AF1A6C",
+      "name": "Ural4320 logo CIV fuel Pohona — Logos",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_0D20B6BBA4AF1A6C",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Logos/Ural4320_logo_CIV_fuel_Pohona.et",
+        "guid": "0D20B6BBA4AF1A6C",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-D1DC86DEDDBC8706",
+      "name": "Ural4320 logo CIV JZD — Logos",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_D1DC86DEDDBC8706",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Logos/Ural4320_logo_CIV_JZD.et",
+        "guid": "D1DC86DEDDBC8706",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-79605025C5280E7B",
+      "name": "Ural 4320 fuel nozzle — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_79605025C5280E7B",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural_4320_fuel_nozzle.et",
+        "guid": "79605025C5280E7B",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-03FFD2B45BEE8A17",
+      "name": "Ural4320 ammo box — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_03FFD2B45BEE8A17",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_ammo_box.et",
+        "guid": "03FFD2B45BEE8A17",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-A0AB9EDD3932367D",
+      "name": "Ural4320 ammo decal — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_A0AB9EDD3932367D",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_ammo_decal.et",
+        "guid": "A0AB9EDD3932367D",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-2C01215170B0FFE0",
+      "name": "Ural4320 arsenal box — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_2C01215170B0FFE0",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_arsenal_box.et",
+        "guid": "2C01215170B0FFE0",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-96C3B0980A16D7E3",
+      "name": "Ural4320 canvas closed — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_96C3B0980A16D7E3",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_canvas_closed.et",
+        "guid": "96C3B0980A16D7E3",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-5D1E10B35D37BA44",
+      "name": "Ural4320 canvas — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_5D1E10B35D37BA44",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_canvas.et",
+        "guid": "5D1E10B35D37BA44",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-159F48EDCF903D1F",
+      "name": "Ural4320 cargo canvas closed — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_159F48EDCF903D1F",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_cargo_canvas_closed.et",
+        "guid": "159F48EDCF903D1F",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-5F533EBE61514610",
+      "name": "Ural4320 cargo canvas — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_5F533EBE61514610",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_cargo_canvas.et",
+        "guid": "5F533EBE61514610",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-936A287007DCE2EE",
+      "name": "Ural4320 cargo filled — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_936A287007DCE2EE",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_cargo_filled.et",
+        "guid": "936A287007DCE2EE",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-58B3FB7F102A8B1B",
+      "name": "Ural4320 cargo — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_58B3FB7F102A8B1B",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_cargo.et",
+        "guid": "58B3FB7F102A8B1B",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-21FD6DEA2F771C1C",
+      "name": "Ural4320 combox spawn — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_21FD6DEA2F771C1C",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_combox_spawn.et",
+        "guid": "21FD6DEA2F771C1C",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-D9C7B82F567BA500",
+      "name": "Ural4320 combox — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_D9C7B82F567BA500",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_combox.et",
+        "guid": "D9C7B82F567BA500",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-9328C24D87FCFF67",
+      "name": "Ural4320 engineer box filled — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_9328C24D87FCFF67",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_engineer_box_filled.et",
+        "guid": "9328C24D87FCFF67",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-11037F1D2CCE0ED7",
+      "name": "Ural4320 engineer box — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_11037F1D2CCE0ED7",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_engineer_box.et",
+        "guid": "11037F1D2CCE0ED7",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-4E696814A573AE51",
+      "name": "Ural4320 enginner decal — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_4E696814A573AE51",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_enginner_decal.et",
+        "guid": "4E696814A573AE51",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-24ADE3A278D243EB",
+      "name": "Ural4320 FIA ammo box — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_24ADE3A278D243EB",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_FIA_ammo_box.et",
+        "guid": "24ADE3A278D243EB",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-AE98BF4439787E34",
+      "name": "Ural4320 FIA arsenal box — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_AE98BF4439787E34",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_FIA_arsenal_box.et",
+        "guid": "AE98BF4439787E34",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-FB864C43CAA9C33C",
+      "name": "Ural4320 FIA engineer box — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_FB864C43CAA9C33C",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_FIA_engineer_box.et",
+        "guid": "FB864C43CAA9C33C",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-2096570A3B9E831E",
+      "name": "Ural4320 FIA repair box — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_2096570A3B9E831E",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_FIA_repair_box.et",
+        "guid": "2096570A3B9E831E",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-D946310D0CE44123",
+      "name": "Ural4320 fuel tank — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_D946310D0CE44123",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_fuel_tank.et",
+        "guid": "D946310D0CE44123",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-2F088A1CDD3FB2F1",
+      "name": "Ural4320 repair box — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_2F088A1CDD3FB2F1",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_repair_box.et",
+        "guid": "2F088A1CDD3FB2F1",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-D58259D66FC91651",
+      "name": "Ural4320 repair decal — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_D58259D66FC91651",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_repair_decal.et",
+        "guid": "D58259D66FC91651",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-D6AC0E5559BCAC83",
+      "name": "Ural4320 shadow — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_D6AC0E5559BCAC83",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_shadow.et",
+        "guid": "D6AC0E5559BCAC83",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-0884AC9E538EF729",
+      "name": "Ural4320 sparetire holder — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_0884AC9E538EF729",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_sparetire_holder.et",
+        "guid": "0884AC9E538EF729",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-C3422D57A8412786",
+      "name": "Ural4320 WheelDestructible — VehParts",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_C3422D57A8412786",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_WheelDestructible.et",
+        "guid": "C3422D57A8412786",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-440969FDDCC8D23D",
+      "name": "Ural4320 wheel base — Wheels",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_440969FDDCC8D23D",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Wheels/Ural4320_wheel_base.et",
+        "guid": "440969FDDCC8D23D",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-69FDF3B29064F40F",
+      "name": "Ural4320 wheel left 01 — Wheels",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_69FDF3B29064F40F",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Wheels/Ural4320_wheel_left_01.et",
+        "guid": "69FDF3B29064F40F",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-05A9C7522CA07B21",
+      "name": "Ural4320 wheel right 01 — Wheels",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_05A9C7522CA07B21",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Wheels/Ural4320_wheel_right_01.et",
+        "guid": "05A9C7522CA07B21",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "nativeQueryCompleted": true,
+  "nativeQueryCount": 19438,
+  "uniqueGuids": 19438,
+  "uniquePaths": 19438,
+  "completeCollectionCount": 45,
+  "operationalAssets": 2721,
+  "everyCollectionWithinExistingImporterBounds": true,
+  "exactAddonAndGuidProvenance": true,
+  "resourceSchemaAndCatalogValid": true,
+  "knownRiflemanGMContractValid": true,
+  "savedMissionUnchanged": true,
+  "gameFilesModified": false,
+  "worldLoaded": false,
+  "nativePrefabsLoadedByThisQuery": 0,
+  "nativeSpawnTestsPerformed": 0,
+  "buildAndValidationMs": 3507.0652
+}

@@ -1,0 +1,31 @@
+{
+  "mapping": "command-scheduled-pure-calls-v1",
+  "moduleSHA256": {
+    "sqf-typed-functions.js": "a954ad1eaf02995fa6b35321b597150b1571c1141b1c1beddc1d2b2462ce50b5",
+    "sqf-function-sources.js": "9ba554954c6a881e4ced406801bf0377d8a271375e988a8e6a9680e59f8275cf",
+    "sqf-function-registrations.js": "d0d2763bac133b48a663d4a20931f99d6fa1a7eda81b4499e6f04aa51d1722b2",
+    "sqf-typed-call-expressions.js": "9e48ec598c083080a34461a76b2573804d14a0037a1c85bb830b34fe0f922be2",
+    "sqf-boolean-locals.js": "a5df995159fe92ba5d9eff9f6e4a665ce899960518d09dda0c526716823a8a38",
+    "sqf-expression-ast.js": "f56fee7869523ae4ae72b9c0eb7382c7777a1a23322c66987a028a2912b7530d",
+    "sqf-structural-ast.js": "4e10668a148b4b0b4eaefe346481799d557bbc1e9e1ce3bd36a4dc698d139a47",
+    "sqf-migration.js": "3e34ffe74cfb27f718b478e2ff298dcf997130c1fc84422ba1b042c6147274f5",
+    "sqf-source-dependencies.js": "b24fdc5ea804bc1911f26cd01a3969d6f7ddad4c0f165a0355927ba7c69c1478",
+    "sqf-scheduled-functions.js": "61efb0fbb90dd504b0d12610d048874f7c7364cf323841ffa4ed3da18d9b30bd",
+    "native-adapters/COMMAND_MigrationJob.c": "4ba909a39160b8ec4b488bab84980b2a7f5df7ac8c3a250740621bd096973bde"
+  },
+  "fixtureSHA256": "9134442a8a2d67532fec88f5aa88f078c1d858304475b9dda0efef4077be9f53",
+  "harnessSHA256": "ade7299e59c926e7621789fc7013cbaa0146de4c8d2f0b64a48b5c2670b84d38",
+  "compiled": true,
+  "executed": true,
+  "failures": 0,
+  "cases": 24,
+  "engineVersion": "1.8.0.13",
+  "scope": "Owned generated delay/readiness jobs plus adapter lifecycle checks: restart, stale generation, cancellation isolation, bounded polling, readiness transition, owner deletion, invalid policy and no early delay completion.",
+  "projectPathsVerified": true,
+  "sourceSQFExecuted": false,
+  "sourceRuntimeEquivalent": false,
+  "gameClientLaunched": false,
+  "publicTunnel": false,
+  "syntheticOwners": 2,
+  "processStopped": true
+}

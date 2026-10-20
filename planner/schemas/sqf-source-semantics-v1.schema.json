@@ -1,0 +1,1423 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://command-planner.invalid/schemas/sqf-source-semantics-v1.schema.json",
+  "title": "COMMAND non-executable source-shape and potential-effect review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "version",
+    "executable",
+    "evaluationPerformed",
+    "targetTypesResolved",
+    "offsetEncoding",
+    "coverage",
+    "fullStatementEffectsAnalyzed",
+    "files",
+    "sourceContextFindings",
+    "entries",
+    "findings",
+    "requiredReview",
+    "summary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "command-sqf-source-semantics"
+    },
+    "version": {
+      "const": 1
+    },
+    "executable": {
+      "const": false
+    },
+    "evaluationPerformed": {
+      "const": false
+    },
+    "targetTypesResolved": {
+      "const": false
+    },
+    "offsetEncoding": {
+      "const": "utf16-code-units"
+    },
+    "coverage": {
+      "const": "selected-structural-expression-parts-only"
+    },
+    "fullStatementEffectsAnalyzed": {
+      "const": false
+    },
+    "files": {
+      "type": "array",
+      "maxItems": 64,
+      "items": {
+        "$ref": "#/$defs/file"
+      }
+    },
+    "sourceContextFindings": {
+      "type": "array",
+      "maxItems": 2000,
+      "items": {
+        "$ref": "#/$defs/context"
+      }
+    },
+    "entries": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    },
+    "findings": {
+      "type": "array",
+      "maxItems": 5000,
+      "items": {
+        "$ref": "#/$defs/finding"
+      }
+    },
+    "requiredReview": {
+      "const": [
+        "source-preprocessing-and-profile-version",
+        "flow-sensitive-types-and-definite-values",
+        "source-version-and-runtime-domain",
+        "callback-return-scheduling-and-locality",
+        "full-statement-and-control-flow-effects",
+        "target-resources-and-native-adapters"
+      ]
+    },
+    "summary": {
+      "$ref": "#/$defs/summary"
+    }
+  },
+  "$defs": {
+    "span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "file",
+        "line",
+        "column",
+        "start",
+        "end"
+      ],
+      "properties": {
+        "file": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 262145
+        },
+        "column": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 262145
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 262144
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 262144
+        }
+      }
+    },
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "textBytes",
+        "textLength",
+        "tokenCount",
+        "sha256",
+        "hashScope",
+        "mode",
+        "rootId"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "textBytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 262144
+        },
+        "textLength": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 262144
+        },
+        "tokenCount": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 50000
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "hashScope": {
+          "const": "decoded-utf8-text"
+        },
+        "mode": {
+          "enum": [
+            "structural-ast",
+            "inventory-only"
+          ]
+        },
+        "rootId": {
+          "type": "string",
+          "pattern": "^node-[0-9]+$",
+          "maxLength": 40
+        }
+      }
+    },
+    "binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "candidateBindingIds",
+        "bindingResolved"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "unresolved-source-context",
+            "unresolved-dynamic-scope",
+            "unresolved-initializer-binding",
+            "syntactic-declaration-candidate",
+            "ambiguous-redeclaration",
+            "unresolved-code-context"
+          ]
+        },
+        "candidateBindingIds": {
+          "type": "array",
+          "maxItems": 20000,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^binding-[0-9]+$",
+            "maxLength": 256
+          }
+        },
+        "bindingResolved": {
+          "const": false
+        }
+      }
+    },
+    "node": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "kind",
+            "source",
+            "shape",
+            "shapeEvidence",
+            "status",
+            "operands",
+            "targetType",
+            "callResolved",
+            "potentialEffects",
+            "obligations",
+            "executionReady"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^expr-[0-9]+$",
+              "maxLength": 30
+            },
+            "kind": {
+              "const": "Literal"
+            },
+            "source": {
+              "$ref": "#/$defs/span"
+            },
+            "shape": {
+              "enum": [
+                "unknown",
+                "number",
+                "string",
+                "boolean",
+                "code",
+                "array",
+                "object",
+                "nothing",
+                "display",
+                "control",
+                "group",
+                "namespace",
+                "location",
+                "task",
+                "script",
+                "config",
+                "diary-record",
+                "team-member",
+                "side",
+                "structured-text",
+                "hashmap"
+              ]
+            },
+            "shapeEvidence": {
+              "enum": [
+                "unresolved",
+                "literal-syntax",
+                "opaque-code-value",
+                "array-syntax",
+                "derived-source-shape",
+                "documented-return-if-source-call-valid"
+              ]
+            },
+            "status": {
+              "enum": [
+                "shape-only",
+                "compatible-known-shapes",
+                "unresolved-operands",
+                "invalid-known-operands",
+                "blocked-by-invalid-dependency"
+              ]
+            },
+            "operands": {
+              "type": "array",
+              "maxItems": 8192,
+              "items": {
+                "type": "string",
+                "pattern": "^expr-[0-9]+$",
+                "maxLength": 30
+              }
+            },
+            "targetType": {
+              "const": null
+            },
+            "callResolved": {
+              "const": false
+            },
+            "potentialEffects": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "obligations": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "executionReady": {
+              "const": false
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "kind",
+            "source",
+            "shape",
+            "shapeEvidence",
+            "status",
+            "operands",
+            "targetType",
+            "callResolved",
+            "potentialEffects",
+            "obligations",
+            "executionReady",
+            "bindingEvidence"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^expr-[0-9]+$",
+              "maxLength": 30
+            },
+            "kind": {
+              "const": "Symbol"
+            },
+            "source": {
+              "$ref": "#/$defs/span"
+            },
+            "shape": {
+              "enum": [
+                "unknown",
+                "number",
+                "string",
+                "boolean",
+                "code",
+                "array",
+                "object",
+                "nothing",
+                "display",
+                "control",
+                "group",
+                "namespace",
+                "location",
+                "task",
+                "script",
+                "config",
+                "diary-record",
+                "team-member",
+                "side",
+                "structured-text",
+                "hashmap"
+              ]
+            },
+            "shapeEvidence": {
+              "enum": [
+                "unresolved",
+                "literal-syntax",
+                "opaque-code-value",
+                "array-syntax",
+                "derived-source-shape",
+                "documented-return-if-source-call-valid"
+              ]
+            },
+            "status": {
+              "enum": [
+                "shape-only",
+                "compatible-known-shapes",
+                "unresolved-operands",
+                "invalid-known-operands",
+                "blocked-by-invalid-dependency"
+              ]
+            },
+            "operands": {
+              "type": "array",
+              "maxItems": 8192,
+              "items": {
+                "type": "string",
+                "pattern": "^expr-[0-9]+$",
+                "maxLength": 30
+              }
+            },
+            "targetType": {
+              "const": null
+            },
+            "callResolved": {
+              "const": false
+            },
+            "potentialEffects": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "obligations": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "executionReady": {
+              "const": false
+            },
+            "bindingEvidence": {
+              "$ref": "#/$defs/binding"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "kind",
+            "source",
+            "shape",
+            "shapeEvidence",
+            "status",
+            "operands",
+            "targetType",
+            "callResolved",
+            "potentialEffects",
+            "obligations",
+            "executionReady"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^expr-[0-9]+$",
+              "maxLength": 30
+            },
+            "kind": {
+              "const": "CodeValue"
+            },
+            "source": {
+              "$ref": "#/$defs/span"
+            },
+            "shape": {
+              "enum": [
+                "unknown",
+                "number",
+                "string",
+                "boolean",
+                "code",
+                "array",
+                "object",
+                "nothing",
+                "display",
+                "control",
+                "group",
+                "namespace",
+                "location",
+                "task",
+                "script",
+                "config",
+                "diary-record",
+                "team-member",
+                "side",
+                "structured-text",
+                "hashmap"
+              ]
+            },
+            "shapeEvidence": {
+              "enum": [
+                "unresolved",
+                "literal-syntax",
+                "opaque-code-value",
+                "array-syntax",
+                "derived-source-shape",
+                "documented-return-if-source-call-valid"
+              ]
+            },
+            "status": {
+              "enum": [
+                "shape-only",
+                "compatible-known-shapes",
+                "unresolved-operands",
+                "invalid-known-operands",
+                "blocked-by-invalid-dependency"
+              ]
+            },
+            "operands": {
+              "type": "array",
+              "maxItems": 8192,
+              "items": {
+                "type": "string",
+                "pattern": "^expr-[0-9]+$",
+                "maxLength": 30
+              }
+            },
+            "targetType": {
+              "const": null
+            },
+            "callResolved": {
+              "const": false
+            },
+            "potentialEffects": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "obligations": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "executionReady": {
+              "const": false
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "kind",
+            "source",
+            "shape",
+            "shapeEvidence",
+            "status",
+            "operands",
+            "targetType",
+            "callResolved",
+            "potentialEffects",
+            "obligations",
+            "executionReady"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^expr-[0-9]+$",
+              "maxLength": 30
+            },
+            "kind": {
+              "const": "Array"
+            },
+            "source": {
+              "$ref": "#/$defs/span"
+            },
+            "shape": {
+              "enum": [
+                "unknown",
+                "number",
+                "string",
+                "boolean",
+                "code",
+                "array",
+                "object",
+                "nothing",
+                "display",
+                "control",
+                "group",
+                "namespace",
+                "location",
+                "task",
+                "script",
+                "config",
+                "diary-record",
+                "team-member",
+                "side",
+                "structured-text",
+                "hashmap"
+              ]
+            },
+            "shapeEvidence": {
+              "enum": [
+                "unresolved",
+                "literal-syntax",
+                "opaque-code-value",
+                "array-syntax",
+                "derived-source-shape",
+                "documented-return-if-source-call-valid"
+              ]
+            },
+            "status": {
+              "enum": [
+                "shape-only",
+                "compatible-known-shapes",
+                "unresolved-operands",
+                "invalid-known-operands",
+                "blocked-by-invalid-dependency"
+              ]
+            },
+            "operands": {
+              "type": "array",
+              "maxItems": 8192,
+              "items": {
+                "type": "string",
+                "pattern": "^expr-[0-9]+$",
+                "maxLength": 30
+              }
+            },
+            "targetType": {
+              "const": null
+            },
+            "callResolved": {
+              "const": false
+            },
+            "potentialEffects": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "obligations": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "executionReady": {
+              "const": false
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "kind",
+            "source",
+            "shape",
+            "shapeEvidence",
+            "status",
+            "operands",
+            "targetType",
+            "callResolved",
+            "potentialEffects",
+            "obligations",
+            "executionReady"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^expr-[0-9]+$",
+              "maxLength": 30
+            },
+            "kind": {
+              "const": "Group"
+            },
+            "source": {
+              "$ref": "#/$defs/span"
+            },
+            "shape": {
+              "enum": [
+                "unknown",
+                "number",
+                "string",
+                "boolean",
+                "code",
+                "array",
+                "object",
+                "nothing",
+                "display",
+                "control",
+                "group",
+                "namespace",
+                "location",
+                "task",
+                "script",
+                "config",
+                "diary-record",
+                "team-member",
+                "side",
+                "structured-text",
+                "hashmap"
+              ]
+            },
+            "shapeEvidence": {
+              "enum": [
+                "unresolved",
+                "literal-syntax",
+                "opaque-code-value",
+                "array-syntax",
+                "derived-source-shape",
+                "documented-return-if-source-call-valid"
+              ]
+            },
+            "status": {
+              "enum": [
+                "shape-only",
+                "compatible-known-shapes",
+                "unresolved-operands",
+                "invalid-known-operands",
+                "blocked-by-invalid-dependency"
+              ]
+            },
+            "operands": {
+              "type": "array",
+              "maxItems": 8192,
+              "items": {
+                "type": "string",
+                "pattern": "^expr-[0-9]+$",
+                "maxLength": 30
+              }
+            },
+            "targetType": {
+              "const": null
+            },
+            "callResolved": {
+              "const": false
+            },
+            "potentialEffects": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "obligations": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "executionReady": {
+              "const": false
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "kind",
+            "source",
+            "shape",
+            "shapeEvidence",
+            "status",
+            "operands",
+            "targetType",
+            "callResolved",
+            "potentialEffects",
+            "obligations",
+            "executionReady",
+            "operator"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^expr-[0-9]+$",
+              "maxLength": 30
+            },
+            "kind": {
+              "const": "Unary"
+            },
+            "source": {
+              "$ref": "#/$defs/span"
+            },
+            "shape": {
+              "enum": [
+                "unknown",
+                "number",
+                "string",
+                "boolean",
+                "code",
+                "array",
+                "object",
+                "nothing",
+                "display",
+                "control",
+                "group",
+                "namespace",
+                "location",
+                "task",
+                "script",
+                "config",
+                "diary-record",
+                "team-member",
+                "side",
+                "structured-text",
+                "hashmap"
+              ]
+            },
+            "shapeEvidence": {
+              "enum": [
+                "unresolved",
+                "literal-syntax",
+                "opaque-code-value",
+                "array-syntax",
+                "derived-source-shape",
+                "documented-return-if-source-call-valid"
+              ]
+            },
+            "status": {
+              "enum": [
+                "shape-only",
+                "compatible-known-shapes",
+                "unresolved-operands",
+                "invalid-known-operands",
+                "blocked-by-invalid-dependency"
+              ]
+            },
+            "operands": {
+              "type": "array",
+              "maxItems": 8192,
+              "items": {
+                "type": "string",
+                "pattern": "^expr-[0-9]+$",
+                "maxLength": 30
+              }
+            },
+            "targetType": {
+              "const": null
+            },
+            "callResolved": {
+              "const": false
+            },
+            "potentialEffects": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "obligations": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "executionReady": {
+              "const": false
+            },
+            "operator": {
+              "enum": [
+                "+",
+                "-",
+                "!",
+                "not"
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "kind",
+            "source",
+            "shape",
+            "shapeEvidence",
+            "status",
+            "operands",
+            "targetType",
+            "callResolved",
+            "potentialEffects",
+            "obligations",
+            "executionReady",
+            "operator"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^expr-[0-9]+$",
+              "maxLength": 30
+            },
+            "kind": {
+              "const": "Binary"
+            },
+            "source": {
+              "$ref": "#/$defs/span"
+            },
+            "shape": {
+              "enum": [
+                "unknown",
+                "number",
+                "string",
+                "boolean",
+                "code",
+                "array",
+                "object",
+                "nothing",
+                "display",
+                "control",
+                "group",
+                "namespace",
+                "location",
+                "task",
+                "script",
+                "config",
+                "diary-record",
+                "team-member",
+                "side",
+                "structured-text",
+                "hashmap"
+              ]
+            },
+            "shapeEvidence": {
+              "enum": [
+                "unresolved",
+                "literal-syntax",
+                "opaque-code-value",
+                "array-syntax",
+                "derived-source-shape",
+                "documented-return-if-source-call-valid"
+              ]
+            },
+            "status": {
+              "enum": [
+                "shape-only",
+                "compatible-known-shapes",
+                "unresolved-operands",
+                "invalid-known-operands",
+                "blocked-by-invalid-dependency"
+              ]
+            },
+            "operands": {
+              "type": "array",
+              "maxItems": 8192,
+              "items": {
+                "type": "string",
+                "pattern": "^expr-[0-9]+$",
+                "maxLength": 30
+              }
+            },
+            "targetType": {
+              "const": null
+            },
+            "callResolved": {
+              "const": false
+            },
+            "potentialEffects": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "obligations": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "executionReady": {
+              "const": false
+            },
+            "operator": {
+              "enum": [
+                "+",
+                "-",
+                "*",
+                "/",
+                "%",
+                "<",
+                ">",
+                "<=",
+                ">=",
+                "==",
+                "!=",
+                "&&",
+                "and",
+                "||",
+                "or"
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "kind",
+            "source",
+            "shape",
+            "shapeEvidence",
+            "status",
+            "operands",
+            "targetType",
+            "callResolved",
+            "potentialEffects",
+            "obligations",
+            "executionReady",
+            "command",
+            "sourceReference",
+            "declaredReturnShape"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^expr-[0-9]+$",
+              "maxLength": 30
+            },
+            "kind": {
+              "const": "Command"
+            },
+            "source": {
+              "$ref": "#/$defs/span"
+            },
+            "shape": {
+              "enum": [
+                "unknown",
+                "number",
+                "string",
+                "boolean",
+                "code",
+                "array",
+                "object",
+                "nothing",
+                "display",
+                "control",
+                "group",
+                "namespace",
+                "location",
+                "task",
+                "script",
+                "config",
+                "diary-record",
+                "team-member",
+                "side",
+                "structured-text",
+                "hashmap"
+              ]
+            },
+            "shapeEvidence": {
+              "enum": [
+                "unresolved",
+                "literal-syntax",
+                "opaque-code-value",
+                "array-syntax",
+                "derived-source-shape",
+                "documented-return-if-source-call-valid"
+              ]
+            },
+            "status": {
+              "enum": [
+                "shape-only",
+                "compatible-known-shapes",
+                "unresolved-operands",
+                "invalid-known-operands",
+                "blocked-by-invalid-dependency"
+              ]
+            },
+            "operands": {
+              "type": "array",
+              "maxItems": 8192,
+              "items": {
+                "type": "string",
+                "pattern": "^expr-[0-9]+$",
+                "maxLength": 30
+              }
+            },
+            "targetType": {
+              "const": null
+            },
+            "callResolved": {
+              "const": false
+            },
+            "potentialEffects": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "obligations": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "maxLength": 256
+              }
+            },
+            "executionReady": {
+              "const": false
+            },
+            "command": {
+              "type": "string",
+              "maxLength": 60
+            },
+            "sourceReference": {
+              "type": "string",
+              "pattern": "^https://community\\.bohemia\\.net/wiki/",
+              "maxLength": 200
+            },
+            "declaredReturnShape": {
+              "enum": [
+                "unknown",
+                "number",
+                "string",
+                "boolean",
+                "code",
+                "array",
+                "object",
+                "nothing",
+                "display",
+                "control",
+                "group",
+                "namespace",
+                "location",
+                "task",
+                "script",
+                "config",
+                "diary-record",
+                "team-member",
+                "side",
+                "structured-text",
+                "hashmap"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nodeId",
+        "role",
+        "source",
+        "syntaxStatus",
+        "syntaxIssue",
+        "root",
+        "nodes",
+        "potentialEffects",
+        "obligations",
+        "executionReady"
+      ],
+      "properties": {
+        "nodeId": {
+          "type": "string",
+          "pattern": "^node-[0-9]+$",
+          "maxLength": 40
+        },
+        "role": {
+          "enum": [
+            "condition",
+            "expression",
+            "from",
+            "to",
+            "step",
+            "iterable"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/span"
+        },
+        "syntaxStatus": {
+          "enum": [
+            "recognized",
+            "unsupported"
+          ]
+        },
+        "syntaxIssue": {
+          "oneOf": [
+            {
+              "const": null
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "message",
+                "offset"
+              ],
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "maxLength": 256
+                },
+                "offset": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 262144
+                }
+              }
+            }
+          ]
+        },
+        "root": {
+          "oneOf": [
+            {
+              "const": null
+            },
+            {
+              "type": "string",
+              "pattern": "^expr-[0-9]+$",
+              "maxLength": 30
+            }
+          ]
+        },
+        "nodes": {
+          "type": "array",
+          "maxItems": 8192,
+          "items": {
+            "$ref": "#/$defs/node"
+          }
+        },
+        "potentialEffects": {
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "maxLength": 256
+          }
+        },
+        "obligations": {
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "maxLength": 256
+          }
+        },
+        "executionReady": {
+          "const": false
+        }
+      }
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "code",
+        "entryNodeId",
+        "entryRole",
+        "nodeId",
+        "source",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "enum": [
+            "KNOWN_OPERAND_SHAPE_MISMATCH",
+            "UNRESOLVED_OPERAND_SHAPE"
+          ]
+        },
+        "entryNodeId": {
+          "type": "string",
+          "maxLength": 40
+        },
+        "entryRole": {
+          "enum": [
+            "condition",
+            "expression",
+            "from",
+            "to",
+            "step",
+            "iterable"
+          ]
+        },
+        "nodeId": {
+          "type": "string",
+          "maxLength": 30
+        },
+        "source": {
+          "$ref": "#/$defs/span"
+        },
+        "message": {
+          "type": "string",
+          "maxLength": 256
+        }
+      }
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "code",
+        "source",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "enum": [
+            "CODE_CONTEXT_BOUNDARY",
+            "REDECLARATION_REQUIRES_REVIEW",
+            "UNRESOLVED_PRIVATE_DECLARATION",
+            "UNRESOLVED_PARAMS_SOURCE",
+            "UNRESOLVED_PARAMS_DECLARATION",
+            "UNRESOLVED_LOOP_COUNTER",
+            "PREPROCESSING_BINDINGS_UNRESOLVED",
+            "DYNAMIC_SCOPE_OPERATION",
+            "UNRESOLVED_DECLARATION_CONTEXT"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/span"
+        },
+        "message": {
+          "type": "string",
+          "maxLength": 256
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "entries",
+        "nodes",
+        "commands",
+        "compatibleShapeChecks",
+        "unresolvedShapeChecks",
+        "invalidShapeChecks",
+        "invalidDependencyNodes",
+        "callbackObligations",
+        "executionReady"
+      ],
+      "properties": {
+        "entries": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20000
+        },
+        "nodes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20000
+        },
+        "commands": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20000
+        },
+        "compatibleShapeChecks": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20000
+        },
+        "unresolvedShapeChecks": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20000
+        },
+        "invalidShapeChecks": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20000
+        },
+        "invalidDependencyNodes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20000
+        },
+        "callbackObligations": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20000
+        },
+        "executionReady": {
+          "const": 0
+        }
+      }
+    }
+  }
+}

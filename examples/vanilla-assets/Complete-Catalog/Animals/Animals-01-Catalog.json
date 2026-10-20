@@ -1,0 +1,429 @@
+{
+  "assets": [
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-8C4C49644DE0A652",
+      "name": "Apis All — Apis",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_8C4C49644DE0A652",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Apis/Apis_All.et",
+        "guid": "8C4C49644DE0A652",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-B6B4DD03DE9C0B3F",
+      "name": "Apis One — Apis",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_B6B4DD03DE9C0B3F",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Apis/Apis_One.et",
+        "guid": "B6B4DD03DE9C0B3F",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-57D21AE8CE7BF626",
+      "name": "BirdFlock Base — Birds",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_57D21AE8CE7BF626",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Birds/BirdFlock_Base.et",
+        "guid": "57D21AE8CE7BF626",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-BF8A3171E5AF74E7",
+      "name": "BirdFlock DomesticPigeon — Columba_livia_domestica",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_BF8A3171E5AF74E7",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Birds/Columba_livia_domestica/BirdFlock_DomesticPigeon.et",
+        "guid": "BF8A3171E5AF74E7",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-8C3D603E2FE1DF50",
+      "name": "BirdFlock PigeonBase — Columba_livia_domestica",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_8C3D603E2FE1DF50",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Birds/Columba_livia_domestica/BirdFlock_PigeonBase.et",
+        "guid": "8C3D603E2FE1DF50",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-0D55D10CD196EA77",
+      "name": "BirdFlock WoodPigeon — Columba_livia_domestica",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_0D55D10CD196EA77",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Birds/Columba_livia_domestica/BirdFlock_WoodPigeon.et",
+        "guid": "0D55D10CD196EA77",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-93DE9B456D718A11",
+      "name": "Columba livia domestica — Columba_livia_domestica",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_93DE9B456D718A11",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Birds/Columba_livia_domestica/Columba_livia_domestica.et",
+        "guid": "93DE9B456D718A11",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-94B5DB3BE7F2BAEF",
+      "name": "Columba palumbus — Columba_livia_domestica",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_94B5DB3BE7F2BAEF",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Birds/Columba_livia_domestica/Columba_palumbus.et",
+        "guid": "94B5DB3BE7F2BAEF",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-EB419793F72FCE41",
+      "name": "BirdFlock Seagull — Larus_argentatus",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_EB419793F72FCE41",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Birds/Larus_argentatus/BirdFlock_Seagull.et",
+        "guid": "EB419793F72FCE41",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-F28B593A67F8D1B9",
+      "name": "Larus argentatus — Larus_argentatus",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_F28B593A67F8D1B9",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Birds/Larus_argentatus/Larus_argentatus.et",
+        "guid": "F28B593A67F8D1B9",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-A20FFFC8374C427E",
+      "name": "SplineBirdMovement — MovementSplines",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_A20FFFC8374C427E",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Birds/MovementSplines/SplineBirdMovement.et",
+        "guid": "A20FFFC8374C427E",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-07EB0961C564EBAC",
+      "name": "SplineBirdMovement2 — MovementSplines",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_07EB0961C564EBAC",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Birds/MovementSplines/SplineBirdMovement2.et",
+        "guid": "07EB0961C564EBAC",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-E2774598C9817CC7",
+      "name": "SplineBirdMovement3 — MovementSplines",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_E2774598C9817CC7",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Birds/MovementSplines/SplineBirdMovement3.et",
+        "guid": "E2774598C9817CC7",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-DF4360A0BCEDF5F0",
+      "name": "SplineBirdMovement4 — MovementSplines",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_DF4360A0BCEDF5F0",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Birds/MovementSplines/SplineBirdMovement4.et",
+        "guid": "DF4360A0BCEDF5F0",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-3ADF2C59B008629B",
+      "name": "SplineBirdMovement5 — MovementSplines",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_3ADF2C59B008629B",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Birds/MovementSplines/SplineBirdMovement5.et",
+        "guid": "3ADF2C59B008629B",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-6216C4D6E2CECC7D",
+      "name": "TestCircle — MovementSplines",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_6216C4D6E2CECC7D",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Birds/MovementSplines/TestCircle.et",
+        "guid": "6216C4D6E2CECC7D",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-4C462653316A67B7",
+      "name": "TestLoop8 — MovementSplines",
+      "category": "Vanilla / Animals",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_4C462653316A67B7",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Animals/Birds/MovementSplines/TestLoop8.et",
+        "guid": "4C462653316A67B7",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    }
+  ]
+}

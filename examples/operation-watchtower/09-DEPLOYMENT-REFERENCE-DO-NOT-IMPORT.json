@@ -1,0 +1,91 @@
+{
+  "schema": "command-watchtower-reference",
+  "version": 1,
+  "desktop": "2.10.0-rc.1",
+  "bridge": "0.12.1",
+  "planSha256": "4379cb38a49ad0070042e530c731a66f1e4ccfd93eac5f982d5ac09ed7341e13",
+  "friendlyRoots": 12,
+  "oppositionRoots": 2,
+  "landmarksWorldXZ": {
+    "ASSEMBLY": [
+      4700,
+      11860
+    ],
+    "CHECKPOINT": [
+      4700,
+      12000
+    ],
+    "OVERWATCH": [
+      4780,
+      12030
+    ],
+    "RELAY": [
+      4700,
+      12150
+    ],
+    "WEST_ALTERNATE": [
+      4580,
+      12080
+    ],
+    "SUPPORT_HOLD": [
+      4800,
+      12000
+    ],
+    "CCP": [
+      4720,
+      11860
+    ],
+    "LZ": [
+      4540,
+      12120
+    ]
+  },
+  "boardingAssignments": [
+    {
+      "crew": "BISON1_CREW",
+      "vehicle": "BISON1",
+      "allowed": [
+        "driver",
+        "gunner",
+        "cargo"
+      ],
+      "requires": "Native capacity, faction and occupancy checks; separate approval"
+    },
+    {
+      "crew": "BISON2_CREW",
+      "vehicle": "BISON2",
+      "allowed": [
+        "driver",
+        "cargo"
+      ],
+      "requires": "Native capacity, faction and occupancy checks; separate approval"
+    },
+    {
+      "crew": "CHARLIE",
+      "vehicle": "EAGLE",
+      "allowed": [
+        "cargo"
+      ],
+      "requires": "Parked aircraft only, inspect capacity; helicopter boarding remains unaccepted"
+    },
+    {
+      "crew": "EAGLE_PILOT",
+      "vehicle": "EAGLE",
+      "allowed": [
+        "driver"
+      ],
+      "requires": "Parked seating only; no helicopter flight order supported"
+    },
+    {
+      "crew": "EAGLE_COPILOT",
+      "vehicle": "EAGLE",
+      "allowed": [
+        "cargo"
+      ],
+      "requires": "Use only a seat the native inspection reports eligible; no promise this identifies the actual co-pilot slot"
+    }
+  ],
+  "notImportable": true,
+  "noCredentials": true,
+  "noGameOrdersSent": true
+}

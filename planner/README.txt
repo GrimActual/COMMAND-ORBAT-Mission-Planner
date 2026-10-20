@@ -1,5 +1,5 @@
-COMMAND COMMAND ORBAT / Mission Planner 2.9.0 RC2
+# COMMAND v1.0.0 — Mission Planning & Control
 
-Read START-HERE.md for installation and the exact planner/game pairing steps.
-Read RELEASE-DEBRIEF.md for changes, test results and limits.
-Extract the entire ZIP before running the EXE.
+Stable offline planner. Live-game controls remain experimental. Matching bridge 0.13.0.
+
+Start with [the current guide](operator-guides/00-START-HERE.md). New mission clears planning without disconnecting. Import one mission package, review, then send individual deployment stages for host approval. Preserve the entire Windows folder and back up your plans.

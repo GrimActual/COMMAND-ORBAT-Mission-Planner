@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "name": "init.sqf",
+      "text": "// Example source notice \u2014 preserve with migrated work.\nprivate _stored={\n private _value=1;\n player addEventHandler [\"Killed\", {private _inside=2;}];\n};\nwaitUntil {false};\n"
+    },
+    {
+      "name": "dialogs.hpp",
+      "text": "// Example configuration inventory; no target mapping inferred.\nclass ExampleDialog { title=\"Example\"; };\n"
+    }
+  ],
+  "mounts": []
+}

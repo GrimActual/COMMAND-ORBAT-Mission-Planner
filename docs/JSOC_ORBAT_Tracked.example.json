@@ -1,0 +1,16 @@
+{
+  "enabled": false,
+  "endpoint": "https://relay.example/",
+  "pairingCode": "",
+  "entityNames": [
+    "ALPHA_LEAD",
+    "BRAVO_LEAD"
+  ],
+  "entityIds": [
+    "alpha_lead",
+    "bravo_lead"
+  ],
+  "intervalMs": 1000,
+  "timeoutSeconds": 10,
+  "autoReconnect": true
+}

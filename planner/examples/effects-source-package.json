@@ -1,0 +1,9 @@
+{
+  "files": [
+    {
+      "name": "init.sqf",
+      "text": "private _stored={\n private _value=1;\n player addEventHandler [\"Killed\", {private _inside=2;}];\n player addAction [\"Use\", {private _action=3;}];\n};\nwaitUntil {false};\n"
+    }
+  ],
+  "mounts": []
+}

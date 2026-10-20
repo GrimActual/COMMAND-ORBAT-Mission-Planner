@@ -1,0 +1,1422 @@
+{
+  "schema": "companion-resource-index",
+  "version": 1,
+  "addons": [
+    {
+      "id": "58D0FB3206B6F859",
+      "name": "Arma Reforger",
+      "version": null,
+      "dependencies": [
+        "5614BBCCBB55ED1C"
+      ]
+    },
+    {
+      "id": "5614BBCCBB55ED1C",
+      "name": "Enfusion core data",
+      "version": null,
+      "dependencies": []
+    }
+  ],
+  "resources": [
+    {
+      "id": "vanilla_1CFBE2FC3A78F88B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Ambient/BarTap_01_Beer.et",
+      "guid": "1CFBE2FC3A78F88B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_32621FCDE0D18B68",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Ambient/Faucet_01_Water.et",
+      "guid": "32621FCDE0D18B68",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F5F4BDE8D43A7B78",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Blasts/Blast_big_Invisible_Trigger.et",
+      "guid": "F5F4BDE8D43A7B78",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A5DF4BFE752D7DD8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Blasts/Blast_huge_Invisible_Trigger.et",
+      "guid": "A5DF4BFE752D7DD8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8F9B7A765B12902C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Blasts/Blast_medium_Invisible_Trigger.et",
+      "guid": "8F9B7A765B12902C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5286AE99BB2E936B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Blasts/Blast_Mortar_Invisible_Trigger.et",
+      "guid": "5286AE99BB2E936B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_58E62C5D17281925",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Blasts/Blast_small_Invisible_Trigger.et",
+      "guid": "58E62C5D17281925",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B8FEB160B494D12C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Blasts/Blast_tiny_Invisible_Trigger.et",
+      "guid": "B8FEB160B494D12C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E554A8BE4BAA9D52",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Bullet_Case/Bullet_Case_127x108_NSV.et",
+      "guid": "E554A8BE4BAA9D52",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_57A91DFDC3FA8D84",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Bullet_Case/Bullet_Case_127x99.et",
+      "guid": "57A91DFDC3FA8D84",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_655E56CF5F651834",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Bullet_Case/Bullet_Case_145x114.et",
+      "guid": "655E56CF5F651834",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3B1F01658D3578A1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Bullet_Case/Bullet_Case_545x39.et",
+      "guid": "3B1F01658D3578A1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0CA18A3CF027A1B6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Bullet_Case/Bullet_Case_556x45.et",
+      "guid": "0CA18A3CF027A1B6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9B196EB9FF297DB7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Bullet_Case/Bullet_Case_762x39_PS.et",
+      "guid": "9B196EB9FF297DB7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3EE8CA5EA824F4DF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Bullet_Case/Bullet_Case_762x39_T45.et",
+      "guid": "3EE8CA5EA824F4DF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_ECE57B36A950AD5E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Bullet_Case/Bullet_Case_762x51.et",
+      "guid": "ECE57B36A950AD5E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_581926176C1D3C2C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Bullet_Case/Bullet_Case_762x54.et",
+      "guid": "581926176C1D3C2C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F3FF51A3A7A9D99C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Bullet_Case/Bullet_Case_9x18.et",
+      "guid": "F3FF51A3A7A9D99C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FA18A9EB06BBD8D8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Bullet_Case/Bullet_Case_9x19.et",
+      "guid": "FA18A9EB06BBD8D8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BE79A6E700CF746A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Bullet_Case/Bullet_Case_Base.et",
+      "guid": "BE79A6E700CF746A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8E05BF62F6FF6294",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Burnings/Burning_ground_small_Invisible_Trigger.et",
+      "guid": "8E05BF62F6FF6294",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_899360C930DA3EE3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Campfire_burning.et",
+      "guid": "899360C930DA3EE3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B5783F2536FBFD0D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/CinematicTree.et",
+      "guid": "B5783F2536FBFD0D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_52DC48AFF20DC5DD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Glass/Glass_Shard_01.et",
+      "guid": "52DC48AFF20DC5DD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3E887C4F4EC94AF3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Glass/Glass_Shard_02.et",
+      "guid": "3E887C4F4EC94AF3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DB1430B6422CDD98",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Glass/Glass_Shard_03.et",
+      "guid": "DB1430B6422CDD98",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E620158E374054AF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Glass/Glass_Shard_04.et",
+      "guid": "E620158E374054AF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4A542801F278EA10",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Metal/RPL5/RPL5_dbr_01.et",
+      "guid": "4A542801F278EA10",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_26001CE14EBC653E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Metal/RPL5/RPL5_dbr_02.et",
+      "guid": "26001CE14EBC653E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8E2A63C684E4E1FE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Metal/RPL5/RPL5_dbr_Base.et",
+      "guid": "8E2A63C684E4E1FE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B6C124563066625A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Metal/Vehicle/Dbr_Brake_Drum.et",
+      "guid": "B6C124563066625A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_40D0A58C4798E529",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Metal/Vehicle/Dbr_Bumper.et",
+      "guid": "40D0A58C4798E529",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F27E066048026CF0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Metal/Vehicle/Dbr_Headlight.et",
+      "guid": "F27E066048026CF0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_116955B188788AB9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Metal/Vehicle/Dbr_Hood.et",
+      "guid": "116955B188788AB9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E7680D95FEEEDA7F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Metal/Vehicle/Dbr_Metal_Piece.et",
+      "guid": "E7680D95FEEEDA7F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AC10134586AB3F30",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Metal/Vehicle/Dbr_Mirror.et",
+      "guid": "AC10134586AB3F30",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DB242491D3B535F4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Metal/Vehicle/Dbr_Spring.et",
+      "guid": "DB242491D3B535F4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2A4A2764CE1515C5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Stone/Dbr_Stone_01.et",
+      "guid": "2A4A2764CE1515C5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_461E138472D19AEB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Stone/Dbr_Stone_02.et",
+      "guid": "461E138472D19AEB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A3825F7D7E340D80",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Stone/Dbr_Stone_03.et",
+      "guid": "A3825F7D7E340D80",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_08094852EEDEF5B3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Wood/wood_splinter_01.et",
+      "guid": "08094852EEDEF5B3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_645D7CB2521A7A9D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Wood/wood_splinter_02.et",
+      "guid": "645D7CB2521A7A9D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_81C1304B5EFFEDF6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Wood/wood_splinter_03.et",
+      "guid": "81C1304B5EFFEDF6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BCF515732B9364C1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Debris/Wood/wood_splinter_04.et",
+      "guid": "BCF515732B9364C1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7208B70C20155076",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Dust/Dust_Motes_Short.et",
+      "guid": "7208B70C20155076",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F87BDCA400309DB2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/EnvironmentParticle_Base.et",
+      "guid": "F87BDCA400309DB2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D4809FC9BF264C01",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_brick/Wall_Concrete_01_A.et",
+      "guid": "D4809FC9BF264C01",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6385A86148AEA3EB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_brick/Wall_Concrete_01_B.et",
+      "guid": "6385A86148AEA3EB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0E183490E1B7F06A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_brick/Wall_Concrete_01_C.et",
+      "guid": "0E183490E1B7F06A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_09DFCEC187314AA9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_brick/Wall_Concrete_01_D.et",
+      "guid": "09DFCEC187314AA9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0AF8C73E3377379D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_brick/Wall_Concrete_Base_01.et",
+      "guid": "0AF8C73E3377379D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EEBC8E286B97EDA1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_concrete/dst_concrete_01.et",
+      "guid": "EEBC8E286B97EDA1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_82E8BAC8D753628F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_concrete/dst_concrete_02.et",
+      "guid": "82E8BAC8D753628F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6774F631DBB6F5E4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_concrete/dst_concrete_03.et",
+      "guid": "6774F631DBB6F5E4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9ED645588F7C6AA4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_concrete/dst_concrete_Base.et",
+      "guid": "9ED645588F7C6AA4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D8D6114E2FD56B25",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Explosion_Debris_Dirt.et",
+      "guid": "D8D6114E2FD56B25",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_70089B3325834C24",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_metal/dst_metal_01.et",
+      "guid": "70089B3325834C24",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1C5CAFD39947C30A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_metal/dst_metal_02.et",
+      "guid": "1C5CAFD39947C30A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F9C0E32A95A25461",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_metal/dst_metal_03.et",
+      "guid": "F9C0E32A95A25461",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C4F4C612E0CEDD56",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_metal/dst_metal_04.et",
+      "guid": "C4F4C612E0CEDD56",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0C3A193E5EAB84DA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_metal/dst_metal_Base.et",
+      "guid": "0C3A193E5EAB84DA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6D69E1918F87CA76",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_Rock/dst_rock_01.et",
+      "guid": "6D69E1918F87CA76",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_013DD5713343455C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_Rock/dst_rock_02.et",
+      "guid": "013DD5713343455C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E4A199883FA6D231",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_Rock/dst_rock_03.et",
+      "guid": "E4A199883FA6D231",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D995BCB04ACA5B08",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_Rock/dst_rock_04.et",
+      "guid": "D995BCB04ACA5B08",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_22EB710992D5A728",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_Rock/dst_rock_Base.et",
+      "guid": "22EB710992D5A728",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C201ADA0F7AF4B1B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_wood/dst_wood_01.et",
+      "guid": "C201ADA0F7AF4B1B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AF5862DF033CF6BC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_wood/dst_wood_02.et",
+      "guid": "AF5862DF033CF6BC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4AC42E260FD961D8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_wood/dst_wood_03.et",
+      "guid": "4AC42E260FD961D8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C201ADA0F7AF4B1A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/explosion_debris_wood/dst_wood_Base.et",
+      "guid": "C201ADA0F7AF4B1A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5FF8E2CB5718AF6A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Flare_Parachute.et",
+      "guid": "5FF8E2CB5718AF6A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_21DF3F9831E89E73",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Insects/Flies.et",
+      "guid": "21DF3F9831E89E73",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_972F488F8A16F9B3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Light/Electric_Sparks.et",
+      "guid": "972F488F8A16F9B3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F6FABA4AA8456686",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Light/Light_Flicker_Slow.et",
+      "guid": "F6FABA4AA8456686",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6E0FE8B10FA8346F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Metal/Vehicle/Dbr_Helicopter_Blade_01.et",
+      "guid": "6E0FE8B10FA8346F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_025BDC51B36CBB41",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Metal/Vehicle/Dbr_Helicopter_Blade_02.et",
+      "guid": "025BDC51B36CBB41",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E7C790A8BF892C2A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Metal/Vehicle/Dbr_Helicopter_Blade_03.et",
+      "guid": "E7C790A8BF892C2A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F4561FBC26102515",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Metal/Vehicle/Dbr_Helicopter_Rotor.et",
+      "guid": "F4561FBC26102515",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F7DFE4151D66A080",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Metal/Vehicle/Dbr_Helicopter_Wheel.et",
+      "guid": "F7DFE4151D66A080",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D52D998FF0829639",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/RocketTrace.et",
+      "guid": "D52D998FF0829639",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_15BAFA81731FC155",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Smoke_Trail_Phosphor.et",
+      "guid": "15BAFA81731FC155",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F1DA042378E5D93C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Smoke/Smoke_Smokestack_Big.et",
+      "guid": "F1DA042378E5D93C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E931C0A6240D4D27",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Smoke/Smoke_Smokestack_Medium.et",
+      "guid": "E931C0A6240D4D27",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9E8F89B2358B452F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Vegetation/Leaves/leaf_Alnus_glutinosa_aut.et",
+      "guid": "9E8F89B2358B452F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6D440210129C4234",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Vegetation/Leaves/leaf_Alnus_glutinosa.et",
+      "guid": "6D440210129C4234",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1DA0F5C7EAA06BD9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Vegetation/Leaves/leaf_Base.et",
+      "guid": "1DA0F5C7EAA06BD9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F904E79D1FCF6C99",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Vegetation/Leaves/leaf_Betula_pendula_aut.et",
+      "guid": "F904E79D1FCF6C99",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_082DB05FF12D9D50",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Vegetation/Leaves/leaf_Betula_pendula.et",
+      "guid": "082DB05FF12D9D50",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B2B1D03989D6EE13",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Vegetation/Leaves/leaf_Carpinus_betulus_aut.et",
+      "guid": "B2B1D03989D6EE13",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1A8464CF0B3DCDC9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Vegetation/Leaves/leaf_Carpinus_betulus.et",
+      "guid": "1A8464CF0B3DCDC9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A2783F7D9E1D4373",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Vegetation/Leaves/leaf_Picea_abies.et",
+      "guid": "A2783F7D9E1D4373",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_81D1B038B128DD73",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Vegetation/Leaves/leaf_Pinus_sylvestris.et",
+      "guid": "81D1B038B128DD73",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_728E5799E7CA77A8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Vegetation/Leaves/leaf_Salix_fragilis_aut.et",
+      "guid": "728E5799E7CA77A8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4D60E72519CDE8F3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Vegetation/Leaves/leaf_Salix_fragilis.et",
+      "guid": "4D60E72519CDE8F3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9FCC7F3E6FA4B4B7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Vehicles/Helicopter_Wash_Invisible_Trigger.et",
+      "guid": "9FCC7F3E6FA4B4B7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F783C1D09963E530",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Water/Water_Drip_Small.et",
+      "guid": "F783C1D09963E530",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EB5E524478DB619C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Water/Water_steam_01.et",
+      "guid": "EB5E524478DB619C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_870A66A4C41FEEB2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Water/Water_steam_02.et",
+      "guid": "870A66A4C41FEEB2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0C06C2D6AB2537DD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Water/Water_steam_fumarole.et",
+      "guid": "0C06C2D6AB2537DD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A9B17C22B4099625",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Particles/Water/Waterfall_mist.et",
+      "guid": "A9B17C22B4099625",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    }
+  ]
+}

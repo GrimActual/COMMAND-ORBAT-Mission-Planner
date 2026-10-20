@@ -1,0 +1,722 @@
+{
+  "schema": "companion-resource-index",
+  "version": 1,
+  "addons": [
+    {
+      "id": "58D0FB3206B6F859",
+      "name": "Arma Reforger",
+      "version": null,
+      "dependencies": [
+        "5614BBCCBB55ED1C"
+      ]
+    },
+    {
+      "id": "5614BBCCBB55ED1C",
+      "name": "Enfusion core data",
+      "version": null,
+      "dependencies": []
+    }
+  ],
+  "resources": [
+    {
+      "id": "vanilla_000CD338713F2B5A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Groups/Group_Base.et",
+      "guid": "000CD338713F2B5A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_04D3B38E23F51754",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Groups/Slave_Group.et",
+      "guid": "04D3B38E23F51754",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E37F46E17FFFBAC6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Navlinks/NavlinkJump.et",
+      "guid": "E37F46E17FFFBAC6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_01DC74137CFDDB6A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/SCR_AIWorld_Arland.et",
+      "guid": "01DC74137CFDDB6A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_672531FAC0834C06",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/SCR_AIWorld_Cain.et",
+      "guid": "672531FAC0834C06",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_70CCCF16487C927F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/SCR_AIWorld_Eden.et",
+      "guid": "70CCCF16487C927F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E0A05C76552E7F58",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/SCR_AIWorld.et",
+      "guid": "E0A05C76552E7F58",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F6487A024AB9FFD1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Animation_FastMove.et",
+      "guid": "F6487A024AB9FFD1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FF8730CC23015B41",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Animation_SlowMove.et",
+      "guid": "FF8730CC23015B41",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4481F98AAFA79B1C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Animation.et",
+      "guid": "4481F98AAFA79B1C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C524700A27CFECDD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_ArtillerySupport.et",
+      "guid": "C524700A27CFECDD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FFB2813D2571B6B8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_AtEase.et",
+      "guid": "FFB2813D2571B6B8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1B0E3436C30FA211",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Attack.et",
+      "guid": "1B0E3436C30FA211",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_49CED34BBCD060F0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Base.et",
+      "guid": "49CED34BBCD060F0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EAAE93F98ED5D218",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_CaptureRelay.et",
+      "guid": "EAAE93F98ED5D218",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_35BD6541CBB8AC08",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Cycle.et",
+      "guid": "35BD6541CBB8AC08",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3AB6B883AF54D965",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Defend_ConflictBaseTeamBackup.et",
+      "guid": "3AB6B883AF54D965",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_06B1B14B6DE3C983",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Defend_ConflictBaseTeamPatrol.et",
+      "guid": "06B1B14B6DE3C983",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2A81753527971941",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Defend_CP.et",
+      "guid": "2A81753527971941",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AAE8882E0DE0761A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Defend_Hierarchy.et",
+      "guid": "AAE8882E0DE0761A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A33AF7FC5004F294",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Defend_Large_CO.et",
+      "guid": "A33AF7FC5004F294",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FAD1D789EE291964",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Defend_Large.et",
+      "guid": "FAD1D789EE291964",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1E4818C263E3AB78",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Defend_Small_CO_Interior.et",
+      "guid": "1E4818C263E3AB78",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A70634B518C5C3B8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Defend_Small.et",
+      "guid": "A70634B518C5C3B8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_93291E72AC23930F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Defend.et",
+      "guid": "93291E72AC23930F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2FCBE5C76E285A7B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et",
+      "guid": "2FCBE5C76E285A7B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CE97215CE55CF734",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_DeploySmokeCover.et",
+      "guid": "CE97215CE55CF734",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A0509D3C4DD4475E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Follow.et",
+      "guid": "A0509D3C4DD4475E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_06E1B6EBD480C6E0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_ForcedMove.et",
+      "guid": "06E1B6EBD480C6E0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_712F4795CF8B91C7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_GetIn.et",
+      "guid": "712F4795CF8B91C7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B049D4C74FBC0C4D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et",
+      "guid": "B049D4C74FBC0C4D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8AD8C82346156494",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_GetInSelected.et",
+      "guid": "8AD8C82346156494",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C40316EE26846CAB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_GetOut.et",
+      "guid": "C40316EE26846CAB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E5002E8CD9D1F4AF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_GetOutInstant.et",
+      "guid": "E5002E8CD9D1F4AF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_36ED7C150D5BB654",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Heal.et",
+      "guid": "36ED7C150D5BB654",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0F38A8CA489A1B3D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_LoadSupplies.et",
+      "guid": "0F38A8CA489A1B3D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4ECD14650D82F5CA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Loiter_CO.et",
+      "guid": "4ECD14650D82F5CA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_750A8D1695BD6998",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Move.et",
+      "guid": "750A8D1695BD6998",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_97FB527ECC7CA49E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_ObservationPost.et",
+      "guid": "97FB527ECC7CA49E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1966BC58CE769D69",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_OpenGate.et",
+      "guid": "1966BC58CE769D69",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FBA8DC8FDA0E770D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Patrol_Hierarchy.et",
+      "guid": "FBA8DC8FDA0E770D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_22A875E30470BD4F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Patrol.et",
+      "guid": "22A875E30470BD4F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A88F0B6CF25BD1DE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Scout.et",
+      "guid": "A88F0B6CF25BD1DE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B3E7B8DC2BAB8ACC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_SearchAndDestroy.et",
+      "guid": "B3E7B8DC2BAB8ACC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_70AAB1ABF7469613",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Suppress_Commanding.et",
+      "guid": "70AAB1ABF7469613",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_70FE5AA8B4BCA67A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Suppress_Editor.et",
+      "guid": "70FE5AA8B4BCA67A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_ED8277F35B46B4AA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Suppress.et",
+      "guid": "ED8277F35B46B4AA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_409DE49C64865E30",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_UnloadSupplies.et",
+      "guid": "409DE49C64865E30",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_04A06A6742FB0AF8",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_UserAction.et",
+      "guid": "04A06A6742FB0AF8",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_531EC45063C1F57B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/AI/Waypoints/AIWaypoint_Wait.et",
+      "guid": "531EC45063C1F57B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    }
+  ]
+}

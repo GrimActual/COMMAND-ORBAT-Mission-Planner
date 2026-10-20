@@ -1,0 +1,2 @@
+importScripts('resource-index.js','asset-browser.js','sqf-migration.js','sqf-class-map.js');
+self.onmessage=e=>{try{if(typeof e.data!=='string'||new TextEncoder().encode(e.data).length>CompanionSQFClassMap.MAX_BYTES)throw Error('Mapping file exceeds 6 MiB');self.postMessage({ok:true,map:CompanionSQFClassMap.validate(JSON.parse(e.data))});}catch(error){self.postMessage({ok:false,error:error.message});}};

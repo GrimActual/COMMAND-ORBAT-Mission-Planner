@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "nativeResourceName": "{26A9756790131354}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et",
+  "nativePrefabLoaded": true,
+  "nativeSpawnPerformed": false,
+  "worldOpened": false,
+  "publishedModModified": false,
+  "resourceSchemaValid": true,
+  "catalogReferencePreserved": true,
+  "deploymentReviewAndGMRequestValid": true,
+  "scope": "Read-only local Workbench resource verification and headless import/deployment validation; game session remains the native spawn gate"
+}

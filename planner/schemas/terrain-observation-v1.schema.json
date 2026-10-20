@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "COMMAND terrain observation v1 - imported report, not runtime attestation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "version",
+    "world",
+    "observedWorldFile",
+    "engineVersion",
+    "method",
+    "samples"
+  ],
+  "properties": {
+    "schema": {
+      "const": "command-terrain-observation"
+    },
+    "version": {
+      "const": 1
+    },
+    "world": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "addonId",
+        "guid",
+        "path"
+      ],
+      "properties": {
+        "addonId": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{16}$"
+        },
+        "guid": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{16}$"
+        },
+        "path": {
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 512
+        }
+      }
+    },
+    "observedWorldFile": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 550
+    },
+    "engineVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "method": {
+      "const": "GetSurfaceY"
+    },
+    "samples": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 300,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "worldX",
+          "worldZ",
+          "surfaceY"
+        ],
+        "properties": {
+          "worldX": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 13450
+          },
+          "worldZ": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 13450
+          },
+          "surfaceY": {
+            "type": "number",
+            "minimum": -1000,
+            "maximum": 10000
+          }
+        }
+      }
+    }
+  }
+}

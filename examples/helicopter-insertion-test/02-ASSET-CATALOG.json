@@ -1,0 +1,79 @@
+{
+  "assets": [
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-42A502E3BB727CEB",
+      "name": "Character US HeliPilot — US_Army",
+      "category": "Vanilla / Characters",
+      "assetKind": "infantry",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_42A502E3BB727CEB",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_HeliPilot.et",
+        "guid": "42A502E3BB727CEB",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-84E5BBAB25EA23E5",
+      "name": "Group US FireTeam — BLUFOR",
+      "category": "Vanilla / Groups",
+      "assetKind": "infantry",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_84E5BBAB25EA23E5",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Groups/BLUFOR/Group_US_FireTeam.et",
+        "guid": "84E5BBAB25EA23E5",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-70BAEEFC2D3FEE64",
+      "name": "UH1H — UH1H",
+      "category": "Vanilla / Vehicles",
+      "assetKind": "helicopter",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_70BAEEFC2D3FEE64",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Helicopters/UH1H/UH1H.et",
+        "guid": "70BAEEFC2D3FEE64",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    }
+  ]
+}

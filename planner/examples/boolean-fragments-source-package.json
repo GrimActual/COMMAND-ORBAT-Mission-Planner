@@ -1,0 +1,9 @@
+{
+  "files": [
+    {
+      "name": "init.sqf",
+      "text": "// Example notice \u2014 preserve with migrated work.\nprivate _enabled=(true and false) or (not false);\nprivate _manual=hasInterface;\nprivate _stored={false};\nwaitUntil {false};\n"
+    }
+  ],
+  "mounts": []
+}

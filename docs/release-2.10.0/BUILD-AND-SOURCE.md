@@ -1,0 +1,17 @@
+# COMMAND — corresponding source and assembly
+
+MANIFEST.json identifies the single source commit. Source/COMMAND-Source-2.10.0-rc.1.zip contains that revision, excluding diagnostic evidence outputs, local profiles, private material and the sixteen legacy offline satellite JPEGs. Those omissions do not supply runtime code. Some native diagnostic tests require regenerated local evidence; they do not establish multiplayer acceptance. The full roadmap and original development tools remain in the source archive. Preserve GPL and dependency notices.
+
+## Desktop build
+
+Use Windows x64, Node 24 and the included planner/package-lock.json. From planner run npm ci, then npm run package. Electron is pinned to 44.9.1. Packaging tools and tests are development dependencies, not required by the installed app. Do not add private files or local imagery to a distributable. Keep the resulting app/resources together. A clean folder/profile must remain offline-capable without any satellite images. The Windows runtime comes from https://github.com/electron/electron/releases/tag/v44.9.1; verify its SHASUMS256.txt before assembly. Upstream Electron/Chromium notices must remain alongside the EXE.
+
+The acceptance candidate uses the verified official runtime ZIP with electron.exe named COMMAND Planner.exe and resources/app copied from this commit's planner directory. Exclude node_modules, tools, tests, .test.js/.test.cjs files, caches, logs, .env files and terrain/everon/*.jpg. Preserve vendor libraries, all runtime .js/.mjs files, active guides and LICENSE files. Set Windows ProductName to COMMAND ORBAT / Mission Planner, FileDescription to COMMAND Mission Planner — Release candidate, numeric file/product version 2.10.0.0, ProductVersion 2.10.0-rc.1 and the supplied command-icon.ico with rcedit. These metadata changes do not alter JavaScript source. The root build manifest records dependency checksums and the final file manifest records every assembled file.
+
+Optional Quick connection uses unmodified cloudflared 2026.10.0 in resources/app/bridge-runtime/cloudflared.exe, verified against MANIFEST.json. Obtain that release from https://github.com/cloudflare/cloudflared/releases/tag/2026.10.0 and retain its Apache-2.0 licence. Corresponding upstream dependency source/version links are in the notices. For the standalone relay, follow relay/README.md with its supported Node runtime; configure private credentials outside distributed files. No WebSocket or persisted-queue feature is implied.
+
+## Complete content
+
+Copy reforger-mod/dedicated-candidate/JSOC_ORBAT_Bridge to Bridge-0.12.1; publish through the owner's existing Workshop item as 0.12.1. Copy relay to Relay, examples/vanilla-assets to Vanilla-Assets, planner/operator-guides to Guides, and docs/release-2.10.0 documents to the package root. Include the GPL licence, dependency notices and disabled configuration examples. Make relative guide links point to included guides/catalogs or the corresponding source archive; record these presentation-only rewrites. Do not include raw test receipts or real elevation exports. Never merge app files from an older package; only independently verified third-party dependency binaries can be reused.
+
+Validate the assembled executable and data round trips, generate SHA-256 file/source manifests, then freeze the candidate for the separate human/Workshop gates. Any later fix requires a new source identity and the affected checks again. No stable publication is authorized by a synthetic or isolated native fixture alone.

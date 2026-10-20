@@ -1,6 +1,10 @@
+## v1.0.0 release boundary — 20 October 2026
+
+Stable planner; all live controls experimental. The complete programme below is retained. Next flight work: measured faster takeoff/landing, turn toward route before translation, then verified terrain/obstacle clearance and safe routes. No above-tree/building guarantee exists today. General existing-vehicle/aircraft registration remains a release limitation and follow-up priority.
+
 # COMMAND — ORBAT / Mission Planner — future development roadmap
 
-Updated 13 October 2026. Ordered by technical dependencies, with no dates or delivery promises. This is future planning; it does not authorize implementing all 200 items in one release.
+Updated 14 October 2026. Ordered by technical dependencies, with no dates or delivery promises. This is future planning; it does not authorize implementing all 200 items in one release.
 
 ## Current foundations and immediate validation gate
 - v2.8.2 is the prior stable release; RC2 has a user-tested single-host position feed.
@@ -427,3 +431,438 @@ Development 14 advances Package 12 with a one-picker worker-backed resource-inde
 
 ## Native read-only bridge runtime gate — 13 October 2026
 The real diagnostic local-server executable sent native Enforce position updates through temporary HTTPS into Companion. Movement, unchanged mission JSON, same-stream interval reload after a reproduced counter-reset fix, native authentication rejection and cleanup were verified. Changed Enforce source compiled for PC/WORKBENCH. Server profile-path instructions are corrected in the guide, Settings and translated Sarge guidance. [Native runtime scope/evidence](docs/NATIVE-BRIDGE-RUNTIME.md). The standalone dedicated-server HTTPS movement gate now passed. Endpoint-preserving revocation/retry-limit checks and testing the downloaded Workshop package remains pending. No new feature-build number or package was created; consolidate after the remaining release gates.
+
+## RC2 — bounded live tracking and deployment preview
+
+Packages 01/04/11 now carry 60 opt-in named-entity batches with native HTTPS evidence. Package 12/14 adds a desktop deployment review/export with GUID provenance and stale checks; execution remains pending. Settings and 47 EN/FR/DE Sarge topics accompany delivery. Automatic opt-in player discovery, respawn lifecycle, 120-player scaling, server-reviewed spawn/remove and optional compact GM workspace remain future milestones. See docs/RELEASE-CANDIDATE-2.md.
+
+## Player source pilot — unpublished
+
+Workshop 0.3.0 publication is user-confirmed. The next native candidate selects up to 60 explicit session player IDs with controller-bound leases, respawn delta resets and disconnect retirement. PC/Workbench compilation passes; real player lifecycle testing remains required. The existing RC2 reader is compatible with the batch format. See docs/PLAYER-TRACKING-PILOT.md.
+
+## Host Local mixed roster and first native GM execution pilot — 13 October 2026
+
+Packages 04/11 gain explicit human/GM-editable AI selection and faction filters sharing 60 aliases. Package 14 now has reviewed spawn/remove requests with host approval, expiry, cancellation, duplicate protection and root ownership checks. Two synthetic objects passed actual native HTTPS execution; final safeguards compile and desktop/queue checks pass. This is a bounded development pilot, not the full GM suite or a real 60-player validation. Sarge has 50 EN/FR/DE topics. See [HOST-GM-PILOT.md](docs/HOST-GM-PILOT.md). Next: real Host Local lifecycle/UI gate, then native AI orders/property/environment adapters. RC2 and published Workshop 0.3.0 remain unchanged until the candidate is uploaded.
+
+## Real Host Local gate and placement correction
+
+The user confirmed mixed tracking, faction deselection and actual character spawning in Host Local. Removal reported executed; visual removal confirmation remains separate. Placement exposed a missing inverse map-image offset; desktop 2.9.1-dev.gm.2 now subtracts 50 m per axis for native requests and intention exports, leaving saved plan coordinates unchanged. Production single/mixed render round trips, the installed app and matched converter timings pass. Precise corrected placement still requires user confirmation; full player lifecycle/occupied removal/GM roadmap features remain open. See docs/GM-PLACEMENT-FIX.md.
+
+### Asset browser usability — 14 October 2026
+Searchable, paged asset cards replace the full catalog dropdown. Unit type links to troop/armoured/APC/light-vehicle/aircraft/logistics filters; prefab faction filters and variant visibility remain independent of mission faction. Exact asset snapshots and GUIDs are retained. Settings opens the browser; Sarge and EN/FR/DE guidance cover the workflow. Deployment review explains missing or invalid names. Native spawn availability remains separate from classification hints.
+
+## Package 14.1 — compact GM workspace, 14 October 2026
+The optional layout is implemented in 2.9.1-dev.gm.4: existing asset chooser in a collapsible drawer, capped read-only planned-selection inspector, existing deployment/results links and explicitly offline rehearsal controls. Mode/drawer preferences stay outside mission JSON; layout-only changes skip map/asset rebuilds and leave active replay running. Existing forms, pending edits, selection, Undo/Redo and full-map behavior are retained. Settings and 50 Sarge topics have EN/FR/DE guidance. The active MagicPath design is COMMAND — Compact GM Workspace. See [the workflow guide](docs/COMPACT-GM-WORKSPACE.md). Native AI orders, properties and environment adapters remain the next integration milestones; this layout does not implement them.
+
+## Native AI-order pilot — 14 October 2026
+
+Package 14 now adds Move to position and timed Hold for bridge-created on-foot infantry AI groups in desktop 2.9.1-dev.gm.5 / Workshop candidate 0.5.0. In-game host review remains mandatory. Versioned requests, capability negotiation, same-pair ownership and stale desktop reviews accompany the adapter. Native PC/Workbench compilation and an isolated actual-server waypoint lifecycle gate passed; physical travel/arrival, combat behaviour and occupied/mounted rejection in real Host Local sessions remain pending. The new runtime test used loopback, not public HTTPS. Desktop context/localization/mission isolation and all 215 regression tests passed. Settings and the existing 50 Sarge topics include EN/FR/DE guidance. Vehicle transport/crew, route chains, properties and environment remain separate roadmap milestones. See [the pilot guide](docs/NATIVE-AI-ORDERS-PILOT.md).
+
+## Package 14.2–14.5 — squad-command expansion, 14 October 2026
+
+The requested friendly-squad selection/recruitment, Follow Me, ground/map Move and chained routes, Force Move, Attack, Defend, Halt, formations, stances, strict fire control, suppression/look, vehicles/healing, attach/detach/convoys and stack/breach/garrison/clear are retained in [the implementation and native-binding specification](docs/AI-COMMAND-EXPANSION.md). Advanced AI Command 69A404653EE3F3C4 is inspiration only; no code/assets/dependency is imported. The existing published Move/timed-Hold pilot is unchanged. New source rejects missing native group utility, incompatible waypoint classes and unknown actions rather than guessing a movement behaviour. Diagnostic work now traces waypoint selection, activity and resolved behaviour-tree resource; arrival/combat/interior completion remain separate gates. Undelivered controls stay unavailable, and Settings/Sarge state that explicitly in EN/FR/DE.
+
+### First tactical adapters — development source
+Defend position and cancellation of the Companion-owned waypoint are connected through a separate capability, strict contract, stale-reviewed desktop form and native host approval. Actual isolated-server traces confirm the defend state/activity/ActivityDefend.bt, cancellation, subsequent Move and old-relay fallback. EN/FR/DE desktop checks pass. Source is dev.gm.6 / native 0.6.0 candidate; published dev.gm.5 and Workshop 0.5.0 remain intact. Physical navigation/defence and the broader squad-control stages are still open. See [the complete scope and evidence](docs/AI-COMMAND-EXPANSION.md).
+
+
+## Additive milestone — Arma 3 / SQF to Enfusion migration
+
+Retain every existing roadmap package. Extend shared contracts, resource identity/adapters and the GM workspace with drop-file migration review, then explicit Arma 3 class-to-prefab mapping, supported-pattern parsing, terrain calibration, reviewed neutral intents and native export/validation. The first source workflow inventories selected SQF/SQM/EXT/HPP files without execution, offers verified movement binding candidates, and marks unresolved classes, control flow and engine semantics for review. Full SQF translation and native mission export remain unfinished. See [migration foundation](docs/SQF-MIGRATION-FOUNDATION.md). Current published releases and the user’s test copy remain unchanged.
+
+Migration release checkpoint: 2.9.1-dev.gm.7 consolidates this read-only workflow and the previously tested tactical Defend/cancellation candidate. 226 release regressions, offline worker/drop/picker, localization/context, safe display, paged findings and validated native JSON Save passed. Existing native source hashes match retained compilation/runtime evidence. Full automatic SQF conversion and chained AI routes remain separate unfinished milestones; no earlier roadmap content was removed.
+
+
+## Additive migration checkpoint — reviewed class mappings
+
+The next source candidate adds explicit Arma 3 classname-to-prefab confirmation against the validated resource index, searchable typed cards, repeated-class reuse, portable mapping export/reload and transactional rejection of incompatible index changes. Exact addon/GUID/path, provenance and declared dependencies are preserved; mappings remain non-executable and gameplay equivalence/native availability unverified. 27 focused checks and actual offline desktop/large-list gates passed, including a quote-scanner hardening found by the large-file test. Sarge/Settings guidance remains synchronized in EN/FR/DE. Cached 2,721-resource searches measured p95 0.341 ms. The published dev.gm.7 release is unchanged. Supported-pattern neutral intent translation, terrain/native validation and chained AI waypoints remain retained unfinished milestones. See [mapping guide](docs/SQF-CLASS-MAPPINGS.md).
+
+
+## Additive migration checkpoint — source-linked neutral intent drafts
+
+The next source candidate recognizes a bounded straight-line SQF subset and emits non-executable mapped spawn/movement/basic-waypoint drafts, literal bindings and source-local object links. Source hashes/references, exact resource-map snapshots, mandatory review gates, source/mapping stale locks and validated native JSON export accompany worker preparation. Conditional/dynamic/unsupported constructs remain unresolved and are never flattened into actions. 39 focused JS checks, 13 independent schema cases and actual offline desktop isolation/export/race gates passed. Sarge and Settings guidance is synchronized in EN/FR/DE. A 400-intent/200-definition preparation fixture measured median 16.32 ms / p95 18.17 ms. Published releases and earlier candidates are preserved. Terrain calibration, planning transfer, native export, complete SQF conversion and chained AI routes remain retained unfinished milestones. See [draft guide](docs/SQF-MISSION-INTENT-DRAFTS.md).
+
+
+## COMMAND dev.gm.8 release checkpoint
+
+Reviewed reusable Arma 3 class mappings and bounded source-linked non-executable mission drafts are packaged together. 247 release regression tests and isolated offline package export passed. Terrain calibration, full mission conversion and reviewed native execution remain future additive milestones.
+
+
+## Reviewed migration placement checkpoint (unreleased)
+
+Completed manual ground-anchor/rotation preview and selected mapped-spawn transfer into the existing planner as one Undo/Redo batch (1–60 planning units). Source/mapping/mission changes stale the preview. Exact prefab/source/dependency provenance retained; height, grouping, movement and native execution remain unresolved. Multi-anchor terrain verification, linked routes and native approval adapters remain future additions. See docs/MIGRATION-PLANNING-TRANSFER.md.
+
+
+## Linked migration planning routes checkpoint (unreleased)
+
+Optional reviewed doMove points now form proposed planning routes linked to selected source-created units. Source order is retained without claiming original execution timing. Units/routes apply and Undo/Redo as one batch; limits remain 60 planning units and 240 selected movement points. Exact source/route/unit provenance is retained. Group waypoints, native AI execution and terrain calibration remain future additions. See docs/MIGRATION-LINKED-ROUTES.md.
+
+
+## Multi-landmark planning alignment checkpoint (unreleased)
+
+Completed optional rigid horizontal fitting from 3–12 source/Everon landmark pairs with per-point/RMS/maximum mismatch, user tolerance gate, narrow-coverage warning and explicit review. Fitted provenance is retained in imported units; manual placement remains available. Height and terrain identity remain unverified. Independent check landmarks, reusable profiles, native authority/lifecycle adapters and all earlier milestones remain additive future work. See docs/MIGRATION-TERRAIN-LANDMARKS.md.
+
+
+## Terrain identity and ground-height review checkpoint (unreleased)
+
+Added optional declared world addon/GUID/path review, exact-position imported ground samples, sampler-query export and atomic planning provenance. Missing samples/world conflicts block sampled imports; the older native deployment flow rejects explicit terrain-context units rather than dropping the requirement. Separate read-only native sampler passed bounded empty-world API/serialization and wrong-path rejection tests. Runtime GUID/addon authority, real Everon elevation accuracy and native world-enforced deployment remain future additions. See docs/MIGRATION-TERRAIN-CONTEXT.md.
+
+
+## Native Everon sampling checkpoint (unreleased, 15 October 2026)
+
+Completed actual read-only GetSurfaceY sampling in installed EmptyEden 1.8.0.13, packed-addon namespace validation, wrong-addon/path rejection and a bounded Windows diagnostic runner. Four launch/file/memory guard tests passed; final native runner validated all three returned positions and stopped its server (668.1 MiB sampled peak, 1000 MiB limit). Full Eden stopped at its 2000 MiB limit without a report. This is terrain sampling evidence, not full-scene stability or authenticated live identity. Exact world GUID/terrain lineage, live session negotiation and approved native world-enforced deployment remain pending; the deployment block and all existing roadmap goals remain. See tools/terrain-sampler/README.md and docs/test-evidence/native-everon-terrain.json.
+
+
+Final packed-path boundary check: a shortened addon-relative suffix was rejected without a report. The stricter source then sampled all three points successfully at 461.71 MiB sampled peak, validated report positions and confirmed server cleanup. The earlier 668.1 MiB runner result is retained above as observed variation, not a memory guarantee. No desktop renderer changes were made, so previously completed desktop performance gates were not repeated.
+
+
+## Exact native world lookup and deterministic diagnostic receipts (unreleased)
+
+The separate diagnostic now matches the loaded packed world's addon/path to one exact runtime resource-database GUID before sampling. Wrong GUID and unproven loose-world ownership reject; equivalent casing passes. SHA-256 query/source/report receipts and an offline integrity checker detect changed files without claiming authenticated origin. Ten focused tool checks and actual native positive/negative runs passed; final run measured 6 ms for one lookup and 462.69 MiB sampled peak, with server cleanup. Imported files remain unverified planning data and the native deployment block stays in place. Parent-terrain lineage, session-bound capability negotiation and host-approval-time enforcement remain next additive milestones; all prior goals are retained. No Workshop or desktop executable update is included. See docs/test-evidence/native-world-identity.json and tools/terrain-sampler/README.md. Existing Settings/Sarge guidance and EN/FR/DE runtime-unverified labels remain correct because no desktop workflow changed.
+
+
+## SQF-to-Enforce block transpilation audit and staged plan (additive)
+
+Source audit confirms bounded inspection, explicit asset mapping, a small straight-line AST and non-executable spawn/movement drafts; no full SQF block parser, control-flow/type/locality analysis or general Enforce `.c` emitter has been delivered. Full migration remains retained. Added docs/SQF-ENSCRIPT-TRANSPILATION-PLAN.md to detail source packaging, full syntax representation, semantic analysis, typed control-flow IR, verified native adapters, Enforce generation, deterministic build fingerprints/source maps and isolated native validation. Unsupported or unresolved semantics stay explicit blockers; parser recognition and compilation alone do not prove equivalent execution. No existing goals were removed and no compiler capability is advertised in the current app.
+
+
+## Structural SQF AST inspector checkpoint (unreleased)
+
+Delivered a separate read-only structural AST worker/Assets inspector for nested brace conditions, code-scope exits, while, range/three-block for, forEach and stored code assignments. Source locations/hashes, opaque expressions, unsupported findings, paged safe display, guarded native JSON export, source-stale/cancellation gates and EN/FR/DE Sarge/Settings guidance are included. 27 focused checks, nine schema cases and actual offline desktop tests passed; a 1,401-node fixture prepared at 23.88 ms median / 27.55 ms p95, with same-fixture map frame/storage checks recorded. This is not the full grammar, semantic/type/scope analysis, typed IR lowering or Enforce code generation. Existing migration intents/deployment safeguards and all prior goals remain unchanged. See docs/SQF-STRUCTURAL-AST.md.
+
+
+## Arma 3 PBO / WRP inventory and identity resolver (planned, separate pipeline)
+
+Added docs/ARMA3-ARCHIVE-WORLD-INVENTORY-PLAN.md: read-only PBO manifest/prefix/compression inventory, streaming/canonical content fingerprints, config/CfgWorlds-to-WRP resolution, version-aware WRP metadata and optional object-reference decoding. Distinguish listed, header-inspected, decoded and unsupported evidence. WRP object lists require an actual decoder; config.bin is not SQF text. The current text/AST inspector does not support these binaries. Full terrain recreation into Enfusion remains a separate potential conversion workflow, not an inventory claim. Existing goals remain retained.
+
+
+## Bounded expression syntax core checkpoint (15 October 2026)
+
+Added a developer-only, non-executable expression parser for literals, unresolved local symbols, arrays, grouping and basic arithmetic, with a separate numeric lexer and full-source span/hash binding. Unsupported syntax rejects without a partial tree. Desktop UI/export and native execution remain unchanged. Source scope/binding analysis, broader command/operator grammar, typed IR, validator/schema and subsequent UI integration remain pending; no earlier goals are removed. See docs/SQF-EXPRESSION-AST.md for scope and evidence.
+
+
+## Source-linked semantic adapter requirements (15 October 2026)
+
+Added a developer-only registry/review for 12 radio-relevant mechanic families with source hashes/locations, lexical-only evidence, documented target candidates, explicit unresolved names and lifecycle/behavior test obligations. Read-only radio sample: 80 occurrences, 12 families; zero implemented/native-verified adapters. 24 focused checks passed. No UI/game/export authority is added; source bindings/types, typed IR, native adapters and every earlier goal remain pending as applicable. See docs/SQF-ADAPTER-REQUIREMENTS.md.
+
+
+## Source bindings, opt-in command syntax and value IR review (15 October 2026)
+
+Added developer-only private/params/loop declaration evidence, conservative reference candidates and deferred-code barriers; an opt-in documented-arity command/comparison/logical parser; a partial source-value IR prototype; and reproducible folder review/integrity tools with EN/FR/DE developer guidance. 70 focused checks passed. The radio sample's 31 selected expression parts are now syntactically recognized by the extended profile, while types, effects, callback context and native behavior remain unresolved. Source files/audio remain untouched. Existing arithmetic output matches db6f9a1. No app executable, native mod, UI or deployment authority changes. Complete type/effect checks, typed statement/control-flow IR, strict UI/import contracts and native adapters remain unfinished; every earlier goal is retained. See docs/SQF-BINDING-VALUE-IR.md and tools/sqf-review/README.md.
+
+
+## Bounded source operand/effect checks and strict contract (15 October 2026)
+
+Added source-shape compatibility/mismatch/unresolved checks and explicit potential effects for the 18-command subset, including isNil unscheduled evaluation, deferred event/action callbacks, eager defaults and Boolean-versus-code logical evaluation. Strict JS validation and an independent schema fence source spans, graphs, gates and timing obligations. Folder review adds the report while preserving older formats. 52 focused checks and 11 schema cases passed; originals/audio remain untouched. No native adapter, whole-statement/type-flow proof, target code, desktop executable or deployment authority is added. Future full control-flow/type/effect and native goals remain intact. See docs/SQF-SOURCE-SEMANTICS.md.
+
+
+## Author-operated mod conversion corpus and pathway priorities (15 October 2026)
+
+Private external-source test details are withheld. The general implementation goals and supported contracts remain unchanged.
+
+
+## Supplied-source include resolver and compiler CI (15 October 2026)
+
+Added a bounded read-only dependency core and cancellable Node-worker CLI with explicit virtual mounts, source identities, missing/case/unsafe-path findings and potential cycle evidence. 22 focused checks passed; five pinned script/header fixtures yielded 49 exact include paths and six unresolved virtual-prefix requests. No preprocessing, cross-file symbol binding or native conversion is claimed. Added relevant-path Windows/Linux compiler CI; hosted results are separate from local checks. Tree-sitter/ANTLR and GNU CPP remain compatibility evaluations, not integrated dependencies. Release artifact attestations are a future packaging gate; no SLSA level is claimed. The author-operated in-app workflow and all earlier roadmap goals remain. See docs/SQF-SOURCE-DEPENDENCIES.md.
+
+
+## Literal function registration and lexical call candidates (15 October 2026)
+
+Added bounded literal CfgFunctions registration/source-path inventory, explicit config-root context, named lexical call/spawn candidates and an isolated Node-worker CLI. 26 new focused cases and 22 affected regression cases passed. Five pinned sampled projects (65 files) yielded 186 registration candidates, eight exact source paths and two unique name-candidate call sites; no runtime bindings or execution readiness are claimed. Macro-generated config, include-fragment insertion order, conditionals, inheritance, runtime writes and native behavior remain unresolved. Existing dependency reports match prior fixtures. CI includes the new checks; hosted evidence is separate. This is source-only developer tooling, keeping the author-operated in-app workflow and every prior roadmap goal intact. See docs/SQF-FUNCTION-REGISTRATIONS.md.
+
+
+## Bounded literal include insertion and source maps (15 October 2026)
+
+Added read-only literal include assembly, per-character original spans, repeated-include occurrence chains and guarded registration composition through explicitly synthetic config identities. Macro/conditional/unknown directives, missing or ambiguous files, cycles and unsupported line splices block entries without partial source/maps/candidates. 22 new cases and 11 affected worker/CLI regression cases passed. Of ten pinned real config entries, three literal units completed and seven macro-dependent units remained blocked; nontrivial include composition is proven by synthetic fixtures, not native mod conversion. Source-only developer tooling; no app/native execution authority or release binary is added. Main now also has the user-requested community policies, GPL-3.0-only original-code licensing and private vulnerability reporting. All prior roadmap goals remain. See docs/SQF-INCLUDE-EXPANSION.md.
+
+
+## Explicit marker conditions and guarded includes (15 October 2026)
+
+Added an opt-in, source-mapped conditional profile with caller-declared closed-set markers, empty include guards, simple defined/0/1 branches, per-entry state and bounded diagnostic traces. Unsupported replacement/function macros, expressions and substitutions remain blockers; no native environment or conversion readiness is implied. The original literal API/reports remain unchanged against all five cached source sets. 20 new focused cases and 33 affected regression cases passed. A guarded synthetic 102-file fixture now retains 100 registration candidates; real samples remain three completed config units/seven replacement-macro blockers. Same-fixture direct medians: literal 4.03 ms, conditional 4.54 ms; fresh worker 52.15 ms, with no renderer/FPS claim. Fixed worker/CLI, EN/FR/DE developer guides and evidence added. Source-only, no new app binary or app execution authority; existing roadmap items remain. Next: replacement-macro compatibility/origins, cross-file write/binding candidates and typed control-flow/context IR. See docs/SQF-CONDITIONAL-INCLUDES.md.
+
+
+## Scalar replacement macros with definition/use origins (15 October 2026)
+
+Added opt-in bounded numeric/double-quoted scalar replacements atop the guarded-include engine. Replacement segments retain copied definition spans plus exact invocation and both include-occurrence identities; config registration projections retain those origins. General/function/alias macros, computed includes, scalar-valued predicates and native equivalence remain unresolved. Existing literal and conditional reports match all five cached source sets. 19 new checks and 53 affected regressions passed. Real samples remain three completed entries/seven blockers with 186 registration candidates; a 102-file synthetic fixture demonstrates 101 replacements and 100 candidates. Same literal fixture medians: conditional 4.29 ms, scalar mode 4.32 ms; separate 101-replacement fixture 6.53 ms direct/71.03 ms fresh worker. Fixed worker/CLI, limits, non-execution gates, EN/FR/DE developer instructions and evidence added. Source-only; no new app binary or full conversion claim. Cross-file write/binding candidates, typed IR, broader macro semantics and all existing roadmap goals remain. See docs/SQF-SCALAR-MACROS.md.
+
+
+## Bounded macro aliases and complete definition chains (15 October 2026)
+
+Added opt-in single-name aliases ending in supported scalar literals, resolved against use-time definitions with mutation-invalidated per-entry caching. Every replacement retains the root invocation, all alias-definition bodies and the terminal literal/occurrences. Distinct missing/empty/cycle/depth findings, a 32-definition bound and 16,384 aggregate origin-reference cap block unsafe/incomplete output. Existing literal/conditional/scalar reports match all five cached source sets. 19 new checks and 72 affected regressions passed; a 102-file fixture exposes 100 registration candidates after 101 replacements with 202 origin links. Real sampled coverage remains three completed config entries/seven blockers and 186 candidates. Same direct-scalar fixture medians: scalar 5.72 ms, alias profile 5.85 ms; separate alias-chain fixture 7.21 ms direct/70.66 ms fresh worker. Developer-only worker/CLI and EN/FR/DE instructions; no app binary, native equivalence or general conversion claim. Next: cross-file function/write candidates and typed control-flow/context IR, with broader preprocessing still gated. All existing roadmap goals remain. See docs/SQF-ALIAS-MACROS.md.
+
+
+## Cross-file function writes, call joins and conflict review (15 October 2026)
+
+Added a connected developer batch: direct/literal namespace function-write inventory, cross-file call/registration name joins, and competing-write/namespace/dynamic-code review findings. Reuses original registration token scans while the old report wrapper avoids retaining them. Domains, nested code, raw preprocessing, private/local names, computed writes and load order remain explicit uncertainties; no winning definition, resolved binding or execution is inferred. Fixed bounded worker/CLI, strict source input, fan-out limits and EN/FR/DE developer guides added. 25 new checks and 54 affected regressions passed. Five cached sets preserve all older reports and expose 21 write candidates, 19 unique-write-name call sites and two multi-write-name call sites, all unbound. Same 203-file fixture: 200 registrations, 220 writes, 400 calls; median 8.03 ms registration-only, 11.91 ms with the new index, 70.50 ms fresh worker. Source-only; no new app executable/native behavior claim. Next: typed control-flow/context IR using these source candidates, with scope/types/effects/locality and full preprocessing still gated. All existing roadmap items remain. See docs/SQF-CROSS-FILE.md.
+
+
+## Control/context IR, type slots and detached code regions (15 October 2026)
+
+Added a connected developer batch: region-level branch/loop/exit candidates, detached stored-code/callback contexts, assignment/binding links and bounded expression slots with syntax-only shape hints. Reuses the binding inspector's own captured structure; old binding reports remain identical. No executable CFG, runtime type propagation, inferred exit destination, full statement effects or target code is claimed. Fixed worker/CLI, graph/reference checks, limits and EN/FR/DE developer instructions added. 24 new checks and 65 affected regressions passed. Thirty cached SQF files expose 1,609 IR nodes, 84 branches, 68 loops, 59 unresolved scope exits, 111 detached contexts and 354 assignments; unsupported expressions stay explicit. Same 16-file/160-function fixture: median 89.98 ms binding-only, 134.40 ms with IR, 277.02 ms fresh worker. Source-only; no new app executable. Added official sample and installed API documentation reference locations, strictly as inspiration/reference with no code copied or native verification. Next: strict imported-IR validation, supported statement effects and source-type/context constraints before verified lowering. Every existing roadmap goal remains. See docs/SQF-CONTROL-CONTEXT.md and docs/NATIVE-REFERENCE-SOURCES.md.
+
+
+## Source-bound IR verification and potential statement effects (15 October 2026)
+
+Added strict control/context IR verification by defensive plain-data snapshot plus exact source replay, preserving every field/gate and returning a fresh canonical source-produced report. Added potential statement effects, same-context summaries and callback/conditional invocation candidates; detached bodies are not merged as already executed. Fixed effect/verification workers and read-only/fresh-output CLI commands, budgets, raw-byte rechecks and EN/FR/DE developer guides added. 38 new checks and 38 affected regressions passed. Thirty cached SQF files retain identical source/IR bytes and expose 103 command candidates, 13 invocation candidates and 354 potential writes, with unknown coverage explicit. Same 16-file fixture: 124.83 ms IR-only, 150.18 ms effects, 371.27 ms replay validation/equality, 326.66 ms fresh effect worker, 503.15 ms fresh verification worker. No app execution/import authority, full statement analysis or native readiness is claimed. Next: source-type/initialization constraints and explicit supported lowering before native adapters. All prior roadmap goals remain. See docs/SQF-IR-VALIDATION-AND-EFFECTS.md.
+
+
+### 15 October 2026 — source constraints and initialization evidence
+
+Added a developer-only source-constraint inventory over the existing control/context IR: assignment shapes, parameter default/exemplar evidence, command signature and operator requirements, enclosing control regions and unresolved read initialization. Fixed bounded worker/CLI and source-bound imported-IR replay are covered. No runtime type propagation, definite-assignment solver, native adapter or executable generation is claimed. Existing roadmap goals and report/bundle formats remain intact. See [source constraints](docs/SQF-SOURCE-CONSTRAINTS.md) and its test/performance evidence; flow joins and verified types remain pending.
+
+
+### 15 October 2026 — desktop dependency inspector
+
+Added an explicit native source picker and on-demand desktop dependency review with unresolved-include filters, search, 40-row pages and captured-source previews. Settings and 51 Sarge topics are synchronized in EN/FR/DE. Cancelling/rejecting retains the previous review; clearing affects only session inspection. Includes are not auto-loaded, guards are not evaluated and source is never executed. This is the first desktop diagnostic increment; function/type/effects explorers, a graph view and combined export remain later work. Existing goals are retained. See [the workflow and validation](docs/DESKTOP-DEPENDENCY-INSPECTOR.md).
+
+
+### 15 October 2026 — GM workspace layout correction
+
+Packages 14/16: the floating editor and drawers clear wrapped map tools; long controls stay inside the panel. Five actual-app size/language/text combinations, Full map restoration, drawers, source-file inspection and unchanged mission checks passed. A matched short 400-unit comparison found no obvious frame-time regression. Existing Sarge/Settings destinations remain unchanged; EN/FR/DE usage notes and limits are recorded in [the layout guide](docs/GM-WORKSPACE-LAYOUT-FIX.md). This is a small usability correction; diagnostic explorers and all existing roadmap goals remain pending as previously recorded.
+
+
+### 15 October 2026 — compact floating GM controls
+
+The full-width bar is now content-sized. Assets, Inspector, Editor and live status remain visible; GM actions contains secondary commands. Existing handlers, approval boundaries and mission state are preserved. Sarge/EN/FR/DE guidance, responsive menu checks and the short performance sample are in [the toolbar guide](docs/GM-COMPACT-TOOLBAR.md). All existing roadmap goals remain.
+
+
+### 15 October 2026 — desktop Function Explorer and scaffold-export addition
+
+Delivered a searchable Function Explorer with registrations, possible writes, calls, warnings and source previews in a shared diagnostics window with Dependencies. Settings and 52 Sarge topics include EN/FR/DE guidance. Real radio inputs, a 1,000-row synthetic UI case and short same-fixture performance checks passed; see [the workflow](docs/DESKTOP-FUNCTION-EXPLORER.md).
+
+Added the user-requested [tiered scaffold-export milestone](docs/TIERED-SCAFFOLD-EXPORT-PLAN.md): verified green emission, explicit yellow scaffolds, red manual placeholders and a source-linked checklist. Review remains default. Scaffold Mode and Enforce emission are planned, not delivered here; types/signatures are never guessed from names or simple syntax. All existing roadmap goals remain.
+
+
+### 15 October 2026 — desktop type and initialization review
+
+Added the third diagnostics tab: source-shape and parameter evidence, unresolved reads, possible writes in branch/loop regions, source requirements and unsupported syntax. Reuses the bounded native picker/worker and source-constraint pass; it does not infer runtime/target types or prove initialization. Settings and 53 EN/FR/DE Sarge topics are synchronized. Actual radio inputs, a larger UI fixture, source safety/context retention and short same-map performance checks passed; see [the guide](docs/DESKTOP-TYPE-INITIALIZATION-REVIEW.md). Existing compiler, scaffold-export and mission-planner goals remain unchanged; verified emission is still pending.
+
+
+### 15 October 2026 — desktop Effects Inspector
+
+Added the fourth source-diagnostics tab: possible writes, command/invocation candidates, separate stored contexts, scheduling candidates, cleanup/lifetime review and unreviewed regions with source previews. Reuses the bounded worker and existing effect producer; no invocation, native behavior or emission is resolved. Settings and 54 EN/FR/DE Sarge topics are synchronized. Real radio sources, a larger callback fixture and affected desktop checks passed; see [the guide](docs/DESKTOP-EFFECTS-INSPECTOR.md). Prior goals remain intact. Combined diagnostic export, verified target mappings and tiered scaffold generation remain pending.
+
+
+### 15 October 2026 — combined diagnostics and comments-only scaffold handoff
+
+Delivered combined JSON/offline HTML exports from completed native snapshots with separate source/context identities, missing-review visibility and opt-in complete source text. Added explicit comments-only Scaffold mode: yellow/red source-linked manifest/checklist, safe output names, preserved original notices and no overwrites. Green remains zero; signatures/types/native semantics are not guessed. Settings and 55 EN/FR/DE Sarge topics are synchronized. Actual packaged exports, notice/source safety, snapshot clearing and affected checks passed; see [the guide](docs/COMBINED-DIAGNOSTIC-EXPORT.md). This advances the planned comments-first scaffold stage; earlier planning statements describe the previous checkpoint. All existing goals remain. Verified semantic mappings, green emission and native integration are still pending.
+
+
+### 15 October 2026 — first verified pure expression family
+
+Added opt-in literal-only Boolean value helpers with source/output maps and a matching native proof receipt. The actual 1.8.0.13 headless diagnostic server compiled/executed 46 cases; Workbench startup crashed before results and is not a pass. Green applies only to pure expressions; parent statement/function/mission conversion remains zero. Commands, variables, code operands, ambiguous grouping and selected preprocessing stay blocked. Ordinary comments-only handoff remains unchanged. Added a non-launching reproduction tool, export budget/proof gates and 56 EN/FR/DE Sarge topics. See [the mapping guide](docs/BOOLEAN-EXPRESSION-MAPPING.md). Earlier zero-green notes describe the prior checkpoint; broad semantic/lifecycle/native integration goals all remain intact.
+
+
+### 15 October 2026 — consistent component source review
+
+Private external-source test details are withheld. The general implementation goals and supported contracts remain unchanged.
+
+
+### 15 October 2026 — initialized Boolean local blocks
+
+Added optional complete flat Boolean local-block lowering: initialized private declarations, preceding local reads, sequential assignments and an explicit final Boolean value. Unknown/global/type-changing or control-flow operations reject that file as a whole. Native 1.8.0.13 diagnostic server compiled and executed 24 cases, then stopped; source SQF and game client were not run. Detached helpers carry original source/output maps and require caller/lifecycle integration. Existing comments-only and literal-expression modes remain intact. Separate review-bound acknowledgment, 58 EN/FR/DE Sarge topics and existing Settings routes cover the feature. This completes only the Boolean straight-line subset; general locals, functions, branches, loops, macros and all earlier roadmap goals remain intact. See [Boolean local mapping](docs/BOOLEAN-LOCAL-MAPPING.md).
+
+
+### 15 October 2026 — bounded pure Boolean if/else lowering
+
+Added an optional Boolean branch family alongside the existing straight-line local export. Statement-form if/else, optional else and bounded nesting can write previously initialized Boolean locals; both arms are checked. Branch-local declarations, unknown/global/engine operations, loops, value-form if and lifecycle integration stay manual. Native 1.8.0.13 diagnostic server compiled and executed 32 independently checked fixture outcomes, then stopped. No source SQF or game client was run. Family/source/profile changes reset scope acknowledgment; EN/FR/DE guidance and 59 Sarge topics are synchronized. All earlier goals and modes remain intact. See [Boolean branch mapping](docs/BOOLEAN-BRANCH-MAPPING.md).
+
+
+### 15 October 2026 — conversion coverage polish and exact integer values
+
+Added explicit read-only coverage previews for every expression/block family, with supported/mixed/manual/inventory rows, search and 20-file pages. Matching zero coverage disables that family’s helper export; stale coverage is discarded and save controls stay fixed while busy. Added the next type family: exact integer literal/negation/grouped +, - and * values with every intermediate bounded to ±16,777,215. Native 1.8.0.13 diagnostic server compiled and executed 42 cases after correcting a compiler-detected grouping issue. Parent statements, general numeric semantics and complete missions remain manual. Existing modes, plans and all roadmap goals remain intact. Settings and 61 EN/FR/DE Sarge topics are synchronized. See [coverage and integer mapping](docs/MIGRATION-COVERAGE-AND-INTEGERS.md).
+
+
+### 15 October 2026 — typed pure function module compiler
+
+Added explicit Boolean params/defaults, named code-valued function bodies, local state, branches, function-root guard exits and cross-file calls inside a selected closed module. Candidate/write uniqueness, typed argument checks, dependency propagation and cycle rejection prevent speculative bindings. Native 1.8.0.13 diagnostic server compiled six methods and executed 42 invocation/default cases. Source registration, dynamic scope, external callers, lifecycle and engine hooks stay manual. Coverage/export now includes typed functions and source/parameter/method/call-edge maps; base comments-only handoff remains intact. Settings and 62 EN/FR/DE Sarge topics are synchronized. All prior goals remain. See [typed Boolean functions](docs/TYPED-BOOLEAN-FUNCTIONS.md).
+
+
+## Additive checkpoint — typed scalar function modules, revision 2
+
+Delivered bounded subsets of the next compiler priorities: selected literal CfgFunctions file bodies with original source maps; structured/nested closed calls; explicit bool/exact-int/ASCII-string parameter/local/return contracts; initialized branch-private scope; literal-count loops with conservative closed-call cost bounds. Existing pure Boolean paths remain supported. Generated compatibility filenames/keys are retained.
+
+The selected-project preparer emits a new isolated Game project without launching an engine. The native 1.8.0.13 server checked 82 invocations across 16 methods through this preparation path and matched the exact generated module hash. Source SQF was not run; this is not an Arma 3 runtime equivalence test or proof of complete mod conversion. See docs/FUNCTION-MODULES.md and docs/test-evidence/function-modules-native.json.
+
+The ten requested priorities remain tracked explicitly:
+
+| Priority | Current state |
+| --- | --- |
+| 1 Registered function files | Literal unique selected registrations supported; inheritance/preprocessed merges and automatic init remain manual. |
+| 2 Preprocessing | Existing includes/conditions/scalar/alias subsets retained; full function-like macros/shared-context integration remains pending. |
+| 3 Structured calls | Closed scalar calls may be grouped/nested and composed in Boolean expressions; dynamic calls remain manual. |
+| 4 Typed values | Boolean, bounded exact integers and short printable ASCII strings supported for copy/pass/return; arithmetic/dynamic arrays remain pending. |
+| 5 Scope/initialization | Initialized branch locals and type consistency checked; shadowing and uninitialized declarations remain manual. |
+| 6 Loops | Bounded literal range subset supported; counter reads, dynamic bounds, general loops and nested exits remain manual. |
+| 7 Scheduling/lifecycle | Pending verified semantic adapters; no automatic spawn/sleep/waitUntil translation. |
+| 8 Engine adapters | Existing GM adapters remain separate; migration-to-engine entity/group/vehicle wiring still pending. |
+| 9 Workbench handoff | Selected generated project preparation and synthetic native validation delivered; project integration stays manual. |
+| 10 Real mod/release validation | Private source review continues; complete real-mod migration and consolidated release are not complete. |
+
+This is progress on the ten tasks, not a claim that all ten are finished. The wider planner, GM/server, resource, binary inventory and release roadmap remains intact. Sarge, Settings destinations and EN/FR/DE guides accompany this checkpoint.
+
+
+## Additive RC3 milestone — preprocessing, owned scheduling and game-review handoff
+
+RC3 delivers bounded implementations for the remaining release-batch priorities: selected function-style preprocessing with origin-preserving fresh review export; native-tested owned delay/readiness job scaffolds; imported-unit handoff to the existing host-approved deployment adapter; and consolidated real-source, regression, desktop and performance validation. See docs/RC3-MIGRATION-ADAPTERS.md and docs/RC3-RELEASE-DEBRIEF.md.
+
+The ten-priority batch now has concrete supported paths for registered files, selected preprocessing, structured calls, scalar contracts, initialized branch scope, literal loops, owned scheduling, reviewed engine deployment, isolated native handoff and prerelease validation. This does not complete arbitrary SQF-to-EnScript translation. Native preprocessing parity, missing external headers, engine-side UI/audio/events, general scheduling, crew/group reconstruction and unsupported source semantics remain explicit manual/roadmap items. No broader goal is removed or marked complete by inference.
+
+Source is never executed to infer meaning. Generated jobs are not auto-started; deployment still requires in-game host approval. Runtime state remains separate from saved missions and Undo. Existing Workshop scripts were not changed for these desktop additions.
+
+
+## RC3 follow-on sequence
+
+The additive next 100 steps are recorded in docs/NEXT-100-STEPS.md. Private third-party corpus identities and findings are withheld from distribution.
+
+
+## Next-100 implementation checkpoint — 16 October 2026
+
+Added explicit folder preview, shared-header capture, virtual-mount repair, navigable include connections, saved non-source review controls, unchanged-report reuse, bounded decimal conditional review, source-linked comparison, read-only generated project preview, compatibility status and a public distribution exclusion gate. Asset search adds category aliases, naval/support hints and filtered category counts. Sarge and EN/FR/DE guidance follow the new controls. These are development additions, not completion of all 100 steps or stable-release approval. See docs/NEXT100-DELIVERY.md and docs/NEXT100-PROGRESS.md (paths relative to repository root). All existing roadmap goals remain.
+
+
+## Advisory initialization and symbol checkpoint — 16 October 2026
+
+Added bounded background path review for supported literal writes, branch intersections and zero-iteration loops; unknown effects and caller contexts remain manual. Added revision-bound symbol provenance, nested forEach body candidates, source-linked paged UI and explicit local export. Reports retain runtime/type/lowering authority as false and do not mutate the original Types snapshot or mission state. General CFG/type inference and native switch/loop generation remain pending. Sarge and EN/FR/DE guidance cover the optional Types panel. See docs/NEXT100-INITIALIZATION.md. All existing roadmap items remain.
+
+### Asset browser organization — 16 October 2026
+
+Complete-vehicle filters now exclude vehicle components, wrecks and base templates. These technical entries have separate categories and remain hidden by default; selecting a technical category enables their visibility. Props and structures take precedence over imported vehicle icon hints. Existing resource identities and assigned-unit snapshots are unchanged. Sarge and French/German guidance describe the filters. Classification remains a catalog hint, not proof of native spawnability.
+
+Validation: six browser tests and three localization tests passed. An isolated offline Electron fixture passed vehicle/part separation, technical-category visibility, locale switching and unchanged mission data with no page errors. On the same 2,721-entry vanilla catalog, the default vehicle list narrowed from 570 to 198 candidates. The short local classification/filter measurements are recorded in docs/test-evidence/asset-browser-organization.json; they are not sustained-performance or native-spawning certification.
+
+
+### Named tracking and default faction organization
+
+Adds catalog-only faction organization and negotiated live label/faction/kind telemetry. Player names come from the server player manager. Unknown/legacy feeds remain unidentified. See docs/NAMED-TRACKING-AND-FACTIONS.md; native and real-session acceptance are recorded separately.
+
+
+### Reviewed infantry route checkpoint
+
+Companion followon.4 and native bridge 0.8.0 candidate add 1–16 ordered map waypoints, full host review, separate capability negotiation and ownership-safe replacement/cancellation. Native installation/lifecycle gates passed; normal-terrain travel remains an acceptance test. AI labels now read AI while player names are retained. See docs/INFANTRY-ROUTES-PILOT.md. Existing goals remain unchanged.
+
+
+### Existing-squad control checkpoint — 16 October 2026
+
+Followon.5 / bridge 0.9.0 candidate adds explicit live-marker selection, reviewed recruitment and release, and native bounded Follow. Synthetic native lifecycle and desktop checks passed. Real-player Follow and normal-terrain travel remain acceptance work. Formation, stance, combat, transport and building-entry scope is retained. See docs/SQUAD-CONTROL-PILOT.md.
+
+
+### Native squad-settings checkpoint — 16 October 2026
+
+Followon.6 / bridge 0.10.0 candidate adds four verified formation definitions with restoration, persistent native stance settings and distinct native fire policies. Synthetic readback, membership propagation, foreign editor-setting protection and desktop review gates passed. Diamond/Circle, adaptive Auto, physical formation/combat acceptance and other command families remain open. See docs/SQUAD-SETTINGS-PILOT.md. Existing roadmap goals are retained.
+
+
+### Vehicle seat inspection checkpoint — 17 October 2026
+
+Step 71 adds separately negotiated, host-approved read-only snapshots of bridge-created vehicles. Empty, AI-occupied, reserved/inaccessible and nonvehicle cases passed native diagnostics; offline Electron checks passed review, safe display, three languages, stale review, pairing cleanup and mission preservation. Source checkpoint only: no new release or Workshop publication. Steps 72–74 and real-player/combat acceptance remain open. See docs/VEHICLE-INSPECTION-PILOT.md. All existing goals remain.
+
+
+### Embark preflight groundwork — 17 October 2026
+
+Step 72 is partial: original native read-only role/capacity checks compiled and passed eight isolated checks. Vehicle inspection now rejects recruited infantry at the relay. Reviewed boarding requests, execution authority/lifecycle, actual boarding, dismount and mixed-human transport remain unfinished. No action is advertised and no release is packaged. See docs/EMBARK-PREFLIGHT.md. All existing goals remain.
+
+### Transport and server snapshot development — 17 October 2026
+
+Original reviewed embark/dismount now pass actual four-member native boarding, partial recovery, cancellation, foreign-reservation preservation and pairing cleanup. Server snapshots separately save planned deployment or supported current COMMAND state inside the server profile. Native process-restart, frozen no-spawn review, separately approved restoration, exact member positions, saved move/stance and incompatible-restore rollback passed. Offline desktop checks cover both workflows, three languages and unchanged mission data. Source development only; no new release or Workshop publication yet. Vehicle driving, convoy, supported healing and building metadata remain active next work. See docs/SQUAD-TRANSPORT-PILOT.md and docs/SERVER-SCENARIO-SNAPSHOTS.md. All existing roadmap goals and external acceptance remain.
+
+### 18 October 2026 — integrated control development pilot
+
+Original reviewed transport, server-side COMMAND scenario snapshots, separate vehicle routes, bounded convoy pursuit and one-member native treatment now have isolated native and offline desktop evidence. Read docs/CONTROL-PILOT-RELEASE.md and docs/test-evidence/control-pilot-validation.json. Native building door metadata assessment passed without enabling entry/navigation. This is development scope; connected-human, multiplayer, combat and remaining NEXT100 acceptance work stays open.
+
+### 18 October 2026 — control execution candidate
+
+The followon.8 / bridge 0.11.1 candidate adds non-forced native activation before approved order execution, explicit recruited-control revocation, read-only execution inspection, recovery shortcuts, automatic pending-result refresh and distinct installation/delivery feedback. The original isolated fixture reproduced accepted movement with inactive AI and then verified travel with production activation. See docs/CONTROL-EXECUTION-UPDATE.md and its separately scoped receipts. Hosted-session acceptance remains open; no existing roadmap goal is removed or declared complete by these fixes.
+
+
+2026-10-18 usability follow-up: automatic labels for unnamed deployment entries, pending-only cancellation with status recheck, explicit existing-squad recruitment shortcut, and synchronized EN/FR/DE help. See docs/CONTROL-USABILITY-REVIEW.md. Lone-character squad orders and universal plan/live two-way editing remain unimplemented; no new native acceptance claim.
+
+Presentation follow-up: original COMMAND shell with left navigation, actual plan/connection readouts, Deploy/Orders/Server task views, retained original controls, and clearly separate offline rehearsal. UI-only; no added native capabilities or two-way editing claim.
+
+
+## Optional 3D planning view — added 18 October 2026
+
+Planned separate track; existing numbered goals are retained. First milestone is a read-only terrain preview with inexpensive selectable tactical proxies and synchronized 2D selection. The current sampler is limited to 300 selected points, not a full heightmap. Authorized elevation/world/alignment data, geometry-consistent picking, yaw/pitch/roll and parent-transform checks, lazy loading, camera controls, resource cleanup and measured performance are required gates. Full models, 3D editing and .ent scene import remain separate later work. See [staged scope and acceptance](docs/THREE-D-PLANNING-VIEW-ROADMAP.md). No implementation or gameplay acceptance is claimed; current AI-control fixes remain the immediate priority.
+
+
+### 18 October 2026 — individual controls and optional 3D source candidate
+
+Original one-member native helpers now support approved, living on-foot individual infantry while retaining the physical root/prefab. Exact previous-pairing AI recovery requires a new scoped recruitment and host approval. Writer-reported target roles filter infantry, vehicle and unsupported controls. Transport, treatment and vehicle cancellation rechecks request state. See [individual controls](docs/INDIVIDUAL-AI-CONTROL.md) and [3D preview](docs/THREE-D-PLANNING-VIEW.md).
+
+The first read-only 3D section preview is implemented with authorized bounded height imports, approximate tactical proxies, shared 2D selection, on-demand rendering and cleanup. The native metadata query independently confirms the canonical Eden.ent world preset. Existing native terrain sampling stays capped at 300 points; it is not a full heightmap. Scene reconstruction, detailed models and 3D editing remain separate future work.
+
+Fresh native individual movement, physical stances, Hold-to-Move, snapshot restart, protection and reconnect checks passed; relevant vehicle/treatment/convoy regressions passed. Human-control signals in the protection fixture were simulated. Connected-human/combat acceptance and universal two-way editing remain open. The earlier intermittent boarding failure has not been reproduced in the latest traced pass and is not declared fixed. Existing milestone numbering and pending garrison/clearing scope remain intact. This is local development, not a public publication claim.
+
+
+18 October workflow clarification: keep Live Game Master, reviewed Workbench placement exchange, and optional in-app terrain preview separate. Game/editor windows remain separate; no experimental viewport capture is retained. Matching satellite texture/water/camera preview improvements are in followon.11 development. Workbench export/import are planned until original importer tests pass. Import must review added, moved and removed managed identities and apply through one Undo step; continuous two-way editing remains behind that gate.
+
+
+18 October source-only milestone: the original [Workbench exchange contract](docs/WORKBENCH-EXCHANGE-CONTRACT.md) and explicit-file developer tool now validate declared world/plan/exchange/layer identities, baseline hashes, exact prefab references and full transforms, then separately report added/moved/removed managed records. Twenty-two focused checks passed. Apply is always disabled; no native importer/exporter, scene change, desktop Undo integration or application control is claimed. Actual native compilation, durable identities and one-Undo round trip remain required before enabling the workflow. Existing releases and every prior roadmap item remain intact.
+
+
+18 October native-data checkpoint: an original isolated Game-module JSON probe compiled and reproduced seven scalar-read cases on engine1.8.0.13. Native null-to-empty-string behavior is now explicit. Workbench's planned native wire uses opaque managed IDs; the desktop review binds exact typed planner IDs from its trusted baseline, with26 focused checks passing. Added a non-launching isolated reproduction-project preparer. Full native editor importer/exporter, identity persistence, placement review and atomic one-Undo application remain planned and gated; no game client or Workbench was launched and the existing bridge/releases remain unchanged.
+
+
+### 18 October 2026 — Workbench desktop candidate development gate
+
+- Complete: source-only explicit add/move/remove candidate with exact stale/identity/resource/lock/hierarchy checks, optional auto-names, foreign-data preservation, and bounded whole-plan validation. Shared prefab definitions remain consistent; full reviewed poses are unit-level provenance, not write authority. Ordinary plans remain format4; candidates with reviewed poses use format5 and are safely rejected by followon.11.
+- Verified: 41 focused checks; full regression936pass/0fail/1skip; actual isolated offline generic desktop batch edit, single Undo/Redo and stale/invalid rejection on small and1,000-managed-unit synthetic fixtures. Source preparation median159ms/5runs; large desktop call1216ms includingIPC/render/storage. Profile larger interactive imports before enabling them.
+- Pending: original native Workbench importer/exporter compilation, durable identity acrosssave/reopen/copy, protected layer scans, exact world/transform round-trip, partial failure rollback and full native/desktop acceptance. Import editor changes stays planned/disabled; no public release or bridge change.
+- Original50-task count remains47complete. Boarding tasks32–34 need new reproducing evidence; no unobserved cause or fix claimed.
+
+
+### 18 October 2026 — boarding parked; native transform and editor-inventory progress
+
+- Boarding tasks 32–34 are explicitly parked at the user's request. Original50-task count remains 47; no cause/fix acceptance claimed and no boarding test repeated.
+- Fixed production server-snapshot heading capture and member application to use explicit yaw/pitch/roll APIs instead of X/Y/Z angle APIs. Actual native helper + disk JSON comparison passed1/5 before and 5/5 after, zero script errors. Format1 and desktop compatibility retained; prior incorrect file headings need review/resave. Separate local bridge 0.11.3 candidate; no public publication. Paired restart/gameplay acceptance is not inferred from this targeted gate.
+- Original read-only WorkbenchGame inventory compiled and scanned five synthetic entities in two cases, verifying native layer membership and YPR/matrix reconstruction. Reordering a text layer without persisted IDs rebound two IDs: these cannot serve as managed identity. Saved-scene identity tests and original importer remain pending. Engine shutdown instance-leak diagnostics keep cleanup acceptance open; Apply remains disabled.
+- New preparation tools do not launch executables or overwrite existing destinations. Five preparation checks passed. Existing desktop/native regression gates are retained; only changed paths tested.
+
+
+### 18 October2026 — authorized consolidated GitHub prerelease
+
+Preparing desktop2.9.1-dev.followon.12 with bridge0.11.3, matching committed source, complete operator/catalog content, separate bridge/operator archives and checksums. Existing releases and WIP are preserved. The local Everon elevation file is excluded from public uploads under its declared local-use-only permission; importer and instructions remain included. Boarding remains parked. Native/editor acceptance boundaries are unchanged. Publication is user-authorized; manifest/remote verification will record actual completion.
+
+
+### 20 October 2026 — HTTPS hosting and scoped approval development checkpoint
+
+Added explicit Quick connection — this computer / Dedicated relay — server managed labels; remote dashboard disconnect retains the session, authenticated protocol-3 reattachment keeps its identity, and End session waits for revocation acknowledgement. Added an explicit loopback server launcher and optional private native GM runner. Game/server policy independently scopes automatic AI orders, spawning and removal; snapshots stay manual. Existing queue, caps, native validation and duplicate guards remain. Approval origin is recorded; the policy display shares the tracking poll without extra requests. Settings, Sarge and EN/FR/DE operator summaries are synchronized.
+
+Full source suite: 945 pass / 0 fail / 1 skip before the final status metadata optimization; final 30 changed-path checks, 8 focused hosting tests and 3 localization checks passed. Real isolated native server compiled and exercised automatic spawn/diagnosis, manual snapshot disk save/removal, disable-policy and revocation. Development Electron offline startup, translations, help navigation and unchanged mission state passed. Same 60-entity traffic fixture used 120 requests in both baseline and development. Public Cloudflare testing was blocked by automatic approval review pending explicit permission to send generated test credentials through the tunnel. No public release or Workshop publication occurred. WebSockets, persistence and multiple-admin roles remain separate; boarding remains parked. See docs/HTTPS-RELAY-HOSTING.md and docs/test-evidence/https-hosting-approval.json.
+
+
+### 20 October 2026 — authorized public tunnel test and readiness correction
+
+The user explicitly approved the temporary public test using generated test-only credentials. Public health checks failed with ENOTFOUND before game pairing. A separate health-only origin confirmed system DNS and both Cloudflare/Google DNS-over-HTTPS returned NXDOMAIN for the generated temporary hostname; ordinary Cloudflare/GitHub HTTPS succeeded. This is a scoped address-resolution failure, not proof of a global outage or successful bridge exchange. Owned test tunnels were closed; no normal game client or existing server credentials were used.
+
+Fixed the confirmed false-ready gap: Quick connection now requires bounded public /health success before local pairing credentials are issued. Failed DNS/unreachable health and cancelled startup close owned resources without a late pairing. Nine free-connection tests and eight HTTPS hosting tests passed. Updated Sarge and EN/FR/DE operator guidance. This desktop-only readiness fix does not change native bridge code. Public game-command acceptance remains pending an address that resolves.
+
+
+20 October follow-up: the longer-lived temporary address became reachable and the user-authorized public Cloudflare/native test passed: dashboard reattachment, automatic spawn/diagnosis, manual snapshot disk save/removal, policy disable and revocation. Initial NXDOMAIN failures remain recorded. Quick connection now allows a bounded two-minute public-health wait before issuing pairing credentials. Ten changed-path tests passed. All owned test processes stopped; human multiplayer and combat remain unverified.
+
+
+### 20 October 2026 — one consolidated release candidate
+
+Authoritative source frozen for COMMAND 2.10.0-rc.1 and bridge publication project 0.12.0. Full roadmap preserved; core/pilot/planned scope and promotion gates are in docs/RELEASE-2.10.0-SCOPE.md. Expanded mixed snapshot process-restart test passed. Consolidated source suite: 954 pass / 0 fail / 1 skip. Single complete package is assembled from the recorded immutable commit, with verified existing Electron/tunnel dependencies; no private diagnostics or local-use elevation included. Stable publication remains blocked by the exact packaged and human live acceptance gates. No stable/public publication is claimed.
+
+
+### 20 October 2026 — reusable deployment compositions
+
+Development source: portable selected-unit save/load, explicit anchor and clockwise pose preview, fresh IDs and parent remapping, atomic editor insertion, unresolved identity feedback, existing reviewed deployment path. Frozen RC preserved. Focused contracts only; packaged UI and native acceptance pending. Next: connected desktop acceptance; occupied-spawn shared native changes require ownership coordination through the user. Reinforcement and real logistics remain subsequent unimplemented milestones.
+
+
+### 20 October 2026 — occupied deployments, ground reserve dispatch and bounded refuelling
+
+Original COMMAND source adds reviewed occupied deployment with exact individual seats and automatic-cargo passenger squads, preserving native group membership and bounding roots/actors separately. The on-foot reserve workflow steps through deployment and ground-order outcomes without claiming arrival or automatically respawning. A single stock refuel interaction checks owned vehicle/provider/operator identities and observes real target/provider fuel; unfinished acceptance stays explicit. EN/FR/DE guidance and existing Settings/Sarge routes cover these operations. Frozen RC1 and historical boarding-failure evidence are preserved. Native receipts and final candidate smoke define verification scope; no stable or human multiplayer acceptance is inferred.
+
+
+### 20 October2026 — experimental occupied Huey insertion
+
+The original force-assisted vanilla UH-1H adapter is integrated through current owned identities, manual reviewed requests and measured relay progress. Actual isolated production HTTP execution created three roots with five verified occupants, retained the four-person group, lifted8.06m, travelled100.07m, sustained a grounded landing, completed four animated exits and retained the pilot. Identical requests and terminal-result retries did not restart execution. An earlier exact-lease airborne cancellation landed with all passengers retained. Any human entering the aircraft releases assistance; actual human takeover/two-client acceptance remains pending. Walking embark separately timed out0/4 and remains unexplained; direct group seating does not fix it. Matching candidate desktop2.10.0-rc.2/bridge0.13.0 is not a stable publication. Test files: examples/helicopter-insertion-test; operator guides10. Full roadmap retained.
+
+### 20 October 2026 — UI acceptance blocker
+
+Feature expansion paused at user request. Desktop rc.3 consolidates asset, planned-unit, deployed-target and tracked-unit browsing with explicit source badges, persistent filters, map selection and one contextual action pane. Existing mission/bridge contracts and approval authority remain unchanged. Portable mission files bundle planning references and seating configuration; no credentials or game assets. Packaged usability, normal window sizes and populated list performance define this gate. Existing infantry uses approved recruitment; general existing-vehicle registration remains unimplemented. Frozen RC2 and its native evidence remain intact. No stable or fresh multiplayer claim.
+
+### 20 October 2026 — tunnel/startup hotfix
+
+Local address/code delivery follows registered Cloudflare transport and local pairing; background public verification is explicitly reported and cannot block credentials for up to120seconds. Stop/cancellation and approval rules are preserved. Window visibility uses DOM readiness and online tiles are deferred until first frame. Temporary live Cloudflare probe produced credentials in8.6seconds; no multiplayer acceptance inferred. Applied only to A:/Command installation with rollback copy; frozen RC3 package remains intact.

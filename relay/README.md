@@ -1,36 +1,21 @@
-# Remote bridge test — 2.9.0-remote.1
+# COMMAND HTTPS relay — 1.0.0 — experimental live integration
 
-## Status
-Implemented: single-character relay, temporary pairing, remote planner Settings, disconnect/reload cleanup and deployment files.
-Passed: 81 planner regressions; 4 relay tests; Electron UI test using a real localhost relay and a test-only HTTPS-to-HTTP transport mapping. Public TLS, GeForce NOW gameplay, and Workshop installation have NOT been verified. No relay is deployed yet.
-The in-game panel compiled and its layout was checked earlier. A small new change preserves the selected endpoint when the pause menu is reopened; compile that change before publication.
-Coordinates remain uncalibrated. This is an experimental one-host-character bridge, not a live feed of every unit or objective.
+Use with stable planner 1.0.0 and experimental bridge 0.13.0. HTTP polling is implemented; WebSockets, process-restart persistence and multi-admin roles are not. Sessions and queues live in memory. Closing a remote dashboard is different from ending/revoking its session.
 
-## 1. Deploy the relay using your Render account
-1. Extract JSOC-ORBAT-HTTPS-Relay.zip.
-2. Put its contents in the root of a new GitHub repository you control. These are relay source files only, not the planner EXE or mod. No credentials are included.
-3. In Render choose New > Web Service and connect that repository.
-4. Choose Docker as the runtime, Free as the instance type, and /health as the health-check path. Dockerfile is at the repository root. The service listens on PORT (default 8080).
-5. Deploy and wait for the service to report live. Open its HTTPS URL with /health appended; expect {"ok":true}.
-6. Keep the ROOT HTTPS address, e.g. https://your-service.onrender.com/ . Do not paste /health or /marker into the planner.
-Alternatively deploy the included render.yaml as a Blueprint. Review that it says plan: free before confirming.
+## Quick connection — this computer
 
-Official instructions: https://render.com/docs/web-services and https://render.com/docs/free . Free services sleep after 15 minutes without inbound traffic. Open /health and let the service wake before pairing if the first request times out. A service restart loses all temporary sessions; pair again. Run one instance only: sessions are held in memory and are not shared across replicas.
+COMMAND starts its own loopback relay and verified cloudflared helper. It issues pairing credentials after tunnel registration, then checks public HTTPS reachability in the background; a warning remains visible if reachability is unconfirmed. Disconnect or application shutdown stops only its owned processes. This folder is not needed to run that built-in workflow.
 
-## 2. Open the new planner
-1. Extract Everon-ORBAT-Remote-Bridge-Test.zip completely, then run COMMAND Planner.exe from that folder.
-2. Open the gear > Live bridge test.
-3. Enter the root HTTPS relay address and click Connect via relay.
-4. Copy the temporary pairing code. Keep the planner running. The code lasts up to one hour.
-5. Do NOT click Start local receiver for GeForce NOW. That is a separate local-PC test mode.
+## Dedicated relay — server managed
 
-## 3. Prepare and test the mod
-Use the existing project at A:/Everon-ORBAT-Development/mods/JSOC_ORBAT_Bridge. Validate and Reload Scripts once for the new endpoint-retention change. The sanitized mod ZIP excludes the old BridgeTest world and pairing secrets. It includes available layout metadata.
-Workshop publication and Host Local runtime tests are still required. Do not mark this as a verified release. Once the tested mod is published, download/enable it in Reforger on GeForce NOW, then Host Local a vanilla Everon scenario.
-Open Escape > COMMAND - HOST PAIRING. Paste the SAME HTTPS root address and current planner pairing code. Click CONNECT, resume, and possess a character. Check the planner update count and marker as you move.
-Disconnect should clear the planner marker. Re-pair after expiry, relay restart, or planner reload. Do not paste a pairing code into Workshop descriptions or saved world resources.
+Install Node 22 or later (Node 24 used for acceptance checks). Run `node dedicated-server.js` from this folder. Default binding is 127.0.0.1:8080. COMMAND_RELAY_PORT changes the port; COMMAND_RELAY_HOURS selects integer hours 1–24 (default 1) when starting. Point an administrator-managed HTTPS reverse proxy/tunnel at that loopback listener. Keep tunnel credentials private. Do not expose an unprotected origin listener directly.
 
-## Data and limits
-The game sends only {token,x,z} every two seconds. Read credentials are separate and remain in planner process memory. The relay stores only the latest point per session in RAM; sessions expire after one hour. It accepts at most 100 concurrent sessions, limits request rates and payload size, rejects browser Origin requests, and uses five-second request/header timeouts. Deploy behind Render HTTPS; the container's internal HTTP port is not a public TLS endpoint by itself.
-Remote stale markers clear after about 7–9 seconds; polling failures clear them immediately. Plans, asset catalogs, undo history and exports are separate from live markers.
-This bounded prototype is intended for a small private test. Its global capacity limits are not a substitute for public-service abuse protection at the hosting edge.
+In COMMAND Settings → Live bridge → Server profiles select Dedicated relay — server managed, enter the HTTPS root, choose a narrow tracking allowlist and explicitly enable reviewed GM requests if required. Securely copy the private dashboard key before disconnecting. Reconnect dashboard requires the same root and key and protocol-3 tracked session. The key grants command authority; a shared URL alone does not. Keys stay out of mission and profile exports. Disconnect dashboard leaves the server session running. End session waits for acknowledgement and revokes it. A relay process restart loses sessions and requires new pairing.
+
+The included Dockerfile runs server.js for a separately secured hosting environment; publish its container port on host loopback when using a local tunnel. `node dedicated-server.js` is the default server-box setup described above. Configuration examples contain no live credentials.
+
+## Host authority and testing limits
+
+Native host/server controls hold approval authority. Manual approval is the default; automatic AI/spawn/removal categories are separate and retain validation, caps, ownership, duplicate and player protections. Snapshot operations remain manual. Rebind private dedicated approval settings to each fresh pairing. Read Guides/07-HTTPS-HOSTING.md in the complete package for the server configuration and manual review flow, or planner/operator-guides/07-HTTPS-HOSTING.md in the source archive.
+
+Isolated native public-HTTPS command exchange and mixed snapshot process restart were verified on this PC. They do not certify human multiplayer, combat behavior or the unexplained historical boarding timeout. All relay/live controls remain experimental; complete LIVE-CHECKLIST.md before claiming broader gameplay acceptance. Keep this relay version together with its matching bridge and desktop; do not merge files from historical development archives.

@@ -1,0 +1,292 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "version",
+    "executable",
+    "index",
+    "entries"
+  ],
+  "properties": {
+    "schema": {
+      "const": "command-arma3-prefab-map"
+    },
+    "version": {
+      "const": 1
+    },
+    "executable": {
+      "const": false
+    },
+    "index": {
+      "type": "object",
+      "required": [
+        "schema",
+        "version",
+        "addons",
+        "resources"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "companion-resource-index"
+        },
+        "version": {
+          "const": 1
+        },
+        "addons": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "version",
+              "dependencies"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^(?!0{16}$)[0-9A-F]{16}$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120,
+                "pattern": "^[^\\u0000-\\u001F\\u007F]*[^\\s\\u0000-\\u001F\\u007F][^\\u0000-\\u001F\\u007F]*$"
+              },
+              "version": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[0-9A-Za-z][0-9A-Za-z._+-]{0,39}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "dependencies": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^(?!0{16}$)[0-9A-F]{16}$"
+                },
+                "maxItems": 128,
+                "uniqueItems": true
+              }
+            }
+          },
+          "maxItems": 500
+        },
+        "resources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "addonId",
+              "path",
+              "guid",
+              "kind",
+              "observation",
+              "provenance",
+              "dependencies"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_-]{1,64}$"
+              },
+              "addonId": {
+                "type": "string",
+                "pattern": "^(?!0{16}$)[0-9A-F]{16}$"
+              },
+              "path": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 512,
+                "pattern": "^[^\\\\/<>:\"|?*{}%\\u0000-\\u001F\\u007F]+(?:/[^\\\\/<>:\"|?*{}%\\u0000-\\u001F\\u007F]+)*$"
+              },
+              "guid": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^(?!0{16}$)[0-9A-F]{16}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "kind": {
+                "enum": [
+                  "script",
+                  "config",
+                  "project",
+                  "metadata",
+                  "world",
+                  "layer",
+                  "prefab",
+                  "component",
+                  "layout",
+                  "imageset",
+                  "material",
+                  "opaque"
+                ]
+              },
+              "observation": {
+                "enum": [
+                  "metadata-only",
+                  "local-file"
+                ]
+              },
+              "provenance": {
+                "type": "object",
+                "required": [
+                  "method",
+                  "source",
+                  "license"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "method": {
+                    "enum": [
+                      "manual",
+                      "project-metadata",
+                      "workbench-index",
+                      "workshop-metadata"
+                    ]
+                  },
+                  "source": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 500,
+                    "pattern": "^[^\\u0000-\\u001F\\u007F]*[^\\s\\u0000-\\u001F\\u007F][^\\u0000-\\u001F\\u007F]*$"
+                  },
+                  "license": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 200,
+                        "pattern": "^[^\\u0000-\\u001F\\u007F]*[^\\s\\u0000-\\u001F\\u007F][^\\u0000-\\u001F\\u007F]*$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              },
+              "dependencies": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "addonId",
+                    "guid",
+                    "path"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "addonId": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^(?!0{16}$)[0-9A-F]{16}$"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "guid": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^(?!0{16}$)[0-9A-F]{16}$"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "path": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 512,
+                          "pattern": "^[^\\\\/<>:\"|?*{}%\\u0000-\\u001F\\u007F]+(?:/[^\\\\/<>:\"|?*{}%\\u0000-\\u001F\\u007F]+)*$"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    }
+                  },
+                  "anyOf": [
+                    {
+                      "properties": {
+                        "guid": {
+                          "type": "string",
+                          "pattern": "^(?!0{16}$)[0-9A-F]{16}$"
+                        }
+                      }
+                    },
+                    {
+                      "properties": {
+                        "path": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 512,
+                          "pattern": "^[^\\\\/<>:\"|?*{}%\\u0000-\\u001F\\u007F]+(?:/[^\\\\/<>:\"|?*{}%\\u0000-\\u001F\\u007F]+)*$"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "maxItems": 128,
+                "uniqueItems": true
+              }
+            }
+          },
+          "maxItems": 10000
+        }
+      },
+      "title": "Companion resource index v1 (canonical wire form)",
+      "$comment": "Runtime validator also enforces path segments and reserved names, ownership, extension kinds, GUID exceptions, identity uniqueness, addon cycles, 50000 total references and 5 MiB serialized bytes. Not a native asset validity or availability schema."
+    },
+    "entries": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sourceClass",
+          "resourceId",
+          "approval"
+        ],
+        "properties": {
+          "sourceClass": {
+            "type": "string",
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,159}$"
+          },
+          "resourceId": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]{1,64}$"
+          },
+          "approval": {
+            "const": "identity-reviewed"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grimactual.github.io/COMMAND-ORBAT-Mission-Planner/schemas/sqf-class-map-v1.schema.json"
+}

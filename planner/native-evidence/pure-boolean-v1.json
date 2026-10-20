@@ -1,0 +1,16 @@
+{
+  "mapping": "command-pure-boolean-v1",
+  "mappingSHA256": "96966365334349358d5c9eba75b3b0e2a4570ecddbcfe391b4233e44b00d3aa7",
+  "mappingHashScope": "utf8-module-with-lf-newlines",
+  "fixtureSHA256": "a6a8ea7b47c0f076712f9e36a6e8ddf939bd086f2aabda07e6394d98da36e334",
+  "compiled": true,
+  "executed": true,
+  "failures": 0,
+  "cases": 46,
+  "engineVersion": "1.8.0.13",
+  "environment": "ArmaReforgerServerDiag Game scripts, isolated EmptyEden fixture",
+  "gameClientLaunched": false,
+  "sourceSQFExecuted": false,
+  "sourceSemantics": "Documented pure Boolean truth tables; no Arma 3 runtime comparison",
+  "proofScope": "Literal-only fully grouped Boolean expression results; no statement or lifecycle translation"
+}

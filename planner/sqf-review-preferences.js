@@ -1,0 +1,7 @@
+/* Review preferences only. Source code, source paths, consent and mission state are never stored. */
+(function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.CompanionReviewPreferences=api;})(globalThis,function(){
+'use strict';const KEY='commandSourceReviewPreferences';const defaults=()=>({version:1,macroProfile:'dependencies',jobProfile:'types',defined:[],pollIntervalMs:1000,maxPollAttempts:30});
+function validate(v){if(!v||Object.getPrototypeOf(v)!==Object.prototype||Object.keys(v).sort().join(',')!==Object.keys(defaults()).sort().join(',')||v.version!==1||!['dependencies','functions','types','effects'].includes(v.macroProfile)||!['types','effects'].includes(v.jobProfile)||!Array.isArray(v.defined)||v.defined.length>128||new Set(v.defined).size!==v.defined.length||v.defined.some(x=>typeof x!=='string'||! /^[A-Za-z_][A-Za-z0-9_]{0,127}$/.test(x))||!Number.isInteger(v.pollIntervalMs)||v.pollIntervalMs<100||v.pollIntervalMs>60000||!Number.isInteger(v.maxPollAttempts)||v.maxPollAttempts<1||v.maxPollAttempts>128)throw Error('Invalid source review preferences');return {...v,defined:[...v.defined]};}
+function load(storage){try{return validate(JSON.parse(storage.getItem(KEY)));}catch{return defaults();}}
+function save(storage,value){const safe=validate(value);storage.setItem(KEY,JSON.stringify(safe));return safe;}
+return {KEY,defaults,validate,load,save};});

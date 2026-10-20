@@ -11,6 +11,6 @@
   "engines": {
     "node": ">=18"
   },
-  "description": "COMMAND bridge source prototype",
+  "description": "COMMAND — independent ORBAT and mission planner for Arma Reforger.",
   "license": "GPL-3.0-only"
 }

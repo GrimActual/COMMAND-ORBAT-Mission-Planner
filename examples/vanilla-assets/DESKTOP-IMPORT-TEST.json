@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "actualOperationalCatalogImported": true,
+  "operationalEntries": 2721,
+  "operationalImportMs": 975.7096999999994,
+  "oneUnitReviewMs": 558.7795000000006,
+  "secondCatalogEntries": 1000,
+  "catalogImportsDoNotChangeMission": true,
+  "assignedSnapshotSurvivesCatalogReplacementAndReload": true,
+  "exactGuidAddonAndPathPreserved": true,
+  "matchingIndexReadFromDisk": true,
+  "nativePickerMocked": true,
+  "noGameCommandSent": true,
+  "noAutomaticBridgeConnection": true,
+  "rendererErrors": [],
+  "scope": "One real offline desktop import/review/reload sample; host spawn availability is a separate gate"
+}

@@ -1,0 +1,26 @@
+# Reviewed Arma 3 class-to-prefab mappings
+
+These features are included in COMMAND 2.9.1-dev.gm.8, in the COMMAND-Mission-Migration Windows package. Earlier dev.gm.7 downloads remain unchanged. Compatibility identifiers are preserved.
+
+1. Close the older Companion before switching test builds. Back up your current operation. Open COMMAND Planner.exe inside COMMAND-Mission-Migration.
+2. In Assets → Arma 3 migration review, inspect your SQF/SQM/EXT/HPP files. Expand Arma 3 asset mappings.
+3. Load target resource index. Start with the COMMAND Vanilla-Assets bundle's Start-Here/01-Operational-Assets-Resource-Index.json (2,721 identities), or your reviewed modded index.
+4. Choose a detected source class. Search target prefabs by name/path/GUID, and select Troops, Armoured vehicles or another type filter. Cards are paged at 20; source classes at 10. Templates and variants are hidden unless explicitly included.
+5. Choose a card and inspect its exact addon ID, GUID and path. Confirm class mapping. Repeated occurrences of that class now resolve to this reviewed identity. No object is spawned and no mission data changes.
+6. Export class mappings through native Save. The portable JSON carries the selected prefab records, provenance, declared dependency references and addon graph. Load saved class mappings to reuse it after restart. Loading replaces the current mapping library; it does not merge libraries automatically.
+
+Compatible target-index changes retain mappings using qualified addon/GUID/path identity, even if internal resource IDs change. Incompatible or missing targets reject the new index while retaining the previous library. A saved mapping loaded against an existing index must also resolve exactly. With no index loaded, its embedded index supplies declared identities only; load a compatible larger index to expand the search.
+
+Index/file input and explicit identity confirmation are required. There are no name-similarity auto-approvals or prefab-path guesses. Classnames use a bounded supported identifier subset; invalid source literals remain visible but cannot be mapped. At most 1,000 unique source classes and mapping entries are handled; truncation is explicitly shown and the complete migration report remains available. Portable JSON is capped at 6 MiB and target indexes retain their existing 5 MiB/10,000-resource contract limits.
+
+SQM type fields are inventory observations, not a reconstructed scene graph; some may describe waypoint types rather than spawn classes. Review them before mapping. A source soldier class assigned to a group/vehicle/helper prefab can change semantics. Name similarity, category filters and metadata GUID identity do not establish gameplay equivalence, component compatibility, faction correctness, native availability or spawn success. Terrain conversion, scheduler/locality semantics, source control flow and native execution remain separate adapters. The exported map is explicitly non-executable.
+
+The library is session-only until you export it. It does not change plan JSON, editor Undo, scenario journals, tracking or game requests. Source inspection reloads invalidate an unconfirmed target choice; confirmed class mappings remain reusable. Clear migration review removes the detected source list; Clear class mappings removes the session mapping library. Sarge and the existing Settings migration shortcut cover the workflow in EN/FR/DE.
+
+Validation: nine new mapping contract/export tests, seven existing migration tests, three localization checks and eight affected native-file checks passed (27 unique focused tests). The sandbox initially denied a temporary-file replacement; the native-save checks passed outside that sandbox. Actual offline Electron tests used the real vanilla index and native file reader, with automated dialog selections. Exact provenance/identity, typed search, 20-card paging, repeated-class reuse, native Save, worker reload, invalid-input retention, EN/FR/DE context and unchanged mission passed. The 1,001-class fixture shows its 1,000-class cap, 10 source buttons and correct clear behavior.
+
+That large-file gate reproduced a quote-scanning failure in Electron with the previous scanner. The scanner now holds the delimiter separately from the scan character and advances explicit character positions; the actual file-input/worker gate passes. This does not claim a complete SQF grammar or a diagnosed GPU/driver cause.
+
+Search measurement: 2,721-resource fixture; 100 cached searches measured median 0.234 ms and p95 0.341 ms. A deliberate revalidation/reconstruction baseline measured median 66.42 ms / p95 76.63 ms across 20 samples, with identical results. This compares local search work, not previous-build FPS, whole-app RAM or complete conversion performance. Search rows and dependency diagnostics are retained rather than rebuilt on every query. No mission writes occurred.
+
+Next additive milestone: translate supported spawn/movement patterns into reviewed neutral mission-intent drafts using these mappings, with source references and unresolved-condition/terrain/authority gates. Full SQF conversion, native mission export and the existing chained-waypoint/GM roadmap remain unfinished and retained.

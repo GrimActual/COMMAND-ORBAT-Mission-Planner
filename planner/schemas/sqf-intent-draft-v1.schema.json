@@ -1,0 +1,768 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "version",
+    "executable",
+    "requiredReview",
+    "files",
+    "assetMap",
+    "intents",
+    "definitions",
+    "findings",
+    "summary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "command-sqf-intent-draft"
+    },
+    "version": {
+      "const": 1
+    },
+    "executable": {
+      "const": false
+    },
+    "requiredReview": {
+      "const": [
+        "source-execution-context",
+        "terrain-alignment",
+        "group-and-faction-semantics",
+        "authority-and-lifecycle",
+        "native-prefab-availability",
+        "native-ai-target-adapter"
+      ]
+    },
+    "files": {
+      "type": "array",
+      "maxItems": 64,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "textBytes",
+          "sha256",
+          "hashScope",
+          "mode"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "textBytes": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 262144
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "hashScope": {
+            "const": "decoded-utf8-text"
+          },
+          "mode": {
+            "enum": [
+              "sqf",
+              "inventory-only"
+            ]
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "assetMap": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "schema",
+            "version",
+            "executable",
+            "index",
+            "entries"
+          ],
+          "properties": {
+            "schema": {
+              "const": "command-arma3-prefab-map"
+            },
+            "version": {
+              "const": 1
+            },
+            "executable": {
+              "const": false
+            },
+            "index": {
+              "type": "object",
+              "required": [
+                "schema",
+                "version",
+                "addons",
+                "resources"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "schema": {
+                  "const": "companion-resource-index"
+                },
+                "version": {
+                  "const": 1
+                },
+                "addons": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id",
+                      "name",
+                      "version",
+                      "dependencies"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "pattern": "^(?!0{16}$)[0-9A-F]{16}$"
+                      },
+                      "name": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 120,
+                        "pattern": "^[^\\u0000-\\u001F\\u007F]*[^\\s\\u0000-\\u001F\\u007F][^\\u0000-\\u001F\\u007F]*$"
+                      },
+                      "version": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "pattern": "^[0-9A-Za-z][0-9A-Za-z._+-]{0,39}$"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "dependencies": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^(?!0{16}$)[0-9A-F]{16}$"
+                        },
+                        "maxItems": 128,
+                        "uniqueItems": true
+                      }
+                    }
+                  },
+                  "maxItems": 500
+                },
+                "resources": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id",
+                      "addonId",
+                      "path",
+                      "guid",
+                      "kind",
+                      "observation",
+                      "provenance",
+                      "dependencies"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "pattern": "^[A-Za-z0-9_-]{1,64}$"
+                      },
+                      "addonId": {
+                        "type": "string",
+                        "pattern": "^(?!0{16}$)[0-9A-F]{16}$"
+                      },
+                      "path": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 512,
+                        "pattern": "^[^\\\\/<>:\"|?*{}%\\u0000-\\u001F\\u007F]+(?:/[^\\\\/<>:\"|?*{}%\\u0000-\\u001F\\u007F]+)*$"
+                      },
+                      "guid": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "pattern": "^(?!0{16}$)[0-9A-F]{16}$"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "kind": {
+                        "enum": [
+                          "script",
+                          "config",
+                          "project",
+                          "metadata",
+                          "world",
+                          "layer",
+                          "prefab",
+                          "component",
+                          "layout",
+                          "imageset",
+                          "material",
+                          "opaque"
+                        ]
+                      },
+                      "observation": {
+                        "enum": [
+                          "metadata-only",
+                          "local-file"
+                        ]
+                      },
+                      "provenance": {
+                        "type": "object",
+                        "required": [
+                          "method",
+                          "source",
+                          "license"
+                        ],
+                        "additionalProperties": false,
+                        "properties": {
+                          "method": {
+                            "enum": [
+                              "manual",
+                              "project-metadata",
+                              "workbench-index",
+                              "workshop-metadata"
+                            ]
+                          },
+                          "source": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 500,
+                            "pattern": "^[^\\u0000-\\u001F\\u007F]*[^\\s\\u0000-\\u001F\\u007F][^\\u0000-\\u001F\\u007F]*$"
+                          },
+                          "license": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 200,
+                                "pattern": "^[^\\u0000-\\u001F\\u007F]*[^\\s\\u0000-\\u001F\\u007F][^\\u0000-\\u001F\\u007F]*$"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "dependencies": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "required": [
+                            "addonId",
+                            "guid",
+                            "path"
+                          ],
+                          "additionalProperties": false,
+                          "properties": {
+                            "addonId": {
+                              "anyOf": [
+                                {
+                                  "type": "string",
+                                  "pattern": "^(?!0{16}$)[0-9A-F]{16}$"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "guid": {
+                              "anyOf": [
+                                {
+                                  "type": "string",
+                                  "pattern": "^(?!0{16}$)[0-9A-F]{16}$"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "path": {
+                              "anyOf": [
+                                {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "maxLength": 512,
+                                  "pattern": "^[^\\\\/<>:\"|?*{}%\\u0000-\\u001F\\u007F]+(?:/[^\\\\/<>:\"|?*{}%\\u0000-\\u001F\\u007F]+)*$"
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            }
+                          },
+                          "anyOf": [
+                            {
+                              "properties": {
+                                "guid": {
+                                  "type": "string",
+                                  "pattern": "^(?!0{16}$)[0-9A-F]{16}$"
+                                }
+                              }
+                            },
+                            {
+                              "properties": {
+                                "path": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "maxLength": 512,
+                                  "pattern": "^[^\\\\/<>:\"|?*{}%\\u0000-\\u001F\\u007F]+(?:/[^\\\\/<>:\"|?*{}%\\u0000-\\u001F\\u007F]+)*$"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "maxItems": 128,
+                        "uniqueItems": true
+                      }
+                    }
+                  },
+                  "maxItems": 10000
+                }
+              },
+              "title": "Companion resource index v1 (canonical wire form)",
+              "$comment": "Runtime validator also enforces path segments and reserved names, ownership, extension kinds, GUID exceptions, identity uniqueness, addon cycles, 50000 total references and 5 MiB serialized bytes. Not a native asset validity or availability schema."
+            },
+            "entries": {
+              "type": "array",
+              "maxItems": 1000,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "sourceClass",
+                  "resourceId",
+                  "approval"
+                ],
+                "properties": {
+                  "sourceClass": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,159}$"
+                  },
+                  "resourceId": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9_-]{1,64}$"
+                  },
+                  "approval": {
+                    "const": "identity-reviewed"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "intents": {
+      "type": "array",
+      "maxItems": 500,
+      "items": {
+        "$ref": "#/$defs/intent"
+      }
+    },
+    "definitions": {
+      "type": "array",
+      "maxItems": 500,
+      "items": {
+        "$ref": "#/$defs/definition"
+      }
+    },
+    "findings": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source",
+          "code",
+          "message"
+        ],
+        "properties": {
+          "source": {
+            "$ref": "#/$defs/source"
+          },
+          "code": {
+            "enum": [
+              "CONFIGURATION_ONLY",
+              "UNSUPPORTED_STATEMENT"
+            ]
+          },
+          "message": {
+            "type": "string",
+            "maxLength": 256
+          }
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "files",
+        "intents",
+        "definitions",
+        "findings",
+        "mappedSpawns",
+        "executionReady"
+      ],
+      "properties": {
+        "files": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 64
+        },
+        "intents": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 500
+        },
+        "definitions": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 500
+        },
+        "findings": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "mappedSpawns": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 500
+        },
+        "executionReady": {
+          "const": 0
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grimactual.github.io/COMMAND-ORBAT-Mission-Planner/schemas/sqf-intent-draft-v1.schema.json",
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "file",
+        "line",
+        "column",
+        "start",
+        "end"
+      ],
+      "properties": {
+        "file": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 262145
+        },
+        "column": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 262145
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 262144
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 262144
+        }
+      }
+    },
+    "intent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "source",
+        "assignedSymbol",
+        "sourceClass",
+        "groupSymbol",
+        "targetSymbol",
+        "targetIntentId",
+        "sourcePosition",
+        "proposedPosition",
+        "positionSymbol",
+        "resourceId",
+        "binding",
+        "sourceOptions",
+        "dependsOn",
+        "blockers",
+        "executionReady"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^intent-[0-9]+$"
+        },
+        "kind": {
+          "enum": [
+            "spawn-unit",
+            "spawn-vehicle",
+            "move",
+            "waypoint"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "assignedSymbol": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,159}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sourceClass": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,159}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "groupSymbol": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,159}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "targetSymbol": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,159}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "targetIntentId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^intent-[0-9]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sourcePosition": {
+          "anyOf": [
+            {
+              "type": "array",
+              "maxItems": 3,
+              "items": {
+                "type": "number",
+                "minimum": -10000000,
+                "maximum": 10000000
+              },
+              "minItems": 3
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "proposedPosition": {
+          "anyOf": [
+            {
+              "type": "array",
+              "maxItems": 3,
+              "items": {
+                "type": "number",
+                "minimum": -10000000,
+                "maximum": 10000000
+              },
+              "minItems": 3
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "positionSymbol": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,159}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "resourceId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]{1,64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "binding": {
+          "enum": [
+            null,
+            "{750A8D1695BD6998}Prefabs/AI/Waypoints/AIWaypoint_Move.et"
+          ]
+        },
+        "sourceOptions": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/$defs/literal"
+          }
+        },
+        "dependsOn": {
+          "type": "array",
+          "maxItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^intent-[0-9]+$"
+          }
+        },
+        "blockers": {
+          "type": "array",
+          "maxItems": 11,
+          "items": {
+            "enum": [
+              "class-unmapped",
+              "class-unresolved",
+              "position-unresolved",
+              "target-unresolved",
+              "source-group-unresolved",
+              "spawn-placement-review",
+              "unit-height-semantics",
+              "movement-target-semantics",
+              "waypoint-semantics",
+              "preprocessing-unresolved",
+              "unhandled-source-statements"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "executionReady": {
+          "const": false
+        }
+      }
+    },
+    "definition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "symbol",
+        "source",
+        "kind",
+        "value",
+        "targetIntentId"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^definition-[0-9]+$"
+        },
+        "symbol": {
+          "type": "string",
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,159}$"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "kind": {
+          "enum": [
+            "literal",
+            "entity-alias"
+          ]
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/literal"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "targetIntentId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^intent-[0-9]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "literal": {
+      "anyOf": [
+        {
+          "type": "string",
+          "maxLength": 256
+        },
+        {
+          "type": "number",
+          "minimum": -10000000,
+          "maximum": 10000000
+        },
+        {
+          "type": "array",
+          "maxItems": 16,
+          "items": {
+            "$ref": "#/$defs/literal"
+          }
+        }
+      ]
+    }
+  }
+}

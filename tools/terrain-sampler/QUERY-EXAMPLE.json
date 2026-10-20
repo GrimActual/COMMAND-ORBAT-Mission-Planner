@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "version": 1,
+  "world": {
+    "addonId": "1234567890ABCDEF",
+    "guid": "ABCDEF1234567890",
+    "path": "Worlds/Fixture.ent"
+  },
+  "samples": [
+    {
+      "worldX": 4010,
+      "worldZ": 5020,
+      "surfaceY": 0
+    },
+    {
+      "worldX": 4020,
+      "worldZ": 5040,
+      "surfaceY": 0
+    }
+  ]
+}

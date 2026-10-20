@@ -1,0 +1,13 @@
+unit_id,name,world_x,world_z,prefab,orders
+"ACTUAL","ACTUAL - Mission commander","4700","11860","Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et","Command from the assembly point; authorize each phase after checking actual game state."
+"ALPHA","ALPHA - Checkpoint team","4700","11900","Prefabs/Groups/BLUFOR/Group_US_FireTeam.et","Advance on foot to CHECKPOINT NORTH, hold and report. Then search RELAY."
+"BRAVO","BRAVO - Overwatch team","4740","11900","Prefabs/Groups/BLUFOR/Group_US_FireTeam.et","Cover ALPHA from OVERWATCH. Use the WEST ALTERNATE if the direct route is blocked."
+"CHARLIE","CHARLIE - Air-mobile reserve","4900","11800","Prefabs/Groups/BLUFOR/Group_US_FireTeam.et","Board EAGLE passenger seats after inspection; remain reserve until called."
+"BISON1_CREW","BISON 1 - Escort crew","4790","11820","Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et","Board BISON 1 using permitted driver/gunner/passenger roles, then escort the support vehicle."
+"BISON2_CREW","BISON 2 - Support crew","4830","11820","Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et","Board BISON 2 with a driver; stage at SUPPORT HOLD and remain available for recovery."
+"ANGEL","ANGEL - Medic","4720","11860","Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Medic.et","Remain at the casualty collection point. Treatment requests are conditional on an actual eligible casualty."
+"EAGLE_PILOT","EAGLE - Pilot","4870","11760","Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_HeliPilot.et","Crew EAGLE while parked. Flight and landing are Game Master/player operated in this build."
+"EAGLE_COPILOT","EAGLE - Co-pilot","4860","11760","Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_HeliPilot.et","Take an appropriate available aircraft seat through a separate reviewed request or normal Game Master controls."
+"BISON1","BISON 1 - Armed M1025 escort","4800","11850","Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB.et","Parked initially. Drive only with its complete same-faction AI crew aboard and a conscious owned driver."
+"BISON2","BISON 2 - M1025 support","4840","11850","Prefabs/Vehicles/Wheeled/M998/M1025.et","Parked initially. Follow the inspected vehicle route after boarding succeeds."
+"EAGLE","EAGLE - UH-1H transport","4930","11740","Prefabs/Vehicles/Helicopters/UH1H/UH1H.et","Parked transport for CHARLIE. No COMMAND helicopter flight/autopilot order is provided."

@@ -1,0 +1,79 @@
+{
+  "assets": [
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-5939FFCC6CC2FA96",
+      "name": "ChimeraAIAgentFull — AIAgents",
+      "category": "Vanilla / AIAgents",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_5939FFCC6CC2FA96",
+        "addonId": "58D0FB3206B6F859",
+        "path": "AI/AIAgents/ChimeraAIAgentFull.et",
+        "guid": "5939FFCC6CC2FA96",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-3C04D2994CF9F7EF",
+      "name": "ChimeraAIAgentVehicle — AIAgents",
+      "category": "Vanilla / AIAgents",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_3C04D2994CF9F7EF",
+        "addonId": "58D0FB3206B6F859",
+        "path": "AI/AIAgents/ChimeraAIAgentVehicle.et",
+        "guid": "3C04D2994CF9F7EF",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-B4C861A6DA2F5E05",
+      "name": "SCR ChimeraAIAgentFull — AIAgents",
+      "category": "Vanilla / AIAgents",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_B4C861A6DA2F5E05",
+        "addonId": "58D0FB3206B6F859",
+        "path": "AI/AIAgents/SCR_ChimeraAIAgentFull.et",
+        "guid": "B4C861A6DA2F5E05",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    }
+  ]
+}

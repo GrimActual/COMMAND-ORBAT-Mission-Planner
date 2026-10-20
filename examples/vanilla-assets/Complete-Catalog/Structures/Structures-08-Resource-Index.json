@@ -1,0 +1,1898 @@
+{
+  "schema": "companion-resource-index",
+  "version": 1,
+  "addons": [
+    {
+      "id": "58D0FB3206B6F859",
+      "name": "Arma Reforger",
+      "version": null,
+      "dependencies": [
+        "5614BBCCBB55ED1C"
+      ]
+    },
+    {
+      "id": "5614BBCCBB55ED1C",
+      "name": "Enfusion core data",
+      "version": null,
+      "dependencies": []
+    }
+  ],
+  "resources": [
+    {
+      "id": "vanilla_4F054AD0B0080E78",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_01/WoodenWall_01_4m.et",
+      "guid": "4F054AD0B0080E78",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AE9E6F639440A51E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_01/WoodenWall_01_8m.et",
+      "guid": "AE9E6F639440A51E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1AE80966F1B79AB3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_01/WoodenWall_01_Base.et",
+      "guid": "1AE80966F1B79AB3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_CE46F098C180C991",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_01/WoodenWall_01_Pole.et",
+      "guid": "CE46F098C180C991",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E3BD6B3AA7E5184E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_01/WoodenWall_01_red_2m.et",
+      "guid": "E3BD6B3AA7E5184E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A5693F701BAC066E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_01/WoodenWall_01_red_4m_D.et",
+      "guid": "A5693F701BAC066E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9370F9E335C14DFD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_01/WoodenWall_01_red_4m.et",
+      "guid": "9370F9E335C14DFD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_72EBDC501189E69B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_01/WoodenWall_01_red_8m.et",
+      "guid": "72EBDC501189E69B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E82F2EE016E77CD1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_01/WoodenWall_01_weathered_2m.et",
+      "guid": "E82F2EE016E77CD1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_35809B38A793EFE6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_01/WoodenWall_01_weathered_4m_D.et",
+      "guid": "35809B38A793EFE6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_98E2BC3984C32962",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_01/WoodenWall_01_weathered_4m.et",
+      "guid": "98E2BC3984C32962",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7979998AA08B8204",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_01/WoodenWall_01_weathered_8m.et",
+      "guid": "7979998AA08B8204",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1EA715C9E923D5F6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_01_base.et",
+      "guid": "1EA715C9E923D5F6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_16BAFB1D70A10F48",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_01_green.et",
+      "guid": "16BAFB1D70A10F48",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DB893EF559419EAB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_01.et",
+      "guid": "DB893EF559419EAB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_10B95181D4D4DA2C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_02_base.et",
+      "guid": "10B95181D4D4DA2C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_564ADA38C6BD8D0F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_02_green.et",
+      "guid": "564ADA38C6BD8D0F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B7DD0A15E5851185",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_02.et",
+      "guid": "B7DD0A15E5851185",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_154C92463F86209A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_03_base.et",
+      "guid": "154C92463F86209A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A84A9A7D33EFE143",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_03_green.et",
+      "guid": "A84A9A7D33EFE143",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_524146ECE96086EE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_03.et",
+      "guid": "524146ECE96086EE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0C85D911AF3AC598",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_04_base.et",
+      "guid": "0C85D911AF3AC598",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D7AA9873AA848981",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_04_green.et",
+      "guid": "D7AA9873AA848981",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6F7563D49C0C0FD9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_04.et",
+      "guid": "6F7563D49C0C0FD9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_09701AD644683F2E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_05_base.et",
+      "guid": "09701AD644683F2E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_29AAD8365FD6E5CD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_05_green.et",
+      "guid": "29AAD8365FD6E5CD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8AE92F2D90E998B2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_05.et",
+      "guid": "8AE92F2D90E998B2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_076E5E9E799F30F4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_06_base.et",
+      "guid": "076E5E9E799F30F4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_695AF913E9CA678A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_06_green.et",
+      "guid": "695AF913E9CA678A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E6BD1BCD2C2D179C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_06.et",
+      "guid": "E6BD1BCD2C2D179C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_029B9D5992CDCA42",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_07_base.et",
+      "guid": "029B9D5992CDCA42",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_975AB9561C980BC6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_07_green.et",
+      "guid": "975AB9561C980BC6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_0321573420C880F7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_07.et",
+      "guid": "0321573420C880F7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_34FCC83158E6FAF0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_08_base.et",
+      "guid": "34FCC83158E6FAF0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_969AFD0EDB1CB60E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_08_green.et",
+      "guid": "969AFD0EDB1CB60E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9CD551BDC6F405F2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_2m_DST_08.et",
+      "guid": "9CD551BDC6F405F2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DD3D24F20C3F0EBB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_07_base.et",
+      "guid": "DD3D24F20C3F0EBB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_67650511011A4C1F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_07_green.et",
+      "guid": "67650511011A4C1F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_21F5C8BA29DED7A4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_07.et",
+      "guid": "21F5C8BA29DED7A4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EB5A719AC6143E09",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_08_base.et",
+      "guid": "EB5A719AC6143E09",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_66A54149C69EF1D7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_08_green.et",
+      "guid": "66A54149C69EF1D7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BE01CE33CFE252A1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_08.et",
+      "guid": "BE01CE33CFE252A1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EEAFB25D2D46C4BF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_09_base.et",
+      "guid": "EEAFB25D2D46C4BF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_98A5010C33CC9D9B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_09_green.et",
+      "guid": "98A5010C33CC9D9B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5B9D82CAC307C5CA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_09.et",
+      "guid": "5B9D82CAC307C5CA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3AF42FE069D187F5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_10_base.et",
+      "guid": "3AF42FE069D187F5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C0C94527AD72EB49",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_10_green.et",
+      "guid": "C0C94527AD72EB49",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6BCB850AA810B1E3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_10.et",
+      "guid": "6BCB850AA810B1E3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3F01EC2782837D43",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_11_base.et",
+      "guid": "3F01EC2782837D43",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3EC9056258208705",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_11_green.et",
+      "guid": "3EC9056258208705",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8E57C9F3A4F52688",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_11.et",
+      "guid": "8E57C9F3A4F52688",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_311FA86FBF747299",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_12_base.et",
+      "guid": "311FA86FBF747299",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7E392447EE3C0542",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_12_green.et",
+      "guid": "7E392447EE3C0542",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E203FD131831A9A6",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_12.et",
+      "guid": "E203FD131831A9A6",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_34EA6BA85426882F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_13_base.et",
+      "guid": "34EA6BA85426882F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_803964021B6E690E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_13_green.et",
+      "guid": "803964021B6E690E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_079FB1EA14D43ECD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_13.et",
+      "guid": "079FB1EA14D43ECD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2D2320FFC49A6D2D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_14_base.et",
+      "guid": "2D2320FFC49A6D2D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FFD9660C820501CC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_14_green.et",
+      "guid": "FFD9660C820501CC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3AAB94D261B8B7FA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_14.et",
+      "guid": "3AAB94D261B8B7FA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_28D6E3382FC8979B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_15_base.et",
+      "guid": "28D6E3382FC8979B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_01D9264977576D80",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_15_green.et",
+      "guid": "01D9264977576D80",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_DF37D82B6D5D2091",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_15.et",
+      "guid": "DF37D82B6D5D2091",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_26C8A770123F9841",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_16_base.et",
+      "guid": "26C8A770123F9841",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4129076CC14BEFC7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_16_green.et",
+      "guid": "4129076CC14BEFC7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B363ECCBD199AFBF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4_B_DST_16.et",
+      "guid": "B363ECCBD199AFBF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_155A31DF33465245",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_4m_DST_00_base.et",
+      "guid": "155A31DF33465245",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D6B595E083326C2A",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_17_base.et",
+      "guid": "D6B595E083326C2A",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BAA3F928EAC35F14",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_17_green.et",
+      "guid": "BAA3F928EAC35F14",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_60ED1AE855742679",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_17.et",
+      "guid": "60ED1AE855742679",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E0D2C08849195C98",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_18_base.et",
+      "guid": "E0D2C08849195C98",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BB63BD702D47E2DC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_18_green.et",
+      "guid": "BB63BD702D47E2DC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FF191C61B348A37C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_18.et",
+      "guid": "FF191C61B348A37C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E527034FA24BA62E",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_19_base.et",
+      "guid": "E527034FA24BA62E",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4563FD35D8158E90",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_19_green.et",
+      "guid": "4563FD35D8158E90",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1A855098BFAD3417",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_19.et",
+      "guid": "1A855098BFAD3417",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8F8CFF92A5920B6F",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_20_base.et",
+      "guid": "8F8CFF92A5920B6F",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_EF67DC85854651F9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_20_green.et",
+      "guid": "EF67DC85854651F9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C4C786493DFF9EDE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_20.et",
+      "guid": "C4C786493DFF9EDE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8A793C554EC0F1D9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_21_base.et",
+      "guid": "8A793C554EC0F1D9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_11679CC070143DB5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_21_green.et",
+      "guid": "11679CC070143DB5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_215BCAB0311A09B5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_21.et",
+      "guid": "215BCAB0311A09B5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8467781D7337FE03",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_22_base.et",
+      "guid": "8467781D7337FE03",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5197BDE5C608BFF2",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_22_green.et",
+      "guid": "5197BDE5C608BFF2",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_4D0FFE508DDE869B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_22.et",
+      "guid": "4D0FFE508DDE869B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_8192BBDA986504B5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_23_base.et",
+      "guid": "8192BBDA986504B5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_AF97FDA0335AD3BE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_23_green.et",
+      "guid": "AF97FDA0335AD3BE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A893B2A9813B11F0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_23.et",
+      "guid": "A893B2A9813B11F0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_985BF08D08D9E1B7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_24_base.et",
+      "guid": "985BF08D08D9E1B7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_D077FFAEAA31BB7C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_24_green.et",
+      "guid": "D077FFAEAA31BB7C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_95A79791F45798C7",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_24.et",
+      "guid": "95A79791F45798C7",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9DAE334AE38B1B01",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_25_base.et",
+      "guid": "9DAE334AE38B1B01",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_2E77BFEB5F63D730",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_25_green.et",
+      "guid": "2E77BFEB5F63D730",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_703BDB68F8B20FAC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_25.et",
+      "guid": "703BDB68F8B20FAC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_93B07702DE7C14DB",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_26_base.et",
+      "guid": "93B07702DE7C14DB",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6E879ECEE97F5577",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_26_green.et",
+      "guid": "6E879ECEE97F5577",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1C6FEF8844768082",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_26.et",
+      "guid": "1C6FEF8844768082",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9645B4C5352EEE6D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_27_base.et",
+      "guid": "9645B4C5352EEE6D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9087DE8B1C2D393B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_27_green.et",
+      "guid": "9087DE8B1C2D393B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_F9F3A371489317E9",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_27.et",
+      "guid": "F9F3A371489317E9",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A022E1ADFF05DEDF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_28_base.et",
+      "guid": "A022E1ADFF05DEDF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_91479AD3DBA984F3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_28_green.et",
+      "guid": "91479AD3DBA984F3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6607A5F8AEAF92EC",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_28.et",
+      "guid": "6607A5F8AEAF92EC",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_A5D7226A14572469",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_29_base.et",
+      "guid": "A5D7226A14572469",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6F47DA962EFBE8BF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_29_green.et",
+      "guid": "6F47DA962EFBE8BF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_839BE901A24A0587",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_29.et",
+      "guid": "839BE901A24A0587",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_718CBFD750C06723",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_30_base.et",
+      "guid": "718CBFD750C06723",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_372B9EBDB0459E6D",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_30_green.et",
+      "guid": "372B9EBDB0459E6D",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_B3CDEEC1C95D71AE",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_8m_B_DST_30.et",
+      "guid": "B3CDEEC1C95D71AE",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1B52D60E02712F40",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_pole_2m_DST_00_base.et",
+      "guid": "1B52D60E02712F40",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_E8BABB5885F36304",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_pole_2m_DST_00_green.et",
+      "guid": "E8BABB5885F36304",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3E15720C55A409C0",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_pole_2m_DST_00.et",
+      "guid": "3E15720C55A409C0",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_BEE90371F39D3E43",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_pole_4m_DST_00_green.et",
+      "guid": "BEE90371F39D3E43",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C90BA6BB3B40BDD1",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_pole_4m_DST_00.et",
+      "guid": "C90BA6BB3B40BDD1",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_74797C10BB929D95",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_pole_6m_DST_00_base.et",
+      "guid": "74797C10BB929D95",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_C92BDEF84517F221",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_pole_6m_DST_00_green.et",
+      "guid": "C92BDEF84517F221",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5651A238C5B8E6C5",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_pole_6m_DST_00.et",
+      "guid": "5651A238C5B8E6C5",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_FE0B3A92EB601B4B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_pole_8m_DST_00_base.et",
+      "guid": "FE0B3A92EB601B4B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5A10B63585F2EC74",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_pole_8m_DST_00_green.et",
+      "guid": "5A10B63585F2EC74",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_1021B17B8F920FC4",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/Dst/WoodenWall_02_pole_8m_DST_00.et",
+      "guid": "1021B17B8F920FC4",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_82E05DC9AB962EB3",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/WoodenWall_02_2m_green.et",
+      "guid": "82E05DC9AB962EB3",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_63EC0D3983F96A5C",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/WoodenWall_02_2m.et",
+      "guid": "63EC0D3983F96A5C",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_79A9D4110FDDE7AD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/WoodenWall_02_4m_A_green.et",
+      "guid": "79A9D4110FDDE7AD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_13219FE011DD3FEF",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/WoodenWall_02_4m_A.et",
+      "guid": "13219FE011DD3FEF",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_3959F534B9C165EA",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/WoodenWall_02_4m_B_green.et",
+      "guid": "3959F534B9C165EA",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_5585E2968ACE1D4B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/WoodenWall_02_4m_B.et",
+      "guid": "5585E2968ACE1D4B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_39DFFF624E601D22",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/WoodenWall_02_8m_A_green.et",
+      "guid": "39DFFF624E601D22",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_13449740EE495C79",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/WoodenWall_02_8m_A.et",
+      "guid": "13449740EE495C79",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_792FDE47F87C9F65",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/WoodenWall_02_8m_B_green.et",
+      "guid": "792FDE47F87C9F65",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7F10A3A0528DD357",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/WoodenWall_02_8m_B.et",
+      "guid": "7F10A3A0528DD357",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_14F64D2ECC409569",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/WoodenWall_02_Base.et",
+      "guid": "14F64D2ECC409569",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_9988D509653039DD",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/WoodenWall_02_D_green.et",
+      "guid": "9988D509653039DD",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_7A3449DF32A16042",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/WoodenWall_02_D.et",
+      "guid": "7A3449DF32A16042",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "vanilla_6BB2540CAAD4120B",
+      "addonId": "58D0FB3206B6F859",
+      "path": "Prefabs/Structures/Walls/Wooden/WoodenWall_02/WoodenWall_02_Pole.et",
+      "guid": "6BB2540CAAD4120B",
+      "kind": "prefab",
+      "observation": "metadata-only",
+      "provenance": {
+        "method": "workbench-index",
+        "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+        "license": null
+      },
+      "dependencies": []
+    }
+  ]
+}

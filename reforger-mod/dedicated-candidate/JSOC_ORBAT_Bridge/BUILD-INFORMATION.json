@@ -1,0 +1,14 @@
+{
+  "product": "COMMAND ORBAT Bridge",
+  "version": "0.13.0",
+  "desktop": "1.0.0",
+  "status": "experimental live controls paired with stable COMMAND planner 1.0.0",
+  "projectGuid": "6A969EB0C5012BB9",
+  "workshopPublication": "Project version 0.13.0. Verify actual installed Workshop version separately; desktop stable status does not certify native multiplayer acceptance.",
+  "stablePublicationAllowed": false,
+  "experimentalFeatures": [
+    "occupied-character-and-cargo-group-deployment",
+    "reviewed-refuel-once",
+    "force-assisted-vanilla-UH1H-insertion"
+  ]
+}

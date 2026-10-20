@@ -1,0 +1,329 @@
+{
+  "assets": [
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-99CAB176956E40DE",
+      "name": "CameraDecal — Decal",
+      "category": "Vanilla / WorldEditor",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_99CAB176956E40DE",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/WorldEditor/EntityIcons/Decal/CameraDecal.et",
+        "guid": "99CAB176956E40DE",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-6F6D4174AF1AC29B",
+      "name": "ChatDecal — Decal",
+      "category": "Vanilla / WorldEditor",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_6F6D4174AF1AC29B",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/WorldEditor/EntityIcons/Decal/ChatDecal.et",
+        "guid": "6F6D4174AF1AC29B",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-9871B69B823CD805",
+      "name": "DestructionDecal — Decal",
+      "category": "Vanilla / WorldEditor",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_9871B69B823CD805",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/WorldEditor/EntityIcons/Decal/DestructionDecal.et",
+        "guid": "9871B69B823CD805",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-F9EBA4763559D75C",
+      "name": "EditorDecal — Decal",
+      "category": "Vanilla / WorldEditor",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_F9EBA4763559D75C",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/WorldEditor/EntityIcons/Decal/EditorDecal.et",
+        "guid": "F9EBA4763559D75C",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-36B5077B1A41983D",
+      "name": "FactionDecal — Decal",
+      "category": "Vanilla / WorldEditor",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_36B5077B1A41983D",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/WorldEditor/EntityIcons/Decal/FactionDecal.et",
+        "guid": "36B5077B1A41983D",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-923827F6B179E503",
+      "name": "LoadoutDecal — Decal",
+      "category": "Vanilla / WorldEditor",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_923827F6B179E503",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/WorldEditor/EntityIcons/Decal/LoadoutDecal.et",
+        "guid": "923827F6B179E503",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-104FCCCE8F98E9F9",
+      "name": "MapDecal — Decal",
+      "category": "Vanilla / WorldEditor",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_104FCCCE8F98E9F9",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/WorldEditor/EntityIcons/Decal/MapDecal.et",
+        "guid": "104FCCCE8F98E9F9",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-8DC85C409F186382",
+      "name": "PlayerControllerDecal — Decal",
+      "category": "Vanilla / WorldEditor",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_8DC85C409F186382",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/WorldEditor/EntityIcons/Decal/PlayerControllerDecal.et",
+        "guid": "8DC85C409F186382",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-9E70FFE1DAE6265C",
+      "name": "RadioDecal — Decal",
+      "category": "Vanilla / WorldEditor",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_9E70FFE1DAE6265C",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/WorldEditor/EntityIcons/Decal/RadioDecal.et",
+        "guid": "9E70FFE1DAE6265C",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-59233DD6AE3EA877",
+      "name": "SettingsDecal — Decal",
+      "category": "Vanilla / WorldEditor",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_59233DD6AE3EA877",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/WorldEditor/EntityIcons/Decal/SettingsDecal.et",
+        "guid": "59233DD6AE3EA877",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-69D682CA8D1E1877",
+      "name": "SoundDecal — Decal",
+      "category": "Vanilla / WorldEditor",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_69D682CA8D1E1877",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/WorldEditor/EntityIcons/Decal/SoundDecal.et",
+        "guid": "69D682CA8D1E1877",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-1BEA3D6F3F3CDCE7",
+      "name": "TimeDecal — Decal",
+      "category": "Vanilla / WorldEditor",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_1BEA3D6F3F3CDCE7",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/WorldEditor/EntityIcons/Decal/TimeDecal.et",
+        "guid": "1BEA3D6F3F3CDCE7",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    },
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-DEEE748D7C3D8779",
+      "name": "Warhead — Misc",
+      "category": "Vanilla / WorldEditor",
+      "assetKind": "other",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_DEEE748D7C3D8779",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/WorldEditor/EntityIcons/Misc/Warhead.et",
+        "guid": "DEEE748D7C3D8779",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    }
+  ]
+}

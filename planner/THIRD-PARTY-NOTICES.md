@@ -1,25 +1,24 @@
-# Third-party software and sources
+# COMMAND — third-party notices
 
-**milsymbol 3.0.4** — Måns Beckman / Spatial Illusions, MIT license. The complete license is included at `vendor/milsymbol-LICENSE.txt`. The pinned browser bundle is included locally at `vendor/milsymbol.js`.
+Original COMMAND code is GPL-3.0-only; see LICENSE. Separate dependencies and asset rights retain their own terms. Attribution alone does not establish permission to reuse or redistribute protected material.
 
-- Project: https://github.com/spatialillusions/milsymbol
-- Documentation: https://github.com/spatialillusions/milsymbol/tree/master/docs
-- Package: https://registry.npmjs.org/milsymbol/-/milsymbol-3.0.4.tgz
-- Published SHA-512 integrity: `Jrs1RBCag2IzyEJwI476i2+pNHdi8WMwAp2mDD23g3TR48ERdHmdQgPXZUosRKyhPMr58/eOPyyLE53lMPPAgw==`
+## Electron 44.9.1 and Chromium
 
-The app selects APP-6 rendering and uses the library's verified letter SIDCs for its unit types. Custom colors and the green independent faction are game-planning conventions, not a claim that every user configuration conforms to a military standard.
+Electron, MIT: https://github.com/electron/electron/tree/v44.9.1. The official Windows distribution is verified against its upstream SHASUMS256.txt. The distributed runtime contains LICENSE and LICENSES.chromium.html; preserve these with the application. Dependency provenance and hashes are recorded in the release manifest. This replaces unsupported Electron 30 for the consolidated candidate. Upstream support policy: https://www.electronjs.org/docs/latest/tutorial/electron-timelines.
 
-**Leaflet 1.9.4** — BSD-2-Clause, loaded from unpkg with jsDelivr fallback. Project and license: https://github.com/Leaflet/Leaflet/tree/v1.9.4
+## Bundled interface libraries
 
-**Terrain tiles** — Reforger Maps / Bewilderbeest, served from https://reforger.recoil.org/. Original attribution is retained on the map. The imagery requires network access and remains hosted by its provider.
+- milsymbol 3.0.4, Måns Beckman / Spatial Illusions, MIT. License: vendor/milsymbol-LICENSE.txt. Source: https://github.com/spatialillusions/milsymbol. COMMAND uses APP-6 rendering; custom colors are game-planning conventions, not a universal standards-compliance claim.
+- Leaflet 1.9.4, BSD-2-Clause. License: vendor/leaflet/LICENSE. Source: https://github.com/Leaflet/Leaflet/tree/v1.9.4. It is bundled for offline operation.
+- Three.js 0.186.1 and OrbitControls, MIT. Preserve the bundled vendor/three licence. Source: https://github.com/mrdoob/three.js. Loaded only when optional read-only 3D opens.
+- cloudflared 2026.10.0, Cloudflare, Apache-2.0. Unmodified portable helper; license: bridge-runtime/CLOUDFLARED-LICENSE.txt. Source: https://github.com/cloudflare/cloudflared/tree/2026.10.0.
 
-**Coordinate reference** — Bohemia Interactive's SCR_MapEntity documentation describes world X/Z grid coordinates and horizontal/vertical grid labels: https://community.bistudio.com/wikidata/external-data/arma-reforger/ArmaReforgerScriptAPIPublic/interfaceSCR__MapEntity.html
+## Branding, terrain and game material
 
-This app uses the existing Everon mapper's game-meter coordinate transform, with easting (X) first and northing (Z) second. It does not connect to a running game or claim global MGRS/UTM coordinates. In-game alignment has not been independently surveyed against terrain control points.
+COMMAND logo supplied by the user and retained unchanged. Locally defined asset pictograms retain their original notices. Technical legacy schema/configuration identifiers are preserved for compatibility; they are not old product branding or permission grants.
 
-**JSOC crest** — supplied by the user and included unchanged. Asset pictograms are locally defined SVG artwork from the previous planner build.
+Legacy local and online Everon tiles are attributed to Reforger Maps / Bewilderbeest (https://reforger.recoil.org/). The public provider links map-generation source at https://github.com/nickludlam/EnfusionMapMaker, whose stated project licence is APL-SA. A generator's code licence must not be assumed to grant all underlying game-image rights. This consolidation does not establish a new or broader imagery redistribution grant. The consolidated distribution excludes all sixteen legacy offline JPEG tiles from both runtime and corresponding source archive. Preserved local installations are unchanged. See operator-guides/08-IMAGERY.md for the permitted user-supplied workflow; no image redistribution permission is asserted.
 
-Leaflet 1.9.4 (BSD-2-Clause), bundled with its license in vendor/leaflet/LICENSE. Source: https://github.com/Leaflet/Leaflet
-Offline base terrain: 16 existing-provider tiles from https://reforger.recoil.org/map-tiles/everon/ ; attribution retained: Reforger Maps / Bewilderbeest. Lower-detail fallback only.
+Optional 3D can reuse user-supplied permitted local tiles through a temporary GPU atlas without extra image downloads. Imported elevation/custom imagery requires authorization and matching world extents. No local-use elevation package or exact game models are included in the public candidate content.
 
-cloudflared 2026.10.0 (unmodified portable Windows executable), Cloudflare, Apache-2.0. License: bridge-runtime/CLOUDFLARED-LICENSE.txt. Source: https://github.com/cloudflare/cloudflared/tree/2026.10.0
+Bohemia Interactive engine/game material, Workshop mods and trademarks retain their owners' rights. Native API references and exact prefab GUID/path metadata do not supply model geometry or grant asset redistribution rights. The original Enfusion adapter code and the third-party/game material it references have separate licensing scopes.

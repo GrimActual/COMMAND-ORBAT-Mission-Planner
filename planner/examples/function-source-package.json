@@ -1,0 +1,23 @@
+{
+  "files": [
+    {
+      "name": "config.cpp",
+      "text": "class CfgFunctions {class TAG {class Main {class scan {file=\"fn_scan.sqf\";};};};};"
+    },
+    {
+      "name": "fn_scan.sqf",
+      "text": "// Example only: inspected, never executed.\n"
+    },
+    {
+      "name": "init.sqf",
+      "text": "TAG_fnc_test={};\nTAG_fnc_test={};\n[] call TAG_fnc_test;\n[] call TAG_fnc_scan;\n"
+    }
+  ],
+  "mounts": [],
+  "configRoots": [
+    {
+      "file": "config.cpp",
+      "root": ""
+    }
+  ]
+}

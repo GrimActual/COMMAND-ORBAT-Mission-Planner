@@ -80,9 +80,42 @@ const server = http.createServer(async (req, res) => {
   if(req.method!=='GET'){res.setHeader('Allow','GET, OPTIONS');return send(res,405,{error:'Method not allowed'});}
   let url;try{url=new URL(req.url,'http://localhost')}catch{return send(res,400,{error:'Invalid URL'})}
   const staticFiles=new Map([
+    ['/terrain-context.js',['terrain-context.js','text/javascript; charset=utf-8']],
+    ['/terrain-context-ui.js',['terrain-context-ui.js','text/javascript; charset=utf-8']],
+    ['/terrain-alignment.js',['terrain-alignment.js','text/javascript; charset=utf-8']],
+    ['/terrain-alignment-ui.js',['terrain-alignment-ui.js','text/javascript; charset=utf-8']],
+    ['/migration-transfer.js',['migration-transfer.js','text/javascript; charset=utf-8']],
+    ['/migration-transfer-ui.js',['migration-transfer-ui.js','text/javascript; charset=utf-8']],
+    ['/sqf-intent-draft.js',['sqf-intent-draft.js','text/javascript; charset=utf-8']],
+    ['/sqf-intent-draft-ui.js',['sqf-intent-draft-ui.js','text/javascript; charset=utf-8']],
+    ['/sqf-intent-draft-worker.js',['sqf-intent-draft-worker.js','text/javascript; charset=utf-8']],
+
+    ['/sqf-class-map.js',['sqf-class-map.js','text/javascript; charset=utf-8']],
+    ['/sqf-class-map-ui.js',['sqf-class-map-ui.js','text/javascript; charset=utf-8']],
+    ['/sqf-class-map-worker.js',['sqf-class-map-worker.js','text/javascript; charset=utf-8']],
+
+    ['/sqf-structural-ast.js',['sqf-structural-ast.js','text/javascript; charset=utf-8']],
+    ['/sqf-structural-ast-ui.js',['sqf-structural-ast-ui.js','text/javascript; charset=utf-8']],
+    ['/sqf-dependency-ui.js',['sqf-dependency-ui.js','text/javascript; charset=utf-8']],
+    ['/sqf-function-ui.js',['sqf-function-ui.js','text/javascript; charset=utf-8']],
+    ['/sqf-type-ui.js',['sqf-type-ui.js','text/javascript; charset=utf-8']],
+    ['/sqf-effect-ui.js',['sqf-effect-ui.js','text/javascript; charset=utf-8']],
+    ['/sqf-diagnostic-export-ui.js',['sqf-diagnostic-export-ui.js','text/javascript; charset=utf-8']],
+    ['/sqf-effect-rows.js',['sqf-effect-rows.js','text/javascript; charset=utf-8']],
+    ['/sqf-diagnostics-ui.js',['sqf-diagnostics-ui.js','text/javascript; charset=utf-8']],
+    ['/sqf-structural-ast-worker.js',['sqf-structural-ast-worker.js','text/javascript; charset=utf-8']],
+    ['/sqf-migration.js',['sqf-migration.js','text/javascript; charset=utf-8']],
+    ['/sqf-migration-worker.js',['sqf-migration-worker.js','text/javascript; charset=utf-8']],
+    ['/sqf-migration-ui.js',['sqf-migration-ui.js','text/javascript; charset=utf-8']],
+
     ['/', ['index.html','text/html; charset=utf-8']],
     ['/index.html',['index.html','text/html; charset=utf-8']],
     ['/asset-catalog.json',['asset-catalog.json','application/json; charset=utf-8']],
+    ['/ai-orders-contract.js',['bridge-runtime/ai-orders-contract.js','text/javascript; charset=utf-8']],
+    ['/ai-orders-ui.js',['ai-orders-ui.js','text/javascript; charset=utf-8']],
+    ['/ai-order-layer.js',['ai-order-layer.js','text/javascript; charset=utf-8']],
+    ['/gm-workspace.js',['gm-workspace.js','text/javascript; charset=utf-8']],
+    ['/asset-browser.js',['asset-browser.js','text/javascript; charset=utf-8']],
     ['/asset-tools.js',['asset-tools.js','text/javascript; charset=utf-8']],
     ['/planner-core.js',['planner-core.js','text/javascript; charset=utf-8']],
     ['/mission-clock.js',['mission-clock.js','text/javascript; charset=utf-8']],
@@ -101,6 +134,7 @@ const server = http.createServer(async (req, res) => {
     ['/jsoc-logo.png',['command-logo.png','image/png']],
     ['/command-logo.png',['command-logo.png','image/png']]
   ]);
+  for(const file of ['terrain-imagery.js','terrain-preview-texture.mjs','terrain-preview.js','terrain-preview-ui.js','terrain-preview-renderer.mjs','terrain-preview.css','command-presentation.js','command-presentation.css','vendor/three/three.module.js','vendor/three/three.core.js','vendor/three/OrbitControls.js'])staticFiles.set('/'+file,[file,file.endsWith('.css')?'text/css; charset=utf-8':'text/javascript; charset=utf-8']);
   for(const file of ['leaflet.js','leaflet.css'])staticFiles.set('/vendor/leaflet/'+file,['vendor/leaflet/'+file,file.endsWith('.css')?'text/css':'text/javascript']);
   for(let x=0;x<4;x++)for(let y=0;y<4;y++)staticFiles.set('/terrain/everon/'+x+'-'+y+'.jpg',['terrain/everon/'+x+'-'+y+'.jpg','image/jpeg']);
   if(staticFiles.has(url.pathname)){

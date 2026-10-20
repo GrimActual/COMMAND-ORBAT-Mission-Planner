@@ -10,7 +10,7 @@ test('language preferences migrate, validate, persist and retain prior language 
 });
 test('both offline dictionaries cover the same strings and all Sarge instructions',()=>{
  const context={window:{}};vm.createContext(context);vm.runInContext(source('translations.js'),context);const {fr,de}=context.window.PlannerTranslations;assert.deepEqual(Object.keys(fr),Object.keys(de));for(const dictionary of [fr,de])for(const value of Object.values(dictionary))assert.equal(typeof value,'string');
- const topics=vm.runInNewContext(source('sarge-help.js').split('const topics=')[1].split('\n];')[0]+']');assert.equal(topics.length,46);
+ const topics=vm.runInNewContext(source('sarge-help.js').split('const topics=')[1].split('\n];')[0]+']');assert.equal(topics.length,71);
  for(const [title,text] of topics)for(const dictionary of [fr,de]){assert.ok(dictionary[title]);assert.ok(dictionary[text]);assert.notEqual(dictionary[text],text);}
 });
 test('unknown interface text falls back unchanged; recognized text uses selected language',()=>{

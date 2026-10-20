@@ -1,9 +1,0 @@
-{
-  "node": "v24.19.0",
-  "scope": "Synthetic supported identity extraction, no disk scan or native validation",
-  "sidecars": 500,
-  "runs": 5,
-  "warmup": 1,
-  "meanMs": 21.11,
-  "maxMs": 22.26
-}

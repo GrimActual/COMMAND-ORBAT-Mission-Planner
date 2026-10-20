@@ -1,0 +1,28 @@
+{
+  "scope": "Original neutral queue fixture only; resource identity is synthetic and is not a spawnable asset. No game request or pairing credential is included.",
+  "spawn": {
+    "version": 1,
+    "requestId": "demo-spawn",
+    "kind": "spawn",
+    "sourceMissionSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "entities": [
+      {
+        "unitId": "demo-squad",
+        "name": "Neutral queue fixture",
+        "resourceName": "{1234567890ABCDEF}Prefabs/Groups/COMMAND_NeutralFixture.et",
+        "worldX": 4500,
+        "worldZ": 8000,
+        "headingDegrees": 0
+      }
+    ]
+  },
+  "move": {
+    "version": 2,
+    "requestId": "demo-move",
+    "kind": "ai-move",
+    "targetRequestId": "demo-spawn",
+    "unitId": "demo-squad",
+    "worldX": 4550,
+    "worldZ": 8050
+  }
+}

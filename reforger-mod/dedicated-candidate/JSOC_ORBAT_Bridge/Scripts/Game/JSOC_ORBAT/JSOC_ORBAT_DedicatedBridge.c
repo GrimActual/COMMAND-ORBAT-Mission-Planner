@@ -11,7 +11,7 @@ class JSOC_ORBAT_DedicatedCallback : RestCallback
     }
     void Completed(RestCallback cb)
     {
-        if (!Stopped && Owner) Owner.Result(cb.GetHttpCode());
+        if (!Stopped && Owner) Owner.ReceiveResult(cb.GetHttpCode(), cb.GetData());
     }
 }
 
@@ -119,6 +119,7 @@ class JSOC_ORBAT_DedicatedBridge
         // Retry exactly the same bytes after a lost acknowledgement.
         m_Context.POST(m_Callback, "marker", m_Body);
     }
+    void ReceiveResult(int code, string body) { Result(code); }
     void Result(int code)
     {
         if (!m_Active) return;

@@ -1,0 +1,430 @@
+{
+  "product": "COMMAND — ORBAT / Mission Planner",
+  "totalUniqueVanillaPrefabs": 19438,
+  "recommendedCollection": {
+    "label": "01-Operational-Assets",
+    "folder": "Start-Here",
+    "count": 2721,
+    "catalog": "Start-Here/01-Operational-Assets-Catalog.json",
+    "index": "Start-Here/01-Operational-Assets-Resource-Index.json",
+    "catalogBytes": 2683291,
+    "indexBytes": 1558002
+  },
+  "collections": [
+    {
+      "label": "01-Operational-Assets",
+      "folder": "Start-Here",
+      "count": 2721,
+      "catalog": "Start-Here/01-Operational-Assets-Catalog.json",
+      "index": "Start-Here/01-Operational-Assets-Resource-Index.json",
+      "catalogBytes": 2683291,
+      "indexBytes": 1558002
+    },
+    {
+      "label": "AI-01",
+      "folder": "Complete-Catalog/AI",
+      "count": 50,
+      "catalog": "Complete-Catalog/AI/AI-01-Catalog.json",
+      "index": "Complete-Catalog/AI/AI-01-Resource-Index.json",
+      "catalogBytes": 48033,
+      "indexBytes": 28057
+    },
+    {
+      "label": "AIAgents-01",
+      "folder": "Complete-Catalog/AIAgents",
+      "count": 3,
+      "catalog": "Complete-Catalog/AIAgents/AIAgents-01-Catalog.json",
+      "index": "Complete-Catalog/AIAgents/AIAgents-01-Resource-Index.json",
+      "catalogBytes": 2888,
+      "indexBytes": 2018
+    },
+    {
+      "label": "Animals-01",
+      "folder": "Complete-Catalog/Animals",
+      "count": 17,
+      "catalog": "Complete-Catalog/Animals/Animals-01-Catalog.json",
+      "index": "Complete-Catalog/Animals/Animals-01-Resource-Index.json",
+      "catalogBytes": 16680,
+      "indexBytes": 10006
+    },
+    {
+      "label": "Characters-01",
+      "folder": "Complete-Catalog/Characters",
+      "count": 684,
+      "catalog": "Complete-Catalog/Characters/Characters-01-Catalog.json",
+      "index": "Complete-Catalog/Characters/Characters-01-Resource-Index.json",
+      "catalogBytes": 683969,
+      "indexBytes": 396522
+    },
+    {
+      "label": "Compositions-01",
+      "folder": "Complete-Catalog/Compositions",
+      "count": 824,
+      "catalog": "Complete-Catalog/Compositions/Compositions-01-Catalog.json",
+      "index": "Complete-Catalog/Compositions/Compositions-01-Resource-Index.json",
+      "catalogBytes": 831257,
+      "indexBytes": 482858
+    },
+    {
+      "label": "Decals-01",
+      "folder": "Complete-Catalog/Decals",
+      "count": 126,
+      "catalog": "Complete-Catalog/Decals/Decals-01-Catalog.json",
+      "index": "Complete-Catalog/Decals/Decals-01-Resource-Index.json",
+      "catalogBytes": 122743,
+      "indexBytes": 71253
+    },
+    {
+      "label": "Editor-01",
+      "folder": "Complete-Catalog/Editor",
+      "count": 41,
+      "catalog": "Complete-Catalog/Editor/Editor-01-Catalog.json",
+      "index": "Complete-Catalog/Editor/Editor-01-Resource-Index.json",
+      "catalogBytes": 39750,
+      "indexBytes": 23256
+    },
+    {
+      "label": "Editor-Library-01",
+      "folder": "Complete-Catalog/Editor-Library",
+      "count": 1000,
+      "catalog": "Complete-Catalog/Editor-Library/Editor-Library-01-Catalog.json",
+      "index": "Complete-Catalog/Editor-Library/Editor-Library-01-Resource-Index.json",
+      "catalogBytes": 1002839,
+      "indexBytes": 584344
+    },
+    {
+      "label": "Editor-Library-02",
+      "folder": "Complete-Catalog/Editor-Library",
+      "count": 964,
+      "catalog": "Complete-Catalog/Editor-Library/Editor-Library-02-Catalog.json",
+      "index": "Complete-Catalog/Editor-Library/Editor-Library-02-Resource-Index.json",
+      "catalogBytes": 963258,
+      "indexBytes": 560785
+    },
+    {
+      "label": "Game-Master-Editable-01",
+      "folder": "Complete-Catalog/Game-Master-Editable",
+      "count": 1000,
+      "catalog": "Complete-Catalog/Game-Master-Editable/Game-Master-Editable-01-Catalog.json",
+      "index": "Complete-Catalog/Game-Master-Editable/Game-Master-Editable-01-Resource-Index.json",
+      "catalogBytes": 1028096,
+      "indexBytes": 594892
+    },
+    {
+      "label": "Game-Master-Editable-02",
+      "folder": "Complete-Catalog/Game-Master-Editable",
+      "count": 1000,
+      "catalog": "Complete-Catalog/Game-Master-Editable/Game-Master-Editable-02-Catalog.json",
+      "index": "Complete-Catalog/Game-Master-Editable/Game-Master-Editable-02-Resource-Index.json",
+      "catalogBytes": 1013336,
+      "indexBytes": 586463
+    },
+    {
+      "label": "Game-Master-Editable-03",
+      "folder": "Complete-Catalog/Game-Master-Editable",
+      "count": 121,
+      "catalog": "Complete-Catalog/Game-Master-Editable/Game-Master-Editable-03-Catalog.json",
+      "index": "Complete-Catalog/Game-Master-Editable/Game-Master-Editable-03-Resource-Index.json",
+      "catalogBytes": 121308,
+      "indexBytes": 69797
+    },
+    {
+      "label": "Groups-01",
+      "folder": "Complete-Catalog/Groups",
+      "count": 127,
+      "catalog": "Complete-Catalog/Groups/Groups-01-Catalog.json",
+      "index": "Complete-Catalog/Groups/Groups-01-Resource-Index.json",
+      "catalogBytes": 124281,
+      "indexBytes": 71857
+    },
+    {
+      "label": "Items-01",
+      "folder": "Complete-Catalog/Items",
+      "count": 232,
+      "catalog": "Complete-Catalog/Items/Items-01-Catalog.json",
+      "index": "Complete-Catalog/Items/Items-01-Resource-Index.json",
+      "catalogBytes": 228099,
+      "indexBytes": 133011
+    },
+    {
+      "label": "Logistics-01",
+      "folder": "Complete-Catalog/Logistics",
+      "count": 4,
+      "catalog": "Complete-Catalog/Logistics/Logistics-01-Catalog.json",
+      "index": "Complete-Catalog/Logistics/Logistics-01-Resource-Index.json",
+      "catalogBytes": 3855,
+      "indexBytes": 2600
+    },
+    {
+      "label": "Markers-01",
+      "folder": "Complete-Catalog/Markers",
+      "count": 5,
+      "catalog": "Complete-Catalog/Markers/Markers-01-Catalog.json",
+      "index": "Complete-Catalog/Markers/Markers-01-Resource-Index.json",
+      "catalogBytes": 4822,
+      "indexBytes": 3133
+    },
+    {
+      "label": "MP-01",
+      "folder": "Complete-Catalog/MP",
+      "count": 148,
+      "catalog": "Complete-Catalog/MP/MP-01-Catalog.json",
+      "index": "Complete-Catalog/MP/MP-01-Resource-Index.json",
+      "catalogBytes": 143666,
+      "indexBytes": 83574
+    },
+    {
+      "label": "Particles-01",
+      "folder": "Complete-Catalog/Particles",
+      "count": 100,
+      "catalog": "Complete-Catalog/Particles/Particles-01-Catalog.json",
+      "index": "Complete-Catalog/Particles/Particles-01-Resource-Index.json",
+      "catalogBytes": 97307,
+      "indexBytes": 56522
+    },
+    {
+      "label": "prefabs-01",
+      "folder": "Complete-Catalog/prefabs",
+      "count": 1,
+      "catalog": "Complete-Catalog/prefabs/prefabs-01-Catalog.json",
+      "index": "Complete-Catalog/prefabs/prefabs-01-Resource-Index.json",
+      "catalogBytes": 960,
+      "indexBytes": 925
+    },
+    {
+      "label": "Props-01",
+      "folder": "Complete-Catalog/Props",
+      "count": 1000,
+      "catalog": "Complete-Catalog/Props/Props-01-Catalog.json",
+      "index": "Complete-Catalog/Props/Props-01-Resource-Index.json",
+      "catalogBytes": 977146,
+      "indexBytes": 567107
+    },
+    {
+      "label": "Props-02",
+      "folder": "Complete-Catalog/Props",
+      "count": 1000,
+      "catalog": "Complete-Catalog/Props/Props-02-Catalog.json",
+      "index": "Complete-Catalog/Props/Props-02-Resource-Index.json",
+      "catalogBytes": 993941,
+      "indexBytes": 580235
+    },
+    {
+      "label": "Props-03",
+      "folder": "Complete-Catalog/Props",
+      "count": 582,
+      "catalog": "Complete-Catalog/Props/Props-03-Catalog.json",
+      "index": "Complete-Catalog/Props/Props-03-Resource-Index.json",
+      "catalogBytes": 576011,
+      "indexBytes": 335503
+    },
+    {
+      "label": "RagdollEditor-01",
+      "folder": "Complete-Catalog/RagdollEditor",
+      "count": 1,
+      "catalog": "Complete-Catalog/RagdollEditor/RagdollEditor-01-Catalog.json",
+      "index": "Complete-Catalog/RagdollEditor/RagdollEditor-01-Resource-Index.json",
+      "catalogBytes": 978,
+      "indexBytes": 930
+    },
+    {
+      "label": "Rocks-01",
+      "folder": "Complete-Catalog/Rocks",
+      "count": 72,
+      "catalog": "Complete-Catalog/Rocks/Rocks-01-Catalog.json",
+      "index": "Complete-Catalog/Rocks/Rocks-01-Resource-Index.json",
+      "catalogBytes": 69333,
+      "indexBytes": 40330
+    },
+    {
+      "label": "ScenarioFramework-01",
+      "folder": "Complete-Catalog/ScenarioFramework",
+      "count": 3,
+      "catalog": "Complete-Catalog/ScenarioFramework/ScenarioFramework-01-Catalog.json",
+      "index": "Complete-Catalog/ScenarioFramework/ScenarioFramework-01-Resource-Index.json",
+      "catalogBytes": 2979,
+      "indexBytes": 2083
+    },
+    {
+      "label": "Scenarios-01",
+      "folder": "Complete-Catalog/Scenarios",
+      "count": 27,
+      "catalog": "Complete-Catalog/Scenarios/Scenarios-01-Catalog.json",
+      "index": "Complete-Catalog/Scenarios/Scenarios-01-Resource-Index.json",
+      "catalogBytes": 26000,
+      "indexBytes": 15381
+    },
+    {
+      "label": "Sounds-01",
+      "folder": "Complete-Catalog/Sounds",
+      "count": 23,
+      "catalog": "Complete-Catalog/Sounds/Sounds-01-Catalog.json",
+      "index": "Complete-Catalog/Sounds/Sounds-01-Resource-Index.json",
+      "catalogBytes": 22246,
+      "indexBytes": 13211
+    },
+    {
+      "label": "Structures-01",
+      "folder": "Complete-Catalog/Structures",
+      "count": 1000,
+      "catalog": "Complete-Catalog/Structures/Structures-01-Catalog.json",
+      "index": "Complete-Catalog/Structures/Structures-01-Resource-Index.json",
+      "catalogBytes": 1018407,
+      "indexBytes": 592069
+    },
+    {
+      "label": "Structures-02",
+      "folder": "Complete-Catalog/Structures",
+      "count": 1000,
+      "catalog": "Complete-Catalog/Structures/Structures-02-Catalog.json",
+      "index": "Complete-Catalog/Structures/Structures-02-Resource-Index.json",
+      "catalogBytes": 1011560,
+      "indexBytes": 589879
+    },
+    {
+      "label": "Structures-03",
+      "folder": "Complete-Catalog/Structures",
+      "count": 1000,
+      "catalog": "Complete-Catalog/Structures/Structures-03-Catalog.json",
+      "index": "Complete-Catalog/Structures/Structures-03-Resource-Index.json",
+      "catalogBytes": 1013541,
+      "indexBytes": 590686
+    },
+    {
+      "label": "Structures-04",
+      "folder": "Complete-Catalog/Structures",
+      "count": 1000,
+      "catalog": "Complete-Catalog/Structures/Structures-04-Catalog.json",
+      "index": "Complete-Catalog/Structures/Structures-04-Resource-Index.json",
+      "catalogBytes": 1016658,
+      "indexBytes": 595326
+    },
+    {
+      "label": "Structures-05",
+      "folder": "Complete-Catalog/Structures",
+      "count": 1000,
+      "catalog": "Complete-Catalog/Structures/Structures-05-Catalog.json",
+      "index": "Complete-Catalog/Structures/Structures-05-Resource-Index.json",
+      "catalogBytes": 1012129,
+      "indexBytes": 590084
+    },
+    {
+      "label": "Structures-06",
+      "folder": "Complete-Catalog/Structures",
+      "count": 1000,
+      "catalog": "Complete-Catalog/Structures/Structures-06-Catalog.json",
+      "index": "Complete-Catalog/Structures/Structures-06-Resource-Index.json",
+      "catalogBytes": 1020476,
+      "indexBytes": 593079
+    },
+    {
+      "label": "Structures-07",
+      "folder": "Complete-Catalog/Structures",
+      "count": 1000,
+      "catalog": "Complete-Catalog/Structures/Structures-07-Catalog.json",
+      "index": "Complete-Catalog/Structures/Structures-07-Resource-Index.json",
+      "catalogBytes": 1022002,
+      "indexBytes": 594471
+    },
+    {
+      "label": "Structures-08",
+      "folder": "Complete-Catalog/Structures",
+      "count": 134,
+      "catalog": "Complete-Catalog/Structures/Structures-08-Catalog.json",
+      "index": "Complete-Catalog/Structures/Structures-08-Resource-Index.json",
+      "catalogBytes": 134643,
+      "indexBytes": 79172
+    },
+    {
+      "label": "Systems-01",
+      "folder": "Complete-Catalog/Systems",
+      "count": 152,
+      "catalog": "Complete-Catalog/Systems/Systems-01-Catalog.json",
+      "index": "Complete-Catalog/Systems/Systems-01-Resource-Index.json",
+      "catalogBytes": 149444,
+      "indexBytes": 87119
+    },
+    {
+      "label": "Tasks-01",
+      "folder": "Complete-Catalog/Tasks",
+      "count": 24,
+      "catalog": "Complete-Catalog/Tasks/Tasks-01-Catalog.json",
+      "index": "Complete-Catalog/Tasks/Tasks-01-Resource-Index.json",
+      "catalogBytes": 23137,
+      "indexBytes": 13683
+    },
+    {
+      "label": "Terrain-01",
+      "folder": "Complete-Catalog/Terrain",
+      "count": 13,
+      "catalog": "Complete-Catalog/Terrain/Terrain-01-Catalog.json",
+      "index": "Complete-Catalog/Terrain/Terrain-01-Resource-Index.json",
+      "catalogBytes": 13104,
+      "indexBytes": 7918
+    },
+    {
+      "label": "Vegetation-01",
+      "folder": "Complete-Catalog/Vegetation",
+      "count": 626,
+      "catalog": "Complete-Catalog/Vegetation/Vegetation-01-Catalog.json",
+      "index": "Complete-Catalog/Vegetation/Vegetation-01-Resource-Index.json",
+      "catalogBytes": 626724,
+      "indexBytes": 361592
+    },
+    {
+      "label": "Vehicles-01",
+      "folder": "Complete-Catalog/Vehicles",
+      "count": 1000,
+      "catalog": "Complete-Catalog/Vehicles/Vehicles-01-Catalog.json",
+      "index": "Complete-Catalog/Vehicles/Vehicles-01-Resource-Index.json",
+      "catalogBytes": 985260,
+      "indexBytes": 574710
+    },
+    {
+      "label": "Vehicles-02",
+      "folder": "Complete-Catalog/Vehicles",
+      "count": 71,
+      "catalog": "Complete-Catalog/Vehicles/Vehicles-02-Catalog.json",
+      "index": "Complete-Catalog/Vehicles/Vehicles-02-Resource-Index.json",
+      "catalogBytes": 70393,
+      "indexBytes": 41384
+    },
+    {
+      "label": "Weapons-01",
+      "folder": "Complete-Catalog/Weapons",
+      "count": 607,
+      "catalog": "Complete-Catalog/Weapons/Weapons-01-Catalog.json",
+      "index": "Complete-Catalog/Weapons/Weapons-01-Resource-Index.json",
+      "catalogBytes": 591394,
+      "indexBytes": 342443
+    },
+    {
+      "label": "WEGenerators-01",
+      "folder": "Complete-Catalog/WEGenerators",
+      "count": 301,
+      "catalog": "Complete-Catalog/WEGenerators/WEGenerators-01-Catalog.json",
+      "index": "Complete-Catalog/WEGenerators/WEGenerators-01-Resource-Index.json",
+      "catalogBytes": 296586,
+      "indexBytes": 171245
+    },
+    {
+      "label": "World-01",
+      "folder": "Complete-Catalog/World",
+      "count": 342,
+      "catalog": "Complete-Catalog/World/World-01-Catalog.json",
+      "index": "Complete-Catalog/World/World-01-Resource-Index.json",
+      "catalogBytes": 330819,
+      "indexBytes": 193174
+    },
+    {
+      "label": "WorldEditor-01",
+      "folder": "Complete-Catalog/WorldEditor",
+      "count": 13,
+      "catalog": "Complete-Catalog/WorldEditor/WorldEditor-01-Catalog.json",
+      "index": "Complete-Catalog/WorldEditor/WorldEditor-01-Resource-Index.json",
+      "catalogBytes": 12550,
+      "indexBytes": 7683
+    }
+  ],
+  "scope": "Every .et identity indexed under the installed ArmaReforger project, not core engine internals or modded resources. Native availability and complete prefab dependencies are not established."
+}

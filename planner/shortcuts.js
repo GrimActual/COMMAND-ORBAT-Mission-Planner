@@ -2,6 +2,7 @@
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.PlannerShortcuts=api;})(globalThis,()=>{
  'use strict';
  const definitions={
+  passengerPlacement:['Place passengers','N'],pilotPlacement:['Place pilot','B'],
   undo:['Undo','Ctrl+Z'],redo:['Redo','Ctrl+Y, Ctrl+Shift+Z'],selectAll:['Select all units','Ctrl+A'],
   duplicate:['Duplicate selection','Ctrl+D'],copy:['Copy','Ctrl+C'],paste:['Paste','Ctrl+V'],
   delete:['Delete selected objects','Delete, Backspace'],cancel:['Cancel tool / clear selection','Escape'],finish:['Finish path / polygon','Enter'],

@@ -1,0 +1,317 @@
+{
+  "schema": "companion-scenario",
+  "version": 2,
+  "id": "watchtower-rehearsal",
+  "objectives": [
+    {
+      "id": "assembled",
+      "name": "Friendly deployment reviewed and accounted for",
+      "status": "active"
+    },
+    {
+      "id": "checkpoint",
+      "name": "Checkpoint North secure",
+      "status": "pending"
+    },
+    {
+      "id": "relay",
+      "name": "Relay searched and secured",
+      "status": "pending"
+    },
+    {
+      "id": "recover",
+      "name": "Patrol recovered",
+      "status": "pending"
+    }
+  ],
+  "events": [
+    {
+      "id": "brief",
+      "name": "ACTUAL - Start patrol rehearsal",
+      "atMs": 0,
+      "requires": [],
+      "actions": [
+        {
+          "type": "objective",
+          "id": "assembled",
+          "status": "complete"
+        },
+        {
+          "type": "objective",
+          "id": "checkpoint",
+          "status": "active"
+        },
+        {
+          "type": "phase",
+          "id": "checkpoint"
+        },
+        {
+          "type": "report",
+          "text": "OFFLINE REHEARSAL ONLY: ALPHA advance to Checkpoint North. BRAVO establish overwatch. Live game needs separate reviewed orders."
+        }
+      ]
+    },
+    {
+      "id": "checkpoint-arrival",
+      "name": "Rehearse ground-team arrival",
+      "atMs": 30000,
+      "requires": [
+        "assembled"
+      ],
+      "actions": [
+        {
+          "type": "move",
+          "unitId": "ALPHA",
+          "position": {
+            "lng": 4750,
+            "lat": 12050
+          }
+        },
+        {
+          "type": "move",
+          "unitId": "BRAVO",
+          "position": {
+            "lng": 4830,
+            "lat": 12080
+          }
+        },
+        {
+          "type": "report",
+          "text": "OFFLINE REHEARSAL ONLY: Planned markers reached checkpoint/overwatch. This is not evidence of real AI arrival."
+        }
+      ]
+    },
+    {
+      "id": "checkpoint-secure",
+      "name": "Confirm checkpoint in rehearsal",
+      "atMs": null,
+      "conditions": [
+        {
+          "type": "inside-radius",
+          "unitId": "ALPHA",
+          "center": {
+            "lng": 4750,
+            "lat": 12050
+          },
+          "radius": 20
+        }
+      ],
+      "requires": [
+        "assembled"
+      ],
+      "actions": [
+        {
+          "type": "objective",
+          "id": "checkpoint",
+          "status": "complete"
+        },
+        {
+          "type": "objective",
+          "id": "relay",
+          "status": "active"
+        },
+        {
+          "type": "phase",
+          "id": "relay"
+        },
+        {
+          "type": "report",
+          "text": "OFFLINE REHEARSAL ONLY: Checkpoint secure. Continue the relay investigation."
+        }
+      ]
+    },
+    {
+      "id": "route-blocked",
+      "name": "OPTIONAL - Direct approach obstructed",
+      "atMs": null,
+      "requires": [
+        "checkpoint"
+      ],
+      "actions": [
+        {
+          "type": "move",
+          "unitId": "BRAVO",
+          "position": {
+            "lng": 4630,
+            "lat": 12130
+          }
+        },
+        {
+          "type": "report",
+          "text": "OFFLINE REHEARSAL ONLY: BRAVO uses the western approach. In the game, inspect the alternate and send a new reviewed infantry order."
+        }
+      ]
+    },
+    {
+      "id": "contact-report",
+      "name": "OPTIONAL - Report opposition contact",
+      "atMs": null,
+      "requires": [
+        "checkpoint"
+      ],
+      "actions": [
+        {
+          "type": "report",
+          "text": "OFFLINE REHEARSAL ONLY: Contact north of relay. GM may separately deploy optional opposition after inspecting the staging area. This event spawns nothing."
+        }
+      ]
+    },
+    {
+      "id": "relay-arrival",
+      "name": "Rehearse arrival at relay",
+      "atMs": 90000,
+      "requires": [
+        "checkpoint"
+      ],
+      "actions": [
+        {
+          "type": "move",
+          "unitId": "ALPHA",
+          "position": {
+            "lng": 4750,
+            "lat": 12200
+          }
+        },
+        {
+          "type": "report",
+          "text": "OFFLINE REHEARSAL ONLY: ALPHA at relay in the rehearsal. GM confirms the actual search outcome separately."
+        }
+      ]
+    },
+    {
+      "id": "relay-secure",
+      "name": "ACTUAL - Confirm relay clear",
+      "atMs": null,
+      "requires": [
+        "checkpoint"
+      ],
+      "conditions": [
+        {
+          "type": "inside-radius",
+          "unitId": "ALPHA",
+          "center": {
+            "lng": 4750,
+            "lat": 12200
+          },
+          "radius": 20
+        }
+      ],
+      "actions": [
+        {
+          "type": "objective",
+          "id": "relay",
+          "status": "complete"
+        },
+        {
+          "type": "objective",
+          "id": "recover",
+          "status": "active"
+        },
+        {
+          "type": "phase",
+          "id": "recovery"
+        },
+        {
+          "type": "report",
+          "text": "OFFLINE REHEARSAL ONLY: Relay search complete. Recover to the airfield or request GM/player-flown extraction."
+        }
+      ]
+    },
+    {
+      "id": "casualty",
+      "name": "OPTIONAL - Rehearse casualty report",
+      "atMs": null,
+      "requires": [
+        "checkpoint"
+      ],
+      "actions": [
+        {
+          "type": "report",
+          "text": "OFFLINE REHEARSAL ONLY: ANGEL stand by at CCP. Offline report creates no wound, casualty, treatment or game health change."
+        }
+      ]
+    },
+    {
+      "id": "extraction",
+      "name": "OPTIONAL - Rehearse extraction decision",
+      "atMs": null,
+      "requires": [
+        "relay"
+      ],
+      "actions": [
+        {
+          "type": "move",
+          "unitId": "CHARLIE",
+          "position": {
+            "lng": 4590,
+            "lat": 12170
+          }
+        },
+        {
+          "type": "report",
+          "text": "OFFLINE REHEARSAL ONLY: EAGLE extraction requested. Aircraft flight is GM/player operated; this event neither flies the helicopter nor boards troops."
+        }
+      ]
+    },
+    {
+      "id": "return-foot",
+      "name": "Rehearse patrol return",
+      "atMs": 150000,
+      "requires": [
+        "relay"
+      ],
+      "actions": [
+        {
+          "type": "move",
+          "unitId": "ALPHA",
+          "position": {
+            "lng": 4750,
+            "lat": 11910
+          }
+        },
+        {
+          "type": "move",
+          "unitId": "BRAVO",
+          "position": {
+            "lng": 4750,
+            "lat": 11910
+          }
+        },
+        {
+          "type": "report",
+          "text": "OFFLINE REHEARSAL ONLY: Patrol return illustrated. Check actual game arrival before marking live recovery complete."
+        }
+      ]
+    },
+    {
+      "id": "complete",
+      "name": "ACTUAL - End rehearsal",
+      "atMs": null,
+      "requires": [
+        "relay"
+      ],
+      "conditions": [
+        {
+          "type": "inside-radius",
+          "unitId": "ALPHA",
+          "center": {
+            "lng": 4750,
+            "lat": 11910
+          },
+          "radius": 25
+        }
+      ],
+      "actions": [
+        {
+          "type": "objective",
+          "id": "recover",
+          "status": "complete"
+        },
+        {
+          "type": "report",
+          "text": "OFFLINE REHEARSAL ONLY: Rehearsal complete. No live acceptance outcome is inferred."
+        }
+      ]
+    }
+  ]
+}

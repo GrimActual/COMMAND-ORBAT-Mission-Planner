@@ -1,73 +1,41 @@
-# COMMAND — ORBAT / Mission Planner
+![COMMAND](planner/COMMAND-Logo.jpg)
 
-![COMMAND — ORBAT / Mission Planner](planner/COMMAND-Logo.jpg)
+# COMMAND — Mission Planning & Control
 
-
-COMMAND ORBAT / Mission Planner and the optional Arma Reforger bridge.
-
-Current published release candidate: **2.9.1-rc.2**. Includes offline planning, scenario/property workflows, reviewed asset catalogs, display diagnostics and experimental dedicated-server integration. Planner code is in [`planner/`](planner/). Published versions retain matching tags and source archives.
+An independent mission planner for **Arma Reforger**. **COMMAND v1.0.0 is stable for mission planning; all live-game controls remain experimental.**
 
 ## Download
 
-[Download 2.9.1 Release Candidate 2](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/releases/tag/v2.9.1-rc.2-command).
+[Download COMMAND v1.0.0](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/releases/tag/v1.0.0) · [Release notes](docs/release-v1.0.0/RELEASE-NOTES.md) · [Quick start](planner/operator-guides/00-START-HERE.md)
 
-[Browse all releases](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/releases). Historical builds retain their original versions. Experimental builds and release candidates are marked as prereleases.
+Extract the complete **COMMAND-1.0.0-Windows.zip** and run `COMMAND-Windows/COMMAND Planner.exe`. It includes the app, optional bridge/relay source, vanilla asset indexes, guides, test mission, licences, corresponding source and checksums. Back up plans and extract to a fresh folder. Earlier 2.x development builds remain in [release history](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/releases).
 
-## Run from source
+## Plan and manage a mission
 
-Use Node.js, open `planner/`, run `npm install`, then `npm start`. Run `npm test` where a test script exists. For one-click bridge builds, copy `bridge-runtime/cloudflared.exe` from the matching Windows application resources or use the complete source release ZIP; the portable executable is not committed to Git. See the component license notices in the source.
+- Find assets and planned/live units in one searchable workspace, with clear state labels and contextual controls.
+- Place tactical units, draw routes and areas, prepare briefings, save/load and import/export planning data offline.
+- Import one mission package with plan, asset references and deployment setup; review before applying. Importing never spawns anything.
+- Start a New mission without disconnecting. Undo/Redo restore the planning workspace; game deletion remains explicit.
+- Use catalog/resource indexes, Settings, recovery and Sarge guidance in English, French and German.
 
-## Scope
+## Optional experimental connection
 
-This is an independent community planner, not an official Bohemia Interactive product. Live bridge support is optional, shares one host-controlled character and requires the companion mod. Simulation uses synthetic data. See each release for its actual capabilities and limitations.
+Compatible **COMMAND bridge 0.13.0**, Workshop project **6A969EB0C5012BB9**. Quick connection runs an owned local relay/tunnel; dedicated mode connects to an administrator-managed HTTPS relay. Host/server approval, target ownership and duplicate protection stay in force.
 
-## Live bridge quick start
+Experimental features include scoped tracking, reviewed spawn/removal and AI orders, host-controlled category auto-approval, occupied deployments, server snapshots, transport/treatment/vehicles and a bounded force-assisted vanilla Huey demonstration. Two-client multiplayer and human pilot takeover acceptance are incomplete. General existing-vehicle registration remains unfinished; historical boarding timeout is unexplained. [Compatibility](docs/release-v1.0.0/COMPATIBILITY.md) · [Remaining live checks](docs/release-v1.0.0/LIVE-CHECKLIST.md)
 
-1. In the planner, open Settings → Live bridge → Start free connection.
-2. In Reforger with the companion mod enabled, open COMMAND – HOST PAIRING.
-3. Copy the planner address into the game’s first field and the code into its second field; click CONNECT, resume and control a soldier.
-4. Keep the planner PC awake. Temporary tunnel addresses change; public codes expire after one hour.
+Huey flight currently needs a clear, flat 20–100 m route, one AI pilot and four passengers. No obstacle avoidance or guaranteed tree/building clearance. Slow takeoff and backward travel can occur. The optional read-only 3D preview needs authorized user-supplied terrain/imagery; no protected game models or satellite/elevation data are bundled.
 
-Simulation is a separate practice feature. Current RC2 has been user-tested in-game but remains labelled a release candidate. The prior stable release is v2.8.2.
+## Development and roadmap
 
-[Release history](RELEASES.md) · [Latest debrief](planner/RELEASE-DEBRIEF.md)
+Original planner source is in `planner/`; use Node.js, `npm install`, then `npm start`. `npm test` runs the project tests. The corresponding release source includes the original tools and tests; keep bundled dependency notices. For Quick connection, use the matching release’s `cloudflared.exe` with its included Apache-2.0 notice.
 
+[Full roadmap](ROADMAP.md) · [Release scope](docs/release-v1.0.0/RELEASE-SCOPE.md) · [Upgrade and recovery](docs/release-v1.0.0/UPGRADE-AND-RECOVERY.md) · [Licensing](docs/LICENSING.md)
 
-## v2.9.1 development preview
+Workbench import/apply, continuous two-way editing, WebSockets, relay restart persistence, multi-admin authority and expanded flight adapters remain planned/disabled. A plan route is not automatically an executable game order.
 
-This development branch adds experimental dedicated-server profiles and a single-entity sender candidate. See [setup](docs/DEDICATED-SERVER.md), [audit](docs/V2.9.1-AUDIT.md), and [preview notes](docs/V2.9.1-RELEASE-NOTES.md). Enfusion compilation and real dedicated hosting remain validation gates. Existing published downloads are unchanged.
+## Licence and independence
 
-## Future programme
+Original COMMAND code: **GPL-3.0-only**. Dependencies, separately licensed Workshop material and game assets retain their own terms. See [LICENSE](LICENSE) and [third-party notices](planner/THIRD-PARTY-NOTICES.md). An installed mod or prefab GUID does not grant redistribution rights.
 
-[Master roadmap](ROADMAP.md) · [200-feature wishlist](docs/FUTURE-FEATURE-WISHLIST.md). Sixteen packages ordered by dependencies; no delivery dates. The next integrated architectural milestone is an offline JSON-driven GM scenario.
-
-Development 11: [reviewed prefab planning assets](docs/REVIEWED-PREFAB-ASSETS.md) connects Workbench metadata review to unit asset assignment, with explicit classification and retained provenance. Available in the development executable; Preview 5 archives are unchanged.
-
-Development 12 adds [portable planning catalog export](docs/PORTABLE-PLANNING-CATALOGS.md) for reuse after restart, retaining assigned asset provenance without changing mission state. Available in the development executable; existing Preview 5 archives are unchanged.
-
-Development 13 adds [downloaded-addon project identity review](docs/PROJECT-IDENTITY-COMPATIBILITY.md), accepting opaque project configuration blocks without inferring prefab GUIDs. Available in the development executable; Preview 5 archives remain unchanged.
-
-Development 14 adds [resource index reuse in Assets](docs/RESOURCE-INDEX-REVIEW-UI.md), with worker-backed JSON loading, multiple-addon review and cached dependency findings. Available in the development executable; Preview 5 archives remain unchanged.
-
-Native read-only bridge [diagnostic runtime gate](docs/NATIVE-BRIDGE-RUNTIME.md) passed real Enforce-to-HTTPS-to-Companion position and authentication checks. Same-session interval reload is fixed in the dedicated candidate. A bounded standalone dedicated-server HTTPS movement test also passed; The user confirmed Workshop 0.2.0 publication; testing the downloaded Workshop package remains separate. Preview 5 archives are unchanged.
-
-## Notice & Disclaimer:
-
-This project is an unofficial community-made companion tool for Arma Reforger. It is not affiliated with, endorsed, sponsored, or specifically approved by Bohemia Interactive a.s.
-
-Arma Reforger, Enfusion, and Bohemia Interactive are trademarks or registered trademarks of Bohemia Interactive a.s.
-
-COMMAND is an independent community project. This branding update preserves saved plans and the existing Workshop addon identity. Historical branding editions retain their own feature versions and limitations.
-
-## Current GM pilot and vanilla catalog bundle
-
-[Download the COMMAND 2.9.1-dev.gm.2 pilot and vanilla files](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/releases/tag/v2.9.1-dev.gm.2-command). The data bundle includes 19,438 indexed vanilla prefab identities and a 2,721-entry operational catalog with matching resource index. Native spawn availability remains subject to host review and validation.
-
-For matching current pilot source, use tag v2.9.1-dev.gm.2-command or the [development/tracking-pilot branch](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/tree/development/tracking-pilot). The default branch retains the earlier release-candidate runtime baseline. [Vanilla import instructions](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/blob/development/tracking-pilot/docs/VANILLA-ASSETS.md).
-
-
-## Community and licensing
-
-[Contributing](CONTRIBUTING.md) · [Code of Conduct](CODE_OF_CONDUCT.md) · [Security policy](SECURITY.md) · [Report a bug or suggest a feature](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/issues/new/choose)
-
-Original COMMAND source code is licensed under [GNU GPL-3.0-only](LICENSE). Third-party components, game/terrain assets, trademarks and separately licensed material retain their respective terms. See [licensing scope](docs/LICENSING.md) and [third-party notices](planner/THIRD-PARTY-NOTICES.md).
+COMMAND is an unofficial community-made companion. It is not affiliated with, endorsed or sponsored by Bohemia Interactive. Arma Reforger, Enfusion and Bohemia Interactive trademarks belong to their respective owners. COMMAND artwork is retained unchanged.

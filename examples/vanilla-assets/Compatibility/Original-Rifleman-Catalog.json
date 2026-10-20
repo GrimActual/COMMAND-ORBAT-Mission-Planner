@@ -1,0 +1,29 @@
+{
+  "assets": [
+    {
+      "targetObservation": null,
+      "id": "prefab-58D0FB3206B6F859-26A9756790131354",
+      "name": "Vanilla US Rifleman (GM test)",
+      "category": "Reviewed prefabs",
+      "assetKind": "infantry",
+      "workshopProvider": "reforger",
+      "workshopId": "",
+      "searchQuery": "Arma Reforger",
+      "resourceReference": {
+        "id": "vanilla_us_rifleman",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et",
+        "guid": "26A9756790131354",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "ArmaReforger resourceDatabase.rdb; ResourceDatabase.SearchResources and exact Resource.Load identity verified locally on 2026-10-13",
+          "license": null
+        },
+        "dependencies": []
+      },
+      "nativeAvailability": "unverified"
+    }
+  ]
+}
