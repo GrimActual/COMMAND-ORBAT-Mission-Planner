@@ -9,7 +9,7 @@ class COMMAND_HelicopterFlightSample
 };
 class COMMAND_HelicopterFlightLease
 {
- string RequestId;bool CancelRequested;bool Handoff;
+ string RouteMode="land";int PatrolLaps;string RequestId;bool CancelRequested;bool Handoff;
  IEntity Aircraft; IEntity Pilot;SCR_AIGroup Team;vector Departure;vector LandingPoint;float OriginClearance;float PhaseAt;bool ExitRequested;float NextExitAttempt;string ExitDiagnostic;int UnloadIndex;int Unloaded;float UnloadedSince;bool FlewToLZ;bool LandedAtLZ;int SeatAttempts;bool SpawnRequested;
  ref array<IEntity> Passengers={};
  HelicopterControllerComponent Controller; VehicleHelicopterSimulation Sim;
@@ -19,7 +19,7 @@ class COMMAND_HelicopterFlightLease
  float Elapsed; float StartedAt; float Collective;
  float MaxAGL; float InitialAGL; float MaxVerticalSpeed; float ForceY; int ForceWrites;
  float TargetY; float GroundY;float HoverSince;float LandingSince;float StableSeconds;float PriorVy;bool HasPriorVy;float MeasuredAcceleration;float RequestedAcceleration;float HeightY;float LastCapture;vector Torque;vector TotalBefore;vector TotalAfter;vector TargetRight;vector TargetUp;vector TargetForward;vector Anchor;vector Force;float LateralError;float AttitudeError;
- float PhysicsDt;float LastGroundCheck;
+ float PhysicsDt;float LastGroundCheck;float CruiseY;float DesiredYaw;float CommandYaw;float RouteDistance;float SpoolFinishedAt;float TranslationStartedAt;float UnloadUnstableSince;float CruiseSpeed=12;float SoftDeadline=240;float HardDeadline=270;int RouteIndex;ref array<vector> Route={};
  int PrepareCalls; int ApplyCalls; int SimulationCalls; int Ordinal;
  bool Mounted(IEntity actor)
  {
@@ -28,6 +28,19 @@ class COMMAND_HelicopterFlightLease
   if(!a) {return false;}
   BaseCompartmentSlot slot=a.GetCompartment();
   return slot && slot.GetOccupant()==actor && slot.GetVehicle()==Aircraft;
+ }
+ // Conservative preflight clearance checks, not a general obstacle-avoidance pilot.
+ bool TraceObstacle(notnull IEntity entity,vector start=vector.Zero,vector direction=vector.Zero)
+ {
+  if(entity==Pilot || Passengers.Find(entity)>=0) {return false;}
+  IEntity parent=entity;int depth;
+  while(parent && depth<64) {if(parent==Aircraft) {return false;}parent=parent.GetParent();depth++;}
+  return true;
+ }
+ bool CorridorBlocked(vector from,vector to)
+ {
+  TraceBox trace=new TraceBox();trace.Start=from;trace.End=to;trace.Mins=Vector(-8,-2,-8);trace.Maxs=Vector(8,4,8);trace.Flags=TraceFlags.WORLD | TraceFlags.ENTS;trace.LayerMask=0xffffffff;
+  return GetGame().GetWorld().TraceMove(trace,TraceObstacle)<0.999;
  }
  // Called only after HostGM validates reviewed request, pairing ownership and exact entity identities.
  string StartApproved(string requestId,IEntity aircraft,IEntity pilot,array<IEntity> passengers,vector lz)
@@ -62,7 +75,7 @@ class COMMAND_HelicopterFlightLease
   if(!AllSeated() || !Sim.HasAnyGroundContact() || body.GetVelocity().Length()>0.15) {return "Start requires seated occupants and stationary grounded aircraft";}
   if(!(lz[0]>=0 && lz[0]<=20000 && lz[2]>=0 && lz[2]<=20000)) {return "Landing coordinates invalid";}
   vector delta=lz-Aircraft.GetOrigin();delta[1]=0;
-  if(delta.Length()>100.1 || delta.Length()<20) {return "Initial flight profile requires a clear 20-100 metre route";}
+  if(delta.Length()>1000.1 || delta.Length()<20) {return "Initial flight profile requires a clear 20-1000 metre route";}
   float low=100000;float high=-100000;
   for(int ix=-1;ix<=1;ix++)
   {
@@ -74,7 +87,40 @@ class COMMAND_HelicopterFlightLease
   if(high-low>0.6) {return "Selected landing zone is not sufficiently flat";}
   vector startPosition=Aircraft.GetOrigin();float departureGround=GetGame().GetWorld().GetSurfaceY(startPosition[0],startPosition[2]);
   float landingGround=GetGame().GetWorld().GetSurfaceY(lz[0],lz[2]);
-  if(Math.AbsFloat(landingGround-departureGround)>0.3) {return "Initial profile requires the selected LZ at approximately departure elevation";}
+  if(Route.Count()>16) {return "Up to 16 intermediate flight waypoints";}
+  Route.Insert(lz);RouteDistance=0;vector previous=startPosition;float highest=Math.Max(departureGround,landingGround);
+  foreach(vector point:Route)
+  {
+   if(point[0]<0 || point[0]>13500 || point[2]<0 || point[2]>13500) {return "Flight waypoint outside supported world bounds";}
+   vector leg=point-previous;leg[1]=0;if(leg.Length()<2) {return "Separate flight waypoints by at least two metres";}
+   RouteDistance+=leg.Length();
+   for(int sample=0;sample<=100;sample++) {vector samplePoint=vector.Lerp(previous,point,sample/100.0);highest=Math.Max(highest,GetGame().GetWorld().GetSurfaceY(samplePoint[0],samplePoint[2]));}
+   previous=point;
+  }
+  if(RouteMode=="patrol-loop")
+  {
+   vector closeLeg=Route[0]-lz;closeLeg[1]=0;RouteDistance+=closeLeg.Length();
+   for(int closingSample=0;closingSample<=100;closingSample++) {vector closingPoint=vector.Lerp(lz,Route[0],closingSample/100.0);highest=Math.Max(highest,GetGame().GetWorld().GetSurfaceY(closingPoint[0],closingPoint[2]));}
+  }
+  if(RouteDistance>1000.1 || RouteDistance<20) {return "Reviewed flight route must total 20-1000 metres";}
+  if(highest-departureGround>100 || highest-landingGround>100) {return "Terrain relief exceeds the tested 100 metre approach envelope";}
+  if(landingGround<0) {return "Landing zone cannot be below sea level";}
+  CruiseY=highest+40+(startPosition[1]-departureGround);
+  vector firstLeg=Route[0]-startPosition;DesiredYaw=Math.Atan2(firstLeg[0],firstLeg[2])*Math.RAD2DEG;
+  bool cruiseClear=false;
+  for(int heightStep=0;heightStep<=6;heightStep++)
+  {
+   vector priorCruise=Vector(startPosition[0],CruiseY,startPosition[2]);cruiseClear=true;
+   foreach(vector routePoint:Route) {vector nextCruise=Vector(routePoint[0],CruiseY,routePoint[2]);if(CorridorBlocked(priorCruise,nextCruise)) {cruiseClear=false;break;}priorCruise=nextCruise;}
+   if(cruiseClear && RouteMode=="patrol-loop") {cruiseClear=!CorridorBlocked(Vector(lz[0],CruiseY,lz[2]),Vector(Route[0][0],CruiseY,Route[0][2]));}
+   if(cruiseClear) {break;}CruiseY+=20;
+  }
+  if(!cruiseClear) {return "No clear cruise corridor within the bounded height envelope";}
+  vector departureHigh=Vector(startPosition[0],CruiseY,startPosition[2]);vector landingHigh=Vector(lz[0],CruiseY,lz[2]);
+  if(CorridorBlocked(startPosition+Vector(0,3,0),departureHigh)) {return "Takeoff column obstructed; choose an open departure area";}
+  if(CorridorBlocked(landingHigh,Vector(lz[0],landingGround+3,lz[2]))) {return "Landing column obstructed; choose an open landing zone";}
+  float estimate=RouteDistance/CruiseSpeed+(CruiseY-startPosition[1])/3+(CruiseY-landingGround)/1.2+Route.Count()*8+60;
+  if(estimate>HardDeadline-15) {return "Route exceeds the selected speed and flight-time budget; shorten it or choose a faster speed";}
   LandingPoint=lz;RequestId=requestId;Active=true;StartedAt=GetGame().GetWorld().GetWorldTime();Phase="seating";
   Aircraft.SetEventMask(EntityEvent.SIMULATE | EntityEvent.POSTSIMULATE);
   GetGame().GetCallqueue().CallLater(Tick,50,true);GetGame().GetCallqueue().CallLater(Observe,1000,true);
@@ -101,8 +147,8 @@ class COMMAND_HelicopterFlightLease
   if(!Active || ReleaseForHuman()) {return;}
   Elapsed=(GetGame().GetWorld().GetWorldTime()-StartedAt)*0.001;
   if(!Aircraft || !Pilot || !Sim) {Finish("failed: entity lost");return;}
-  if(Elapsed>180) {CancelRequested=true;}
-  if(Elapsed>270) {Finish("failed: flight safety deadline; landing unconfirmed");return;}
+  if(Elapsed>SoftDeadline) {CancelRequested=true;}
+  if(Elapsed>HardDeadline) {Finish("failed: flight safety deadline; landing unconfirmed");return;}
   if(Phase=="seating")
   {
    if(!AllSeated())
@@ -130,12 +176,12 @@ class COMMAND_HelicopterFlightLease
   if(Phase=="spooling")
   {
    Collective=0;
-   if(Elapsed>=25)
+   if(Elapsed>=8 && Sim.EngineIsOn() && Sim.RotorGetRPM(0)>=300)
    {
     if(!Sim.EngineIsOn() || Sim.RotorGetRPM(0)<300) {Finish("failed: engine operating state");return;}
-    InitialAGL=agl;Phase="hover-controller";
+    InitialAGL=agl;SpoolFinishedAt=Elapsed;Phase="hover-controller";
     vector pose[4];Physics body=Aircraft.GetPhysics();body.GetWorldTransform(pose);
-    Anchor=pose[3];Departure=Anchor;GroundY=pose[3][1];TargetY=GroundY+8;
+    Anchor=pose[3];Departure=Anchor;GroundY=pose[3][1];TargetY=CruiseY;
     OriginClearance=GroundY-GetGame().GetWorld().GetSurfaceY(Anchor[0],Anchor[2]);
     LandingPoint[1]=GetGame().GetWorld().GetSurfaceY(LandingPoint[0],LandingPoint[2])+OriginClearance;
     // A preselected, clear route on EmptyEden. Verify the marked LZ terrain is flat.
@@ -149,28 +195,34 @@ class COMMAND_HelicopterFlightLease
      }
     }
     if(high-low>0.6) {Finish("failed: marked LZ terrain is not sufficiently flat");return;}
-    vector desired[4];vector angles=Aircraft.GetYawPitchRoll();Math3D.AnglesToMatrix(Vector(angles[0],0,0),desired);
+    vector desired[4];vector angles=Aircraft.GetYawPitchRoll();CommandYaw=angles[0];Math3D.AnglesToMatrix(Vector(angles[0],0,0),desired);
     TargetRight=desired[0];TargetUp=desired[1];TargetForward=desired[2];
    }
+   if(Elapsed>25 && Phase=="spooling") {Finish("failed: engine did not reach operating RPM");}
    return;
   }
   Collective=0;
-  if(HeightY>GroundY+15) {Finish("failed: height envelope");return;}
-  if(HoverSince>0 && Elapsed-HoverSince>5 && Phase=="hover-controller")
+  if(HeightY>CruiseY+15) {Finish("failed: height envelope");return;}
+  if(HoverSince>0 && Elapsed-HoverSince>2 && Phase=="hover-controller")
   {
-   Phase="flying";PhaseAt=Elapsed;Anchor=LandingPoint;
+   Phase="flying";TranslationStartedAt=Elapsed;PhaseAt=Elapsed;Anchor=Route[0];
   }
   if(Phase=="flying")
   {
-   vector delta=LandingPoint-Aircraft.GetOrigin();delta[1]=0;
+   vector delta=Route[RouteIndex]-Aircraft.GetOrigin();delta[1]=0;
+   if(RouteIndex<Route.Count()-1 && delta.Length()<8) {RouteIndex++;Anchor=Route[RouteIndex];vector nextLeg=Anchor-Aircraft.GetOrigin();DesiredYaw=Math.Atan2(nextLeg[0],nextLeg[2])*Math.RAD2DEG;delta=nextLeg;delta[1]=0;}
    Physics body=Aircraft.GetPhysics();vector v=body.GetVelocity();
-   if(delta.Length()<0.7 && Vector(v[0],0,v[2]).Length()<0.25 && Math.AbsFloat(TargetY-HeightY)<0.35)
+   if(RouteIndex==Route.Count()-1 && delta.Length()<0.7 && Vector(v[0],0,v[2]).Length()<0.25 && Math.AbsFloat(TargetY-HeightY)<0.35)
    {
-    FlewToLZ=true;Phase="approaching";PhaseAt=Elapsed;
+    if(RouteMode!="land" && !CancelRequested)
+    {
+     if(RouteMode=="patrol-loop") {PatrolLaps++;RouteIndex=0;Anchor=Route[0];vector loopLeg=Anchor-Aircraft.GetOrigin();DesiredYaw=Math.Atan2(loopLeg[0],loopLeg[2])*Math.RAD2DEG;}
+    }
+    else {FlewToLZ=true;Phase="approaching";PhaseAt=Elapsed;}
    }
   }
-  if(Phase=="approaching" && Elapsed-PhaseAt>3) {Phase="descending";LandingSince=Elapsed;LastGroundCheck=Elapsed;GroundY=LandingPoint[1];}
-  if(Phase=="descending") {TargetY=Math.Max(GroundY-0.12,Departure[1]+8-(Elapsed-LandingSince)*0.35);}
+  if(Phase=="approaching" && Elapsed-PhaseAt>1) {Phase="descending";LandingSince=Elapsed;LastGroundCheck=Elapsed;GroundY=LandingPoint[1];}
+  if(Phase=="descending") {float descentRate=0.5;if(HeightY>GroundY+5) {descentRate=1.5;}TargetY=Math.Max(GroundY-0.12,TargetY-Math.Max(0,Elapsed-LastGroundCheck)*descentRate);}
   if(Phase=="descending")
   {
    Physics body=Aircraft.GetPhysics();vector v=body.GetVelocity();
@@ -186,7 +238,9 @@ class COMMAND_HelicopterFlightLease
   }
   if(Phase=="unloading")
   {
-   if(!Sim.HasAnyGroundContact() || Aircraft.GetPhysics().GetVelocity().Length()>0.5) {Finish("failed: landing stability lost during unload");return;}
+   bool unloadStable=Sim.HasAnyGroundContact() && Aircraft.GetPhysics().GetVelocity().Length()<0.5;
+   if(!unloadStable) {if(UnloadUnstableSince==0) {UnloadUnstableSince=Elapsed;}if(Elapsed-UnloadUnstableSince>0.5) {Finish("failed: sustained landing instability during unload");}return;}
+   UnloadUnstableSince=0;
    if(Elapsed-PhaseAt>60) {Finish("failed: passenger unload deadline");return;}
    if(UnloadIndex<Passengers.Count())
    {
@@ -244,7 +298,7 @@ class COMMAND_HelicopterFlightLease
  }
  void ForceStep(float timeSlice)
  {
-  if(!Active || !Aircraft || !Sim || (Phase!="hover-controller" && Phase!="flying" && Phase!="approaching" && Phase!="descending")) {return;}
+  if(!Active || !Aircraft || !Sim || (Phase!="hover-controller" && Phase!="flying" && Phase!="approaching" && Phase!="descending" && Phase!="unloading")) {return;}
   if(ReleaseForHuman()) {return;}
   Physics body=Aircraft.GetPhysics();
   if(!body || !body.IsDynamic() || body.GetMass()<=0) {Finish("failed: no dynamic aircraft body");return;}
@@ -255,12 +309,14 @@ class COMMAND_HelicopterFlightLease
   if(HasPriorVy) {MeasuredAcceleration=(velocity[1]-PriorVy)/timeSlice;}
   PriorVy=velocity[1];HasPriorVy=true;
   // PD height loop. Clamp the commanded additional acceleration, not measured net acceleration.
-  RequestedAcceleration=Math.Clamp(1.2*(TargetY-HeightY)-2.8*velocity[1],-1.5,2.0);
+  float desiredVy=Math.Clamp(1.0*(TargetY-HeightY),-2.0,4.0);RequestedAcceleration=Math.Clamp(2.0*(desiredVy-velocity[1]),-2.0,3.0);
   vector delta=Anchor-pose[3];delta[1]=0;LateralError=delta.Length();
   vector desiredVelocity=vector.Zero;
-  if(LateralError>0.001) {desiredVelocity=delta.Normalized()*Math.Min(4.0,LateralError*0.6);}
+  if(LateralError>0.001) {desiredVelocity=delta.Normalized()*Math.Min(CruiseSpeed,Math.Min(LateralError*0.6,Math.Sqrt(4.0*LateralError)));}
+  float directionError=DesiredYaw-Math.Atan2(pose[2][0],pose[2][2])*Math.RAD2DEG;while(directionError>180) {directionError-=360;}while(directionError<-180) {directionError+=360;}
+  if(Phase=="flying" && Math.AbsFloat(directionError)>12) {desiredVelocity=vector.Zero;}
   vector lateral=Vector((desiredVelocity[0]-velocity[0])*1.8,0,(desiredVelocity[2]-velocity[2])*1.8);
-  if(lateral.Length()>1.5) {lateral=lateral.Normalized()*1.5;}
+  if(lateral.Length()>2.5) {lateral=lateral.Normalized()*2.5;}
   vector desiredAcceleration=Vector(lateral[0],RequestedAcceleration,lateral[2]);
   TotalBefore=body.GetTotalForce();Force=desiredAcceleration*body.GetMass()-TotalBefore;
   float forceLimit=body.GetMass()*Physics.STANDARD_GRAVITY*3;
@@ -269,6 +325,9 @@ class COMMAND_HelicopterFlightLease
   // Apply at the documented local COM offset transformed to world coordinates.
   vector center=body.GetCenterOfMass().Multiply4(pose);
   body.ApplyForceAt(center,Force);TotalAfter=body.GetTotalForce();ForceWrites++;
+  // Slew the level attitude target toward the route; never set the physical pose.
+  float headingDelta=DesiredYaw-CommandYaw;while(headingDelta>180) {headingDelta-=360;}while(headingDelta<-180) {headingDelta+=360;}
+  CommandYaw+=Math.Clamp(headingDelta,-25*timeSlice,25*timeSlice);vector desired[4];Math3D.AnglesToMatrix(Vector(CommandYaw,0,0),desired);TargetRight=desired[0];TargetUp=desired[1];TargetForward=desired[2];
   // Fixed attitude target; no transform/angular-velocity setters or frozen axes.
   vector error=(Cross(pose[0],TargetRight)+Cross(pose[1],TargetUp)+Cross(pose[2],TargetForward))*0.5;
   AttitudeError=error.Length();
@@ -276,7 +335,8 @@ class COMMAND_HelicopterFlightLease
   float limit=body.GetMass()*30.0;float magnitude=Torque.Length();
   if(magnitude>limit) {Torque=Torque*(limit/magnitude);}
   body.ApplyTorque(Torque);
-  if(Phase=="hover-controller" && Math.AbsFloat(TargetY-HeightY)<0.35 && Math.AbsFloat(velocity[1])<0.2 && omega.Length()<0.08 && LateralError<0.5 && Vector(velocity[0],0,velocity[2]).Length()<0.3 && AttitudeError<0.01745)
+  float routeYawError=DesiredYaw-Math.Atan2(pose[2][0],pose[2][2])*Math.RAD2DEG;while(routeYawError>180) {routeYawError-=360;}while(routeYawError<-180) {routeYawError+=360;}
+  if(Phase=="hover-controller" && Math.AbsFloat(routeYawError)<5 && Math.AbsFloat(TargetY-HeightY)<0.35 && Math.AbsFloat(velocity[1])<0.2 && omega.Length()<0.08 && LateralError<0.5 && Vector(velocity[0],0,velocity[2]).Length()<0.3 && AttitudeError<0.01745)
   {
    if(HoverSince==0) {HoverSince=Elapsed;}
   }

@@ -866,3 +866,7 @@ Feature expansion paused at user request. Desktop rc.3 consolidates asset, plann
 ### 20 October 2026 — tunnel/startup hotfix
 
 Local address/code delivery follows registered Cloudflare transport and local pairing; background public verification is explicitly reported and cannot block credentials for up to120seconds. Stop/cancellation and approval rules are preserved. Window visibility uses DOM readiness and online tiles are deferred until first frame. Temporary live Cloudflare probe produced credentials in8.6seconds; no multiplayer acceptance inferred. Applied only to A:/Command installation with rollback copy; frozen RC3 package remains intact.
+
+## Confirmed next session — v1.1
+
+Prioritize Mi-8MT/USSR helicopter profile: active occupied resting-state inspection, mass/COM and seating verification, bounded controller calibration, actual takeoff/route/landing/cancellation and retained crew. Current aircraft reports are read-only/metadata evidence, not flight acceptance. Huey remains the only enabled flight adapter in v1.0.

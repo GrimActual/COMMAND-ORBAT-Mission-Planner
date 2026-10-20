@@ -1,6 +1,6 @@
-# COMMAND HTTPS relay — 1.0.0 — experimental live integration
+# COMMAND HTTPS relay — 1.0.0 (20 October flight refresh) — experimental live integration
 
-Use with stable planner 1.0.0 and experimental bridge 0.13.0. HTTP polling is implemented; WebSockets, process-restart persistence and multi-admin roles are not. Sessions and queues live in memory. Closing a remote dashboard is different from ending/revoking its session.
+Use with stable planner 1.0.0 (20 October flight refresh) and experimental bridge 0.13.1. HTTP polling is implemented; WebSockets, process-restart persistence and multi-admin roles are not. Sessions and queues live in memory. Closing a remote dashboard is different from ending/revoking its session.
 
 ## Quick connection — this computer
 
@@ -19,3 +19,5 @@ The included Dockerfile runs server.js for a separately secured hosting environm
 Native host/server controls hold approval authority. Manual approval is the default; automatic AI/spawn/removal categories are separate and retain validation, caps, ownership, duplicate and player protections. Snapshot operations remain manual. Rebind private dedicated approval settings to each fresh pairing. Read Guides/07-HTTPS-HOSTING.md in the complete package for the server configuration and manual review flow, or planner/operator-guides/07-HTTPS-HOSTING.md in the source archive.
 
 Isolated native public-HTTPS command exchange and mixed snapshot process restart were verified on this PC. They do not certify human multiplayer, combat behavior or the unexplained historical boarding timeout. All relay/live controls remain experimental; complete LIVE-CHECKLIST.md before claiming broader gameplay acceptance. Keep this relay version together with its matching bridge and desktop; do not merge files from historical development archives.
+
+Experimental flight profile v2 adds reviewed 4/8/12 m/s speed and up to 16 intermediate map waypoints. Requires the matching bridge and app; no live gain injection, looping or general dynamic obstacle avoidance.

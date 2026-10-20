@@ -1,5 +1,5 @@
-# COMMAND v1.0.0 — Mission Planning & Control
+# COMMAND helicopter route test
 
-Stable offline planner. Live-game controls remain experimental. Matching bridge 0.13.0.
+Desktop 1.0.1 (20 October flight refresh) / bridge 0.13.1. Experimental test build.
 
-Start with [the current guide](operator-guides/00-START-HERE.md). New mission clears planning without disconnecting. Import one mission package, review, then send individual deployment stages for host approval. Preserve the entire Windows folder and back up your plans.
+Read operator-guides/10-HELICOPTER.md. Use one reviewed request for speed, intermediate map waypoints and the final LZ. Live controls remain experimental. Back up plans; use the separate test installation.

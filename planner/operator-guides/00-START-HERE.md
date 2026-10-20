@@ -1,4 +1,8 @@
-# COMMAND v1.0.0 — Mission Planning & Control
+# COMMAND helicopter route test
+
+Desktop 1.0.1 (20 October flight refresh) / bridge 0.13.1. Experimental; live controls remain experimental. Start with [the flight guide](10-HELICOPTER.md).
+
+# COMMAND v1.0.1 — Mission Planning & Control
 
 Stable mission planning for Arma Reforger, with optional **experimental live-game controls**. This is the first stable COMMAND product edition; the earlier 2.x development versions remain available as history. Saved-plan formats and the existing user-settings location are retained.
 
@@ -10,7 +14,7 @@ Stable mission planning for Arma Reforger, with optional **experimental live-gam
 
 ## Optional experimental game connection
 
-Compatible bridge: **0.13.0**, Workshop project ID **6A969EB0C5012BB9**. Game/server addons must already be installed. Quick connection runs a relay and temporary tunnel on this computer; dedicated relay mode connects to an administrator-managed relay. Connecting does not itself authorize game changes. Host/server approval and ownership validation remain required.
+Compatible bridge: **0.13.1**, Workshop project ID **6A969EB0C5012BB9**. Game/server addons must already be installed. Quick connection runs a relay and temporary tunnel on this computer; dedicated relay mode connects to an administrator-managed relay. Connecting does not itself authorize game changes. Host/server approval and ownership validation remain required.
 
 Tracking, spawning/removal, AI controls, category auto-approval, occupied deployment, snapshots, transport/treatment/vehicle controls and force-assisted Huey flight are experimental. Existing infantry can be recruited through reviewed control; general existing-vehicle/aircraft registration is unfinished. The historical walking-boarding timeout remains unexplained. Two-client multiplayer and pilot takeover acceptance remain pending.
 

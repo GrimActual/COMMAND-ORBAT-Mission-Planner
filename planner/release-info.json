@@ -1,7 +1,7 @@
 {
   "schema": "command-release-scope-v1",
-  "desktopVersion": "1.0.0",
-  "matchingBridgeVersion": "0.13.0",
+  "desktopVersion": "1.0.1",
+  "matchingBridgeVersion": "0.13.1",
   "channel": "stable-planner",
   "stablePublicationAllowed": true,
   "core": [
@@ -28,7 +28,8 @@
     "occupied-vehicle-and-cargo-group-deployment",
     "reviewed-ground-reinforcement",
     "stock-refuel-once",
-    "force-assisted-vanilla-UH1H-insertion"
+    "force-assisted-vanilla-UH1H-insertion",
+    "reviewed-huey-speed-waypoints-and-session-scoped-patrol"
   ],
   "disabledOrPlanned": [
     "native-workbench-import-and-apply",
@@ -43,7 +44,6 @@
     "human-multiplayer-and-combat-acceptance-incomplete",
     "old-bad-snapshot-headings-require-review-or-resave",
     "general-existing-vehicle-registration-unfinished",
-    "experimental-flight-slow-takeoff-and-backward-travel",
     "no-flight-obstacle-avoidance-or-guaranteed-tree-building-clearance"
   ],
   "requiredExternalAcceptance": [
@@ -55,5 +55,6 @@
   ],
   "stableScope": "Offline mission planning and reviewed planning-data workflows only",
   "liveIntegrationStatus": "experimental",
-  "publicReleaseTitle": "COMMAND v1.0.0 \u2014 Mission Planning & Control"
+  "publicReleaseTitle": "COMMAND v1.0.1 \u2014 Mission Planning & Control",
+  "buildRevision": "2026-10-20-helicopter-profile-v2"
 }

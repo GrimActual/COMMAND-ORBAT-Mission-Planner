@@ -1,3 +1,4 @@
+modded class JSOC_ORBAT_GMRequest { float cruiseSpeedMps; string flightMode; };
 // Original optional COMMAND experimental flight integration. Does not modify spawning/schema classes.
 class COMMAND_HelicopterProgress
 {
@@ -15,7 +16,7 @@ modded class JSOC_ORBAT_HostGM
  protected float m_FlightSyncAt;
  override void Post(string action,string body)
  {
-  if(action=="poll" && m_CapabilityMode>=14) {body.Replace("\"entity-control-v1\"","\"entity-control-v1\",\"helicopter-insert-experimental-v1\"");}
+  if(action=="poll" && m_CapabilityMode>=14) {body.Replace("\"entity-control-v1\"","\"entity-control-v1\",\"helicopter-insert-experimental-v1\",\"helicopter-profile-v2\"");}
   super.Post(action,body);
  }
  override bool CanApprove()
@@ -33,7 +34,10 @@ modded class JSOC_ORBAT_HostGM
   if(Pending && Pending.request && Pending.request.kind=="helicopter-insert")
   {
    JSOC_ORBAT_GMRequest r=Pending.request;
-   return string.Format("EXPERIMENTAL HELICOPTER INSERTION\nAircraft %1 / %2\nPassengers %3 / %4\nClear flat LZ X %5 Z %6\nVanilla UH-1H; one AI pilot and four seated cargo passengers. Clear 20-100 m route at approximately departure elevation; no obstacle avoidance. Host must verify route and LZ.\nApproval starts actual flight. Success requires sustained landing and four completed exits. Airborne cancellation lands at this LZ and retains passengers. Any human entering the aircraft immediately releases assistance.",r.vehicleRequestId,r.vehicleUnitId,r.targetRequestId,r.unitId,r.worldX,r.worldZ);
+   string summary=string.Format("EXPERIMENTAL HELICOPTER INSERTION\nAircraft %1 / %2\nPassengers %3 / %4\nClear flat LZ X %5 Z %6\nVanilla UH-1H; one AI pilot and four seated cargo passengers. Reviewed route up to 1000 m total. Travel speed and route are validated separately. Operator must inspect departure and LZ; general obstacle avoidance remains experimental. Host must verify route and LZ.\nApproval starts actual flight. Success requires sustained landing and four completed exits. Airborne cancellation lands at this LZ and retains passengers. Any human entering the aircraft immediately releases assistance.",r.vehicleRequestId,r.vehicleUnitId,r.targetRequestId,r.unitId,r.worldX,r.worldZ)+string.Format("\nReviewed travel speed: %1 m/s; intermediate waypoints: %2",r.cruiseSpeedMps,r.waypoints.Count());
+   summary+="\nFlight ending: "+r.flightMode+". Patrol stays airborne while this authorized session is alive; cancellation follows the reviewed route to the LZ and retains passengers.";
+   foreach(int i,COMMAND_ORBAT_RoutePoint point:r.waypoints) {summary+=string.Format("\nWP %1: X %2 Z %3",i+1,point.worldX,point.worldZ);}
+   return summary;
   }
   return super.Preview(index);
  }
@@ -47,7 +51,7 @@ modded class JSOC_ORBAT_HostGM
   if(!Replication.IsServer() || !SafeKey(request.requestId) || request.requestId.Length()>40) {return;}
   if(m_Flight && m_FlightRequest && request.requestId==m_FlightRequest.requestId) {return;}
   string cached;if(m_Results.Find(request.requestId,cached)) {Post("result",cached);return;}
-  if(m_Flight || m_Refuel || m_OccupiedRequest || m_Transport || m_Driving || m_Healing || m_RestoringSnapshot || m_Results.Count()>=100 || request.version!=2 || !m_OrdersAllowed || m_CapabilityMode<14 || request.timeoutSeconds!=300)
+  if(m_Flight || m_Refuel || m_OccupiedRequest || m_Transport || m_Driving || m_Healing || m_RestoringSnapshot || m_Results.Count()>=100 || request.version!=2 || !m_OrdersAllowed || m_CapabilityMode<14 || (request.timeoutSeconds!=300 && request.timeoutSeconds!=600))
   {Report(request.requestId,"failed","Experimental flight requires current negotiated support and an idle execution slot","");return;}
   if(!SafeKey(request.targetRequestId) || !SafeKey(request.unitId) || !SafeKey(request.vehicleRequestId) || !SafeKey(request.vehicleUnitId) || !(request.worldX>=0 && request.worldX<=13500 && request.worldZ>=0 && request.worldZ<=13500))
   {Report(request.requestId,"failed","Invalid flight target identities or landing zone","");return;}
@@ -67,7 +71,14 @@ modded class JSOC_ORBAT_HostGM
   if(!pilotSlot || !pilotSlot.GetOccupant()) {Report(request.requestId,"failed","A seated AI pilot is required","");return;}
   array<AIAgent> agents={};squad.GetAgents(agents);array<IEntity> passengers={};
   foreach(AIAgent agent:agents) {if(!agent || !agent.GetControlledEntity()) {Report(request.requestId,"failed","Passenger member unavailable","");return;}passengers.Insert(agent.GetControlledEntity());}
+  if(request.cruiseSpeedMps!=0 && request.cruiseSpeedMps!=4 && request.cruiseSpeedMps!=8 && request.cruiseSpeedMps!=12) {Report(request.requestId,"failed","Unsupported reviewed cruise speed","");return;}
   ref COMMAND_HelicopterFlightLease lease=new COMMAND_HelicopterFlightLease();
+  if(!request.flightMode.IsEmpty() && request.flightMode!="land" && request.flightMode!="patrol" && request.flightMode!="patrol-loop") {Report(request.requestId,"failed","Invalid flight ending","");return;}
+  if(!request.flightMode.IsEmpty()) {lease.RouteMode=request.flightMode;}
+  if(lease.RouteMode!="land" && (request.timeoutSeconds!=600 || request.waypoints.Count()<1)) {Report(request.requestId,"failed","Patrol requires reviewed route points","");return;}
+  lease.CruiseSpeed=4;if(request.cruiseSpeedMps>0) {lease.CruiseSpeed=request.cruiseSpeedMps;}
+  lease.HardDeadline=request.timeoutSeconds-30;lease.SoftDeadline=lease.HardDeadline-30;
+  foreach(COMMAND_ORBAT_RoutePoint routePoint:request.waypoints) {if(!routePoint) {Report(request.requestId,"failed","Invalid flight route point","");return;}lease.Route.Insert(Vector(routePoint.worldX,0,routePoint.worldZ));}
   reason=COMMAND_HelicopterFlightDispatcher.StartReviewed(lease,request.requestId,aircraftEntity,pilotSlot.GetOccupant(),passengers,Vector(request.worldX,0,request.worldZ));
   if(!reason.IsEmpty()) {Report(request.requestId,"failed",reason,"");return;}
   m_Flight=lease;m_FlightRequest=request;m_FlightDetached=false;m_FlightSyncAt=0;
@@ -114,6 +125,7 @@ modded class JSOC_ORBAT_HostGM
   if(data.Length()>32768 || !json.LoadFromString(data) || !json.ReadValue("record",record) || !record || !record.request || record.phase!="approved" || record.request.requestId!=m_FlightRequest.requestId)
   {m_Flight.RequestCancel();m_FlightDetached=true;Status="Flight authority changed; landing at approved LZ with remaining passengers";return;}
   if(record.cancelRequested) {m_Flight.RequestCancel();}
+  else if(m_Flight.RouteMode!="land" && !m_Flight.CancelRequested && m_Flight.Elapsed<85800) {m_Flight.SoftDeadline=m_Flight.Elapsed+420;m_Flight.HardDeadline=m_Flight.Elapsed+450;}
   if(m_Flight.Done)
   {
    // Only report against the terminal progress actually acknowledged by the relay.

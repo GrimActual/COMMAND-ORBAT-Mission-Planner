@@ -1,19 +1,23 @@
-# Experimental helicopter insertion
+# COMMAND helicopter controls — experimental
 
-Compatible experimental integration: desktop 1.0.0, bridge project 0.13.0 and included relay. This is an optional force-assisted vanilla UH-1H adapter, not native autonomous-pilot pathfinding. Other aircraft remain disabled. The ordinary offline planner works without it.
+Desktop **1.0.1 (20 October flight refresh)**, matching bridge **0.13.1**. Stable offline planner; all live controls remain experimental. This refresh requires bridge 0.13.1.
 
-Use the [three-root test pack](../../examples/helicopter-insertion-test/00-START-HERE.md): it contains a named helicopter, individual AI pilot and actual four-person fireteam, matching catalog/index and a marked LZ. Importing it changes planning data only. Back up your current plan first.
+1. Back up the current plan. Close the old app; run this test app in its separate folder.
+2. Publish the included Bridge-0.13.1/addon.gproj to the existing Workshop item as 0.13.1. Use one copy, load it in the test game/server, and pair this app explicitly.
+3. Import the included Huey mission, inspect the actual departure and LZ, review deployment and approve it. Confirm the actual AI pilot and four passengers are seated.
+4. Open helicopter controls. Refresh targets; select TEAM as passengers and HUEY as aircraft. Choose travel speed (4/8/12 m/s). Open Flight waypoints → Add waypoint on map for each intermediate point. Mark the final LZ separately.
+5. Review the entire order. It is one manual approval; the pilot follows points in order, then lands and unloads only the passengers. Total planned path is 20–1000 m. Sixteen intermediate points maximum. Choose Flight ending: Land and unload, Fly route then hover, or Loop route. Patrol stays airborne while its authorized paired session remains alive. Land / stop patrol follows the remaining reviewed route to the LZ and retains passengers. Lost authority eventually triggers controlled landing; no persistent unattended operation is promised. The loop-closing leg is included in the 1 km budget and preflight checks.
 
-Prepare one reviewed occupied deployment: helicopter vehicle, pilot in an automatic pilot seat, complete fireteam in automatic cargo seats. Check successful actual occupancy before proceeding. This avoids the walking-to-vehicle workflow; it does not fix its historical timeout. Flight is a separate reviewed request and always needs manual host approval.
+## Observed checks
 
-Game controls → Orders → Helicopter insertion — experimental: refresh targets, select the owned aircraft/team, mark the LZ, confirm the inspected route, review and send. No flight action occurs on import or review. Unsupported bridges keep the card disabled.
+- Actual isolated native 1 km flight behind initial heading completed: route-facing gate, ~41 m lift, landing, four exits and retained pilot, ~188 s total.
+- Actual native three-leg ~400 m route at a reviewed 8 m/s completed; intermediate point errors ~0.55 m and ~0.10 m, observed maximum horizontal speed ~8.32 m/s, landing/four exits/pilot retained, ~148 s total.
+- Actual native collision tests detected terrain and a vanilla hangar. A hangar-obstructed LZ was rejected before flight. This is preflight clearance admission, not a demonstrated dynamic avoidance pilot.
 
-Initial envelope: one pilot and four cargo passengers, inspected clear/flat 20–100 m route at approximately departure terrain elevation. The controller uses about 8 m above departure body origin, not a universal skid-AGL clearance. Terrain samples cannot detect buildings, trees or traffic. No obstacle avoidance or realistic banking is claimed.
+Cruise targets 40 m above the sampled route high point. Bounded preflight sweeps may raise it above detected geometry or reject the route. Geometry streaming, foliage collision, dynamic obstacles and other worlds are not universally verified. Operator route/LZ inspection remains required. Flat LZ, one vanilla UH-1H, one AI pilot and four cargo passengers remain the tested profile. Takeoff begins after operating rotor RPM; it is not an instant launch. Historical walking boarding remains unrelated/unresolved. Human takeover and two-client acceptance are pending.
 
-Success requires physical flight, sustained ground contact/low motion, four completed native animated exits and the pilot retained aboard. COMMAND reports measured phases; request acceptance alone is not success. Native result text can remain English in all app languages.
+No normal game client was launched for automated tests. Private native fixture files and raw diagnostics are not included. Do not interpret accepted requests as physical completion. Cancellation remains controlled until landing at the approved LZ.
 
-Cancel airborne keeps assistance until landing at the already approved LZ and retains passengers. Once unloading begins, exits cannot be recalled. Any human entering any aircraft seat releases assistance immediately; observers stay outside. Competent pilot takeover still needs live acceptance. Physical destruction, process restart or unavailable simulation cannot guarantee a safe recovery.
+## Next session: v1.1
 
-Disconnect dashboard leaves a server-managed session and approved flight running; reconnect to the same authorized session to recover its result. End session/revoke pairing requests controlled cancellation. A relay restart does not restore its in-memory session. These controls do not edit mission JSON or Undo history.
-
-Live gates: matching Workshop version actually loaded, two-client observation, physical pause-menu approval/auto-approval controls, pilot takeover and disconnect/reconnect. The experimental adapter is not a stable multiplayer claim. Land first, close this app, then return to the preserved installation if necessary; retain plan backups.
+Prioritize Mi-8MT/USSR aircraft adapter calibration and actual occupied takeoff, route, landing, cancellation and crew retention tests. Existing metadata and COM reports are references, not finished flight adapters. Other aircraft are not enabled by this refresh.
