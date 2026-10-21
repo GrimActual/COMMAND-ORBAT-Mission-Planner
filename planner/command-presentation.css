@@ -29,3 +29,8 @@ body.command-shell.gm-workspace main{margin-left:var(--command-nav-width)}body.c
 
 /* Keep primary file actions reachable at laptop widths and desktop scaling. */
 @media(min-width:851px) and (max-width:1200px){.command-shell header{gap:10px}.command-shell header>.actions{max-width:calc(100% - 210px);flex-wrap:wrap;justify-content:flex-end}.command-shell header>.brand-group{width:86px;gap:0}.command-shell header>.brand-group>div{display:none}.command-shell #commandPlanHeading{flex:1;min-width:100px}}
+
+/* Keep translated map actions readable when the workspace leaves a narrow map. */
+.command-shell .map-toolbar{flex-wrap:wrap;width:max-content;box-sizing:border-box}
+.command-shell .map-toolbar button{flex:0 0 auto}
+@media(max-width:1200px){.command-shell .map-hud{bottom:128px}}
