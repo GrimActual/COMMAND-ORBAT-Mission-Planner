@@ -378,3 +378,8 @@ Fixed the confirmed false-ready gap: Quick connection now requires bounded publi
 ### 20 October 2026 — one consolidated release candidate
 
 Authoritative source frozen for COMMAND 2.10.0-rc.1 and bridge publication project 0.12.0. Full roadmap preserved; core/pilot/planned scope and promotion gates are in docs/RELEASE-2.10.0-SCOPE.md. Expanded mixed snapshot process-restart test passed. Consolidated source suite: 954 pass / 0 fail / 1 skip. Single complete package is assembled from the recorded immutable commit, with verified existing Electron/tunnel dependencies; no private diagnostics or local-use elevation included. Stable publication remains blocked by the exact packaged and human live acceptance gates. No stable/public publication is claimed.
+
+
+## QoL consolidation — 1.1.0-rc.5 candidate
+
+Whole-mission serial deployment, scoped selection and cleanup, exact submitted-target hints, reliable same-ID request recovery, clear lifecycle/approval guidance, editable flight drafts, connection lifecycle clarity, recovery safeguards and synchronized EN/FR/DE operator help are the current desktop consolidation. Native bridge stays 0.15.0. This work does not claim new physical flight, human takeover, multiplayer or combat acceptance. Preserve the remaining roadmap below/above; existing vehicle registration, autonomous combat flight, Workbench apply, WebSockets, relay persistence and multi-admin authority remain separate unfinished capabilities. The candidate must pass final package checks before freezing; no automatic publication.

@@ -16,7 +16,7 @@
  function invalidate() { review = null; $('occupiedSend').disabled = true; }
  function refreshButtons() {
   $('occupiedSend').disabled = busy || !capable || !review;
-  $('occupiedRetry').disabled = busy || !capable || !submission;
+  $('occupiedRetry').disabled = busy || !capable || submission?.phase!=='unknown';
   $('occupiedCancel').disabled = busy || !submission || terminal.has(submission.phase);
  }
  function assignments() {
@@ -47,7 +47,7 @@
  async function safe(fn) {
   if (busy) return;
   busy=true; refreshButtons();
-  try { await fn(); } catch (error) { $('occupiedFeedback').textContent=error.message; }
+  try { await fn(); } catch (error) { if(submission?.phase==='submitting'&&String(error.message).includes('[COMMAND_REQUEST_REJECTED]'))submission.phase='rejected';CommandOperatorFeedback.show($('occupiedFeedback'),error); }
   finally { busy=false; refreshButtons(); }
  }
  function observe(status) {
@@ -57,18 +57,20 @@
   return record;
  }
  async function send(payload) {
-  const generation=epoch;
-  const status=await plannerLocalBridge.command('gm-status');
-  if(generation!==epoch)throw Error('Connection changed. Review this deployment again.');
-  observe(status);
+  const generation=epoch,retrying=submission?.requestId===payload.requestId;
+  const status=await plannerLocalBridge.command('gm-status');if(generation!==epoch)throw Error('Connection changed. Review this deployment again.');
+  const observed=observe(status);if(retrying&&observed){CommandRequestState.bind($('occupiedFeedback'),()=>CommandRequestState.text(observed.phase,observed.request.kind)+' · '+payload.requestId+' · '+(CommandOperatorFeedback.redact(observed.result?.message)||'final occupancy unverified until executed result'));return;}
   if (!capable) throw Error('Occupied-spawn capability unavailable');
-  // Preserve the exact reviewed identity before IPC; a lost result must remain retryable/cancellable.
-  submission={...payload,phase:submission?.requestId===payload.requestId?submission.phase:'submitting'};
-  const result=await plannerLocalBridge.command('gm-occupied',{requestId:payload.requestId,intent:payload.intent,occupied:payload.occupied});
-  if (generation!==epoch || submission?.requestId!==payload.requestId) return;
-  submission.phase=result.record.phase;
-  $('occupiedFeedback').textContent=result.record.phase+' · '+payload.requestId+' · '+(result.record.result?.message||'final occupancy unverified until executed result');
+  submission={...payload,phase:retrying?submission.phase:'submitting'};
+  try{
+   const result=await plannerLocalBridge.command('gm-occupied',{requestId:payload.requestId,intent:payload.intent,occupied:payload.occupied});
+   if(generation!==epoch||submission?.requestId!==payload.requestId)return;
+   if(result?.record?.request?.requestId!==payload.requestId||result.record.request.kind!=='spawn'||!['pending','approved','executed','failed','rejected','expired','cancelled'].includes(result.record.phase))throw Error('Delivery acknowledgement is invalid. Check the original request result.');
+   if(!terminal.has(submission.phase))submission.phase=result.record.phase;
+   CommandRequestState.bind($('occupiedFeedback'),()=>CommandRequestState.text(submission.phase,'spawn')+' · '+payload.requestId+' · '+(CommandOperatorFeedback.redact(result.record.result?.message)||'final occupancy unverified until executed result'));CommandOperatorFeedback.result($('occupiedFeedback'),result.record);
+  }catch(error){if(generation===epoch&&submission?.requestId===payload.requestId){const definite=String(error.message).includes('[COMMAND_REQUEST_REJECTED]');submission.phase=definite&&!retrying?'rejected':'unknown';if(retrying&&definite)error.message='Original delivery is still uncertain. Check the original request result. '+payload.requestId+' · '+error.message;}throw error;}
  }
+
  $('occupiedTimeout').oninput=invalidate;
  $('occupiedVehicle').onchange=renderSeats;
  $('occupiedLoad').onclick=()=>safe(async()=>{
@@ -97,7 +99,8 @@
  });
  $('occupiedStatus').onclick=()=>safe(async()=>{
   const record=observe(await plannerLocalBridge.command('gm-status'));
-  $('occupiedFeedback').textContent=record?record.phase+' · '+(record.result?.message||'Awaiting host or seating result'):(submission?'Original request result is unresolved; retry keeps its identity.':capable?'Occupied-spawn capability advertised':'Occupied-spawn execution unavailable');
+  CommandRequestState.bind($('occupiedFeedback'),()=>record?CommandRequestState.text(record.phase,record.request.kind)+' · '+(CommandOperatorFeedback.redact(record.result?.message)||'Awaiting host or seating result'):(submission?'Original request result is unresolved; retry keeps its identity.':capable?'Occupied-spawn capability advertised':'Occupied-spawn execution unavailable'));
+  CommandOperatorFeedback.result($('occupiedFeedback'),record);
  });
  $('occupiedCancel').onclick=()=>safe(async()=>{
   if (!submission) return;
@@ -106,11 +109,13 @@
   $('occupiedFeedback').textContent='Cancellation requested; check final result before retrying.';
  });
  window.addEventListener('planner-preferences-changed',()=>{for(const {role}of rows.values())for(const option of role.options)option.textContent=t(option.value);for(const label of $('occupiedSeats').querySelectorAll('label[data-source]'))if(label.firstChild)label.firstChild.textContent=t(label.dataset.source);});
- window.addEventListener('planner-plan-changed',invalidate);
+ window.addEventListener('deployment-resource-index-changed',invalidate);window.addEventListener('planner-plan-changed',invalidate);
  window.addEventListener('local-bridge-state',event=>{
   if (!Object.hasOwn(event.detail||{},'token')) return;
   const next=event.detail.token||'';
   if (next!==pairing) {epoch++;pairing=next;intent=null;submission=null;capable=false;invalidate();refreshButtons();}
  });
  refreshButtons();
+
+ CommandReviewGuidance.create({host:box,reviewButton:$('occupiedReview'),sendButton:$('occupiedSend'),refreshButton:$('occupiedStatus'),cancelButton:$('occupiedCancel'),lifetime:null,state:()=>({review,busy,connection:pairing,pending:submission?.phase==='submitting',record:submission?{phase:submission.phase}:null,reason:busy?'Checking this action. Please wait.':!intent?'Use the current reviewed deployment, then assign the crew and passenger seats.':!pairing?'Connect a GM-enabled session, then refresh command targets.':!capable?'Occupied-spawn capability unavailable. Check compatibility and refresh.':null})});
 })();

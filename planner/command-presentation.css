@@ -26,3 +26,6 @@ body.command-shell.gm-workspace main{margin-left:var(--command-nav-width)}body.c
 #commandConnection{left:56px;max-width:calc(100% - 110px)}
 #commandDeploymentTools{margin:16px 0 6px;border:1px solid var(--line);border-radius:6px;padding:10px}#commandDeploymentTools>summary{font-size:12px;cursor:pointer;color:var(--muted)}#commandDeploymentTools button{margin:5px 0;width:100%;text-align:left}.command-shell .actions:empty{display:none}
 @media(max-width:850px){.command-shell header>.actions>*{flex:0 0 auto;width:auto}.command-shell header>.actions{display:flex;flex-wrap:wrap;justify-content:flex-start}.command-shell header>.actions>button{min-height:34px;padding:7px 10px}}
+
+/* Keep primary file actions reachable at laptop widths and desktop scaling. */
+@media(min-width:851px) and (max-width:1200px){.command-shell header{gap:10px}.command-shell header>.actions{max-width:calc(100% - 210px);flex-wrap:wrap;justify-content:flex-end}.command-shell header>.brand-group{width:86px;gap:0}.command-shell header>.brand-group>div{display:none}.command-shell #commandPlanHeading{flex:1;min-width:100px}}

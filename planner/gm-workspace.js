@@ -15,13 +15,13 @@
  function save(key,value){try{P.save({...P.get(),[key]:value});}catch(e){$('status').textContent=t('Workspace preference could not be saved')+': '+e.message;}}
  function toggleDrawer(which){const show=which==='assets'?assets.box.hidden:inspector.box.hidden;editor=false;try{const pref=P.get();P.save({...pref,gmAssetDrawer:which==='assets'?show:(innerWidth<950&&show?false:pref.gmAssetDrawer),gmInspector:which==='inspector'?show:(innerWidth<950&&show?false:pref.gmInspector)});}catch(e){$('status').textContent=t('Workspace preference could not be saved')+': '+e.message;}}
  function showEditor(tab){editor=true;body.classList.add('gm-workspace-editor');if(tab)document.querySelector('[data-tab="'+tab+'"]').click();layout();}
- function openDeployment(){showEditor('units');window.CompanionDeploymentReview.open();}
+ function openDeployment(){showEditor('units');if(EveronPlanner.selected().some(u=>u.kind==='unit'))window.CommandMissionPackages.prepareSelection();else window.CommandMissionPackages.open();}
  const assetsButton=button('gmWorkspaceAssets','Assets',()=>toggleDrawer('assets'));
  const inspectorButton=button('gmWorkspaceInspector','Inspector',()=>toggleDrawer('inspector'));
  const editorButton=button('gmWorkspaceEditor','Editor',()=>{editor=!editor;layout();});
  button('gmWorkspaceDeployment','Review deployment',openDeployment);
  button('gmWorkspaceAIOrders','Native AI orders',()=>{showEditor('units');window.CompanionAIOrders?.open();});
- const resultButton=button('gmWorkspaceResults','Request results',()=>{openDeployment();$('deploymentGMStatus').click();});
+ const resultButton=button('gmWorkspaceResults','Request results',()=>{showEditor('units');window.CompanionDeploymentReview.open();$('deploymentGMStatus').click();});
  button('gmWorkspaceOffline','Offline rehearsal',()=>showEditor('gm'));
  const pauseButton=button('gmWorkspacePause','Pause rehearsal',()=>{if(!$('gmPause').disabled)$('gmPause').click();});
  const advanceButton=button('gmWorkspaceAdvance','Advance rehearsal',()=>{if(!$('gmStep').disabled)$('gmStep').click();});

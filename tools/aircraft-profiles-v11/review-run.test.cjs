@@ -1,0 +1,6 @@
+'use strict';
+const {test}=require('node:test'),assert=require('node:assert/strict'),{reviewArtifacts}=require('./review-run.cjs');
+const input=()=>({result:{success:false},progress:[{phase:'flying',landed:false}],trace:null,nativeObservation:null,sourceHashes:{controller:'a'.repeat(64),profile:'b'.repeat(64)}});
+test('Interrupted run after reaching flying remains incomplete, never a failed aircraft or acceptance',()=>{const r=reviewArtifacts(input());assert.equal(r.outcome,'incomplete');assert.equal(r.acceptance,null);assert.equal(r.executable,false);assert.equal(r.recordedStopReason,null);});
+test('Changed current controller keeps historical evidence scoped to snapshot',()=>{const x=input();x.currentHashes={controller:'c'.repeat(64),profile:'b'.repeat(64)};assert.equal(reviewArtifacts(x).sourceMatchesCurrent,false);});
+test('Terminal or harness success alone cannot enable profile; wrong exact native identity rejected',()=>{const x=input();x.result.success=true;x.progress=[{phase:'complete: insertion',landed:true}];assert.equal(reviewArtifacts(x).outcome,'native-terminal-observed');assert.equal(reviewArtifacts(x).executable,false);x.nativeObservation={resourceName:'another helicopter'};assert.throws(()=>reviewArtifacts(x));});

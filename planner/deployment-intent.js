@@ -8,6 +8,7 @@ const TERRAIN_DISPLAY_OFFSET=50;
 function fields(v,names){if(!v||typeof v!=='object'||Array.isArray(v)||![Object.prototype,null].includes(Object.getPrototypeOf(v))||Reflect.ownKeys(v).length!==names.length||names.some(k=>{const d=Object.getOwnPropertyDescriptor(v,k);return !d||!('value' in d)||!d.enumerable;}))throw Error('Unsupported deployment fields');}
 async function digest(value){const crypto=typeof module==='object'&&module.exports?require('node:crypto').webcrypto:globalThis.crypto;const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(value)));return Array.from(new Uint8Array(bytes),x=>x.toString(16).padStart(2,'0')).join('');}
 function worldPosition(position){const p=C.point(position),worldX=p.lng-TERRAIN_DISPLAY_OFFSET,worldZ=p.lat-TERRAIN_DISPLAY_OFFSET;if(worldX<0||worldZ<0||worldX>13500||worldZ>13500)throw Error('Pilot requires supported Everon world coordinates');return {worldX,worldZ};}
+function plannerPosition(position){const {worldX,worldZ}=position||{};if(!Number.isFinite(worldX)||!Number.isFinite(worldZ)||worldX<0||worldZ<0||worldX>13500||worldZ>13500)throw Error('Unsupported world coordinate');return {lat:worldZ+TERRAIN_DISPLAY_OFFSET,lng:worldX+TERRAIN_DISPLAY_OFFSET};}
 function selection(plan,index,ids,heading){
  if(!Array.isArray(ids)||ids.length<1||ids.length>MAX_UNITS||new Set(ids).size!==ids.length)throw Error('Choose 1 to 16 distinct planned units');
  if(!Number.isFinite(heading)||heading<0||heading>=360)throw Error('Heading must be between 0 and 360 degrees');
@@ -35,5 +36,5 @@ function validate(raw){
  }
  if(new TextEncoder().encode(JSON.stringify(raw)).length>262144)throw Error('Deployment exceeds 256 KiB');return clone(raw);
 }
-return {review,validate,worldPosition,MAX_UNITS};
+return {review,validate,worldPosition,plannerPosition,missionDigest:mission=>digest(C.validate(clone(mission))),MAX_UNITS};
 });

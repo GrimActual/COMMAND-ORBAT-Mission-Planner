@@ -27,24 +27,25 @@ function createReceiver(onState=()=>{},port=8791){
  return {start,stop,status:()=>({...state}),port:()=>server?.address()?.port};
 }
 function install({app,ipcMain,getWindow,indexURL,clipboard}){
- const publish=state=>{const w=getWindow();if(w&&!w.isDestroyed())w.webContents.send('local-bridge-state',state);};
+ const origins=require('./gm-submission-provenance').createRegistry();let originPair='';
+ const publish=state=>{if(Object.hasOwn(state,'token')&&state.token!==originPair){originPair=state.token;origins.reset();}const w=getWindow();if(w&&!w.isDestroyed())w.webContents.send('local-bridge-state',state);};
  const local=createReceiver(publish);
  const remote=require('./remote-bridge').createRemote(publish);
  const free=require('./free-bridge').createFreeBridge(publish);
 
  let active=local;
- function stop(){local.stop();remote.stop();free.stop();active=local;return local.status();}
+ function stop(){origins.reset();local.stop();remote.stop();free.stop();active=local;return local.status();}
  ipcMain.handle('local-bridge-command',async(event,action,options)=>{
   const w=getWindow();if(!w||event.sender!==w.webContents||event.senderFrame!==event.sender.mainFrame||event.senderFrame.url!==indexURL)throw Error('Unexpected sender');
-  if(action==='gm-request'){return active.gm('request',require('./bridge-runtime/gm-commands').fromIntent(require('./deployment-intent').validate(options.intent),options.requestId));}
-  if(action==='gm-occupied'){const G=require('./bridge-runtime/gm-commands'),request=G.fromIntent(require('./deployment-intent').validate(options.intent),options.requestId);request.occupied=options.occupied;return active.gm('request',G.validate(request));}
+  if(action==='gm-request'){const request=require('./bridge-runtime/gm-commands').fromIntent(require('./deployment-intent').validate(options.intent),options.requestId);origins.remember(request);return active.gm('request',request);}
+  if(action==='gm-occupied'){const G=require('./bridge-runtime/gm-commands'),request=G.fromIntent(require('./deployment-intent').validate(options.intent),options.requestId);request.occupied=options.occupied;const checked=G.validate(request);origins.remember(checked);return active.gm('request',checked);}
   if(action==='gm-refuel')return active.gm('request',require('./bridge-runtime/refuel-contract').validate(options?.request));
   if(action==='gm-helicopter')return active.gm('request',require('./bridge-runtime/helicopter-insertion-contract').validate(options?.request));
   if(action==='gm-vehicle'){return active.gm('request',require('./bridge-runtime/vehicle-control-contract').validate(options?.request));}
   if(action==='gm-scenario'){return active.gm('request',require('./bridge-runtime/scenario-contract').validate(options?.request));}
   if(action==='gm-order'){const request=require('./bridge-runtime/ai-orders-contract').validate(options?.request);return active.gm('request',request);}
   if(action==='gm-cancel')return active.gm('cancel',options.requestId);
-  if(action==='gm-status')return active.gm('status');
+  if(action==='gm-status')return origins.enrich(await active.gm('status'));
   if(action==='gm-remove'){return active.gm('request',{version:1,requestId:options.requestId,kind:'remove',targetRequestId:options.targetRequestId});}
   if(action==='profile-start'){const profile=require('./server-profiles').validate(options);stop();active=profile.method==='free'?free:remote;const config={intervalMs:profile.intervalMs,timeoutMs:profile.timeoutMs,autoReconnect:profile.autoReconnect,dedicated:profile.deployment==='dedicated',gmCommands:profile.gmCommands===true,serverManaged:profile.method==='relay',...(profile.entityIds?{entityIds:profile.entityIds}: {})};return profile.method==='free'?free.start(config):remote.start(profile.endpoint,config);}
   if(action==='dedicated-attach'){if(!/^[a-f0-9]{64}$/.test(options?.readerCredential||''))throw Error('Enter the private 64-character dashboard key');stop();active=remote;return remote.start(options?.endpoint,{readerCredential:options?.readerCredential,serverManaged:true});}
@@ -58,7 +59,7 @@ function install({app,ipcMain,getWindow,indexURL,clipboard}){
   if(action==='status')return active.status();
   throw Error('Unknown command');
  });
- app.on('before-quit',stop);return {stop,status:()=>active.status()};
+ app.on('before-quit',event=>{if(!event?.defaultPrevented)stop();});return {stop,status:()=>active.status()};
 }
 module.exports={createReceiver,install};
 

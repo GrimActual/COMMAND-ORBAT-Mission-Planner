@@ -24,6 +24,8 @@ function createFreeBridge(onState=()=>{},deps={}) {
    const exe=path.join(__dirname,'bridge-runtime/cloudflared.exe');
    if(!deps.spawn&&!fs.existsSync(exe))throw Error('Tunnel helper is missing. Extract the whole application ZIP.');
    const srv=relayFactory();relay=srv;
+   // Handle failures for the entire owned relay lifetime, not only listen().
+   srv.on('error',()=>{if(ticket===generation)stop('Local relay failed. Start the connection again.');});
    await new Promise((resolve,reject)=>{srv.once('error',reject);srv.listen(0,'127.0.0.1',()=>{if(signal.aborted){srv.close();reject(Error('Cancelled'));}else resolve();});});check();
    child=spawnHelper(exe,['tunnel','--url','http://127.0.0.1:'+srv.address().port,'--no-autoupdate'],{windowsHide:true,stdio:['ignore','pipe','pipe']});
    const helper=child;

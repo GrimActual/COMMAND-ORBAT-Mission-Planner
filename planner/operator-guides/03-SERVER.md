@@ -1,6 +1,6 @@
 # Server, Workshop project and scenario files
 
-The bundle includes the matching Bridge-0.13.1/addon.gproj project. Use the existing project identity and dependency; do not enable two addon copies with the same identity. Validate and publish through Workbench when updating Workshop, and configure the server to require the actual published item/version. This bundle does not establish the current Workshop publication status or invent a Workshop item ID. Restart the hosted session after a mod update and check the actual published Workshop version before pairing. A separate HTTPS relay must use the matching relay source, not merely a new desktop UI.
+The bundle includes the matching Bridge-0.15.0/addon.gproj project. Use the existing project identity and dependency; do not enable two addon copies with the same identity. Validate and publish through Workbench when updating Workshop, and configure the server to require the actual published item/version. This bundle does not establish the current Workshop publication status or invent a Workshop item ID. Restart the hosted session after a mod update and check the actual published Workshop version before pairing. A separate HTTPS relay must use the matching relay source, not merely a new desktop UI.
 
 ## Tracking configuration is not execution approval
 
@@ -18,6 +18,6 @@ For current supported entities use Game controls → Server → Server scenario 
 
 Current capture supports owned on-foot infantry groups and supported individual infantry and empty/unreserved supported vehicles; recruited groups, human actors, active transport/convoy/treatment and arbitrary engine state are excluded. For restore, review the saved ID, inspect required addons/prefabs and the summary, then send a separate restore request and approve before spawning. Restart does not automatically restore files. Unsupported/malformed files fail; do not bypass validation or manually assume addon availability.
 
-Use the matching bridge 0.13.1 for individual-character snapshots; earlier unsupported bridges may not restore their character-root control groups. Feature references distinguish fresh native tests from historical evidence and do not certify connected-human or combat acceptance. Local file polling remains unimplemented and does not silently replace HTTP.
+Use the matching bridge 0.15.0 for individual-character snapshots; earlier unsupported bridges may not restore their character-root control groups. Feature references distinguish fresh native tests from historical evidence and do not certify connected-human or combat acceptance. Local file polling remains unimplemented and does not silently replace HTTP.
 
 [Start](00-START-HERE.md) · [Compatibility](04-COMPATIBILITY.md)

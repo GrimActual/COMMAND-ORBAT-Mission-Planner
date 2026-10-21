@@ -1,0 +1,366 @@
+{
+  "schema": "command-mission-package",
+  "version": 1,
+  "plan": {
+    "schema": "everon-orbat-plan",
+    "schemaVersion": 4,
+    "app": "COMMAND",
+    "operation": {
+      "name": "COMMAND MI-8MT TRANSPORT CHECK",
+      "taskForce": "COMMAND TEST TEAM",
+      "version": "1.1.0-rc.3 / bridge 0.15.0",
+      "briefing": "Import this one-file mission, inspect the departure on the map, review deployment and approve it in Reforger. Confirm the AI pilot and four passengers are seated. Open helicopter flight controls, refresh targets, select TEAM and the aircraft, choose speed and waypoints, and mark a clear, flat LZ. Review and approve flight separately. Importing runs no orders. There is no artificial flight-distance limit. Optional waypoint heights are minimum metres above ground; automatic clearance may fly higher. Preflight checks do not guarantee tree clearance or dynamic obstacle avoidance. Keep observers outside during assistance. Inspect the full route and LZ in the current session; long routes, human takeover and multiplayer need operator acceptance."
+    },
+    "map": {
+      "name": "Everon",
+      "game": "Arma Reforger",
+      "coordinateSystem": "mapper-local",
+      "gridOrder": "easting-northing"
+    },
+    "phases": [],
+    "orderOfBattle": [
+      {
+        "id": "MI8",
+        "name": "MI8 - Mi-8MT transport",
+        "symbol": "I",
+        "side": "red",
+        "type": "Infantry",
+        "unitType": "rotary",
+        "symbolMode": "nato",
+        "icon": "auto",
+        "color": null,
+        "phaseId": null,
+        "parentId": null,
+        "asset": "prefab-58D0FB3206B6F859-DF5CCB7C0FF049F4",
+        "assetName": "Mi-8MT — USSR transport",
+        "assetCatalogItem": {
+          "targetObservation": null,
+          "id": "prefab-58D0FB3206B6F859-DF5CCB7C0FF049F4",
+          "name": "Mi-8MT — USSR transport",
+          "category": "Vanilla / Vehicles",
+          "assetKind": "helicopter",
+          "workshopProvider": "reforger",
+          "workshopId": "",
+          "searchQuery": "Arma Reforger",
+          "resourceReference": {
+            "id": "vanilla_DF5CCB7C0FF049F4",
+            "addonId": "58D0FB3206B6F859",
+            "path": "Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_unarmed_transport.et",
+            "guid": "DF5CCB7C0FF049F4",
+            "kind": "prefab",
+            "observation": "metadata-only",
+            "provenance": {
+              "method": "workbench-index",
+              "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+              "license": null
+            },
+            "dependencies": []
+          },
+          "nativeAvailability": "unverified"
+        },
+        "strength": "One vehicle root; experimental force-assisted flight only after separate approval.",
+        "position": {
+          "lng": 4821,
+          "lat": 11687
+        },
+        "headingDegrees": 0
+      },
+      {
+        "id": "PILOT",
+        "name": "PILOT - AI flight crew",
+        "symbol": "I",
+        "side": "red",
+        "type": "Infantry",
+        "unitType": "infantry",
+        "symbolMode": "nato",
+        "icon": "auto",
+        "color": null,
+        "phaseId": null,
+        "parentId": null,
+        "asset": "prefab-58D0FB3206B6F859-A62FA97C4EC64F14",
+        "assetName": "Character US HeliPilot — US_Army",
+        "assetCatalogItem": {
+          "targetObservation": null,
+          "id": "prefab-58D0FB3206B6F859-A62FA97C4EC64F14",
+          "name": "Character US HeliPilot — US_Army",
+          "category": "Vanilla / Characters",
+          "assetKind": "infantry",
+          "workshopProvider": "reforger",
+          "workshopId": "",
+          "searchQuery": "Arma Reforger",
+          "resourceReference": {
+            "id": "vanilla_A62FA97C4EC64F14",
+            "addonId": "58D0FB3206B6F859",
+            "path": "Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_HeliPilot.et",
+            "guid": "A62FA97C4EC64F14",
+            "kind": "prefab",
+            "observation": "metadata-only",
+            "provenance": {
+              "method": "workbench-index",
+              "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+              "license": null
+            },
+            "dependencies": []
+          },
+          "nativeAvailability": "unverified"
+        },
+        "strength": "Individual living AI pilot; retain aboard after landing.",
+        "position": {
+          "lng": 4831,
+          "lat": 11687
+        },
+        "headingDegrees": 0
+      },
+      {
+        "id": "TEAM",
+        "name": "TEAM - Four cargo passengers",
+        "symbol": "I",
+        "side": "red",
+        "type": "Infantry",
+        "unitType": "infantry",
+        "symbolMode": "nato",
+        "icon": "auto",
+        "color": null,
+        "phaseId": null,
+        "parentId": null,
+        "asset": "prefab-58D0FB3206B6F859-657590C1EC9E27D3",
+        "assetName": "USSR light fireteam — OPFOR",
+        "assetCatalogItem": {
+          "targetObservation": null,
+          "id": "prefab-58D0FB3206B6F859-657590C1EC9E27D3",
+          "name": "USSR light fireteam — OPFOR",
+          "category": "Vanilla / Groups",
+          "assetKind": "infantry",
+          "workshopProvider": "reforger",
+          "workshopId": "",
+          "searchQuery": "Arma Reforger",
+          "resourceReference": {
+            "id": "vanilla_657590C1EC9E27D3",
+            "addonId": "58D0FB3206B6F859",
+            "path": "Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et",
+            "guid": "657590C1EC9E27D3",
+            "kind": "prefab",
+            "observation": "metadata-only",
+            "provenance": {
+              "method": "workbench-index",
+              "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+              "license": null
+            },
+            "dependencies": []
+          },
+          "nativeAvailability": "unverified"
+        },
+        "strength": "One actual four-person fireteam root; assign whole group automatic cargo seats.",
+        "position": {
+          "lng": 4831,
+          "lat": 11692
+        },
+        "headingDegrees": 0
+      }
+    ],
+    "routes": [],
+    "areas": [
+      {
+        "id": "MI8-LZ",
+        "name": "LZ - world X4771 Z11737",
+        "phaseId": null,
+        "kind": "circle",
+        "style": {
+          "color": "#EBC66F",
+          "width": 2,
+          "pattern": "dashed",
+          "opacity": 0.08
+        },
+        "center": {
+          "lng": 4821,
+          "lat": 11787
+        },
+        "radius": 10
+      }
+    ],
+    "view": {
+      "gridDigits": 8,
+      "hiddenPhases": [],
+      "layers": {
+        "grid": true,
+        "units": true,
+        "routes": true,
+        "areas": true,
+        "labels": true
+      }
+    }
+  },
+  "catalog": {
+    "assets": [
+      {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-A62FA97C4EC64F14",
+        "name": "Character US HeliPilot — US_Army",
+        "category": "Vanilla / Characters",
+        "assetKind": "infantry",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_A62FA97C4EC64F14",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_HeliPilot.et",
+          "guid": "A62FA97C4EC64F14",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-657590C1EC9E27D3",
+        "name": "USSR light fireteam — OPFOR",
+        "category": "Vanilla / Groups",
+        "assetKind": "infantry",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_657590C1EC9E27D3",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et",
+          "guid": "657590C1EC9E27D3",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      },
+      {
+        "targetObservation": null,
+        "id": "prefab-58D0FB3206B6F859-DF5CCB7C0FF049F4",
+        "name": "Mi-8MT — USSR transport",
+        "category": "Vanilla / Vehicles",
+        "assetKind": "helicopter",
+        "workshopProvider": "reforger",
+        "workshopId": "",
+        "searchQuery": "Arma Reforger",
+        "resourceReference": {
+          "id": "vanilla_DF5CCB7C0FF049F4",
+          "addonId": "58D0FB3206B6F859",
+          "path": "Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_unarmed_transport.et",
+          "guid": "DF5CCB7C0FF049F4",
+          "kind": "prefab",
+          "observation": "metadata-only",
+          "provenance": {
+            "method": "workbench-index",
+            "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+            "license": null
+          },
+          "dependencies": []
+        },
+        "nativeAvailability": "unverified"
+      }
+    ]
+  },
+  "resourceIndex": {
+    "schema": "companion-resource-index",
+    "version": 1,
+    "addons": [
+      {
+        "id": "58D0FB3206B6F859",
+        "name": "Arma Reforger",
+        "version": null,
+        "dependencies": [
+          "5614BBCCBB55ED1C"
+        ]
+      },
+      {
+        "id": "5614BBCCBB55ED1C",
+        "name": "Enfusion core data",
+        "version": null,
+        "dependencies": []
+      }
+    ],
+    "resources": [
+      {
+        "id": "vanilla_A62FA97C4EC64F14",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_HeliPilot.et",
+        "guid": "A62FA97C4EC64F14",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      {
+        "id": "vanilla_657590C1EC9E27D3",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et",
+        "guid": "657590C1EC9E27D3",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      },
+      {
+        "id": "vanilla_DF5CCB7C0FF049F4",
+        "addonId": "58D0FB3206B6F859",
+        "path": "Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_unarmed_transport.et",
+        "guid": "DF5CCB7C0FF049F4",
+        "kind": "prefab",
+        "observation": "metadata-only",
+        "provenance": {
+          "method": "workbench-index",
+          "source": "Workbench ResourceDatabase.SearchResources; ArmaReforger base-game metadata, 2026-10-14. Prefab loading, internal dependency extraction and spawning are not asserted.",
+          "license": null
+        },
+        "dependencies": []
+      }
+    ]
+  },
+  "deployments": [
+    {
+      "id": "mi8mt-occupied",
+      "name": "Mi-8MT + USSR pilot + four passengers",
+      "unitIds": [
+        "MI8",
+        "PILOT",
+        "TEAM"
+      ],
+      "headingDegrees": 0,
+      "occupied": {
+        "vehicleUnitId": "MI8",
+        "timeoutSeconds": 30,
+        "assignments": [
+          {
+            "unitId": "PILOT",
+            "role": "pilot",
+            "managerId": -1,
+            "slotId": -1
+          },
+          {
+            "unitId": "TEAM",
+            "role": "cargo",
+            "managerId": -1,
+            "slotId": -1
+          }
+        ]
+      }
+    }
+  ]
+}

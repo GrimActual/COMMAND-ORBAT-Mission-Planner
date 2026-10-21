@@ -1,14 +1,16 @@
 {
   "product": "COMMAND ORBAT Bridge",
-  "version": "0.13.1",
-  "desktop": "1.0.1",
-  "status": "experimental live controls; stable offline planner",
+  "version": "0.15.0",
+  "desktop": "1.1.0-rc.3",
+  "status": "experimental aircraft candidate; live human acceptance pending",
   "projectGuid": "6A969EB0C5012BB9",
-  "workshopPublication": "Not published by this test build. Publish existing Workshop item as 0.13.1; do not enable duplicate copies.",
+  "workshopPublication": "Prepared for the existing Workshop item; publication remains a user action.",
   "stablePublicationAllowed": false,
   "experimentalFeatures": [
     "occupied-character-and-cargo-group-deployment",
     "reviewed-refuel-once",
-    "force-assisted-vanilla-UH1H-insertion"
+    "force-assisted-vanilla-UH1H-insertion",
+    "shared-flight-routes-without-artificial-distance-limits",
+    "force-assisted-vanilla-Mi8MT-transport"
   ]
 }

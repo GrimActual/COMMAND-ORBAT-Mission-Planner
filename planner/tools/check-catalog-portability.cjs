@@ -1,4 +1,4 @@
-const fs=require('node:fs'),assert=require('node:assert/strict'),{_electron}=require('C:/Users/carls/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const fs=require('node:fs'),assert=require('node:assert/strict'),{_electron}=require(process.env.COMMAND_PLAYWRIGHT_MODULE||'playwright');
 const base='A:/Everon-ORBAT-Development',dir=fs.mkdtempSync(base+'/work/catalog-portability-');
 const asset={id:'prefab-fixture',name:'Equipe <img src=x>',assetKind:'other',resourceReference:{addonId:'6A969EB0C5012BB9',guid:'0313BCE464A22D27',path:'Prefabs/Test.et',provenance:{method:'manual',source:'Synthetic test fixture'}},targetObservation:{warning:'TARGET_MISSING',targetBytes:null}};
 const input=dir+'/input.json',out=dir+'/saved.json';fs.writeFileSync(input,JSON.stringify({assets:[asset,{id:'unused',name:'Unused truck',assetKind:'truck'}]}));fs.writeFileSync(out,'old');

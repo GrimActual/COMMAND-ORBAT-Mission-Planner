@@ -2,8 +2,8 @@
 
 | Component | Version / scope |
 |---|---|
-| COMMAND desktop | 1.0.1 — stable planning |
-| COMMAND bridge | 0.13.1 — experimental live controls; unchanged production code |
+| COMMAND desktop | 1.1.0 — stable offline planner; experimental live controls |
+| COMMAND bridge | 0.15.0 — experimental live controls; unchanged by QoL work |
 | Workshop identity | 6A969EB0C5012BB9 |
 | Relay | Included matching HTTPS/HTTP protocol 3; no native WebSocket claim |
 | Tracking cap | 60 selected identities, separate from spawn and world population limits |

@@ -1,17 +1,29 @@
-# COMMAND helicopter route test
+# COMMAND — commencer ici
 
-Desktop 1.0.1 (20 October flight refresh) / bridge 0.13.1. Experimental; live controls remain experimental. Start with [the flight guide](10-HELICOPTER.md).
+COMMAND 1.1.0, planificateur hors ligne stable ; commandes du jeu expérimentales. Bridge inchangé : 0.15.0. Consultez Paramètres → Compatibilité et limites et le manifeste final pour la version exacte. Utilisez le paquet final identifié par son manifeste et ses sommes de contrôle. Planification hors ligne au cœur du produit ; commandes du jeu et assistance hélicoptère expérimentales.
 
-# COMMAND v1.0.1 — Planification et contrôle de mission
+1. Ouvrez Maître du jeu. La recherche réunit ressources, unités prévues, déployées et suivies. Les badges distinguent les données. Filtres et recherche restent près de la sélection.
+2. Importer une mission charge un `.command-mission.json` complet : plan, références et déploiement. Rien n’apparaît dans le jeu. Sauvegardez avant de remplacer le plan. Un Annuler restaure l’import. L’échange historique reste dans Fichiers du plan.
+3. Sélectionnez une ressource à placer, une unité prévue à modifier ou une cible du jeu pour ses actions. B/N prépare pilote/passagers sans création dans le jeu. Les noms peuvent être automatiques.
+4. Mission et déploiement sélectionne initialement Toute la mission, avec étapes et factions déclarées. Vérifiez la file et ses groupes/véhicules puis envoyez. Les lots sont successifs et gardent l’approbation de l’hôte. Un groupe n’est pas un soldat. Les étapes occupées gardent leurs sièges.
+5. Suivez chaque lot : en file, approbation attendue, en cours, résultat. Ordre installé ne confirme pas l’arrivée. Demande terminée ne confirme pas la mission entière. Le vol indique séparément sa progression mesurée.
+6. Envoi incertain : consultez le résultat initial ; réessayer conserve son identifiant. Ne créez pas de remplacement. Arrêter bloque les lots suivants sans annuler la demande actuelle. Modification ou expiration explique la nouvelle vérification.
+7. Le retrait vérifié liste uniquement les lots correspondants créés par COMMAND dans ce jumelage. Entités recrutées ou étrangères exclues ; plan conservé. Nouvelle mission vide le plan sans perdre connexion, ressources ou suivi. Annuler restaure le plan. Aucun de ces contrôles n’est un arrêt d’urgence d’hélicoptère.
 
-Le planificateur hors ligne est stable. Toutes les commandes du jeu restent **expérimentales**. Les anciennes versions 2.x sont historiques ; les formats des plans et l’emplacement des paramètres sont conservés.
+## Connexion et récupération
 
-Exportez une sauvegarde, fermez l’ancienne application et extrayez le ZIP complet. Lancez COMMAND-Windows/COMMAND Planner.exe. Recherchez les ressources et unités dans l’espace Maître du jeu. **Nouvelle mission** dans la barre principale efface la planification sans déconnecter ; Annuler restaure le plan. Les entités et requêtes actives du jeu sont conservées.
+La connexion rapide lance le relais et tunnel de l’application. Adresse/code peuvent apparaître pendant le contrôle d’accès public. Relais prêt ne signifie pas positions récentes. Le code reste masqué jusqu’à révélation. Le relais dédié utilise une session serveur autorisée. Déconnecter le tableau de bord conserve cette session ; Terminer la session la révoque après confirmation. Aucun démarrage automatique de connexion ou de file. La fermeture avertit des demandes inachevées ; sauvegardez d’abord. Ne partagez pas clés privées ou codes.
 
-Mission et déploiement → Importer une mission charge un fichier .command-mission.json avec plan, références et étapes. Vérifiez l’importation puis le déploiement séparément. L’importation ne crée aucune entité dans le jeu.
+## Infanterie existante et vol
 
-Bridge compatible : **0.13.1**, projet Workshop **6A969EB0C5012BB9**. Approbation et validation restent obligatoires. Suivi, déploiement, ordres IA, approbation automatique, sauvegardes serveur et vol Huey sont expérimentaux. L’enregistrement général des véhicules existants reste inachevé. Les vérifications multijoueurs à deux clients et de reprise par un pilote humain restent à faire. Le délai d’embarquement historique reste inexpliqué.
+Dans Reforger, activez le suivi de faction et sélectionnez un membre IA. Actualisez, vérifiez le recrutement et approuvez dans le jeu. Joueurs, groupes embarqués et ordres externes restent protégés. Libérer ne supprime pas les soldats. Suivi seul ne donne pas le contrôle. L’enregistrement général des véhicules/appareils existants reste inachevé.
 
-Vol Huey : un UH-1H, un pilote IA, quatre passagers, trajet dégagé et plat de 20 à 100 m. Aucun évitement des arbres ou bâtiments ni garantie de dégagement. Décollage lent ; déplacement arrière possible. Vérifiez tout le corridor et la zone d’atterrissage. Ne montez pas pendant le vol assisté.
+Le vol ne concerne que les profils exacts activés du catalogue. Addons requis séparément. Choisissez appareil et passagers, ou pilote seul si pris en charge. Vérifiez déploiement et vol séparément ; le vol exige une approbation manuelle. Choisissez vitesse, points, zone finale et mode de patrouille pris en charge. Aucune limite artificielle de distance ou d’espacement ; limites du monde et contrôles natifs conservés. Hauteurs facultatives : minimum au-dessus du sol ; le plus élevé s’applique à la croisière entière. Le contrôle préalable peut monter la croisière ou refuser un obstacle ; aucune garantie de dégagement, évitement réactif ou déplacement de zone d’atterrissage. Inspectez tout le trajet. Prise de contrôle humaine et multijoueur restent à valider. Le délai historique d’embarquement à pied reste inexpliqué.
 
-Aucun modèle de jeu, image satellite ou jeu de données d’altitude fourni. Utilisez vos propres données autorisées pour l’aperçu 3D. Consultez les guides FR et les limites de compatibilité.
+## Guides
+
+Voir 02-ASSETS, 03-SERVER, 04-COMPATIBILITY, 07-HTTPS-HOSTING-FR, 10-HELICOPTER-FR et 11-DEPLOYMENT-OPERATIONS-FR. Sarge ouvre les commandes utiles. L’aperçu 3D en lecture seule exige relief et images autorisés correspondant au monde ; aucun modèle ou jeu d’images fourni. Application native Workbench, persistance du relais, WebSockets et rôles multi-admin restent prévus ou désactivés. Les essais natifs courts ne prouvent pas l’acceptation multijoueur humaine.
+
+## Enregistrement et récupération des demandes
+
+Un échec d’enregistrement conserve les modifications en mémoire ; exportez une sauvegarde puis réessayez. Le remplacement de mission annule les erreurs synchrones, sans garantie après une coupure de courant. La récupération explicite efface le déploiement d’un autre plan ; Annuler restaure l’espace précédent. Si la livraison est incertaine, un nouvel essai rejeté ne prouve pas l’échec initial. Consultez le résultat avec le même identifiant. Les placements ou sièges modifiés nécessitent un nettoyage vérifié ou des ordres pris en charge ; les entités déployées ne sont pas déplacées silencieusement.

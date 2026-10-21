@@ -1,5 +1,9 @@
-# COMMAND helicopter route test
+COMMAND — Mission Planning & Control
 
-Desktop 1.0.1 (20 October flight refresh) / bridge 0.13.1. Experimental test build.
+COMMAND 1.1.0 / bridge 0.15.0.
+Start: operator-guides/00-START-HERE.md
+Français: operator-guides/00-START-HERE-FR.md
+Deutsch: operator-guides/00-START-HERE-DE.md
 
-Read operator-guides/10-HELICOPTER.md. Use one reviewed request for speed, intermediate map waypoints and the final LZ. Live controls remain experimental. Back up plans; use the separate test installation.
+Stable offline planning. Live-game controls remain experimental.
+Whole-mission import, reviewed serial deployment, contextual controls and explicit recovery.

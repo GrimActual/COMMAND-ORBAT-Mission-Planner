@@ -870,3 +870,12 @@ Local address/code delivery follows registered Cloudflare transport and local pa
 ## Confirmed next session — v1.1
 
 Prioritize Mi-8MT/USSR helicopter profile: active occupied resting-state inspection, mass/COM and seating verification, bounded controller calibration, actual takeoff/route/landing/cancellation and retained crew. Current aircraft reports are read-only/metadata evidence, not flight acceptance. Huey remains the only enabled flight adapter in v1.0.
+
+
+## QoL consolidation — 1.1.0-rc.5 candidate
+
+Whole-mission serial deployment, scoped selection and cleanup, exact submitted-target hints, reliable same-ID request recovery, clear lifecycle/approval guidance, editable flight drafts, connection lifecycle clarity, recovery safeguards and synchronized EN/FR/DE operator help are the current desktop consolidation. Native bridge stays 0.15.0. This work does not claim new physical flight, human takeover, multiplayer or combat acceptance. Preserve the remaining roadmap below/above; existing vehicle registration, autonomous combat flight, Workbench apply, WebSockets, relay persistence and multi-admin authority remain separate unfinished capabilities. The candidate must pass final package checks before freezing; no automatic publication.
+
+## COMMAND 1.1 stability consolidation
+
+Desktop fault handling now covers import rollback, storage/recovery failures, stale async results, same-ID delivery uncertainty, interrupted queues, owned tunnel cleanup and close races. Bounded desktop soak and performance/burst checks passed. Final package acceptance and publication remain gated separately. Native bridge 0.15.0 is unchanged; live controls retain their experimental scope and outstanding acceptance. Full roadmap above remains in force.

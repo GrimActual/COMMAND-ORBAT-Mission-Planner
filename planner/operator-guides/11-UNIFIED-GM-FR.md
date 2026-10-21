@@ -1,15 +1,25 @@
-# COMMAND — espace Maître du jeu
+# COMMAND — commencer ici
 
-Bureau 1.0.1 ; pont0.13.1 inchangé. Version pour vérification de l’interface, pas une publication stable acceptée.
+COMMAND 1.1.0, planificateur hors ligne stable ; commandes du jeu expérimentales. Bridge inchangé : 0.15.0. Consultez Paramètres → Compatibilité et limites et le manifeste final pour la version exacte. Utilisez le paquet final identifié par son manifeste et ses sommes de contrôle. Planification hors ligne au cœur du produit ; commandes du jeu et assistance hélicoptère expérimentales.
 
-Recherchez ressources, unités prévues, déployées et suivies dans le même espace. Filtrez par état, type ou faction. Sélectionnez une ressource pour la placer, une unité prévue pour la modifier ou vérifier son déploiement, une IA du jeu pour demander son enregistrement puis ses ordres. Les approbations natives restent obligatoires. Autres outils conserve les opérations secondaires ; une seule action s’ouvre à la fois.
+1. Ouvrez Maître du jeu. La recherche réunit ressources, unités prévues, déployées et suivies. Les badges distinguent les données. Filtres et recherche restent près de la sélection.
+2. Importer une mission charge un `.command-mission.json` complet : plan, références et déploiement. Rien n’apparaît dans le jeu. Sauvegardez avant de remplacer le plan. Un Annuler restaure l’import. L’échange historique reste dans Fichiers du plan.
+3. Sélectionnez une ressource à placer, une unité prévue à modifier ou une cible du jeu pour ses actions. B/N prépare pilote/passagers sans création dans le jeu. Les noms peuvent être automatiques.
+4. Mission et déploiement sélectionne initialement Toute la mission, avec étapes et factions déclarées. Vérifiez la file et ses groupes/véhicules puis envoyez. Les lots sont successifs et gardent l’approbation de l’hôte. Un groupe n’est pas un soldat. Les étapes occupées gardent leurs sièges.
+5. Suivez chaque lot : en file, approbation attendue, en cours, résultat. Ordre installé ne confirme pas l’arrivée. Demande terminée ne confirme pas la mission entière. Le vol indique séparément sa progression mesurée.
+6. Envoi incertain : consultez le résultat initial ; réessayer conserve son identifiant. Ne créez pas de remplacement. Arrêter bloque les lots suivants sans annuler la demande actuelle. Modification ou expiration explique la nouvelle vérification.
+7. Le retrait vérifié liste uniquement les lots correspondants créés par COMMAND dans ce jumelage. Entités recrutées ou étrangères exclues ; plan conservé. Nouvelle mission vide le plan sans perdre connexion, ressources ou suivi. Annuler restaure le plan. Aucun de ces contrôles n’est un arrêt d’urgence d’hélicoptère.
 
-Mission et déploiement permet d’importer un seul fichier .command-mission.json avec le plan, les références, l’index et les sièges. Le test Huey est inclus. Vérifiez l’import, importez, vérifiez le déploiement puis envoyez au jeu. Les extensions doivent déjà être installées. Les vols restent des ordres séparés.
+## Connexion et récupération
 
-Sélectionnez un véhicule prévu : B prépare le pilote, N les passagers. Choisissez le prefab et cliquez sur Placer sur la carte. Rien ne se crée dans le jeu avant l’envoi et l’approbation. Annuler restaure ensemble unité et sièges. Les raccourcis sont modifiables dans Paramètres ; saisir du texte ne les déclenche pas.
+La connexion rapide lance le relais et tunnel de l’application. Adresse/code peuvent apparaître pendant le contrôle d’accès public. Relais prêt ne signifie pas positions récentes. Le code reste masqué jusqu’à révélation. Le relais dédié utilise une session serveur autorisée. Déconnecter le tableau de bord conserve cette session ; Terminer la session la révoque après confirmation. Aucun démarrage automatique de connexion ou de file. La fermeture avertit des demandes inachevées ; sauvegardez d’abord. Ne partagez pas clés privées ou codes.
 
-Le pont0.13.1 permet l’enregistrement vérifié d’une IA d’infanterie existante, pas l’enregistrement universel des véhicules existants. Les joueurs et les ordres étrangers restent protégés. Vérifiez physiquement déplacement, sièges et résultats. Le délai historique d’embarquement et les essais multijoueurs restent ouverts.
+## Infanterie existante et vol
 
-Conservez tout le dossier Windows et l’installation RC2. Sauvegardez vos plans avant de changer de version. Aucun changement du pont n’est requis par cette présentation. [Guide détaillé](11-UNIFIED-GM.md).
+Dans Reforger, activez le suivi de faction et sélectionnez un membre IA. Actualisez, vérifiez le recrutement et approuvez dans le jeu. Joueurs, groupes embarqués et ordres externes restent protégés. Libérer ne supprime pas les soldats. Suivi seul ne donne pas le contrôle. L’enregistrement général des véhicules/appareils existants reste inachevé.
 
-Correctif de démarrage : adresse et code disponibles après enregistrement du tunnel et association locale. L’accès public est vérifié séparément en arrière-plan ; les approbations restent inchangées. L’affichage n’attend plus toutes les ressources de la page.
+Le vol ne concerne que les profils exacts activés du catalogue. Addons requis séparément. Choisissez appareil et passagers, ou pilote seul si pris en charge. Vérifiez déploiement et vol séparément ; le vol exige une approbation manuelle. Choisissez vitesse, points, zone finale et mode de patrouille pris en charge. Aucune limite artificielle de distance ou d’espacement ; limites du monde et contrôles natifs conservés. Hauteurs facultatives : minimum au-dessus du sol ; le plus élevé s’applique à la croisière entière. Le contrôle préalable peut monter la croisière ou refuser un obstacle ; aucune garantie de dégagement, évitement réactif ou déplacement de zone d’atterrissage. Inspectez tout le trajet. Prise de contrôle humaine et multijoueur restent à valider. Le délai historique d’embarquement à pied reste inexpliqué.
+
+## Guides
+
+Voir 02-ASSETS, 03-SERVER, 04-COMPATIBILITY, 07-HTTPS-HOSTING-FR, 10-HELICOPTER-FR et 11-DEPLOYMENT-OPERATIONS-FR. Sarge ouvre les commandes utiles. L’aperçu 3D en lecture seule exige relief et images autorisés correspondant au monde ; aucun modèle ou jeu d’images fourni. Application native Workbench, persistance du relais, WebSockets et rôles multi-admin restent prévus ou désactivés. Les essais natifs courts ne prouvent pas l’acceptation multijoueur humaine.

@@ -1,8 +1,8 @@
 {
   "schema": "command-release-scope-v1",
-  "desktopVersion": "1.0.1",
-  "matchingBridgeVersion": "0.13.1",
-  "channel": "stable-planner",
+  "desktopVersion": "1.1.0",
+  "matchingBridgeVersion": "0.15.0",
+  "channel": "stable-planner-experimental-live",
   "stablePublicationAllowed": true,
   "core": [
     "offline-planning",
@@ -29,7 +29,9 @@
     "reviewed-ground-reinforcement",
     "stock-refuel-once",
     "force-assisted-vanilla-UH1H-insertion",
-    "reviewed-huey-speed-waypoints-and-session-scoped-patrol"
+    "reviewed-huey-speed-waypoints-and-session-scoped-patrol",
+    "force-assisted-vanilla-Mi8MT-transport",
+    "shared-flight-routes-without-artificial-distance-limits"
   ],
   "disabledOrPlanned": [
     "native-workbench-import-and-apply",
@@ -55,6 +57,6 @@
   ],
   "stableScope": "Offline mission planning and reviewed planning-data workflows only",
   "liveIntegrationStatus": "experimental",
-  "publicReleaseTitle": "COMMAND v1.0.1 \u2014 Mission Planning & Control",
-  "buildRevision": "2026-10-20-helicopter-profile-v2"
+  "publicReleaseTitle": "COMMAND 1.1 — Mission Planning & Control",
+  "buildRevision": "2026-10-21-stability-consolidation"
 }

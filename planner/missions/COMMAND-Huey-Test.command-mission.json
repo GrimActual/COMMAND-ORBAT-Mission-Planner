@@ -8,8 +8,8 @@
     "operation": {
       "name": "COMMAND HUEY INSERTION CHECK",
       "taskForce": "COMMAND TEST TEAM",
-      "version": "rc.3 / bridge0.13.0 / runway",
-      "briefing": "Everon Huey insertion check. Import this single mission file, review the occupied deployment and send to game for approval. It creates a Huey, AI pilot and actual four-person passenger team. Check the deployment result and all five seats before flight. Then open helicopter flight controls, refresh actual game targets, choose TEAM and HUEY, and mark the LZ at world X4771 Z11737 (planner easting4821/northing11787),100m north of departure. Inspect the actual clear route and flat LZ, review and manually approve flight. Observe takeoff, travel, sustained landing, four complete exits and retained pilot. No automatic orders run on import. This experimental flight has no obstacle avoidance and does not resolve historical walking boarding. Departure uses the operator-confirmed runway point: planner E4821 N11687, native world X4771 Z11637. The proposed LZ is100m north at planner E4821 N11787, native X4771 Z11737. Inspect the full route and LZ in the current session before flight approval."
+      "version": "1.1.0-rc.3 / bridge 0.15.0",
+      "briefing": "Import this one-file mission, inspect the departure on the map, review deployment and approve it in Reforger. Confirm the AI pilot and four passengers are seated. Open helicopter flight controls, refresh targets, select TEAM and the aircraft, choose speed and waypoints, and mark a clear, flat LZ. Review and approve flight separately. Importing runs no orders. There is no artificial flight-distance limit. Optional waypoint heights are minimum metres above ground; automatic clearance may fly higher. Preflight checks do not guarantee tree clearance or dynamic obstacle avoidance. Keep observers outside during assistance. Inspect the full route and LZ in the current session; long routes, human takeover and multiplayer need operator acceptance."
     },
     "map": {
       "name": "Everon",

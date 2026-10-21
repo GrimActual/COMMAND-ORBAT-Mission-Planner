@@ -7,3 +7,40 @@
 .gm-unified main>aside:has(#panel-command:not([hidden]))>:not(#panel-command){display:none!important}
 
 body.gm-unified.gm-workspace main{display:grid;grid-template-columns:minmax(0,1fr) 392px}body.gm-unified.gm-workspace main>aside{max-width:none;border:0;border-left:1px solid var(--line);border-radius:0;box-shadow:none}body.gm-unified.gm-workspace .map-shell{min-width:0}.gm-unified-item strong{font-size:13px}.gm-unified-item small,.gm-item-state{font-size:11px}#gmUnifiedFilters select{font-size:12px}@media(max-width:1200px){body.gm-unified.gm-workspace main{grid-template-columns:minmax(0,1fr) 356px}}@media(max-width:850px){body.gm-unified.gm-workspace main{display:flex}}
+
+/* The deployment decision and live progress stay together; utility controls are secondary. */
+#missionPackage .mission-primary{position:sticky;top:-12px;z-index:3;background:var(--panel);padding:10px 0;border-bottom:1px solid var(--line)}
+#missionPackage .mission-import{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}#missionPackage .mission-import span{font-size:11px;color:var(--muted)}
+#missionPackage .mission-primary-actions{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:8px 0}#missionPackage .mission-primary-actions button{min-height:38px;margin:0;font-size:12px}
+#missionPackage #missionStageSummary p{margin:4px 0}#missionPackage #missionNotice{margin:6px 0;font-size:12px}#missionPackage #missionReviewExpiry{font-size:11px;margin:4px 0;color:var(--muted)}
+#missionBatchList{padding-left:22px;margin:12px 0}#missionBatchList li{margin:0 0 9px;padding:5px 0}#missionBatchList strong,#missionBatchList span{display:block;font-size:12px;overflow-wrap:anywhere}#missionBatchList span{color:var(--muted);font-size:11px}#missionBatchList li[data-state=Completed]{border-left:3px solid var(--green);padding-left:6px}
+#missionPackage :focus-visible{outline:2px solid var(--green);outline-offset:2px}
+
+.gm-browser-options{display:flex;align-items:center;gap:6px;justify-content:space-between;flex-wrap:wrap}.gm-browser-options .check{font-size:11px;margin:5px 0}.gm-browser-options button{font-size:10px!important;min-height:28px!important;padding:4px 6px}
+
+.command-delivery-feedback{border:1px solid var(--amber);padding:10px;border-radius:6px;margin:10px 0}.command-delivery-feedback button{margin:4px}.command-delivery-feedback p{overflow-wrap:anywhere}
+
+.flight-point-actions{gap:4px}.flight-point-actions button{font-size:11px!important;min-height:30px!important;padding:5px!important}#helicopterRouteList>li{margin-bottom:14px;padding-bottom:9px;border-bottom:1px solid var(--line)}#helicopterEstimate{font-size:12px;color:var(--muted)}
+
+@media(max-height:700px) and (min-width:851px){
+ #gmUnifiedHead{padding:8px 0 6px}#gmUnifiedHead p.hint{margin:4px 0}#gmFind{min-height:34px;padding:6px 8px;margin:5px 0 4px}
+ #gmUnifiedFilters{grid-template-columns:1.15fr 1fr 1fr}#gmSide{grid-column:auto}#gmUnifiedFilters select{min-height:30px;padding:4px}
+ #gmUnifiedHead>.actions{margin-top:4px}#gmUnifiedHead>.actions button,#gmUnifiedHead .section-heading button{min-height:30px;padding:4px 6px}
+ .gm-browser-options .check{margin:3px 0;font-size:10px}.gm-browser-options button{min-height:25px!important;font-size:10px!important}
+ #missionPackage .mission-primary{padding:6px 0}#missionPackage .mission-primary-actions button{min-height:34px}#missionPackage #missionNotice{font-size:11px;line-height:1.4}
+}
+
+.command-review-guidance{border-left:2px solid #587e70;padding:4px 9px;margin:6px 0;overflow-wrap:anywhere}.command-review-guidance p{margin:3px 0;font-size:12px}.command-review-guidance p:empty{display:none}.command-review-guidance button{margin:4px 0}
+
+.command-error-detail{margin:6px 0;overflow-wrap:anywhere}.command-error-detail pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px}.command-error-detail[hidden]{display:none}
+
+/* Keyboard focus remains visible in the workspace and secondary operator dialogs. */
+#gmUnifiedWorkspace :focus-visible,dialog :focus-visible,#sargeHelpPanel :focus-visible{outline:2px solid var(--green);outline-offset:2px}
+#missionRemovalReview,#bridgeLeaveReview{box-sizing:border-box;max-width:min(640px,calc(100vw - 24px));max-height:calc(100vh - 24px);overflow:auto;overflow-wrap:anywhere}
+#missionRemovalReview button,#bridgeLeaveReview button{white-space:normal;max-width:100%}
+
+/* A large mission summary must not push pinned decisions outside a short viewport. */
+#missionPackage .mission-primary{display:contents}
+#missionPackage .mission-primary-actions{position:sticky;top:0;z-index:3;background:var(--panel);padding:6px 0;border-bottom:1px solid var(--line)}
+#missionPackage .mission-primary-actions>#missionNotice,#missionPackage .mission-primary-actions>#missionReviewExpiry{grid-column:1/-1}
+#missionPackage .mission-primary-actions>p:empty{display:none}

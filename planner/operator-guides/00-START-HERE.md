@@ -1,23 +1,29 @@
-# COMMAND helicopter route test
+# COMMAND — start here
 
-Desktop 1.0.1 (20 October flight refresh) / bridge 0.13.1. Experimental; live controls remain experimental. Start with [the flight guide](10-HELICOPTER.md).
+This is the COMMAND 1.1.0 release: stable offline planner; experimental live controls. Its bridge remains 0.15.0; inspect Settings → Compatibility and limits and the final package manifest for exact desktop compatibility. Use only the final package identified by its manifest and checksums. Offline planning is the core product; live-game controls and helicopter assistance remain experimental.
 
-# COMMAND v1.0.1 — Mission Planning & Control
+1. Open Game Master. Search assets, planned units, deployed targets and tracked units together. Status badges keep these records distinct. Filters and search remain beside the selection.
+2. Import mission loads a complete `.command-mission.json` with plan, asset references and deployment setup. It spawns nothing. Use Save Backup before replacing work. Import has one Undo step. Legacy plan exchange remains in Plan files.
+3. Select an asset to place it, a planned unit to edit it, or a live target to see supported actions. Pilot/passenger shortcuts B/N create planning data; they do not spawn. Names can be automatic.
+4. Mission & deployment defaults to Whole mission, including all declared stages and factions. Review the queue and its exact groups/vehicles, then Send to game. Requests are sent serially in supported batches, retaining host approval. A group is not one soldier. Occupied stages keep their seat assignments.
+5. Follow each batch: Queued → Awaiting host approval → Running → result. Order installed means an infantry order was accepted, not arrival. Completed request does not prove the whole mission finished. Flight reports measured progress separately.
+6. If delivery is uncertain, check its original result; retry preserves the same request ID. Do not create replacement requests. Stop remaining batches prevents later sends without cancelling the current request. Review changes and expiry explain why another review is needed.
+7. Review mission removal lists only matching known COMMAND-created batches from the current desktop pairing. Recruited or unrelated entities are excluded. Removal keeps the plan. New mission clears planning while preserving the live connection, assets and tracking; Undo restores planning. Neither action is an aircraft emergency stop.
 
-Stable mission planning for Arma Reforger, with optional **experimental live-game controls**. This is the first stable COMMAND product edition; the earlier 2.x development versions remain available as history. Saved-plan formats and the existing user-settings location are retained.
+## Connection and recovery
 
-1. Export a plan backup, close the previous app and extract the complete ZIP into a new folder. Run `COMMAND-Windows/COMMAND Planner.exe`.
-2. Find assets and units in the Game Master workspace. Status labels distinguish assets available to place, planned units, deployed targets and tracked entities. Select an item for its relevant actions.
-3. **New mission** on the main toolbar clears the planning workspace without disconnecting. One Undo restores it. It retains installed asset metadata and live entities; it never silently removes entities or cancels an active game operation.
-4. **Mission & deployment → Import mission** opens one `.command-mission.json` containing the plan, asset references and deployment setup. Review the import, then review a deployment stage separately. Importing never spawns anything.
-5. Offline planning, JSON save/load, import/export, drawings, briefing, Undo/Redo, Settings and Sarge form the stable scope. See `01-DESKTOP.md` and `11-UNIFIED-GM.md`; French and German guides accompany them.
+Quick connection starts this app’s relay and tunnel. Address/code can appear while public reachability is checked in the background. Relay ready does not mean fresh game positions. Pairing code is hidden until revealed. Dedicated relay connects to an authorized server-managed session. Disconnect dashboard preserves that session; End session explicitly revokes it after review. No auto-connect or automatic queue resume occurs at startup. Closing warns about unfinished requests; save your plan first. Never share private dashboard keys or pairing credentials.
 
-## Optional experimental game connection
+## Existing infantry and flight
 
-Compatible bridge: **0.13.1**, Workshop project ID **6A969EB0C5012BB9**. Game/server addons must already be installed. Quick connection runs a relay and temporary tunnel on this computer; dedicated relay mode connects to an administrator-managed relay. Connecting does not itself authorize game changes. Host/server approval and ownership validation remain required.
+Track the faction and select an AI infantry member in Reforger, refresh targets, then review recruitment and approve it in game. Players, mounted groups and foreign orders stay protected. Release control does not delete soldiers. Tracking alone does not authorize control. General existing-vehicle/aircraft registration remains unfinished.
 
-Tracking, spawning/removal, AI controls, category auto-approval, occupied deployment, snapshots, transport/treatment/vehicle controls and force-assisted Huey flight are experimental. Existing infantry can be recruited through reviewed control; general existing-vehicle/aircraft registration is unfinished. The historical walking-boarding timeout remains unexplained. Two-client multiplayer and pilot takeover acceptance remain pending.
+Flight supports the exact enabled catalog profiles, not every helicopter of the same family. Required aircraft addons are separate. Select aircraft and passenger team or the profile-supported pilot-only mode. Review deployment and flight separately; flight requires manual host approval. Select travel speed, map waypoints, final LZ and supported patrol mode. Artificial path-distance/waypoint-spacing limits are removed; world bounds and native checks remain. Optional waypoint heights are minimum AGL; the highest entered minimum applies across cruise. Preflight clearance may raise cruise or reject obstructions; it does not guarantee clearance, reactively avoid obstacles or relocate the LZ. Inspect route, takeoff and landing areas. Human takeover and multiplayer acceptance remain pending. The historical walking-boarding timeout is unexplained.
 
-The Huey test uses one vanilla UH-1H, one AI pilot and four seated passengers on an operator-checked clear, flat 20–100 m route. Select a passenger infantry group and the aircraft separately. No obstacle avoidance or guaranteed tree/building clearance exists. Takeoff is slow and the aircraft may translate backwards to a point behind it. Verify the whole corridor and LZ; never use an obstructed route. Do not board during assisted flight. This is not a general autonomous helicopter pilot.
+## Other guides
 
-No game models, satellite imagery or elevation data are included. Optional terrain preview requires your own authorized, correctly aligned data. Standalone relay, bridge source, vanilla metadata, licensing, source and checksums accompany the Windows download. Read `RELEASE-SCOPE.md`, `UPGRADE-AND-RECOVERY.md` and `LIVE-CHECKLIST.md` at the package root.
+Use 02-ASSETS, 03-SERVER, 04-COMPATIBILITY, 07-HTTPS-HOSTING, 10-HELICOPTER and 11-DEPLOYMENT-OPERATIONS for details. Sarge opens relevant controls. Optional read-only terrain preview requires authorized world-matched elevation and imagery; no game geometry or imagery dataset is bundled. Workbench native apply, relay restart persistence, WebSockets and multi-admin roles remain planned or disabled. Existing short native receipts are not new human multiplayer acceptance.
+
+## Saving and request recovery
+
+A failed save keeps edits in memory; export a backup and retry saving. Mission replacement rolls back synchronous apply errors, but cannot guarantee recovery from power loss. Explicit recovery clears deployment setup belonging to another plan; one Undo restores the prior workspace. If delivery is uncertain, a rejected retry does not prove the original request failed. Check its original result and keep the same request ID. Changed placements or seat setup require reviewed cleanup or supported orders; existing deployed entities are not silently moved.

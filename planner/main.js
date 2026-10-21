@@ -8,6 +8,7 @@ const pendingTiles=new Set();
 const indexPath=path.join(__dirname,'index.html');
 const indexURL=pathToFileURL(indexPath).href;
 if(typeof app.setPath==='function'&&!process.argv?.some(a=>a.startsWith('--user-data-dir')))app.setPath('userData',path.join(app.getPath('appData'),'Everon-ORBAT-OneClick-Bridge'));
+const deploymentClose=require('./deployment-close-main').install({app,ipcMain,getWindow:()=>mainWindow,indexURL,dialog});
 const localBridge=require('./local-bridge').install({app,ipcMain,getWindow:()=>mainWindow,indexURL,clipboard});
 const simulation=require('./simulation-main').install({app,ipcMain,getWindow:()=>mainWindow,indexURL});
 const metadata=require('./workbench-metadata-main').install({ipcMain,dialog,getWindow:()=>mainWindow,indexURL});
@@ -26,13 +27,13 @@ function showWindow(){if(quitting)return;if(!mainWindow||mainWindow.isDestroyed(
 function createWindow(){
  if(quitting)return;
  const startupSize=require('./display-main').size(screen?.getPrimaryDisplay?.()?.workArea);
- const win=new BrowserWindow({...startupSize,title:'COMMAND — ORBAT / Mission Planner 2.10.0 — Release candidate',icon:path.join(__dirname,'command-icon.ico'),show:false,webPreferences:{nodeIntegration:false,contextIsolation:true,preload:path.join(__dirname,'preload.js')}});
- mainWindow=win;win.setMenuBarVisibility(false);
- win.webContents.on('did-start-navigation',(_event,_url,_inPlace,isMainFrame)=>{if(isMainFrame){simulation.reset();localBridge.stop();metadata.reset();dependencyReview.reset();functionReview.reset();typeReview.reset();effectReview.reset();diagnosticExport.reset();migrationAdapters.reset();projectReview.reset();}});
+ const win=new BrowserWindow({...startupSize,title:'COMMAND — Mission Planning & Control '+app.getVersion()+' — Candidate',icon:path.join(__dirname,'command-icon.ico'),show:false,webPreferences:{nodeIntegration:false,contextIsolation:true,preload:path.join(__dirname,'preload.js')}});
+ mainWindow=win;deploymentClose.attach(win);win.setMenuBarVisibility(false);
+ win.webContents.on('did-start-navigation',(_event,_url,_inPlace,isMainFrame)=>{if(isMainFrame){deploymentClose.reset();simulation.reset();localBridge.stop();metadata.reset();dependencyReview.reset();functionReview.reset();typeReview.reset();effectReview.reset();diagnosticExport.reset();migrationAdapters.reset();projectReview.reset();}});
  win.webContents.on('render-process-gone',()=>{simulation.reset();localBridge.stop();metadata.reset();dependencyReview.reset();functionReview.reset();typeReview.reset();effectReview.reset();diagnosticExport.reset();migrationAdapters.reset();projectReview.reset();});
  // Closing during the initial load aborts loadFile before the closed event fires.
  // Do not turn that normal shutdown into a blocking startup-error dialog.
- let closing=false;win.on('close',()=>{closing=true;});
+ let closing=false;win.on('close',event=>{if(!event?.defaultPrevented)closing=true;});
  win.once('ready-to-show',()=>{if(!win.isDestroyed())win.show()});
  // Remote map imagery must not keep an otherwise usable workspace hidden.
  win.webContents.once('dom-ready',()=>{if(!closing&&!win.isDestroyed())win.show();});
@@ -48,7 +49,7 @@ const primary=app.requestSingleInstanceLock();
 if(!primary){app.quit()}else{
  app.on('second-instance',()=>{log('second-launch-focus');if(app.isReady())showWindow();else app.once('ready',showWindow)});
  app.on('activate',()=>{if(app.isReady())showWindow()});
- app.on('before-quit',()=>{metadata.reset();dependencyReview.reset();functionReview.reset();typeReview.reset();effectReview.reset();diagnosticExport.reset();migrationAdapters.reset();projectReview.reset();quitting=true;for(const controller of pendingTiles)controller.abort();log('before-quit')});
+ app.on('before-quit',event=>{if(event?.defaultPrevented)return;metadata.reset();dependencyReview.reset();functionReview.reset();typeReview.reset();effectReview.reset();diagnosticExport.reset();migrationAdapters.reset();projectReview.reset();quitting=true;for(const controller of pendingTiles)controller.abort();log('before-quit')});
  app.on('will-quit',()=>log('will-quit'));
  app.on('window-all-closed',()=>{if(process.platform!=='darwin')app.quit()});
  ipcMain.handle('inject-mod-aos',async event=>{

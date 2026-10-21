@@ -8,7 +8,7 @@ async function desktop(){
   setMenuBarVisibility(){}isDestroyed(){return false;}show(){}
   loadFile(){return new Promise((resolve,reject)=>{rejectLoad=reject;});}
  }
- const electron={app,BrowserWindow:Window,ipcMain:{handle(){}},shell:{},dialog:{showErrorBox:(...args)=>dialogs.push(args)}};
+ const electron={app,BrowserWindow:Window,ipcMain:{handle(){},on(){}},shell:{},dialog:{showErrorBox:(...args)=>dialogs.push(args)}};
  const fakeFS={mkdirSync(){},existsSync:()=>false,appendFileSync(){}};
  vm.runInNewContext(fs.readFileSync(path.join(__dirname,'main.js'),'utf8'),{require:name=>name==='electron'?electron:name==='fs'?fakeFS:require(name),__dirname,process:{platform:'win32'},console,AbortController,setTimeout,clearTimeout});
  await new Promise(setImmediate);return {app,win:windows[0],dialogs,reject:()=>rejectLoad(Object.assign(Error('aborted'),{code:'ERR_FAILED'}))};

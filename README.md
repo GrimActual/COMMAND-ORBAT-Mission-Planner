@@ -2,40 +2,48 @@
 
 # COMMAND — Mission Planning & Control
 
-An independent mission planner for **Arma Reforger**. **COMMAND v1.0.1 is stable for mission planning; all live-game controls remain experimental.**
+**COMMAND 1.1 — a stable offline mission planner for Arma Reforger, with optional experimental live-game controls.** Build a plan, bring its assets and deployment setup in one file, review it, and send supported actions to the game with host approval.
 
-## Download
+[Download COMMAND 1.1.0](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/releases/tag/v1.1.0) · [Start here](planner/operator-guides/00-START-HERE.md) · [Full roadmap](ROADMAP.md)
 
-[Download COMMAND v1.0.1](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/releases/tag/v1.0.1) · [Release notes](docs/release-v1.0.1/RELEASE-NOTES.md) · [Quick start](planner/operator-guides/00-START-HERE.md)
+## Plan the whole operation
 
-Extract the complete **COMMAND-1.0.1-Windows.zip** and run `COMMAND-Windows/COMMAND Planner.exe`. It includes the app, optional bridge/relay source, vanilla asset indexes, guides, test mission, licences, corresponding source and checksums. Back up plans and extract to a fresh folder. Earlier 2.x development builds remain in [release history](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/releases).
+- **One mission file:** import/export the plan, asset references and deployment setup together. Review before applying; one Undo restores the prior workspace.
+- **One Game Master workspace:** search assets, planned units, deployed targets and tracked units together. Status labels keep their underlying identities distinct; relevant actions follow the selection.
+- **Offline planning:** tactical units and ORBAT, routes, areas, drawings, briefings, save/load, JSON exchange, backups and Undo/Redo.
+- **Whole-mission deployment review:** see stages and factions together, distinguish groups from actual soldiers, and send eligible batches serially. Stop future batches or review eligible remaining work after interruption.
+- **Clear recovery:** failed saves retain edits in memory and report failure. Explicit recovery and same-request retry help prevent silent replacement or duplicate submissions.
+- **Guidance close at hand:** Sarge, Settings, keyboard shortcuts and operator guides in English, French and German. New mission resets planning while keeping the live connection.
+- **Optional 3D terrain-section preview:** read-only terrain and tactical proxies with synchronized selection. Requires authorized, world-matched elevation and imagery supplied separately.
 
-## Plan and manage a mission
+## Connect when you need it — experimental
 
-- Find assets and planned/live units in one searchable workspace, with clear state labels and contextual controls.
-- Place tactical units, draw routes and areas, prepare briefings, save/load and import/export planning data offline.
-- Import one mission package with plan, asset references and deployment setup; review before applying. Importing never spawns anything.
-- Start a New mission without disconnecting. Undo/Redo restore the planning workspace; game deletion remains explicit.
-- Use catalog/resource indexes, Settings, recovery and Sarge guidance in English, French and German.
+Use **bridge 0.15.0** with COMMAND **1.1.0**, with exactly one installed copy of Workshop item **6A969EB0C5012BB9**. The bridge project and compatibility guide accompany the download. Required aircraft addons and dependencies must be installed separately on the server and clients.
 
-## Optional experimental connection
+- Quick connection runs COMMAND's owned relay/tunnel; Dedicated relay connects to an authorized administrator-managed HTTPS relay.
+- Live tracking supplies exact identities. Supported AI infantry recruitment is reviewed; tracking alone does not grant control of arbitrary vehicles or aircraft.
+- Supported infantry orders, routes and squad controls; reviewed deployment/removal, occupied spawning with seating verification, transport, treatment, vehicle/convoy and server snapshot tools.
+- Host/server-controlled auto-approval categories preserve validation, ownership and duplicate protection. Flight still needs manual approval.
+- **22 exact experimental helicopter profiles:** 18 vanilla UH-1H/Mi-8MT variants and four separately installed H60 variants. Select speed, intermediate waypoints, optional minimum heights, land/unload, hover or session-bound loop patrol. No artificial path-distance or minimum waypoint-spacing limit; valid world bounds remain.
 
-Compatible **COMMAND bridge 0.13.1**, Workshop project **6A969EB0C5012BB9**. Quick connection runs an owned local relay/tunnel; dedicated mode connects to an administrator-managed HTTPS relay. Host/server approval, target ownership and duplicate protection stay in force.
+Connecting, importing or reviewing does not spawn anything. Deployment, infantry orders and flight are separate reviewed actions; a map route is not automatically an executable order. Accepted requests do not prove physical completion.
 
-Experimental features include scoped tracking, reviewed spawn/removal and AI orders, host-controlled category auto-approval, occupied deployments, server snapshots, transport/treatment/vehicles and a bounded force-assisted vanilla Huey demonstration. Two-client multiplayer and human pilot takeover acceptance are incomplete. General existing-vehicle registration remains unfinished; historical boarding timeout is unexplained. [Compatibility](docs/release-v1.0.1/COMPATIBILITY.md) · [Remaining live checks](docs/release-v1.0.1/LIVE-CHECKLIST.md)
+### Honest limits
 
-Huey flight currently needs a clear, flat 20–1000 m route, one AI pilot and four passengers. Preflight checks are available, but dynamic obstacle avoidance and guaranteed tree/building clearance remain unverified. Route-facing heading is now gated before travel. The optional read-only 3D preview needs authorized user-supplied terrain/imagery; no protected game models or satellite/elevation data are bundled.
+Live controls remain experimental. Historical short native profile checks are bounded evidence; two-client multiplayer, human takeover, player lifecycle, long routes, different loads/speeds and obstacle clearance still need acceptance. Preflight checks do not provide reactive avoidance, guaranteed tree/building clearance, automatic LZ relocation, targeting or combat flight. Inspect the entire route and choose a clear flat LZ. General existing-vehicle/aircraft registration remains unfinished. The historical walking-to-vehicle boarding timeout is unexplained. Patrol and relay state do not survive process restarts.
 
-## Development and roadmap
+Workbench import/apply, continuous two-way editing, WebSockets and multi-admin roles remain planned or disabled. Full-world scene reconstruction and exact game models are separate work.
 
-Original planner source is in `planner/`; use Node.js, `npm install`, then `npm start`. `npm test` runs the project tests. The corresponding release source includes the original tools and tests; keep bundled dependency notices. For Quick connection, use the matching release’s `cloudflared.exe` with its included Apache-2.0 notice.
+## Install and recover
 
-[Full roadmap](ROADMAP.md) · [Release scope](docs/release-v1.0.1/RELEASE-SCOPE.md) · [Upgrade and recovery](docs/release-v1.0.1/UPGRADE-AND-RECOVERY.md) · [Licensing](docs/LICENSING.md)
+Extract the complete **COMMAND-1.1.0-Windows.zip** into a fresh folder and run `COMMAND-Windows/COMMAND Planner.exe`. The bundle contains vanilla catalog/index metadata, current guides, test missions, matching bridge publication files, relay/source, licences and checksums. Game models, imagery and elevation are not redistributed.
 
-Workbench import/apply, continuous two-way editing, WebSockets, relay restart persistence, multi-admin authority and expanded flight adapters remain planned/disabled. A plan route is not automatically an executable game order.
+Save a backup before switching versions. Existing plan/settings formats are preserved. Reconnect explicitly; startup never replays unfinished requests. If delivery is uncertain, inspect the original result and retry its original ID rather than create a replacement. Closing or New mission is not an aircraft emergency stop. Keep the previous download for rollback.
 
-## Licence and independence
+## Source and licence
 
-Original COMMAND code: **GPL-3.0-only**. Dependencies, separately licensed Workshop material and game assets retain their own terms. See [LICENSE](LICENSE) and [third-party notices](planner/THIRD-PARTY-NOTICES.md). An installed mod or prefab GUID does not grant redistribution rights.
+Planner source is in `planner/`; use Node.js, `npm install`, then `npm start`. `npm test` runs the project tests. Source archives contain tests and tools; development-only dependencies are not desktop features. Keep dependency notices.
 
-COMMAND is an unofficial community-made companion. It is not affiliated with, endorsed or sponsored by Bohemia Interactive. Arma Reforger, Enfusion and Bohemia Interactive trademarks belong to their respective owners. COMMAND artwork is retained unchanged.
+Original COMMAND code is **GPL-3.0-only**. Workshop material, dependencies, game assets and third-party content retain their own terms. See [LICENSE](LICENSE), [licensing](docs/LICENSING.md) and [third-party notices](planner/THIRD-PARTY-NOTICES.md). An installed download or prefab GUID does not grant redistribution rights.
+
+COMMAND is an unofficial community companion, not affiliated with or endorsed by Bohemia Interactive. Arma Reforger, Enfusion and associated trademarks belong to their owners.
