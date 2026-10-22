@@ -1,3 +1,7 @@
+<!-- COMMAND PREVIEW START -->
+> **New preview:** [COMMAND 1.1.3 — Flight & GM Workflow Update](https://github.com/GrimActual/COMMAND-ORBAT-Mission-Planner/releases/tag/v1.1.3), paired with **Command Orbat & Eden 0.15.7**. Optional passengers, helicopter restart changes and queued GM requests. This is a prerelease; native/live acceptance remains pending. The stable offline-planner release remains available separately.
+<!-- COMMAND PREVIEW END -->
+
 ![COMMAND](planner/COMMAND-Logo.jpg)
 
 # COMMAND — Mission Planning & Control
