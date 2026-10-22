@@ -1,6 +1,6 @@
 # COMMAND — Einstieg
 
-COMMAND 1.1.0 stabile Offline-Planung; experimentelle Live-Steuerung. Bridge bleibt 0.15.0. Exakte Desktop-Kompatibilität unter Einstellungen → Kompatibilität und Grenzen und im endgültigen Manifest prüfen. Nur das durch Manifest und Prüfsummen bezeichnete Paket verwenden. Offline-Planung ist Kernprodukt; Live-Steuerung und Hubschrauberhilfe bleiben experimentell.
+COMMAND 1.1.2 stabile Offline-Planung; experimentelle Live-Steuerung. Bridge bleibt 0.15.2. Exakte Desktop-Kompatibilität unter Einstellungen → Kompatibilität und Grenzen und im endgültigen Manifest prüfen. Nur das durch Manifest und Prüfsummen bezeichnete Paket verwenden. Offline-Planung ist Kernprodukt; Live-Steuerung und Hubschrauberhilfe bleiben experimentell.
 
 1. Game Master öffnen. Suche vereint Assets, geplante, aufgestellte und verfolgte Einheiten. Statusanzeigen trennen Daten. Suche und Filter bleiben bei der Auswahl.
 2. Mission importieren lädt vollständige `.command-mission.json` mit Plan, Referenzen und Aufstellung. Erzeugt nichts im Spiel. Vor Ersetzen Sicherung speichern. Ein Rückgängig stellt vorherigen Plan her. Bisheriger Planaustausch bleibt unter Plandateien.
@@ -27,3 +27,7 @@ Siehe 02-ASSETS, 03-SERVER, 04-COMPATIBILITY, 07-HTTPS-HOSTING-DE, 10-HELICOPTER
 ## Speichern und Anfragewiederherstellung
 
 Bei Speicherfehlern bleiben Änderungen im Arbeitsspeicher; Sicherung exportieren und erneut speichern. Missionswechsel setzt synchrone Anwendungsfehler zurück, garantiert aber keine Wiederherstellung nach Stromausfall. Explizite Wiederherstellung entfernt den Aufbau eines anderen Plans; einmal Rückgängig stellt den vorherigen Arbeitsbereich wieder her. Bei unbestätigter Zustellung beweist eine abgewiesene Wiederholung keinen ursprünglichen Fehlschlag. Originalergebnis mit derselben Anfrage-ID prüfen. Geänderte Positionen oder Sitze erfordern geprüfte Bereinigung oder unterstützte Befehle; eingesetzte Einheiten werden nicht still verschoben.
+
+## Asset library update
+
+Game Master → Asset-Bibliothek enthält Katalog-JSON importieren und Ressourcenindex für den Einsatz laden gemeinsam. Die beiden zusammengehörigen Dateien unter Vanilla-Assets/Start-Here wählen. Der Katalog ändert verfügbare Assets; geplante Einheiten behalten gespeicherte Referenzen. Der Index identifiziert genaue Prefabs. Vollständige Missionsdateien enthalten bereits beides. Lokale Planungsdateien werden nicht auf den Server hochgeladen; Import setzt keine Einheiten ein.

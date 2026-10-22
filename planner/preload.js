@@ -23,6 +23,6 @@ contextBridge.exposeInMainWorld('plannerProjectReview',{select:()=>ipcRenderer.i
 
 contextBridge.exposeInMainWorld('plannerAdapters',{status:()=>ipcRenderer.invoke('sqf-adapter-status'),initialization:options=>ipcRenderer.invoke('sqf-adapter-initialization',options),saveInitialization:options=>ipcRenderer.invoke('sqf-adapter-save-initialization',options),preprocess:options=>ipcRenderer.invoke('sqf-adapter-preprocess',options),source:options=>ipcRenderer.invoke('sqf-adapter-source',options),previewJobs:options=>ipcRenderer.invoke('sqf-adapter-preview-jobs',options),packagePreprocessing:options=>ipcRenderer.invoke('sqf-adapter-package',options),savePreprocessing:options=>ipcRenderer.invoke('sqf-adapter-save-preprocess',options),exportJobs:options=>ipcRenderer.invoke('sqf-adapter-export-jobs',options),cancel:()=>ipcRenderer.invoke('sqf-adapter-cancel')});
 
-contextBridge.exposeInMainWorld('plannerCompatibility',{status:()=>ipcRenderer.invoke('compatibility-status')});
+contextBridge.exposeInMainWorld('plannerCompatibility',{summary:()=>ipcRenderer.invoke('compatibility-summary'),status:()=>ipcRenderer.invoke('compatibility-status')});
 
 contextBridge.exposeInMainWorld('plannerLifecycle',{deploymentState:state=>ipcRenderer.send('command-deployment-close-state',state)});

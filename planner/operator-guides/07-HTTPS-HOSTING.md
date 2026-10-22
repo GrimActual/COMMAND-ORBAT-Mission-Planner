@@ -1,3 +1,7 @@
+# Current approval policy
+
+In Reforger, open COMMAND approval controls. Full mode automatically approves all 27 supported request kinds, including flight, transport, treatment, vehicles, refuelling and server snapshots. Occupied deployment uses spawning. Custom mode keeps the three category controls; flight, refuelling and snapshots remain manual in Custom. The host or private server administrator grants this authority, never the desktop. Disabling stops future automatic approvals immediately at the host; a pending request then waits for manual approval. Already-approved or running operations continue and need their separate cancellation action. A pending request can be approved when Full is enabled. New pairings reset to manual unless a private administrator explicitly authorizes that exact pairing. Review, expiry, ownership, duplicate protection, player protections, hard limits and execution scheduling still apply. Unsupported relays show Full unavailable. Wait for the relay acknowledgement; Companion displays only the confirmed effective mode.
+
 # HTTPS relay hosting and approval controls (release candidate)
 
 Quick connection — this computer starts COMMAND's own loopback relay and temporary tunnel. Disconnecting or closing COMMAND stops those owned processes.

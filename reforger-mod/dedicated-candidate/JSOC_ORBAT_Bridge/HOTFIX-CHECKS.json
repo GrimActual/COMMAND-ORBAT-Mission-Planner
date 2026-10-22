@@ -1,0 +1,8 @@
+{
+  "version": "0.15.7",
+  "scope": "Static source inspection only",
+  "automatedTestsRun": false,
+  "nativeCompiled": false,
+  "physicalReflightVerified": false,
+  "privateLogsIncluded": false
+}

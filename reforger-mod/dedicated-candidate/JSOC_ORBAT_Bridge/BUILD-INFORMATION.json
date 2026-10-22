@@ -1,8 +1,8 @@
 {
-  "product": "COMMAND ORBAT Bridge",
-  "version": "0.15.0",
-  "desktop": "1.1.0-rc.3",
-  "status": "experimental aircraft candidate; live human acceptance pending",
+  "product": "Command Orbat & Eden",
+  "version": "0.15.7",
+  "desktop": "1.1.3",
+  "status": "Flight restart hotfix candidate; native compilation and physical reflight acceptance pending.",
   "projectGuid": "6A969EB0C5012BB9",
   "workshopPublication": "Prepared for the existing Workshop item; publication remains a user action.",
   "stablePublicationAllowed": false,
@@ -12,5 +12,32 @@
     "force-assisted-vanilla-UH1H-insertion",
     "shared-flight-routes-without-artificial-distance-limits",
     "force-assisted-vanilla-Mi8MT-transport"
-  ]
+  ],
+  "speedConfiguration": {
+    "defaultMps": 57,
+    "fastMps": 66,
+    "physicalTesting": "not performed at user request"
+  },
+  "approvalPolicy": {
+    "fullSupportedKinds": 27,
+    "manualOnNewPairing": true,
+    "legacyRelay": "Full unavailable; Custom/manual retained",
+    "validation": "Targeted JS policy/localhost HTTP and static native/API checks only"
+  },
+  "nativeCompiled": false,
+  "hotfix": "Pilot/aircraft flight prerequisites; optional cargo; queued submissions; no terrain-flatness, waypoint-count or 100-request lifetime veto.",
+  "priorBuild": {
+    "version": "0.15.3",
+    "nativeCompiled": true,
+    "reportedFailure": "User reports hard crash when opening Review GM requests; crash log unavailable locally."
+  },
+  "reportedCrash": {
+    "previousVersion": "0.15.4",
+    "stage": "CreateWidgets loading review layout",
+    "error": "Unknown class 'ScrollLayoutSlot'",
+    "nativeAccessViolation": true,
+    "exactNativeFaultPreventedByLiveTest": false
+  },
+  "validation": "Source inspection and JavaScript syntax checking only. No automated/native tests or application/game launches.",
+  "compatibility": "Requires COMMAND 1.1.3 or the matching updated relay; update both components together."
 }

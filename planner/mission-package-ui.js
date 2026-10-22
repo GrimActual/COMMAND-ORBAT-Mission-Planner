@@ -61,7 +61,6 @@
   const snapshot=EveronPlanner.snapshot(),index=CompanionDeploymentReview.sourceIndex();
   const checked=await P.validate({...documentForExport(),plan:snapshot,resourceIndex:index,deployments:selected});
   const status=await plannerLocalBridge.command('gm-status');if(at!==generation)throw Error(t('Review changed. Review deployment again.'));
-  if((status.records||[]).some(r=>['pending','approved'].includes(r.phase)))throw Error(t('Finish or cancel the current game request first.'));
   retained.clear();const jobs=[],existing=[],details=[];
   for(const stage of checked.deployments){
    const intent=(await CompanionDeployment.review(checked.plan,index,stage.unitIds,stage.headingDegrees)).preview();

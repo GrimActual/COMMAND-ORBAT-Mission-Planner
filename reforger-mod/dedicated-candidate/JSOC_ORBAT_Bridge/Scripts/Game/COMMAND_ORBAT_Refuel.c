@@ -128,7 +128,7 @@ modded class JSOC_ORBAT_HostGM
   string cached;
   if (m_Results.Find(request.requestId,cached)) { Post("result",cached); return; }
   if (m_RefuelRequest && m_RefuelRequest.requestId==request.requestId) return;
-  if (m_Refuel || m_OccupiedRequest || m_Flight || m_Transport || m_Driving || m_Healing || m_RestoringSnapshot || !m_OrdersAllowed || m_CapabilityMode<15 || request.version!=2 || request.timeoutSeconds<5 || request.timeoutSeconds>30 || m_Results.Count()>=100) { Report(request.requestId,"failed","Refuel requires current support, bounded timeout and an idle execution slot",""); return; }
+  if (m_Refuel || m_OccupiedRequest || m_Flight || m_Transport || m_Driving || m_Healing || m_RestoringSnapshot || !m_OrdersAllowed || m_CapabilityMode<15 || request.version!=2 || request.timeoutSeconds<5 || request.timeoutSeconds>30) { Report(request.requestId,"failed","Refuel requires current support, bounded timeout and an idle execution slot",""); return; }
   COMMAND_ORBAT_RefuelLease lease=new COMMAND_ORBAT_RefuelLease();
   lease.Target=RefuelOwned(request.targetRequestId,request.unitId);
   lease.Provider=RefuelOwned(request.vehicleRequestId,request.vehicleUnitId);

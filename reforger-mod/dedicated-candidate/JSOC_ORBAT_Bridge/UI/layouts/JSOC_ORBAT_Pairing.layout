@@ -6,12 +6,12 @@ FrameWidgetClass {
   TextWidgetClass : "{3132F64DB8B4CB44}UI/layouts/WidgetLibrary/TextWidgets/Text_Body.layout" {
    Name "JSOCTitle"
    Slot FrameWidgetSlot { Anchor 0 0 1 0 PositionX 16 OffsetLeft 16 PositionY 12 OffsetTop 12 SizeX 0 OffsetRight 16 SizeY 40 OffsetBottom -52 }
-   Text "COMMAND - HOST PAIRING 0.13.0" "Font Size" 20
+   Text "COMMAND - HOST PAIRING 0.15.2" "Font Size" 20
   }
   TextWidgetClass : "{3132F64DB8B4CB44}UI/layouts/WidgetLibrary/TextWidgets/Text_Body.layout" {
    Name "JSOCHelp"
    Slot FrameWidgetSlot { Anchor 0 0 1 0 PositionX 16 OffsetLeft 16 PositionY 55 OffsetTop 55 SizeX 0 OffsetRight 16 SizeY 55 OffsetBottom -110 }
-   Text "Shares only your controlled character. Resume to send updates. Local PC: keep the endpoint below. GeForce NOW requires a relay." "Font Size" 14
+   Text "Pair COMMAND 1.1.1 with this bridge. Choose tracked entities and review game requests below. Resume the game to send updates." "Font Size" 14
   }
   EditBoxWidgetClass {
    Name "JSOCEndpoint"

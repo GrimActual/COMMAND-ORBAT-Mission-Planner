@@ -2,7 +2,21 @@ class JSOC_ORBAT_PairingHandler : ScriptedWidgetEventHandler
 {
     Widget GMRoot;
     ref JSOC_ORBAT_GMHandler GMHandler;
-    void CloseGM() { if (GMRoot) GMRoot.RemoveFromHierarchy(); GMRoot = null; GMHandler = null; if (Root) Root.SetVisible(true); }
+    void CloseGM()
+    {
+        if (GMHandler)
+        {
+            GetGame().GetCallqueue().Remove(GMHandler.Refresh);
+            if (GMRoot) GMRoot.RemoveHandler(GMHandler);
+            GMHandler.Root = null;
+            GMHandler.GM = null;
+            GMHandler.Owner = null;
+        }
+        if (GMRoot) GMRoot.RemoveFromHierarchy();
+        GMRoot = null;
+        GMHandler = null;
+        if (Root) Root.SetVisible(true);
+    }
     Widget RosterRoot;
     ref JSOC_ORBAT_RosterHandler RosterHandler;
     bool MixedMode;
@@ -14,8 +28,27 @@ class JSOC_ORBAT_PairingHandler : ScriptedWidgetEventHandler
         if (!Root || !Bridge || !w) return false;
         if (w.GetName() == "JSOCGM")
         {
-            if (!GMRoot) GMRoot = GetGame().GetWorkspace().CreateWidgets("UI/layouts/JSOC_ORBAT_GM.layout", Root.GetParent());
-            if (GMRoot) { Root.SetVisible(false); GMHandler = new JSOC_ORBAT_GMHandler(); GMHandler.Root = GMRoot; GMHandler.Owner = this; GMHandler.GM = Bridge.Mixed().GM(); GMRoot.AddHandler(GMHandler); GMHandler.Refresh(); }
+            // Do not attach a second handler if an input is delivered twice.
+            if (GMRoot) return true;
+            WorkspaceWidget workspace = GetGame().GetWorkspace();
+            JSOC_ORBAT_HostMixedBridge mixed = Bridge.Mixed();
+            if (!workspace || !mixed) return true;
+            Print("[COMMAND GM review 0.15.5] opening layout", LogLevel.NORMAL);
+            GMRoot = workspace.CreateWidgets("UI/layouts/JSOC_ORBAT_GM.layout", Root.GetParent());
+            if (!GMRoot)
+            {
+                Print("[COMMAND GM review 0.15.5] layout failed to load", LogLevel.ERROR);
+                return true;
+            }
+            GMHandler = new JSOC_ORBAT_GMHandler();
+            GMHandler.Root = GMRoot;
+            GMHandler.Owner = this;
+            GMHandler.GM = mixed.GM();
+            GMRoot.AddHandler(GMHandler);
+            Root.SetVisible(false);
+            // Return from the click dispatch before initializing and measuring the new tree.
+            GetGame().GetCallqueue().CallLater(GMHandler.Refresh, 50, false);
+            Print("[COMMAND GM review 0.15.5] layout attached", LogLevel.NORMAL);
             return true;
         }
         if (w.GetName() == "JSOCMixed")

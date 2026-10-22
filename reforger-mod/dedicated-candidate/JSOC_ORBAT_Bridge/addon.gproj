@@ -1,7 +1,7 @@
 GameProject {
  ID "JSOCORBATBridge"
  GUID "6A969EB0C5012BB9"
- TITLE "COMMAND ORBAT Bridge"
+ TITLE "Command Orbat & Eden"
  Dependencies {
   "58D0FB3206B6F859"
  }

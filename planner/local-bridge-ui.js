@@ -84,7 +84,7 @@
   $('localBridgeToken').value=s.token||'';$('bridgeRevealCode').disabled=!s.token;
   for(const id of ['freeBridgeStart','remoteBridgeStart','localBridgeStart'])$(id).disabled=!idle;
   $('localBridgeStop').disabled=idle;$('bridgeEndSession').disabled=idle;$('bridgeCopyDashboardKey').disabled=idle||!s.serverManaged||s.protocol!==3;$('dedicatedRelayAttach').disabled=!idle;
-  $('bridgeApprovalMode').textContent=!s.approval?.confirmed?'Approval mode unconfirmed':(s.approval.aiOrders||s.approval.spawning||s.approval.removal?'Auto-approve active':'Manual approval');$('bridgeCopyAddress').disabled=!s.token;$('bridgeCopyCode').disabled=!s.token;
+  $('bridgeApprovalMode').textContent=PlannerI18n.t(!s.approval?.confirmed?'Approval mode unconfirmed':(s.approval.allSupported?'Auto-approve all supported actions':s.approval.aiOrders||s.approval.spawning||s.approval.removal?'Custom auto-approval':'Manual approval'));$('bridgeCopyAddress').disabled=!s.token;$('bridgeCopyCode').disabled=!s.token;
   const hasCurrentPosition=['receiving','connected'].includes(s.status)&&(s.point||s.entities?.length);$('localBridgeFit').disabled=!hasCurrentPosition;
   $('localBridgePoint').textContent=!hasCurrentPosition?'':s.entities?.length?s.entities.length+' live entities · read-only · 60 maximum':s.point?'Game coordinates: X '+s.point.x.toFixed(2)+' / Z '+s.point.z.toFixed(2)+' · Everon imagery alignment applied':'';
   if(idle){maskCode();if(pendingLeave)closeLeave();}
@@ -113,5 +113,5 @@
  let packagedCompatibility=null;
  function drawPackagedCompatibility(){const target=document.getElementById('bridgeCompatibilityGuidance');if(!target)return;const t=s=>window.PlannerI18n.t(s);target.textContent=t('Allowlist tracking requires protocol 3.')+' '+(packagedCompatibility?t('Packaged desktop')+': '+packagedCompatibility.desktopVersion+' · '+t('Matching bridge')+': '+packagedCompatibility.matchingBridgeVersion+'. ':t('Check Compatibility and limits for the matching bridge.')+' ')+t('This does not verify the connected game version. No automatic connection at startup.');}
  window.addEventListener('planner-preferences-changed',()=>{dataSummary(latestState);if($('localBridgeToken').type==='password')maskCode();else $('bridgeRevealCode').textContent=tr('Hide pairing code');});
- drawPackagedCompatibility();window.plannerCompatibility?.status().then(data=>{packagedCompatibility=data;drawPackagedCompatibility();}).catch(()=>{});window.addEventListener('planner-preferences-changed',drawPackagedCompatibility);
+ drawPackagedCompatibility();window.plannerCompatibility?.summary().then(data=>{packagedCompatibility=data;drawPackagedCompatibility();}).catch(()=>{});window.addEventListener('planner-preferences-changed',drawPackagedCompatibility);
 })();

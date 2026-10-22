@@ -6,5 +6,6 @@
   "automaticAIOrders": false,
   "automaticSpawning": false,
   "automaticRemoval": false,
-  "manualApprovalRequestId": ""
+  "manualApprovalRequestId": "",
+  "automaticAllSupported": false
 }

@@ -12,23 +12,15 @@
       "resource": "{98225ED6D5F724D7}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_gunship_empty.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "f2809a2977cd6ca1ef7aed874ded65721ff1da7e2c0295f5ff9ba959c2891a8f",
-        "liftMetres": 40.43766784667969,
-        "travelMetres": 20.181640648627273,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 0
-      },
       "capacity": {
         "observedCargoSeats": 14,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -36,7 +28,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "USSR",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "f2809a2977cd6ca1ef7aed874ded65721ff1da7e2c0295f5ff9ba959c2891a8f",
+        "liftMetres": 40.43766784667969,
+        "travelMetres": 20.181640648627273,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 0
+      }
     },
     {
       "id": "vanilla-3c6b3ed0c3ac30d5",
@@ -45,23 +46,15 @@
       "resource": "{3C6B3ED0C3AC30D5}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_gunship_HE.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "7b9b815885887002b3d9dad3123f0e202826447a5d1fdb8344fc42f1e2c4f816",
-        "liftMetres": 40.40807342529297,
-        "travelMetres": 20.160156273652454,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 0
-      },
       "capacity": {
         "observedCargoSeats": 14,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -69,7 +62,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "USSR",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "7b9b815885887002b3d9dad3123f0e202826447a5d1fdb8344fc42f1e2c4f816",
+        "liftMetres": 40.40807342529297,
+        "travelMetres": 20.160156273652454,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 0
+      }
     },
     {
       "id": "vanilla-dbec63c9dee4358c",
@@ -78,23 +80,15 @@
       "resource": "{DBEC63C9DEE4358C}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_gunship_HEDP.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "18642a93c7ee40d0403304e95125c206d5b0daf4102cab787528a7714f865598",
-        "liftMetres": 40.4410400390625,
-        "travelMetres": 20.18457033612384,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 0
-      },
       "capacity": {
         "observedCargoSeats": 14,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -102,7 +96,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "USSR",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "18642a93c7ee40d0403304e95125c206d5b0daf4102cab787528a7714f865598",
+        "liftMetres": 40.4410400390625,
+        "travelMetres": 20.18457033612384,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 0
+      }
     },
     {
       "id": "vanilla-7bd282af716ed639",
@@ -111,23 +114,15 @@
       "resource": "{7BD282AF716ED639}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "3f1e79866d5cc9ccddd2916c51c9c382490085624150b48a509a8472553d7528",
-        "liftMetres": 40.44248962402344,
-        "travelMetres": 20.18652346112156,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 0
-      },
       "capacity": {
         "observedCargoSeats": 14,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -135,7 +130,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "USSR",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "3f1e79866d5cc9ccddd2916c51c9c382490085624150b48a509a8472553d7528",
+        "liftMetres": 40.44248962402344,
+        "travelMetres": 20.18652346112156,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 0
+      }
     },
     {
       "id": "vanilla-ab9ed3a33ee1b630",
@@ -144,23 +148,15 @@
       "resource": "{AB9ED3A33EE1B630}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_unarmed_civ_blue.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot deployment, then separately reviewed Pilot only flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "ab12dac8eb23cf7f3b00b789cc72beb0212654cbf8aff3d757619851ac443936",
-        "liftMetres": 40.54167938232422,
-        "travelMetres": 20.18652346112156,
-        "pilotRetained": true,
-        "passengersUnloaded": 0,
-        "delayedObservations": 8
-      },
       "capacity": {
         "observedCargoSeats": 15,
         "testedPassengers": 0
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -168,7 +164,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "CIV",
-      "crewOnly": true
+      "crewOnly": true,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "ab12dac8eb23cf7f3b00b789cc72beb0212654cbf8aff3d757619851ac443936",
+        "liftMetres": 40.54167938232422,
+        "travelMetres": 20.18652346112156,
+        "pilotRetained": true,
+        "passengersUnloaded": 0,
+        "delayedObservations": 8
+      }
     },
     {
       "id": "vanilla-8175fcadfa2fb904",
@@ -177,23 +182,15 @@
       "resource": "{8175FCADFA2FB904}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_unarmed_civ_red.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot deployment, then separately reviewed Pilot only flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "9877d29fb586c7431fb23dff941437174fdeab903b66fa396ca14fa47c872bc2",
-        "liftMetres": 40.42548370361328,
-        "travelMetres": 20.18652346112156,
-        "pilotRetained": true,
-        "passengersUnloaded": 0,
-        "delayedObservations": 8
-      },
       "capacity": {
         "observedCargoSeats": 15,
         "testedPassengers": 0
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -201,7 +198,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "CIV",
-      "crewOnly": true
+      "crewOnly": true,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "9877d29fb586c7431fb23dff941437174fdeab903b66fa396ca14fa47c872bc2",
+        "liftMetres": 40.42548370361328,
+        "travelMetres": 20.18652346112156,
+        "pilotRetained": true,
+        "passengersUnloaded": 0,
+        "delayedObservations": 8
+      }
     },
     {
       "id": "vanilla-df5ccb7c0ff049f4",
@@ -210,23 +216,15 @@
       "resource": "{DF5CCB7C0FF049F4}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_unarmed_transport.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": true,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "f386fd3ab12dda64caeb610181385723413d27d72bd66553593b0d8c9b6c30e9",
-        "liftMetres": 40.518310546875,
-        "travelMetres": 20.19042971111699,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 8
-      },
       "capacity": {
         "observedCargoSeats": 15,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -234,7 +232,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "USSR",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "f386fd3ab12dda64caeb610181385723413d27d72bd66553593b0d8c9b6c30e9",
+        "liftMetres": 40.518310546875,
+        "travelMetres": 20.19042971111699,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 8
+      }
     },
     {
       "id": "vanilla-bde43262fc05b4d7",
@@ -243,23 +250,15 @@
       "resource": "{BDE43262FC05B4D7}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed_gunship_empty_sharkNose.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "bb2a6bd81bb84980f60dd7753afc3539e5e1b5cd4e5ec1d44714f270b1517b6a",
-        "liftMetres": 40.496368408203125,
-        "travelMetres": 20.0478515625,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 0
-      },
       "capacity": {
         "observedCargoSeats": 6,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -267,7 +266,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "US",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "bb2a6bd81bb84980f60dd7753afc3539e5e1b5cd4e5ec1d44714f270b1517b6a",
+        "liftMetres": 40.496368408203125,
+        "travelMetres": 20.0478515625,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 0
+      }
     },
     {
       "id": "vanilla-137dcf41459a89be",
@@ -276,23 +284,15 @@
       "resource": "{137DCF41459A89BE}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed_gunship_empty.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "04db78a4b0739a410119c7cd9d37cf780d722f46b9579d5dd81582eaecd9bc11",
-        "liftMetres": 40.46479797363281,
-        "travelMetres": 20.048828130945946,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 0
-      },
       "capacity": {
         "observedCargoSeats": 6,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -300,7 +300,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "US",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "04db78a4b0739a410119c7cd9d37cf780d722f46b9579d5dd81582eaecd9bc11",
+        "liftMetres": 40.46479797363281,
+        "travelMetres": 20.048828130945946,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 0
+      }
     },
     {
       "id": "vanilla-350492be6f09a847",
@@ -309,23 +318,15 @@
       "resource": "{350492BE6F09A847}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed_gunship_HE_sharkNose.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "c2ddd9fb815af446b535d8299cfb8fdb8417b27a497f841b33684d564bb6e419",
-        "liftMetres": 40.3773250579834,
-        "travelMetres": 20.049804693445655,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 0
-      },
       "capacity": {
         "observedCargoSeats": 6,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -333,7 +334,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "US",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "c2ddd9fb815af446b535d8299cfb8fdb8417b27a497f841b33684d564bb6e419",
+        "liftMetres": 40.3773250579834,
+        "travelMetres": 20.049804693445655,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 0
+      }
     },
     {
       "id": "vanilla-21e9a875c0a3c409",
@@ -342,23 +352,15 @@
       "resource": "{21E9A875C0A3C409}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed_gunship_HE.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "960231cbafd3840f9714edbe4fb4f759252094eb59ceeb5ef2c333e6d3eadd43",
-        "liftMetres": 40.54369926452637,
-        "travelMetres": 20.0478515625,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 0
-      },
       "capacity": {
         "observedCargoSeats": 6,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -366,7 +368,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "US",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "960231cbafd3840f9714edbe4fb4f759252094eb59ceeb5ef2c333e6d3eadd43",
+        "liftMetres": 40.54369926452637,
+        "travelMetres": 20.0478515625,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 0
+      }
     },
     {
       "id": "vanilla-3133602b406d131c",
@@ -375,23 +386,15 @@
       "resource": "{3133602B406D131C}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed_gunship_HEDP_sharkNose.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "7f9ea827dc08624865f3a55600a5cac88b5c3bdcd2e0ae68d995ddfd78cad5bf",
-        "liftMetres": 40.48878479003906,
-        "travelMetres": 20.046875,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 0
-      },
       "capacity": {
         "observedCargoSeats": 6,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -399,7 +402,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "US",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "7f9ea827dc08624865f3a55600a5cac88b5c3bdcd2e0ae68d995ddfd78cad5bf",
+        "liftMetres": 40.48878479003906,
+        "travelMetres": 20.046875,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 0
+      }
     },
     {
       "id": "vanilla-cb4d4cf7e887b2d0",
@@ -408,23 +420,15 @@
       "resource": "{CB4D4CF7E887B2D0}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed_gunship_HEDP.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "b8918494d9ef49f4854568fdf06197d1035e04d8d5c4ad87fbacb40a28e47169",
-        "liftMetres": 40.534210205078125,
-        "travelMetres": 20.049804693445655,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 0
-      },
       "capacity": {
         "observedCargoSeats": 6,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -432,7 +436,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "US",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "b8918494d9ef49f4854568fdf06197d1035e04d8d5c4ad87fbacb40a28e47169",
+        "liftMetres": 40.534210205078125,
+        "travelMetres": 20.049804693445655,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 0
+      }
     },
     {
       "id": "vanilla-00bc1e407d536a34",
@@ -441,23 +454,15 @@
       "resource": "{00BC1E407D536A34}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed_sharkNose.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "0d976e9dc591e56ffd803bb90f830398c3195fea528ccb7217ea5cf409a214b8",
-        "liftMetres": 40.41514778137207,
-        "travelMetres": 20.049804693445655,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 0
-      },
       "capacity": {
         "observedCargoSeats": 6,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -465,7 +470,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "US",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "0d976e9dc591e56ffd803bb90f830398c3195fea528ccb7217ea5cf409a214b8",
+        "liftMetres": 40.41514778137207,
+        "travelMetres": 20.049804693445655,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 0
+      }
     },
     {
       "id": "vanilla-dddd9b51f1234df3",
@@ -474,23 +488,15 @@
       "resource": "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "e5f90830ce149fcd3dc4f8d0c4d616bedf6dfc6dc5a6b907f23be5dda0eda01d",
-        "liftMetres": 40.45968246459961,
-        "travelMetres": 20.049804693445655,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 0
-      },
       "capacity": {
         "observedCargoSeats": 6,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -498,7 +504,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "US",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "e5f90830ce149fcd3dc4f8d0c4d616bedf6dfc6dc5a6b907f23be5dda0eda01d",
+        "liftMetres": 40.45968246459961,
+        "travelMetres": 20.049804693445655,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 0
+      }
     },
     {
       "id": "vanilla-7a29940a71ef5f5c",
@@ -507,23 +522,15 @@
       "resource": "{7A29940A71EF5F5C}Prefabs/Vehicles/Helicopters/UH1H/UH1H_civ_livery_v1.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot deployment, then separately reviewed Pilot only flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "e8eb4960e864cc04eaac981febf6e93073169ca55f9231dc507fecccaa288385",
-        "liftMetres": 40.484195709228516,
-        "travelMetres": 20.046875,
-        "pilotRetained": true,
-        "passengersUnloaded": 0,
-        "delayedObservations": 8
-      },
       "capacity": {
         "observedCargoSeats": 8,
         "testedPassengers": 0
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -531,7 +538,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "CIV",
-      "crewOnly": true
+      "crewOnly": true,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "e8eb4960e864cc04eaac981febf6e93073169ca55f9231dc507fecccaa288385",
+        "liftMetres": 40.484195709228516,
+        "travelMetres": 20.046875,
+        "pilotRetained": true,
+        "passengersUnloaded": 0,
+        "delayedObservations": 8
+      }
     },
     {
       "id": "vanilla-eee291940a9da42a",
@@ -540,23 +556,15 @@
       "resource": "{EEE291940A9DA42A}Prefabs/Vehicles/Helicopters/UH1H/UH1H_sharkNose.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "1e13b8ec2360cdbdc52a37f6152785c30f6a977f3f9a69ed852d3b49f8ac06eb",
-        "liftMetres": 40.54549789428711,
-        "travelMetres": 20.0478515625,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 0
-      },
       "capacity": {
         "observedCargoSeats": 8,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -564,7 +572,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "US",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "1e13b8ec2360cdbdc52a37f6152785c30f6a977f3f9a69ed852d3b49f8ac06eb",
+        "liftMetres": 40.54549789428711,
+        "travelMetres": 20.0478515625,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 0
+      }
     },
     {
       "id": "vanilla-70baeefc2d3fee64",
@@ -573,23 +590,15 @@
       "resource": "{70BAEEFC2D3FEE64}Prefabs/Vehicles/Helicopters/UH1H/UH1H.et",
       "addonId": "58D0FB3206B6F859",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": true,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "4fe4fe9f115826fd1bba5a56474ff5f25f0602ef0e9ca9c4cca42b2193d3fd7f",
-        "liftMetres": 40.54263877868652,
-        "travelMetres": 20.047851568446234,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 8
-      },
       "capacity": {
         "observedCargoSeats": 8,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -597,7 +606,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "US",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "4fe4fe9f115826fd1bba5a56474ff5f25f0602ef0e9ca9c4cca42b2193d3fd7f",
+        "liftMetres": 40.54263877868652,
+        "travelMetres": 20.047851568446234,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 8
+      }
     },
     {
       "id": "command-h60-armed",
@@ -606,23 +624,15 @@
       "resource": "{48F288F5BFF10D8B}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_armed.et",
       "addonId": "60ED3CC6E7E40221",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "97da4e0944627328143e5c15abd04aada545f482282ba3e725a2cb2a9f907393",
-        "liftMetres": 40.5435676574707,
-        "travelMetres": 20.049806209588493,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 8
-      },
       "capacity": {
         "observedCargoSeats": 11,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -630,7 +640,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "US",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "97da4e0944627328143e5c15abd04aada545f482282ba3e725a2cb2a9f907393",
+        "liftMetres": 40.5435676574707,
+        "travelMetres": 20.049806209588493,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 8
+      }
     },
     {
       "id": "command-h60-medical",
@@ -639,23 +658,15 @@
       "resource": "{847A4C8E73A7C186}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_Medical.et",
       "addonId": "60ED3CC6E7E40221",
       "workflow": "Reviewed aircraft + AI pilot + four-passenger deployment, then separately reviewed flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "134e409b3690eff5d2e59c2203337f1f9793673d12cab178500dad9d462dcc76",
-        "liftMetres": 40.49345016479492,
-        "travelMetres": 20.122072024624185,
-        "pilotRetained": true,
-        "passengersUnloaded": 4,
-        "delayedObservations": 8
-      },
       "capacity": {
         "observedCargoSeats": 6,
         "testedPassengers": 4
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -663,7 +674,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "US",
-      "crewOnly": false
+      "crewOnly": false,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "134e409b3690eff5d2e59c2203337f1f9793673d12cab178500dad9d462dcc76",
+        "liftMetres": 40.49345016479492,
+        "travelMetres": 20.122072024624185,
+        "pilotRetained": true,
+        "passengersUnloaded": 4,
+        "delayedObservations": 8
+      }
     },
     {
       "id": "command-h60-quad-hydra",
@@ -672,23 +692,15 @@
       "resource": "{1529FD2C6A8162A1}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_Pylon_Quad_Hydra.et",
       "addonId": "60ED3CC6E7E40221",
       "workflow": "Reviewed aircraft + AI pilot deployment, then separately reviewed Pilot only flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "4b5eef41b1471f36973f9524a36120bcd9dc363741e8fdbf831f0cd74ca13246",
-        "liftMetres": 40.42033386230469,
-        "travelMetres": 20.046875,
-        "pilotRetained": true,
-        "passengersUnloaded": 0,
-        "delayedObservations": 8
-      },
       "capacity": {
         "observedCargoSeats": 0,
         "testedPassengers": 0
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -696,7 +708,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "US",
-      "crewOnly": true
+      "crewOnly": true,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "4b5eef41b1471f36973f9524a36120bcd9dc363741e8fdbf831f0cd74ca13246",
+        "liftMetres": 40.42033386230469,
+        "travelMetres": 20.046875,
+        "pilotRetained": true,
+        "passengersUnloaded": 0,
+        "delayedObservations": 8
+      }
     },
     {
       "id": "command-h60-supply",
@@ -705,23 +726,15 @@
       "resource": "{47F2921E0DACA300}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_Supply.et",
       "addonId": "60ED3CC6E7E40221",
       "workflow": "Reviewed aircraft + AI pilot deployment, then separately reviewed Pilot only flight.",
-      "status": "short-native-flight-verified-experimental",
+      "status": "configured-experimental",
       "enabledByThisCatalog": false,
       "historicalShortProof": false,
-      "currentReceipt": {
-        "kind": "isolated-native-short-flight",
-        "sha256": "002089e48205eb9963e38032f6b0cdf7a6ba7564a554c5f4e5b383510acd0617",
-        "liftMetres": 40.5321159362793,
-        "travelMetres": 20.04687500594653,
-        "pilotRetained": true,
-        "passengersUnloaded": 0,
-        "delayedObservations": 8
-      },
       "capacity": {
         "observedCargoSeats": 0,
         "testedPassengers": 0
       },
       "limitations": [
+        "57/66 m/s targets are configuration changes only; no physical high-speed test performed.",
         "Experimental; short isolated native check only.",
         "Flight assistance does not provide targeting or weapons operation.",
         "No guaranteed tree or dynamic obstacle avoidance.",
@@ -729,7 +742,16 @@
       ],
       "runtimeAvailable": true,
       "testCrewFaction": "US",
-      "crewOnly": true
+      "crewOnly": true,
+      "historicalLowSpeedReceipt": {
+        "kind": "isolated-native-short-flight",
+        "sha256": "002089e48205eb9963e38032f6b0cdf7a6ba7564a554c5f4e5b383510acd0617",
+        "liftMetres": 40.5321159362793,
+        "travelMetres": 20.04687500594653,
+        "pilotRetained": true,
+        "passengersUnloaded": 0,
+        "delayedObservations": 8
+      }
     }
   ],
   "unavailable": [
@@ -758,5 +780,10 @@
       "status": "absent-or-unindexed",
       "action": "Install and index the exact aircraft before profile work; support is not inferred from a similar name."
     }
-  ]
+  ],
+  "speedConfiguration": {
+    "defaultMps": 57,
+    "fastMps": 66,
+    "evidence": "Configuration only. Higher speeds not physically tested; previous receipts are historical low-speed evidence."
+  }
 }

@@ -1,3 +1,5 @@
+> Operator update: use COMMAND 1.1.1 and bridge 0.15.1 together. Shared speed acceptance includes57/66 m/s; no higher-speed physical validation is claimed.
+
 # COMMAND HTTPS relay — 1.0.0 (20 October flight refresh) — experimental live integration
 
 Use with stable planner 1.0.0 (20 October flight refresh) and experimental bridge 0.13.1. HTTP polling is implemented; WebSockets, process-restart persistence and multi-admin roles are not. Sessions and queues live in memory. Closing a remote dashboard is different from ending/revoking its session.

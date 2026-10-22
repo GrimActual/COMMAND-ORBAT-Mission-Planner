@@ -149,32 +149,118 @@ class JSOC_ORBAT_HostGM
     string Status = "No GM request loaded";
     protected string m_ManualApprovalId;
     void ReviewManualRequest(string requestId) { m_ManualApprovalId = requestId; }
+    protected bool m_AutoAll;
+    protected bool m_ApprovalPolicyDirty;
+    protected int m_ApprovalPolicyRevision;
+    protected int m_ApprovalPolicyPosted;
     protected bool m_AutoAI;
     protected bool m_AutoSpawn;
     protected bool m_AutoRemove;
     void SetApprovalPolicy(bool ai, bool spawning, bool removal)
     {
         if (!CanSetApprovalPolicy()) return;
-        if (m_AutoAI == ai && m_AutoSpawn == spawning && m_AutoRemove == removal) return;
-        m_AutoAI = ai; m_AutoSpawn = spawning; m_AutoRemove = removal; m_ControlStatusDirty = true; m_ControlStatusRevision++;
+        if (!m_AutoAll && m_AutoAI == ai && m_AutoSpawn == spawning && m_AutoRemove == removal) return;
+        m_AutoAll = false;
+        m_AutoAI = ai; m_AutoSpawn = spawning; m_AutoRemove = removal;
+        MarkApprovalPolicyChanged();
         // Publish directly from the host action, including while the local game is paused.
         // Busy operations retain the dirty revision for the existing maintenance path.
         if (!m_Busy && !m_Transport && !m_Driving && !m_Healing && !m_RestoringSnapshot && !m_OccupiedRequest) Poll();
     }
+    protected void MarkApprovalPolicyChanged()
+    {
+        m_ControlStatusDirty = true; m_ControlStatusRevision++;
+        m_ApprovalPolicyDirty = true; m_ApprovalPolicyRevision++;
+        PublishApprovalPolicy();
+    }
+    bool FullApprovalAvailable() { return CanSetApprovalPolicy() && m_CapabilityMode >= 16 && m_OrdersAllowed; }
+    bool AutoAll() { return m_AutoAll; }
+    void SetFullApprovalPolicy(bool enabled)
+    {
+        if (enabled && !FullApprovalAvailable()) return;
+        if (!CanSetApprovalPolicy() || m_AutoAll == enabled) return;
+        m_AutoAll = enabled;
+        MarkApprovalPolicyChanged();
+    }
+    // Separate policy publication works while a timed operation owns the execution slot.
+    // It never approves, cancels or replays a request.
+    protected void PublishApprovalPolicy()
+    {
+        if (!m_ApprovalPolicyDirty || !FullApprovalAvailable() || m_Busy) return;
+        m_ApprovalPolicyPosted = m_ApprovalPolicyRevision;
+        Post("policy",string.Format("{\"token\":\"%1\",\"approvalPolicy\":%2}",m_Code,ApprovalPolicyJson()));
+    }
     bool CanSetApprovalPolicy() { return Replication.IsServer() && IsPaired() && m_CapabilityMode >= 14; }
-    bool ApprovalPolicyPending() { return m_ControlStatusDirty; }
+    bool ApprovalPolicyPending() {
+        if (m_CapabilityMode >= 16)
+        {
+            return m_ApprovalPolicyDirty;
+        }
+        return m_ControlStatusDirty;
+    }
     bool AutoAI() { return m_AutoAI; }
     bool AutoSpawn() { return m_AutoSpawn; }
     bool AutoRemove() { return m_AutoRemove; }
-    void DisableAutomatic() { m_AutoAI = false; m_AutoSpawn = false; m_AutoRemove = false; }
+    void DisableAutomatic() { m_AutoAll = false; m_AutoAI = false; m_AutoSpawn = false; m_AutoRemove = false; m_ApprovalPolicyDirty = false; m_ApprovalPolicyRevision = 0; m_ApprovalPolicyPosted = 0; }
     bool IsPaired() { return m_Context && !m_Code.IsEmpty(); }
     protected bool AutomaticEligible(string kind)
     {
-        if (m_CapabilityMode < 14 || !m_OrdersAllowed) return false;
-        if (kind == "spawn") return m_AutoSpawn;
-        if (kind == "remove") return m_AutoRemove;
-        if (SnapshotKind(kind)) return false;
-        return m_AutoAI && (kind.IndexOf("ai-") == 0 || kind == "vehicle-inspect" || kind == "vehicle-route" || kind == "convoy-attach" || kind == "convoy-detach");
+        if (m_CapabilityMode < 14 || !m_OrdersAllowed || ApprovalPolicyPending()) { return false; }
+        if (m_AutoAll && FullApprovalAvailable())
+        {
+            if (kind == "spawn") { return true; }
+            if (kind == "remove") { return true; }
+            if (kind == "ai-diagnose") { return true; }
+            if (kind == "ai-move") { return true; }
+            if (kind == "ai-hold") { return true; }
+            if (kind == "ai-defend") { return true; }
+            if (kind == "ai-halt") { return true; }
+            if (kind == "ai-route") { return true; }
+            if (kind == "ai-recruit") { return true; }
+            if (kind == "ai-release") { return true; }
+            if (kind == "ai-follow") { return true; }
+            if (kind == "ai-formation") { return true; }
+            if (kind == "ai-stance") { return true; }
+            if (kind == "ai-combat-mode") { return true; }
+            if (kind == "vehicle-inspect") { return true; }
+            if (kind == "ai-embark") { return true; }
+            if (kind == "ai-dismount") { return true; }
+            if (kind == "ai-heal") { return true; }
+            if (kind == "vehicle-route") { return true; }
+            if (kind == "convoy-attach") { return true; }
+            if (kind == "convoy-detach") { return true; }
+            if (kind == "scenario-save-plan") { return true; }
+            if (kind == "scenario-save-current") { return true; }
+            if (kind == "scenario-review") { return true; }
+            if (kind == "scenario-restore") { return true; }
+            if (kind == "logistics-refuel") { return true; }
+            if (kind == "helicopter-insert") { return true; }
+            return false;
+        }
+        if (kind == "spawn") { return m_AutoSpawn; }
+        if (kind == "remove") { return m_AutoRemove; }
+        if (SnapshotKind(kind)) { return false; }
+        if (!m_AutoAI) { return false; }
+            if (kind == "ai-diagnose") { return true; }
+            if (kind == "ai-move") { return true; }
+            if (kind == "ai-hold") { return true; }
+            if (kind == "ai-defend") { return true; }
+            if (kind == "ai-halt") { return true; }
+            if (kind == "ai-route") { return true; }
+            if (kind == "ai-recruit") { return true; }
+            if (kind == "ai-release") { return true; }
+            if (kind == "ai-follow") { return true; }
+            if (kind == "ai-formation") { return true; }
+            if (kind == "ai-stance") { return true; }
+            if (kind == "ai-combat-mode") { return true; }
+            if (kind == "vehicle-inspect") { return true; }
+            if (kind == "ai-embark") { return true; }
+            if (kind == "ai-dismount") { return true; }
+            if (kind == "ai-heal") { return true; }
+            if (kind == "vehicle-route") { return true; }
+            if (kind == "convoy-attach") { return true; }
+            if (kind == "convoy-detach") { return true; }
+        return false;
     }
     protected string ApprovalPolicyJson()
     {
@@ -182,9 +268,15 @@ class JSOC_ORBAT_HostGM
         if (m_AutoAI) ai = "true";
         if (m_AutoSpawn) spawning = "true";
         if (m_AutoRemove) removal = "true";
+        if (m_CapabilityMode >= 16)
+        {
+            string allSupported = "false";
+            if (m_AutoAll) allSupported = "true";
+            return string.Format("{\"aiOrders\":%1,\"spawning\":%2,\"removal\":%3,\"allSupported\":%4}",ai,spawning,removal,allSupported);
+        }
         return string.Format("{\"aiOrders\":%1,\"spawning\":%2,\"removal\":%3}",ai,spawning,removal);
     }
-    void Pair(string endpoint, string code) { Stop(); JSOC_ORBAT_HostGM other; if (s_PairOwners.Find(code,other) && other && other != this && other.IsPaired()) { Status = "This pairing already has a native GM owner"; return; } s_PairOwners.Set(code,this); m_LegacyRelay = false; m_OrdersAllowed = false; m_CapabilityMode = 15; m_Context = GetGame().GetRestApi().GetContext(endpoint); if (m_Context) m_Context.SetTimeout(5); m_Code = code; GetGame().GetCallqueue().CallLater(MaintainControl,1000,true); }
+    void Pair(string endpoint, string code) { Stop(); JSOC_ORBAT_HostGM other; if (s_PairOwners.Find(code,other) && other && other != this && other.IsPaired()) { Status = "This pairing already has a native GM owner"; return; } s_PairOwners.Set(code,this); m_LegacyRelay = false; m_OrdersAllowed = false; m_CapabilityMode = 16; m_Context = GetGame().GetRestApi().GetContext(endpoint); if (m_Context) m_Context.SetTimeout(5); m_Code = code; GetGame().GetCallqueue().CallLater(MaintainControl,1000,true); }
     void Stop() { JSOC_ORBAT_HostGM current; if (s_PairOwners.Find(m_Code,current) && current == this) s_PairOwners.Remove(m_Code); m_ManualApprovalId = ""; DisableAutomatic(); m_Outcome = ""; m_ControlStatusDirty = false; m_ControlStatusRevision = 0; m_ControlStatusPosted = 0; StopHealing(); StopVehicleControl(); if (m_RestoringSnapshot) SnapshotRollback("Pairing stopped during restore; partial batch removed"); m_SnapshotReviews.Clear(); RollbackOccupied(); CancelTransport(); if (GetGame()) GetGame().GetCallqueue().Remove(MaintainControl); array<string> releasedLeases = {}; foreach (string releaseKey, JSOC_ORBAT_GMSpawnGroup releaseBatch : m_Owned) { releaseBatch.RetiredPairing = true; ClearPreferences(releaseBatch); ClearVehicleBindings(releaseBatch); if (releaseBatch.Recruited || releaseBatch.Follows.Count() > 0) ClearControlledOrders(releaseBatch); if (releaseBatch.Recruited) { releaseBatch.ReleaseCharacters(); releasedLeases.Insert(releaseKey); } } foreach (string retiredLease : releasedLeases) m_Owned.Remove(retiredLease); if (m_Callback) { m_Callback.Stopped = true; m_Callback.Owner = null; } m_Callback = null; m_Context = null; m_Code = ""; m_Busy = false; m_OrdersAllowed = false; Pending = null; }
     void Post(string action, string body)
     {
@@ -251,7 +343,8 @@ class JSOC_ORBAT_HostGM
                 if (!retired.IsEmpty()) retired += ",";
                 retired += "\"" + leaseId + "\"";
             }
-            if (m_CapabilityMode >= 15)Post("poll",string.Format("{\"token\":\"%1\",\"approvalPolicy\":%4,\"revokedTargets\":[%2],\"targetStates\":%3,\"capabilities\":[\"ai-orders-v1\",\"ai-tactical-v1\",\"ai-routes-v1\",\"ai-squad-control-v1\",\"ai-follow-v1\",\"ai-formation-v1\",\"ai-stance-v1\",\"ai-fire-policy-v1\",\"vehicle-inspection-v1\",\"ai-transport-v1\",\"scenario-snapshots-v1\",\"vehicle-control-v1\",\"convoy-v1\",\"ai-healing-v1\",\"ai-control-status-v1\",\"entity-control-v1\",\"occupied-spawn-v1\"]}",m_Code,retired,TargetStatesJson(),ApprovalPolicyJson()));
+            if (m_CapabilityMode >= 16)Post("poll",string.Format("{\"token\":\"%1\",\"approvalPolicy\":%4,\"revokedTargets\":[%2],\"targetStates\":%3,\"capabilities\":[\"ai-orders-v1\",\"ai-tactical-v1\",\"ai-routes-v1\",\"ai-squad-control-v1\",\"ai-follow-v1\",\"ai-formation-v1\",\"ai-stance-v1\",\"ai-fire-policy-v1\",\"vehicle-inspection-v1\",\"ai-transport-v1\",\"scenario-snapshots-v1\",\"vehicle-control-v1\",\"convoy-v1\",\"ai-healing-v1\",\"ai-control-status-v1\",\"entity-control-v1\",\"occupied-spawn-v1\",\"approval-all-supported-v1\"]}",m_Code,retired,TargetStatesJson(),ApprovalPolicyJson()));
+            else if (m_CapabilityMode >= 15)Post("poll",string.Format("{\"token\":\"%1\",\"approvalPolicy\":%4,\"revokedTargets\":[%2],\"targetStates\":%3,\"capabilities\":[\"ai-orders-v1\",\"ai-tactical-v1\",\"ai-routes-v1\",\"ai-squad-control-v1\",\"ai-follow-v1\",\"ai-formation-v1\",\"ai-stance-v1\",\"ai-fire-policy-v1\",\"vehicle-inspection-v1\",\"ai-transport-v1\",\"scenario-snapshots-v1\",\"vehicle-control-v1\",\"convoy-v1\",\"ai-healing-v1\",\"ai-control-status-v1\",\"entity-control-v1\",\"occupied-spawn-v1\"]}",m_Code,retired,TargetStatesJson(),ApprovalPolicyJson()));
             else if (m_CapabilityMode >= 14)Post("poll",string.Format("{\"token\":\"%1\",\"approvalPolicy\":%4,\"revokedTargets\":[%2],\"targetStates\":%3,\"capabilities\":[\"ai-orders-v1\",\"ai-tactical-v1\",\"ai-routes-v1\",\"ai-squad-control-v1\",\"ai-follow-v1\",\"ai-formation-v1\",\"ai-stance-v1\",\"ai-fire-policy-v1\",\"vehicle-inspection-v1\",\"ai-transport-v1\",\"scenario-snapshots-v1\",\"vehicle-control-v1\",\"convoy-v1\",\"ai-healing-v1\",\"ai-control-status-v1\",\"entity-control-v1\"]}",m_Code,retired,TargetStatesJson(),ApprovalPolicyJson()));
             else if (m_CapabilityMode >= 13)Post("poll",string.Format("{\"token\":\"%1\",\"revokedTargets\":[%2],\"targetStates\":%3,\"capabilities\":[\"ai-orders-v1\",\"ai-tactical-v1\",\"ai-routes-v1\",\"ai-squad-control-v1\",\"ai-follow-v1\",\"ai-formation-v1\",\"ai-stance-v1\",\"ai-fire-policy-v1\",\"vehicle-inspection-v1\",\"ai-transport-v1\",\"scenario-snapshots-v1\",\"vehicle-control-v1\",\"convoy-v1\",\"ai-healing-v1\",\"ai-control-status-v1\",\"entity-control-v1\"]}",m_Code,retired,TargetStatesJson()));
             else Post("poll",string.Format("{\"token\":\"%1\",\"revokedTargets\":[%2],\"capabilities\":[\"ai-orders-v1\",\"ai-tactical-v1\",\"ai-routes-v1\",\"ai-squad-control-v1\",\"ai-follow-v1\",\"ai-formation-v1\",\"ai-stance-v1\",\"ai-fire-policy-v1\",\"vehicle-inspection-v1\",\"ai-transport-v1\",\"scenario-snapshots-v1\",\"vehicle-control-v1\",\"convoy-v1\",\"ai-healing-v1\",\"ai-control-status-v1\"]}",m_Code,retired));
@@ -343,7 +436,7 @@ class JSOC_ORBAT_HostGM
     void Complete(string action, int code, string data)
     {
         m_Busy = false;
-        if (action == "poll" && code == 409 && !m_LegacyRelay) { m_CapabilityMode--; m_LegacyRelay = m_CapabilityMode <= 0; m_OrdersAllowed = false; Poll(); return; }
+        if (action == "poll" && code == 409 && !m_LegacyRelay) { if (m_CapabilityMode >= 16) { m_AutoAll = false; m_ApprovalPolicyDirty = false; m_Outcome = "Full auto-approval unavailable on this relay; Custom/manual policy retained."; } m_CapabilityMode--; m_LegacyRelay = m_CapabilityMode <= 0; m_OrdersAllowed = false; Poll(); return; }
         if (code == 401 || code == 423) { Stop(); Status = "Pairing revoked; recruited control and follow orders released"; return; }
         if (code != 200)
         {
@@ -357,7 +450,13 @@ class JSOC_ORBAT_HostGM
             else Status = "GM relay request failed. Check the paired connection and try again.";
             return;
         }
-        if (action == "poll" && !m_LegacyRelay) { m_OrdersAllowed = true; if (m_ControlStatusPosted == m_ControlStatusRevision) m_ControlStatusDirty = false; }
+        if (action == "policy")
+        {
+            if (m_ApprovalPolicyPosted == m_ApprovalPolicyRevision) m_ApprovalPolicyDirty = false;
+            PublishApprovalPolicy();
+            return;
+        }
+        if (action == "poll" && !m_LegacyRelay) { m_OrdersAllowed = true; if (m_ControlStatusPosted == m_ControlStatusRevision) { m_ControlStatusDirty = false; m_ApprovalPolicyDirty = false; } }
         // A second host click may have changed policy while this poll was in flight.
         // Publish the latest revision before auto-approving against the older acknowledgement.
         if (action == "poll" && m_CapabilityMode >= 14 && m_ControlStatusDirty && !m_Transport && !m_Driving && !m_Healing && !m_RestoringSnapshot && !m_OccupiedRequest) { Poll(); return; }
@@ -397,6 +496,8 @@ class JSOC_ORBAT_HostGM
         if (record.phase == "pending" && record.request.requestId == m_ManualApprovalId && CanApprove()) { Approve(); return; }
         if (record.phase == "pending" && CanApprove() && AutomaticEligible(record.request.kind)) { Approve(true); return; }
         if (record.request.kind == "ai-move" || record.request.kind == "ai-hold" || record.request.kind == "ai-defend" || record.request.kind == "ai-halt" || record.request.kind == "ai-route" || record.request.kind == "ai-recruit" || record.request.kind == "ai-release" || record.request.kind == "ai-follow" || record.request.kind == "ai-formation" || record.request.kind == "ai-stance" || record.request.kind == "ai-combat-mode") Status = "Pending infantry AI order. Review target and waypoint before approving.";
+        else if (record.request.kind == "helicopter-insert") Status = "Pending helicopter flight. Review aircraft, crew, route and ending action before approving.";
+        else if (SnapshotKind(record.request.kind)) Status = "Pending server snapshot operation: " + record.request.kind + ". Review the snapshot details before approving.";
         else Status = string.Format("Pending %1 request %2 (%3 units). Review before approving.", record.request.kind, record.request.requestId, record.request.entities.Count());
     }
     protected bool SafeKey(string value)
@@ -420,7 +521,6 @@ class JSOC_ORBAT_HostGM
         if (m_OccupiedRequest) return;
         string cached;
         if (m_Results.Find(request.requestId, cached)) { Post("result", cached); return; }
-        if (m_Results.Count() >= 100) { Status = "Scene GM command budget reached"; return; }
         if (request.kind == "ai-heal") { BeginHealing(request); return; }
         if (COMMAND_ORBAT_VehicleControlLease.Kind(request.kind)) { ExecuteVehicleControl(request); return; }
         if (SnapshotKind(request.kind)) { ExecuteSnapshot(request); return; }
@@ -772,7 +872,8 @@ class JSOC_ORBAT_HostGM
     }
     protected void SyncControlStatus()
     {
-        if ((m_ControlStatusDirty || m_AutoAI || m_AutoSpawn || m_AutoRemove) && m_CapabilityMode >= 12 && !m_Busy && !m_Transport && !m_Driving && !m_Healing && !m_RestoringSnapshot && !m_OccupiedRequest) Poll();
+        if (m_ApprovalPolicyDirty && FullApprovalAvailable() && !m_Busy) { PublishApprovalPolicy(); return; }
+        if ((m_ControlStatusDirty || m_AutoAll || m_AutoAI || m_AutoSpawn || m_AutoRemove) && m_CapabilityMode >= 12 && !m_Busy && !m_Transport && !m_Driving && !m_Healing && !m_RestoringSnapshot && !m_OccupiedRequest) Poll();
     }
     protected void Recruit(JSOC_ORBAT_GMRequest request)
     {

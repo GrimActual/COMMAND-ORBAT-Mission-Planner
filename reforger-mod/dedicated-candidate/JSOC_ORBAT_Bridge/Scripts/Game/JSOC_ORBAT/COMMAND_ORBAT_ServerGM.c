@@ -13,7 +13,7 @@ class COMMAND_ORBAT_ServerGM
         if (!Replication.IsServer()) return;
         JsonLoadContext json = new JsonLoadContext(); bool enabled;
         if (!json.LoadFromFile("$profile:COMMAND_ORBAT_ServerGM.json") || !json.ReadValue("enabled",enabled) || !enabled) { Disable(); return; }
-        string endpoint, code, approvalPairingCode; bool ai, spawning, removal;
+        string endpoint, code, approvalPairingCode; bool ai, spawning, removal, allSupported;
         if (!json.ReadValue("endpoint",endpoint) || !json.ReadValue("pairingCode",code) || !json.ReadValue("approvalPairingCode",approvalPairingCode) || !json.ReadValue("automaticAIOrders",ai) || !json.ReadValue("automaticSpawning",spawning) || !json.ReadValue("automaticRemoval",removal)) { Disable(); return; }
         if (code.Length() != 32 || endpoint.Length() > 240 || endpoint.IndexOf("?") >= 0 || endpoint.IndexOf("#") >= 0 || endpoint.IndexOf("@") >= 0) { Disable(); return; }
         string hex = "0123456789abcdef";
@@ -43,7 +43,12 @@ class COMMAND_ORBAT_ServerGM
             m_GM.Pair(endpoint,code); m_LastPairing = code; m_LastEndpoint = endpoint;
         }
         // The administrator must explicitly bind automatic permissions to this exact pairing.
-        if (approvalPairingCode == code) m_GM.SetApprovalPolicy(ai,spawning,removal);
+        json.ReadValue("automaticAllSupported",allSupported);
+        if (approvalPairingCode == code)
+        {
+            if (allSupported) m_GM.SetFullApprovalPolicy(true);
+            else m_GM.SetApprovalPolicy(ai,spawning,removal);
+        }
         else m_GM.SetApprovalPolicy(false,false,false);
         if (!m_GM.IsPaired()) { Disable(); return; }
         // A review file is local administrator information, never a replicated secret.

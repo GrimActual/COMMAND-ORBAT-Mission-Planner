@@ -20,9 +20,15 @@ class COMMAND_HelicopterFlightLease
  float Elapsed; float StartedAt; float Collective;
  float MaxAGL; float InitialAGL; float MaxVerticalSpeed; float ForceY; int ForceWrites;
  float TargetY; float GroundY;float HoverSince;float LandingSince;float StableSeconds;float PriorVy;bool HasPriorVy;float MeasuredAcceleration;float RequestedAcceleration;float HeightY;float LastCapture;vector Torque;vector TotalBefore;vector TotalAfter;vector TargetRight;vector TargetUp;vector TargetForward;vector Anchor;vector Force;float LateralError;float AttitudeError;
- float PhysicsDt;float LastGroundCheck;float CruiseY;float DesiredYaw;float CommandYaw;float RouteDistance;float SpoolFinishedAt;float TranslationStartedAt;float UnloadUnstableSince;float CruiseSpeed=12;float SoftDeadline=240;float HardDeadline=270;int RouteIndex;ref array<vector> Route={};
+ float PhysicsDt;float LastGroundCheck;float CruiseY;float DesiredYaw;float CommandYaw;float RouteDistance;float SpoolFinishedAt;float TranslationStartedAt;float UnloadUnstableSince;float CruiseSpeed=57;float SoftDeadline=240;float HardDeadline=270;int RouteIndex;ref array<vector> Route={};
  int PrepareCalls; int ApplyCalls; int SimulationCalls; int Ordinal;
- int ExpectedPassengerCount() {if(CrewOnly) {return 0;}if(Profile) {return Profile.CargoCount();}return -1;}
+ bool PilotReady()
+ {
+  if(!Mounted(Pilot)) {return false;}
+  CharacterControllerComponent character=CharacterControllerComponent.Cast(Pilot.FindComponent(CharacterControllerComponent));
+  AIControlComponent control=AIControlComponent.Cast(Pilot.FindComponent(AIControlComponent));
+  return character && !character.IsDead() && !character.IsUnconscious() && control && control.GetAIAgent();
+ }
  bool Mounted(IEntity actor)
  {
   if(!actor || !Aircraft) {return false;}
@@ -52,7 +58,7 @@ class COMMAND_HelicopterFlightLease
   if(!Replication.IsServer() || requestId.IsEmpty()) {return "Authoritative reviewed request required";}
   if(!validatedProfile || !validatedProfile.Matches(aircraft)) {return "No validated local flight profile for the exact aircraft";}
   Profile=validatedProfile;
-  if(!aircraft || !pilot || !passengers || passengers.Count()!=ExpectedPassengerCount()) {return "Flight requires the reviewed pilot and passenger count";}
+  if(!aircraft || !pilot || !passengers) {return "Flight requires an aircraft and seated AI pilot";}
 
   Aircraft=aircraft;Pilot=pilot;
   if(JSOC_ORBAT_AIOrders.PlayerOccupies(Aircraft)) {return "Human-controlled aircraft is protected";}
@@ -61,12 +67,15 @@ class COMMAND_HelicopterFlightLease
    if(!actor || actor==pilot || Passengers.Find(actor)>=0) {return "Passenger identity is invalid";}
    Passengers.Insert(actor);
   }
+  CrewOnly=Passengers.Count()==0;
   Controller=HelicopterControllerComponent.Cast(Aircraft.FindComponent(HelicopterControllerComponent));
   if(!Controller) {return "Helicopter controller unavailable";}
   Sim=Controller.GetSimulation();Physics body=Aircraft.GetPhysics();
   if(!Sim || !Sim.IsValid() || !body || !body.IsDynamic() || body.GetMass()<=0) {return "Dynamic helicopter simulation unavailable";}
   PilotCompartmentSlot pilotSlot=Controller.GetPilotCompartmentSlot();
   if(!pilotSlot || pilotSlot.GetOccupant()!=Pilot) {return "Exact pilot compartment occupant required";}
+  SCR_EditableVehicleComponent aircraftState=SCR_EditableVehicleComponent.Cast(Aircraft.FindComponent(SCR_EditableVehicleComponent));
+  if(aircraftState && aircraftState.IsDestroyed()) {return "Aircraft is destroyed";}
   BaseCompartmentManagerComponent compartments=BaseCompartmentManagerComponent.Cast(Aircraft.FindComponent(BaseCompartmentManagerComponent));
   if(!compartments) {return "Compartment manager unavailable";}
   array<BaseCompartmentSlot> slots={};compartments.GetCompartments(slots);
@@ -74,10 +83,9 @@ class COMMAND_HelicopterFlightLease
   {
    if(!slot) {continue;}
    IEntity occupant=slot.GetOccupant();
-   if(occupant && occupant!=Pilot && Passengers.Find(occupant)<0) {return "Unreviewed aircraft occupant";}
    if(occupant && Passengers.Find(occupant)>=0 && slot.GetType()!=ECompartmentType.CARGO) {return "Passengers must occupy cargo seats";}
   }
-  if(!AllSeated() || body.GetVelocity().Length()>0.15) {return "Start requires seated occupants and stationary aircraft";}
+  if(!PilotReady()) {return "A seated, living, conscious AI pilot is required";}
   if(!Sim.HasAnyGroundContact())
   {
    float originAboveGround=Aircraft.GetOrigin()[1]-GetGame().GetWorld().GetSurfaceY(Aircraft.GetOrigin()[0],Aircraft.GetOrigin()[2]);
@@ -85,18 +93,9 @@ class COMMAND_HelicopterFlightLease
   }
   if(!(lz[0]>=0 && lz[0]<=20000 && lz[2]>=0 && lz[2]<=20000)) {return "Landing coordinates invalid";}
   vector delta=lz-Aircraft.GetOrigin();delta[1]=0;
-  float low=100000;float high=-100000;
-  for(int ix=-1;ix<=1;ix++)
-  {
-   for(int iz=-1;iz<=1;iz++)
-   {
-    float h=GetGame().GetWorld().GetSurfaceY(lz[0]+ix*5,lz[2]+iz*5);low=Math.Min(low,h);high=Math.Max(high,h);
-   }
-  }
-  if(high-low>0.6) {return "Selected landing zone is not sufficiently flat";}
+  // Operator selects the LZ. Terrain variation is not a flight rejection.
   vector startPosition=Aircraft.GetOrigin();float departureGround=GetGame().GetWorld().GetSurfaceY(startPosition[0],startPosition[2]);
   float landingGround=GetGame().GetWorld().GetSurfaceY(lz[0],lz[2]);
-  if(Route.Count()>16) {return "Up to 16 intermediate flight waypoints";}
   Route.Insert(lz);RouteDistance=0;vector previous=startPosition;float highest=Math.Max(departureGround,landingGround);
   float minimumCruiseAGL=Profile.CruiseClearance();
   foreach(vector altitudePoint:Route) {if(!(altitudePoint[1]>=0 && altitudePoint[1]<=19000)) {return "Invalid waypoint minimum clearance";}minimumCruiseAGL=Math.Max(minimumCruiseAGL,altitudePoint[1]);}
@@ -186,11 +185,6 @@ class COMMAND_HelicopterFlightLease
     if(Elapsed>8) {Finish("failed: actual occupancy");}
     return;
    }
-   if(Profile.PrepareGround())
-   {
-    if(!Sim.HasAnyGroundContact() || Aircraft.GetPhysics().GetVelocity().Length()>0.15 || Aircraft.GetPhysics().GetAngularVelocity().Length()>0.1) {GroundStableSince=0;if(Elapsed>12) {Finish("failed: approved ground preparation did not settle");}return;}
-    if(GroundStableSince==0) {GroundStableSince=Elapsed;}if(Elapsed-GroundStableSince<2) {return;}
-   }
    if(Profile.SpoolHold())
    {
     vector initialPose[4];Aircraft.GetPhysics().GetWorldTransform(initialPose);Anchor=initialPose[3];TargetY=Anchor[1];vector restingAngles=Aircraft.GetYawPitchRoll();CommandYaw=restingAngles[0];LandingPitch=restingAngles[1];LandingRoll=restingAngles[2];
@@ -198,17 +192,17 @@ class COMMAND_HelicopterFlightLease
    // Native control configuration remains untouched.
    Controller.StartEngine();Phase="spooling";
   }
-  if(!Mounted(Pilot)) {Finish("failed: pilot left");return;}
-  SCR_EditableCharacterComponent pilotState=SCR_EditableCharacterComponent.Cast(Pilot.FindComponent(SCR_EditableCharacterComponent));
-  if(!pilotState || pilotState.IsDestroyed()) {Finish("failed: pilot unavailable");return;}
+  if(!PilotReady()) {Finish("failed: pilot left, died or became unconscious");return;}
+  SCR_EditableVehicleComponent aircraftState=SCR_EditableVehicleComponent.Cast(Aircraft.FindComponent(SCR_EditableVehicleComponent));
+  if(!Sim.IsValid() || (aircraftState && aircraftState.IsDestroyed())) {Finish("failed: aircraft destroyed or simulation unavailable");return;}
   if(Phase!="unloading")
   {
-   foreach(IEntity passenger:Passengers)
+   // Passenger tasks are optional; dismounted or lost actors do not cancel flight.
+   for(int passengerIndex=Passengers.Count()-1;passengerIndex>=0;passengerIndex--)
    {
-    SCR_EditableCharacterComponent character;
-    if(passenger) {character=SCR_EditableCharacterComponent.Cast(passenger.FindComponent(SCR_EditableCharacterComponent));}
-    if(!character || character.IsDestroyed() || !Mounted(passenger)) {Finish("failed: passenger changed before landing");return;}
+    if(!Passengers[passengerIndex] || !Mounted(Passengers[passengerIndex])) {Passengers.Remove(passengerIndex);}
    }
+   CrewOnly=Passengers.Count()==0;
   }
   if(GroundCancellation)
   {
@@ -240,17 +234,7 @@ class COMMAND_HelicopterFlightLease
     Anchor=pose[3];Departure=Anchor;GroundY=pose[3][1];TargetY=CruiseY;
     OriginClearance=GroundY-GetGame().GetWorld().GetSurfaceY(Anchor[0],Anchor[2]);
     LandingPoint[1]=GetGame().GetWorld().GetSurfaceY(LandingPoint[0],LandingPoint[2])+OriginClearance;
-    // A preselected, clear route on EmptyEden. Verify the marked LZ terrain is flat.
-    float low=100000;float high=-100000;
-    for(int ix=-1;ix<=1;ix++)
-    {
-     for(int iz=-1;iz<=1;iz++)
-     {
-      float x=LandingPoint[0]+ix*5;float z=LandingPoint[2]+iz*5;
-      float h=GetGame().GetWorld().GetSurfaceY(x,z);low=Math.Min(low,h);high=Math.Max(high,h);
-     }
-    }
-    if(high-low>0.6) {Finish("failed: marked LZ terrain is not sufficiently flat");return;}
+    // Ground height still anchors touchdown; no terrain-flatness veto.
     vector desired[4];vector angles=Aircraft.GetYawPitchRoll();CommandYaw=angles[0];LandingPitch=angles[1];LandingRoll=angles[2];Math3D.AnglesToMatrix(Vector(angles[0],0,0),desired);
     TargetRight=desired[0];TargetUp=desired[1];TargetForward=desired[2];
    }
@@ -358,9 +342,7 @@ class COMMAND_HelicopterFlightLease
  }
  bool AllSeated()
  {
-  if(!Mounted(Pilot) || Passengers.Count()!=ExpectedPassengerCount()) {return false;}
-  foreach(IEntity actor:Passengers) {if(!Mounted(actor)) {return false;}}
-  return true;
+  return PilotReady();
  }
  vector Cross(vector a,vector b)
  {

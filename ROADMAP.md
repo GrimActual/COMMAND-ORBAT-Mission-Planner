@@ -1,3 +1,19 @@
+# Current operator follow-up — 22 October 2026
+
+Prepared COMMAND 1.1.2 / bridge 0.15.2 adds bounded scrollable approval details on an opaque backdrop, meaningful flight summaries, and authenticated Full/Custom approval across all 27 supported typed requests. Companion reports the relay-confirmed mode. Disable All stops future automatic approvals; queued requests become manual, while approval already sent or running work needs its separate cancellation action. Legacy relays cannot enable Full. Native compilation/rendering and live acknowledgement remain pending; focused JavaScript/local HTTP checks are not gameplay acceptance. Shared cruise57/fast66 m/s configuration is retained without additional flight testing at the user’s request. Published1.1.0 and frozen1.1.1 remain unchanged.
+
+## Current delivery queue — 22 October 2026
+
+This section is current; dated entries below remain history.
+
+Delivered: COMMAND 1.1.0 stable offline planner, whole-mission import/review/serial deployment, unified workspace, 50 QoL items and 10 bounded stability tasks. Bridge 0.15.0 has22 exact experimental aircraft profiles with historical short low-speed evidence; this does not establish high-speed or multiplayer acceptance.
+
+Immediate operator patch1.1.1 / bridge 0.15.1: visible catalog/index import access, full scrollable native approval text that cannot overlap fixed controls, shared57 m/s cruise and66 m/s fast targets. Approach/landing logic stays unchanged. No flight testing requested or performed for these speed changes. Packaging and focused desktop/layout checks are separate from native acceptance.
+
+Next implementation, in order: resolve the remaining reproduced startup stall; narrowly prove existing-vehicle registration; complete reviewed Workbench exchange. WebSockets, relay restart persistence and multi-admin authority remain later distinct capabilities, not implied by current relay hosting. No new arbitrary route limits.
+
+External acceptance: native menu rendering across UI scales, higher-speed physical flights performed by the operator, human takeover/player lifecycle, two-client multiplayer and populated-world clearance. The historical walking-to-vehicle timeout remains unexplained.
+
 ## v1.0.0 release boundary — 20 October 2026
 
 Stable planner; all live controls experimental. The complete programme below is retained. Next flight work: measured faster takeoff/landing, turn toward route before translation, then verified terrain/obstacle clearance and safe routes. No above-tree/building guarantee exists today. General existing-vehicle/aircraft registration remains a release limitation and follow-up priority.
@@ -799,7 +815,7 @@ Fresh native individual movement, physical stances, Hold-to-Move, snapshot resta
 18 October source-only milestone: the original [Workbench exchange contract](docs/WORKBENCH-EXCHANGE-CONTRACT.md) and explicit-file developer tool now validate declared world/plan/exchange/layer identities, baseline hashes, exact prefab references and full transforms, then separately report added/moved/removed managed records. Twenty-two focused checks passed. Apply is always disabled; no native importer/exporter, scene change, desktop Undo integration or application control is claimed. Actual native compilation, durable identities and one-Undo round trip remain required before enabling the workflow. Existing releases and every prior roadmap item remain intact.
 
 
-18 October native-data checkpoint: an original isolated Game-module JSON probe compiled and reproduced seven scalar-read cases on engine1.8.0.13. Native null-to-empty-string behavior is now explicit. Workbench's planned native wire uses opaque managed IDs; the desktop review binds exact typed planner IDs from its trusted baseline, with26 focused checks passing. Added a non-launching isolated reproduction-project preparer. Full native editor importer/exporter, identity persistence, placement review and atomic one-Undo application remain planned and gated; no game client or Workbench was launched and the existing bridge/releases remain unchanged.
+18 October native-data checkpoint: an original isolated Game-module JSON probe compiled and reproduced seven scalar-read cases on engine1.8.0.13. Native null-to-empty-string behavior is now explicit. Workbench's planned native wire uses opaque managed IDs; the desktop review binds exact typed planner IDs from its trusted baseline, with 26 focused checks passing. Added a non-launching isolated reproduction-project preparer. Full native editor importer/exporter, identity persistence, placement review and atomic one-Undo application remain planned and gated; no game client or Workbench was launched and the existing bridge/releases remain unchanged.
 
 
 ### 18 October 2026 — Workbench desktop candidate development gate
@@ -818,9 +834,9 @@ Fresh native individual movement, physical stances, Hold-to-Move, snapshot resta
 - New preparation tools do not launch executables or overwrite existing destinations. Five preparation checks passed. Existing desktop/native regression gates are retained; only changed paths tested.
 
 
-### 18 October2026 — authorized consolidated GitHub prerelease
+### 18 October 2026 — authorized consolidated GitHub prerelease
 
-Preparing desktop2.9.1-dev.followon.12 with bridge0.11.3, matching committed source, complete operator/catalog content, separate bridge/operator archives and checksums. Existing releases and WIP are preserved. The local Everon elevation file is excluded from public uploads under its declared local-use-only permission; importer and instructions remain included. Boarding remains parked. Native/editor acceptance boundaries are unchanged. Publication is user-authorized; manifest/remote verification will record actual completion.
+Preparing desktop2.9.1-dev.followon.12 with bridge 0.11.3, matching committed source, complete operator/catalog content, separate bridge/operator archives and checksums. Existing releases and WIP are preserved. The local Everon elevation file is excluded from public uploads under its declared local-use-only permission; importer and instructions remain included. Boarding remains parked. Native/editor acceptance boundaries are unchanged. Publication is user-authorized; manifest/remote verification will record actual completion.
 
 
 ### 20 October 2026 — HTTPS hosting and scoped approval development checkpoint
@@ -855,9 +871,9 @@ Development source: portable selected-unit save/load, explicit anchor and clockw
 Original COMMAND source adds reviewed occupied deployment with exact individual seats and automatic-cargo passenger squads, preserving native group membership and bounding roots/actors separately. The on-foot reserve workflow steps through deployment and ground-order outcomes without claiming arrival or automatically respawning. A single stock refuel interaction checks owned vehicle/provider/operator identities and observes real target/provider fuel; unfinished acceptance stays explicit. EN/FR/DE guidance and existing Settings/Sarge routes cover these operations. Frozen RC1 and historical boarding-failure evidence are preserved. Native receipts and final candidate smoke define verification scope; no stable or human multiplayer acceptance is inferred.
 
 
-### 20 October2026 — experimental occupied Huey insertion
+### 20 October 2026 — experimental occupied Huey insertion
 
-The original force-assisted vanilla UH-1H adapter is integrated through current owned identities, manual reviewed requests and measured relay progress. Actual isolated production HTTP execution created three roots with five verified occupants, retained the four-person group, lifted8.06m, travelled100.07m, sustained a grounded landing, completed four animated exits and retained the pilot. Identical requests and terminal-result retries did not restart execution. An earlier exact-lease airborne cancellation landed with all passengers retained. Any human entering the aircraft releases assistance; actual human takeover/two-client acceptance remains pending. Walking embark separately timed out0/4 and remains unexplained; direct group seating does not fix it. Matching candidate desktop2.10.0-rc.2/bridge0.13.0 is not a stable publication. Test files: examples/helicopter-insertion-test; operator guides10. Full roadmap retained.
+The original force-assisted vanilla UH-1H adapter is integrated through current owned identities, manual reviewed requests and measured relay progress. Actual isolated production HTTP execution created three roots with five verified occupants, retained the four-person group, lifted8.06m, travelled100.07m, sustained a grounded landing, completed four animated exits and retained the pilot. Identical requests and terminal-result retries did not restart execution. An earlier exact-lease airborne cancellation landed with all passengers retained. Any human entering the aircraft releases assistance; actual human takeover/two-client acceptance remains pending. Walking embark separately timed out0/4 and remains unexplained; direct group seating does not fix it. Matching candidate desktop2.10.0-rc.2/bridge 0.13.0 is not a stable publication. Test files: examples/helicopter-insertion-test; operator guides10. Full roadmap retained.
 
 ### 20 October 2026 — UI acceptance blocker
 
@@ -865,7 +881,7 @@ Feature expansion paused at user request. Desktop rc.3 consolidates asset, plann
 
 ### 20 October 2026 — tunnel/startup hotfix
 
-Local address/code delivery follows registered Cloudflare transport and local pairing; background public verification is explicitly reported and cannot block credentials for up to120seconds. Stop/cancellation and approval rules are preserved. Window visibility uses DOM readiness and online tiles are deferred until first frame. Temporary live Cloudflare probe produced credentials in8.6seconds; no multiplayer acceptance inferred. Applied only to A:/Command installation with rollback copy; frozen RC3 package remains intact.
+Local address/code delivery follows registered Cloudflare transport and local pairing; background public verification is explicitly reported and cannot block credentials for up to 120seconds. Stop/cancellation and approval rules are preserved. Window visibility uses DOM readiness and online tiles are deferred until first frame. Temporary live Cloudflare probe produced credentials in8.6seconds; no multiplayer acceptance inferred. Applied only to A:/Command installation with rollback copy; frozen RC3 package remains intact.
 
 ## Confirmed next session — v1.1
 

@@ -1,6 +1,6 @@
 # COMMAND — commencer ici
 
-COMMAND 1.1.0, planificateur hors ligne stable ; commandes du jeu expérimentales. Bridge inchangé : 0.15.0. Consultez Paramètres → Compatibilité et limites et le manifeste final pour la version exacte. Utilisez le paquet final identifié par son manifeste et ses sommes de contrôle. Planification hors ligne au cœur du produit ; commandes du jeu et assistance hélicoptère expérimentales.
+COMMAND 1.1.2, planificateur hors ligne stable ; commandes du jeu expérimentales. Bridge inchangé : 0.15.2. Consultez Paramètres → Compatibilité et limites et le manifeste final pour la version exacte. Utilisez le paquet final identifié par son manifeste et ses sommes de contrôle. Planification hors ligne au cœur du produit ; commandes du jeu et assistance hélicoptère expérimentales.
 
 1. Ouvrez Maître du jeu. La recherche réunit ressources, unités prévues, déployées et suivies. Les badges distinguent les données. Filtres et recherche restent près de la sélection.
 2. Importer une mission charge un `.command-mission.json` complet : plan, références et déploiement. Rien n’apparaît dans le jeu. Sauvegardez avant de remplacer le plan. Un Annuler restaure l’import. L’échange historique reste dans Fichiers du plan.
@@ -27,3 +27,7 @@ Voir 02-ASSETS, 03-SERVER, 04-COMPATIBILITY, 07-HTTPS-HOSTING-FR, 10-HELICOPTER-
 ## Enregistrement et récupération des demandes
 
 Un échec d’enregistrement conserve les modifications en mémoire ; exportez une sauvegarde puis réessayez. Le remplacement de mission annule les erreurs synchrones, sans garantie après une coupure de courant. La récupération explicite efface le déploiement d’un autre plan ; Annuler restaure l’espace précédent. Si la livraison est incertaine, un nouvel essai rejeté ne prouve pas l’échec initial. Consultez le résultat avec le même identifiant. Les placements ou sièges modifiés nécessitent un nettoyage vérifié ou des ordres pris en charge ; les entités déployées ne sont pas déplacées silencieusement.
+
+## Asset library update
+
+Game Master → Bibliothèque d’assets réunit Importer un catalogue JSON et Charger l’index de déploiement. Choisissez les deux fichiers correspondants dans Vanilla-Assets/Start-Here. Le catalogue change les assets disponibles ; les unités planifiées conservent leurs références. L’index identifie les prefabs exacts. Un fichier de mission complet contient déjà les deux. Aucun fichier n’est envoyé au serveur et rien n’apparaît dans le jeu à l’importation.

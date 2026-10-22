@@ -1,0 +1,12 @@
+Command Orbat & Eden 0.15.7
+
+FLIGHT RESTART HOTFIX
+- Reuse a landed aircraft with its living, conscious, seated AI pilot.
+- Remove mandatory four-person cargo and original passenger-squad flight dependencies.
+- Ignore already-dismounted squad members; optional unloading applies only to designated cargo actually aboard.
+- Remove the 0.15 m/s stationary-start veto and ground-preparation speed gate.
+- Allow Flight only for every supported profile; retain carried passengers in that mode.
+- Retain aircraft authority, human takeover, collision and measured touchdown checks.
+- Includes menu-layout and terrain-flatness hotfixes.
+
+COMMAND 1.1.3 exposes Flight only for every profile. Update the desktop or standalone relay together; the older 1.1.2 relay does not support the new passenger-progress schema. Native compile and physical reflight remain unverified.

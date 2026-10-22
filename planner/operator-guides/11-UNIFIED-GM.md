@@ -1,6 +1,6 @@
 # COMMAND — start here
 
-This is the COMMAND 1.1.0 release: stable offline planner; experimental live controls. Its bridge remains 0.15.0; inspect Settings → Compatibility and limits and the final package manifest for exact desktop compatibility. Use only the final package identified by its manifest and checksums. Offline planning is the core product; live-game controls and helicopter assistance remain experimental.
+This is the COMMAND 1.1.2 release: stable offline planner; experimental live controls. Its bridge remains 0.15.2; inspect Settings → Compatibility and limits and the final package manifest for exact desktop compatibility. Use only the final package identified by its manifest and checksums. Offline planning is the core product; live-game controls and helicopter assistance remain experimental.
 
 1. Open Game Master. Search assets, planned units, deployed targets and tracked units together. Status badges keep these records distinct. Filters and search remain beside the selection.
 2. Import mission loads a complete `.command-mission.json` with plan, asset references and deployment setup. It spawns nothing. Use Save Backup before replacing work. Import has one Undo step. Legacy plan exchange remains in Plan files.
@@ -23,3 +23,7 @@ Flight supports the exact enabled catalog profiles, not every helicopter of the 
 ## Other guides
 
 Use 02-ASSETS, 03-SERVER, 04-COMPATIBILITY, 07-HTTPS-HOSTING, 10-HELICOPTER and 11-DEPLOYMENT-OPERATIONS for details. Sarge opens relevant controls. Optional read-only terrain preview requires authorized world-matched elevation and imagery; no game geometry or imagery dataset is bundled. Workbench native apply, relay restart persistence, WebSockets and multi-admin roles remain planned or disabled. Existing short native receipts are not new human multiplayer acceptance.
+
+## Asset library update
+
+Game Master → Asset library contains Import catalog JSON and Load deployment resource index together. Select the matching two metadata files from Vanilla-Assets/Start-Here. Catalog import changes available assets; planned units retain their saved references. Resource indexes identify exact deployment prefabs. Whole-mission imports already contain both. These are local planning files, not server uploads. Importing does not spawn anything.
